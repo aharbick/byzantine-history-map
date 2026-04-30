@@ -285,5 +285,9 @@ export function audioUrl(episodeNum: number): string {
   if (/(?:github\.com|githubusercontent\.com)/.test(AUDIO_BASE_URL)) {
     filename = filename.replace(/ /g, ".");
   }
-  return `${AUDIO_BASE_URL}/${filename}`;
+  // Percent-encode — Chrome silently encodes when assigning to <audio>.src,
+  // but iOS Safari does not, so spaces in filenames cause the audio element
+  // to surface "Error" without ever loading. encodeURIComponent on the
+  // filename only (not the base URL) preserves the host's path slashes.
+  return `${AUDIO_BASE_URL}/${encodeURIComponent(filename)}`;
 }
