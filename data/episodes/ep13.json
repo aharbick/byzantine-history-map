@@ -1,0 +1,1555 @@
+{
+  "episode": 13,
+  "title": "Basil II",
+  "people": [
+    {
+      "id": "basil-i",
+      "name": "Basil I",
+      "alt_names": ["Basil the Macedonian"],
+      "role": "Byzantine Emperor, founder of the Macedonian dynasty",
+      "birth_year": 811,
+      "death_year": 886,
+      "reign_start": 867,
+      "reign_end": 886,
+      "summary": "Brownworth opens by invoking Basil I as the founder of the Macedonian dynasty, noting he came to the throne by murdering his predecessor and thus knew firsthand how a weak ruler tempted powerful generals. His military ability was never matched by his immediate successors, yet the dynasty he founded ultimately reached its greatest heights with his great-great-grandson Basil II.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_I",
+      "portrait_url": null,
+      "transcript_lines": [[5, 20]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "romanus-ii"},
+        {"type": "event", "id": "rise-of-macedonian-dynasty"}
+      ]
+    },
+    {
+      "id": "romanus-ii",
+      "name": "Romanus II",
+      "alt_names": [],
+      "role": "Byzantine Emperor, father of Basil II",
+      "birth_year": 938,
+      "death_year": 963,
+      "reign_start": 959,
+      "reign_end": 963,
+      "summary": "Basil I's great-grandson and father of Basil II, described as tall, athletic, and immensely popular, yet determined to spend his time enjoying himself rather than governing. He died after only four years, leaving behind his wife Theophano and three children — Basil, Constantine, and Anna — but his legacy was shaped more by his generals than himself.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romanus_II",
+      "portrait_url": null,
+      "transcript_lines": [[35, 55]],
+      "related": [
+        {"type": "person", "id": "theophano"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "constantine-viii"},
+        {"type": "person", "id": "anna-of-byzantium"},
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "john-i-tzimiskes"}
+      ]
+    },
+    {
+      "id": "theophano",
+      "name": "Theophano",
+      "alt_names": [],
+      "role": "Byzantine Empress, wife of Romanus II and Nikephoros II Phokas",
+      "birth_year": 941,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Described by Brownworth as stunningly beautiful, completely amoral, and desperately ambitious — an innkeeper's daughter who convinced Romanus II to marry her against convention. She was immediately suspected of poisoning Romanus, then married the 51-year-old general Nikephoros Phokas, before growing bored and taking his nephew John Tzimiskes as a lover; she conspired with Tzimiskes and the chamberlain Basil to murder Nikephoros, but badly miscalculated, as John promptly sent her into exile.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theophano_(10th-century_empress)",
+      "portrait_url": null,
+      "transcript_lines": [[47, 109]],
+      "related": [
+        {"type": "person", "id": "romanus-ii"},
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "basil-the-chamberlain"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "constantine-viii"},
+        {"type": "person", "id": "anna-of-byzantium"},
+        {"type": "event", "id": "murder-of-nikephoros-phokas"}
+      ]
+    },
+    {
+      "id": "nikephoros-ii-phokas",
+      "name": "Nikephoros II Phokas",
+      "alt_names": ["Nikephoros Phokas", "Nicephorus II", "White Death of the Saracens"],
+      "role": "Byzantine Emperor and general",
+      "birth_year": 912,
+      "death_year": 969,
+      "reign_start": 963,
+      "reign_end": 969,
+      "summary": "Called by Brownworth the most superb fighter of his day and perhaps the greatest general since Belisarius, Nikephoros reconquered Crete after 136 years of Muslim rule, captured over 55 walled cities in a single season, and sacked Aleppo — earning the nickname \"White Death of the Saracens.\" He later reconquered Tarsus, Cyprus, Aleppo, and most spectacularly Antioch, yet squandered his popularity through ruinous taxation, a disastrous western foreign policy, and his wife Theophano's conspiracy, which ended in his brutal murder in his bedroom.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nikephoros_II",
+      "portrait_url": null,
+      "transcript_lines": [[55, 101]],
+      "related": [
+        {"type": "person", "id": "theophano"},
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "basil-the-chamberlain"},
+        {"type": "person", "id": "saif-ad-dawla"},
+        {"type": "person", "id": "otto-i"},
+        {"type": "place", "id": "crete"},
+        {"type": "place", "id": "aleppo"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "tarsus"},
+        {"type": "place", "id": "cyprus"},
+        {"type": "event", "id": "reconquest-of-crete"},
+        {"type": "event", "id": "reconquest-of-antioch"},
+        {"type": "event", "id": "murder-of-nikephoros-phokas"}
+      ]
+    },
+    {
+      "id": "saif-ad-dawla",
+      "name": "Saif ad-Dawla",
+      "alt_names": ["Saif Ad-Dula"],
+      "role": "Arab ruler of Aleppo and Damascus, Hamdanid emir",
+      "birth_year": 916,
+      "death_year": 967,
+      "reign_start": 945,
+      "reign_end": 967,
+      "summary": "The Arab ruler who had raided Byzantine territory every year for twenty years before Nikephoros Phokas launched a devastating counterattack. Brownworth recounts that Saif ad-Dawla escaped the sack of Aleppo only by scattering gold coins behind him as he fled, and was so badly shaken that he never troubled the empire again.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sayf_al-Dawla",
+      "portrait_url": null,
+      "transcript_lines": [[62, 68]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "place", "id": "aleppo"},
+        {"type": "event", "id": "sack-of-aleppo"}
+      ]
+    },
+    {
+      "id": "john-i-tzimiskes",
+      "name": "John I Tzimiskes",
+      "alt_names": ["John Smiskys", "John Tzimiskes"],
+      "role": "Byzantine Emperor and general",
+      "birth_year": 925,
+      "death_year": 976,
+      "reign_start": 969,
+      "reign_end": 976,
+      "summary": "Described as one of the finest generals Byzantium ever produced, Tzimiskes led troops under Romanus II and then murdered his uncle Nikephoros Phokas with co-conspirators to seize the throne. Despite the brutality of his accession, his reign was enormously successful — repelling a Russian invasion, expelling the Russian overlord from Bulgaria, pacifying Armenia, sweeping into Mesopotamia unopposed, and returning to the east to conquer Palestine, Syria, and Lebanon. He died of poison or disease at age 51 during his eastern campaigns.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_I_Tzimiskes",
+      "portrait_url": null,
+      "transcript_lines": [[54, 129]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "theophano"},
+        {"type": "person", "id": "basil-the-chamberlain"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "bulgaria"},
+        {"type": "place", "id": "armenia"},
+        {"type": "place", "id": "mesopotamia"},
+        {"type": "place", "id": "palestine"},
+        {"type": "place", "id": "syria"},
+        {"type": "place", "id": "lebanon"},
+        {"type": "event", "id": "murder-of-nikephoros-phokas"},
+        {"type": "event", "id": "russian-invasion-repelled-971"}
+      ]
+    },
+    {
+      "id": "basil-the-chamberlain",
+      "name": "Basil the Chamberlain",
+      "alt_names": ["Basil Lekapenos", "Basil the Parakoimomenos"],
+      "role": "Byzantine court chamberlain and eunuch",
+      "birth_year": null,
+      "death_year": 985,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Described as an extraordinary eunuch who was one of the three conspirators in the murder of Nikephoros Phokas, and who then ran the affairs of the empire during Basil II's minority. Brownworth calls him a farsighted statesman who maintained the integrity of Basil's throne, but notes he was also massively corrupt and treated the young emperor dismissively — a mistake that cost him everything when Basil finally struck, arresting and exiling him and even stripping his great monastery of its possessions.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_Lekapenos",
+      "portrait_url": null,
+      "transcript_lines": [[99, 100], [143, 204]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "theophano"},
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "event", "id": "murder-of-nikephoros-phokas"},
+        {"type": "event", "id": "basil-deposes-chamberlain"}
+      ]
+    },
+    {
+      "id": "basil-ii",
+      "name": "Basil II",
+      "alt_names": ["Basil the Bulgar Slayer", "Basil Boulgaroktonos"],
+      "role": "Byzantine Emperor",
+      "birth_year": 958,
+      "death_year": 1025,
+      "reign_start": 963,
+      "reign_end": 1025,
+      "summary": "The central figure of the episode, presented by Brownworth as an emperor unlike any before or after him — possessed of boundless energy, relentless as a flow of lava, yet slow and irresistible. Spending his first 27 years as a puppet under a series of regents and usurpers, he emerged to crush two powerful rebel generals, negotiate the Varangian alliance, conquer Bulgaria in a thirty-year war, and expand the empire more than any ruler since Heraclius. He died a bachelor on December 15, 1025, having sacrificed all personal happiness to the single-minded service of the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_II",
+      "portrait_url": null,
+      "transcript_lines": [[1, 511]],
+      "related": [
+        {"type": "person", "id": "theophano"},
+        {"type": "person", "id": "romanus-ii"},
+        {"type": "person", "id": "constantine-viii"},
+        {"type": "person", "id": "anna-of-byzantium"},
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "basil-the-chamberlain"},
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "person", "id": "vladimir-of-kiev"},
+        {"type": "person", "id": "otto-iii"},
+        {"type": "person", "id": "zoe"},
+        {"type": "person", "id": "john-julius-norwich"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "bulgaria"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "thessalonica"},
+        {"type": "place", "id": "athens"},
+        {"type": "event", "id": "civil-war-skleros-first"},
+        {"type": "event", "id": "battle-of-trajans-gate"},
+        {"type": "event", "id": "varangian-alliance"},
+        {"type": "event", "id": "battle-of-abydos"},
+        {"type": "event", "id": "bulgarian-war"},
+        {"type": "event", "id": "battle-of-kleidion"},
+        {"type": "event", "id": "submission-of-bulgaria-1018"},
+        {"type": "event", "id": "earthquake-constantinople"},
+        {"type": "event", "id": "basil-deposes-chamberlain"}
+      ]
+    },
+    {
+      "id": "constantine-viii",
+      "name": "Constantine VIII",
+      "alt_names": ["Constantine"],
+      "role": "Byzantine Emperor, brother of Basil II",
+      "birth_year": 960,
+      "death_year": 1028,
+      "reign_start": 1025,
+      "reign_end": 1028,
+      "summary": "Mentioned by Brownworth as one of Romanus II and Theophano's sons, younger brother of Basil II, who was allowed to remain in the palace after John Tzimiskes' coup despite the uncertainty of his fate. Brownworth also notes at the end that Basil left no children, only his \"worthless brother,\" whose successors squandered the inheritance and engineered disaster.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_VIII",
+      "portrait_url": null,
+      "transcript_lines": [[52, 52], [107, 108], [497, 498]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "theophano"},
+        {"type": "person", "id": "romanus-ii"}
+      ]
+    },
+    {
+      "id": "anna-of-byzantium",
+      "name": "Anna",
+      "alt_names": ["Anna Porphyrogenita"],
+      "role": "Byzantine princess, sister of Basil II",
+      "birth_year": 963,
+      "death_year": 1011,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Daughter of Romanus II and Theophano, mentioned as the Byzantine bride offered by Basil II to Vladimir of Kiev in exchange for 6,000 Varangian soldiers and Vladimir's conversion to Orthodoxy. Brownworth notes she may be forgiven for being unwilling, as her future husband already had four wives and 800 concubines and was notorious for philandering, but Basil was insistent and she dutifully went.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anna_Porphyrogenita_(963%E2%80%931011)",
+      "portrait_url": null,
+      "transcript_lines": [[52, 52], [263, 270]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "romanus-ii"},
+        {"type": "person", "id": "theophano"},
+        {"type": "person", "id": "vladimir-of-kiev"},
+        {"type": "event", "id": "varangian-alliance"}
+      ]
+    },
+    {
+      "id": "bardas-skleros",
+      "name": "Bardas Skleros",
+      "alt_names": ["Bardus Sclarus", "Bardas Sclerus"],
+      "role": "Byzantine general and rebel",
+      "birth_year": 920,
+      "death_year": 991,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Described as the best and brightest of Tzimiskes' generals, fiercely loyal to John but expecting to be made emperor after his death. When the popular uprising failed to materialize, he had his troops proclaim him emperor, captured the southern fleet, conquered all of Asia Minor, and besieged Constantinople from Nicaea — only to be defeated when Bardas Phokas was released from exile to fight him in a single combat duel. Exiled to Baghdad, he returned to rebel again with Caliph funding, was arrested and imprisoned by Phokas, and finally came to terms with Basil after Phokas' death — nearly blind and too old to continue.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bardas_Sklerus",
+      "portrait_url": null,
+      "transcript_lines": [[115, 116], [147, 192], [237, 315]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "person", "id": "basil-the-chamberlain"},
+        {"type": "place", "id": "nicaea"},
+        {"type": "place", "id": "baghdad"},
+        {"type": "event", "id": "civil-war-skleros-first"},
+        {"type": "event", "id": "civil-war-phokas-skleros"}
+      ]
+    },
+    {
+      "id": "bardas-phokas",
+      "name": "Bardas Phokas",
+      "alt_names": ["Bardus Focus", "Bardas Phocas"],
+      "role": "Byzantine general and rebel",
+      "birth_year": 940,
+      "death_year": 989,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A giant of a man who had rebelled against John Tzimiskes and been exiled, Bardas Phokas was released from exile by the chamberlain Basil to fight Bardas Skleros — a calculated gamble that worked. He proved a superior duellist, felling Skleros in single combat, ending the civil war. Later combining forces with Skleros against Basil II, he advanced within the city walls at the Golden Horn before collapsing and dying of a stroke from his horse mid-charge during the final battle, with both armies watching — an event Brownworth frames as clear divine judgment.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bardas_Phokas_the_Younger",
+      "portrait_url": null,
+      "transcript_lines": [[115, 116], [146, 192], [244, 296]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "basil-the-chamberlain"},
+        {"type": "place", "id": "nicaea"},
+        {"type": "event", "id": "civil-war-skleros-first"},
+        {"type": "event", "id": "civil-war-phokas-skleros"},
+        {"type": "event", "id": "battle-of-abydos"}
+      ]
+    },
+    {
+      "id": "samuel-of-bulgaria",
+      "name": "Samuel",
+      "alt_names": ["Samuel of Bulgaria", "Tsar Samuel"],
+      "role": "Tsar of Bulgaria",
+      "birth_year": 958,
+      "death_year": 1014,
+      "reign_start": 997,
+      "reign_end": 1014,
+      "summary": "Portrayed by Brownworth as a wily and resourceful foe who outmaneuvered Basil II at first — invading Thrace, selling its population into slavery, and ambushing the Byzantine army at Trajan's Gate. He pursued a guerrilla strategy of hiding in the mountains while raiding as far south as Corinth, conquering Albania and Bosnia, but could not withstand Basil's methodical thirty-year campaign. After his entire army was blinded at the Battle of Kleidion, Samuel collapsed in shock when the mutilated prisoners were led into his presence, and died two days later a broken man.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samuel_of_Bulgaria",
+      "portrait_url": null,
+      "transcript_lines": [[216, 235], [318, 435]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "bulgaria"},
+        {"type": "place", "id": "thrace"},
+        {"type": "place", "id": "corinth"},
+        {"type": "event", "id": "battle-of-trajans-gate"},
+        {"type": "event", "id": "bulgarian-war"},
+        {"type": "event", "id": "battle-of-kleidion"},
+        {"type": "event", "id": "submission-of-bulgaria-1018"}
+      ]
+    },
+    {
+      "id": "vladimir-of-kiev",
+      "name": "Vladimir",
+      "alt_names": ["Vladimir the Great", "Prince of Kiev"],
+      "role": "Prince of Kiev",
+      "birth_year": 958,
+      "death_year": 1015,
+      "reign_start": 980,
+      "reign_end": 1015,
+      "summary": "The Prince of Kiev who struck a deal with Basil II — providing 6,000 Varangian soldiers in exchange for the hand of Basil's sister Anna and his own conversion to Orthodoxy. Brownworth notes that Vladimir already had four wives and 800 concubines and was notorious for philandering, making Anna's reluctance understandable, but the Varangians arrived and proved decisive in crushing Bardas Phokas' rebellion.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vladimir_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[260, 272]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "anna-of-byzantium"},
+        {"type": "event", "id": "varangian-alliance"},
+        {"type": "event", "id": "battle-of-abydos"}
+      ]
+    },
+    {
+      "id": "otto-i",
+      "name": "Otto I",
+      "alt_names": ["Otto the Western Emperor", "Otto the Great"],
+      "role": "Holy Roman Emperor",
+      "birth_year": 912,
+      "death_year": 973,
+      "reign_start": 962,
+      "reign_end": 973,
+      "summary": "Mentioned briefly as the Western Emperor whose ambassadors Nikephoros Phokas thoughtlessly insulted, contributing to the domestic disaster that made his reign's brilliant military victories seem hollow.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Otto_I,_Holy_Roman_Emperor",
+      "portrait_url": null,
+      "transcript_lines": [[93, 94]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"}
+      ]
+    },
+    {
+      "id": "otto-iii",
+      "name": "Otto III",
+      "alt_names": [],
+      "role": "Holy Roman Emperor",
+      "birth_year": 980,
+      "death_year": 1002,
+      "reign_start": 996,
+      "reign_end": 1002,
+      "summary": "Described as born of a Greek mother and dreaming of reuniting the two halves of the Roman Empire, Otto III sent senior officials to Basil II requesting a royal bride. Basil sent his niece Zoe, but when she arrived at the imperial court Otto had just died and the entire court was in mourning — a missed opportunity Brownworth calls a near-miss that could have changed subsequent history entirely.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Otto_III,_Holy_Roman_Emperor",
+      "portrait_url": null,
+      "transcript_lines": [[393, 402]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "zoe"},
+        {"type": "event", "id": "zoe-embassy-to-otto"}
+      ]
+    },
+    {
+      "id": "zoe",
+      "name": "Zoe",
+      "alt_names": ["Zoe Porphyrogenita"],
+      "role": "Byzantine princess, niece of Basil II",
+      "birth_year": 978,
+      "death_year": 1050,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Basil II's niece, sent as a royal bride to the court of Otto III in what would have been a momentous diplomatic union. She arrived only to find Otto III dead and the court in mourning, foiling the planned marriage. Brownworth speculates that had the marriage taken place, the throne of Byzantium might have fallen to her on Basil's death and east and west would have been reunited.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zoe_Porphyrogenita",
+      "portrait_url": null,
+      "transcript_lines": [[397, 402]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "otto-iii"},
+        {"type": "event", "id": "zoe-embassy-to-otto"}
+      ]
+    },
+    {
+      "id": "herald-hardrada",
+      "name": "Harald Hardrada",
+      "alt_names": ["Harald Hadrada", "Harald Sigurdsson"],
+      "role": "Viking warrior, later King of Norway",
+      "birth_year": 1015,
+      "death_year": 1066,
+      "reign_start": 1046,
+      "reign_end": 1066,
+      "summary": "Described by Brownworth as undoubtedly the most famous member of the Varangian Guard, last of the Vikings and brother of Saint Olaf. After getting rich in Byzantine service he returned home, became King of Norway, and invaded England, dying at the hands of Harald the last Saxon king at the Battle of Stamford Bridge in 1066.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harald_Hardrada",
+      "portrait_url": null,
+      "transcript_lines": [[303, 307]],
+      "related": [
+        {"type": "person", "id": "saint-olaf"},
+        {"type": "person", "id": "harold-godwinson"},
+        {"type": "event", "id": "battle-of-stamford-bridge"},
+        {"type": "event", "id": "varangian-guard-founded"}
+      ]
+    },
+    {
+      "id": "saint-olaf",
+      "name": "Saint Olaf",
+      "alt_names": ["Olaf II of Norway", "Olaf Haraldsson"],
+      "role": "King of Norway, Christian saint",
+      "birth_year": 995,
+      "death_year": 1030,
+      "reign_start": 1015,
+      "reign_end": 1028,
+      "summary": "Mentioned only as the brother of Harald Hardrada, the most famous member of the Varangian Guard.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olaf_II_of_Norway",
+      "portrait_url": null,
+      "transcript_lines": [[304, 305]],
+      "related": [
+        {"type": "person", "id": "herald-hardrada"}
+      ]
+    },
+    {
+      "id": "harold-godwinson",
+      "name": "Harold",
+      "alt_names": ["Harold II", "Harold Godwinson", "last Saxon king"],
+      "role": "King of England",
+      "birth_year": 1022,
+      "death_year": 1066,
+      "reign_start": 1066,
+      "reign_end": 1066,
+      "summary": "Referenced by Brownworth as \"the last Saxon king\" at whose hands Harald Hardrada died at the Battle of Stamford Bridge in 1066, illustrating how far the fame and footprint of the Varangian Guard reached into European history.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harold_Godwinson",
+      "portrait_url": null,
+      "transcript_lines": [[305, 307]],
+      "related": [
+        {"type": "person", "id": "herald-hardrada"},
+        {"type": "event", "id": "battle-of-stamford-bridge"}
+      ]
+    },
+    {
+      "id": "heraclius",
+      "name": "Heraclius",
+      "alt_names": [],
+      "role": "Byzantine Emperor",
+      "birth_year": 575,
+      "death_year": 641,
+      "reign_start": 610,
+      "reign_end": 641,
+      "summary": "Invoked twice as a benchmark for greatness: first as the reference point for Nikephoros Phokas being the greatest general since Heraclius, and second at the close when Brownworth says Basil II had expanded the empire more than any emperor since Heraclius. The fall of Antioch during Heraclius' reign 332 years before is also cited.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraclius",
+      "portrait_url": null,
+      "transcript_lines": [[57, 58], [84, 85], [453, 454]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "antioch"}
+      ]
+    },
+    {
+      "id": "belisarius",
+      "name": "Belisarius",
+      "alt_names": [],
+      "role": "Byzantine general",
+      "birth_year": 500,
+      "death_year": 565,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Mentioned as a historical benchmark — Brownworth calls Nikephoros Phokas possibly the greatest general since Belisarius, and also references Belisarius' earlier reconquest of Sicily in the 6th century.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belisarius",
+      "portrait_url": null,
+      "transcript_lines": [[57, 58], [465, 465]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "place", "id": "sicily"}
+      ]
+    },
+    {
+      "id": "john-julius-norwich",
+      "name": "John Julius Norwich",
+      "alt_names": [],
+      "role": "Historian",
+      "birth_year": 1929,
+      "death_year": 2018,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Quoted at the very end of the episode for his summary verdict on Basil II: \"He died on the 15th of December. By the 16th, the decline had already begun.\" Brownworth invokes Norwich to crystallize the sense of an age ending with Basil's death.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Julius_Norwich",
+      "portrait_url": null,
+      "transcript_lines": [[501, 503]],
+      "related": [
+        {"type": "person", "id": "basil-ii"}
+      ]
+    },
+    {
+      "id": "alexios-i-komnenos",
+      "name": "Alexios Komnenos",
+      "alt_names": ["Alexios I Komnenos"],
+      "role": "Byzantine Emperor (teased as next episode subject)",
+      "birth_year": 1048,
+      "death_year": 1118,
+      "reign_start": 1081,
+      "reign_end": 1118,
+      "summary": "Mentioned only in the closing teaser as the subject of the next episode — the emperor who had to pick up all the pieces after the decline following Basil II, appealed to the West for help, and got instead the Crusades.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
+      "portrait_url": null,
+      "transcript_lines": [[505, 506]],
+      "related": []
+    }
+  ],
+  "places": [
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "The imperial capital, frequently referenced throughout the episode as the center of power that various rebels sought to seize and Basil sought to hold. Nikephoros Phokas returned to a pelting mob here; Bardas Skleros besieged it from across the Golden Horn; Bardas Phokas camped inside the city walls before his death; and Basil departed from and returned to it repeatedly throughout his Bulgarian campaigns.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[87, 88], [157, 161], [256, 258], [276, 278]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "place", "id": "golden-horn"},
+        {"type": "place", "id": "nicaea"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "civil-war-skleros-first"},
+        {"type": "event", "id": "battle-of-abydos"},
+        {"type": "event", "id": "earthquake-constantinople"}
+      ]
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "modern_name": "Hagia Sophia",
+      "modern_country": "Turkey",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "first_year": 537,
+      "summary": "Mentioned when Brownworth describes a massive earthquake that split the central dome of the Hagia Sophia, one of the hardships Basil faced during his reign — presented as a test of his undimmed resolve.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "transcript_lines": [[319, 321]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "earthquake-constantinople"}
+      ]
+    },
+    {
+      "id": "crete",
+      "name": "Crete",
+      "modern_name": "Crete",
+      "modern_country": "Greece",
+      "lat": 35.2401,
+      "lng": 24.8093,
+      "first_year": null,
+      "summary": "An island the empire had been trying to reconquer for well over a century before Nikephoros Phokas stormed it in one brilliant campaign, restoring it to imperial control after 136 years of Muslim rule — described as only the beginning of Phokas' extraordinary military career.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Emirate_of_Crete",
+      "image_url": null,
+      "transcript_lines": [[58, 61]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "event", "id": "reconquest-of-crete"}
+      ]
+    },
+    {
+      "id": "aleppo",
+      "name": "Aleppo",
+      "modern_name": "Aleppo",
+      "modern_country": "Syria",
+      "lat": 36.2021,
+      "lng": 37.1343,
+      "first_year": null,
+      "summary": "The capital of Saif ad-Dawla, sacked by Nikephoros Phokas in a single brilliant campaigning season in which over 55 walled cities were also captured — the event that earned Phokas the nickname 'White Death of the Saracens.' Aleppo was later listed among the major cities Phokas reconquered in his eastern campaign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aleppo",
+      "image_url": null,
+      "transcript_lines": [[62, 66], [80, 81]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "saif-ad-dawla"},
+        {"type": "event", "id": "sack-of-aleppo"}
+      ]
+    },
+    {
+      "id": "damascus",
+      "name": "Damascus",
+      "modern_name": "Damascus",
+      "modern_country": "Syria",
+      "lat": 33.5138,
+      "lng": 36.2765,
+      "first_year": null,
+      "summary": "Mentioned alongside Aleppo as part of the domain of the Arab ruler Saif ad-Dawla, who had been raiding Byzantine territory for twenty years before Nikephoros Phokas' devastating counter-campaign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Damascus",
+      "image_url": null,
+      "transcript_lines": [[62, 63]],
+      "related": [
+        {"type": "person", "id": "saif-ad-dawla"},
+        {"type": "person", "id": "nikephoros-ii-phokas"}
+      ]
+    },
+    {
+      "id": "tarsus",
+      "name": "Tarsus",
+      "modern_name": "Tarsus",
+      "modern_country": "Turkey",
+      "lat": 36.9128,
+      "lng": 34.8964,
+      "first_year": null,
+      "summary": "Listed as one of the major cities that fell to Nikephoros Phokas during his eastern campaign, along with Cyprus, Aleppo, and the rest of Mesopotamia and Syria, before his crowning achievement of recapturing Antioch.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tarsus,_Mersin",
+      "image_url": null,
+      "transcript_lines": [[80, 81]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"}
+      ]
+    },
+    {
+      "id": "cyprus",
+      "name": "Cyprus",
+      "modern_name": "Cyprus",
+      "modern_country": "Cyprus",
+      "lat": 35.1264,
+      "lng": 33.4299,
+      "first_year": null,
+      "summary": "Listed alongside Tarsus and Aleppo as one of the major cities and territories that fell to Nikephoros Phokas during his eastern conquests, part of the sweep that culminated in the recovery of Antioch.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyprus",
+      "image_url": null,
+      "transcript_lines": [[80, 81]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"}
+      ]
+    },
+    {
+      "id": "antioch",
+      "name": "Antioch",
+      "modern_name": "Antakya",
+      "modern_country": "Turkey",
+      "lat": 36.2021,
+      "lng": 36.1604,
+      "first_year": null,
+      "summary": "Described as the third city of the Roman Empire and site of one of the five major patriarchates, Antioch had fallen to the Muslims 332 years before during the reign of Heraclius. Nikephoros Phokas' recovery of it should have been his crowning achievement, but his unpopularity at home negated the triumph. Later, Basil II raced 600 miles in 16 days to relieve Antioch from a Fatimid siege, cutting the attackers to pieces and installing a new governor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antioch",
+      "image_url": null,
+      "transcript_lines": [[83, 88], [349, 362]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "heraclius"},
+        {"type": "event", "id": "reconquest-of-antioch"},
+        {"type": "event", "id": "fatimid-siege-of-antioch"}
+      ]
+    },
+    {
+      "id": "nicaea",
+      "name": "Nicaea",
+      "modern_name": "İznik",
+      "modern_country": "Turkey",
+      "lat": 40.4303,
+      "lng": 29.7192,
+      "first_year": null,
+      "summary": "The city across the Golden Horn from Constantinople where Bardas Skleros set up his headquarters and launched his amphibious siege of the capital. Later, Bardas Phokas was at Nicaea with his reserves when Basil II made his surprise night crossing and dawn attack.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İznik",
+      "image_url": null,
+      "transcript_lines": [[157, 158], [276, 277]],
+      "related": [
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "event", "id": "civil-war-skleros-first"},
+        {"type": "event", "id": "battle-of-abydos"}
+      ]
+    },
+    {
+      "id": "golden-horn",
+      "name": "Golden Horn",
+      "modern_name": "Golden Horn (Haliç)",
+      "modern_country": "Turkey",
+      "lat": 41.0271,
+      "lng": 28.9484,
+      "first_year": null,
+      "summary": "The inlet of the Bosphorus from which Bardas Skleros could harass Constantinople and wait for the gates to be opened to him. Later, Bardas Phokas set up camp across the Golden Horn inside the city walls, seemingly on the verge of victory, before Basil slipped across at nightfall to attack at dawn.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Horn",
+      "image_url": null,
+      "transcript_lines": [[165, 166], [256, 258]],
+      "related": [
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "event", "id": "civil-war-skleros-first"},
+        {"type": "event", "id": "battle-of-abydos"}
+      ]
+    },
+    {
+      "id": "baghdad",
+      "name": "Baghdad",
+      "modern_name": "Baghdad",
+      "modern_country": "Iraq",
+      "lat": 33.3152,
+      "lng": 44.3661,
+      "first_year": null,
+      "summary": "Mentioned twice: first as the seat of the Abbasid caliphate which John Tzimiskes could easily have taken but chose not to, and second as the place of exile from which Bardas Skleros returned — armed with men and money by the Caliph — to make his second bid for the throne.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad",
+      "image_url": null,
+      "transcript_lines": [[120, 122], [237, 241]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "event", "id": "civil-war-phokas-skleros"}
+      ]
+    },
+    {
+      "id": "armenia",
+      "name": "Armenia",
+      "modern_name": "Armenia / Eastern Turkey",
+      "modern_country": null,
+      "lat": 40.0,
+      "lng": 45.0,
+      "first_year": null,
+      "summary": "Mentioned three times: as territory reconquered by the first usurping general during Romanus II's reign; as a region pacified by John Tzimiskes during his eastern campaigns; and at the close when Basil II's immense reputation convinced an Armenian king to bequeath his kingdom to the empire without a battle.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armenia",
+      "image_url": null,
+      "transcript_lines": [[28, 29], [119, 120], [451, 452]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "basil-ii"}
+      ]
+    },
+    {
+      "id": "syria",
+      "name": "Syria",
+      "modern_name": "Syria",
+      "modern_country": "Syria",
+      "lat": 35.0,
+      "lng": 38.0,
+      "first_year": null,
+      "summary": "Reconquered by the first usurping general before Romanus II, and then again by John Tzimiskes during his eastern campaigns. Also mentioned as the region twice invaded by the Fatimid Caliphate during Basil II's Bulgarian campaigns, drawing the emperor east at speed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syria",
+      "image_url": null,
+      "transcript_lines": [[28, 29], [125, 126], [349, 350], [387, 388]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "event", "id": "fatimid-siege-of-antioch"}
+      ]
+    },
+    {
+      "id": "mesopotamia",
+      "name": "Mesopotamia",
+      "modern_name": "Iraq / Eastern Syria",
+      "modern_country": null,
+      "lat": 33.0,
+      "lng": 44.0,
+      "first_year": null,
+      "summary": "Swept through by John Tzimiskes virtually unopposed when it was clear the Abbasid caliphate of Baghdad couldn't resist — the emperor could have taken Baghdad itself but chose not to. Listed among the major cities and provinces Nikephoros Phokas also reconquered.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesopotamia",
+      "image_url": null,
+      "transcript_lines": [[80, 81], [119, 123]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "john-i-tzimiskes"}
+      ]
+    },
+    {
+      "id": "palestine",
+      "name": "Palestine",
+      "modern_name": "Israel / Palestinian Territories",
+      "modern_country": null,
+      "lat": 31.9,
+      "lng": 35.2,
+      "first_year": null,
+      "summary": "Conquered by John Tzimiskes in the final year of his eastern campaigns, alongside Syria and Lebanon, as well as the major coastal cities except Tripoli.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palestine_(region)",
+      "image_url": null,
+      "transcript_lines": [[125, 127]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"}
+      ]
+    },
+    {
+      "id": "lebanon",
+      "name": "Lebanon",
+      "modern_name": "Lebanon",
+      "modern_country": "Lebanon",
+      "lat": 33.8547,
+      "lng": 35.8623,
+      "first_year": null,
+      "summary": "Listed among the territories conquered by John Tzimiskes in his final eastern campaign, along with Palestine, Syria, and the major coastal cities except Tripoli.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lebanon",
+      "image_url": null,
+      "transcript_lines": [[125, 126]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"}
+      ]
+    },
+    {
+      "id": "tripoli",
+      "name": "Tripoli",
+      "modern_name": "Tripoli",
+      "modern_country": "Lebanon",
+      "lat": 34.4368,
+      "lng": 35.8497,
+      "first_year": null,
+      "summary": "The one major coastal city that John Tzimiskes notably did not capture during his final eastern campaign, mentioned in passing as the sole exception to an otherwise total sweep of the Levantine coast.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tripoli,_Lebanon",
+      "image_url": null,
+      "transcript_lines": [[126, 127]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"}
+      ]
+    },
+    {
+      "id": "bulgaria",
+      "name": "Bulgaria",
+      "modern_name": "Bulgaria",
+      "modern_country": "Bulgaria",
+      "lat": 42.7339,
+      "lng": 25.4858,
+      "first_year": null,
+      "summary": "Brownworth describes the Bulgarian Empire as a long-standing thorn in Constantinople's side, constantly raiding and then retreating into the Balkans. After Nikephoros Phokas' disastrous policy of inviting the Russians to invade it, and Samuel's devastating raids on Thrace and Trajan's Gate ambush, Basil II pursued a methodical thirty-year war that culminated in the mass blinding at Kleidion and Bulgaria's formal submission in 1018 — where it remained part of the empire for almost 200 years.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/First_Bulgarian_Empire",
+      "image_url": null,
+      "transcript_lines": [[93, 94], [114, 115], [216, 225], [318, 439]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "event", "id": "bulgarian-war"},
+        {"type": "event", "id": "battle-of-trajans-gate"},
+        {"type": "event", "id": "battle-of-kleidion"},
+        {"type": "event", "id": "submission-of-bulgaria-1018"}
+      ]
+    },
+    {
+      "id": "thrace",
+      "name": "Thrace",
+      "modern_name": "Thrace",
+      "modern_country": null,
+      "lat": 41.5,
+      "lng": 26.5,
+      "first_year": null,
+      "summary": "The Byzantine region invaded by Tsar Samuel during Basil II's early reign, with Samuel selling the population of its major city into slavery and carrying off the bones of its major saint to Bulgaria's capital cathedral — an insult that forced Basil to march on Bulgaria for the first time.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thrace",
+      "image_url": null,
+      "transcript_lines": [[219, 222]],
+      "related": [
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "event", "id": "battle-of-trajans-gate"}
+      ]
+    },
+    {
+      "id": "trajans-gate",
+      "name": "Trajan's Gate",
+      "modern_name": "Trayanovi Vrata",
+      "modern_country": "Bulgaria",
+      "lat": 42.6,
+      "lng": 23.75,
+      "first_year": null,
+      "summary": "A narrow mountain pass in Bulgaria where Samuel set a devastating ambush for Basil II's first Bulgarian campaign, nearly wiping out the Byzantine army and deeply humiliating the emperor. The defeat taught Basil to never again march through narrow passes without securing the flanks, and his vow of revenge would define thirty years of subsequent warfare.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trajan%27s_Gate_(Bulgaria)",
+      "image_url": null,
+      "transcript_lines": [[224, 235]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "event", "id": "battle-of-trajans-gate"}
+      ]
+    },
+    {
+      "id": "thessalonica",
+      "name": "Thessalonica",
+      "modern_name": "Thessaloniki",
+      "modern_country": "Greece",
+      "lat": 40.6401,
+      "lng": 22.9444,
+      "first_year": null,
+      "summary": "Basil II's first stop before entering Bulgaria on his great campaign was Thessalonica, where he tracked down a monk who had been present at his baptism and obtained his blessing and a promise to pray for him every night for the duration — a campaign that would last more than three decades.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki",
+      "image_url": null,
+      "transcript_lines": [[324, 328]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "event", "id": "bulgarian-war"}
+      ]
+    },
+    {
+      "id": "corinth",
+      "name": "Corinth",
+      "modern_name": "Corinth",
+      "modern_country": "Greece",
+      "lat": 37.9412,
+      "lng": 22.9565,
+      "first_year": null,
+      "summary": "The southernmost point reached by Samuel's raids into Greece during Basil II's absence in the east — Brownworth uses it to convey the alarming depth of Bulgaria's penetration into Byzantine territory.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corinth",
+      "image_url": null,
+      "transcript_lines": [[377, 378]],
+      "related": [
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "event", "id": "bulgarian-war"}
+      ]
+    },
+    {
+      "id": "dalmatia",
+      "name": "Dalmatia",
+      "modern_name": "Dalmatia (Croatia)",
+      "modern_country": "Croatia",
+      "lat": 44.0,
+      "lng": 16.0,
+      "first_year": null,
+      "summary": "The coastal region Basil II invited Venice to invade in the name of the empire, in order to open a second front against Samuel and protect Byzantine cities there. The Venetians were eager for the vast forests to supply timber for their navy, and held Dalmatia for the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalmatia",
+      "image_url": null,
+      "transcript_lines": [[382, 387]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "place", "id": "venice"},
+        {"type": "event", "id": "venetian-invasion-of-dalmatia"}
+      ]
+    },
+    {
+      "id": "venice",
+      "name": "Venice",
+      "modern_name": "Venice",
+      "modern_country": "Italy",
+      "lat": 45.4408,
+      "lng": 12.3155,
+      "first_year": null,
+      "summary": "Basil II invited Venice to invade Dalmatia in the empire's name, solving two problems: protecting Byzantine cities on the Dalmatian coast and forcing Samuel into a two-front war. The Venetians were eager to use the forests there for timber for their navy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Republic_of_Venice",
+      "image_url": null,
+      "transcript_lines": [[382, 387]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "dalmatia"},
+        {"type": "event", "id": "venetian-invasion-of-dalmatia"}
+      ]
+    },
+    {
+      "id": "kleidion",
+      "name": "Kleidion",
+      "modern_name": "Klyuch (Bulgaria)",
+      "modern_country": "Bulgaria",
+      "lat": 41.77,
+      "lng": 23.12,
+      "first_year": null,
+      "summary": "The narrow ravine called Kleidion (or Symbolongus in the transcript) where Samuel staked everything on a final battle, filling the valley to block Basil's advance. Basil found a small path around the Bulgarian lines — likened to Thermopylae — attacked from both sides, and won the decisive victory of the Bulgarian war, taking over 14,000 prisoners who were then blinded on his orders.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kleidion",
+      "image_url": null,
+      "transcript_lines": [[414, 431]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "event", "id": "battle-of-kleidion"}
+      ]
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "modern_name": "Athens",
+      "modern_country": "Greece",
+      "lat": 37.9838,
+      "lng": 23.7275,
+      "first_year": null,
+      "summary": "The city where Basil II ended his formal tour of the new Bulgarian province, attending a service in the Church of the Mother of God — better known as the Parthenon — to give thanks after the conquest.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens",
+      "image_url": null,
+      "transcript_lines": [[448, 449]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "parthenon"},
+        {"type": "event", "id": "submission-of-bulgaria-1018"}
+      ]
+    },
+    {
+      "id": "parthenon",
+      "name": "Parthenon (Church of the Mother of God)",
+      "modern_name": "Parthenon",
+      "modern_country": "Greece",
+      "lat": 37.9715,
+      "lng": 23.7267,
+      "first_year": null,
+      "summary": "Referred to by Brownworth as the \"Church of the Mother of God, better known as the Parthenon,\" where Basil II attended a service at the end of his Bulgarian campaign — indicating the building had been converted to Christian use by this period.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Parthenon",
+      "image_url": null,
+      "transcript_lines": [[448, 450]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "athens"},
+        {"type": "event", "id": "submission-of-bulgaria-1018"}
+      ]
+    },
+    {
+      "id": "sicily",
+      "name": "Sicily",
+      "modern_name": "Sicily",
+      "modern_country": "Italy",
+      "lat": 37.5999,
+      "lng": 14.0154,
+      "first_year": null,
+      "summary": "Mentioned at the end as the island reconquered by Belisarius in the 6th century and then lost to the Muslims in the 9th — the target of the invasion Basil II was planning when he fell ill and died on December 15, 1025.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sicily",
+      "image_url": null,
+      "transcript_lines": [[464, 466]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "event", "id": "death-of-basil-ii"}
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "modern_name": "Italy",
+      "modern_country": "Italy",
+      "lat": 42.5,
+      "lng": 12.5,
+      "first_year": null,
+      "summary": "Mentioned toward the end of the episode: the southern part of the peninsula had been inundated with Norman and Lombard invaders, and while Basil was busy in Bulgaria his generals in Italy had been driving them out. They suggested the invasion of Sicily as a next step, which Basil was planning before his death.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Italy",
+      "image_url": null,
+      "transcript_lines": [[461, 466]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "sicily"}
+      ]
+    },
+    {
+      "id": "asia-minor",
+      "name": "Asia Minor",
+      "modern_name": "Anatolia",
+      "modern_country": "Turkey",
+      "lat": 39.0,
+      "lng": 35.0,
+      "first_year": null,
+      "summary": "Repeatedly referenced as the primary source of the empire's soldiers and therefore strategically vital. Bardas Skleros conquered all of Asia Minor in his first rebellion; Basil II later broke the aristocratic landholding system there, redistributing land to the peasants who formed the backbone of the army — described as a revolutionary restructuring of Anatolia's economic and social order.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anatolia",
+      "image_url": null,
+      "transcript_lines": [[155, 156], [241, 242], [363, 376]],
+      "related": [
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "event", "id": "basil-land-reforms"}
+      ]
+    },
+    {
+      "id": "kiev",
+      "name": "Kiev",
+      "modern_name": "Kyiv",
+      "modern_country": "Ukraine",
+      "lat": 50.4501,
+      "lng": 30.5234,
+      "first_year": null,
+      "summary": "Home of Vladimir, Prince of Kiev, who provided Basil II with 6,000 Varangian soldiers in exchange for the hand of Basil's sister Anna and his conversion to Orthodoxy — a pivotal diplomatic and military deal that saved Basil's throne.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kyiv",
+      "image_url": null,
+      "transcript_lines": [[260, 261]],
+      "related": [
+        {"type": "person", "id": "vladimir-of-kiev"},
+        {"type": "event", "id": "varangian-alliance"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "rise-of-macedonian-dynasty",
+      "name": "Rise of the Macedonian Dynasty",
+      "year": 867,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "Mentioned in the episode opening as context: Basil I founded the magnificent Macedonian dynasty which oversaw the Byzantine Renaissance, culminating with Basil II. Brownworth notes that Basil I himself came to the throne by murdering his predecessor, and knew firsthand how a weak ruler provided temptation to ambitious generals.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macedonian_dynasty",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[5, 20]],
+      "related": [
+        {"type": "person", "id": "basil-i"},
+        {"type": "person", "id": "basil-ii"}
+      ]
+    },
+    {
+      "id": "reconquest-of-crete",
+      "name": "Byzantine Reconquest of Crete",
+      "year": 961,
+      "end_year": null,
+      "category": "battle",
+      "summary": "In one brilliant campaign, Nikephoros Phokas stormed the island of Crete and restored it to imperial control after 136 years of Muslim rule — described by Brownworth as the beginning of Phokas' extraordinary string of military victories and the turning of the tide against Islam.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_reconquest_of_Crete",
+      "image_url": null,
+      "location_id": "crete",
+      "transcript_lines": [[58, 61]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "place", "id": "crete"}
+      ]
+    },
+    {
+      "id": "sack-of-aleppo",
+      "name": "Sack of Aleppo and Campaign against Saif ad-Dawla",
+      "year": 962,
+      "end_year": null,
+      "category": "battle",
+      "summary": "In a single campaigning season, Nikephoros Phokas captured over 55 walled cities and sacked the capital of Aleppo, earning the nickname \"White Death of the Saracens.\" Saif ad-Dawla escaped only by scattering gold coins behind him as he fled and was so shaken he never troubled the empire again.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Aleppo_(962)",
+      "image_url": null,
+      "location_id": "aleppo",
+      "transcript_lines": [[62, 68]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "saif-ad-dawla"},
+        {"type": "place", "id": "aleppo"}
+      ]
+    },
+    {
+      "id": "reconquest-of-antioch",
+      "name": "Reconquest of Antioch",
+      "year": 969,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Described by Brownworth as the most spectacular victory of Nikephoros Phokas' reign and the crowning achievement of his eastern campaigns — the recovery of Antioch, the third city of the Roman Empire, which had fallen to the Muslims 332 years before during Heraclius' reign. Despite the magnitude of the triumph, Phokas returned to Constantinople to find himself pelted with stones and refuse, so deep was his domestic unpopularity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_reconquest_of_Antioch",
+      "image_url": null,
+      "location_id": "antioch",
+      "transcript_lines": [[83, 88]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "heraclius"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "murder-of-nikephoros-phokas",
+      "name": "Murder of Nikephoros II Phokas",
+      "year": 969,
+      "end_year": null,
+      "category": "political",
+      "summary": "On a cold, snowy December night, John Tzimiskes and a group of men crept into the emperor's bedroom and brutally killed him, a coup planned with Theophano and the chamberlain Basil. Brownworth emphasizes Theophano's miscalculation: she had expected to control the new emperor as she had the old, but John's first act after being crowned was to send her into exile.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nikephoros_II#Assassination",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[97, 109]],
+      "related": [
+        {"type": "person", "id": "nikephoros-ii-phokas"},
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "theophano"},
+        {"type": "person", "id": "basil-the-chamberlain"}
+      ]
+    },
+    {
+      "id": "russian-invasion-repelled-971",
+      "name": "Russian Invasion Repelled and Bulgaria Cleared",
+      "year": 971,
+      "end_year": null,
+      "category": "battle",
+      "summary": "John Tzimiskes repelled a massive Russian invasion and then invaded Bulgaria to expel the Russian overlord there — a consequence of Nikephoros Phokas' disastrous policy of inviting the Russians into Bulgaria in the first place — all while simultaneously dealing with the revolt of Bardas Skleros.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rus%E2%80%93Byzantine_War_(970%E2%80%93971)",
+      "image_url": null,
+      "location_id": "bulgaria",
+      "transcript_lines": [[114, 117]],
+      "related": [
+        {"type": "person", "id": "john-i-tzimiskes"},
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "place", "id": "bulgaria"}
+      ]
+    },
+    {
+      "id": "civil-war-skleros-first",
+      "name": "First Rebellion of Bardas Skleros",
+      "year": 976,
+      "end_year": 979,
+      "category": "political",
+      "summary": "After Tzimiskes' death, Bardas Skleros had his troops hail him as Basileus, captured the southern fleet, conquered all of Asia Minor, set up headquarters at Nicaea, and besieged Constantinople. The imperial fleet repulsed him with Greek fire, but he remained dangerous until the chamberlain Basil released the exiled Bardas Phokas, whose ensuing three-year civil war concluded with Skleros defeated in single combat and fleeing to the Saracens.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bardas_Sklerus#Revolt",
+      "image_url": null,
+      "location_id": "nicaea",
+      "transcript_lines": [[147, 188]],
+      "related": [
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "person", "id": "basil-the-chamberlain"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "nicaea"},
+        {"type": "place", "id": "asia-minor"},
+        {"type": "event", "id": "greek-fire-use-against-skleros"}
+      ]
+    },
+    {
+      "id": "greek-fire-use-against-skleros",
+      "name": "Imperial Fleet Repulses Skleros with Greek Fire",
+      "year": 977,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The imperial fleet, loyal to the emperor, sailed out against Bardas Skleros' captured fleet and using the invaluable Greek fire annihilated it — one of the key turning points in the first rebellion, though Skleros and his land army remained intact.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greek_fire",
+      "image_url": null,
+      "location_id": "golden-horn",
+      "transcript_lines": [[159, 162]],
+      "related": [
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "event", "id": "civil-war-skleros-first"}
+      ]
+    },
+    {
+      "id": "basil-deposes-chamberlain",
+      "name": "Basil II Deposes the Chamberlain",
+      "year": 985,
+      "end_year": null,
+      "category": "political",
+      "summary": "After years of watching and learning while the eunuch chamberlain Basil ran the government, the emperor struck — arresting and exiling the chamberlain, confiscating his property, and stripping even the great monastery he had built of all its possessions. Brownworth describes it as a bolt out of the blue, the moment Basil at last became free to act on his own.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[201, 205]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "basil-the-chamberlain"}
+      ]
+    },
+    {
+      "id": "samuel-raids-thrace",
+      "name": "Samuel's Invasion of Thrace",
+      "year": 986,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Tsar Samuel of Bulgaria, seeing Byzantium's greatest generals fighting each other, invaded Thrace, sold the population of its major city into slavery, and carried off the city's holiest relic — the bones of its major saint — to be installed in his capital's cathedral. The affront forced Basil II to march on Bulgaria for the first time.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "thrace",
+      "transcript_lines": [[216, 224]],
+      "related": [
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "thrace"},
+        {"type": "event", "id": "battle-of-trajans-gate"}
+      ]
+    },
+    {
+      "id": "battle-of-trajans-gate",
+      "name": "Battle of Trajan's Gate",
+      "year": 986,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Basil II's first Bulgarian campaign ended in humiliation when Samuel ambushed the Byzantine army in the narrow mountain pass of Trajan's Gate, nearly wiping it out after three weeks of harassment in unbearable summer heat. Brownworth says the defeat taught Basil never to walk into an ambush again, and that he vowed revenge — a vow that would take thirty years to fulfill.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Gates_of_Trajan",
+      "image_url": null,
+      "location_id": "trajans-gate",
+      "transcript_lines": [[224, 236]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "place", "id": "trajans-gate"},
+        {"type": "event", "id": "bulgarian-war"}
+      ]
+    },
+    {
+      "id": "civil-war-phokas-skleros",
+      "name": "Second Rebellion: Phokas and Skleros Unite Against Basil II",
+      "year": 987,
+      "end_year": 989,
+      "category": "political",
+      "summary": "Bardas Skleros returned from Baghdad with Caliph funding and found the Anatolian nobility ready to revolt against Basil. He and Bardas Phokas combined forces against the emperor, intending to split the empire between them — but Phokas treacherously arrested Skleros and advanced alone. Basil sought foreign help, found it in Vladimir of Kiev's Varangian soldiers, and crushed the rebellion.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bardas_Phokas_the_Younger#Revolt_987%E2%80%93989",
+      "image_url": null,
+      "location_id": "asia-minor",
+      "transcript_lines": [[237, 315]],
+      "related": [
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "person", "id": "bardas-skleros"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "vladimir-of-kiev"},
+        {"type": "event", "id": "varangian-alliance"},
+        {"type": "event", "id": "battle-of-abydos"}
+      ]
+    },
+    {
+      "id": "varangian-alliance",
+      "name": "Varangian Alliance with Vladimir of Kiev",
+      "year": 988,
+      "end_year": null,
+      "category": "political",
+      "summary": "With Bardas Phokas' forces camped across the Golden Horn, Basil II promised his sister Anna's hand and Vladimir of Kiev's conversion to Orthodoxy in exchange for 6,000 Varangian warriors. The moment the Varangians arrived, Basil slipped across the water at nightfall and attacked at dawn, with the Imperial Navy spraying Greek fire on the shoreside rebels while the Varangians butchered the rest.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rus%27-Byzantine_War_(988%E2%80%93989)",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[259, 275]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "vladimir-of-kiev"},
+        {"type": "person", "id": "anna-of-byzantium"},
+        {"type": "event", "id": "battle-of-abydos"},
+        {"type": "event", "id": "varangian-guard-founded"}
+      ]
+    },
+    {
+      "id": "battle-of-abydos",
+      "name": "Battle of Abydos (Defeat of Bardas Phokas)",
+      "year": 989,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The final confrontation between Basil II and Bardas Phokas. Basil's initial charge nearly broke the rebels; Phokas challenged Basil to single combat and charged on horseback — then collapsed, crumpled from his horse, and died of a stroke before ever reaching the emperor, with both armies watching. Brownworth calls it a clear sign of divine judgment; the rebels fled in panic and were mercilessly cut down.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Abydos_(989)",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[282, 298]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "bardas-phokas"},
+        {"type": "event", "id": "civil-war-phokas-skleros"},
+        {"type": "event", "id": "varangian-guard-founded"}
+      ]
+    },
+    {
+      "id": "varangian-guard-founded",
+      "name": "Founding of the Varangian Guard",
+      "year": 989,
+      "end_year": null,
+      "category": "political",
+      "summary": "Impressed by the Scandinavian Varangians in the defeat of Phokas, Basil II organized them into his personal bodyguard — the famous Varangian Guard. Brownworth notes they faithfully served the empire for 300 years, becoming legendary for their fierce battle axes and their loyalty to the throne (if not always its occupant), and that the most famous member was Harald Hardrada.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Varangian_Guard",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[298, 307]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "herald-hardrada"},
+        {"type": "event", "id": "varangian-alliance"}
+      ]
+    },
+    {
+      "id": "battle-of-stamford-bridge",
+      "name": "Battle of Stamford Bridge",
+      "year": 1066,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Referenced as the battle in England where Harald Hardrada — the most famous Varangian Guard member — was killed at the hands of Harold the last Saxon king, illustrating the far-reaching footprint of Byzantine imperial institutions in European history.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[305, 307]],
+      "related": [
+        {"type": "person", "id": "herald-hardrada"},
+        {"type": "person", "id": "harold-godwinson"},
+        {"type": "event", "id": "varangian-guard-founded"}
+      ]
+    },
+    {
+      "id": "earthquake-constantinople",
+      "name": "Earthquake Damages Constantinople and Hagia Sophia",
+      "year": 989,
+      "end_year": null,
+      "category": "natural",
+      "summary": "A massive earthquake destroyed numerous churches in Constantinople and even split the central dome of the Hagia Sophia — one of the trials heaped upon Basil II that Brownworth uses to underscore his unflinching determination, noting that Basil was not a man to be concerned with such things.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[319, 323]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "bulgarian-war",
+      "name": "Byzantine–Bulgarian War (Basil II's Thirty-Year Campaign)",
+      "year": 986,
+      "end_year": 1018,
+      "category": "battle",
+      "summary": "The defining military undertaking of Basil II's reign, spanning thirty years, from the humiliation at Trajan's Gate through to the final submission of the Bulgarian capital in 1018. Brownworth presents it as the product of Basil's relentless, methodical, lava-like strategy — endless drills, no gambles, winter and summer campaigns regardless of weather — gradually grinding down Samuel despite raids, Fatimid interruptions, and the mountainous terrain.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Bulgarian_wars",
+      "image_url": null,
+      "location_id": "bulgaria",
+      "transcript_lines": [[216, 439]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "place", "id": "bulgaria"},
+        {"type": "event", "id": "battle-of-trajans-gate"},
+        {"type": "event", "id": "fatimid-siege-of-antioch"},
+        {"type": "event", "id": "venetian-invasion-of-dalmatia"},
+        {"type": "event", "id": "battle-of-kleidion"},
+        {"type": "event", "id": "submission-of-bulgaria-1018"}
+      ]
+    },
+    {
+      "id": "fatimid-siege-of-antioch",
+      "name": "Fatimid Siege of Antioch",
+      "year": 995,
+      "end_year": null,
+      "category": "battle",
+      "summary": "In the fourth year of the Bulgarian war, the Fatimid Caliphate invaded Syria and besieged Antioch, bringing it close to surrender. Basil II, renowned for his glacial pace, moved with blinding speed — mounting his entire 40,000-man army on mules, one to ride and one for equipment — and covered 600 miles in 16 days, completely surprising the Fatimid army and cutting it to pieces.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate",
+      "image_url": null,
+      "location_id": "antioch",
+      "transcript_lines": [[349, 362]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "syria"},
+        {"type": "event", "id": "bulgarian-war"}
+      ]
+    },
+    {
+      "id": "basil-land-reforms",
+      "name": "Basil II's Land Reforms and Abolition of Patrician Privileges",
+      "year": 996,
+      "end_year": null,
+      "category": "political",
+      "summary": "Returning from the Antioch relief in a thoughtful mood after being wined and dined by the Anatolian aristocracy, Basil abolished traditional patrician land privileges, reducing many rich families to poverty and giving Asia Minor's peasants — the backbone of the army — access again to their ancestral lands. Brownworth describes it as breaking aristocratic power in one fell swoop and providing the empire with a wealth of recruits.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_II#Domestic_policies",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[363, 376]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "asia-minor"}
+      ]
+    },
+    {
+      "id": "venetian-invasion-of-dalmatia",
+      "name": "Venetian Invasion of Dalmatia",
+      "year": 1000,
+      "end_year": null,
+      "category": "political",
+      "summary": "Faced with an expanded Bulgarian threat after Samuel raided as far south as Corinth and conquered Albania and Bosnia, Basil II invited Venice to invade the Dalmatian coast in the name of the empire, solving two problems: protecting Byzantine cities and forcing Samuel into a two-front war. The Venetians were eager for the forests to provide timber for their navy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalmatia",
+      "image_url": null,
+      "location_id": "dalmatia",
+      "transcript_lines": [[380, 387]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "place", "id": "dalmatia"},
+        {"type": "place", "id": "venice"}
+      ]
+    },
+    {
+      "id": "fatimid-second-invasion",
+      "name": "Second Fatimid Invasion of Syria",
+      "year": 999,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Yet another Fatimid invasion of Syria recalled Basil II from his methodical Bulgarian campaign. Hurrying with his customary speed, he smashed the Muslim army so effectively that they hastily arranged for a ten-year peace — allowing him to return to Constantinople and prepare the final push into Bulgaria.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "syria",
+      "transcript_lines": [[387, 392]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "syria"},
+        {"type": "event", "id": "bulgarian-war"}
+      ]
+    },
+    {
+      "id": "zoe-embassy-to-otto",
+      "name": "Zoe Sent to Marry Otto III",
+      "year": 1001,
+      "end_year": null,
+      "category": "political",
+      "summary": "Basil II sent his niece Zoe to marry the Holy Roman Emperor Otto III, who dreamed of reuniting the two halves of the Roman Empire. Brownworth speculates that had the marriage taken place, the throne of Byzantium might have passed to Zoe on Basil's death and east and west could have been reunited — but Zoe arrived to find Otto already dead.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Otto_III,_Holy_Roman_Emperor#Marriage_proposals",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[393, 403]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "zoe"},
+        {"type": "person", "id": "otto-iii"}
+      ]
+    },
+    {
+      "id": "battle-of-kleidion",
+      "name": "Battle of Kleidion (Symbolongus) and Mass Blinding",
+      "year": 1014,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The decisive engagement of the Bulgarian war, fought in a narrow ravine. Like Thermopylae, Basil found a path around Samuel's blocking force and attacked from both sides, routing the Bulgarians and capturing over 14,000 prisoners. In his most notorious act, Basil ordered all 14,000 blinded, leaving one eye to every hundredth man so they could lead their companions back to Samuel — who collapsed in shock and died two days later when he saw the pathetic procession.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kleidion",
+      "image_url": null,
+      "location_id": "kleidion",
+      "transcript_lines": [[413, 432]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "place", "id": "kleidion"},
+        {"type": "event", "id": "bulgarian-war"},
+        {"type": "event", "id": "submission-of-bulgaria-1018"}
+      ]
+    },
+    {
+      "id": "submission-of-bulgaria-1018",
+      "name": "Formal Submission of Bulgaria to Byzantium",
+      "year": 1018,
+      "end_year": null,
+      "category": "political",
+      "summary": "Four years after Samuel's death, Bulgaria formally submitted in 1018 and Basil entered the gates of their capital — ending a lifetime of struggle that had begun when he was 28 and concluded when he was 60. Bulgaria became part of the empire for almost 200 years; Basil treated the conquered people generously, keeping taxes low, local leaders in place, and the aristocracy in high imperial offices.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Bulgarian_wars#Fall_of_the_First_Bulgarian_Empire",
+      "image_url": null,
+      "location_id": "bulgaria",
+      "transcript_lines": [[433, 449]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "samuel-of-bulgaria"},
+        {"type": "place", "id": "bulgaria"},
+        {"type": "place", "id": "athens"},
+        {"type": "event", "id": "battle-of-kleidion"},
+        {"type": "event", "id": "bulgarian-war"}
+      ]
+    },
+    {
+      "id": "death-of-basil-ii",
+      "name": "Death of Basil II",
+      "year": 1025,
+      "end_year": null,
+      "category": "political",
+      "summary": "Basil II fell ill while planning an invasion of Sicily and died on December 15, 1025, at three in the afternoon, in the great palace of Constantinople — nearly 65 years old in an age when life expectancy was 33. Brownworth frames his death as the end of an age, quoting Norwich: 'He died on the 15th of December. By the 16th, the decline had already begun.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_II",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[467, 503]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "john-julius-norwich"},
+        {"type": "person", "id": "constantine-viii"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "sicily"}
+      ]
+    }
+  ]
+}

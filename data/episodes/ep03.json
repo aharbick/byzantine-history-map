@@ -1,0 +1,1047 @@
+{
+  "episode": 3,
+  "title": "Constantine - Part 1",
+  "people": [
+    {
+      "id": "constantine-the-great",
+      "name": "Constantine",
+      "alt_names": ["Constantine I", "Constantine the Great", "Flavius Valerius Constantinus"],
+      "role": "Roman Emperor",
+      "birth_year": 272,
+      "death_year": 337,
+      "reign_start": 306,
+      "reign_end": 337,
+      "summary": "Brownworth calls Constantine the 'father of Byzantium,' saying seldom has one man had such an effect on history. He inherited a chaotic tetrarchic empire, fought his way to sole rule through a series of civil wars, and transformed it into a Christian, ordered state with himself as absolute ruler appointed by God. His conversion, dated by him to the Battle of the Milvian Bridge, marked a watershed moment in history.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[1, 237]],
+      "related": [
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "fausta"},
+        {"type": "person", "id": "crispus"},
+        {"type": "person", "id": "constantia"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "galerius"},
+        {"type": "event", "id": "battle-of-milvian-bridge"},
+        {"type": "event", "id": "constantine-crosses-alps"},
+        {"type": "event", "id": "edict-of-milan"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "york"},
+        {"type": "place", "id": "sofia"}
+      ]
+    },
+    {
+      "id": "diocletian",
+      "name": "Diocletian",
+      "alt_names": ["Gaius Aurelius Valerius Diocletianus"],
+      "role": "Roman Emperor",
+      "birth_year": 244,
+      "death_year": 311,
+      "reign_start": 284,
+      "reign_end": 305,
+      "summary": "Brownworth refers to Diocletian as the 'grandfather of Byzantium' and notes his surprising abdication. His Tetrarchy system, intended to bring peace and prosperity, instead degenerated into civil war. He was called out of retirement to try to stabilize the empire with a new official tetrarchy, but even that solution did not survive the year.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian",
+      "portrait_url": null,
+      "transcript_lines": [[3, 7], [21, 22], [81, 94]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "tetrarchy-established"},
+        {"type": "event", "id": "diocletian-called-out-of-retirement"}
+      ]
+    },
+    {
+      "id": "constantius-chlorus",
+      "name": "Constantius Chlorus",
+      "alt_names": ["Constantius I", "Constantius Cloris", "Flavius Valerius Constantius"],
+      "role": "Roman Emperor (Augustus of the West)",
+      "birth_year": 250,
+      "death_year": 306,
+      "reign_start": 293,
+      "reign_end": 306,
+      "summary": "Constantine's father and Augustus of the West under the Tetrarchy. His nickname 'Chlorus' (Pale) reflected his declining health — he was likely dying from leukemia and unable to prevent Galerius from installing his own candidates. He died in York the spring after his campaign in Britain against the Picts, having just earned the title Britannicus Maximus.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantius_Chlorus",
+      "portrait_url": null,
+      "transcript_lines": [[23, 24], [27, 40]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "galerius"},
+        {"type": "place", "id": "york"},
+        {"type": "place", "id": "britain"},
+        {"type": "event", "id": "death-of-constantius-chlorus"}
+      ]
+    },
+    {
+      "id": "maximian",
+      "name": "Maximian",
+      "alt_names": ["Marcus Aurelius Valerius Maximianus"],
+      "role": "Roman Emperor (Augustus)",
+      "birth_year": 250,
+      "death_year": 310,
+      "reign_start": 286,
+      "reign_end": 305,
+      "summary": "Diocletian's old co-emperor who 'never really wanted to retire in the first place.' He was repeatedly called back to power — first by his son Maxentius, then on his own initiative — and repeatedly failed. After attempting to overthrow his own son and then fleeing to Constantine, his son-in-law, he eventually declared Constantine dead and proclaimed himself emperor, only to be cornered at Marseilles and forced to commit suicide.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maximian",
+      "portrait_url": null,
+      "transcript_lines": [[57, 62], [76, 103]],
+      "related": [
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "fausta"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "marseilles"},
+        {"type": "event", "id": "maximian-suicide"}
+      ]
+    },
+    {
+      "id": "maxentius",
+      "name": "Maxentius",
+      "alt_names": ["Marcus Aurelius Valerius Maxentius"],
+      "role": "Roman Emperor (usurper)",
+      "birth_year": 278,
+      "death_year": 312,
+      "reign_start": 306,
+      "reign_end": 312,
+      "summary": "Son of Maximian and the other imperial son passed over by the Tetrarchy's succession. He seized Rome, declared it tax-free, and used massive well-placed bribes to defeat both Severus and Galerius. His popularity in Rome later collapsed due to his pursuit of other men's wives, his ambivalent stance toward Christians, and the brutal killing of thousands of protesters. He died at the Battle of the Milvian Bridge when the pontoon bridge he had built collapsed and he was swept into the Tiber.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maxentius",
+      "portrait_url": null,
+      "transcript_lines": [[55, 76], [128, 153]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "fausta"},
+        {"type": "person", "id": "severus-ii"},
+        {"type": "person", "id": "galerius"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "milvian-bridge"},
+        {"type": "event", "id": "battle-of-milvian-bridge"}
+      ]
+    },
+    {
+      "id": "galerius",
+      "name": "Galerius",
+      "alt_names": ["Gaius Galerius Valerius Maximianus"],
+      "role": "Roman Emperor (Augustus of the East)",
+      "birth_year": 258,
+      "death_year": 311,
+      "reign_start": 293,
+      "reign_end": 311,
+      "summary": "The eastern Augustus who despised Constantius Chlorus and dominated the early Tetrarchy. He incited Roman hatred by trying to tax the city of Rome itself, and his attempts to crush Maxentius failed when his army succumbed to bribes. By the end he was hopelessly obese and dying from a horrendous cancer; in agony, he suspended all persecutions of Christians and ordered churches built and prayers said on his behalf, but did not survive to hear them.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Galerius",
+      "portrait_url": null,
+      "transcript_lines": [[25, 30], [47, 48], [66, 75], [115, 119]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "person", "id": "maximinus-daia"},
+        {"type": "person", "id": "severus-ii"},
+        {"type": "person", "id": "licinius"},
+        {"type": "event", "id": "death-of-galerius"}
+      ]
+    },
+    {
+      "id": "severus-ii",
+      "name": "Severus",
+      "alt_names": ["Severus II", "Flavius Valerius Severus"],
+      "role": "Roman Emperor (Caesar, then Augustus of the West)",
+      "birth_year": null,
+      "death_year": 307,
+      "reign_start": 305,
+      "reign_end": 307,
+      "summary": "Galerius's chosen Caesar for the West, installed over Constantine's claim. He was sent to crush Maxentius in Italy but disaster struck when his army melted away at the very walls of Rome, bribed by Maxentius. He fled to Ravenna, was captured, abdicated, and killed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Severus_II",
+      "portrait_url": null,
+      "transcript_lines": [[24, 25], [66, 72]],
+      "related": [
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "maximinus-daia",
+      "name": "Maximinus Daia",
+      "alt_names": ["Maximinus Dio", "Galerius Valerius Maximinus"],
+      "role": "Roman Emperor (Caesar, then Augustus of the East)",
+      "birth_year": 270,
+      "death_year": 313,
+      "reign_start": 305,
+      "reign_end": 313,
+      "summary": "The Caesar of the East under Diocletian's reorganized Tetrarchy, and a zealous pagan who vowed to eradicate Christianity if the gods gave him victory. He invaded Licinius's territory with 70,000 troops and seized Byzantium, but was soundly defeated despite his numerical advantage. Disguised as a slave he fled but chose a slow poison to commit suicide, which drove him mad — he ate handfuls of dirt and took four agonizing days to die.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maximinus_II",
+      "portrait_url": null,
+      "transcript_lines": [[25, 26], [88, 89], [169, 178]],
+      "related": [
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "licinius"},
+        {"type": "place", "id": "byzantium"},
+        {"type": "event", "id": "licinius-defeats-maximinus"}
+      ]
+    },
+    {
+      "id": "licinius",
+      "name": "Licinius",
+      "alt_names": ["Valerius Licinianus Licinius"],
+      "role": "Roman Emperor (Augustus of the East)",
+      "birth_year": 263,
+      "death_year": 325,
+      "reign_start": 308,
+      "reign_end": 324,
+      "summary": "Picked as the new Augustus of the West by Diocletian at the conference of emperors, Licinius survived and eventually controlled the East. He joined Constantine in issuing the Edict of Milan and sealed their alliance with the marriage of Constantine's sister Constantia. Despite being at best a lukewarm supporter of Christianity, he became increasingly suspicious of Christians as a fifth column, executed bishops, and destroyed churches — giving Constantine the pretext to invade and ultimately defeat him. He surrendered on condition his life be spared, was sent into comfortable exile, and was then hanged months later.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licinius",
+      "portrait_url": null,
+      "transcript_lines": [[87, 88], [119, 125], [161, 221]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "constantia"},
+        {"type": "person", "id": "maximinus-daia"},
+        {"type": "person", "id": "valens-co-emperor"},
+        {"type": "event", "id": "edict-of-milan"},
+        {"type": "event", "id": "licinius-defeats-maximinus"},
+        {"type": "event", "id": "battle-on-bosphorus"},
+        {"type": "place", "id": "byzantium"}
+      ]
+    },
+    {
+      "id": "fausta",
+      "name": "Fausta",
+      "alt_names": ["Flavia Maxima Fausta"],
+      "role": "Roman Empress (wife of Constantine)",
+      "birth_year": 289,
+      "death_year": 326,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Daughter of Maximian and sister of Maxentius, given in marriage to Constantine as part of Maxentius's alliance-building with his fellow emperor of shaky legitimacy. Brownworth closes the episode by noting the next lecture will address whether a man who could kill his own wife and son can be seen as a protector of Christianity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fausta",
+      "portrait_url": null,
+      "transcript_lines": [[63, 65], [233, 233]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "crispus"}
+      ]
+    },
+    {
+      "id": "constantia",
+      "name": "Constantia",
+      "alt_names": ["Flavia Julia Constantia"],
+      "role": "Roman princess, wife of Licinius",
+      "birth_year": 293,
+      "death_year": 330,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Constantine's sister, given in marriage to Licinius to seal the new friendship between the two emperors after their meeting following the Battle of the Milvian Bridge.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantia_(wife_of_Licinius)",
+      "portrait_url": null,
+      "transcript_lines": [[165, 166]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"}
+      ]
+    },
+    {
+      "id": "crispus",
+      "name": "Crispus",
+      "alt_names": ["Flavius Julius Crispus"],
+      "role": "Caesar, eldest son of Constantine",
+      "birth_year": 300,
+      "death_year": 326,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Constantine's eldest son, described by Brownworth as energetic, brilliant, and even more well-liked than his father. He is mentioned as part of the bright future that seemed to await Constantine at the end of the civil wars, though the next episode will address his killing.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crispus",
+      "portrait_url": null,
+      "transcript_lines": [[226, 228], [233, 233]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "fausta"}
+      ]
+    },
+    {
+      "id": "valens-co-emperor",
+      "name": "Valens",
+      "alt_names": ["Aurelius Valerius Valens"],
+      "role": "Co-emperor under Licinius",
+      "birth_year": null,
+      "death_year": 317,
+      "reign_start": 316,
+      "reign_end": 317,
+      "summary": "The commander of Licinius's Danube forces, appointed as co-emperor in desperation after Constantine defeated Licinius's main army in 316. He managed to fight Constantine to a standstill in Thrace, but when Licinius came to terms with Constantine, Valens was executed as the price of the treaty — a fate Brownworth notes one 'can't help but sympathize with.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valens_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[193, 200]],
+      "related": [
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "thrace"}
+      ]
+    },
+    {
+      "id": "lactantius",
+      "name": "Lactantius",
+      "alt_names": ["Lucius Caecilius Firmianus Lactantius"],
+      "role": "Christian historian and apologist",
+      "birth_year": 250,
+      "death_year": 325,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A historian cited by Brownworth as the source for Constantine's famous vision before the Battle of the Milvian Bridge, probably writing one or two years after the actual event. Lactantius records that the vision consisted of a private dream telling Constantine to mark his soldiers with the chi-rho, the first two letters of Christ's name in Greek.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lactantius",
+      "portrait_url": null,
+      "transcript_lines": [[137, 139]],
+      "related": [
+        {"type": "event", "id": "battle-of-milvian-bridge"},
+        {"type": "event", "id": "constantine-vision"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "rome",
+      "name": "Rome",
+      "modern_name": "Rome",
+      "modern_country": "Italy",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "first_year": null,
+      "summary": "Though of declining importance as a capital, Rome still held certain hereditary rights including an exemption from all taxes. Maxentius seized it, declared it tax-free, and held it as his power base, defended by bribes rather than an army. Constantine entered it triumphantly after the Battle of the Milvian Bridge, and it was here that his triumphal arch, still standing just outside the Colosseum, made careful non-Christian reference to divinity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
+      "image_url": null,
+      "transcript_lines": [[51, 59], [125, 160]],
+      "related": [
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "battle-of-milvian-bridge"},
+        {"type": "place", "id": "milvian-bridge"},
+        {"type": "place", "id": "colosseum"}
+      ]
+    },
+    {
+      "id": "york",
+      "name": "York",
+      "modern_name": "York",
+      "modern_country": "United Kingdom",
+      "lat": 53.9590,
+      "lng": -1.0815,
+      "first_year": 71,
+      "summary": "The Roman city of Eboracum in Britain where Constantius Chlorus died the spring after his campaign against the Picts. It was here that Constantine's father's troops, who had instantly admired the young Constantine, hailed him as emperor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/York",
+      "image_url": null,
+      "transcript_lines": [[40, 46]],
+      "related": [
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "death-of-constantius-chlorus"},
+        {"type": "event", "id": "constantine-proclaimed-emperor"}
+      ]
+    },
+    {
+      "id": "britain",
+      "name": "Britain",
+      "modern_name": "Great Britain",
+      "modern_country": "United Kingdom",
+      "lat": 52.3555,
+      "lng": -1.1743,
+      "first_year": null,
+      "summary": "The province where Constantius Chlorus was campaigning against the Picts when Constantine joined him in 305. Constantine seems to have instantly won the admiration of his father's troops during this campaign, and it was here that the soldiers hailed him as emperor after his father's death in York.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Britain",
+      "image_url": null,
+      "transcript_lines": [[36, 40]],
+      "related": [
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "york"}
+      ]
+    },
+    {
+      "id": "ravenna",
+      "name": "Ravenna",
+      "modern_name": "Ravenna",
+      "modern_country": "Italy",
+      "lat": 44.4149,
+      "lng": 12.2017,
+      "first_year": null,
+      "summary": "The city to which Severus fled after his army was bribed away from him at the walls of Rome. He was captured there, forced to abdicate, and killed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ravenna",
+      "image_url": null,
+      "transcript_lines": [[71, 72]],
+      "related": [
+        {"type": "person", "id": "severus-ii"},
+        {"type": "person", "id": "maxentius"}
+      ]
+    },
+    {
+      "id": "marseilles",
+      "name": "Marseilles",
+      "modern_name": "Marseille",
+      "modern_country": "France",
+      "lat": 43.2965,
+      "lng": 5.3698,
+      "first_year": null,
+      "summary": "The city to which Maximian fled after declaring Constantine dead and proclaiming himself emperor. He arrived too late to realize that the city's loyalty was with Constantine, not him; they opened their gates to Constantine, and Maximian was forced to commit suicide.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marseille",
+      "image_url": null,
+      "transcript_lines": [[100, 102]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "maximian-suicide"}
+      ]
+    },
+    {
+      "id": "alps",
+      "name": "The Alps",
+      "modern_name": "Alps",
+      "modern_country": null,
+      "lat": 46.5,
+      "lng": 9.0,
+      "first_year": null,
+      "summary": "The mountain range Constantine crossed in 312 when he invaded Italy to seize Maxentius's territory, the crossing being a major military undertaking that led to the sack of Turin and Verona and ultimately the Battle of the Milvian Bridge.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alps",
+      "image_url": null,
+      "transcript_lines": [[125, 126]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "constantine-crosses-alps"}
+      ]
+    },
+    {
+      "id": "turin",
+      "name": "Turin",
+      "modern_name": "Turin",
+      "modern_country": "Italy",
+      "lat": 45.0703,
+      "lng": 7.6869,
+      "first_year": null,
+      "summary": "One of the Italian cities sacked by Constantine during his invasion of Italy in 312 as he advanced on Rome.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Turin",
+      "image_url": null,
+      "transcript_lines": [[126, 127]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "constantine-crosses-alps"}
+      ]
+    },
+    {
+      "id": "verona",
+      "name": "Verona",
+      "modern_name": "Verona",
+      "modern_country": "Italy",
+      "lat": 45.4384,
+      "lng": 10.9916,
+      "first_year": null,
+      "summary": "One of the Italian cities sacked by Constantine during his advance on Rome in 312.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verona",
+      "image_url": null,
+      "transcript_lines": [[126, 127]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "constantine-crosses-alps"}
+      ]
+    },
+    {
+      "id": "saxa-rubra",
+      "name": "Saxa Rubra",
+      "modern_name": "Prima Porta / Grotta Rossa area",
+      "modern_country": "Italy",
+      "lat": 42.0000,
+      "lng": 12.4833,
+      "first_year": null,
+      "summary": "The site of the main engagement before the Battle of the Milvian Bridge, described as 'Red Rocks,' located seven or eight miles northeast of Rome. It was here that Constantine had his famous vision and routed Maxentius's forces, chasing them back to the Milvian Bridge.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saxa_Rubra",
+      "image_url": null,
+      "transcript_lines": [[135, 141]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "event", "id": "battle-of-milvian-bridge"},
+        {"type": "event", "id": "constantine-vision"}
+      ]
+    },
+    {
+      "id": "milvian-bridge",
+      "name": "Milvian Bridge",
+      "modern_name": "Ponte Milvio",
+      "modern_country": "Italy",
+      "lat": 41.9333,
+      "lng": 12.4667,
+      "first_year": null,
+      "summary": "A narrow causeway across the Tiber near Rome, and the site of Maxentius's defeat. Brownworth describes it as too narrow to accommodate an entire army; Maxentius had built a pontoon bridge alongside it for orderly retreat, but in the chaos of the rout his engineers pulled the bolts too early, the structure collapsed, and the old bridge proved equally fatal to the panicked army. Maxentius himself appears to have been swept off or crushed, and his corpse was found washed up on the shore.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milvian_Bridge",
+      "image_url": null,
+      "transcript_lines": [[141, 153]],
+      "related": [
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "battle-of-milvian-bridge"},
+        {"type": "place", "id": "tiber-river"}
+      ]
+    },
+    {
+      "id": "tiber-river",
+      "name": "Tiber River",
+      "modern_name": "Tiber",
+      "modern_country": "Italy",
+      "lat": 41.9000,
+      "lng": 12.4833,
+      "first_year": null,
+      "summary": "The river crossed by the Milvian Bridge, into which half of Maxentius's army was cast when the pontoon bridge collapsed and the old Milvian Bridge became a death trap for the panicked soldiers. Maxentius's corpse was found washed up on its shore.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiber",
+      "image_url": null,
+      "transcript_lines": [[141, 153]],
+      "related": [
+        {"type": "place", "id": "milvian-bridge"},
+        {"type": "event", "id": "battle-of-milvian-bridge"}
+      ]
+    },
+    {
+      "id": "colosseum",
+      "name": "Colosseum",
+      "modern_name": "Colosseum",
+      "modern_country": "Italy",
+      "lat": 41.8902,
+      "lng": 12.4922,
+      "first_year": 80,
+      "summary": "Referenced as a landmark beside which Constantine's triumphal arch still stands, where Constantine made careful non-Christian reference to divinity after his victory at the Milvian Bridge.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colosseum",
+      "image_url": null,
+      "transcript_lines": [[159, 160]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "constantine-triumphal-arch"}
+      ]
+    },
+    {
+      "id": "byzantium",
+      "name": "Byzantium",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": -657,
+      "summary": "The small town seized by Maximinus Daia when he invaded Licinius's territory with 70,000 troops. Its capture is presented as the opening move of the conflict between Licinius and Maximinus Daia, which Brownworth frames as a battle of Christian vs. pagan.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantium",
+      "image_url": null,
+      "transcript_lines": [[170, 171]],
+      "related": [
+        {"type": "person", "id": "maximinus-daia"},
+        {"type": "person", "id": "licinius"},
+        {"type": "event", "id": "licinius-defeats-maximinus"}
+      ]
+    },
+    {
+      "id": "thrace",
+      "name": "Thrace",
+      "modern_name": "Thrace (parts of modern Greece, Bulgaria, Turkey)",
+      "modern_country": null,
+      "lat": 41.5,
+      "lng": 26.0,
+      "first_year": null,
+      "summary": "The region where Valens, Licinius's newly appointed co-emperor, managed to fight Constantine to a standstill after Constantine's invasion of Licinius's territory in 316.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thrace",
+      "image_url": null,
+      "transcript_lines": [[195, 197]],
+      "related": [
+        {"type": "person", "id": "valens-co-emperor"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"}
+      ]
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia (Serdica)",
+      "modern_name": "Sofia",
+      "modern_country": "Bulgaria",
+      "lat": 42.6977,
+      "lng": 23.3219,
+      "first_year": null,
+      "summary": "The city to which Constantine moved his capital eastward, described by Brownworth as a 'curious choice' for an emperor whose domain stretched to the Atlantic, and justifiable only if Constantine viewed Licinius as a greater threat than any barbarian or western usurper.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Serdica",
+      "image_url": null,
+      "transcript_lines": [[203, 205]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "bosphorus",
+      "name": "Bosphorus",
+      "modern_name": "Bosphorus Strait",
+      "modern_country": "Turkey",
+      "lat": 41.1,
+      "lng": 29.05,
+      "first_year": null,
+      "summary": "The site of the decisive battle in which Constantine soundly defeated Licinius in 324, ending the civil wars and leaving Constantine as sole ruler of the Roman Empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bosphorus",
+      "image_url": null,
+      "transcript_lines": [[217, 218]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"},
+        {"type": "event", "id": "battle-on-bosphorus"}
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "modern_name": "Italy",
+      "modern_country": "Italy",
+      "lat": 41.8719,
+      "lng": 12.5674,
+      "first_year": null,
+      "summary": "The territory controlled by Maxentius that Constantine shrewdly concluded belonged theoretically to Licinius, so he could seize it for himself. Both Severus and Galerius had previously invaded Italy only to have their armies bribed away by Maxentius.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Italia_(Roman_province)",
+      "image_url": null,
+      "transcript_lines": [[66, 76], [123, 127]],
+      "related": [
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "severus-ii"},
+        {"type": "person", "id": "galerius"}
+      ]
+    },
+    {
+      "id": "balkans",
+      "name": "The Balkans",
+      "modern_name": "Balkans",
+      "modern_country": null,
+      "lat": 43.0,
+      "lng": 22.0,
+      "first_year": null,
+      "summary": "The region heavily granted to Constantine under the treaty with Licinius after the 316 campaign, following Valens's fight to a standstill in Thrace.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balkans",
+      "image_url": null,
+      "transcript_lines": [[199, 200]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "tetrarchy-established",
+      "name": "Establishment of the Tetrarchy",
+      "year": 293,
+      "end_year": null,
+      "category": "political",
+      "summary": "Diocletian's system of four co-rulers — two senior Augusti and two junior Caesars — intended to usher in an age of peace and prosperity. Instead, Brownworth says, it degenerated into full-blown civil war with up to four sides at once. Constantine was born into this confusing world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tetrarchy",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[14, 20]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "constantius-chlorus"}
+      ]
+    },
+    {
+      "id": "abdication-of-diocletian-and-maximian",
+      "name": "Abdication of Diocletian and Maximian",
+      "year": 305,
+      "end_year": null,
+      "category": "political",
+      "summary": "Both senior Augusti abdicated, appointing Galerius and Constantius as the new senior emperors and Maximinus Daia and Severus as the new Caesars. The fatal flaw, Brownworth notes, was that the plan ignored the ambitious sons of Constantius and Maximian who were passed over.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tetrarchy#Abdication_of_Diocletian_and_Maximian",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[21, 33]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "person", "id": "severus-ii"},
+        {"type": "person", "id": "maximinus-daia"},
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "pict-campaign-305",
+      "name": "Campaign Against the Picts (305)",
+      "year": 305,
+      "end_year": 306,
+      "category": "battle",
+      "summary": "Constantine joined his father Constantius Chlorus in Britain to fight the Picts in 305. They were successful together, and Constantius earned the title Britannicus Maximus, but he was too sick to enjoy it and died the following spring in York.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pictish_people",
+      "image_url": null,
+      "location_id": "britain",
+      "transcript_lines": [[35, 41]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "place", "id": "britain"},
+        {"type": "place", "id": "york"}
+      ]
+    },
+    {
+      "id": "death-of-constantius-chlorus",
+      "name": "Death of Constantius Chlorus",
+      "year": 306,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "Constantius Chlorus died in York in the spring of 306, leaving Constantine without a legitimate claim to power. The army, which had already been won over by Constantine, hailed him as emperor without waiting for instructions from anyone, setting off a new round of civil conflict.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantius_Chlorus",
+      "image_url": null,
+      "location_id": "york",
+      "transcript_lines": [[39, 46]],
+      "related": [
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "york"},
+        {"type": "event", "id": "constantine-proclaimed-emperor"}
+      ]
+    },
+    {
+      "id": "constantine-proclaimed-emperor",
+      "name": "Army Proclaims Constantine Emperor",
+      "year": 306,
+      "end_year": null,
+      "category": "political",
+      "summary": "After Constantius's death in York, his troops hailed Constantine as emperor without waiting for instructions. Galerius was furious but the deed was done; he mitigated the damage by confirming Constantine only as Caesar, not Augustus.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great#Rise_to_power",
+      "image_url": null,
+      "location_id": "york",
+      "transcript_lines": [[44, 48]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "galerius"},
+        {"type": "place", "id": "york"}
+      ]
+    },
+    {
+      "id": "maxentius-seizes-rome",
+      "name": "Maxentius Seizes Rome",
+      "year": 306,
+      "end_year": null,
+      "category": "political",
+      "summary": "Maxentius, also passed over in the Tetrarchic succession, moved into Rome, declared it tax-free, and was proclaimed emperor to cheering crowds. He then recalled his father Maximian as co-emperor and allied with Constantine by giving him his sister Fausta in marriage.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maxentius",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[55, 65]],
+      "related": [
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "fausta"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "severus-defeated-by-maxentius",
+      "name": "Defeat and Death of Severus",
+      "year": 307,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Galerius sent Severus to crush Maxentius in Italy, but Severus's army melted away at the very walls of Rome due to massive, well-placed bribes from Maxentius. Severus fled to Ravenna, was captured, forced to abdicate, and killed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Severus_II",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[66, 72]],
+      "related": [
+        {"type": "person", "id": "severus-ii"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "galerius"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "ravenna"}
+      ]
+    },
+    {
+      "id": "galerius-invades-italy",
+      "name": "Galerius Invades Italy",
+      "year": 307,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Galerius, deciding to handle the matter himself, invaded Italy. His army proved just as susceptible to Maxentius's bribes, and he barely escaped Italy alive.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maxentius#Conflict_with_Galerius",
+      "image_url": null,
+      "location_id": "italy",
+      "transcript_lines": [[72, 75]],
+      "related": [
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "place", "id": "italy"}
+      ]
+    },
+    {
+      "id": "maximian-attempts-overthrow-of-maxentius",
+      "name": "Maximian Attempts to Overthrow Maxentius",
+      "year": 308,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "Maximian, probably jealous at having to share power with his son, attempted to overthrow Maxentius. He botched the attempt and fled to his son-in-law Constantine.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maximian",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[76, 80]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "diocletian-called-out-of-retirement",
+      "name": "Diocletian Called Out of Retirement",
+      "year": 308,
+      "end_year": null,
+      "category": "political",
+      "summary": "The surviving emperors called Diocletian out of retirement to stabilize the situation. His solution was a new official Tetrarchy, with Licinius as the new western Augustus, and Constantine confirmed as Caesar. It did not survive the year.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Conference_of_Carnuntum",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[81, 94]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "maximian"},
+        {"type": "event", "id": "tetrarchy-established"}
+      ]
+    },
+    {
+      "id": "maximian-suicide",
+      "name": "Maximian's Forced Suicide",
+      "year": 310,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "Taking advantage of Constantine's absence, Maximian declared him dead and proclaimed himself emperor. Constantine was very much alive and pursued him; Maximian fled to Marseilles, but the city opened its gates to Constantine, and Maximian was forced to commit suicide. Brownworth notes the killing of his father-in-law affected Constantine deeply and drew him toward monotheism.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maximian#Death",
+      "image_url": null,
+      "location_id": "marseilles",
+      "transcript_lines": [[95, 108]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "marseilles"}
+      ]
+    },
+    {
+      "id": "death-of-galerius",
+      "name": "Death of Galerius",
+      "year": 311,
+      "end_year": null,
+      "category": "political",
+      "summary": "Galerius, by then hopelessly obese and dying from a horrendous cancer, suspended all persecutions of Christians and ordered churches built and prayers said on his behalf, but did not survive long enough to hear them. His death triggered a showdown between Licinius and Maximinus Daia.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Galerius#Edict_of_Serdica",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[115, 119]],
+      "related": [
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "maximinus-daia"},
+        {"type": "event", "id": "licinius-defeats-maximinus"}
+      ]
+    },
+    {
+      "id": "constantine-crosses-alps",
+      "name": "Constantine Crosses the Alps",
+      "year": 312,
+      "end_year": null,
+      "category": "battle",
+      "summary": "In 312, Constantine crossed the Alps and invaded Italy, shrewdly having concluded that Maxentius's territory technically belonged to Licinius and he could keep it for himself. He sacked Turin and Verona before appearing outside Rome on October 28th.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great#Civil_war_with_Maxentius",
+      "image_url": null,
+      "location_id": "alps",
+      "transcript_lines": [[122, 127]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "place", "id": "alps"},
+        {"type": "place", "id": "turin"},
+        {"type": "place", "id": "verona"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "constantine-vision",
+      "name": "Constantine's Vision at Saxa Rubra",
+      "year": 312,
+      "end_year": null,
+      "category": "religious",
+      "summary": "At Saxa Rubra (Red Rocks), seven or eight miles northeast of Rome, Constantine had his famous vision. According to historian Lactantius, writing one or two years after the event, it consisted of a private dream telling Constantine to mark his soldiers with the chi-rho, the first two letters of Christ's name in Greek. Armed with a new certainty of divine favor, he routed Maxentius.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chi_Rho#Constantine",
+      "image_url": null,
+      "location_id": "saxa-rubra",
+      "transcript_lines": [[135, 140]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "lactantius"},
+        {"type": "place", "id": "saxa-rubra"},
+        {"type": "event", "id": "battle-of-milvian-bridge"}
+      ]
+    },
+    {
+      "id": "battle-of-milvian-bridge",
+      "name": "Battle of the Milvian Bridge",
+      "year": 312,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Constantine routed Maxentius at Saxa Rubra and chased him back to the Milvian Bridge on October 28, 312. Maxentius's pontoon bridge collapsed when engineers pulled the bolts too early; the panicked army was crushed or thrown off the old Milvian Bridge. Maxentius drowned in the Tiber. Brownworth calls this 'a watershed moment in history,' marking the beginning of Constantine's active protection of Christianity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Milvian_Bridge",
+      "image_url": null,
+      "location_id": "milvian-bridge",
+      "transcript_lines": [[140, 156]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "maxentius"},
+        {"type": "place", "id": "milvian-bridge"},
+        {"type": "place", "id": "tiber-river"},
+        {"type": "place", "id": "saxa-rubra"},
+        {"type": "event", "id": "constantine-vision"}
+      ]
+    },
+    {
+      "id": "constantine-triumphal-arch",
+      "name": "Dedication of Constantine's Triumphal Arch",
+      "year": 315,
+      "end_year": null,
+      "category": "cultural",
+      "summary": "Constantine's triumphal arch, still standing just outside the Colosseum, made no mention of Christ after his victory at the Milvian Bridge, saying only that he was 'instinct with divinity.' Brownworth uses this as evidence of Constantine's careful political navigation between paganism and Christianity in the immediate aftermath of his conversion.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arch_of_Constantine",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[159, 161]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "colosseum"}
+      ]
+    },
+    {
+      "id": "edict-of-milan",
+      "name": "Edict of Milan",
+      "year": 313,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Constantine and Licinius met and issued an edict of toleration worded very carefully, making no mention of a particular god but speaking of 'reverence for the deity' and 'whatsoever divinity dwells in heaven.' They then issued another proclamation giving Christianity full legal recognition across the empire. The two emperors sealed their alliance with the marriage of Licinius and Constantine's sister Constantia.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edict_of_Milan",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[161, 168]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "constantia"}
+      ]
+    },
+    {
+      "id": "licinius-defeats-maximinus",
+      "name": "Licinius Defeats Maximinus Daia",
+      "year": 313,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Maximinus Daia invaded Licinius's territory with 70,000 troops and seized Byzantium, fighting under the pagan banner while Licinius fought under the cross. Despite being heavily outnumbered, Licinius pulled off a stunning victory. Maximinus Daia, disguised as a slave, fled and chose a slow poison to commit suicide — it drove him mad and took four agonizing days to kill him. Licinius then celebrated with an unchristian bloodbath of anyone related to a former emperor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Tzirallum",
+      "image_url": null,
+      "location_id": "byzantium",
+      "transcript_lines": [[169, 181]],
+      "related": [
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "maximinus-daia"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "severus-ii"},
+        {"type": "place", "id": "byzantium"}
+      ]
+    },
+    {
+      "id": "constantine-invades-east-316",
+      "name": "Constantine Invades the East (316)",
+      "year": 316,
+      "end_year": null,
+      "category": "battle",
+      "summary": "On the dubious pretext that Licinius had refused to appoint one of his candidates as Caesar, Constantine invaded and swept all before him, defeating Licinius's much larger army. Licinius fled east and appointed Valens as co-emperor in desperation; Valens fought Constantine to a standstill in Thrace. The resulting treaty heavily favored Constantine, granting him most of the Balkans; Valens was executed as the price of peace.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_Constantine_and_Licinius_(316%E2%80%93317)",
+      "image_url": null,
+      "location_id": "thrace",
+      "transcript_lines": [[190, 200]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "valens-co-emperor"},
+        {"type": "place", "id": "thrace"},
+        {"type": "place", "id": "balkans"}
+      ]
+    },
+    {
+      "id": "constantine-moves-capital-to-sofia",
+      "name": "Constantine Moves Capital East to Sofia",
+      "year": 317,
+      "end_year": null,
+      "category": "political",
+      "summary": "Constantine moved his capital east to modern Sofia, a curious choice Brownworth says was justifiable only if Constantine considered Licinius more of a threat than any barbarian tribe or western usurper. From there he set himself up as protector of Christians everywhere.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Serdica",
+      "image_url": null,
+      "location_id": "sofia",
+      "transcript_lines": [[203, 206]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "sofia"}
+      ]
+    },
+    {
+      "id": "licinius-persecutes-christians",
+      "name": "Licinius Persecutes Christians",
+      "year": 323,
+      "end_year": null,
+      "category": "religious",
+      "summary": "In 323 Licinius uncovered evidence that several bishops were openly conspiring against him, and he executed them and destroyed their churches. Having begun to suspect Christians as a fifth column, this crackdown gave Constantine the pretext he was looking for to invade the East.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licinius#Persecution_of_Christians",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[206, 213]],
+      "related": [
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "battle-on-bosphorus",
+      "name": "Battle on the Bosphorus",
+      "year": 324,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Constantine soundly defeated Licinius in a decisive battle on the banks of the Bosphorus. Licinius surrendered on condition that his life be spared, was sent into comfortable exile, and was hanged several months later when Constantine repented of his clemency. The civil wars were over and the Roman Empire was at last united under a single ruler.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Hellespont_(324)",
+      "image_url": null,
+      "location_id": "bosphorus",
+      "transcript_lines": [[213, 222]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"},
+        {"type": "place", "id": "bosphorus"},
+        {"type": "event", "id": "end-of-civil-wars"}
+      ]
+    },
+    {
+      "id": "end-of-civil-wars",
+      "name": "End of the Roman Civil Wars",
+      "year": 324,
+      "end_year": null,
+      "category": "political",
+      "summary": "With the defeat and eventual execution of Licinius, the decades of civil war that began with Diocletian's abdication finally ended. Constantine was sole ruler of the Roman Empire at age 52, popular and dashing, with three sons to ensure the succession. Brownworth writes that it must have seemed to many that a new age was dawning.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great#Sole_ruler_of_the_empire",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[221, 228]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "crispus"},
+        {"type": "event", "id": "battle-on-bosphorus"}
+      ]
+    }
+  ]
+}

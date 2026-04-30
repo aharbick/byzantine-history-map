@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+*.pem
+.env*.local
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+public/audio
+# src/data/entities.json is committed as a safety net for Vercel builds in
+# case `python3` is unavailable. The prebuild hook regenerates it locally
+# from data/episodes/* via `data/merge.py`.

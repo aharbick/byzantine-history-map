@@ -1,0 +1,792 @@
+{
+  "episode": 2,
+  "title": "Diocletian",
+  "people": [
+    {
+      "id": "diocletian",
+      "name": "Diocletian",
+      "alt_names": ["Gaius Aurelius Valerius Diocletianus", "Gaius Valerius Diocles", "Diocles"],
+      "role": "Roman Emperor",
+      "birth_year": 244,
+      "death_year": 311,
+      "reign_start": 284,
+      "reign_end": 305,
+      "summary": "Born of humble origins as Gaius Valerius Diocles, son of a freedman and scribe, he rose through the army to command the imperial bodyguard and seized power in 284 after accusing and executing Aper. He reformed the army, tax system, and imperial succession, most strikingly by voluntarily retiring in 305 — a decision Brownworth calls his most surprising and enduring contribution.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian",
+      "portrait_url": null,
+      "transcript_lines": [[6, 7], [75, 107], [127, 302]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "aper-lucius-flavius"},
+        {"type": "person", "id": "numerian"},
+        {"type": "person", "id": "carinus"},
+        {"type": "person", "id": "carus"},
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "place", "id": "nicomedia"},
+        {"type": "place", "id": "split-salona"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "event", "id": "battle-of-river-margus"},
+        {"type": "event", "id": "tetrarchy-established"},
+        {"type": "event", "id": "diocletian-retirement"},
+        {"type": "event", "id": "great-persecution-of-christians"},
+        {"type": "event", "id": "conference-of-carnuntum"}
+      ]
+    },
+    {
+      "id": "maximian",
+      "name": "Maximian",
+      "alt_names": ["Marcus Aurelius Valerius Maximianus"],
+      "role": "Roman Emperor (Augustus of the West)",
+      "birth_year": 250,
+      "death_year": 310,
+      "reign_start": 286,
+      "reign_end": 305,
+      "summary": "Diocletian's drinking buddy and adopted colleague, elevated first to Caesar then to Augustus of the West to help govern the empire. Brownworth notes he was honest and hardworking but most crucially willing to accept second place to Diocletian, and loyally — if reluctantly — retired alongside him in 305.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maximian",
+      "portrait_url": null,
+      "transcript_lines": [[200, 230], [239, 270]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "event", "id": "tetrarchy-established"},
+        {"type": "event", "id": "diocletian-retirement"},
+        {"type": "place", "id": "gaul"},
+        {"type": "place", "id": "britain"}
+      ]
+    },
+    {
+      "id": "galerius",
+      "name": "Galerius",
+      "alt_names": ["Gaius Galerius Valerius Maximianus"],
+      "role": "Roman Caesar (junior emperor)",
+      "birth_year": 258,
+      "death_year": 311,
+      "reign_start": 293,
+      "reign_end": 311,
+      "summary": "Son-in-law of Diocletian, raised to the rank of Caesar as part of the Tetrarchy established in 293. Brownworth mentions him as one of the two caesars appointed to complete the four-man ruling structure, and notes that after Diocletian's retirement Galerius was among the successors who fell to fighting.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Galerius",
+      "portrait_url": null,
+      "transcript_lines": [[239, 244], [261, 266]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "event", "id": "tetrarchy-established"}
+      ]
+    },
+    {
+      "id": "constantius-chlorus",
+      "name": "Constantius Chlorus",
+      "alt_names": ["Constantius I", "Flavius Valerius Constantius"],
+      "role": "Roman Caesar (junior emperor)",
+      "birth_year": 250,
+      "death_year": 306,
+      "reign_start": 293,
+      "reign_end": 306,
+      "summary": "Son-in-law of Maximian and one of the two men raised to Caesar in the Tetrarchy of 293. Brownworth mentions him in the context of completing the four-man ruling structure, and notes at the episode's close that his son Constantine would one day reunite the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantius_Chlorus",
+      "portrait_url": null,
+      "transcript_lines": [[239, 244], [301, 302]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "tetrarchy-established"}
+      ]
+    },
+    {
+      "id": "constantine-the-great",
+      "name": "Constantine the Great",
+      "alt_names": ["Constantine I", "Flavius Valerius Constantinus"],
+      "role": "Roman Emperor",
+      "birth_year": 272,
+      "death_year": 337,
+      "reign_start": 306,
+      "reign_end": 337,
+      "summary": "Mentioned only in the closing teaser as the subject of the next episode. Brownworth describes him as an ignored son who would one day rise to reunite the empire and become the only emperor ever called 'the Great.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[301, 302]],
+      "related": [
+        {"type": "person", "id": "constantius-chlorus"}
+      ]
+    },
+    {
+      "id": "carus",
+      "name": "Carus",
+      "alt_names": ["Marcus Aurelius Carus"],
+      "role": "Roman Emperor",
+      "birth_year": 224,
+      "death_year": 283,
+      "reign_start": 282,
+      "reign_end": 283,
+      "summary": "The emperor immediately preceding Diocletian's rise. Brownworth calls him 'the emperor of the moment' in 283 — a former head of the praetorian guard who had seized the throne from his predecessor. He was killed by a bolt of lightning on campaign against Persia, which Brownworth suggests was probably Diocletian's doing.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carus",
+      "portrait_url": null,
+      "transcript_lines": [[61, 90]],
+      "related": [
+        {"type": "person", "id": "carinus"},
+        {"type": "person", "id": "numerian"},
+        {"type": "person", "id": "aper-lucius-flavius"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "event", "id": "roman-persian-war-283"},
+        {"type": "place", "id": "persia"}
+      ]
+    },
+    {
+      "id": "carinus",
+      "name": "Carinus",
+      "alt_names": ["Marcus Aurelius Carinus"],
+      "role": "Roman Emperor (Augustus of the West)",
+      "birth_year": 250,
+      "death_year": 285,
+      "reign_start": 283,
+      "reign_end": 285,
+      "summary": "Older son of Carus, described by Brownworth as a bit of a playboy but a good general. Left as Augustus of the West while his father campaigned in the east, he crushed German and British revolts and an Italian pretender before being killed by one of his own officers — whose wife Carinus had seduced — at the Battle of the River Margus.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carinus",
+      "portrait_url": null,
+      "transcript_lines": [[64, 65], [85, 86], [109, 126]],
+      "related": [
+        {"type": "person", "id": "carus"},
+        {"type": "person", "id": "numerian"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "julianus-of-italy"},
+        {"type": "event", "id": "battle-of-river-margus"},
+        {"type": "place", "id": "river-margus"}
+      ]
+    },
+    {
+      "id": "numerian",
+      "name": "Numerian",
+      "alt_names": ["Marcus Aurelius Numerianus"],
+      "role": "Roman Emperor (Caesar, then de facto Augustus of the East)",
+      "birth_year": 253,
+      "death_year": 284,
+      "reign_start": 283,
+      "reign_end": 284,
+      "summary": "Younger son of Carus, described by Brownworth as a decent poet but not much else. Son-in-law of Aper, he took command of the eastern expedition after his father's death but was murdered — found partially decomposed in his closed carriage by the time the army reached Nicomedia — with Diocletian blaming and executing Aper for the crime.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Numerian",
+      "portrait_url": null,
+      "transcript_lines": [[64, 65], [69, 70], [83, 102]],
+      "related": [
+        {"type": "person", "id": "carus"},
+        {"type": "person", "id": "aper-lucius-flavius"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "nicomedia"},
+        {"type": "event", "id": "death-of-numerian"}
+      ]
+    },
+    {
+      "id": "aper-lucius-flavius",
+      "name": "Lucius Flavius Aper",
+      "alt_names": ["Aper"],
+      "role": "Praetorian Prefect",
+      "birth_year": null,
+      "death_year": 284,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "An extremely ambitious man whose Latin name means 'wild pig,' he rose to praetorian commander after marrying his daughter to Numerian, positioning himself to place a son on the throne. Diocletian publicly accused him of murdering Numerian and personally executed him before the army — fulfilling the prophecy that Diocletian would become emperor by killing a boar.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lucius_Flavius_Aper",
+      "portrait_url": null,
+      "transcript_lines": [[66, 74], [102, 106]],
+      "related": [
+        {"type": "person", "id": "numerian"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "event", "id": "death-of-numerian"}
+      ]
+    },
+    {
+      "id": "julianus-of-italy",
+      "name": "Julianus",
+      "alt_names": ["Marcus Aurelius Julianus"],
+      "role": "Imperial Pretender",
+      "birth_year": null,
+      "death_year": 285,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "An Italian pretender who rose against Carinus while Carinus was also dealing with German and British revolts. Carinus crushed him in the beginning of 285 before turning to face the larger threat of Diocletian.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marcus_Aurelius_Julianus",
+      "portrait_url": null,
+      "transcript_lines": [[113, 117]],
+      "related": [
+        {"type": "person", "id": "carinus"},
+        {"type": "event", "id": "battle-of-river-margus"}
+      ]
+    },
+    {
+      "id": "augustus-caesar",
+      "name": "Augustus Caesar",
+      "alt_names": ["Augustus", "Octavian", "Gaius Octavius Thurinus"],
+      "role": "First Roman Emperor; founder of the Principate",
+      "birth_year": -63,
+      "death_year": 14,
+      "reign_start": -27,
+      "reign_end": 14,
+      "summary": "Cited by Brownworth as the brilliant founder whose one great failure was never solving the succession question, a problem that plagued Rome for centuries. Brownworth also notes that Augustus created the praetorian guard to protect the emperor, which ironically became a king-making force.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Augustus",
+      "portrait_url": null,
+      "transcript_lines": [[12, 13], [45, 46]],
+      "related": [
+        {"type": "event", "id": "crisis-of-the-third-century"},
+        {"type": "person", "id": "five-good-emperors"}
+      ]
+    },
+    {
+      "id": "five-good-emperors",
+      "name": "The Five Good Emperors",
+      "alt_names": ["Adoptive Emperors"],
+      "role": "Sequence of Roman Emperors (Nerva, Trajan, Hadrian, Antoninus Pius, Marcus Aurelius)",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": 96,
+      "reign_end": 180,
+      "summary": "Brownworth praises them as the best solution Rome found to the succession problem: each adopted and trained a capable successor during his own lifetime. The system worked brilliantly until Marcus Aurelius broke with it by leaving the throne to his own son Commodus.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nerva%E2%80%93Antonine_dynasty#Five_Good_Emperors",
+      "portrait_url": null,
+      "transcript_lines": [[18, 23]],
+      "related": [
+        {"type": "person", "id": "marcus-aurelius"},
+        {"type": "person", "id": "commodus"}
+      ]
+    },
+    {
+      "id": "marcus-aurelius",
+      "name": "Marcus Aurelius",
+      "alt_names": ["Marcus Aurelius Antoninus", "the Philosopher Emperor"],
+      "role": "Roman Emperor; Stoic philosopher",
+      "birth_year": 121,
+      "death_year": 180,
+      "reign_start": 161,
+      "reign_end": 180,
+      "summary": "Called the 'Philosopher Emperor' by Brownworth, he was the last and most famous of the Five Good Emperors. He broke the adoptive succession by leaving the empire to his own son Commodus rather than a trained heir — an understandable sentiment, Brownworth says, but one Rome would pay dearly for.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marcus_Aurelius",
+      "portrait_url": null,
+      "transcript_lines": [[24, 29]],
+      "related": [
+        {"type": "person", "id": "commodus"},
+        {"type": "person", "id": "five-good-emperors"}
+      ]
+    },
+    {
+      "id": "commodus",
+      "name": "Commodus",
+      "alt_names": ["Lucius Aurelius Commodus Antoninus"],
+      "role": "Roman Emperor",
+      "birth_year": 161,
+      "death_year": 192,
+      "reign_start": 180,
+      "reign_end": 192,
+      "summary": "Son of Marcus Aurelius and the emperor whose erratic reign Brownworth marks as the start of Rome's steady decline. Genuinely believing himself a reincarnated Hercules, he fought gladiators and animals in the Colosseum, claimed 12,000 arena kills, renamed Rome 'Colonia Commodiana,' replaced all calendar months with versions of his own name, and was eventually assassinated after a 12-year reign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Commodus",
+      "portrait_url": null,
+      "transcript_lines": [[30, 38]],
+      "related": [
+        {"type": "person", "id": "marcus-aurelius"},
+        {"type": "place", "id": "colosseum"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "alt_names": ["Jove"],
+      "role": "Chief Roman god; patron deity claimed by Diocletian",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Diocletian claimed to be the son of Jupiter, the senior god in the Roman pantheon, as a way to elevate imperial authority and make assassination tantamount to sacrilege. By taking Jupiter while assigning Hercules to Maximian, Diocletian made clear he was the senior partner.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jupiter_(mythology)",
+      "portrait_url": null,
+      "transcript_lines": [[180, 184], [223, 225]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "hercules-deity"},
+        {"type": "event", "id": "diocletian-divine-claims"}
+      ]
+    },
+    {
+      "id": "hercules-deity",
+      "name": "Hercules",
+      "alt_names": ["Heracles"],
+      "role": "Roman/Greek hero-deity; patron assigned to Maximian",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The junior deity assigned by Diocletian to Maximian, reinforcing the hierarchy: Jupiter outranked Hercules, just as Diocletian outranked Maximian. Also referenced as the god Commodus believed himself to be reincarnated as.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hercules",
+      "portrait_url": null,
+      "transcript_lines": [[30, 31], [224, 225]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "commodus"},
+        {"type": "person", "id": "jupiter"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "nicomedia",
+      "name": "Nicomedia",
+      "modern_name": "İzmit",
+      "modern_country": "Turkey",
+      "lat": 40.7656,
+      "lng": 29.9408,
+      "first_year": -264,
+      "summary": "The city where the army, withdrawing from Persia, broke open Numerian's carriage and discovered his decomposed body. It was also Diocletian's preferred eastern capital and the site where he publicly accused and executed Aper.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nicomedia",
+      "image_url": null,
+      "transcript_lines": [[99, 104]],
+      "related": [
+        {"type": "person", "id": "numerian"},
+        {"type": "person", "id": "aper-lucius-flavius"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "event", "id": "death-of-numerian"}
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "modern_name": "Rome",
+      "modern_country": "Italy",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "first_year": -753,
+      "summary": "The historic capital of the Roman Empire, though Brownworth notes Diocletian deliberately shifted the emphasis of imperial government away from the city to wherever the emperor resided. Diocletian visited Rome for the first time in his entire reign only in 304, to unveil his famous baths, before falling deathly ill.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
+      "image_url": null,
+      "transcript_lines": [[35, 36], [167, 168], [175, 177], [250, 253]],
+      "related": [
+        {"type": "person", "id": "commodus"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "colosseum"}
+      ]
+    },
+    {
+      "id": "colosseum",
+      "name": "Colosseum",
+      "modern_name": "Colosseum",
+      "modern_country": "Italy",
+      "lat": 41.8902,
+      "lng": 12.4922,
+      "first_year": 80,
+      "summary": "The Roman amphitheater where Commodus spent hours fighting gladiators and shooting animals to demonstrate his belief that he was a reincarnated Hercules. Brownworth notes that Romans considered gladiators to be the bottom rung of society.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colosseum",
+      "image_url": null,
+      "transcript_lines": [[31, 34]],
+      "related": [
+        {"type": "person", "id": "commodus"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "persia",
+      "name": "Persia",
+      "modern_name": "Iran",
+      "modern_country": "Iran",
+      "lat": 32.4279,
+      "lng": 53.6880,
+      "first_year": null,
+      "summary": "The eastern rival against which Rome fought chronic wars. Carus led an expedition there in 283, sacking the Persian capital, before dying on the banks of the Tigris; Brownworth notes these eastern campaigns were a perpetual drain on Roman resources and attention.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sasanian_Empire",
+      "image_url": null,
+      "transcript_lines": [[83, 90]],
+      "related": [
+        {"type": "person", "id": "carus"},
+        {"type": "event", "id": "roman-persian-war-283"},
+        {"type": "place", "id": "tigris-river"}
+      ]
+    },
+    {
+      "id": "tigris-river",
+      "name": "Tigris River",
+      "modern_name": "Tigris",
+      "modern_country": "Iraq",
+      "lat": 37.0,
+      "lng": 43.0,
+      "first_year": null,
+      "summary": "The river on whose banks the emperor Carus was killed by a bolt of lightning in 283, halting the Roman advance into Persia. Brownworth implies the lightning story was cover for assassination by Diocletian.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tigris",
+      "image_url": null,
+      "transcript_lines": [[87, 90]],
+      "related": [
+        {"type": "person", "id": "carus"},
+        {"type": "event", "id": "roman-persian-war-283"},
+        {"type": "place", "id": "persia"}
+      ]
+    },
+    {
+      "id": "river-margus",
+      "name": "River Margus",
+      "modern_name": "Morava River",
+      "modern_country": "Serbia",
+      "lat": 44.7722,
+      "lng": 21.0000,
+      "first_year": null,
+      "summary": "The site of the decisive battle between Diocletian and Carinus near modern-day Belgrade. Carinus had the larger army and was winning until one of his own officers, whose wife he had seduced, struck him down, handing victory to Diocletian.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Margus",
+      "image_url": null,
+      "transcript_lines": [[119, 126]],
+      "related": [
+        {"type": "person", "id": "carinus"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "event", "id": "battle-of-river-margus"}
+      ]
+    },
+    {
+      "id": "split-salona",
+      "name": "Spalatum (Diocletian's Palace / Split)",
+      "modern_name": "Split",
+      "modern_country": "Croatia",
+      "lat": 43.5081,
+      "lng": 16.4402,
+      "first_year": 305,
+      "summary": "The site of Diocletian's retirement palace, so large it later became a city — the modern city of Split in Croatia. His octagonal mausoleum, Brownworth notes, remains the heart of the city.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian%27s_Palace",
+      "image_url": null,
+      "transcript_lines": [[273, 275]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "event", "id": "diocletian-retirement"}
+      ]
+    },
+    {
+      "id": "ravenna",
+      "name": "Ravenna",
+      "modern_name": "Ravenna",
+      "modern_country": "Italy",
+      "lat": 44.4184,
+      "lng": 12.2035,
+      "first_year": null,
+      "summary": "The city Diocletian traveled to in 304 to escape the marshy climate of Rome after falling ill at the celebration of his twentieth year in power, collapsing on the road before eventually recovering.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ravenna",
+      "image_url": null,
+      "transcript_lines": [[253, 254]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "event", "id": "diocletian-illness-304"}
+      ]
+    },
+    {
+      "id": "gaul",
+      "name": "Gaul",
+      "modern_name": "France / Belgium / parts of Germany",
+      "modern_country": "France",
+      "lat": 46.2276,
+      "lng": 2.2137,
+      "first_year": null,
+      "summary": "One of the western territories sent to Maximian to govern and pacify. Maximian successfully crushed a revolt in Gaul but was unable to cross the Channel to deal with Britain, prompting Diocletian to elevate him to full Augustus.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaul",
+      "image_url": null,
+      "transcript_lines": [[211, 215]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "event", "id": "maximian-elevated-augustus"}
+      ]
+    },
+    {
+      "id": "britain",
+      "name": "Britain",
+      "modern_name": "Great Britain",
+      "modern_country": "United Kingdom",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "first_year": null,
+      "summary": "Scene of a revolt that Maximian could not suppress because a nascent British fleet prevented him from crossing the Channel. This difficulty was part of what convinced Diocletian to elevate Maximian to the rank of Augustus. Britain also revolted again during Carinus's troubled reign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Britain",
+      "image_url": null,
+      "transcript_lines": [[112, 113], [211, 214]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "carinus"},
+        {"type": "event", "id": "maximian-elevated-augustus"}
+      ]
+    },
+    {
+      "id": "venice-st-marks",
+      "name": "St. Mark's Basilica",
+      "modern_name": "Basilica di San Marco",
+      "modern_country": "Italy",
+      "lat": 45.4345,
+      "lng": 12.3397,
+      "first_year": 832,
+      "summary": "Brownworth directs the listener to look for the porphyry sculpture of the four tetrarchs in the southeast corner of the exterior. The sculpture was stolen from Constantinople during the Fourth Crusade and incorporated into the church's masonry.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St_Mark%27s_Basilica",
+      "image_url": null,
+      "transcript_lines": [[244, 248]],
+      "related": [
+        {"type": "event", "id": "tetrarchy-established"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "Mentioned as the city from which the porphyry tetrarch sculpture was looted during the Fourth Crusade and brought to Venice. Brownworth frames Diocletian's policy of relocating imperial authority away from Rome as a first step toward the eventual founding of a new capital.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[176, 177], [247, 248]],
+      "related": [
+        {"type": "place", "id": "venice-st-marks"},
+        {"type": "person", "id": "diocletian"}
+      ]
+    },
+    {
+      "id": "asia-minor",
+      "name": "Asia Minor",
+      "modern_name": "Anatolia",
+      "modern_country": "Turkey",
+      "lat": 39.0,
+      "lng": 35.0,
+      "first_year": null,
+      "summary": "The region through which the Roman army under Numerian's nominal command marched on its withdrawal from Persia, eventually reaching Nicomedia where the murder was discovered.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anatolia",
+      "image_url": null,
+      "transcript_lines": [[97, 100]],
+      "related": [
+        {"type": "person", "id": "numerian"},
+        {"type": "place", "id": "nicomedia"},
+        {"type": "event", "id": "death-of-numerian"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "crisis-of-the-third-century",
+      "name": "Crisis of the Third Century",
+      "year": 235,
+      "end_year": 285,
+      "category": "political",
+      "summary": "The 50-year period between 235 and 285 that Brownworth calls the low point of Roman history, with emperors lasting an average of two years each. A 50-year-old in 285 would have known 27 legitimate emperors, numerous pretenders, and at least one breakaway empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crisis_of_the_Third_Century",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[51, 59]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "carus"},
+        {"type": "event", "id": "praetorian-guard-auction-193"}
+      ]
+    },
+    {
+      "id": "praetorian-guard-auction-193",
+      "name": "Praetorian Guard Auction of the Throne (193)",
+      "year": 193,
+      "end_year": null,
+      "category": "political",
+      "summary": "In 193, the praetorian guard auctioned off the office of emperor to the highest bidder, then killed the lucky winner 66 days later when he couldn't live up to his promises. Brownworth cites this as the starkest example of how the army had discovered the dangerous secret of empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Didius_Julianus",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[49, 51]],
+      "related": [
+        {"type": "event", "id": "crisis-of-the-third-century"}
+      ]
+    },
+    {
+      "id": "roman-persian-war-283",
+      "name": "Roman–Persian War (283)",
+      "year": 283,
+      "end_year": 284,
+      "category": "battle",
+      "summary": "Carus's eastern campaign that successfully sacked the Persian capital but ended abruptly on the banks of the Tigris when Carus died — officially by lightning, but Brownworth implies assassination by Diocletian. The army then began a long withdrawal through Asia Minor under Numerian.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roman%E2%80%93Persian_Wars",
+      "image_url": null,
+      "location_id": "persia",
+      "transcript_lines": [[83, 100]],
+      "related": [
+        {"type": "person", "id": "carus"},
+        {"type": "person", "id": "numerian"},
+        {"type": "person", "id": "aper-lucius-flavius"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "persia"},
+        {"type": "place", "id": "tigris-river"}
+      ]
+    },
+    {
+      "id": "death-of-numerian",
+      "name": "Death of Numerian",
+      "year": 284,
+      "end_year": null,
+      "category": "political",
+      "summary": "Numerian, traveling in a closed carriage due to an eye infection, was found dead and partially decomposed when the army reached Nicomedia. Diocletian immediately accused Aper, publicly executed him on the spot, and was acclaimed emperor by the troops.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Numerian",
+      "image_url": null,
+      "location_id": "nicomedia",
+      "transcript_lines": [[91, 106]],
+      "related": [
+        {"type": "person", "id": "numerian"},
+        {"type": "person", "id": "aper-lucius-flavius"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "nicomedia"}
+      ]
+    },
+    {
+      "id": "battle-of-river-margus",
+      "name": "Battle of the River Margus",
+      "year": 285,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The decisive confrontation between Diocletian and the western emperor Carinus near modern-day Belgrade. Carinus held the superior army and was on the verge of victory when one of his own officers, whose wife he had seduced, killed him, allowing Diocletian to become undisputed master of the Roman world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Margus",
+      "image_url": null,
+      "location_id": "river-margus",
+      "transcript_lines": [[119, 126]],
+      "related": [
+        {"type": "person", "id": "carinus"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "river-margus"}
+      ]
+    },
+    {
+      "id": "diocletian-divine-claims",
+      "name": "Diocletian's Divine Association (Jovian identity)",
+      "year": 284,
+      "end_year": 305,
+      "category": "religious",
+      "summary": "Diocletian announced that he was the son of Jupiter, requiring all citizens to sacrifice to him and making assassination tantamount to sacrilege. He assigned Maximian to the junior deity Hercules to reinforce his own supremacy, and this policy brought him into direct conflict with Christians who refused to worship him.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian#Religious_policy",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[178, 185]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "jupiter"},
+        {"type": "person", "id": "hercules-deity"},
+        {"type": "event", "id": "great-persecution-of-christians"}
+      ]
+    },
+    {
+      "id": "great-persecution-of-christians",
+      "name": "Great Persecution of the Christians",
+      "year": 303,
+      "end_year": 311,
+      "category": "religious",
+      "summary": "The last and most severe Roman persecution of Christians, which Brownworth says began as a direct consequence of Diocletian's policy of demanding divine worship from every citizen of the empire. Christians who refused to sacrifice to the emperor created a significant conflict.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletianic_Persecution",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[183, 185]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "event", "id": "diocletian-divine-claims"}
+      ]
+    },
+    {
+      "id": "maximian-elevated-augustus",
+      "name": "Maximian Elevated to Augustus",
+      "year": 286,
+      "end_year": null,
+      "category": "political",
+      "summary": "After Maximian crushed the Gaulish revolt but failed to cross to Britain due to its nascent fleet, Diocletian recognized the seriousness of the western situation and elevated Maximian from Caesar to the full rank of Augustus. Brownworth calls this an extraordinary development: the first peaceful division of the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maximian#Rise_to_power",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[213, 218]],
+      "related": [
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "gaul"},
+        {"type": "place", "id": "britain"},
+        {"type": "event", "id": "tetrarchy-established"}
+      ]
+    },
+    {
+      "id": "tetrarchy-established",
+      "name": "Establishment of the Tetrarchy",
+      "year": 293,
+      "end_year": 305,
+      "category": "political",
+      "summary": "Diocletian and Maximian adopted their respective sons-in-law Galerius and Constantius Chlorus, raising them to the rank of Caesar to create a four-man ruling system. Brownworth notes the system is called the tetrarchy (four rulers), though he says the name is somewhat imprecise since it comprised two senior Augusti and two junior Caesars.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tetrarchy",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[239, 248]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "maximian"},
+        {"type": "person", "id": "galerius"},
+        {"type": "person", "id": "constantius-chlorus"},
+        {"type": "event", "id": "maximian-elevated-augustus"},
+        {"type": "event", "id": "diocletian-retirement"}
+      ]
+    },
+    {
+      "id": "diocletian-illness-304",
+      "name": "Diocletian's Illness (304)",
+      "year": 304,
+      "end_year": null,
+      "category": "natural",
+      "summary": "During the celebration of his twentieth year in power in Rome, Diocletian fell deathly ill. He traveled toward Ravenna to escape the marshy climate but collapsed on the way, yet unexpectedly survived. Brownworth credits this illness with prompting Diocletian's decision to retire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian#Abdication_and_retirement",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[250, 256]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "event", "id": "diocletian-retirement"}
+      ]
+    },
+    {
+      "id": "diocletian-retirement",
+      "name": "Abdication of Diocletian and Maximian",
+      "year": 305,
+      "end_year": null,
+      "category": "political",
+      "summary": "On May 1st, 305, both Diocletian and a very reluctant Maximian simultaneously abdicated, elevating their Caesars to Augusti and establishing a new cycle of succession. Brownworth calls this Diocletian's most surprising decision and his most enduring legacy — the voluntary retirement of an emperor was virtually unprecedented.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian#Abdication_and_retirement",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[257, 271]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "maximian"},
+        {"type": "place", "id": "split-salona"},
+        {"type": "event", "id": "tetrarchy-established"},
+        {"type": "event", "id": "conference-of-carnuntum"}
+      ]
+    },
+    {
+      "id": "conference-of-carnuntum",
+      "name": "Conference of Carnuntum",
+      "year": 308,
+      "end_year": null,
+      "category": "political",
+      "summary": "The emperors came to Diocletian in 308 to beg him to return to power as the empire had fallen into chaos after his retirement. Diocletian refused, famously replying that if they could see the cabbages he had planted with his own hands at Salona, they would never again judge the empire a tempting prospect.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Conference_of_Carnuntum",
+      "image_url": null,
+      "location_id": "split-salona",
+      "transcript_lines": [[276, 281]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "event", "id": "diocletian-retirement"}
+      ]
+    },
+    {
+      "id": "death-of-diocletian",
+      "name": "Death of Diocletian",
+      "year": 311,
+      "end_year": null,
+      "category": "political",
+      "summary": "Diocletian died in 311 as a contented yet disillusioned private citizen. His daughter and wife had been exiled by his successors and his statues torn down, yet his abdication so awed contemporaries that one wrote he was unique in all human history: he died a private citizen but was still enrolled among the gods.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian#Death",
+      "image_url": null,
+      "location_id": "split-salona",
+      "transcript_lines": [[282, 288]],
+      "related": [
+        {"type": "person", "id": "diocletian"},
+        {"type": "place", "id": "split-salona"}
+      ]
+    }
+  ]
+}

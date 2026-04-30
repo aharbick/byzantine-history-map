@@ -1,0 +1,1170 @@
+{
+  "episode": 14,
+  "title": "Alexius",
+  "people": [
+    {
+      "id": "alexios-i-komnenos",
+      "name": "Alexios I Komnenos",
+      "alt_names": ["Alexius Comnenus", "Alexius I"],
+      "role": "Byzantine Emperor",
+      "birth_year": 1057,
+      "death_year": 1118,
+      "reign_start": 1081,
+      "reign_end": 1118,
+      "summary": "The episode's central figure, Alexios came to the throne at 24 amid an empire shattered by military defeat, fiscal ruin, and territorial collapse. Brownworth frames him as a supremely gifted statesman and diplomat who, lacking a competent army, stabilized the empire through intrigue, bribery, and playing enemies against each other — defeating the Normans twice, the Pechenegs, Cumans, and managing the First Crusade with masterly duplicity. His forty years on the throne saved the empire, though his system of personal diplomacy was too complex to survive him.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
+      "portrait_url": null,
+      "transcript_lines": [[17, 24], [47, 498]],
+      "related": [
+        {"type": "person", "id": "basil-ii"},
+        {"type": "person", "id": "nikephoros-iii-botaneiates"},
+        {"type": "person", "id": "michael-vii-doukas"},
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "person", "id": "peter-the-hermit"},
+        {"type": "person", "id": "urban-ii"},
+        {"type": "person", "id": "baldwin-i-of-jerusalem"},
+        {"type": "person", "id": "isaac-angelos"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "dyrrachium"},
+        {"type": "place", "id": "nicaea"},
+        {"type": "place", "id": "antioch"},
+        {"type": "event", "id": "battle-of-manzikert"},
+        {"type": "event", "id": "alexios-seizes-throne"},
+        {"type": "event", "id": "battle-of-dyrrachium"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"},
+        {"type": "event", "id": "second-norman-invasion"},
+        {"type": "event", "id": "battle-of-nicaea-1097"},
+        {"type": "event", "id": "siege-of-antioch"}
+      ]
+    },
+    {
+      "id": "basil-ii",
+      "name": "Basil II",
+      "alt_names": ["Basil the Bulgar-Slayer"],
+      "role": "Byzantine Emperor",
+      "birth_year": 958,
+      "death_year": 1025,
+      "reign_start": 976,
+      "reign_end": 1025,
+      "summary": "Described by Brownworth as the last great ruler of the Macedonian dynasty, Basil II left the empire as the largest and strongest state in Europe, with borders stretching from Italy to Armenia and from Syria to Ukraine, and an army considered invincible. His death, however, began a precipitous decline rather than an age of continued splendor, making him a soldier-emperor whose legacy was squandered by his successors.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_II",
+      "portrait_url": null,
+      "transcript_lines": [[4, 16]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "death-of-alexios"}
+      ]
+    },
+    {
+      "id": "romanos-iv-diogenes",
+      "name": "Romanos IV Diogenes",
+      "alt_names": ["Romanus IV Diogenes"],
+      "role": "Byzantine Emperor",
+      "birth_year": 1032,
+      "death_year": 1072,
+      "reign_start": 1068,
+      "reign_end": 1071,
+      "summary": "The emperor who led the decayed Byzantine army against the Seljuk Turks at Manzikert in 1071. Brownworth describes him as betrayed both by his commanders and by the unreliable nature of mercenaries, resulting in his army's annihilation and his own capture — a disaster that dispelled the myth of the invincible Byzantine army.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romanos_IV_Diogenes",
+      "portrait_url": null,
+      "transcript_lines": [[31, 35]],
+      "related": [
+        {"type": "event", "id": "battle-of-manzikert"},
+        {"type": "place", "id": "manzikert"}
+      ]
+    },
+    {
+      "id": "michael-vii-doukas",
+      "name": "Michael VII Doukas",
+      "alt_names": ["Michael VII", "Michael Parapinakes"],
+      "role": "Byzantine Emperor",
+      "birth_year": 1050,
+      "death_year": 1090,
+      "reign_start": 1071,
+      "reign_end": 1078,
+      "summary": "Described as the incompetent emperor who, in the face of the Turkish advance in 1078, officially recognized the Turks' hold on Asia Minor in exchange for help against a renegade mercenary. He also sent Alexios away to the east, and was subsequently deposed in a civil war, abdicating in favor of Nikephoros Botaneiates.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_VII_Doukas",
+      "portrait_url": null,
+      "transcript_lines": [[44, 50]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "nikephoros-iii-botaneiates"},
+        {"type": "person", "id": "maria-of-alania"},
+        {"type": "event", "id": "alexios-seizes-throne"}
+      ]
+    },
+    {
+      "id": "nikephoros-iii-botaneiates",
+      "name": "Nikephoros III Botaneiates",
+      "alt_names": ["Nysophoros", "Nikephoros Botaneiates"],
+      "role": "Byzantine Emperor",
+      "birth_year": 1002,
+      "death_year": 1081,
+      "reign_start": 1078,
+      "reign_end": 1081,
+      "summary": "The 78-year-old general who deposed Michael VII and seized the throne, but rapidly sank into debauchery and senility, unable to deal with the problems he had inherited. He inflamed Robert Giscard by forcing Maria's daughter-in-law into a convent, and spent his reign uselessly sending Alexios to stamp out revolts while the empire decayed further. When Alexios marched on Constantinople, he abdicated and retired to a monastery.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nikephoros_III_Botaneiates",
+      "portrait_url": null,
+      "transcript_lines": [[50, 103]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "michael-vii-doukas"},
+        {"type": "person", "id": "maria-of-alania"},
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "event", "id": "alexios-seizes-throne"}
+      ]
+    },
+    {
+      "id": "maria-of-alania",
+      "name": "Maria of Alania",
+      "alt_names": ["Maria"],
+      "role": "Byzantine Empress",
+      "birth_year": 1053,
+      "death_year": 1118,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The beautiful 29-year-old wife of deposed Michael VII whom the nearly 80-year-old Nikephoros Botaneiates married — a move Brownworth describes as bad enough given that her former husband was still alive. She later charmed Alexios and adopted him into the royal family, providing him the semblance of legitimacy he needed to march on Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maria_of_Alania",
+      "portrait_url": null,
+      "transcript_lines": [[61, 84]],
+      "related": [
+        {"type": "person", "id": "nikephoros-iii-botaneiates"},
+        {"type": "person", "id": "michael-vii-doukas"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "alexios-seizes-throne"}
+      ]
+    },
+    {
+      "id": "robert-de-hauteville",
+      "name": "Robert Guiscard",
+      "alt_names": ["Robert de Hauteville", "Robert the Fox", "Robert Giscard"],
+      "role": "Norman adventurer and Duke of Apulia",
+      "birth_year": 1015,
+      "death_year": 1085,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Described as a brilliant Norman adventurer who arrived in Italy in 1047 with only 35 men, captured a castle in Apulia, defeated a papal army, and over the next twenty years turned southern Italy into his personal kingdom. His nickname 'the Fox' reflected his cunning; he took Bari in 1071 and most of Sicily by 1072, then set his sights on the Byzantine throne after Nikephoros forced his daughter-in-law into a convent. He invaded, won at Dyrrachium, but was lured home by Alexios-backed revolts; he returned, sacked Rome, but died of plague in Greece in 1085.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Guiscard",
+      "portrait_url": null,
+      "transcript_lines": [[65, 66], [123, 192]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "person", "id": "william-the-conqueror"},
+        {"type": "person", "id": "nikephoros-iii-botaneiates"},
+        {"type": "place", "id": "southern-italy"},
+        {"type": "place", "id": "dyrrachium"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "bari"},
+        {"type": "place", "id": "sicily"},
+        {"type": "event", "id": "battle-of-dyrrachium"},
+        {"type": "event", "id": "sack-of-rome-1084"},
+        {"type": "event", "id": "death-of-robert-guiscard"}
+      ]
+    },
+    {
+      "id": "william-the-conqueror",
+      "name": "William the Conqueror",
+      "alt_names": ["William I of England", "William the Bastard"],
+      "role": "Duke of Normandy, King of England",
+      "birth_year": 1028,
+      "death_year": 1087,
+      "reign_start": 1066,
+      "reign_end": 1087,
+      "summary": "Referenced by Brownworth as the ambitious ruler who exploited the Normans who had stayed in northern France — the illegitimate son of a duke who invaded England, killed the rightful king, and claimed the throne in 1066. He is the counterpart to Robert Giscard, representing the Norman success story of the 11th century.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_the_Conqueror",
+      "portrait_url": null,
+      "transcript_lines": [[133, 135]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "event", "id": "norman-conquest-of-england"}
+      ]
+    },
+    {
+      "id": "bohemond-of-taranto",
+      "name": "Bohemond of Taranto",
+      "alt_names": ["Bohemund", "Bohemond I of Antioch"],
+      "role": "Norman prince, leader of the First Crusade, Prince of Antioch",
+      "birth_year": 1054,
+      "death_year": 1111,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Robert Giscard's son whom Robert left in charge of the Balkans campaign after being recalled to Italy. Bohemond was outmatched by Alexios at every turn — harassed, bribed, and finally driven to a humiliating surrender. He later led one of the First Crusade armies, took Antioch, and became its lord — a bitter blow to Alexios who had lost the city. Captured by the Turks, convinced Alexios was to blame, he invaded a second time only to be defeated by Alexios' diplomacy without a battle, and died shortly after in obscurity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bohemond_I_of_Antioch",
+      "portrait_url": null,
+      "transcript_lines": [[182, 200], [279, 280], [355, 450]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "dyrrachium"},
+        {"type": "event", "id": "second-norman-invasion"},
+        {"type": "event", "id": "siege-of-antioch"},
+        {"type": "event", "id": "death-of-robert-guiscard"}
+      ]
+    },
+    {
+      "id": "urban-ii",
+      "name": "Urban II",
+      "alt_names": ["Pope Urban II"],
+      "role": "Pope",
+      "birth_year": 1042,
+      "death_year": 1099,
+      "reign_start": 1088,
+      "reign_end": 1099,
+      "summary": "Elevated to the papal throne in 1088, Urban II is described as a man of considerable diplomatic flexibility who lifted the excommunication on the Byzantine emperor as his first act. When Alexios wrote asking for mercenaries against the Turks, Urban seized the opportunity — delivering at the Council of Clermont what Brownworth calls 'undoubtedly the single most effective speech ever heard in Europe,' calling for a crusade to Jerusalem rather than the few hundred mercenaries Alexios had requested.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Urban_II",
+      "portrait_url": null,
+      "transcript_lines": [[243, 273]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "council-of-clermont"},
+        {"type": "event", "id": "great-schism"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"},
+        {"type": "place", "id": "clermont"}
+      ]
+    },
+    {
+      "id": "peter-the-hermit",
+      "name": "Peter the Hermit",
+      "alt_names": ["Peter of Amiens"],
+      "role": "Leader of the People's Crusade",
+      "birth_year": 1050,
+      "death_year": 1115,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The fanatical peasant leader who led 40,000 French and German peasants into Byzantine territory as the first crusading army. Brownworth describes him as unable to control his followers — his mob burned Belgrade, tried to loot a neighboring city, had 10,000 men killed by Byzantine cavalry, then looted the suburbs of Constantinople. Ferried across the Bosphorus, Peter ignored Alexios' advice not to engage the Turks, got his rabble wiped out, and slunk back to Constantinople in disgrace.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_the_Hermit",
+      "portrait_url": null,
+      "transcript_lines": [[300, 315]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "belgrade"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "bosphorus"},
+        {"type": "event", "id": "peoples-crusade"}
+      ]
+    },
+    {
+      "id": "baldwin-i-of-jerusalem",
+      "name": "Baldwin I",
+      "alt_names": ["Baldwin of Boulogne", "Baldwin I of Jerusalem"],
+      "role": "Crusader leader, later King of Jerusalem",
+      "birth_year": 1058,
+      "death_year": 1118,
+      "reign_start": 1100,
+      "reign_end": 1118,
+      "summary": "Mentioned as a crusader leader who, when summoned to Alexios' throne room, brought his knights along, and one of them — in flagrant violation of etiquette — had the audacity to sit in the emperor's throne and boast he had never met his match in battle. Brownworth notes that Baldwin would later become King of Jerusalem.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baldwin_I_of_Jerusalem",
+      "portrait_url": null,
+      "transcript_lines": [[347, 351]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "holy-roman-emperor-henry-iv",
+      "name": "Henry IV",
+      "alt_names": ["Henry IV, Holy Roman Emperor", "German Emperor"],
+      "role": "Holy Roman Emperor",
+      "birth_year": 1050,
+      "death_year": 1106,
+      "reign_start": 1084,
+      "reign_end": 1105,
+      "summary": "Referenced as the Holy Roman Emperor who was already wary of Robert Giscard's growing power in southern Italy. Alexios exploited this by pointing out the threat of Robert's overseas expansion; Robert subsequently drove the German Emperor from Italy and carried out a brutal three-day sack of Rome in the course of returning to deal with the Alexios-backed Norman revolt.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_IV,_Holy_Roman_Emperor",
+      "portrait_url": null,
+      "transcript_lines": [[175, 186]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "event", "id": "sack-of-rome-1084"}
+      ]
+    },
+    {
+      "id": "sultan-of-rum",
+      "name": "Suleiman ibn Qutalmish",
+      "alt_names": ["Sultan of Rum", "Sultan of Nicaea", "Süleyman Shah"],
+      "role": "Sultan of the Seljuk Sultanate of Rum",
+      "birth_year": null,
+      "death_year": 1086,
+      "reign_start": 1077,
+      "reign_end": 1086,
+      "summary": "Referenced as the Sultan of Rome (Rum) who assumed the first crusading army could be dealt with as easily as Peter the Hermit's rabble, confidently attacking as they besieged his capital of Nicaea. To his horror he discovered these soldiers were nothing like Peter's mob, his army broke and fled before the heavily armed crusader knights, and he offered no further resistance.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suleiman_ibn_Qutalmish",
+      "portrait_url": null,
+      "transcript_lines": [[367, 373]],
+      "related": [
+        {"type": "place", "id": "nicaea"},
+        {"type": "event", "id": "battle-of-nicaea-1097"},
+        {"type": "person", "id": "alexios-i-komnenos"}
+      ]
+    },
+    {
+      "id": "son-of-king-of-france",
+      "name": "Hugh of Vermandois",
+      "alt_names": ["Hugh the Great", "son of the King of France"],
+      "role": "French nobleman, crusade leader",
+      "birth_year": 1057,
+      "death_year": 1101,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Mentioned by Brownworth only as 'the son of the King of France' among the impressive list of crusader leaders who passed through Constantinople — each desperate to be appointed head of the crusade, all played off against each other by Alexios.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hugh_of_Vermandois",
+      "portrait_url": null,
+      "transcript_lines": [[356, 360]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"}
+      ]
+    },
+    {
+      "id": "william-ix-of-aquitaine",
+      "name": "William IX of Aquitaine",
+      "alt_names": ["son of William the Conqueror"],
+      "role": "Norman nobleman",
+      "birth_year": 1071,
+      "death_year": 1126,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Mentioned by Brownworth as 'the son of William the Conqueror' among the crusader leaders who arrived at Constantinople, each wanting to be named head of the crusade. Alexios skillfully played them off against each other while dangling the possibility that he himself might join the crusade.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/William_IX,_Duke_of_Aquitaine",
+      "portrait_url": null,
+      "transcript_lines": [[356, 360]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "william-the-conqueror"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"}
+      ]
+    },
+    {
+      "id": "bismarck",
+      "name": "Otto von Bismarck",
+      "alt_names": ["Bismarck"],
+      "role": "19th-century Prussian statesman",
+      "birth_year": 1815,
+      "death_year": 1898,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Invoked by Brownworth as a historical parallel to Alexios: like Bismarck in the 19th century, Alexios was the only one capable of maintaining his complex diplomatic system, and without someone of his caliber the entire house of cards collapsed after his death.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Otto_von_Bismarck",
+      "portrait_url": null,
+      "transcript_lines": [[485, 487]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"}
+      ]
+    },
+    {
+      "id": "isaac-angelos",
+      "name": "Isaac II Angelos",
+      "alt_names": ["Isaac Angelus"],
+      "role": "Byzantine Emperor",
+      "birth_year": 1156,
+      "death_year": 1204,
+      "reign_start": 1185,
+      "reign_end": 1195,
+      "summary": "Mentioned only in the closing teaser as the subject of the next episode — described as a man possessing none of Alexios' skills, who became a pawn of the Venetians while the empire paid the price, and during whose reign Constantinople itself fell victim to the soldiers of the Fourth Crusade.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isaac_II_Angelos",
+      "portrait_url": null,
+      "transcript_lines": [[490, 493]],
+      "related": [
+        {"type": "event", "id": "fourth-crusade-sack-of-constantinople"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "The imperial capital, described as glittering in unrivaled splendor and renowned as far away as Scandinavia where people called it simply 'the city.' Its imposing walls had never been taken by force — a fact Alexios exploited by bribing defenders to open the gates. The city was the stage for coronations, the arrival of crusading armies kept outside the walls, and the throne-room diplomacy through which Alexios managed the crusader leaders.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[13, 13], [93, 113], [291, 335]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "peter-the-hermit"},
+        {"type": "event", "id": "alexios-seizes-throne"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"},
+        {"type": "event", "id": "fourth-crusade-sack-of-constantinople"}
+      ]
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "modern_name": "Hagia Sophia",
+      "modern_country": "Turkey",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "first_year": 537,
+      "summary": "The site of Alexios' coronation ceremony, described by Brownworth as a subdued affair before a chastened congregation with the patriarch placing the crown on what seemed to many as yet another usurper.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "transcript_lines": [[18, 19], [111, 114]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "alexios-seizes-throne"}
+      ]
+    },
+    {
+      "id": "manzikert",
+      "name": "Manzikert",
+      "modern_name": "Malazgirt",
+      "modern_country": "Turkey",
+      "lat": 39.1505,
+      "lng": 42.5348,
+      "first_year": null,
+      "summary": "The small town in Asia Minor near which the defining disaster of the era took place in 1071 — where Romanos IV Diogenes took a weakened, mercenary-heavy army to confront the Seljuk Turks and was annihilated and captured. Brownworth frames this battle as the event that dispelled the myth of Byzantine invincibility and set in motion the collapse Alexios had to reverse.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Manzikert",
+      "image_url": null,
+      "transcript_lines": [[26, 36]],
+      "related": [
+        {"type": "person", "id": "romanos-iv-diogenes"},
+        {"type": "event", "id": "battle-of-manzikert"},
+        {"type": "place", "id": "asia-minor"}
+      ]
+    },
+    {
+      "id": "asia-minor",
+      "name": "Asia Minor",
+      "modern_name": "Anatolia",
+      "modern_country": "Turkey",
+      "lat": 39.0,
+      "lng": 35.0,
+      "first_year": null,
+      "summary": "The heartland lost to the Seljuk Turks after Manzikert, described by Brownworth as spreading over 30,000 miles that the Turks completely overran. Its loss robbed the empire not just of land but of food and manpower — specifically the backbone of Anatolian soldiers — crippling the empire in ways Alexios spent his entire reign trying to compensate for.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anatolia",
+      "image_url": null,
+      "transcript_lines": [[26, 27], [40, 41], [116, 120]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "battle-of-manzikert"},
+        {"type": "event", "id": "seljuk-conquest-of-asia-minor"}
+      ]
+    },
+    {
+      "id": "dyrrachium",
+      "name": "Dyrrachium",
+      "modern_name": "Durrës",
+      "modern_country": "Albania",
+      "lat": 41.3133,
+      "lng": 19.4547,
+      "first_year": null,
+      "summary": "The small port town where Alexios confronted Robert Giscard's Norman forces in the first major test of his reign. The battle there provided an 'excellent lesson': the Varangian Guard stopped the Norman charge but the undisciplined rank-and-file broke to pursue retreating Normans, were cut down by Norman cavalry, leaving the Varangians isolated and massacred. Alexios barely escaped in disguise. The port fell to the Normans.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Durrës",
+      "image_url": null,
+      "transcript_lines": [[155, 169]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "event", "id": "battle-of-dyrrachium"}
+      ]
+    },
+    {
+      "id": "southern-italy",
+      "name": "Southern Italy",
+      "modern_name": "Southern Italy",
+      "modern_country": "Italy",
+      "lat": 40.5,
+      "lng": 16.0,
+      "first_year": null,
+      "summary": "The theater of Norman expansion and the former seat of Byzantine power in Italy. The Normans first arrived here as mercenaries, then captured key fortresses and spread throughout the Italian peninsula. Alexios exploited Norman resentment here by bribing barons to revolt against Robert Giscard, forcing his recall from Greece.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southern_Italy",
+      "image_url": null,
+      "transcript_lines": [[126, 143], [179, 182]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "bari"},
+        {"type": "event", "id": "norman-revolt-in-italy"}
+      ]
+    },
+    {
+      "id": "bari",
+      "name": "Bari",
+      "modern_name": "Bari",
+      "modern_country": "Italy",
+      "lat": 41.1171,
+      "lng": 16.8719,
+      "first_year": null,
+      "summary": "The last Byzantine stronghold in Italy, taken by Robert Giscard in 1071 — the same year as the Battle of Manzikert. Brownworth marks this twin loss as the bookend disaster of that year: Byzantine power expelled from both Italy and Asia Minor simultaneously.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bari",
+      "image_url": null,
+      "transcript_lines": [[142, 144]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "event", "id": "fall-of-bari-1071"}
+      ]
+    },
+    {
+      "id": "sicily",
+      "name": "Sicily",
+      "modern_name": "Sicily",
+      "modern_country": "Italy",
+      "lat": 37.5999,
+      "lng": 14.0154,
+      "first_year": null,
+      "summary": "Most of the island fell to Robert Giscard by 1072, completing his conquest of the south after taking Bari. Brownworth uses Sicily's fall alongside Bari's as evidence that by this point the Normans were without peer in brute strength and fighting ability.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sicily",
+      "image_url": null,
+      "transcript_lines": [[143, 144]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "event", "id": "fall-of-bari-1071"}
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "modern_name": "Rome",
+      "modern_country": "Italy",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "first_year": null,
+      "summary": "The subject of a brutal three-day sack by Robert Giscard in which he set fire to the city and gutted most of its ancient buildings — carried out while Robert was returning to Italy to suppress the Alexios-backed Norman revolt and drive out the German Emperor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
+      "image_url": null,
+      "transcript_lines": [[185, 186]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "person", "id": "holy-roman-emperor-henry-iv"},
+        {"type": "event", "id": "sack-of-rome-1084"}
+      ]
+    },
+    {
+      "id": "balkans",
+      "name": "The Balkans",
+      "modern_name": "Balkans",
+      "modern_country": null,
+      "lat": 42.5,
+      "lng": 22.0,
+      "first_year": null,
+      "summary": "A persistent source of trouble for Alexios throughout his reign. At his accession the Balkans were once again in revolt, threatening from the west alongside the Normans. Later a Cuman pretender inspired a popular revolt there, which Alexios solved by bribing disgruntled Cumans to assassinate the pretender, whereupon the revolt simply melted away.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balkans",
+      "image_url": null,
+      "transcript_lines": [[123, 124], [216, 219]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "cuman-pretender-revolt"}
+      ]
+    },
+    {
+      "id": "nicaea",
+      "name": "Nicaea",
+      "modern_name": "İznik",
+      "modern_country": "Turkey",
+      "lat": 40.4306,
+      "lng": 29.7239,
+      "first_year": null,
+      "summary": "The capital of the Seljuk Sultan of Rum, besieged by the First Crusade. When the Sultan's army broke before the crusaders, the citizens of Nicaea, wanting to avoid a sack, quietly surrendered to the Byzantines overnight — causing the crusaders to awake to find the Byzantine flag flying and all hopes of looting gone. Also the site where 54,000 Turks arrived in 1113 and were surprised and annihilated by Alexios in his last major victory.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/İznik",
+      "image_url": null,
+      "transcript_lines": [[367, 379], [455, 457]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "sultan-of-rum"},
+        {"type": "event", "id": "battle-of-nicaea-1097"},
+        {"type": "event", "id": "turkish-attack-on-nicaea-1113"}
+      ]
+    },
+    {
+      "id": "antioch",
+      "name": "Antioch",
+      "modern_name": "Antakya",
+      "modern_country": "Turkey",
+      "lat": 36.2021,
+      "lng": 36.1603,
+      "first_year": null,
+      "summary": "Described as once the third city of the Roman Empire, lost to the Turks only twenty years before the crusade. The crusaders took it despite parched exhaustion, then were besieged inside it by a much larger Turkish force; Alexios turned back when three deserting knights told him all was lost — but the crusaders triumphed and Antioch became the heart of a crusader state under Bohemond, a most bitter blow to Alexios. Brownworth calls it the most important city in Asia Minor and a persistent thorn in Alexios' side.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antioch",
+      "image_url": null,
+      "transcript_lines": [[389, 420]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "event", "id": "siege-of-antioch"},
+        {"type": "event", "id": "crusader-states-established"}
+      ]
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "modern_name": "Jerusalem",
+      "modern_country": "Israel",
+      "lat": 31.7683,
+      "lng": 35.2137,
+      "first_year": null,
+      "summary": "The stated objective of the First Crusade — the Turks had taken the Holy City in 1077, making it unsafe for the pilgrim trade. Brownworth notes that Urban II's speech at Clermont made the capture of Jerusalem, not the defense of Constantinople, the crusade's goal; the crusaders took it in 'a most unchristian bloodbath' just before the turn of the century. A crusader state in Palestine was something Alexios could live with, possibly even useful as a buffer state.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerusalem",
+      "image_url": null,
+      "transcript_lines": [[269, 272], [411, 414]],
+      "related": [
+        {"type": "person", "id": "urban-ii"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "capture-of-jerusalem-1099"},
+        {"type": "event", "id": "crusader-states-established"}
+      ]
+    },
+    {
+      "id": "clermont",
+      "name": "Clermont",
+      "modern_name": "Clermont-Ferrand",
+      "modern_country": "France",
+      "lat": 45.7772,
+      "lng": 3.087,
+      "first_year": null,
+      "summary": "The site of the great church council called by Pope Urban II in November 1095, where Urban gave what Brownworth calls the single most effective speech ever heard in Europe — calling on Western Christendom to take up arms for Jerusalem rather than the mere mercenaries Alexios had requested.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clermont-Ferrand",
+      "image_url": null,
+      "transcript_lines": [[262, 268]],
+      "related": [
+        {"type": "person", "id": "urban-ii"},
+        {"type": "event", "id": "council-of-clermont"}
+      ]
+    },
+    {
+      "id": "belgrade",
+      "name": "Belgrade",
+      "modern_name": "Belgrade",
+      "modern_country": "Serbia",
+      "lat": 44.7866,
+      "lng": 20.4489,
+      "first_year": null,
+      "summary": "The city burned by Peter the Hermit's unruly crusader mob when they reached it on their march through Byzantine territory — after which they also tried to loot a neighboring city before Byzantine heavy cavalry restored order.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belgrade",
+      "image_url": null,
+      "transcript_lines": [[303, 307]],
+      "related": [
+        {"type": "person", "id": "peter-the-hermit"},
+        {"type": "event", "id": "peoples-crusade"}
+      ]
+    },
+    {
+      "id": "bosphorus",
+      "name": "Bosphorus",
+      "modern_name": "Bosphorus Strait",
+      "modern_country": "Turkey",
+      "lat": 41.12,
+      "lng": 29.06,
+      "first_year": null,
+      "summary": "The strait across which Alexios ferried Peter the Hermit's crusading mob to get them out of Constantinople and away from the city. Later used to ferry all the armies of the First Crusade across and out of harm's way after each leader had sworn the oath to Alexios.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bosphorus",
+      "image_url": null,
+      "transcript_lines": [[310, 311], [354, 355]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "peter-the-hermit"},
+        {"type": "event", "id": "peoples-crusade"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"}
+      ]
+    },
+    {
+      "id": "northern-syria",
+      "name": "Northern Syria",
+      "modern_name": "Northern Syria",
+      "modern_country": "Syria",
+      "lat": 36.5,
+      "lng": 37.5,
+      "first_year": null,
+      "summary": "The region where Alexios sent a modest force to oust Bohemond from some ports after Antioch became a crusader state, and also where Bohemond had previously been captured by the Turks and thrown into a Turkish prison for three years.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syria",
+      "image_url": null,
+      "transcript_lines": [[418, 424]],
+      "related": [
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "antioch"}
+      ]
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "modern_name": "France",
+      "modern_country": "France",
+      "lat": 46.0,
+      "lng": 2.0,
+      "first_year": null,
+      "summary": "The land where Viking plunderers settled in 911 and became the Normans, as Brownworth traces the Norman origin story. Also the country where the King of France offered his daughter to Bohemond in marriage during Bohemond's tour of Europe to recruit support for his second invasion of Byzantium.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/France",
+      "image_url": null,
+      "transcript_lines": [[125, 126], [429, 430]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "person", "id": "bohemond-of-taranto"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "battle-of-manzikert",
+      "name": "Battle of Manzikert",
+      "year": 1071,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The catastrophic Byzantine defeat by the Seljuk Turks near the small town of Manzikert in Asia Minor, where Romanos IV Diogenes led a mercenary-heavy army and was betrayed by commanders and mercenaries alike, resulting in annihilation and capture. Brownworth frames this as the event that dispelled the myth of Byzantine invincibility and triggered the collapse that Alexios later had to arrest — but he emphasizes it need not have become the disaster it did, since the Turks were distracted by a rival Islamic power.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Manzikert",
+      "image_url": null,
+      "location_id": "manzikert",
+      "transcript_lines": [[25, 41]],
+      "related": [
+        {"type": "person", "id": "romanos-iv-diogenes"},
+        {"type": "place", "id": "manzikert"},
+        {"type": "place", "id": "asia-minor"},
+        {"type": "event", "id": "seljuk-conquest-of-asia-minor"}
+      ]
+    },
+    {
+      "id": "seljuk-conquest-of-asia-minor",
+      "name": "Seljuk Overrunning of Asia Minor",
+      "year": 1071,
+      "end_year": 1081,
+      "category": "political",
+      "summary": "In the wake of Manzikert, the weak emperors who followed Romanos, lost in petty court struggles, did nothing as the Seljuks spread over 30,000 miles and completely overran Asia Minor. Michael VII even officially recognized the Turks' hold in 1078 in exchange for help against a renegade mercenary — described by Brownworth as a blindingly inept maneuver.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sultanate_of_Rum",
+      "image_url": null,
+      "location_id": "asia-minor",
+      "transcript_lines": [[39, 46]],
+      "related": [
+        {"type": "person", "id": "michael-vii-doukas"},
+        {"type": "place", "id": "asia-minor"},
+        {"type": "event", "id": "battle-of-manzikert"}
+      ]
+    },
+    {
+      "id": "alexios-seizes-throne",
+      "name": "Alexios Seizes the Byzantine Throne",
+      "year": 1081,
+      "end_year": null,
+      "category": "political",
+      "summary": "After Maria adopted Alexios into the royal family, he was given command of a campaign against the Turks, which he used to gather an army and be acclaimed emperor. He bribed defenders to open the city gates rather than undertaking a siege, entered Constantinople, and marched to the imperial palace while his mercenaries looted the city for a full day. Nikephoros abdicated and retired to a monastery, and three days later the Patriarch crowned the 24-year-old in a subdued ceremony at the Hagia Sophia.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[83, 114]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "nikephoros-iii-botaneiates"},
+        {"type": "person", "id": "maria-of-alania"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "hagia-sophia"}
+      ]
+    },
+    {
+      "id": "battle-of-dyrrachium",
+      "name": "Battle of Dyrrachium",
+      "year": 1081,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Alexios' first major military test against Robert Giscard's Normans at the port of Dyrrachium. The Varangian Guard — largely exiled Anglo-Saxons eager for revenge against the Normans — stopped the Norman charge with great effect, but undisciplined rank-and-file broke to pursue retreating Normans, were massacred when Norman cavalry turned around, and the isolated Varangians were cut down to a man. Alexios barely escaped in disguise and Dyrrachium fell.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Dyrrachium_(1081)",
+      "image_url": null,
+      "location_id": "dyrrachium",
+      "transcript_lines": [[154, 169]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "place", "id": "dyrrachium"},
+        {"type": "event", "id": "varangian-guard-annihilated"}
+      ]
+    },
+    {
+      "id": "varangian-guard-annihilated",
+      "name": "Annihilation of the Varangian Guard at Dyrrachium",
+      "year": 1081,
+      "end_year": null,
+      "category": "battle",
+      "summary": "During the Battle of Dyrrachium, the Varangian Guard — the cream of Alexios' army, made up largely of exiled Anglo-Saxons who had fled the Norman conquest of England — were left exposed and isolated when the rest of the army broke ranks, and were cut down to a man. Brownworth uses this as the clearest illustration of the fatal flaws of a mercenary-based army.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Varangian_Guard",
+      "image_url": null,
+      "location_id": "dyrrachium",
+      "transcript_lines": [[157, 166]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "battle-of-dyrrachium"}
+      ]
+    },
+    {
+      "id": "norman-revolt-in-italy",
+      "name": "Alexios-Backed Norman Revolt in Southern Italy",
+      "year": 1082,
+      "end_year": 1084,
+      "category": "political",
+      "summary": "After losing at Dyrrachium, Alexios turned to diplomacy: he first alerted the Holy Roman Emperor to Robert's threat, then bribed several Norman barons to revolt against Robert's heavy yoke in southern Italy. The revolt spread like wildfire, forcing Robert to abandon the Balkans campaign and return home — a lesson Brownworth calls decisive proof that there was more to fighting than commanding troops.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "southern-italy",
+      "transcript_lines": [[173, 183]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "person", "id": "holy-roman-emperor-henry-iv"},
+        {"type": "place", "id": "southern-italy"}
+      ]
+    },
+    {
+      "id": "sack-of-rome-1084",
+      "name": "Sack of Rome by Robert Guiscard",
+      "year": 1084,
+      "end_year": null,
+      "category": "battle",
+      "summary": "While returning to Greece after suppressing the Alexios-backed revolt in Italy and driving the German Emperor out, Robert Guiscard carried out a brutal three-day sack of Rome in which he set fire to the city and gutted most of its ancient buildings. Brownworth presents this as evidence of the destructive power Alexios had to contend with.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(1084)",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[184, 187]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "person", "id": "holy-roman-emperor-henry-iv"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "death-of-robert-guiscard",
+      "name": "Death of Robert Guiscard",
+      "year": 1085,
+      "end_year": null,
+      "category": "political",
+      "summary": "Plague struck the Norman camp when the 68-year-old Robert returned to Greece, killing Robert himself. Brownworth describes his death as delivering the Empire — both east and west — from one of its most formidable enemies, and notes that his successor Bohemond found himself outmatched by Alexios at every turn.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Guiscard",
+      "image_url": null,
+      "location_id": "balkans",
+      "transcript_lines": [[187, 193]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "person", "id": "alexios-i-komnenos"}
+      ]
+    },
+    {
+      "id": "bohemond-defeated-and-surrenders",
+      "name": "Bohemond's Surrender to Alexios",
+      "year": 1085,
+      "end_year": null,
+      "category": "political",
+      "summary": "After Robert's death, Bohemond tried to force a decisive battle by cornering the Byzantine army, but Alexios feigned retreat, lured him into an ambush, and plundered his camp. Simultaneously Alexios constantly harassed the demoralized Normans and offered massive bribes to defect. With his army ill and threatening to leave, Bohemond swallowed his pride and signed a humiliating surrender, leaving imperial territory.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "balkans",
+      "transcript_lines": [[193, 201]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "event", "id": "death-of-robert-guiscard"}
+      ]
+    },
+    {
+      "id": "pecheneg-seljuk-assault-on-constantinople",
+      "name": "Pecheneg-Seljuk Assault on Constantinople",
+      "year": 1090,
+      "end_year": 1091,
+      "category": "battle",
+      "summary": "The Seljuk Turks allied with the Pechenegs and appeared beneath the walls of Constantinople. Alexios responded with characteristically indirect cunning: he invited the Cumans — the Pechenegs' main rivals — to annihilate the Pechenegs, then incited the Emir's son-in-law to revolt against the Emir, neutralizing the Turkish threat. The Byzantine-backed candidate signed a peace treaty stabilizing the eastern frontier.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Levounion",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[209, 215]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "cumans-annihilate-pechenegs"}
+      ]
+    },
+    {
+      "id": "cumans-annihilate-pechenegs",
+      "name": "Cuman Annihilation of the Pechenegs",
+      "year": 1091,
+      "end_year": null,
+      "category": "battle",
+      "summary": "At Alexios' instigation, the Cumans — rivals of the Pechenegs — were invited into Byzantine territory to annihilate the Pecheneg forces threatening Constantinople. Brownworth uses this as a prime example of Alexios' diplomatic mastery: inducing another nation to do his military work for him.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Levounion",
+      "image_url": null,
+      "location_id": "balkans",
+      "transcript_lines": [[209, 211]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "pecheneg-seljuk-assault-on-constantinople"}
+      ]
+    },
+    {
+      "id": "cuman-pretender-revolt",
+      "name": "Cuman Pretender Revolt in the Balkans",
+      "year": 1094,
+      "end_year": null,
+      "category": "political",
+      "summary": "A Cuman pretender arose in the Balkans, inspiring a popular revolt. Alexios solved it by finding a disgruntled group of Cumans and bribing them to assassinate the pretender — without his presence the revolt was pointless and simply melted away, illustrating Alexios' preference for targeted political solutions over costly military campaigns.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "balkans",
+      "transcript_lines": [[216, 219]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "balkans"}
+      ]
+    },
+    {
+      "id": "great-schism",
+      "name": "Great Schism",
+      "year": 1054,
+      "end_year": null,
+      "category": "religious",
+      "summary": "The permanent rupture between the Roman Catholic and Eastern Orthodox churches when the Pope and Patriarch excommunicated each other in 1054. Brownworth frames this as the event that set the wheels of the First Crusade in motion 42 years later, since it established the Pope rather than the Byzantine Emperor as supreme spiritual authority in the West — meaning Alexios' appeal to Urban II for mercenaries gave the Pope the opportunity to call a crusade under his own authority.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East%E2%80%93West_Schism",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[233, 255]],
+      "related": [
+        {"type": "person", "id": "urban-ii"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "event", "id": "council-of-clermont"}
+      ]
+    },
+    {
+      "id": "council-of-clermont",
+      "name": "Council of Clermont",
+      "year": 1095,
+      "end_year": null,
+      "category": "religious",
+      "summary": "The great church council called by Pope Urban II in November 1095 where he gave what Brownworth calls the single most effective speech ever heard in Europe — calling on Western Christendom to stop killing each other and take up arms for Jerusalem. Where Alexios had wanted only a few hundred mercenaries, Urban called for whole armies, with no mention of the Emperor or the Empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Clermont",
+      "image_url": null,
+      "location_id": "clermont",
+      "transcript_lines": [[262, 270]],
+      "related": [
+        {"type": "person", "id": "urban-ii"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "clermont"},
+        {"type": "event", "id": "great-schism"},
+        {"type": "event", "id": "peoples-crusade"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"}
+      ]
+    },
+    {
+      "id": "peoples-crusade",
+      "name": "People's Crusade",
+      "year": 1096,
+      "end_year": null,
+      "category": "religious",
+      "summary": "The first crusading force to arrive — 40,000 French and German peasants led by Peter the Hermit — confirmed Alexios' worst suspicions. Despite being given guides, provisions, and interpreters, they burned Belgrade, rioted, lost 10,000 men to Byzantine cavalry, then looted the suburbs of Constantinople. Alexios ferried them across the Bosphorus; Peter ignored his advice and his rabble was wiped out by the Turks.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/People%27s_Crusade",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[297, 315]],
+      "related": [
+        {"type": "person", "id": "peter-the-hermit"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "belgrade"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "bosphorus"},
+        {"type": "event", "id": "council-of-clermont"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"}
+      ]
+    },
+    {
+      "id": "first-crusade-arrives-at-constantinople",
+      "name": "First Crusade's Passage Through Constantinople",
+      "year": 1096,
+      "end_year": 1097,
+      "category": "religious",
+      "summary": "Nearly 100,000 soldiers — the flower of European chivalry — passed through Constantinople over several months. Alexios managed them with a masterful blend of friendship and saber-rattling: troops camped outside the walls, only unarmed small groups admitted, leaders kept as virtual prisoners until they swore an oath to return any former Byzantine territory they captured. He showered them with gifts, hosted banquets, even adopted some into the royal family. All but one leader swore; Alexios watched them depart with no illusions they would keep their oaths.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/First_Crusade",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[316, 365]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "person", "id": "baldwin-i-of-jerusalem"},
+        {"type": "person", "id": "son-of-king-of-france"},
+        {"type": "person", "id": "william-ix-of-aquitaine"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "bosphorus"},
+        {"type": "event", "id": "peoples-crusade"},
+        {"type": "event", "id": "battle-of-nicaea-1097"}
+      ]
+    },
+    {
+      "id": "battle-of-nicaea-1097",
+      "name": "Crusader Siege and Byzantine Capture of Nicaea",
+      "year": 1097,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The Sultan of Rum attacked the crusading army besieging his capital of Nicaea, but found to his horror these soldiers were nothing like Peter the Hermit's rabble — his army broke and fled. The citizens of Nicaea, fearing a sack and with no hope of rescue, quietly surrendered to the Byzantines overnight. When crusaders awoke to find the Byzantine flag flying and looting opportunities gone, they began to grumble openly about Byzantine duplicity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Nicaea",
+      "image_url": null,
+      "location_id": "nicaea",
+      "transcript_lines": [[366, 380]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "sultan-of-rum"},
+        {"type": "place", "id": "nicaea"},
+        {"type": "event", "id": "first-crusade-arrives-at-constantinople"},
+        {"type": "event", "id": "siege-of-antioch"}
+      ]
+    },
+    {
+      "id": "siege-of-antioch",
+      "name": "Crusader Siege and Defense of Antioch",
+      "year": 1097,
+      "end_year": 1098,
+      "category": "battle",
+      "summary": "The crusaders somehow reached Antioch despite parched exhaustion and managed to take it, but were then themselves besieged by a much larger Turkish force. Alexios set out with a large army to relieve them but was turned back halfway when three deserting knights reported all was lost. Against all odds the crusaders triumphed — then considered themselves released from their oaths and gave Antioch to Bohemond, making the ancient city the heart of a crusader state.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Antioch",
+      "image_url": null,
+      "location_id": "antioch",
+      "transcript_lines": [[390, 410]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "place", "id": "antioch"},
+        {"type": "event", "id": "crusader-states-established"}
+      ]
+    },
+    {
+      "id": "crusader-states-established",
+      "name": "Establishment of the Crusader States",
+      "year": 1098,
+      "end_year": 1099,
+      "category": "political",
+      "summary": "Several crusader nobles split off and, despite oaths to Alexios, carved out kingdoms from Byzantine territory. Bohemond took Antioch, and after the 'most unchristian bloodbath' capture of Jerusalem just before the turn of the century, a crusader state was established in Palestine. Alexios could live with a crusader Palestine as a useful buffer state, but crusader control of Antioch — the most important city in Asia Minor — was another matter entirely.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crusader_states",
+      "image_url": null,
+      "location_id": "antioch",
+      "transcript_lines": [[385, 415]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "person", "id": "baldwin-i-of-jerusalem"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "event", "id": "capture-of-jerusalem-1099"}
+      ]
+    },
+    {
+      "id": "capture-of-jerusalem-1099",
+      "name": "Crusader Capture of Jerusalem",
+      "year": 1099,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The crusading army left Antioch and battered down the walls of Jerusalem, capturing the city 'in a most unchristian bloodbath just before the turn of the century.' Brownworth notes Alexios could regard a crusader Palestine as a possibly useful buffer state, in contrast to his bitterness over losing Antioch.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
+      "image_url": null,
+      "location_id": "jerusalem",
+      "transcript_lines": [[411, 413]],
+      "related": [
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "event", "id": "crusader-states-established"}
+      ]
+    },
+    {
+      "id": "second-norman-invasion",
+      "name": "Second Norman Invasion (Bohemond's Campaign)",
+      "year": 1107,
+      "end_year": 1108,
+      "category": "battle",
+      "summary": "After his Turkish captivity, Bohemond toured Europe spreading the lie that Alexios had betrayed the crusaders, received the French king's daughter in marriage, and assembled an army to capture Dyrrachium and then Constantinople. Alexios responded by calmly ordering lunch before acting — wrote fake letters to Bohemond's generals implying they were in Byzantine pay, allowed the letters to fall into Bohemond's hands, then distributed real Byzantine gold. Even Bohemond's brother-in-law defected; Bohemond surrendered without Alexios drawing a sword, and died shortly after in obscurity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bohemond%27s_Crusade",
+      "image_url": null,
+      "location_id": "dyrrachium",
+      "transcript_lines": [[425, 448]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "bohemond-of-taranto"},
+        {"type": "place", "id": "dyrrachium"}
+      ]
+    },
+    {
+      "id": "turkish-attack-on-nicaea-1113",
+      "name": "Turkish Attack on Nicaea",
+      "year": 1113,
+      "end_year": null,
+      "category": "battle",
+      "summary": "In 1113, 54,000 Turks reached Nicaea and tried to take it before being surprised and annihilated by Alexios. Already in his sixties and not in good health, Brownworth describes this as his last major victory.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "nicaea",
+      "transcript_lines": [[455, 457]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "nicaea"}
+      ]
+    },
+    {
+      "id": "death-of-alexios",
+      "name": "Death of Alexios I Komnenos",
+      "year": 1118,
+      "end_year": null,
+      "category": "political",
+      "summary": "Five years after his last major victory, Alexios fell seriously ill returning from a minor campaign and died on August 15th in Constantinople. Brownworth describes him as the greatest emperor since Basil II, whose forty years saved the empire and left it incomparably stronger — but whose system of personal diplomacy was too complex to survive him, so that within eighty years enemies were again at the doorstep with no Alexios to face them.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[459, 488]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "person", "id": "basil-ii"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "norman-conquest-of-england",
+      "name": "Norman Conquest of England",
+      "year": 1066,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Referenced by Brownworth as the event in which William the Conqueror invaded England, killed the rightful king, and claimed the throne for himself — part of the broader Norman success story of the 11th century. The Norman conquest is also relevant to the Varangian Guard, which was made up largely of exiled Anglo-Saxons who had fled it and were eager for revenge against the Normans at Dyrrachium.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_conquest_of_England",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[133, 135], [157, 159]],
+      "related": [
+        {"type": "person", "id": "william-the-conqueror"},
+        {"type": "event", "id": "battle-of-dyrrachium"},
+        {"type": "event", "id": "varangian-guard-annihilated"}
+      ]
+    },
+    {
+      "id": "fall-of-bari-1071",
+      "name": "Norman Capture of Bari",
+      "year": 1071,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Robert Giscard's capture of Bari in 1071, the last Byzantine stronghold in Italy, ending Byzantine presence on the Italian peninsula. Brownworth pairs this with the Battle of Manzikert in the same year as a bookend disaster — the empire losing its western Italian foothold and its eastern Anatolian heartland in the same year.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bari",
+      "image_url": null,
+      "location_id": "bari",
+      "transcript_lines": [[142, 143]],
+      "related": [
+        {"type": "person", "id": "robert-de-hauteville"},
+        {"type": "place", "id": "bari"},
+        {"type": "place", "id": "southern-italy"},
+        {"type": "event", "id": "battle-of-manzikert"}
+      ]
+    },
+    {
+      "id": "fourth-crusade-sack-of-constantinople",
+      "name": "Sack of Constantinople by the Fourth Crusade",
+      "year": 1204,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Mentioned only in the closing teaser as the culminating disaster of the next episode — the fall of Constantinople itself to the soldiers of the Fourth Crusade, confirming old Byzantine suspicions and representing the collapse of the system Alexios had maintained.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople_(1204)",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[491, 493]],
+      "related": [
+        {"type": "person", "id": "isaac-angelos"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    }
+  ]
+}

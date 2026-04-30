@@ -1,0 +1,1049 @@
+{
+  "episode": 6,
+  "title": "Zeno",
+  "people": [
+    {
+      "id": "zeno-emperor",
+      "name": "Zeno",
+      "alt_names": ["Teresikadisa", "Tarasicodissa"],
+      "role": "Eastern Roman Emperor",
+      "birth_year": 425,
+      "death_year": 491,
+      "reign_start": 474,
+      "reign_end": 491,
+      "summary": "A barbarian chieftain from the Taurus Mountains of Armenia, Zeno rose to power by marrying Leo I's daughter and eventually became sole emperor of the East. His reign was the most eventful in Byzantine history, seeing the fall of the Western Empire and the birth of the medieval papacy, though he was chronically unpopular due to his foreign origins and faced nearly constant rebellion.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zeno_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[11, 13], [83, 86], [111, 135], [159, 173], [280, 313]],
+      "related": [
+        {"type": "person", "id": "leo-i-emperor"},
+        {"type": "person", "id": "leo-ii-emperor"},
+        {"type": "person", "id": "verina-empress"},
+        {"type": "person", "id": "aspar"},
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "person", "id": "odoacer"},
+        {"type": "event", "id": "zeno-flight-to-isauria"},
+        {"type": "event", "id": "zeno-restoration"},
+        {"type": "event", "id": "fall-of-western-empire"},
+        {"type": "event", "id": "acacian-schism"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "isauria"}
+      ]
+    },
+    {
+      "id": "leo-i-emperor",
+      "name": "Leo I",
+      "alt_names": ["Leo the Thracian", "Leo the Great"],
+      "role": "Eastern Roman Emperor",
+      "birth_year": 401,
+      "death_year": 474,
+      "reign_start": 457,
+      "reign_end": 474,
+      "summary": "A 59-year-old member of Aspar's staff chosen as a compliant puppet emperor, Leo proved to be anything but. Though uneducated, he possessed abundant common sense and worked systematically to break free from Germanic domination of his court, ultimately having Aspar and his sons killed. He was the first emperor crowned with a ceremony involving the Christian patriarch, a tradition that continued until the empire's end.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_I_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[22, 23], [64, 119]],
+      "related": [
+        {"type": "person", "id": "aspar"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "leo-ii-emperor"},
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "verina-empress"},
+        {"type": "event", "id": "assassination-of-aspar"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "aspar",
+      "name": "Aspar",
+      "alt_names": ["Ardabur Aspar", "Flavius Ardabur Aspar"],
+      "role": "Barbarian General and Power Broker of the Eastern Empire",
+      "birth_year": 400,
+      "death_year": 471,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "An Arian barbarian general who controlled the Eastern Empire from behind the throne for at least 23 years. He handpicked Leo I as emperor expecting another docile puppet, but Leo systematically undermined him by recruiting the Isaurians. Aspar attempted to assassinate Zeno and infiltrate his troops before Leo finally summoned him and his sons to the palace and had them killed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aspar",
+      "portrait_url": null,
+      "transcript_lines": [[26, 27], [60, 109]],
+      "related": [
+        {"type": "person", "id": "leo-i-emperor"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "basiliscus"},
+        {"type": "event", "id": "assassination-of-aspar"}
+      ]
+    },
+    {
+      "id": "julian-the-apostate",
+      "name": "Julian the Apostate",
+      "alt_names": ["Julian II", "Flavius Claudius Julianus"],
+      "role": "Roman Emperor",
+      "birth_year": 331,
+      "death_year": 363,
+      "reign_start": 361,
+      "reign_end": 363,
+      "summary": "Described as a misguided visionary who squandered tremendous talent in a fruitless attempt to restore paganism and destroy Christianity. He was the last emperor to rule a united empire and the last male relative of Constantine the Great, leaving the empire in dynastic exhaustion.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[5, 8]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "library-fire-constantinople"}
+      ]
+    },
+    {
+      "id": "constantine-the-great",
+      "name": "Constantine the Great",
+      "alt_names": ["Constantine I", "Flavius Valerius Constantinus"],
+      "role": "Roman Emperor",
+      "birth_year": 272,
+      "death_year": 337,
+      "reign_start": 306,
+      "reign_end": 337,
+      "summary": "Mentioned as the progenitor of the dynasty that ended with Julian the Apostate, who was the last male relative of Constantine.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[7, 8]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"}
+      ]
+    },
+    {
+      "id": "aetius",
+      "name": "Aetius",
+      "alt_names": ["Flavius Aetius"],
+      "role": "Roman General, de facto ruler of the Western Empire",
+      "birth_year": 391,
+      "death_year": 454,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A barbarian Germanic general who had spent 30 years as the power behind the Western throne before being rashly killed by Emperor Valentinian III with his own hands. His murder destabilized the West and triggered a chain of events leading to further chaos.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aetius",
+      "portrait_url": null,
+      "transcript_lines": [[25, 29]],
+      "related": [
+        {"type": "person", "id": "valentinian-iii"},
+        {"type": "event", "id": "assassination-of-aetius"}
+      ]
+    },
+    {
+      "id": "valentinian-iii",
+      "name": "Valentinian III",
+      "alt_names": ["Flavius Placidius Valentinianus"],
+      "role": "Western Roman Emperor",
+      "birth_year": 419,
+      "death_year": 455,
+      "reign_start": 425,
+      "reign_end": 455,
+      "summary": "The puppet Western emperor who decided he wanted to rule in his own right and rashly killed Aetius with his own hands, only to be assassinated himself a few months later by Aetius's disgruntled officers.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valentinian_III",
+      "portrait_url": null,
+      "transcript_lines": [[27, 29]],
+      "related": [
+        {"type": "person", "id": "aetius"},
+        {"type": "event", "id": "assassination-of-aetius"}
+      ]
+    },
+    {
+      "id": "pope-leo-i",
+      "name": "Pope Leo I",
+      "alt_names": ["Leo the Great", "Saint Leo I"],
+      "role": "Pope",
+      "birth_year": 400,
+      "death_year": 461,
+      "reign_start": 440,
+      "reign_end": 461,
+      "summary": "The pope who famously turned away Attila the Hun three years before the Vandal sack of Rome, and then went out to negotiate with the Vandal invaders. This time he could only secure a promise that no citizens would be killed and no buildings destroyed — a promise the Vandals largely kept.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Leo_I",
+      "portrait_url": null,
+      "transcript_lines": [[40, 58]],
+      "related": [
+        {"type": "person", "id": "attila-the-hun"},
+        {"type": "event", "id": "vandal-sack-of-rome"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "attila-the-hun",
+      "name": "Attila the Hun",
+      "alt_names": ["Attila"],
+      "role": "King of the Huns",
+      "birth_year": 406,
+      "death_year": 453,
+      "reign_start": 434,
+      "reign_end": 453,
+      "summary": "Three years before the Vandal sack of Rome, Attila the Hun had stood at the gates of the city but was successfully turned away by Pope Leo I. He is also mentioned as the former employer of Orestes, the father of Romulus Augustulus.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Attila",
+      "portrait_url": null,
+      "transcript_lines": [[43, 44], [179, 180]],
+      "related": [
+        {"type": "person", "id": "pope-leo-i"},
+        {"type": "person", "id": "orestes-general"},
+        {"type": "event", "id": "vandal-sack-of-rome"}
+      ]
+    },
+    {
+      "id": "john-julius-norwich",
+      "name": "John Julius Norwich",
+      "alt_names": [],
+      "role": "Historian",
+      "birth_year": 1929,
+      "death_year": 2018,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A historian quoted by Brownworth regarding the Vandal sack of Rome: 'They had behaved like brigands certainly, but not on this occasion like vandals,' a wry observation on the literal irony of the sack.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Julius_Norwich",
+      "portrait_url": null,
+      "transcript_lines": [[57, 58]],
+      "related": [
+        {"type": "event", "id": "vandal-sack-of-rome"}
+      ]
+    },
+    {
+      "id": "basiliscus",
+      "name": "Basiliscus",
+      "alt_names": [],
+      "role": "Eastern Roman Emperor (usurper)",
+      "birth_year": null,
+      "death_year": 476,
+      "reign_start": 475,
+      "reign_end": 476,
+      "summary": "The emperor's brother-in-law, described as a well-educated but incompetent fool with a burning desire for power. After commanding the disastrous African naval campaign against the Vandals, he later usurped the throne while Zeno fled to Isauria, but his reign was a catalogue of mismanagement — alienating the army, squandering support, appointing Timothy the Weasel as his advisor, and triggering a massive fire and religious riots — until Zeno returned and exiled him to Cappadocia to freeze to death.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basiliscus",
+      "portrait_url": null,
+      "transcript_lines": [[88, 103], [128, 167]],
+      "related": [
+        {"type": "person", "id": "leo-i-emperor"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "verina-empress"},
+        {"type": "person", "id": "aspar"},
+        {"type": "person", "id": "timothy-the-weasel"},
+        {"type": "event", "id": "vandal-campaign-defeat"},
+        {"type": "event", "id": "basiliscus-usurpation"},
+        {"type": "event", "id": "zeno-restoration"},
+        {"type": "place", "id": "carthage"},
+        {"type": "place", "id": "cappadocia"}
+      ]
+    },
+    {
+      "id": "verina-empress",
+      "name": "Verina",
+      "alt_names": ["Aelia Verina"],
+      "role": "Eastern Roman Empress, mother-in-law of Zeno",
+      "birth_year": null,
+      "death_year": 484,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Zeno's mother-in-law who hated him and spent a year directing popular hatred against him before engineering his flight to Isauria. She attracted the general Illus and her incompetent brother Basiliscus to her cause, but ultimately failed to get her lover appointed emperor. She later tried to scheme against Zeno again and was imprisoned.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verina",
+      "portrait_url": null,
+      "transcript_lines": [[124, 141], [215, 218]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "illus"},
+        {"type": "event", "id": "zeno-flight-to-isauria"},
+        {"type": "event", "id": "basiliscus-usurpation"}
+      ]
+    },
+    {
+      "id": "illus",
+      "name": "Illus",
+      "alt_names": ["Ailas", "Eilis"],
+      "role": "Isaurian/Assyrian General",
+      "birth_year": null,
+      "death_year": 488,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "An Isaurian general who first helped Verina overthrow Zeno, then joined Zeno in exile after becoming disgusted with Basiliscus. He saved Zeno again when Marcian invaded Constantinople, and was rewarded with the office of master of offices. However, after a dispute over Zeno's imprisoned brother, Illus went over to a rebel in Syria and set up a rival court, until Theodoric besieged him for four years and finally took his fortress by a ruse.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Illus",
+      "portrait_url": null,
+      "transcript_lines": [[128, 129], [153, 158], [216, 234], [239, 244]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "verina-empress"},
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "event", "id": "zeno-flight-to-isauria"},
+        {"type": "event", "id": "revolt-of-illus"},
+        {"type": "place", "id": "isauria"},
+        {"type": "place", "id": "antioch"}
+      ]
+    },
+    {
+      "id": "timothy-the-weasel",
+      "name": "Timothy the Weasel",
+      "alt_names": ["Timothy Aelurus", "Timothy II of Alexandria"],
+      "role": "Monophysite Bishop of Alexandria",
+      "birth_year": null,
+      "death_year": 477,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Appointed as bishop of Alexandria and main religious advisor by Basiliscus during his usurpation. Timothy convinced Basiliscus to abolish the Patriarchate of Constantinople, an act so offensive it triggered massive riots and nearly cost Basiliscus his throne.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Timothy_Aelurus",
+      "portrait_url": null,
+      "transcript_lines": [[143, 148]],
+      "related": [
+        {"type": "person", "id": "basiliscus"},
+        {"type": "event", "id": "abolition-of-constantinople-patriarchate"},
+        {"type": "place", "id": "alexandria"}
+      ]
+    },
+    {
+      "id": "leo-ii-emperor",
+      "name": "Leo II",
+      "alt_names": [],
+      "role": "Eastern Roman Emperor",
+      "birth_year": 467,
+      "death_year": 474,
+      "reign_start": 474,
+      "reign_end": 474,
+      "summary": "Zeno's seven-year-old son who was nominated as successor by Leo I. As his first official act, the child appointed his father Zeno as co-emperor, and died nine months later, making Zeno sole ruler of the Eastern Empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_II_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[111, 113]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "leo-i-emperor"}
+      ]
+    },
+    {
+      "id": "julius-nepos",
+      "name": "Julius Nepos",
+      "alt_names": [],
+      "role": "Western Roman Emperor",
+      "birth_year": null,
+      "death_year": 480,
+      "reign_start": 474,
+      "reign_end": 475,
+      "summary": "The western emperor at the start of Zeno's reign who was overthrown by the general Orestes. When Odoacer sent Zeno the imperial insignia after deposing Romulus Augustulus, Zeno cleverly deflected the issue by telling Odoacer to address his request to the still-living exiled western emperor Julius Nepos.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Nepos",
+      "portrait_url": null,
+      "transcript_lines": [[177, 178], [207, 209]],
+      "related": [
+        {"type": "person", "id": "orestes-general"},
+        {"type": "person", "id": "odoacer"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "event", "id": "fall-of-western-empire"}
+      ]
+    },
+    {
+      "id": "orestes-general",
+      "name": "Orestes",
+      "alt_names": [],
+      "role": "Western Roman General",
+      "birth_year": null,
+      "death_year": 476,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A barbarian general who in his youth had been a personal secretary of Attila the Hun. He overthrew Julius Nepos and elevated his own son Romulus Augustulus to the western throne. When Odoacer and three barbarian tribes demanded one-third of Italy, Orestes indignantly refused and was invaded and killed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orestes_(western_Roman_general)",
+      "portrait_url": null,
+      "transcript_lines": [[178, 184]],
+      "related": [
+        {"type": "person", "id": "julius-nepos"},
+        {"type": "person", "id": "romulus-augustulus"},
+        {"type": "person", "id": "attila-the-hun"},
+        {"type": "person", "id": "odoacer"},
+        {"type": "event", "id": "fall-of-western-empire"}
+      ]
+    },
+    {
+      "id": "romulus-augustulus",
+      "name": "Romulus Augustulus",
+      "alt_names": ["Romulus Augustus"],
+      "role": "Western Roman Emperor (last)",
+      "birth_year": 461,
+      "death_year": null,
+      "reign_start": 475,
+      "reign_end": 476,
+      "summary": "Son of the general Orestes, placed on the western throne as a child with two famous namesakes to live up to. Odoacer felt sorry for the pathetic young emperor and rather than killing him, sent him into comfortable exile in Campania. Though his death date is unrecorded, his abdication in 476 marked the end of the Roman Empire in the West.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
+      "portrait_url": null,
+      "transcript_lines": [[180, 197]],
+      "related": [
+        {"type": "person", "id": "orestes-general"},
+        {"type": "person", "id": "odoacer"},
+        {"type": "event", "id": "fall-of-western-empire"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "campania"}
+      ]
+    },
+    {
+      "id": "odoacer",
+      "name": "Odoacer",
+      "alt_names": ["Odovacer", "Odovacre"],
+      "role": "King of Italy",
+      "birth_year": 433,
+      "death_year": 493,
+      "reign_start": 476,
+      "reign_end": 493,
+      "summary": "The barbarian leader of three tribes who demanded one-third of Italy, killed Orestes when refused, and deposed Romulus Augustulus, ending the Western Empire. He chose to give lip service to Zeno's eastern authority rather than installing a new puppet emperor in Ravenna, sending Zeno the imperial insignia and asking only for the title of patrician. He was ultimately tricked into a joint rule by Theodoric and murdered at a banquet.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Odoacer",
+      "portrait_url": null,
+      "transcript_lines": [[183, 212], [255, 269]],
+      "related": [
+        {"type": "person", "id": "romulus-augustulus"},
+        {"type": "person", "id": "orestes-general"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "event", "id": "fall-of-western-empire"},
+        {"type": "event", "id": "murder-of-odoacer"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "italy"}
+      ]
+    },
+    {
+      "id": "theodoric-the-great",
+      "name": "Theodoric the Great",
+      "alt_names": ["Theoderic the Great"],
+      "role": "King of the Ostrogoths, King of Italy",
+      "birth_year": 454,
+      "death_year": 526,
+      "reign_start": 493,
+      "reign_end": 526,
+      "summary": "The brilliant young leader of the Ostrogoths, recruited by Zeno to suppress the rebel Illus and then sent into Italy to displace Odoacer, taking his entire people with him. He defeated Illus by besieging his Isaurian fortress for four years, and subdued Odoacer by blockading him in Ravenna, feigning a joint rule, and then personally striking him down at a banquet. Theodoric ruled Italy wisely for 33 years, giving lip service to Byzantine authority.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theodoric_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[237, 275]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "odoacer"},
+        {"type": "person", "id": "illus"},
+        {"type": "event", "id": "theodoric-invades-italy"},
+        {"type": "event", "id": "murder-of-odoacer"},
+        {"type": "event", "id": "revolt-of-illus"},
+        {"type": "place", "id": "italy"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "isauria"}
+      ]
+    },
+    {
+      "id": "marcian-rebel",
+      "name": "Marcian",
+      "alt_names": [],
+      "role": "Son-in-law of Zeno, rebel claimant",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A son-in-law of Zeno who, while Verina continued scheming, invaded Constantinople and would have forced Zeno out of power a second time, had not Illus intervened quickly on the emperor's behalf.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marcian_(son-in-law_of_Zeno)",
+      "portrait_url": null,
+      "transcript_lines": [[216, 219]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "verina-empress"},
+        {"type": "person", "id": "illus"}
+      ]
+    },
+    {
+      "id": "justinian-i",
+      "name": "Justinian I",
+      "alt_names": ["Justinian the Great", "Flavius Petrus Sabbatius Iustinianus"],
+      "role": "Eastern Roman Emperor",
+      "birth_year": 482,
+      "death_year": 565,
+      "reign_start": 527,
+      "reign_end": 565,
+      "summary": "Mentioned only in prospect as the subject of the next episode, described as the greatest of all Byzantine emperors and the last man to dream on a truly imperial scale, who 36 years after Zeno's death would rise to restore the empire's glory and attempt to reclaim the West.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
+      "portrait_url": null,
+      "transcript_lines": [[315, 317]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"}
+      ]
+    },
+    {
+      "id": "elderly-senator-western-emperor",
+      "name": "Petronius Maximus",
+      "alt_names": ["Petronius Maximus"],
+      "role": "Western Roman Emperor",
+      "birth_year": 396,
+      "death_year": 455,
+      "reign_start": 455,
+      "reign_end": 455,
+      "summary": "Described only as an elderly senator of around 60 who replaced Valentinian III, quickly forced the widowed empress to marry him, bribed everyone for control of the palace, then showed remarkable lack of tact by embracing Valentinian's murderers. When the Vandals arrived, he advised citizens to flee, was blamed for the disaster, dismembered by the populace, and his pieces thrown into the Tiber.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petronius_Maximus",
+      "portrait_url": null,
+      "transcript_lines": [[30, 39]],
+      "related": [
+        {"type": "person", "id": "valentinian-iii"},
+        {"type": "event", "id": "vandal-sack-of-rome"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "tiber-river"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "The capital of the Eastern Empire and the central stage for most of the episode's political drama — coronations, usurpations, riots, a devastating fire, and Zeno's repeated flights and returns all happen here.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[85, 86], [101, 102], [131, 132], [159, 163]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "leo-i-emperor"},
+        {"type": "event", "id": "basiliscus-usurpation"},
+        {"type": "event", "id": "zeno-restoration"},
+        {"type": "event", "id": "library-fire-constantinople"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "place", "id": "hippodrome"}
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "modern_name": "Rome",
+      "modern_country": "Italy",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "first_year": null,
+      "summary": "The ancient capital of the Western Empire, sacked by the Vandals for 14 days in 455, stripped of all wealth including gilded copper roofs. The sack and eventual abandonment of Rome as a capital led the populace to turn to the pope for both spiritual and temporal authority, ushering in the medieval papacy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
+      "image_url": null,
+      "transcript_lines": [[35, 58], [277, 279]],
+      "related": [
+        {"type": "event", "id": "vandal-sack-of-rome"},
+        {"type": "person", "id": "pope-leo-i"},
+        {"type": "place", "id": "tiber-river"}
+      ]
+    },
+    {
+      "id": "carthage",
+      "name": "Carthage",
+      "modern_name": "Carthage (near Tunis)",
+      "modern_country": "Tunisia",
+      "lat": 36.8528,
+      "lng": 10.3233,
+      "first_year": null,
+      "summary": "The capital of the Vandal Kingdom of Africa, to which all the looted wealth of Rome was transported after the sack of 455. Brownworth notes the irony of Rome's riches being taken to Carthage, given the historical bad blood between the two cities.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carthage",
+      "image_url": null,
+      "transcript_lines": [[51, 53], [97, 100]],
+      "related": [
+        {"type": "event", "id": "vandal-sack-of-rome"},
+        {"type": "event", "id": "vandal-campaign-defeat"}
+      ]
+    },
+    {
+      "id": "isauria",
+      "name": "Isauria",
+      "modern_name": "Taurus Mountains region, south-central Turkey",
+      "modern_country": "Turkey",
+      "lat": 37.0,
+      "lng": 33.5,
+      "first_year": null,
+      "summary": "A wild region in the Taurus Mountains of present-day Armenia described as the homeland of Zeno and his people, a tough and loyal group Leo I recruited to counterbalance Germanic power in his army. Zeno fled here after being driven from Constantinople, spending 20 months planning his return.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isauria",
+      "image_url": null,
+      "transcript_lines": [[82, 86], [134, 135], [154, 155]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "illus"},
+        {"type": "event", "id": "zeno-flight-to-isauria"}
+      ]
+    },
+    {
+      "id": "ravenna",
+      "name": "Ravenna",
+      "modern_name": "Ravenna",
+      "modern_country": "Italy",
+      "lat": 44.4184,
+      "lng": 12.2035,
+      "first_year": null,
+      "summary": "The capital of the Western Empire at the time of its fall, where Odoacer entered in September 476 and showed clemency to Romulus Augustulus. It was also where Theodoric blockaded Odoacer before the final banquet murder.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ravenna",
+      "image_url": null,
+      "transcript_lines": [[185, 186], [198, 199], [259, 265]],
+      "related": [
+        {"type": "person", "id": "odoacer"},
+        {"type": "person", "id": "romulus-augustulus"},
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "event", "id": "fall-of-western-empire"},
+        {"type": "event", "id": "murder-of-odoacer"}
+      ]
+    },
+    {
+      "id": "cappadocia",
+      "name": "Cappadocia",
+      "modern_name": "Cappadocia region",
+      "modern_country": "Turkey",
+      "lat": 38.6431,
+      "lng": 34.8289,
+      "first_year": null,
+      "summary": "The remote region to which Zeno exiled Basiliscus after restoring himself to power. Zeno, keeping his promise not to shed a drop of Basiliscus's blood, sent him there and let the harsh winter do the killing.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cappadocia",
+      "image_url": null,
+      "transcript_lines": [[166, 167]],
+      "related": [
+        {"type": "person", "id": "basiliscus"},
+        {"type": "event", "id": "zeno-restoration"}
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "modern_name": "Italy",
+      "modern_country": "Italy",
+      "lat": 42.5,
+      "lng": 12.5,
+      "first_year": null,
+      "summary": "The territory that became the focus of the late episode — the barbarian demands for one-third of it triggered the final fall of the Western Empire, and Zeno later resolved his Ostrogothic problem by sending Theodoric to conquer it in his name.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Italy",
+      "image_url": null,
+      "transcript_lines": [[183, 184], [249, 256]],
+      "related": [
+        {"type": "person", "id": "odoacer"},
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "event", "id": "fall-of-western-empire"},
+        {"type": "event", "id": "theodoric-invades-italy"}
+      ]
+    },
+    {
+      "id": "campania",
+      "name": "Campania",
+      "modern_name": "Campania",
+      "modern_country": "Italy",
+      "lat": 40.8518,
+      "lng": 14.2681,
+      "first_year": null,
+      "summary": "The region of Italy where Odoacer sent Romulus Augustulus into comfortable exile rather than killing him, given his youth and insignificance.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Campania",
+      "image_url": null,
+      "transcript_lines": [[187, 188]],
+      "related": [
+        {"type": "person", "id": "romulus-augustulus"},
+        {"type": "event", "id": "fall-of-western-empire"}
+      ]
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Church of the Holy Wisdom",
+      "modern_name": "Hagia Sophia",
+      "modern_country": "Turkey",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "first_year": 360,
+      "summary": "The site in Constantinople where Leo I received the crown from the patriarch for the first time, establishing the ceremony of imperial coronation by the church patriarch — a tradition that would continue until the empire's end.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "transcript_lines": [[71, 73]],
+      "related": [
+        {"type": "person", "id": "leo-i-emperor"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "coronation-of-leo-i"}
+      ]
+    },
+    {
+      "id": "hippodrome",
+      "name": "Hippodrome of Constantinople",
+      "modern_name": "Sultanahmet Meydanı",
+      "modern_country": "Turkey",
+      "lat": 41.0061,
+      "lng": 28.9742,
+      "first_year": 203,
+      "summary": "The great arena in Constantinople where Zeno was presiding over the games when Verina sent a frantic messenger warning that the people, army, and senate were against him, causing him to panic and flee to Isauria.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hippodrome_of_Constantinople",
+      "image_url": null,
+      "transcript_lines": [[131, 134]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "event", "id": "zeno-flight-to-isauria"}
+      ]
+    },
+    {
+      "id": "antioch",
+      "name": "Antioch",
+      "modern_name": "Antakya",
+      "modern_country": "Turkey",
+      "lat": 36.2021,
+      "lng": 36.1603,
+      "first_year": null,
+      "summary": "Described as the third largest city in the Roman world, from which Theodoric ejected the rebel general Illus before pursuing him into the mountainous Isaurian heartland.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antioch",
+      "image_url": null,
+      "transcript_lines": [[240, 241]],
+      "related": [
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "person", "id": "illus"},
+        {"type": "event", "id": "revolt-of-illus"}
+      ]
+    },
+    {
+      "id": "alexandria",
+      "name": "Alexandria",
+      "modern_name": "Alexandria",
+      "modern_country": "Egypt",
+      "lat": 31.2001,
+      "lng": 29.9187,
+      "first_year": null,
+      "summary": "The see of the bishop Timothy the Weasel, who was appointed by Basiliscus and used his influence to push the abolition of the Patriarchate of Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexandria",
+      "image_url": null,
+      "transcript_lines": [[143, 144]],
+      "related": [
+        {"type": "person", "id": "timothy-the-weasel"},
+        {"type": "event", "id": "abolition-of-constantinople-patriarchate"}
+      ]
+    },
+    {
+      "id": "tiber-river",
+      "name": "Tiber River",
+      "modern_name": "Tiber",
+      "modern_country": "Italy",
+      "lat": 41.8586,
+      "lng": 12.4746,
+      "first_year": null,
+      "summary": "The river into which the dismembered pieces of the unnamed elderly senator-emperor were thrown by the Roman populace who blamed him for allowing the Vandals to sack the city.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiber",
+      "image_url": null,
+      "transcript_lines": [[39, 39]],
+      "related": [
+        {"type": "person", "id": "elderly-senator-western-emperor"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "syria",
+      "name": "Syria",
+      "modern_name": "Syria",
+      "modern_country": "Syria",
+      "lat": 35.0,
+      "lng": 38.0,
+      "first_year": null,
+      "summary": "The province where a rebel was trying to restore paganism, prompting Zeno to send Illus to suppress the uprising. A violent quarrel there between Illus and Zeno's incompetent brother led Zeno to declare Illus a public enemy, driving him into the rebel camp.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syria_(Roman_province)",
+      "image_url": null,
+      "transcript_lines": [[225, 233]],
+      "related": [
+        {"type": "person", "id": "illus"},
+        {"type": "event", "id": "revolt-of-illus"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "vandal-sack-of-rome",
+      "name": "Vandal Sack of Rome",
+      "year": 455,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The Vandal army stood at Rome's gates; with no public official to stop them, Pope Leo I negotiated a promise not to kill citizens or destroy buildings. For 14 days the city was systematically stripped of all its wealth — gold, silver, and even gilded copper church roofs — all carried off to Carthage. The word 'vandal' itself survives in English from the horror this event inspired.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(455)",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[35, 54]],
+      "related": [
+        {"type": "person", "id": "pope-leo-i"},
+        {"type": "person", "id": "elderly-senator-western-emperor"},
+        {"type": "person", "id": "attila-the-hun"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "carthage"}
+      ]
+    },
+    {
+      "id": "coronation-of-leo-i",
+      "name": "Coronation of Leo I with Patriarchal Ceremony",
+      "year": 457,
+      "end_year": null,
+      "category": "religious",
+      "summary": "For the first time in imperial history, Leo I's coronation included a second ceremony in the Church of the Holy Wisdom in which the patriarch placed the crown on the emperor's head during a high mass. This tradition of the patriarch crowning the emperor continued until the very end of the Byzantine Empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_I_(emperor)",
+      "image_url": null,
+      "location_id": "hagia-sophia",
+      "transcript_lines": [[68, 73]],
+      "related": [
+        {"type": "person", "id": "leo-i-emperor"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "vandal-campaign-defeat",
+      "name": "Defeat of the Byzantine Expedition Against the Vandals",
+      "year": 468,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Leo I sent over a thousand ships and a hundred thousand men to destroy the Vandal Kingdom, but placed the incompetent Basiliscus in command at Aspar's persuasion. Within five days Basiliscus had most of his men captured or killed and most of his fleet burnt. He fled back to Constantinople and saved himself only by taking refuge in a church.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Cape_Bon_(468)",
+      "image_url": null,
+      "location_id": "carthage",
+      "transcript_lines": [[92, 103]],
+      "related": [
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "leo-i-emperor"},
+        {"type": "person", "id": "aspar"},
+        {"type": "place", "id": "carthage"}
+      ]
+    },
+    {
+      "id": "assassination-of-aspar",
+      "name": "Assassination of Aspar and His Sons",
+      "year": 471,
+      "end_year": null,
+      "category": "political",
+      "summary": "After Aspar attempted to assassinate Zeno and tried to infiltrate his troops, Leo I summoned Aspar and his sons to the palace on the pretext of a morning walk and had them all killed, finally freeing himself from two decades of Germanic domination.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aspar",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[104, 109]],
+      "related": [
+        {"type": "person", "id": "leo-i-emperor"},
+        {"type": "person", "id": "aspar"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "assassination-of-aetius",
+      "name": "Assassination of Aetius by Valentinian III",
+      "year": 454,
+      "end_year": null,
+      "category": "political",
+      "summary": "The Western emperor Valentinian III killed the general Aetius with his own hands, wanting to rule in his own right. The act destabilized the West and cost Valentinian his life, as disgruntled officers of Aetius assassinated him several months later.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aetius",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[27, 29]],
+      "related": [
+        {"type": "person", "id": "aetius"},
+        {"type": "person", "id": "valentinian-iii"}
+      ]
+    },
+    {
+      "id": "zeno-flight-to-isauria",
+      "name": "Zeno's Flight to Isauria",
+      "year": 475,
+      "end_year": null,
+      "category": "political",
+      "summary": "While presiding over the games in the hippodrome, Zeno received a panicked message from Verina claiming the people, army, and senate were all against him. Without pausing to verify the rumor, he fled to his native Isauria, where he spent 20 months in exile planning his return.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zeno_(emperor)",
+      "image_url": null,
+      "location_id": "hippodrome",
+      "transcript_lines": [[131, 135]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "verina-empress"},
+        {"type": "place", "id": "isauria"},
+        {"type": "place", "id": "hippodrome"},
+        {"type": "event", "id": "basiliscus-usurpation"}
+      ]
+    },
+    {
+      "id": "basiliscus-usurpation",
+      "name": "Usurpation of Basiliscus",
+      "year": 475,
+      "end_year": 476,
+      "category": "political",
+      "summary": "After engineering Zeno's flight, Verina failed to get her lover made emperor and the army chose her brother Basiliscus instead. His disastrous reign featured mob violence against Isaurians, the assassination of Verina's lover, the appointment of Timothy the Weasel as religious advisor, abolition of the Patriarchate of Constantinople causing massive riots, a destructive fire, and ruinous taxation — until Zeno returned and reclaimed the throne.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basiliscus",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[136, 167]],
+      "related": [
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "verina-empress"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "illus"},
+        {"type": "person", "id": "timothy-the-weasel"},
+        {"type": "event", "id": "zeno-flight-to-isauria"},
+        {"type": "event", "id": "zeno-restoration"},
+        {"type": "event", "id": "library-fire-constantinople"},
+        {"type": "event", "id": "abolition-of-constantinople-patriarchate"}
+      ]
+    },
+    {
+      "id": "library-fire-constantinople",
+      "name": "Great Fire and Destruction of the Constantinian Library",
+      "year": 476,
+      "end_year": null,
+      "category": "cultural",
+      "summary": "During Basiliscus's reign, a fire started in the Bronzesmith's Bazaar and spread across Constantinople, completely engulfing the great library founded by Julian the Apostate and destroying over 120,000 books as well as numerous sculptures and antiques.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Library_of_Constantinople",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[149, 152]],
+      "related": [
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "abolition-of-constantinople-patriarchate",
+      "name": "Abolition of the Patriarchate of Constantinople by Basiliscus",
+      "year": 476,
+      "end_year": null,
+      "category": "religious",
+      "summary": "At the urging of Timothy the Weasel, Basiliscus abolished the Patriarchate of Constantinople — an act so offensive to the population that it triggered massive riots and nearly cost him his throne.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basiliscus",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[146, 148]],
+      "related": [
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "timothy-the-weasel"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "zeno-restoration",
+      "name": "Restoration of Zeno as Emperor",
+      "year": 476,
+      "end_year": null,
+      "category": "political",
+      "summary": "Zeno marched back from Isauria with Illus and found that the only army Basiliscus sent to stop them defected after brief negotiation. He entered Constantinople unopposed and Basiliscus fled to a church, surrendering only when Zeno promised not to shed his blood. Zeno kept his word, exiling Basiliscus to Cappadocia and letting the winter kill him.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zeno_(emperor)",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[159, 168]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "basiliscus"},
+        {"type": "person", "id": "illus"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "cappadocia"}
+      ]
+    },
+    {
+      "id": "fall-of-western-empire",
+      "name": "Fall of the Western Roman Empire",
+      "year": 476,
+      "end_year": null,
+      "category": "political",
+      "summary": "In September 476 Odoacer entered Ravenna, deposed the young Romulus Augustulus, and sent him into comfortable exile in Campania — marking the end of the Roman Empire in the West. Odoacer chose to give lip service to Zeno's authority rather than install a new puppet emperor, sending the western imperial insignia to Constantinople. Brownworth notes that contemporaries likely did not realize the magnitude of the watershed moment.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+      "image_url": null,
+      "location_id": "ravenna",
+      "transcript_lines": [[172, 211]],
+      "related": [
+        {"type": "person", "id": "odoacer"},
+        {"type": "person", "id": "romulus-augustulus"},
+        {"type": "person", "id": "orestes-general"},
+        {"type": "person", "id": "julius-nepos"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "basiliscus"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "italy"},
+        {"type": "place", "id": "campania"}
+      ]
+    },
+    {
+      "id": "revolt-of-illus",
+      "name": "Revolt of Illus",
+      "year": 484,
+      "end_year": 488,
+      "category": "political",
+      "summary": "After Zeno confiscated Illus's property and declared him a public enemy over a dispute involving Zeno's brother, Illus defected to a rebel in Syria who was trying to restore paganism, declared the rebel leader emperor, and set up a rival court. Theodoric was sent to suppress them, ejecting Illus from Antioch and finally taking the Isaurian fortress by a ruse — Zeno's sister-in-law was sent inside with a promise of pardon, then opened the gates at night.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Illus",
+      "image_url": null,
+      "location_id": "syria",
+      "transcript_lines": [[224, 245]],
+      "related": [
+        {"type": "person", "id": "illus"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "place", "id": "syria"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "isauria"}
+      ]
+    },
+    {
+      "id": "theodoric-invades-italy",
+      "name": "Theodoric's Invasion of Italy",
+      "year": 488,
+      "end_year": 493,
+      "category": "battle",
+      "summary": "In 488 Zeno sent Theodoric and his entire Ostrogothic people — men, women, and children — into Italy to displace Odoacer and rule in the emperor's name. This solved two problems at once: the Ostrogoths got fertile land of their own and Zeno was rid of them, while Odoacer was punished without the loss of a single Byzantine soldier. After five years of fighting, Theodoric tricked Odoacer into a joint-rule arrangement and then murdered him at a banquet.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theodoric_the_Great",
+      "image_url": null,
+      "location_id": "italy",
+      "transcript_lines": [[249, 275]],
+      "related": [
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "person", "id": "odoacer"},
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "event", "id": "murder-of-odoacer"},
+        {"type": "place", "id": "italy"},
+        {"type": "place", "id": "ravenna"}
+      ]
+    },
+    {
+      "id": "murder-of-odoacer",
+      "name": "Murder of Odoacer by Theodoric",
+      "year": 493,
+      "end_year": null,
+      "category": "political",
+      "summary": "Having blockaded Odoacer in Ravenna and proposed a joint rule, Theodoric invited Odoacer to a great banquet and personally struck him with his sword as he was taking his seat, cutting him nearly in half from collarbone to thigh. Theodoric reportedly laughed: 'The wretch cannot have had a bone in his body.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Odoacer",
+      "image_url": null,
+      "location_id": "ravenna",
+      "transcript_lines": [[259, 269]],
+      "related": [
+        {"type": "person", "id": "theodoric-the-great"},
+        {"type": "person", "id": "odoacer"},
+        {"type": "event", "id": "theodoric-invades-italy"},
+        {"type": "place", "id": "ravenna"}
+      ]
+    },
+    {
+      "id": "acacian-schism",
+      "name": "Acacian Schism",
+      "year": 484,
+      "end_year": 519,
+      "category": "religious",
+      "summary": "Zeno's attempt to reconcile orthodox Christians and Monophysite heretics by issuing a statement (the Henotikon) that papered over their differences without actually resolving them infuriated both sides. The pope excommunicated the Patriarch of Constantinople, who excommunicated the pope right back, plunging the entire church into a schism that lasted 35 years.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Acacian_schism",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[283, 290]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "event", "id": "monophysite-controversy"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "monophysite-controversy",
+      "name": "Monophysite Controversy",
+      "year": 451,
+      "end_year": null,
+      "category": "religious",
+      "summary": "The heresy holding that Christ was divine but not human was gaining strength in the eastern provinces during Zeno's reign. His attempt to resolve the dispute through the Henotikon, a statement that avoided taking sides, instead triggered the Acacian Schism between Rome and Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miaphysitism",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[283, 288]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "event", "id": "acacian-schism"}
+      ]
+    },
+    {
+      "id": "death-of-zeno",
+      "name": "Death of Zeno",
+      "year": 491,
+      "end_year": null,
+      "category": "political",
+      "summary": "Zeno died in 491 from a fit of epilepsy, not genuinely mourned. The crowd greeted his widow with cries of 'give the empire an orthodox emperor, give the empire a Roman emperor.' She chose the minister of finance, a native citizen of impeccable breeding, and married him six weeks later — a firm rejection of Zeno's foreign identity and policies.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zeno_(emperor)",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[291, 299]],
+      "related": [
+        {"type": "person", "id": "zeno-emperor"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    }
+  ]
+}

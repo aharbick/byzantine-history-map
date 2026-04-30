@@ -1,0 +1,963 @@
+{
+  "episode": 17,
+  "title": "Conclusion",
+  "people": [
+    {
+      "id": "constantine-xi",
+      "name": "Constantine XI Palaiologos",
+      "alt_names": ["Constantine XI", "Constantine the 11th"],
+      "role": "Byzantine Emperor",
+      "birth_year": 1405,
+      "death_year": 1453,
+      "reign_start": 1449,
+      "reign_end": 1453,
+      "summary": "Brownworth closes the previous episode with Constantine XI's tragic end and heroic resistance during the fall of Constantinople. He argues Constantine should have been memorialized throughout the West as the final defender of the bastion of Christianity, holding the walls with seven thousand men against more than ten times their number.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_XI_Palaiologos",
+      "portrait_url": null,
+      "transcript_lines": [[5, 13]],
+      "related": [
+        {"type": "event", "id": "fall-of-constantinople"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "theodosian-walls"}
+      ]
+    },
+    {
+      "id": "romulus-augustulus",
+      "name": "Romulus Augustulus",
+      "alt_names": ["Romulus Augustus"],
+      "role": "Western Roman Emperor",
+      "birth_year": 461,
+      "death_year": 511,
+      "reign_start": 475,
+      "reign_end": 476,
+      "summary": "Brownworth laments that Western history teaches the last Roman Emperor was 'a sad little boy named Romulus Augustulus,' ignoring the millennium-long continuation of Rome in Byzantium. He contrasts this with the heroic Constantine XI to illustrate how Byzantine history has been marginalized.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
+      "portrait_url": null,
+      "transcript_lines": [[61, 63]],
+      "related": [
+        {"type": "event", "id": "fall-of-western-roman-empire-476"}
+      ]
+    },
+    {
+      "id": "justinian-i",
+      "name": "Justinian I",
+      "alt_names": ["Justinian the Great", "Flavius Petrus Sabbatius Iustinianus"],
+      "role": "Byzantine Emperor",
+      "birth_year": 482,
+      "death_year": 565,
+      "reign_start": 527,
+      "reign_end": 565,
+      "summary": "Brownworth calls Justinian Byzantium's greatest emperor, crediting him with giving Western civilization Roman law and state organization. Justinian's famous exclamation 'Solomon, I have surpassed you' upon completing the Hagia Sophia is cited as the crowning expression of Byzantine achievement.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
+      "portrait_url": null,
+      "transcript_lines": [[67, 68], [81, 82]],
+      "related": [
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "justinian-reconquest-of-italy"},
+        {"type": "event", "id": "hagia-sophia-construction"}
+      ]
+    },
+    {
+      "id": "charlemagne",
+      "name": "Charlemagne",
+      "alt_names": ["Charles the Great", "Carolus Magnus"],
+      "role": "Frankish King and Holy Roman Emperor",
+      "birth_year": 747,
+      "death_year": 814,
+      "reign_start": 768,
+      "reign_end": 814,
+      "summary": "Brownworth uses Charlemagne as a contrast to illustrate Byzantine cultural superiority: while Charlemagne struggled to learn to write his own name, Byzantine schoolchildren were studying Homer and Aeschylus. Charlemagne also modeled his buildings in Aachen on the Imperial Palace of New Rome.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne",
+      "portrait_url": null,
+      "transcript_lines": [[50, 51], [77, 77]],
+      "related": [
+        {"type": "place", "id": "aachen"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "homer",
+      "name": "Homer",
+      "alt_names": [],
+      "role": "Ancient Greek poet",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth invokes Homer as an emblem of the classical learning Byzantine civilization preserved and actively practiced: Byzantine schoolchildren studied Homer, and courtiers fluently quoted him even while Dark Age Europe barely maintained literacy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Homer",
+      "portrait_url": null,
+      "transcript_lines": [[51, 51], [69, 69]],
+      "related": [
+        {"type": "person", "id": "aeschylus"},
+        {"type": "person", "id": "thucydides"}
+      ]
+    },
+    {
+      "id": "aeschylus",
+      "name": "Aeschylus",
+      "alt_names": [],
+      "role": "Ancient Greek tragedian",
+      "birth_year": -525,
+      "death_year": -456,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Named alongside Homer as exemplars of classical learning that Byzantine schoolchildren studied while Charlemagne struggled to write his name, illustrating the vast cultural gulf between Byzantium and the early medieval West.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeschylus",
+      "portrait_url": null,
+      "transcript_lines": [[51, 51]],
+      "related": [
+        {"type": "person", "id": "homer"},
+        {"type": "person", "id": "thucydides"}
+      ]
+    },
+    {
+      "id": "thucydides",
+      "name": "Thucydides",
+      "alt_names": [],
+      "role": "Ancient Greek historian",
+      "birth_year": -460,
+      "death_year": -400,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth cites Thucydides as a model of the literary style Byzantine writers emulated, underscoring how deeply the classical tradition was alive and practiced in Byzantine culture even as the West descended into illiteracy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thucydides",
+      "portrait_url": null,
+      "transcript_lines": [[52, 52]],
+      "related": [
+        {"type": "person", "id": "homer"},
+        {"type": "person", "id": "aeschylus"}
+      ]
+    },
+    {
+      "id": "plato",
+      "name": "Plato",
+      "alt_names": [],
+      "role": "Ancient Greek philosopher",
+      "birth_year": -428,
+      "death_year": -348,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Plato is cited by Brownworth both as a classical philosopher Byzantine schoolchildren debated and as one whose works would have 'vanished' without Byzantine scribes copying the 40,000 surviving ancient Greek texts.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Plato",
+      "portrait_url": null,
+      "transcript_lines": [[52, 52], [85, 86]],
+      "related": [
+        {"type": "person", "id": "aristotle"},
+        {"type": "event", "id": "byzantine-preservation-of-texts"}
+      ]
+    },
+    {
+      "id": "aristotle",
+      "name": "Aristotle",
+      "alt_names": [],
+      "role": "Ancient Greek philosopher",
+      "birth_year": -384,
+      "death_year": -322,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Like Plato, Aristotle is named by Brownworth as a classical thinker Byzantine schoolchildren debated and whose works only survived because Byzantine scribes preserved them. Without Byzantium, Brownworth argues, Aristotle would have vanished along with most of ancient Greek literature.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aristotle",
+      "portrait_url": null,
+      "transcript_lines": [[52, 52], [85, 86]],
+      "related": [
+        {"type": "person", "id": "plato"},
+        {"type": "event", "id": "byzantine-preservation-of-texts"}
+      ]
+    },
+    {
+      "id": "peter-the-great",
+      "name": "Peter the Great",
+      "alt_names": ["Peter I of Russia"],
+      "role": "Russian Tsar",
+      "birth_year": 1672,
+      "death_year": 1725,
+      "reign_start": 1682,
+      "reign_end": 1725,
+      "summary": "Brownworth notes that Peter the Great tried to copy Byzantine domes and spires in St. Petersburg, illustrating the enduring aesthetic and cultural influence Byzantium exerted on Russia long after the empire's fall.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[75, 75]],
+      "related": [
+        {"type": "place", "id": "saint-petersburg"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "al-walid-i",
+      "name": "Al-Walid I",
+      "alt_names": ["Al Malik", "al-Walid ibn Abd al-Malik"],
+      "role": "Umayyad Caliph",
+      "birth_year": 674,
+      "death_year": 715,
+      "reign_start": 705,
+      "reign_end": 715,
+      "summary": "Referred to in the transcript as 'Al Malik,' Brownworth notes that this Umayyad ruler borrowed Byzantine architectural style for the Dome of the Rock, placing Byzantium's cultural reach even within the Islamic world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al-Walid_I",
+      "portrait_url": null,
+      "transcript_lines": [[76, 76]],
+      "related": [
+        {"type": "place", "id": "dome-of-the-rock"}
+      ]
+    },
+    {
+      "id": "giotto",
+      "name": "Giotto di Bondone",
+      "alt_names": ["Giotto"],
+      "role": "Italian painter",
+      "birth_year": 1267,
+      "death_year": 1337,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth lists Giotto among diverse painters inspired by Byzantine mosaics scattered throughout the churches of the Byzantine world, illustrating how Byzantine art seeded the Western artistic tradition.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Giotto_di_Bondone",
+      "portrait_url": null,
+      "transcript_lines": [[74, 74]],
+      "related": [
+        {"type": "person", "id": "el-greco"}
+      ]
+    },
+    {
+      "id": "el-greco",
+      "name": "El Greco",
+      "alt_names": ["Domenikos Theotokopoulos"],
+      "role": "Greek-Spanish painter",
+      "birth_year": 1541,
+      "death_year": 1614,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Named alongside Giotto as one of the diverse painters inspired by Byzantine mosaics, El Greco's Byzantine Cretan origins and iconographic style make him a fitting example of Byzantium's direct artistic legacy in Western painting.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_Greco",
+      "portrait_url": null,
+      "transcript_lines": [[74, 74]],
+      "related": [
+        {"type": "person", "id": "giotto"}
+      ]
+    },
+    {
+      "id": "hieronymus-wolf",
+      "name": "Hieronymus Wolf",
+      "alt_names": [],
+      "role": "German humanist scholar",
+      "birth_year": 1516,
+      "death_year": 1580,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth identifies Wolf as the German writer who coined the pejorative term 'Byzantine' to distinguish Constantinople's rulers from the supposedly legitimate Holy Roman Empire, thereby setting the tone for centuries of Western dismissal of Byzantine civilization.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hieronymus_Wolf",
+      "portrait_url": null,
+      "transcript_lines": [[122, 124]],
+      "related": [
+        {"type": "event", "id": "coining-of-term-byzantine"}
+      ]
+    },
+    {
+      "id": "liutprand-of-cremona",
+      "name": "Liutprand of Cremona",
+      "alt_names": ["Bishop Lutprand", "Liudprand of Cremona"],
+      "role": "Bishop and diplomat",
+      "birth_year": 920,
+      "death_year": 972,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Cited by Brownworth as an example of Western contempt for Byzantium: Bishop Liutprand wrote that Byzantium was populated by 'idle liars of neither gender,' representing the kind of dismissive Western rhetoric that undermined Byzantine reputation.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liutprand_of_Cremona",
+      "portrait_url": null,
+      "transcript_lines": [[125, 126]],
+      "related": [
+        {"type": "event", "id": "east-west-schism"}
+      ]
+    },
+    {
+      "id": "voltaire",
+      "name": "Voltaire",
+      "alt_names": ["François-Marie Arouet"],
+      "role": "French Enlightenment writer and philosopher",
+      "birth_year": 1694,
+      "death_year": 1778,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth invokes Voltaire twice: first as an Enlightenment authority who dismissed Byzantine culture as 'a worthless collection of orations and miracles,' contributing to its marginalization; and then, ironically, quoting his own maxim that 'those who don't learn from the past are doomed to repeat it' to argue for studying Byzantine history.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Voltaire",
+      "portrait_url": null,
+      "transcript_lines": [[125, 126], [163, 164]],
+      "related": [
+        {"type": "person", "id": "edward-gibbon"},
+        {"type": "event", "id": "enlightenment-dismissal-of-byzantium"}
+      ]
+    },
+    {
+      "id": "edward-gibbon",
+      "name": "Edward Gibbon",
+      "alt_names": [],
+      "role": "British historian",
+      "birth_year": 1737,
+      "death_year": 1794,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth identifies Gibbon's 1776 'Decline and Fall of the Roman Empire' as the central blow to Byzantine reputation, in which Gibbon described Byzantine history as 'a thousand years of decline' and condemned it as a 'dark slide into barbarism, corruption and decay.' Brownworth argues this critique is one the Byzantine reputation never recovered from.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_Gibbon",
+      "portrait_url": null,
+      "transcript_lines": [[127, 136]],
+      "related": [
+        {"type": "event", "id": "decline-and-fall-published"},
+        {"type": "person", "id": "voltaire"},
+        {"type": "event", "id": "enlightenment-dismissal-of-byzantium"}
+      ]
+    },
+    {
+      "id": "thomas-cahill",
+      "name": "Thomas Cahill",
+      "alt_names": [],
+      "role": "American popular historian",
+      "birth_year": 1940,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth directly refutes Cahill's thesis that 'the Irish saved civilization,' arguing instead that it was the Byzantines who truly preserved Western civilization by holding back Islam and maintaining classical learning.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_Cahill",
+      "portrait_url": null,
+      "transcript_lines": [[93, 93]],
+      "related": [
+        {"type": "event", "id": "byzantine-preservation-of-texts"}
+      ]
+    },
+    {
+      "id": "lord-byron",
+      "name": "Lord Byron",
+      "alt_names": ["George Gordon Byron", "6th Baron Byron"],
+      "role": "British Romantic poet",
+      "birth_year": 1788,
+      "death_year": 1824,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth quotes Byron's famous characterization of Byzantium as 'a triple fusion: a Roman body, a Greek mind, and a mystic soul,' using it as the definitive synthesis of Byzantine civilization's unique identity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lord_Byron",
+      "portrait_url": null,
+      "transcript_lines": [[158, 159]],
+      "related": []
+    },
+    {
+      "id": "tertullian",
+      "name": "Tertullian",
+      "alt_names": ["Quintus Septimius Florens Tertullianus"],
+      "role": "Early Christian theologian",
+      "birth_year": 155,
+      "death_year": 220,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth quotes Tertullian's second-century challenge 'What does Jerusalem have to do with Athens?' to frame the perennial tension between faith and reason, arguing that the West chose one or the other while Byzantium uniquely sustained both simultaneously.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tertullian",
+      "portrait_url": null,
+      "transcript_lines": [[148, 150]],
+      "related": []
+    },
+    {
+      "id": "alexios-i-komnenos",
+      "name": "Alexios I Komnenos",
+      "alt_names": ["Emperor Alexius", "Alexius I"],
+      "role": "Byzantine Emperor",
+      "birth_year": 1056,
+      "death_year": 1118,
+      "reign_start": 1081,
+      "reign_end": 1118,
+      "summary": "Brownworth notes that Alexios I wondered with good reason whether he had more to fear from the Turks or from the Crusaders, illustrating the dangerous ambivalence at the heart of Byzantine-Western relations during the First Crusade.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
+      "portrait_url": null,
+      "transcript_lines": [[114, 114]],
+      "related": [
+        {"type": "event", "id": "first-crusade"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "The heart of Brownworth's entire concluding argument: Constantinople stood for 1,123 years and 18 days as the glittering capital of Christendom, sheltering one of the most brilliant civilizations ever seen and holding back the tide of Islam. Its fall in 1453 did not end the Byzantine story, but the West forgot it with unconscionable speed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[18, 20], [46, 49], [89, 92]],
+      "related": [
+        {"type": "event", "id": "fall-of-constantinople"},
+        {"type": "place", "id": "theodosian-walls"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "person", "id": "constantine-xi"}
+      ]
+    },
+    {
+      "id": "theodosian-walls",
+      "name": "Theodosian Walls",
+      "modern_name": "Theodosian Walls",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9195,
+      "first_year": 413,
+      "summary": "Brownworth marvels that the Theodosian land walls, which still march from the Sea of Marmara to the Golden Horn, were held by just seven thousand men for over a month against more than ten times their number, calling it one of history's great feats of resistance.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Walls_of_Constantinople",
+      "image_url": null,
+      "transcript_lines": [[10, 12]],
+      "related": [
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "sea-of-marmara"},
+        {"type": "place", "id": "golden-horn"},
+        {"type": "event", "id": "fall-of-constantinople"}
+      ]
+    },
+    {
+      "id": "sea-of-marmara",
+      "name": "Sea of Marmara",
+      "modern_name": "Sea of Marmara",
+      "modern_country": "Turkey",
+      "lat": 40.6803,
+      "lng": 28.0,
+      "first_year": null,
+      "summary": "One of the two bodies of water anchoring the Theodosian land walls, mentioned as Brownworth describes the astonishing defensive perimeter held by seven thousand Byzantine defenders in the final siege.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sea_of_Marmara",
+      "image_url": null,
+      "transcript_lines": [[10, 11]],
+      "related": [
+        {"type": "place", "id": "theodosian-walls"},
+        {"type": "place", "id": "golden-horn"}
+      ]
+    },
+    {
+      "id": "golden-horn",
+      "name": "Golden Horn",
+      "modern_name": "Haliç",
+      "modern_country": "Turkey",
+      "lat": 41.0319,
+      "lng": 28.9505,
+      "first_year": null,
+      "summary": "The waterway at the northern terminus of the Theodosian land walls, cited alongside the Sea of Marmara to convey the scale of the defensive perimeter that seven thousand men held against overwhelming Ottoman forces.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Horn",
+      "image_url": null,
+      "transcript_lines": [[11, 11]],
+      "related": [
+        {"type": "place", "id": "theodosian-walls"},
+        {"type": "place", "id": "sea-of-marmara"}
+      ]
+    },
+    {
+      "id": "trebizond",
+      "name": "Trebizond",
+      "modern_name": "Trabzon",
+      "modern_country": "Turkey",
+      "lat": 41.0027,
+      "lng": 39.7168,
+      "first_year": null,
+      "summary": "The last surviving Byzantine successor state, which Brownworth notes held out for seven years after the fall of Constantinople before finally falling on 15 August 1461, marking the true end of the last Byzantine throne.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Empire_of_Trebizond",
+      "image_url": null,
+      "transcript_lines": [[15, 20]],
+      "related": [
+        {"type": "event", "id": "fall-of-trebizond"},
+        {"type": "event", "id": "fall-of-constantinople"}
+      ]
+    },
+    {
+      "id": "moscow",
+      "name": "Moscow",
+      "modern_name": "Moscow",
+      "modern_country": "Russia",
+      "lat": 55.7558,
+      "lng": 37.6173,
+      "first_year": null,
+      "summary": "Brownworth notes that Russia, with its Byzantine alphabet and Eastern soul, occasionally referred to Moscow as the 'Third Rome,' seeing itself as carrying the flame of Byzantine civilization after Constantinople's fall.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow",
+      "image_url": null,
+      "transcript_lines": [[27, 29]],
+      "related": [
+        {"type": "event", "id": "translatio-imperii-moscow-third-rome"}
+      ]
+    },
+    {
+      "id": "bosphorus",
+      "name": "Bosphorus",
+      "modern_name": "İstanbul Boğazı",
+      "modern_country": "Turkey",
+      "lat": 41.1022,
+      "lng": 29.0604,
+      "first_year": null,
+      "summary": "Brownworth describes the Russians as 'beckoned by the pull of the Bosphorus,' having fallen under the spell of Byzantium in the tenth century, and nearly succeeding in conquering Constantinople before World War I reshuffled the map.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bosphorus",
+      "image_url": null,
+      "transcript_lines": [[35, 36]],
+      "related": [
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "modern_name": "Ayasofya",
+      "modern_country": "Turkey",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "first_year": 537,
+      "summary": "Brownworth calls the Hagia Sophia the 'crowning achievement' of Byzantine civilization and the 'visible symbol of the sacred and secular,' noting that even after 600 years of Ottoman 'oppression and profanation' one can still hear Justinian's famous words 'Solomon, I have surpassed you.' Russian envoys who visited wrote that they did not know whether they were in heaven or on earth.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "transcript_lines": [[30, 33], [79, 82]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "event", "id": "hagia-sophia-construction"}
+      ]
+    },
+    {
+      "id": "aachen",
+      "name": "Aachen",
+      "modern_name": "Aachen",
+      "modern_country": "Germany",
+      "lat": 50.7753,
+      "lng": 6.0839,
+      "first_year": null,
+      "summary": "Brownworth notes that Charlemagne modeled his buildings in Aachen on the vast and glorious Imperial Palace of New Rome (Constantinople), illustrating Byzantine architecture's reach into the Carolingian West.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aachen",
+      "image_url": null,
+      "transcript_lines": [[77, 77]],
+      "related": [
+        {"type": "person", "id": "charlemagne"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "venice",
+      "name": "Venice",
+      "modern_name": "Venice",
+      "modern_country": "Italy",
+      "lat": 45.4408,
+      "lng": 12.3155,
+      "first_year": null,
+      "summary": "Brownworth notes that St. Mark's Basilica in Venice is patterned after the vanished Church of the Holy Apostles in Constantinople, making Venice a physical repository of Byzantine architectural legacy in the heart of Western Europe.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice",
+      "image_url": null,
+      "transcript_lines": [[78, 78]],
+      "related": [
+        {"type": "place", "id": "saint-marks-basilica"},
+        {"type": "place", "id": "church-of-the-holy-apostles"},
+        {"type": "event", "id": "fourth-crusade"}
+      ]
+    },
+    {
+      "id": "saint-marks-basilica",
+      "name": "St. Mark's Basilica",
+      "modern_name": "Basilica di San Marco",
+      "modern_country": "Italy",
+      "lat": 45.4345,
+      "lng": 12.3397,
+      "first_year": 828,
+      "summary": "Brownworth cites St. Mark's in Venice as patterned after the vanished Church of the Holy Apostles in Constantinople, presenting it as one of the most direct examples of Byzantine architectural influence on Western sacred buildings.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St_Mark%27s_Basilica",
+      "image_url": null,
+      "transcript_lines": [[78, 78]],
+      "related": [
+        {"type": "place", "id": "church-of-the-holy-apostles"},
+        {"type": "place", "id": "venice"}
+      ]
+    },
+    {
+      "id": "church-of-the-holy-apostles",
+      "name": "Church of the Holy Apostles",
+      "modern_name": null,
+      "modern_country": "Turkey",
+      "lat": 41.0133,
+      "lng": 28.9456,
+      "first_year": 550,
+      "summary": "Described by Brownworth as a 'vanished wonder' of Constantinople that served as the architectural model for St. Mark's Basilica in Venice, exemplifying how Byzantine monuments shaped Western sacred architecture even in their absence.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles,_Constantinople",
+      "image_url": null,
+      "transcript_lines": [[78, 78]],
+      "related": [
+        {"type": "place", "id": "saint-marks-basilica"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "saint-petersburg",
+      "name": "Saint Petersburg",
+      "modern_name": "Saint Petersburg",
+      "modern_country": "Russia",
+      "lat": 59.9311,
+      "lng": 30.3609,
+      "first_year": null,
+      "summary": "Brownworth notes that Peter the Great tried to copy Byzantine domes and spires when building St. Petersburg, making the city a testament to the lasting architectural and cultural influence of Byzantium on Russian civilization.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Petersburg",
+      "image_url": null,
+      "transcript_lines": [[75, 75]],
+      "related": [
+        {"type": "person", "id": "peter-the-great"}
+      ]
+    },
+    {
+      "id": "dome-of-the-rock",
+      "name": "Dome of the Rock",
+      "modern_name": "Dome of the Rock",
+      "modern_country": "Israel",
+      "lat": 31.7781,
+      "lng": 35.2354,
+      "first_year": 692,
+      "summary": "Brownworth notes that Al-Walid I ('Al Malik') borrowed Byzantine architectural style for the Dome of the Rock, demonstrating that Byzantine cultural influence extended even into the heart of the Islamic world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dome_of_the_Rock",
+      "image_url": null,
+      "transcript_lines": [[76, 76]],
+      "related": [
+        {"type": "person", "id": "al-walid-i"}
+      ]
+    },
+    {
+      "id": "north-africa",
+      "name": "North Africa",
+      "modern_name": "North Africa",
+      "modern_country": null,
+      "lat": 24.0,
+      "lng": 18.0,
+      "first_year": null,
+      "summary": "Brownworth argues that the stoutness of Constantinople's walls forced the armies of Islam to take the long way through North Africa and Spain, overextending their resources and giving Europe time to resist — making Byzantine endurance the decisive factor in Western survival.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/North_Africa",
+      "image_url": null,
+      "transcript_lines": [[90, 92]],
+      "related": [
+        {"type": "place", "id": "spain"}
+      ]
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "modern_name": "Spain",
+      "modern_country": "Spain",
+      "lat": 40.4637,
+      "lng": -3.7492,
+      "first_year": null,
+      "summary": "Named alongside North Africa as the roundabout route Islamic armies were forced to take because Constantinople's walls held, with Brownworth arguing this overextension of Muslim forces gave Europe the time needed to resist conquest.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spain",
+      "image_url": null,
+      "transcript_lines": [[91, 92]],
+      "related": [
+        {"type": "place", "id": "north-africa"}
+      ]
+    },
+    {
+      "id": "western-europe",
+      "name": "Western Europe",
+      "modern_name": "Western Europe",
+      "modern_country": null,
+      "lat": 48.0,
+      "lng": 8.0,
+      "first_year": null,
+      "summary": "Brownworth frames Western Europe as the primary beneficiary and principal ingrate of Byzantine civilization: Byzantine scholars fleeing Constantinople brought classical learning to an awakening West that then quickly forgot where that learning came from, leading to the Renaissance while dismissing its Byzantine source.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Western_Europe",
+      "image_url": null,
+      "transcript_lines": [[22, 26], [43, 44]],
+      "related": [
+        {"type": "event", "id": "renaissance"},
+        {"type": "event", "id": "fall-of-constantinople"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "fall-of-constantinople",
+      "name": "Fall of Constantinople",
+      "year": 1453,
+      "end_year": null,
+      "category": "political",
+      "summary": "Brownworth opens the conclusion by referencing the fall of Constantinople and Constantine XI's heroic last stand, noting that seven thousand men held the Theodosian walls for over a month against more than ten times their number. He laments that the West failed to memorialize this as 'the final gift of the bastion of Christianity.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[5, 13]],
+      "related": [
+        {"type": "person", "id": "constantine-xi"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "theodosian-walls"},
+        {"type": "event", "id": "fall-of-trebizond"}
+      ]
+    },
+    {
+      "id": "fall-of-trebizond",
+      "name": "Fall of Trebizond",
+      "year": 1461,
+      "end_year": null,
+      "category": "political",
+      "summary": "Brownworth specifies the date of 15 August 1461 as the moment Trebizond fell and with it the last Byzantine throne, noting that two Byzantine successor states held out for seven years after Constantinople's fall before this final extinction.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Trebizond",
+      "image_url": null,
+      "location_id": "trebizond",
+      "transcript_lines": [[15, 20]],
+      "related": [
+        {"type": "place", "id": "trebizond"},
+        {"type": "event", "id": "fall-of-constantinople"}
+      ]
+    },
+    {
+      "id": "renaissance",
+      "name": "The Renaissance",
+      "year": 1400,
+      "end_year": 1600,
+      "category": "cultural",
+      "summary": "Brownworth attributes the Renaissance directly to Byzantine scholars who fled westward after Constantinople's fall, bringing classical Greek and Roman texts that had been lost to the Dark Ages in the West. Countries emerging from their medieval sensibilities fell in love with these forgotten classics, producing what they called a 'rebirth.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Renaissance",
+      "image_url": null,
+      "location_id": "western-europe",
+      "transcript_lines": [[22, 25]],
+      "related": [
+        {"type": "event", "id": "fall-of-constantinople"},
+        {"type": "event", "id": "byzantine-preservation-of-texts"},
+        {"type": "place", "id": "western-europe"}
+      ]
+    },
+    {
+      "id": "fourth-crusade",
+      "name": "Fourth Crusade",
+      "year": 1202,
+      "end_year": 1204,
+      "category": "battle",
+      "summary": "Brownworth identifies the Venetian-led Fourth Crusade as the 'final divorce between East and West,' a blow so bitter that it endured in Byzantine memory for centuries. When survival in the fifteenth century required uniting with the Catholic Church, the Byzantines chose the Sultan's turban over the Pope's miter rather than forget this betrayal.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fourth_Crusade",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[115, 119]],
+      "related": [
+        {"type": "place", "id": "venice"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "east-west-schism"}
+      ]
+    },
+    {
+      "id": "first-crusade",
+      "name": "First Crusade",
+      "year": 1096,
+      "end_year": 1099,
+      "category": "battle",
+      "summary": "Brownworth describes the moment awestruck Crusaders entered Constantinople during the First Crusade as a cultural collision where Easterners and Westerners were barely on speaking terms. The Crusaders felt wonder mixed with jealousy and disgust, while Emperor Alexios wondered whether the Turks or the Crusaders posed the greater threat.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/First_Crusade",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[106, 114]],
+      "related": [
+        {"type": "person", "id": "alexios-i-komnenos"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "second-crusade",
+      "name": "Second Crusade",
+      "year": 1147,
+      "end_year": 1150,
+      "category": "battle",
+      "summary": "Mentioned by Brownworth as one of the Crusades whose failure was widely blamed in the West on Byzantine diplomatic duplicity, deepening the mutual contempt between East and West.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Crusade",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[111, 112]],
+      "related": [
+        {"type": "event", "id": "first-crusade"},
+        {"type": "event", "id": "third-crusade"}
+      ]
+    },
+    {
+      "id": "third-crusade",
+      "name": "Third Crusade",
+      "year": 1189,
+      "end_year": 1192,
+      "category": "battle",
+      "summary": "Mentioned alongside the Second Crusade as a campaign whose failure was attributed by the West to Byzantine treachery, further poisoning East-West relations in the lead-up to the Fourth Crusade.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Crusade",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[111, 112]],
+      "related": [
+        {"type": "event", "id": "second-crusade"},
+        {"type": "event", "id": "fourth-crusade"}
+      ]
+    },
+    {
+      "id": "east-west-schism",
+      "name": "Great Schism",
+      "year": 1054,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Brownworth notes the official split came in 1054 over the Filioque clause in the Nicene Creed — whether the Holy Spirit proceeds from the Father and the Son together or from the Father alone — but argues the two halves of Christendom had been drifting apart long before the barbarian invasions engulfed the West.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East%E2%80%93West_Schism",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[98, 100]],
+      "related": [
+        {"type": "event", "id": "iconoclastic-controversy"},
+        {"type": "event", "id": "fourth-crusade"}
+      ]
+    },
+    {
+      "id": "iconoclastic-controversy",
+      "name": "Iconoclastic Controversy",
+      "year": 726,
+      "end_year": 843,
+      "category": "religious",
+      "summary": "Brownworth identifies the iconoclastic controversy — which declared religious art synonymous with idolatry — as the event that drove the first real wedge between the Eastern and Western churches, poisoning relations and opening the floodgates of excommunications and counter-excommunications.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_Iconoclasm",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[103, 105]],
+      "related": [
+        {"type": "event", "id": "east-west-schism"}
+      ]
+    },
+    {
+      "id": "justinian-reconquest-of-italy",
+      "name": "Justinian's Reconquest of Italy",
+      "year": 535,
+      "end_year": 554,
+      "category": "battle",
+      "summary": "Brownworth notes that as early as the sixth century, when Justinian reconquered Italy, there were those in the West who pointed out it felt more like a foreign invasion than a rescue — an early sign of the cultural and political rift that would eventually split Christendom.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gothic_War_(535%E2%80%93554)",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[101, 102]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "event", "id": "east-west-schism"}
+      ]
+    },
+    {
+      "id": "fall-of-western-roman-empire-476",
+      "name": "Fall of the Western Roman Empire",
+      "year": 476,
+      "end_year": null,
+      "category": "political",
+      "summary": "Brownworth laments that Western history marks 476 and Romulus Augustulus as the end of Rome, completely ignoring the Byzantine continuation. He argues this is a fundamental distortion: the Roman Empire did not fall in 476, and the last Roman Emperor was not a sad little boy but the heroic Constantine XI in 1453.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[60, 63]],
+      "related": [
+        {"type": "person", "id": "romulus-augustulus"},
+        {"type": "person", "id": "constantine-xi"}
+      ]
+    },
+    {
+      "id": "byzantine-preservation-of-texts",
+      "name": "Byzantine Preservation of Classical Texts",
+      "year": 400,
+      "end_year": 1453,
+      "category": "cultural",
+      "summary": "Brownworth states that 40,000 of the 55,000 ancient Greek texts we possess today were copied by Byzantine scribes, arguing that without this effort Aristotle, Plato, and most of ancient Greek literature would have vanished. He uses this fact to directly rebut the claim that the Irish saved civilization.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_literature",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[85, 88], [93, 93]],
+      "related": [
+        {"type": "person", "id": "plato"},
+        {"type": "person", "id": "aristotle"},
+        {"type": "person", "id": "thomas-cahill"},
+        {"type": "event", "id": "renaissance"}
+      ]
+    },
+    {
+      "id": "hagia-sophia-construction",
+      "name": "Construction of the Hagia Sophia",
+      "year": 532,
+      "end_year": 537,
+      "category": "cultural",
+      "summary": "Referenced through Justinian's famous exclamation 'Solomon, I have surpassed you' upon its completion, the Hagia Sophia's construction is presented by Brownworth as the crowning visible achievement of Byzantine civilization — a monument so overwhelming that Russian envoys wrote they could not tell whether they were in heaven or on earth.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "location_id": "hagia-sophia",
+      "transcript_lines": [[79, 82]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "place", "id": "hagia-sophia"}
+      ]
+    },
+    {
+      "id": "first-world-war",
+      "name": "First World War",
+      "year": 1914,
+      "end_year": 1918,
+      "category": "battle",
+      "summary": "Brownworth mentions World War I as the event that 'reshuffled the map' just as Russia was close to realizing its centuries-long dream of conquering Constantinople, showing how the Byzantine pull on Russian ambitions endured almost to the twentieth century.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/World_War_I",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[36, 36]],
+      "related": [
+        {"type": "place", "id": "bosphorus"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "decline-and-fall-published",
+      "name": "Publication of 'The Decline and Fall of the Roman Empire'",
+      "year": 1776,
+      "end_year": null,
+      "category": "cultural",
+      "summary": "Brownworth singles out Gibbon's 1776 work as the defining blow to Byzantine reputation, describing how Gibbon condemned Byzantium as authoritarian, corrupt, and irrational — 'a thousand years of decline' — a critique from which the Byzantine reputation never recovered and that made 'Byzantine' a synonym for decadence and unnecessary complexity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_History_of_the_Decline_and_Fall_of_the_Roman_Empire",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[127, 136]],
+      "related": [
+        {"type": "person", "id": "edward-gibbon"},
+        {"type": "event", "id": "enlightenment-dismissal-of-byzantium"}
+      ]
+    },
+    {
+      "id": "enlightenment-dismissal-of-byzantium",
+      "name": "Enlightenment Dismissal of Byzantium",
+      "year": 1700,
+      "end_year": 1800,
+      "category": "cultural",
+      "summary": "Brownworth identifies a broad pattern of Enlightenment-era scholars — including Voltaire, Gibbon, and Hieronymus Wolf — systematically dismissing or denigrating Byzantine civilization because it did not fit their preference for ancient Greece and Republican Rome. He calls this 'the tragedy of Byzantine history' and argues its effects have obscured Byzantine culture from view ever since.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Historiography_of_the_Byzantine_Empire",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[120, 137]],
+      "related": [
+        {"type": "person", "id": "voltaire"},
+        {"type": "person", "id": "edward-gibbon"},
+        {"type": "person", "id": "hieronymus-wolf"},
+        {"type": "event", "id": "decline-and-fall-published"},
+        {"type": "event", "id": "coining-of-term-byzantine"}
+      ]
+    },
+    {
+      "id": "coining-of-term-byzantine",
+      "name": "Coining of the Term 'Byzantine'",
+      "year": 1557,
+      "end_year": null,
+      "category": "cultural",
+      "summary": "Brownworth identifies Hieronymus Wolf as the German writer who invented the term 'Byzantine' after the fall of the empire, intending it to distinguish the Constantinople rulers as imposters relative to the Holy Roman Empire. The term became a lasting pejorative, synonymous with decadence and unnecessary complexity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hieronymus_Wolf",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[122, 124]],
+      "related": [
+        {"type": "person", "id": "hieronymus-wolf"},
+        {"type": "event", "id": "enlightenment-dismissal-of-byzantium"}
+      ]
+    },
+    {
+      "id": "translatio-imperii-moscow-third-rome",
+      "name": "Moscow as the Third Rome",
+      "year": 1510,
+      "end_year": null,
+      "category": "political",
+      "summary": "Brownworth describes how Russia, awed by tenth-century Byzantium and having adopted its customs and Orthodox religion after visiting the Hagia Sophia, came to see itself as carrying the Byzantine flame — occasionally referring to Moscow as the Third Rome and nurturing a long-unfulfilled dream of possessing Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Rome",
+      "image_url": null,
+      "location_id": "moscow",
+      "transcript_lines": [[27, 34]],
+      "related": [
+        {"type": "place", "id": "moscow"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "hagia-sophia"}
+      ]
+    }
+  ]
+}

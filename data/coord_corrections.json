@@ -1,0 +1,86 @@
+{
+  "tigris-river": {
+    "name": "Tigris River",
+    "old": {
+      "lat": 37.0,
+      "lng": 43.0
+    },
+    "new": {
+      "lat": 31.005,
+      "lng": 47.44194444
+    },
+    "diff_km": 782.1
+  },
+  "azerbaijan": {
+    "name": "Azerbaijan (ancient Atropatene)",
+    "old": {
+      "lat": 40.4093,
+      "lng": 49.8671
+    },
+    "new": {
+      "lat": 37.6,
+      "lng": 47
+    },
+    "diff_km": 398.6
+  },
+  "black-sea-coast": {
+    "name": "Black Sea coast",
+    "old": {
+      "lat": 41.5,
+      "lng": 32.0
+    },
+    "new": {
+      "lat": 44,
+      "lng": 35
+    },
+    "diff_km": 370.5
+  },
+  "syria": {
+    "name": "Syria",
+    "old": {
+      "lat": 35.0,
+      "lng": 38.0
+    },
+    "new": {
+      "lat": 36.2,
+      "lng": 36.15
+    },
+    "diff_km": 214.0
+  },
+  "northern-syria": {
+    "name": "Northern Syria",
+    "old": {
+      "lat": 36.5,
+      "lng": 37.5
+    },
+    "new": {
+      "lat": 35,
+      "lng": 38
+    },
+    "diff_km": 172.8
+  },
+  "france": {
+    "name": "France",
+    "old": {
+      "lat": 46.0,
+      "lng": 2.0
+    },
+    "new": {
+      "lat": 47,
+      "lng": 2
+    },
+    "diff_km": 111.2
+  },
+  "palestine": {
+    "name": "Palestine",
+    "old": {
+      "lat": 31.9,
+      "lng": 35.2
+    },
+    "new": {
+      "lat": 31,
+      "lng": 35
+    },
+    "diff_km": 101.9
+  }
+}

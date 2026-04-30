@@ -1,0 +1,657 @@
+{
+  "aachen": {
+    "lat": 50.77555556,
+    "lng": 6.08361111,
+    "title": "Aachen"
+  },
+  "adrianople": {
+    "lat": 41.67694444,
+    "lng": 26.55555556,
+    "title": "Edirne"
+  },
+  "africa": null,
+  "aleppo": {
+    "lat": 36.2,
+    "lng": 37.16,
+    "title": "Aleppo"
+  },
+  "alexandria": {
+    "lat": 31.1975,
+    "lng": 29.8925,
+    "title": "Alexandria"
+  },
+  "alps": {
+    "lat": 46.58,
+    "lng": 8.62,
+    "title": "Alps"
+  },
+  "anatolia": {
+    "lat": 39,
+    "lng": 35,
+    "title": "Anatolia"
+  },
+  "antioch": {
+    "lat": 36.20472222,
+    "lng": 36.18166667,
+    "title": "Antioch_on_the_Orontes"
+  },
+  "armenia": {
+    "lat": 40.18333333,
+    "lng": 44.51666667,
+    "title": "Armenia"
+  },
+  "asia-minor": {
+    "lat": 39,
+    "lng": 35,
+    "title": "Anatolia"
+  },
+  "athens": {
+    "lat": 37.98416667,
+    "lng": 23.72805556,
+    "title": "Athens"
+  },
+  "azerbaijan": {
+    "lat": 37.6,
+    "lng": 47,
+    "title": "Azerbaijan_(Iran)"
+  },
+  "baghdad": {
+    "lat": 33.31527778,
+    "lng": 44.36611111,
+    "title": "Baghdad"
+  },
+  "balkans": null,
+  "bari": {
+    "lat": 41.12527778,
+    "lng": 16.86666667,
+    "title": "Bari"
+  },
+  "basilica-of-saint-peter": {
+    "lat": 41.90222222,
+    "lng": 12.45333333,
+    "title": "Old_St._Peter's_Basilica"
+  },
+  "belgrade": {
+    "lat": 44.81777778,
+    "lng": 20.45694444,
+    "title": "Belgrade"
+  },
+  "bethlehem": {
+    "lat": 31.70444444,
+    "lng": 35.20638889,
+    "title": "Bethlehem"
+  },
+  "black-sea-coast": {
+    "lat": 44,
+    "lng": 35,
+    "title": "Black_Sea"
+  },
+  "bosphorus": {
+    "lat": 41.11944444,
+    "lng": 29.07527778,
+    "title": "Bosphorus"
+  },
+  "britain": null,
+  "bulgaria": {
+    "lat": 43,
+    "lng": 25,
+    "title": "Bulgaria"
+  },
+  "bursa": {
+    "lat": 40.19722222,
+    "lng": 29.06222222,
+    "title": "Bursa"
+  },
+  "byzantium": {
+    "lat": 41.01527778,
+    "lng": 28.98472222,
+    "title": "Byzantium"
+  },
+  "caesarea": {
+    "lat": 38.7225,
+    "lng": 35.4875,
+    "title": "Caesarea_Mazaca"
+  },
+  "caesarea-cappadocia": {
+    "lat": 38.7225,
+    "lng": 35.4875,
+    "title": "Kayseri"
+  },
+  "campania": {
+    "lat": 40.91055556,
+    "lng": 14.92055556,
+    "title": "Campania"
+  },
+  "cappadocia": {
+    "lat": 38.61833333,
+    "lng": 34.86722222,
+    "title": "Cappadocia"
+  },
+  "carthage": null,
+  "chalcedon": {
+    "lat": 40.98444444,
+    "lng": 29.02722222,
+    "title": "Chalcedon"
+  },
+  "chalke-gate": null,
+  "chalycadnus-river": {
+    "lat": 36.29666667,
+    "lng": 34.04666667,
+    "title": "Göksu_River"
+  },
+  "church-of-hagia-irene": {
+    "lat": 41.00972222,
+    "lng": 28.98111111,
+    "title": "Hagia_Irene"
+  },
+  "church-of-holy-sepulchre": {
+    "lat": 31.77833333,
+    "lng": 35.22972222,
+    "title": "Church_of_the_Holy_Sepulchre"
+  },
+  "church-of-nativity": {
+    "lat": 31.70430556,
+    "lng": 35.20758333,
+    "title": "Church_of_the_Nativity"
+  },
+  "church-of-the-holy-apostles": {
+    "lat": 41.01972222,
+    "lng": 28.94972222,
+    "title": "Church_of_the_Holy_Apostles"
+  },
+  "cilicia": {
+    "lat": 36.985,
+    "lng": 35.12,
+    "title": "Cilicia"
+  },
+  "clermont": {
+    "lat": 45.7831,
+    "lng": 3.0824,
+    "title": "Clermont-Ferrand"
+  },
+  "colosseum": {
+    "lat": 41.8903,
+    "lng": 12.4922,
+    "title": "Colosseum"
+  },
+  "column-of-constantine": {
+    "lat": 41.00861111,
+    "lng": 28.97111111,
+    "title": "Column_of_Constantine"
+  },
+  "constantinople": {
+    "lat": 41.0125,
+    "lng": 28.98,
+    "title": "Constantinople"
+  },
+  "corinth": {
+    "lat": 37.93861111,
+    "lng": 22.92722222,
+    "title": "Corinth"
+  },
+  "crete": null,
+  "ctesiphon": {
+    "lat": 33.09361111,
+    "lng": 44.58055556,
+    "title": "Ctesiphon"
+  },
+  "cyprus": {
+    "lat": 35,
+    "lng": 33,
+    "title": "Cyprus"
+  },
+  "dacia-naissus-region": {
+    "lat": 42.95324722,
+    "lng": 21.66997222,
+    "title": "Justiniana_Prima"
+  },
+  "dalmatia": null,
+  "dalmatian-coast": null,
+  "damascus": {
+    "lat": 33.51305556,
+    "lng": 36.30944444,
+    "title": "Damascus"
+  },
+  "dastogard": null,
+  "dome-of-the-rock": {
+    "lat": 31.778,
+    "lng": 35.2354,
+    "title": "Dome_of_the_Rock"
+  },
+  "dyrrachium": {
+    "lat": 41.31333333,
+    "lng": 19.44583333,
+    "title": "Durrës"
+  },
+  "egypt": {
+    "lat": 26,
+    "lng": 30,
+    "title": "Egypt"
+  },
+  "ephesus": {
+    "lat": 37.94111111,
+    "lng": 27.34194444,
+    "title": "Ephesus"
+  },
+  "epirus": null,
+  "florence": {
+    "lat": 43.77138889,
+    "lng": 11.25416667,
+    "title": "Florence"
+  },
+  "forum-of-constantine": {
+    "lat": 41.009,
+    "lng": 28.971,
+    "title": "Forum_of_Constantine"
+  },
+  "france": {
+    "lat": 47,
+    "lng": 2,
+    "title": "France"
+  },
+  "fustat": {
+    "lat": 30.005,
+    "lng": 31.2375,
+    "title": "Fustat"
+  },
+  "galata": {
+    "lat": 41.02277778,
+    "lng": 28.97361111,
+    "title": "Galata"
+  },
+  "gallipoli": {
+    "lat": 40.35,
+    "lng": 26.45,
+    "title": "Gallipoli"
+  },
+  "gaul": null,
+  "genoa": {
+    "lat": 44.4075,
+    "lng": 8.93333333,
+    "title": "Republic_of_Genoa"
+  },
+  "golden-gate": null,
+  "golden-horn": {
+    "lat": 41.02916667,
+    "lng": 28.96111111,
+    "title": "Golden_Horn"
+  },
+  "hagia-sophia": {
+    "lat": 41.00833333,
+    "lng": 28.98,
+    "title": "Hagia_Sophia"
+  },
+  "hexamilion": {
+    "lat": 37.92611111,
+    "lng": 22.9725,
+    "title": "Hexamilion_wall"
+  },
+  "hippo": {
+    "lat": 36.8825,
+    "lng": 7.75,
+    "title": "Hippo_Regius"
+  },
+  "hippodrome-of-constantinople": {
+    "lat": 41.00638889,
+    "lng": 28.97583333,
+    "title": "Hippodrome_of_Constantinople"
+  },
+  "holy-land": null,
+  "isauria": null,
+  "issus": {
+    "lat": 36.7525,
+    "lng": 36.1923,
+    "title": "Battle_of_Issus"
+  },
+  "istanbul-cisterns": {
+    "lat": 41.00805556,
+    "lng": 28.97777778,
+    "title": "Basilica_Cistern"
+  },
+  "italy": {
+    "lat": 42,
+    "lng": 12.5,
+    "title": "Italia_(Roman_province)"
+  },
+  "jerash": {
+    "lat": 32.28055556,
+    "lng": 35.89722222,
+    "title": "Jerash"
+  },
+  "jerusalem": {
+    "lat": 31.77888889,
+    "lng": 35.22555556,
+    "title": "Jerusalem"
+  },
+  "kiev": {
+    "lat": 50.45,
+    "lng": 30.52333333,
+    "title": "Kyiv"
+  },
+  "kleidion": {
+    "lat": 41.3625,
+    "lng": 23.0175,
+    "title": "Battle_of_Kleidion"
+  },
+  "lake-van": {
+    "lat": 38.63333333,
+    "lng": 42.81666667,
+    "title": "Lake_Van"
+  },
+  "lebanon": {
+    "lat": 33.83333333,
+    "lng": 35.83333333,
+    "title": "Lebanon"
+  },
+  "lesbos": {
+    "lat": 39.21,
+    "lng": 26.28,
+    "title": "Lesbos"
+  },
+  "little-lycus-river": null,
+  "macedonia": null,
+  "manzikert": {
+    "lat": 39.14472222,
+    "lng": 42.53916667,
+    "title": "Battle_of_Manzikert"
+  },
+  "marseilles": {
+    "lat": 43.2964,
+    "lng": 5.37,
+    "title": "Marseille"
+  },
+  "mecca": {
+    "lat": 21.4225,
+    "lng": 39.82333333,
+    "title": "Mecca"
+  },
+  "medina": {
+    "lat": 24.47,
+    "lng": 39.61,
+    "title": "Medina"
+  },
+  "mesopotamia": null,
+  "milan": {
+    "lat": 45.46694444,
+    "lng": 9.19,
+    "title": "Milan"
+  },
+  "milion": {
+    "lat": 41.00805,
+    "lng": 28.978,
+    "title": "Milion"
+  },
+  "milvian-bridge": {
+    "lat": 41.93555556,
+    "lng": 12.46694444,
+    "title": "Milvian_Bridge"
+  },
+  "moscow": {
+    "lat": 55.75583333,
+    "lng": 37.61777778,
+    "title": "Moscow"
+  },
+  "mount-of-olives": {
+    "lat": 31.77833333,
+    "lng": 35.24388889,
+    "title": "Mount_of_Olives"
+  },
+  "naples": {
+    "lat": 40.8358,
+    "lng": 14.2486,
+    "title": "Naples"
+  },
+  "nea-ekklesia": null,
+  "nicaea": {
+    "lat": 40.429,
+    "lng": 29.7195,
+    "title": "Nicaea"
+  },
+  "nicomedia": {
+    "lat": 40.7625,
+    "lng": 29.9175,
+    "title": "Nicomedia"
+  },
+  "nineveh": {
+    "lat": 36.35944444,
+    "lng": 43.15277778,
+    "title": "Battle_of_Nineveh_(627)"
+  },
+  "north-africa": null,
+  "northern-syria": {
+    "lat": 35,
+    "lng": 38,
+    "title": "Syria"
+  },
+  "ostia": {
+    "lat": 41.75583333,
+    "lng": 12.29166667,
+    "title": "Ostia_Antica"
+  },
+  "otranto": null,
+  "palermo": {
+    "lat": 38.11111111,
+    "lng": 13.35166667,
+    "title": "Palermo"
+  },
+  "palestine": {
+    "lat": 31,
+    "lng": 35,
+    "title": "Palestine_(region)"
+  },
+  "papal-states": null,
+  "paris": {
+    "lat": 48.8567,
+    "lng": 2.3522,
+    "title": "Paris"
+  },
+  "parthenon": {
+    "lat": 37.9715,
+    "lng": 23.7266,
+    "title": "Parthenon"
+  },
+  "peloponnese": {
+    "lat": 37.5,
+    "lng": 22.5,
+    "title": "Despotate_of_the_Morea"
+  },
+  "persia": null,
+  "princes-islands": {
+    "lat": 40.86666667,
+    "lng": 29.1,
+    "title": "Princes'_Islands"
+  },
+  "ravenna": {
+    "lat": 44.41611111,
+    "lng": 12.20166667,
+    "title": "Ravenna"
+  },
+  "rhodes": {
+    "lat": 36.17,
+    "lng": 27.92,
+    "title": "Rhodes"
+  },
+  "rimini": {
+    "lat": 44.05944444,
+    "lng": 12.56833333,
+    "title": "Rimini"
+  },
+  "river-margus": null,
+  "rome": {
+    "lat": 41.89333333,
+    "lng": 12.48277778,
+    "title": "Rome"
+  },
+  "saint-marks-basilica": {
+    "lat": 45.43444444,
+    "lng": 12.33972222,
+    "title": "St_Mark's_Basilica"
+  },
+  "saint-petersburg": {
+    "lat": 59.9375,
+    "lng": 30.30861111,
+    "title": "Saint_Petersburg"
+  },
+  "samosata": {
+    "lat": 37.57944444,
+    "lng": 38.48138889,
+    "title": "Samosata"
+  },
+  "san-marco-basilica": {
+    "lat": 45.43444444,
+    "lng": 12.33972222,
+    "title": "St_Mark's_Basilica"
+  },
+  "sardinia": {
+    "lat": 40,
+    "lng": 9,
+    "title": "Sardinia"
+  },
+  "saxa-rubra": {
+    "lat": 41.9767,
+    "lng": 12.4911,
+    "title": "Saxa_Rubra"
+  },
+  "sea-of-marmara": {
+    "lat": 40.66666667,
+    "lng": 28,
+    "title": "Sea_of_Marmara"
+  },
+  "seleucia": {
+    "lat": 36.37611111,
+    "lng": 33.93222222,
+    "title": "Seleucia_on_the_Calycadnus"
+  },
+  "sicily": {
+    "lat": 37.5,
+    "lng": 14,
+    "title": "Sicily"
+  },
+  "sirmium": {
+    "lat": 44.96611111,
+    "lng": 19.61055556,
+    "title": "Sirmium"
+  },
+  "sofia": {
+    "lat": 42.69777778,
+    "lng": 23.32305556,
+    "title": "Serdica"
+  },
+  "southern-italy": null,
+  "spain": {
+    "lat": 40,
+    "lng": -4,
+    "title": "Spain"
+  },
+  "sparta": {
+    "lat": 37.08194444,
+    "lng": 22.42361111,
+    "title": "Sparta"
+  },
+  "split-salona": {
+    "lat": 43.50833333,
+    "lng": 16.44,
+    "title": "Diocletian's_Palace"
+  },
+  "syracuse": {
+    "lat": 37.06916667,
+    "lng": 15.2875,
+    "title": "Syracuse,_Sicily"
+  },
+  "syria": {
+    "lat": 36.2,
+    "lng": 36.15,
+    "title": "Syria_(Roman_province)"
+  },
+  "tarsus": {
+    "lat": 36.9165,
+    "lng": 34.8951,
+    "title": "Tarsus,_Mersin"
+  },
+  "tefrike": {
+    "lat": 39.36666667,
+    "lng": 38.11666667,
+    "title": "Tephrike"
+  },
+  "temple-of-apollo-antioch": null,
+  "temple-of-the-sun-rome": {
+    "lat": 41.90256,
+    "lng": 12.48112,
+    "title": "Temple_of_the_Sun_(Rome)"
+  },
+  "theodosian-walls": null,
+  "thessalonica": {
+    "lat": 40.6403,
+    "lng": 22.9356,
+    "title": "Thessaloniki"
+  },
+  "thrace": {
+    "lat": 42,
+    "lng": 26,
+    "title": "Thrace"
+  },
+  "throat-cutter-fortress": {
+    "lat": 41.084722,
+    "lng": 29.056111,
+    "title": "Rumelihisarı"
+  },
+  "tiber-river": {
+    "lat": 41.7405,
+    "lng": 12.2334,
+    "title": "Tiber"
+  },
+  "tigris-river": {
+    "lat": 31.005,
+    "lng": 47.44194444,
+    "title": "Tigris"
+  },
+  "trajans-gate": null,
+  "trebizond": null,
+  "trier": {
+    "lat": 49.75666667,
+    "lng": 6.64138889,
+    "title": "Trier"
+  },
+  "tripoli": {
+    "lat": 34.43666667,
+    "lng": 35.83444444,
+    "title": "Tripoli,_Lebanon"
+  },
+  "troy": {
+    "lat": 39.9575,
+    "lng": 26.23888889,
+    "title": "Troy"
+  },
+  "turin": {
+    "lat": 45.07916667,
+    "lng": 7.67611111,
+    "title": "Turin"
+  },
+  "venice": {
+    "lat": 45.4375,
+    "lng": 12.33583333,
+    "title": "Venice"
+  },
+  "venice-st-marks": {
+    "lat": 45.43444444,
+    "lng": 12.33972222,
+    "title": "St_Mark's_Basilica"
+  },
+  "verona": {
+    "lat": 45.43861111,
+    "lng": 10.99277778,
+    "title": "Verona"
+  },
+  "western-europe": null,
+  "york": {
+    "lat": 53.96,
+    "lng": -1.08,
+    "title": "York"
+  },
+  "zara": {
+    "lat": 44.11416667,
+    "lng": 15.2275,
+    "title": "Zadar"
+  },
+  "zepetra": null
+}

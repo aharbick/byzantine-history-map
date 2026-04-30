@@ -1,0 +1,1169 @@
+{
+  "episode": 10,
+  "title": "Heraclius",
+  "people": [
+    {
+      "id": "heraclius",
+      "name": "Heraclius",
+      "alt_names": ["Flavius Heraclius Augustus"],
+      "role": "Byzantine Emperor",
+      "birth_year": 575,
+      "death_year": 641,
+      "reign_start": 610,
+      "reign_end": 641,
+      "summary": "Son of the African governor who overthrew Phocas, Heraclius came to the throne at 36 with thick curly blonde hair and a military bearing, though he had never commanded a field army. He spent 12 years reorganizing the military and finances before personally leading a brilliant campaign that crushed Persia, recovered the True Cross, and saved the empire — only to watch his life's work undone by the sudden rise of Islam. Brownworth calls him arguably the first Greek emperor, having replaced Latin with Greek as the empire's official language.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraclius",
+      "portrait_url": null,
+      "transcript_lines": [[58, 413]],
+      "related": [
+        {"type": "person", "id": "heraclius-the-elder"},
+        {"type": "person", "id": "eudosia"},
+        {"type": "person", "id": "martina"},
+        {"type": "person", "id": "phocas"},
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "shahrbaraz"},
+        {"type": "person", "id": "shaheen"},
+        {"type": "person", "id": "theodore-brother-of-heraclius"},
+        {"type": "person", "id": "sergius-patriarch"},
+        {"type": "person", "id": "sophronius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "carthage"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "issus"},
+        {"type": "place", "id": "nineveh"},
+        {"type": "place", "id": "dastogard"},
+        {"type": "place", "id": "lake-van"},
+        {"type": "place", "id": "ctesiphon"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "battle-of-nineveh-627"},
+        {"type": "event", "id": "siege-of-constantinople-626"},
+        {"type": "event", "id": "persian-conquest-of-jerusalem"},
+        {"type": "event", "id": "heraclius-military-reforms"},
+        {"type": "event", "id": "true-cross-restored"},
+        {"type": "event", "id": "fall-of-damascus-and-jerusalem-to-muslims"},
+        {"type": "event", "id": "greek-made-official-language"}
+      ]
+    },
+    {
+      "id": "heraclius-the-elder",
+      "name": "Heraclius the Elder",
+      "alt_names": ["Heraclius of Carthage"],
+      "role": "Exarch of Africa",
+      "birth_year": null,
+      "death_year": 610,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Governor of the African province who stopped grain shipments to Constantinople to cripple Phocas, then sent his 36-year-old son with a navy to seize Egypt and ultimately Constantinople. He considered himself too old to lead the expedition himself.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraclius_the_Elder",
+      "portrait_url": null,
+      "transcript_lines": [[58, 62]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "phocas"},
+        {"type": "place", "id": "carthage"},
+        {"type": "event", "id": "overthrow-of-phocas"}
+      ]
+    },
+    {
+      "id": "phocas",
+      "name": "Phocas",
+      "alt_names": ["Focas"],
+      "role": "Byzantine Emperor",
+      "birth_year": 547,
+      "death_year": 610,
+      "reign_start": 602,
+      "reign_end": 610,
+      "summary": "A 55-year-old non-commissioned officer placed on the throne by a mutinous army, Brownworth describes him as having been 'somewhat kindly described as a sadistic monster.' His insecurity on the throne led to a bloody reign of paranoid executions, military disasters against Persia, and the introduction of mutilation and torture into Byzantine practice. He lasted eight years before being seized by a mob and brought to Heraclius' ship.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phocas",
+      "portrait_url": null,
+      "transcript_lines": [[33, 88]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "overthrow-of-phocas"}
+      ]
+    },
+    {
+      "id": "justinian-i",
+      "name": "Justinian I",
+      "alt_names": ["Justinian the Great", "Flavius Petrus Sabbatius Iustinianus Augustus"],
+      "role": "Byzantine Emperor",
+      "birth_year": 482,
+      "death_year": 565,
+      "reign_start": 527,
+      "reign_end": 565,
+      "summary": "Referenced as the benchmark emperor whose 38-year reign saw momentous reconquests of Africa, Spain, and Italy, but whose death left the empire overextended. Brownworth also identifies him as the last Roman emperor, with Heraclius being the first Greek one, and notes that a religious controversy over Christ's nature had divided the empire since Justinian's day.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
+      "portrait_url": null,
+      "transcript_lines": [[5, 7], [329, 329]],
+      "related": [
+        {"type": "person", "id": "narses"},
+        {"type": "person", "id": "empress-sophia"},
+        {"type": "event", "id": "lombard-invasion-of-italy"}
+      ]
+    },
+    {
+      "id": "narses",
+      "name": "Narses",
+      "alt_names": [],
+      "role": "Byzantine general and eunuch",
+      "birth_year": 478,
+      "death_year": 573,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The eunuch who completed Justinian's reconquest of Italy, but was recalled and humiliated by the Empress Sophia. According to legend, he muttered that he would tie her a knot she would not undo in her lifetime, and then invited the Lombards into Italy, starting a long bitter war that cost the empire most of its Italian territory.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narses",
+      "portrait_url": null,
+      "transcript_lines": [[13, 18]],
+      "related": [
+        {"type": "person", "id": "empress-sophia"},
+        {"type": "event", "id": "lombard-invasion-of-italy"},
+        {"type": "place", "id": "italy"}
+      ]
+    },
+    {
+      "id": "empress-sophia",
+      "name": "Empress Sophia",
+      "alt_names": [],
+      "role": "Byzantine Empress",
+      "birth_year": null,
+      "death_year": 601,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Wife of Justin II, she recalled and humiliated the general Narses after his reconquest of Italy. According to legend, Narses swore revenge and invited the Lombards into Italy in retaliation.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sophia_(empress)",
+      "portrait_url": null,
+      "transcript_lines": [[13, 15]],
+      "related": [
+        {"type": "person", "id": "narses"},
+        {"type": "event", "id": "lombard-invasion-of-italy"}
+      ]
+    },
+    {
+      "id": "khosrow-ii",
+      "name": "Khosrow II",
+      "alt_names": ["Kosros", "Kostros", "Chosroes II", "Khusraw II"],
+      "role": "Sasanian Persian King",
+      "birth_year": 570,
+      "death_year": 628,
+      "reign_start": 590,
+      "reign_end": 628,
+      "summary": "The 'great king' who used the killing of Emperor Maurice as a pretext to break the peace treaty and invade Byzantine territory, ultimately taking Mesopotamia, Armenia, Cappadocia, Jerusalem, and Egypt. Mentally unstable by the end — he had the body of his failed general Shaheen whipped beyond recognition — he was eventually overthrown and imprisoned in the Tower of Darkness, where his children were executed before him and he was slowly shot to death with arrows.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khosrow_II",
+      "portrait_url": null,
+      "transcript_lines": [[40, 42], [167, 168], [181, 182], [197, 203], [251, 295]],
+      "related": [
+        {"type": "person", "id": "phocas"},
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "shahrbaraz"},
+        {"type": "person", "id": "shaheen"},
+        {"type": "place", "id": "ctesiphon"},
+        {"type": "place", "id": "dastogard"},
+        {"type": "event", "id": "persian-conquest-of-jerusalem"},
+        {"type": "event", "id": "battle-of-nineveh-627"},
+        {"type": "event", "id": "fall-of-khosrow-ii"}
+      ]
+    },
+    {
+      "id": "shahrbaraz",
+      "name": "Shahrbaraz",
+      "alt_names": ["Sharbaraz", "Shahrvaraz"],
+      "role": "Sasanian Persian general",
+      "birth_year": null,
+      "death_year": 630,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Described by Brownworth as the conqueror of Egypt and widely considered Persia's greatest general. He was sent by Khosrow to assist the Avars in besieging Constantinople. Heraclius cleverly intercepted a letter ordering his recall and replaced it with a forged version telling him to stay put; a later intercepted letter ordered his execution, which Heraclius passed along with 400 additional names added, helping to trigger a Persian revolt against Khosrow.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahrbaraz",
+      "portrait_url": null,
+      "transcript_lines": [[155, 156], [202, 206], [269, 286]],
+      "related": [
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "heraclius"},
+        {"type": "event", "id": "siege-of-constantinople-626"},
+        {"type": "event", "id": "fall-of-khosrow-ii"}
+      ]
+    },
+    {
+      "id": "shaheen",
+      "name": "Shaheen",
+      "alt_names": ["Shahin"],
+      "role": "Sasanian Persian general",
+      "birth_year": null,
+      "death_year": 626,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Entrusted by Khosrow with 50,000 men to crush Heraclius, with the warning that failure meant death. He was completely defeated by Heraclius' brother Theodore in a driving hailstorm. He did not survive long afterward — either from despair or knowing his life was forfeit, he committed suicide. Khosrow then had his salted body brought to court and whipped until unrecognizable.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahin_Vahmanzadegan",
+      "portrait_url": null,
+      "transcript_lines": [[199, 201], [238, 253]],
+      "related": [
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "theodore-brother-of-heraclius"},
+        {"type": "event", "id": "battle-against-shaheen-626"}
+      ]
+    },
+    {
+      "id": "theodore-brother-of-heraclius",
+      "name": "Theodore",
+      "alt_names": [],
+      "role": "Byzantine general, brother of Emperor Heraclius",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Heraclius' brother, to whom the emperor entrusted a force of roughly 12,000 men to deal with the Persian general Shaheen while Heraclius himself held Armenia. Theodore met Shaheen in a driving hailstorm and completely crushed the Persian army, a victory that sent panic through the Persian and Avar forces besieging Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theodore_(brother_of_Heraclius)",
+      "portrait_url": null,
+      "transcript_lines": [[214, 216], [238, 239]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "shaheen"},
+        {"type": "event", "id": "battle-against-shaheen-626"}
+      ]
+    },
+    {
+      "id": "eudosia",
+      "name": "Eudosia",
+      "alt_names": ["Eudoxia"],
+      "role": "Byzantine Empress, first wife of Heraclius",
+      "birth_year": null,
+      "death_year": 612,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Described as Heraclius' beautiful wife, with whom he was crowned emperor in a dazzling ceremony. She died during the early years of his reign, after which Heraclius controversially married his niece Martina.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fabia_Eudokia",
+      "portrait_url": null,
+      "transcript_lines": [[91, 92], [137, 138]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "event", "id": "coronation-of-heraclius"}
+      ]
+    },
+    {
+      "id": "martina",
+      "name": "Martina",
+      "alt_names": [],
+      "role": "Byzantine Empress, second wife of Heraclius",
+      "birth_year": null,
+      "death_year": 641,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Heraclius' niece whom he married in violation of several laws and commandments after Eudosia's death, a union the Patriarch Sergius overlooked for the greater good. Never popular, she bore Heraclius nine children — four died in infancy, one had a deformed neck, another was deaf and dumb — and citizens attributed these misfortunes to God's punishment for the incestuous marriage. She became one of the most hated women in Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martina_(empress)",
+      "portrait_url": null,
+      "transcript_lines": [[137, 139], [174, 174], [366, 371]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "sergius-patriarch"}
+      ]
+    },
+    {
+      "id": "sergius-patriarch",
+      "name": "Patriarch Sergius",
+      "alt_names": ["Sergius I of Constantinople"],
+      "role": "Patriarch of Constantinople",
+      "birth_year": null,
+      "death_year": 638,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The Patriarch of Constantinople who, recognizing the desperation of the empire's situation, pledged the entire wealth of the church and turned over an immense quantity of gold and silver plate to Heraclius — even overlooking the emperor's illegal marriage to his niece Martina. He was later blamed by the dying Heraclius for the single-energy Christological compromise that the Pope condemned as heresy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sergius_I_of_Constantinople",
+      "portrait_url": null,
+      "transcript_lines": [[134, 140], [374, 376]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "martina"},
+        {"type": "event", "id": "church-funds-donated-to-empire"},
+        {"type": "event", "id": "monothelitism-controversy"}
+      ]
+    },
+    {
+      "id": "sophronius",
+      "name": "Sophronius",
+      "alt_names": ["Sophronius of Jerusalem"],
+      "role": "Patriarch of Jerusalem",
+      "birth_year": 560,
+      "death_year": 638,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The Patriarch of Jerusalem who attacked Heraclius' Christological compromise — that Christ had two natures but one energy — as heresy. His opposition caused support for the compromise to melt away precisely when unity was most needed, contributing to the collapse of Byzantine resistance to the Muslim invasion.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sophronius_of_Jerusalem",
+      "portrait_url": null,
+      "transcript_lines": [[337, 339]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "event", "id": "monothelitism-controversy"},
+        {"type": "place", "id": "jerusalem"}
+      ]
+    },
+    {
+      "id": "muhammad",
+      "name": "Muhammad",
+      "alt_names": ["The Prophet Muhammad"],
+      "role": "Founder of Islam",
+      "birth_year": 570,
+      "death_year": 632,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Brownworth notes that in 622 — the same year Heraclius set out on campaign — Muhammad fled from Mecca to Medina (the Hijra), and within five years had unleashed the armies of Islam. Muhammad died of a fever in 632, but within a hundred years his followers were at the gates of Constantinople and within 150 miles of Paris.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad",
+      "portrait_url": null,
+      "transcript_lines": [[318, 321]],
+      "related": [
+        {"type": "event", "id": "hijra-of-muhammad"},
+        {"type": "event", "id": "rise-of-islam"},
+        {"type": "place", "id": "mecca"},
+        {"type": "place", "id": "medina"}
+      ]
+    },
+    {
+      "id": "constantine-the-great",
+      "name": "Constantine the Great",
+      "alt_names": ["Constantine I", "Flavius Valerius Constantinus"],
+      "role": "Roman Emperor",
+      "birth_year": 272,
+      "death_year": 337,
+      "reign_start": 306,
+      "reign_end": 337,
+      "summary": "Mentioned at the episode's close as the emperor next to whom Heraclius was buried in the Church of the Holy Apostles. Brownworth implies the pairing is fitting — both were epoch-defining figures who saved the empire at critical moments.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[393, 394]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "place", "id": "church-of-the-holy-apostles"}
+      ]
+    },
+    {
+      "id": "alexander-the-great",
+      "name": "Alexander the Great",
+      "alt_names": ["Alexander III of Macedon"],
+      "role": "King of Macedon, conqueror",
+      "birth_year": -356,
+      "death_year": -323,
+      "reign_start": -336,
+      "reign_end": -323,
+      "summary": "Invoked for historical context: Heraclius landed at Issus, where Alexander the Great had defeated Darius almost a thousand years before, suggesting Heraclius was consciously echoing history's great conquerors.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[144, 145]],
+      "related": [
+        {"type": "place", "id": "issus"},
+        {"type": "person", "id": "darius-iii"}
+      ]
+    },
+    {
+      "id": "darius-iii",
+      "name": "Darius III",
+      "alt_names": ["Darius Codomannus"],
+      "role": "Achaemenid Persian King",
+      "birth_year": -380,
+      "death_year": -330,
+      "reign_start": -336,
+      "reign_end": -330,
+      "summary": "Mentioned only as the Persian king defeated by Alexander the Great at Issus, providing historical context for Heraclius' own landing at that same site.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Darius_III",
+      "portrait_url": null,
+      "transcript_lines": [[144, 145]],
+      "related": [
+        {"type": "person", "id": "alexander-the-great"},
+        {"type": "place", "id": "issus"}
+      ]
+    },
+    {
+      "id": "zoroaster",
+      "name": "Zoroaster",
+      "alt_names": ["Zarathustra"],
+      "role": "Prophet, founder of Zoroastrianism",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Referenced only as the founder of Zoroastrianism, whose birthplace in Azerbaijan was destroyed by Heraclius along with the great fire temple there, as part of his campaign to avenge the Persian sack of Jerusalem.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zoroaster",
+      "portrait_url": null,
+      "transcript_lines": [[171, 171]],
+      "related": [
+        {"type": "place", "id": "azerbaijan"},
+        {"type": "event", "id": "heraclius-destroys-fire-temple"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "The imperial capital, which faced multiple existential threats during this episode: Persians garrisoned Chalcedon just across the water, and an Avar-Persian force of 80,000 besieged its walls in 626. Its massive walls held, defended by only 12,000 cavalry aided by all the citizens, while the Patriarch processed daily with an icon of the Virgin Mary. Heraclius later developed a terror of the water and had to be coaxed across the Bosphorus on a pontoon bridge to re-enter it.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[53, 53], [61, 77], [109, 114], [219, 244], [358, 365]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "phocas"},
+        {"type": "event", "id": "siege-of-constantinople-626"},
+        {"type": "place", "id": "chalcedon"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "place", "id": "church-of-the-holy-apostles"}
+      ]
+    },
+    {
+      "id": "carthage",
+      "name": "Carthage",
+      "modern_name": "Carthage (ruins near Tunis)",
+      "modern_country": "Tunisia",
+      "lat": 36.8528,
+      "lng": 10.3233,
+      "first_year": -814,
+      "summary": "The African city described as Heraclius' native home and the seat of his father's governorship. In despair at the Persian advance, Heraclius briefly planned to abandon Constantinople and move the capital here, a plan so horrifying to the populace that they unanimously implored him to stay.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carthage",
+      "image_url": null,
+      "transcript_lines": [[111, 114]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "heraclius-the-elder"}
+      ]
+    },
+    {
+      "id": "africa",
+      "name": "Africa (Exarchate of Africa)",
+      "modern_name": "Tunisia / North Africa",
+      "modern_country": "Tunisia",
+      "lat": 36.8,
+      "lng": 10.18,
+      "first_year": 533,
+      "summary": "Described as by far the most stable of Justinian's reconquests, and virtually the only area of the empire that had an army and wasn't fighting for its life under Phocas. The governor Heraclius the Elder used his province as the base from which to launch the overthrow of Phocas. At the end of Heraclius' reign, Muslims swarmed over a defenseless Egypt and continued into Africa.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Exarchate_of_Africa",
+      "image_url": null,
+      "transcript_lines": [[11, 11], [56, 62]],
+      "related": [
+        {"type": "person", "id": "heraclius-the-elder"},
+        {"type": "person", "id": "heraclius"}
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "modern_name": "Italy",
+      "modern_country": "Italy",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "first_year": null,
+      "summary": "One of Justinian's reconquests, Italy fell victim to its own intrigues and was gradually lost to the Lombards over many years. Even during Heraclius' reign it was 'just managing to hold out against the Lombards,' and the war was described as long and bitter.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Italy",
+      "image_url": null,
+      "transcript_lines": [[12, 17], [50, 51], [97, 98]],
+      "related": [
+        {"type": "person", "id": "narses"},
+        {"type": "event", "id": "lombard-invasion-of-italy"}
+      ]
+    },
+    {
+      "id": "spain",
+      "name": "Spain (Byzantine Spain)",
+      "modern_name": "Spain",
+      "modern_country": "Spain",
+      "lat": 40.4168,
+      "lng": -3.7038,
+      "first_year": 552,
+      "summary": "One of Justinian's reconquests, Spain was described as 'virtually ignored' after Justinian's death, with the Visigoths poised to swallow what remained of imperial Spain under Phocas.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_Spain",
+      "image_url": null,
+      "transcript_lines": [[11, 11], [50, 51]],
+      "related": [
+        {"type": "event", "id": "lombard-invasion-of-italy"}
+      ]
+    },
+    {
+      "id": "balkans",
+      "name": "The Balkans",
+      "modern_name": "Balkans",
+      "modern_country": null,
+      "lat": 42.0,
+      "lng": 22.0,
+      "first_year": null,
+      "summary": "Repeatedly stripped of troops to fight on other fronts, the Balkans were invaded by Slavs and Avars and described as essentially gone from Byzantine control by Heraclius' coronation. During the crisis of 626, the Avar khaganate united virtually every barbarian tribe in the Balkans and moved them against Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Balkans",
+      "image_url": null,
+      "transcript_lines": [[38, 39], [47, 48], [71, 72], [102, 102]],
+      "related": [
+        {"type": "event", "id": "siege-of-constantinople-626"}
+      ]
+    },
+    {
+      "id": "mesopotamia",
+      "name": "Mesopotamia",
+      "modern_name": "Iraq",
+      "modern_country": "Iraq",
+      "lat": 33.3,
+      "lng": 44.4,
+      "first_year": null,
+      "summary": "Taken by Persia along with Armenia after Phocas sent a disorganized army against Khosrow, who routed it completely. Part of the vast territories recovered by Heraclius in the peace settlement.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesopotamia",
+      "image_url": null,
+      "transcript_lines": [[48, 48]],
+      "related": [
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "phocas"}
+      ]
+    },
+    {
+      "id": "armenia",
+      "name": "Armenia",
+      "modern_name": "Armenia / Eastern Turkey",
+      "modern_country": "Armenia",
+      "lat": 40.0691,
+      "lng": 45.0382,
+      "first_year": null,
+      "summary": "Taken by Persia early in the crisis, and later used as Heraclius' base of operations during the siege of Constantinople in 626, when he held Armenia with the smallest of his three army divisions while invading a defenseless Persia.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armenia",
+      "image_url": null,
+      "transcript_lines": [[48, 48], [216, 216]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"}
+      ]
+    },
+    {
+      "id": "cappadocia",
+      "name": "Cappadocia",
+      "modern_name": "Central Anatolia, Turkey",
+      "modern_country": "Turkey",
+      "lat": 38.6431,
+      "lng": 34.8289,
+      "first_year": null,
+      "summary": "The Persians invaded Cappadocia during Phocas' reign, coming within sight of Constantinople and sending panic through the streets. Later, during the campaign, Heraclius' victorious army wintered in Cappadocia after routing the Persians for the first time, with morale soaring.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cappadocia",
+      "image_url": null,
+      "transcript_lines": [[67, 67], [161, 162]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"}
+      ]
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt",
+      "modern_name": "Egypt",
+      "modern_country": "Egypt",
+      "lat": 26.8206,
+      "lng": 30.8025,
+      "first_year": null,
+      "summary": "Heraclius the Elder sent his son with a navy to seize Egypt, using it as a base to gather a massive army for the march on Constantinople. The Persians later conquered Egypt two years after taking Jerusalem, depriving the empire of its main source of bread. At the end of Heraclius' reign, the Muslims swarmed over a defenseless Egypt.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Egypt",
+      "image_url": null,
+      "transcript_lines": [[61, 62], [106, 107], [372, 373]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "heraclius-the-elder"},
+        {"type": "person", "id": "shahrbaraz"},
+        {"type": "event", "id": "persian-conquest-of-egypt"}
+      ]
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "modern_name": "Jerusalem",
+      "modern_country": "Israel",
+      "lat": 31.7683,
+      "lng": 35.2137,
+      "first_year": null,
+      "summary": "Conquered by the Persians who captured the True Cross, killed all male citizens, and sold the rest into slavery, leaving the holy city almost deserted. Heraclius installed the recovered True Cross there after his victory, only to have to remove it personally when the Muslims besieged the city. Eventually Jerusalem fell to the Muslim forces.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerusalem",
+      "image_url": null,
+      "transcript_lines": [[103, 105], [329, 329], [354, 354], [351, 352]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "sophronius"},
+        {"type": "event", "id": "persian-conquest-of-jerusalem"},
+        {"type": "event", "id": "true-cross-restored"},
+        {"type": "event", "id": "fall-of-damascus-and-jerusalem-to-muslims"}
+      ]
+    },
+    {
+      "id": "issus",
+      "name": "Issus",
+      "modern_name": "Near Iskenderun, Turkey",
+      "modern_country": "Turkey",
+      "lat": 36.7,
+      "lng": 36.18,
+      "first_year": null,
+      "summary": "The site where Heraclius landed by sea in 622, taking the Persians completely by surprise — they had expected him to march by land. Brownworth notes this is where Alexander the Great had defeated Darius almost a thousand years before, implying the historical resonance was intentional.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Issus",
+      "image_url": null,
+      "transcript_lines": [[144, 145]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "alexander-the-great"},
+        {"type": "person", "id": "darius-iii"},
+        {"type": "event", "id": "heraclius-campaign-622"}
+      ]
+    },
+    {
+      "id": "azerbaijan",
+      "name": "Azerbaijan (ancient Atropatene)",
+      "modern_name": "Azerbaijan / Northwestern Iran",
+      "modern_country": "Azerbaijan",
+      "lat": 40.4093,
+      "lng": 49.8671,
+      "first_year": null,
+      "summary": "Described as the center of Persian Zoroastrian fire worship, where Khosrow wintered in his magnificent palace with an army 40,000 strong. Heraclius invaded, destroyed the palace, the great fire temple, and the nearby town that was the birthplace of Zoroaster.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Azerbaijan_(Iran)",
+      "image_url": null,
+      "transcript_lines": [[165, 171]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "zoroaster"},
+        {"type": "event", "id": "heraclius-destroys-fire-temple"}
+      ]
+    },
+    {
+      "id": "ctesiphon",
+      "name": "Ctesiphon",
+      "modern_name": "Near Salman Pak, Iraq",
+      "modern_country": "Iraq",
+      "lat": 33.094,
+      "lng": 44.5815,
+      "first_year": null,
+      "summary": "The ancient capital of the Persians, toward which the Byzantine army pushed after destroying the fire temple, pausing for winter so the Empress Martina could safely deliver a child. The Byzantines later arrived at the Persian capital to find it deserted, burning what they could not take.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ctesiphon",
+      "image_url": null,
+      "transcript_lines": [[173, 174], [273, 275]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"}
+      ]
+    },
+    {
+      "id": "lake-van",
+      "name": "Lake Van",
+      "modern_name": "Lake Van",
+      "modern_country": "Turkey",
+      "lat": 38.5,
+      "lng": 43.0,
+      "first_year": null,
+      "summary": "Where the Byzantine army settled for a deserved winter rest after Heraclius annihilated the main Persian army and a second relief army, having penetrated further into the heart of Persia than any Roman commander before him.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Van",
+      "image_url": null,
+      "transcript_lines": [[181, 182]],
+      "related": [
+        {"type": "person", "id": "heraclius"}
+      ]
+    },
+    {
+      "id": "dastogard",
+      "name": "Dastogard",
+      "modern_name": "Dastagerd (near modern Iraq-Iran border)",
+      "modern_country": "Iran",
+      "lat": 34.0,
+      "lng": 45.5,
+      "first_year": null,
+      "summary": "The Persian capital (palace complex of Khosrow) that Heraclius marched 300 miles to reach, constantly shadowed by a Persian army. It was here that the vanguard fell into an ambush at a bridge, and Heraclius personally saved the day by cutting away across the bridge despite wounds and arrows, inspiring admiration even from the Persian commander.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dastagerd",
+      "image_url": null,
+      "transcript_lines": [[184, 192]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"}
+      ]
+    },
+    {
+      "id": "nineveh",
+      "name": "Nineveh",
+      "modern_name": "Near Mosul, Iraq",
+      "modern_country": "Iraq",
+      "lat": 36.3619,
+      "lng": 43.1589,
+      "first_year": null,
+      "summary": "The ancient city where the decisive battle of the Byzantine-Persian war was fought in 627. Both sides chose the ground knowing it was the decisive conflict. The battle lasted eleven hours; Heraclius reportedly challenged the Persian general to single combat and killed him, and by day's end virtually no Persians were left alive.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(627)",
+      "image_url": null,
+      "transcript_lines": [[262, 268]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "event", "id": "battle-of-nineveh-627"}
+      ]
+    },
+    {
+      "id": "chalcedon",
+      "name": "Chalcedon",
+      "modern_name": "Kadıköy, Istanbul, Turkey",
+      "modern_country": "Turkey",
+      "lat": 40.9828,
+      "lng": 29.0228,
+      "first_year": null,
+      "summary": "The city just across the water from Constantinople where the Persians captured and garrisoned a position, coming within sight of the capital and sending ripples of panic through the streets.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chalcedon",
+      "image_url": null,
+      "transcript_lines": [[109, 110]],
+      "related": [
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "modern_name": "Hagia Sophia",
+      "modern_country": "Turkey",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "first_year": 537,
+      "summary": "Where Heraclius marched in a triumphant procession — the first ever to include elephants in Constantinople — to raise the recovered True Cross above the high altar in a stirring ceremony that seemed to herald a new age for the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "transcript_lines": [[303, 305]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "event", "id": "true-cross-restored"}
+      ]
+    },
+    {
+      "id": "church-of-the-holy-apostles",
+      "name": "Church of the Holy Apostles",
+      "modern_name": "Site of Fatih Mosque, Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0186,
+      "lng": 28.9497,
+      "first_year": 330,
+      "summary": "The church in Constantinople where Heraclius was buried next to Constantine the Great. Brownworth calls the pairing fitting, as both were epoch-defining emperors who saved the empire at its most critical moments.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles",
+      "image_url": null,
+      "transcript_lines": [[393, 394]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "damascus",
+      "name": "Damascus",
+      "modern_name": "Damascus",
+      "modern_country": "Syria",
+      "lat": 33.5138,
+      "lng": 36.2765,
+      "first_year": null,
+      "summary": "Conquered by Muslim forces who poured into Syria after Sophronius' opposition dissolved the Christological compromise. Damascus fell along with Jerusalem after the Byzantine army, without Heraclius to lead them, was massacred in a sandstorm.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Damascus",
+      "image_url": null,
+      "transcript_lines": [[341, 352]],
+      "related": [
+        {"type": "event", "id": "fall-of-damascus-and-jerusalem-to-muslims"}
+      ]
+    },
+    {
+      "id": "syria",
+      "name": "Syria",
+      "modern_name": "Syria",
+      "modern_country": "Syria",
+      "lat": 34.8021,
+      "lng": 38.9968,
+      "first_year": null,
+      "summary": "The region into which Muslim forces poured after the Christological controversy undermined Byzantine unity, conquering Damascus and besieging Jerusalem. The Byzantine army of 80,000 retreated there to pursue the Muslims, who fell back into the Syrian desert.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syria",
+      "image_url": null,
+      "transcript_lines": [[341, 351]],
+      "related": [
+        {"type": "event", "id": "fall-of-damascus-and-jerusalem-to-muslims"}
+      ]
+    },
+    {
+      "id": "mecca",
+      "name": "Mecca",
+      "modern_name": "Mecca",
+      "modern_country": "Saudi Arabia",
+      "lat": 21.3891,
+      "lng": 39.8579,
+      "first_year": null,
+      "summary": "The city from which Muhammad fled in 622 (the Hijra) to Medina, the founding event of the Islamic calendar and the beginning of the rapid expansion that would transform the world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mecca",
+      "image_url": null,
+      "transcript_lines": [[318, 319]],
+      "related": [
+        {"type": "person", "id": "muhammad"},
+        {"type": "place", "id": "medina"},
+        {"type": "event", "id": "hijra-of-muhammad"}
+      ]
+    },
+    {
+      "id": "medina",
+      "name": "Medina",
+      "modern_name": "Medina",
+      "modern_country": "Saudi Arabia",
+      "lat": 24.5247,
+      "lng": 39.5692,
+      "first_year": null,
+      "summary": "The city to which Muhammad fled from Mecca in 622, the year Heraclius set out on campaign. From Medina, within five years, the armies of Islam were unleashed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Medina",
+      "image_url": null,
+      "transcript_lines": [[318, 319]],
+      "related": [
+        {"type": "person", "id": "muhammad"},
+        {"type": "place", "id": "mecca"},
+        {"type": "event", "id": "hijra-of-muhammad"}
+      ]
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "modern_name": "Paris",
+      "modern_country": "France",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "first_year": null,
+      "summary": "Mentioned as a measure of the staggering reach of Islamic expansion: within 150 years of Muhammad's death, Muslim forces were within 150 miles of Paris in the west, having swept across North Africa and into Europe.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris",
+      "image_url": null,
+      "transcript_lines": [[321, 321]],
+      "related": [
+        {"type": "event", "id": "rise-of-islam"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "lombard-invasion-of-italy",
+      "name": "Lombard Invasion of Italy",
+      "year": 568,
+      "end_year": null,
+      "category": "battle",
+      "summary": "According to legend, the eunuch Narses, humiliated by the Empress Sophia, invited the Lombards into Italy in revenge. The resulting long and bitter war cost the empire most of the land of its birth, with the Lombards continuing their relentless conquest of the Italian peninsula throughout the subsequent reigns.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lombard_invasion_of_Italy",
+      "image_url": null,
+      "location_id": "italy",
+      "transcript_lines": [[13, 18], [50, 51], [97, 98]],
+      "related": [
+        {"type": "person", "id": "narses"},
+        {"type": "person", "id": "empress-sophia"},
+        {"type": "place", "id": "italy"}
+      ]
+    },
+    {
+      "id": "overthrow-of-phocas",
+      "name": "Overthrow of Phocas",
+      "year": 610,
+      "end_year": null,
+      "category": "political",
+      "summary": "A mob seized Phocas and brought him to Heraclius' ship in the harbor of Constantinople. Heraclius reportedly asked, 'Is this how you governed, wretch?' to which Phocas replied, 'Will you do any better?' Phocas was then executed, ending his disastrous eight-year reign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phocas#Fall_and_death",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[76, 88]],
+      "related": [
+        {"type": "person", "id": "phocas"},
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "heraclius-the-elder"}
+      ]
+    },
+    {
+      "id": "coronation-of-heraclius",
+      "name": "Coronation of Heraclius",
+      "year": 610,
+      "end_year": null,
+      "category": "political",
+      "summary": "At thirty-six, Heraclius was crowned emperor together with his beautiful wife Eudosia in a dazzling ceremony. Brownworth notes that despite the pomp and splendor, there was a sense of impending doom — the rest of the empire was falling away even as the new imperial couple was celebrated.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraclius#Coronation",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[89, 96]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "eudosia"}
+      ]
+    },
+    {
+      "id": "persian-conquest-of-jerusalem",
+      "name": "Persian Conquest of Jerusalem",
+      "year": 614,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The Persians conquered Jerusalem, capturing the True Cross and instruments of the Passion, killing all male citizens, and selling the rest into slavery, leaving the holy city almost deserted. Brownworth calls this among the most devastating blows of the Persian advance.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sasanian_conquest_of_Jerusalem",
+      "image_url": null,
+      "location_id": "jerusalem",
+      "transcript_lines": [[103, 105]],
+      "related": [
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "event", "id": "heraclius-campaign-622"}
+      ]
+    },
+    {
+      "id": "persian-conquest-of-egypt",
+      "name": "Persian Conquest of Egypt",
+      "year": 619,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Two years after taking Jerusalem, the Persians turned to Egypt, depriving the empire of its main source of bread. Combined with the loss of Thrace to the Avars, this created a devastating famine. The end of the empire seemed at hand.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sasanian_conquest_of_Egypt",
+      "image_url": null,
+      "location_id": "egypt",
+      "transcript_lines": [[106, 110]],
+      "related": [
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "shahrbaraz"},
+        {"type": "place", "id": "egypt"}
+      ]
+    },
+    {
+      "id": "church-funds-donated-to-empire",
+      "name": "Church Donates Wealth to the Empire",
+      "year": 622,
+      "end_year": null,
+      "category": "economic",
+      "summary": "Patriarch Sergius pledged the entire wealth of the church to Heraclius and turned over an immense quantity of gold and silver plate, in an impressive display of patriotism. This temporarily solved the empire's financial crisis and enabled Heraclius to fund his Persian campaign.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[134, 140]],
+      "related": [
+        {"type": "person", "id": "sergius-patriarch"},
+        {"type": "person", "id": "heraclius"},
+        {"type": "event", "id": "heraclius-campaign-622"}
+      ]
+    },
+    {
+      "id": "heraclius-military-reforms",
+      "name": "Heraclius' Military Reforms",
+      "year": 610,
+      "end_year": 622,
+      "category": "political",
+      "summary": "Over the twelve years between his coronation and his first campaign, Heraclius reorganized the military, creating what Brownworth calls the medieval Byzantine army. Frontier soldiers were given a limited salary in exchange for presenting themselves armed and mounted, eliminating dependence on expensive and unreliable mercenaries. This system became the backbone of the army for the next 800 years.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_army#Themes",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[119, 130]],
+      "related": [
+        {"type": "person", "id": "heraclius"}
+      ]
+    },
+    {
+      "id": "heraclius-campaign-622",
+      "name": "Heraclius' Persian Campaign Begins",
+      "year": 622,
+      "end_year": null,
+      "category": "battle",
+      "summary": "In spring 622, Heraclius launched his counter-offensive against Persia, using Byzantine naval superiority to land at Issus and surprise the Persians who expected a land march. He spent the summer drilling his troops, and in the first engagement scattered the Persians 'like a herd of goats,' dramatically boosting Byzantine morale.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Sasanian_War_of_602%E2%80%93628",
+      "image_url": null,
+      "location_id": "issus",
+      "transcript_lines": [[141, 159]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "shahrbaraz"},
+        {"type": "place", "id": "issus"},
+        {"type": "place", "id": "cappadocia"}
+      ]
+    },
+    {
+      "id": "heraclius-destroys-fire-temple",
+      "name": "Heraclius Destroys the Fire Temple at Ganzak",
+      "year": 624,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Heraclius invaded Azerbaijan, the center of Persian Zoroastrian fire worship, where Khosrow had wintered with an army 40,000 strong. The Persians melted away, leaving the palace and the great fire temple at the mercy of the Byzantines. Heraclius destroyed both, along with the nearby town identified as the birthplace of Zoroaster, as revenge for the Persian sack of Jerusalem.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adur_Gushnasp",
+      "image_url": null,
+      "location_id": "azerbaijan",
+      "transcript_lines": [[165, 172]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "zoroaster"},
+        {"type": "place", "id": "azerbaijan"}
+      ]
+    },
+    {
+      "id": "siege-of-constantinople-626",
+      "name": "Avar-Persian Siege of Constantinople",
+      "year": 626,
+      "end_year": 626,
+      "category": "battle",
+      "summary": "With Heraclius away campaigning, Khosrow sent Shahrbaraz with an army to assist the Avars, who dragged massive siege engines toward Constantinople's walls. Some 80,000 barbarians besieged the city, defended by only 12,000 cavalry and all the city's citizens. The Patriarch Sergius processed daily around the walls with an icon of the Virgin Mary. The siege failed: the enemy fleet was ambushed and destroyed, Theodore crushed the Persian general Shaheen, and the Avars retreated.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(626)",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[201, 244]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "shahrbaraz"},
+        {"type": "person", "id": "shaheen"},
+        {"type": "person", "id": "theodore-brother-of-heraclius"},
+        {"type": "person", "id": "sergius-patriarch"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "battle-against-shaheen-626"}
+      ]
+    },
+    {
+      "id": "battle-against-shaheen-626",
+      "name": "Theodore Defeats Shaheen",
+      "year": 626,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Heraclius' brother Theodore met the Persian general Shaheen in a driving hailstorm and completely crushed the Persian army. News of the disaster caused both the Persian and Avar forces besieging Constantinople to panic and abandon the siege. Shaheen subsequently committed suicide, and Khosrow had his salted corpse whipped beyond recognition.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[238, 253]],
+      "related": [
+        {"type": "person", "id": "theodore-brother-of-heraclius"},
+        {"type": "person", "id": "shaheen"},
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "event", "id": "siege-of-constantinople-626"}
+      ]
+    },
+    {
+      "id": "battle-of-nineveh-627",
+      "name": "Battle of Nineveh",
+      "year": 627,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The decisive battle of the Byzantine-Persian war, fought at ancient Nineveh over eleven hours. Both sides knew it was the decisive conflict. Heraclius reportedly challenged the Persian general to single combat and killed him. By day's end the Byzantines had won completely — virtually no Persians survived. Several days later Heraclius intercepted and forged a letter from Khosrow to keep Shahrbaraz out of the fight.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Nineveh_(627)",
+      "image_url": null,
+      "location_id": "nineveh",
+      "transcript_lines": [[261, 272]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "shahrbaraz"},
+        {"type": "place", "id": "nineveh"}
+      ]
+    },
+    {
+      "id": "fall-of-khosrow-ii",
+      "name": "Fall of Khosrow II",
+      "year": 628,
+      "end_year": null,
+      "category": "political",
+      "summary": "After a series of Byzantine forgeries added 400 officers' names to an execution order meant for Shahrbaraz, Persian nobles revolted and Khosrow's son rose in revolt with widespread support. Khosrow was flung into the Tower of Darkness, starved, forced to watch all his unrelated children executed before him, and finally shot slowly to death with arrows. The new Persian king immediately sued for peace.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khosrow_II#Fall_and_death",
+      "image_url": null,
+      "location_id": "ctesiphon",
+      "transcript_lines": [[286, 292]],
+      "related": [
+        {"type": "person", "id": "khosrow-ii"},
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "shahrbaraz"}
+      ]
+    },
+    {
+      "id": "true-cross-restored",
+      "name": "True Cross Returned to Jerusalem",
+      "year": 630,
+      "end_year": null,
+      "category": "religious",
+      "summary": "As part of the Persian peace settlement, the True Cross and instruments of the Passion were surrendered along with all conquered territory and prisoners. Heraclius waited for the True Cross to be brought from Persia before entering Constantinople, following it through the Golden Gate in a procession featuring the first elephants ever seen in the city, then raising it above the high altar at the Hagia Sophia. He subsequently installed it in Jerusalem.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/True_Cross#Recovery_by_Heraclius",
+      "image_url": null,
+      "location_id": "jerusalem",
+      "transcript_lines": [[292, 307], [329, 329]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "fall-of-khosrow-ii"}
+      ]
+    },
+    {
+      "id": "greek-made-official-language",
+      "name": "Greek Declared Official Language of the Empire",
+      "year": 629,
+      "end_year": null,
+      "category": "cultural",
+      "summary": "Heraclius made Greek the official language of the empire, sweeping away the old Latin trappings in the interest of military efficiency. Within a generation, Latin was virtually extinct in the empire, and imperial titles changed from Imperator, Caesar, and Augustus to Basilius — the Greek word for king. Brownworth calls this a turning point marking Heraclius as the first Greek emperor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraclius#Administrative_changes",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[386, 392]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "justinian-i"}
+      ]
+    },
+    {
+      "id": "hijra-of-muhammad",
+      "name": "Hijra: Muhammad Flees to Medina",
+      "year": 622,
+      "end_year": null,
+      "category": "religious",
+      "summary": "In 622 — the same year Heraclius set out on campaign — Muhammad fled from Mecca to Medina. Brownworth identifies this as the birth of the Islamic threat, noting that within five years Muhammad had unleashed the armies of Islam, and within a hundred years of his death in 632 they were at the gates of Constantinople and within 150 miles of Paris.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hijra_(Islam)",
+      "image_url": null,
+      "location_id": "medina",
+      "transcript_lines": [[317, 321]],
+      "related": [
+        {"type": "person", "id": "muhammad"},
+        {"type": "place", "id": "mecca"},
+        {"type": "place", "id": "medina"},
+        {"type": "event", "id": "rise-of-islam"}
+      ]
+    },
+    {
+      "id": "rise-of-islam",
+      "name": "Rise of Islam and Muslim Conquests",
+      "year": 632,
+      "end_year": null,
+      "category": "battle",
+      "summary": "After Muhammad's death in 632, Muslim forces crossed into Byzantine territory by 633 and poured into Syria, conquering Damascus and besieging Jerusalem. The 80,000-strong Byzantine army sent against them was massacred in a sandstorm, and Damascus and Jerusalem fell. Brownworth attributes much of Islam's rapid success to the timing — both Persia and Byzantium were exhausted from their long war.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Early_Muslim_conquests",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[317, 352]],
+      "related": [
+        {"type": "person", "id": "muhammad"},
+        {"type": "person", "id": "heraclius"},
+        {"type": "event", "id": "hijra-of-muhammad"},
+        {"type": "event", "id": "fall-of-damascus-and-jerusalem-to-muslims"},
+        {"type": "place", "id": "damascus"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "syria"}
+      ]
+    },
+    {
+      "id": "fall-of-damascus-and-jerusalem-to-muslims",
+      "name": "Muslim Conquest of Damascus and Jerusalem",
+      "year": 636,
+      "end_year": 638,
+      "category": "battle",
+      "summary": "Muslim forces conquered Damascus, besieged Jerusalem, and ultimately took both cities. The Byzantine army sent to stop them was massacred almost to a man after being goaded into attacking in a sandstorm that blew in their faces. Heraclius personally slipped into Jerusalem to remove the True Cross before beginning the long retreat to Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Syria",
+      "image_url": null,
+      "location_id": "damascus",
+      "transcript_lines": [[341, 354]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "place", "id": "damascus"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "syria"},
+        {"type": "event", "id": "rise-of-islam"}
+      ]
+    },
+    {
+      "id": "monothelitism-controversy",
+      "name": "Monothelite/Single-Energy Controversy",
+      "year": 638,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Heraclius proposed a Christological compromise — Christ had two natures but one energy — that both sides initially accepted, recognizing they were saying the same thing in different words. However, Patriarch Sophronius of Jerusalem attacked it as heresy, dissolving support precisely when unity was most needed. At the end of his life, the Pope officially condemned the compromise, and the dying Heraclius formally denied any part in it, blaming Patriarch Sergius.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monothelitism",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[329, 339], [372, 376]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "person", "id": "sophronius"},
+        {"type": "person", "id": "sergius-patriarch"}
+      ]
+    }
+  ]
+}

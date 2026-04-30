@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #1a1006;
+  color: #f4e9cf;
+  font-family: var(--font-body, "Cardo"), Garamond, serif;
+  overflow: hidden;
+  height: 100%;
+}
+
+#__next,
+body > div {
+  height: 100%;
+}
+
+/* MapLibre overrides — make controls match the parchment/gold theme */
+.maplibregl-ctrl-attrib {
+  background: rgba(26, 16, 6, 0.8) !important;
+  color: #d9c79c !important;
+  font-size: 10px;
+}
+.maplibregl-ctrl-attrib a {
+  color: #e7c873 !important;
+}
+
+/* Reset control: matches MapLibre's zoom button look (29x29, centered icon). */
+.byz-reset-ctrl {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #1a1006;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+.byz-reset-ctrl:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.timeline-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #c9a227 #2a0f24;
+}
+.timeline-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.timeline-scroll::-webkit-scrollbar-track {
+  background: #2a0f24;
+}
+.timeline-scroll::-webkit-scrollbar-thumb {
+  background: #c9a227;
+  border-radius: 4px;
+}
+
+.card-frame {
+  background:
+    radial-gradient(ellipse at top, rgba(231, 200, 115, 0.18), transparent 60%),
+    linear-gradient(135deg, #2a0f24 0%, #1a1006 100%);
+  border: 1px solid rgba(201, 162, 39, 0.5);
+}
+
+/* Card kind accents */
+.card-person {
+  border-color: rgba(231, 200, 115, 0.7);
+}
+.card-place {
+  border-color: rgba(58, 107, 140, 0.8);
+}
+.card-event {
+  border-color: rgba(180, 70, 70, 0.7);
+}
+
+/* ---- Map markers ----
+ * IMPORTANT: do NOT set `position` on these. MapLibre's .maplibregl-marker
+ * applies `position: absolute` and overriding it (e.g., to `relative`) leaves
+ * the element in normal flow — markers then drift by their DOM-order offset.
+ * Children with `position: absolute` (like the label) still anchor to this
+ * box because absolute is a positioning context for absolute descendants.
+ */
+.byz-marker {
+  display: block;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  isolation: isolate;
+}
+/* When the entity has an image: a 30px colored disc with the image inside.
+ * When it doesn't: a small 12px dot in the kind color. Both share the
+ * `.byz-marker-disc` element so the selected/hover/cluster CSS can target
+ * one class. */
+.byz-marker-disc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: var(--marker-color, #c9a227);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.byz-marker-disc.byz-marker-disc--image {
+  width: 32px;
+  height: 32px;
+  padding: 3.5px;
+}
+.byz-marker-disc.byz-marker-disc--dot {
+  width: 12px;
+  height: 12px;
+}
+.byz-marker-disc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 9999px;
+  display: block;
+  /* Desaturate the artwork so the kind-colored ring around it carries the
+   * visual identity. Slight contrast bump keeps faces / details legible. */
+  filter: grayscale(100%) contrast(1.05);
+  transition: filter 0.15s ease;
+}
+/* Selected marker shows the image in full color again — feels like the dot
+ * is "lighting up" when you pick it. */
+.byz-marker-selected .byz-marker-disc img,
+.byz-marker:hover .byz-marker-disc img {
+  filter: grayscale(0%) contrast(1);
+}
+.byz-marker:hover .byz-marker-disc--image {
+  transform: scale(1.25);
+}
+.byz-marker:hover .byz-marker-disc--dot {
+  transform: scale(1.6);
+}
+.byz-marker:hover {
+  z-index: 5;
+}
+
+.byz-marker-label {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 4px);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: "Cinzel", serif;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #f4e9cf;
+  background: rgba(26, 16, 6, 0.92);
+  border: 1px solid var(--marker-color, #c9a227);
+  padding: 2px 6px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 6;
+}
+.byz-marker:hover .byz-marker-label {
+  opacity: 1;
+}
+
+/* Selected marker — ring + scale + always-visible label */
+.byz-marker-selected {
+  z-index: 10;
+}
+.byz-marker-selected .byz-marker-disc {
+  transform: scale(1.45);
+  box-shadow:
+    0 0 0 3px var(--marker-color, #c9a227),
+    0 0 24px 4px var(--marker-color, #c9a227),
+    0 4px 14px rgba(0, 0, 0, 0.7);
+}
+.byz-marker-selected .byz-marker-label {
+  opacity: 1;
+  font-weight: 700;
+}
+
+/* ---- Cluster markers (Google-Maps-style "+N" with click-to-expand) ---- */
+/* Same caveat as .byz-marker: don't set `position` — MapLibre needs absolute. */
+.byz-cluster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  /* Tinted by the dominant kind in the group via --marker-color (set in JS).
+   * Lighter top-left highlight + darker base for a subtle 3D feel. */
+  background: radial-gradient(
+    circle at 30% 30%,
+    color-mix(in srgb, var(--marker-color, #c9a227) 80%, white) 0%,
+    var(--marker-color, #c9a227) 70%,
+    color-mix(in srgb, var(--marker-color, #c9a227) 60%, black) 100%
+  );
+  color: #1a1006;
+  border: 0;
+  border-radius: 9999px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  z-index: 4;
+}
+/* Place clusters (blue) need light text for contrast; events (red) too. */
+.byz-cluster[data-dominant-kind="place"],
+.byz-cluster[data-dominant-kind="event"] {
+  color: #f4e9cf;
+}
+.byz-cluster:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--marker-color, #c9a227) 80%, white),
+    0 6px 18px rgba(0, 0, 0, 0.75);
+}
+.byz-cluster::before {
+  content: "+";
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 1px;
+}
+.byz-cluster-count {
+  pointer-events: none;
+}

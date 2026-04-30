@@ -1,0 +1,1070 @@
+{
+  "episode": 5,
+  "title": "Julian",
+  "people": [
+    {
+      "id": "julian-the-apostate",
+      "name": "Julian the Apostate",
+      "alt_names": ["Flavius Claudius Julianus", "Julian", "The Butcher"],
+      "role": "Roman Emperor",
+      "birth_year": 331,
+      "death_year": 363,
+      "reign_start": 361,
+      "reign_end": 363,
+      "summary": "A complex, enigmatic philosopher-emperor who survived a childhood massacre of his family to become Caesar at 23. He secretly abandoned Christianity for paganism and devoted his reign to reversing Constantine's religious legacy, but died in battle against the Persians before his ambitions could be realized.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[1, 262]],
+      "related": [
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "person", "id": "gallus-caesar"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "julius-constantius"},
+        {"type": "person", "id": "shapur-ii"},
+        {"type": "person", "id": "jovian"},
+        {"type": "person", "id": "libanus"},
+        {"type": "person", "id": "paul-the-chain"},
+        {"type": "place", "id": "nicomedia"},
+        {"type": "place", "id": "cappadocia"},
+        {"type": "place", "id": "athens"},
+        {"type": "place", "id": "ephesus"},
+        {"type": "place", "id": "milan"},
+        {"type": "place", "id": "gaul"},
+        {"type": "place", "id": "paris"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "ctesiphon"},
+        {"type": "place", "id": "tigris-river"},
+        {"type": "event", "id": "massacre-of-constantines-family"},
+        {"type": "event", "id": "julian-appointed-caesar"},
+        {"type": "event", "id": "julians-gallic-campaign"},
+        {"type": "event", "id": "petulantes-mutiny"},
+        {"type": "event", "id": "julian-becomes-emperor"},
+        {"type": "event", "id": "julians-pagan-reforms"},
+        {"type": "event", "id": "julians-persian-campaign"},
+        {"type": "event", "id": "death-of-julian"}
+      ]
+    },
+    {
+      "id": "constantine-the-great",
+      "name": "Constantine the Great",
+      "alt_names": ["Constantine I"],
+      "role": "Roman Emperor",
+      "birth_year": 272,
+      "death_year": 337,
+      "reign_start": 306,
+      "reign_end": 337,
+      "summary": "A driving personality of history whose death left chaos in its wake. Brownworth notes his arrogance and lack of imagination in naming his children, and that he initiated a Persian war that still had to be fought after his death.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[5, 7], [37, 40]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "person", "id": "constantine-ii"},
+        {"type": "person", "id": "constans-i"},
+        {"type": "person", "id": "julius-constantius"},
+        {"type": "event", "id": "massacre-of-constantines-family"}
+      ]
+    },
+    {
+      "id": "constantius-ii",
+      "name": "Constantius II",
+      "alt_names": ["Constantius"],
+      "role": "Roman Emperor",
+      "birth_year": 317,
+      "death_year": 361,
+      "reign_start": 337,
+      "reign_end": 361,
+      "summary": "The middle son of Constantine who consolidated power by spreading a rumor blaming his half-uncles for poisoning Constantine, triggering the family massacre. He proved a capable and determined commander, but died of illness in Cilicia while marching to confront Julian, naming him successor on his deathbed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantius_II",
+      "portrait_url": null,
+      "transcript_lines": [[27, 59], [101, 138]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "constantine-ii"},
+        {"type": "person", "id": "constans-i"},
+        {"type": "person", "id": "gallus-caesar"},
+        {"type": "person", "id": "shapur-ii"},
+        {"type": "place", "id": "cilicia"},
+        {"type": "place", "id": "milan"},
+        {"type": "event", "id": "massacre-of-constantines-family"},
+        {"type": "event", "id": "julian-appointed-caesar"},
+        {"type": "event", "id": "petulantes-mutiny"},
+        {"type": "event", "id": "death-of-constantius-ii"}
+      ]
+    },
+    {
+      "id": "constantine-ii",
+      "name": "Constantine II",
+      "alt_names": ["Constantine the Second"],
+      "role": "Roman Emperor",
+      "birth_year": 316,
+      "death_year": 340,
+      "reign_start": 337,
+      "reign_end": 340,
+      "summary": "The eldest son of Constantine who tried to lord it over his brothers. He invaded Italy to confront his youngest brother Constans, but underestimated him, was ambushed, and killed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_II_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[39, 44]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "constans-i"},
+        {"type": "person", "id": "constantius-ii"}
+      ]
+    },
+    {
+      "id": "constans-i",
+      "name": "Constans I",
+      "alt_names": ["Constans"],
+      "role": "Roman Emperor",
+      "birth_year": 323,
+      "death_year": 350,
+      "reign_start": 337,
+      "reign_end": 350,
+      "summary": "The youngest son of Constantine who defeated and killed his brother Constantine II when invaded. Once secure on his throne, he neglected the army in favor of his blonde female prisoners and hunting, leading to a revolt by the usurper Magnentius.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constans",
+      "portrait_url": null,
+      "transcript_lines": [[42, 49]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "constantine-ii"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "person", "id": "magnentius"},
+        {"type": "event", "id": "magnentius-usurpation"}
+      ]
+    },
+    {
+      "id": "julius-constantius",
+      "name": "Julius Constantius",
+      "alt_names": ["Constantine's half-brother"],
+      "role": "Roman nobleman, father of Julian",
+      "birth_year": 300,
+      "death_year": 337,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Constantine's half-brother and Julian's father. Constantius II accused him of poisoning Constantine, and he was pursued to his house and butchered along with his eldest son in the army's purge of imperial relatives.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Constantius",
+      "portrait_url": null,
+      "transcript_lines": [[28, 34]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "gallus-caesar"},
+        {"type": "event", "id": "massacre-of-constantines-family"}
+      ]
+    },
+    {
+      "id": "gallus-caesar",
+      "name": "Gallus Caesar",
+      "alt_names": ["Gallus", "Constantius Gallus"],
+      "role": "Caesar of the East",
+      "birth_year": 325,
+      "death_year": 354,
+      "reign_start": 351,
+      "reign_end": 354,
+      "summary": "Julian's older brother who was spared in the family massacre because of his young age. Transported from a kind of house-arrest to the throne, he proved unfit to reign, spending his time indulging a cruel streak until Constantius had him assassinated.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantius_Gallus",
+      "portrait_url": null,
+      "transcript_lines": [[34, 35], [51, 56], [199, 199]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "person", "id": "julius-constantius"},
+        {"type": "event", "id": "massacre-of-constantines-family"}
+      ]
+    },
+    {
+      "id": "magnentius",
+      "name": "Magnentius",
+      "alt_names": ["Magentius"],
+      "role": "Usurper Emperor",
+      "birth_year": 303,
+      "death_year": 353,
+      "reign_start": 350,
+      "reign_end": 353,
+      "summary": "A usurper who donned the purple while Constans was away hunting, triggering the flight and capture of Constans. He was defeated the following year by Constantius II.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magnentius",
+      "portrait_url": null,
+      "transcript_lines": [[48, 51]],
+      "related": [
+        {"type": "person", "id": "constans-i"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "event", "id": "magnentius-usurpation"}
+      ]
+    },
+    {
+      "id": "shapur-ii",
+      "name": "Shapur II",
+      "alt_names": ["The new Persian King Shapur", "Shapur, King of Kings"],
+      "role": "Sasanian Persian King",
+      "birth_year": 309,
+      "death_year": 379,
+      "reign_start": 309,
+      "reign_end": 379,
+      "summary": "The Persian king who sent Constantius a florid ultimatum demanding Mesopotamia and Armenia, then followed through with raids on Roman strongholds. When Julian invaded, Shapur avoided direct engagement, relying on harassment attacks, and his approaching main army helped force Julian's retreat from Ctesiphon.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shapur_II",
+      "portrait_url": null,
+      "transcript_lines": [[106, 114], [207, 219]],
+      "related": [
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "mesopotamia"},
+        {"type": "place", "id": "ctesiphon"},
+        {"type": "event", "id": "persian-ultimatum"},
+        {"type": "event", "id": "julians-persian-campaign"}
+      ]
+    },
+    {
+      "id": "libanus",
+      "name": "Libanius",
+      "alt_names": ["Libanus"],
+      "role": "Philosopher, rhetorician",
+      "birth_year": 314,
+      "death_year": 393,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A celebrated philosopher who had rejected Christianity and remained unabashedly pagan. Julian first heard him while wandering the Greek world, and his Christian teachers, worried by Julian's interest, forbade him from attending the lectures — so Julian had them copied down and read to him instead.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libanius",
+      "portrait_url": null,
+      "transcript_lines": [[72, 76]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-philosophical-education"}
+      ]
+    },
+    {
+      "id": "paul-the-chain",
+      "name": "Paul the Chain",
+      "alt_names": ["Paulus Catena"],
+      "role": "Imperial notary, notorious inquisitor",
+      "birth_year": null,
+      "death_year": 362,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Sinisterly nicknamed 'the Chain,' he was among the worst offenders in the notoriously corrupt system of taxation and administration that Julian targeted for military tribunals after taking power.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paulus_Catena",
+      "portrait_url": null,
+      "transcript_lines": [[154, 156]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-administrative-reforms"}
+      ]
+    },
+    {
+      "id": "jovian",
+      "name": "Jovian",
+      "alt_names": [],
+      "role": "Roman Emperor",
+      "birth_year": 331,
+      "death_year": 364,
+      "reign_start": 363,
+      "reign_end": 364,
+      "summary": "The deeply uninspiring Christian soldier elected by the army to replace Julian after his death. His election signaled a final rejection of Julian's pagan policies.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jovian_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[239, 240]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "death-of-julian"}
+      ]
+    },
+    {
+      "id": "eusebius-of-nicomedia",
+      "name": "Eusebius",
+      "alt_names": ["the bishop Eusebius"],
+      "role": "Bishop of Nicomedia",
+      "birth_year": null,
+      "death_year": 341,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The Christian bishop under whom Julian received his early Christian education at Nicomedia after being sent away following the family massacre.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eusebius_of_Nicomedia",
+      "portrait_url": null,
+      "transcript_lines": [[64, 65]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "nicomedia"},
+        {"type": "event", "id": "julians-christian-education"}
+      ]
+    },
+    {
+      "id": "pompey",
+      "name": "Pompey",
+      "alt_names": ["Pompey the Great", "Gnaeus Pompeius Magnus"],
+      "role": "Roman general and statesman",
+      "birth_year": -106,
+      "death_year": -48,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Mentioned as one of the historical figures whose footsteps Julian was following when he departed Antioch for his Persian campaign in March 363.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pompey",
+      "portrait_url": null,
+      "transcript_lines": [[204, 206]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "antioch"}
+      ]
+    },
+    {
+      "id": "hadrian",
+      "name": "Hadrian",
+      "alt_names": [],
+      "role": "Roman Emperor",
+      "birth_year": 76,
+      "death_year": 138,
+      "reign_start": 117,
+      "reign_end": 138,
+      "summary": "Mentioned alongside Pompey as a historical predecessor in whose footsteps Julian was following when he left Antioch for the Persian campaign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hadrian",
+      "portrait_url": null,
+      "transcript_lines": [[204, 206]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "antioch"}
+      ]
+    },
+    {
+      "id": "alexander-the-great",
+      "name": "Alexander the Great",
+      "alt_names": ["Alexander"],
+      "role": "Macedonian king and conqueror",
+      "birth_year": -356,
+      "death_year": -323,
+      "reign_start": -336,
+      "reign_end": -323,
+      "summary": "Julian apparently believed himself to be the reincarnation of Alexander the Great, a belief Brownworth cites as one motivation for his ambitious Persian campaign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[204, 206]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-persian-campaign"}
+      ]
+    },
+    {
+      "id": "attila-the-hun",
+      "name": "Attila the Hun",
+      "alt_names": ["Attila"],
+      "role": "King of the Huns",
+      "birth_year": 406,
+      "death_year": 453,
+      "reign_start": 434,
+      "reign_end": 453,
+      "summary": "Mentioned in Brownworth's epilogue as the looming threat that made the Eastern Empire's survival seem in doubt after Julian's death and the subsequent weakening of the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Attila",
+      "portrait_url": null,
+      "transcript_lines": [[256, 257]],
+      "related": [
+        {"type": "event", "id": "barbarian-invasions-post-julian"}
+      ]
+    },
+    {
+      "id": "zeno",
+      "name": "Zeno",
+      "alt_names": [],
+      "role": "Eastern Roman Emperor",
+      "birth_year": 425,
+      "death_year": 491,
+      "reign_start": 474,
+      "reign_end": 491,
+      "summary": "Briefly introduced as the subject of the next episode — the man who broke free from his barbarian generals, whose unlikely combination of cleverness and force of will saved an empire that should have fallen.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zeno_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[259, 261]],
+      "related": []
+    },
+    {
+      "id": "constantia",
+      "name": "Constantia",
+      "alt_names": [],
+      "role": "Daughter of Constantine the Great",
+      "birth_year": 307,
+      "death_year": 354,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Mentioned as an example of Constantine's lack of imagination in naming his children — his daughter was named Constantia while his sons were all named variations of Constantine.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantina",
+      "portrait_url": null,
+      "transcript_lines": [[39, 40]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "nicomedia",
+      "name": "Nicomedia",
+      "modern_name": "İzmit",
+      "modern_country": "Turkey",
+      "lat": 40.7656,
+      "lng": 29.9408,
+      "first_year": -712,
+      "summary": "The city to which Julian was packed off after his family was massacred, to receive a Christian education under the bishop Eusebius.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nicomedia",
+      "image_url": null,
+      "transcript_lines": [[63, 65]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "eusebius-of-nicomedia"},
+        {"type": "event", "id": "julians-christian-education"}
+      ]
+    },
+    {
+      "id": "cappadocia",
+      "name": "Cappadocia",
+      "modern_name": "Cappadocia region",
+      "modern_country": "Turkey",
+      "lat": 38.6431,
+      "lng": 34.8289,
+      "first_year": null,
+      "summary": "The region of western Turkey (described as 'western Turkey near modern-day Cappadocia') where Julian spent six years in scholarly seclusion with only books as company, which he called the happiest years of his life.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cappadocia",
+      "image_url": null,
+      "transcript_lines": [[65, 68]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-philosophical-education"}
+      ]
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "modern_name": "Athens",
+      "modern_country": "Greece",
+      "lat": 37.9755,
+      "lng": 23.7348,
+      "first_year": null,
+      "summary": "Where Julian traveled to continue his philosophical studies, wandering the Greek world sitting at the feet of great thinkers. It was here, at age 23, that Constantius summoned him to Milan to become co-ruler.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens",
+      "image_url": null,
+      "transcript_lines": [[76, 85]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-philosophical-education"},
+        {"type": "event", "id": "julian-appointed-caesar"}
+      ]
+    },
+    {
+      "id": "ephesus",
+      "name": "Ephesus",
+      "modern_name": "Efes (near Selçuk)",
+      "modern_country": "Turkey",
+      "lat": 37.9396,
+      "lng": 27.3414,
+      "first_year": null,
+      "summary": "Home of the great library where Julian stopped on his way to Athens. It was at this point that he seems to have made the decision to abandon Christianity and adopt paganism.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ephesus",
+      "image_url": null,
+      "transcript_lines": [[76, 78]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-conversion-to-paganism"}
+      ]
+    },
+    {
+      "id": "milan",
+      "name": "Milan",
+      "modern_name": "Milan",
+      "modern_country": "Italy",
+      "lat": 45.4642,
+      "lng": 9.1900,
+      "first_year": null,
+      "summary": "Where Constantius summoned Julian from Athens and appointed him co-ruler of the Roman Empire, sending him west to address the crisis in Gaul.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milan",
+      "image_url": null,
+      "transcript_lines": [[84, 85]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "event", "id": "julian-appointed-caesar"}
+      ]
+    },
+    {
+      "id": "gaul",
+      "name": "Gaul",
+      "modern_name": "France / Low Countries / western Germany",
+      "modern_country": "France",
+      "lat": 46.2276,
+      "lng": 2.2137,
+      "first_year": null,
+      "summary": "The region facing serious problems that Julian was hastily sent to manage as Caesar. Despite having no military experience, he ran a whirlwind campaign, recaptured cities, and pacified the entire frontier within four years.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaul",
+      "image_url": null,
+      "transcript_lines": [[57, 58], [92, 100]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-gallic-campaign"}
+      ]
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "modern_name": "Paris",
+      "modern_country": "France",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "first_year": null,
+      "summary": "Where Julian stopped to rest while reluctantly making his way east with troops for Constantius, and where the Petulantes Legion mutinied and declared him emperor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris",
+      "image_url": null,
+      "transcript_lines": [[122, 124]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "petulantes-mutiny"}
+      ]
+    },
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "Julian rushed here after Constantius's death, ordered the city into deep mourning, and personally supervised the funeral of his father's murderer before accepting the mantle of emperor. He later spent months here enacting reforms before departing for Antioch.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[139, 144], [185, 186]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "church-of-the-holy-apostles"},
+        {"type": "event", "id": "julian-becomes-emperor"},
+        {"type": "event", "id": "julians-administrative-reforms"}
+      ]
+    },
+    {
+      "id": "church-of-the-holy-apostles",
+      "name": "Church of the Holy Apostles",
+      "modern_name": "Site of Fatih Mosque",
+      "modern_country": "Turkey",
+      "lat": 41.0195,
+      "lng": 28.9497,
+      "first_year": 330,
+      "summary": "The church in Constantinople where Constantius II was laid to rest. Julian followed the coffin through the streets, weeping, before accepting the imperial title.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles",
+      "image_url": null,
+      "transcript_lines": [[141, 144]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "death-of-constantius-ii"}
+      ]
+    },
+    {
+      "id": "antioch",
+      "name": "Antioch",
+      "modern_name": "Antakya",
+      "modern_country": "Turkey",
+      "lat": 36.2021,
+      "lng": 36.1603,
+      "first_year": -300,
+      "summary": "Where Julian went to prepare his Persian invasion. Relations with the largely Christian population were hostile from the start; Julian antagonized them with increasingly harsh anti-Christian measures, and was probably mutually relieved to leave in March 363 for the Persian campaign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antioch_on_the_Orontes",
+      "image_url": null,
+      "transcript_lines": [[185, 206]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-antioch-conflict"},
+        {"type": "event", "id": "julians-persian-campaign"},
+        {"type": "place", "id": "temple-of-apollo-antioch"}
+      ]
+    },
+    {
+      "id": "temple-of-apollo-antioch",
+      "name": "Temple of Apollo (Antioch)",
+      "modern_name": "Daphne, near Antakya",
+      "modern_country": "Turkey",
+      "lat": 36.1713,
+      "lng": 36.1341,
+      "first_year": null,
+      "summary": "Gallus had buried a Christian martyr in the precinct of this temple. When Julian had the body exhumed, massive riots broke out. The entire complex later burned, and Julian blamed the Christians and closed the city's cathedral.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Temple_of_Apollo,_Daphne",
+      "image_url": null,
+      "transcript_lines": [[199, 202]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "gallus-caesar"},
+        {"type": "place", "id": "antioch"},
+        {"type": "event", "id": "julians-antioch-conflict"}
+      ]
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "modern_name": "Jerusalem",
+      "modern_country": "Israel",
+      "lat": 31.7683,
+      "lng": 35.2137,
+      "first_year": null,
+      "summary": "Site of the Jewish temple that Julian tried to rebuild in order to refute Christ's prophecy that it would not be rebuilt until the end times. An earthquake destroyed the attempt.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerusalem",
+      "image_url": null,
+      "transcript_lines": [[195, 198]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julian-temple-rebuilding-attempt"}
+      ]
+    },
+    {
+      "id": "mesopotamia",
+      "name": "Mesopotamia",
+      "modern_name": "Iraq / eastern Syria",
+      "modern_country": "Iraq",
+      "lat": 33.2232,
+      "lng": 43.6793,
+      "first_year": null,
+      "summary": "The territory demanded by Shapur II in his ultimatum to Constantius, along with Armenia. Constantius was interrupted from his campaign here when he marched to confront Julian.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesopotamia",
+      "image_url": null,
+      "transcript_lines": [[109, 110], [130, 131]],
+      "related": [
+        {"type": "person", "id": "shapur-ii"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "event", "id": "persian-ultimatum"}
+      ]
+    },
+    {
+      "id": "armenia",
+      "name": "Armenia",
+      "modern_name": "Armenia",
+      "modern_country": "Armenia",
+      "lat": 40.0691,
+      "lng": 45.0382,
+      "first_year": null,
+      "summary": "One of the two territories demanded by Shapur II in his ultimatum to Constantius, along with Mesopotamia.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armenia",
+      "image_url": null,
+      "transcript_lines": [[109, 110]],
+      "related": [
+        {"type": "person", "id": "shapur-ii"},
+        {"type": "event", "id": "persian-ultimatum"}
+      ]
+    },
+    {
+      "id": "cilicia",
+      "name": "Cilicia",
+      "modern_name": "Çukurova region",
+      "modern_country": "Turkey",
+      "lat": 36.8969,
+      "lng": 35.2707,
+      "first_year": null,
+      "summary": "Where Constantius II reached in a confident mood while marching against Julian, but fell mortally ill after seeing a headless corpse which he took as a bad omen.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cilicia",
+      "image_url": null,
+      "transcript_lines": [[134, 136]],
+      "related": [
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "event", "id": "death-of-constantius-ii"}
+      ]
+    },
+    {
+      "id": "ctesiphon",
+      "name": "Ctesiphon",
+      "modern_name": "Al-Madain (near Baghdad)",
+      "modern_country": "Iraq",
+      "lat": 33.0955,
+      "lng": 44.5815,
+      "first_year": null,
+      "summary": "The Persian capital that Julian planned to threaten and impose harsh terms upon. When he arrived, half his army had failed to materialize, and a huge Persian army blocked access to the city. Though Julian won a battle outside its walls, the city proved virtually impregnable, forcing his retreat.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ctesiphon",
+      "image_url": null,
+      "transcript_lines": [[209, 222]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "shapur-ii"},
+        {"type": "event", "id": "julians-persian-campaign"},
+        {"type": "event", "id": "battle-of-ctesiphon"}
+      ]
+    },
+    {
+      "id": "tigris-river",
+      "name": "Tigris River",
+      "modern_name": "Tigris River",
+      "modern_country": "Iraq",
+      "lat": 33.3406,
+      "lng": 44.4009,
+      "first_year": null,
+      "summary": "Julian recrossed the Tigris after abandoning the siege of Ctesiphon, beginning his ill-fated retreat northward through Persian territory while constantly harassed by the enemy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tigris",
+      "image_url": null,
+      "transcript_lines": [[222, 223]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-persian-campaign"}
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "modern_name": "Rome",
+      "modern_country": "Italy",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "first_year": null,
+      "summary": "Mentioned in the epilogue as a symbol of the empire's decline after Julian — the city of Rome itself was sacked in less than a century after his death.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
+      "image_url": null,
+      "transcript_lines": [[252, 254]],
+      "related": [
+        {"type": "event", "id": "barbarian-invasions-post-julian"}
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "modern_name": "Italy",
+      "modern_country": "Italy",
+      "lat": 41.8719,
+      "lng": 12.5674,
+      "first_year": null,
+      "summary": "Where Constantine II invaded to confront his youngest brother Constans, only to be ambushed and killed. Also mentioned in the epilogue as the territory that the Western emperor barely controlled in the century after Julian.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Italy",
+      "image_url": null,
+      "transcript_lines": [[43, 44], [253, 255]],
+      "related": [
+        {"type": "person", "id": "constantine-ii"},
+        {"type": "person", "id": "constans-i"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "massacre-of-constantines-family",
+      "name": "Massacre of Constantine's Family",
+      "year": 337,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "After Constantine's death, Constantius II spread a rumor accusing his half-uncles of poisoning Constantine. The army responded by lynching every male relative of the former emperor; Julian's father Julius Constantius was butchered with his eldest son. Julian and his brother Gallus were spared only because of their young age.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Massacre_of_the_Constantinian_dynasty",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[25, 34]],
+      "related": [
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "person", "id": "julius-constantius"},
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "gallus-caesar"},
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "magnentius-usurpation",
+      "name": "Usurpation of Magnentius",
+      "year": 350,
+      "end_year": 353,
+      "category": "political",
+      "summary": "While Constans was away hunting, the usurper Magnentius donned the purple. Constans fled, was captured, and killed. Constantius defeated Magnentius the following year.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magnentius",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[47, 51]],
+      "related": [
+        {"type": "person", "id": "magnentius"},
+        {"type": "person", "id": "constans-i"},
+        {"type": "person", "id": "constantius-ii"}
+      ]
+    },
+    {
+      "id": "julians-christian-education",
+      "name": "Julian's Christian Education at Nicomedia",
+      "year": 337,
+      "end_year": 343,
+      "category": "cultural",
+      "summary": "After the family massacre, Julian was packed off to Nicomedia to receive a Christian education under Bishop Eusebius, then sent to western Turkey near Cappadocia where he spent six years with only books as company.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "nicomedia",
+      "transcript_lines": [[63, 68]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "eusebius-of-nicomedia"},
+        {"type": "place", "id": "nicomedia"},
+        {"type": "place", "id": "cappadocia"}
+      ]
+    },
+    {
+      "id": "julians-philosophical-education",
+      "name": "Julian's Philosophical Wanderings in the Greek World",
+      "year": 351,
+      "end_year": 355,
+      "category": "cultural",
+      "summary": "Julian spent years wandering the Greek world, sitting at the feet of great thinkers, reading, arguing, and disputing. He first encountered the pagan philosopher Libanius here, and his Christian teachers tried — unsuccessfully — to prevent him attending.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "athens",
+      "transcript_lines": [[68, 77]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "libanus"},
+        {"type": "place", "id": "athens"},
+        {"type": "place", "id": "ephesus"}
+      ]
+    },
+    {
+      "id": "julians-conversion-to-paganism",
+      "name": "Julian's Secret Conversion to Paganism",
+      "year": 351,
+      "end_year": null,
+      "category": "religious",
+      "summary": "At the great library at Ephesus, on his way to Athens, Julian appears to have made the decision to abandon Christianity and adopt paganism. Because he could not safely announce this, he maintained an outward show of Christian piety for another ten years.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "ephesus",
+      "transcript_lines": [[76, 80]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "ephesus"}
+      ]
+    },
+    {
+      "id": "julian-appointed-caesar",
+      "name": "Julian Appointed Caesar",
+      "year": 355,
+      "end_year": null,
+      "category": "political",
+      "summary": "Constantius summoned the 23-year-old Julian from Athens to Milan and appointed him co-ruler of the Roman Empire, sending him to manage the crisis in Gaul. Julian was shy, unwilling, and had no military or administrative experience, but was intelligent and loyal.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "milan",
+      "transcript_lines": [[58, 63], [81, 85]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "place", "id": "milan"},
+        {"type": "place", "id": "athens"}
+      ]
+    },
+    {
+      "id": "julians-gallic-campaign",
+      "name": "Julian's Gallic Campaign",
+      "year": 355,
+      "end_year": 359,
+      "category": "battle",
+      "summary": "Hastily sent to Gaul, Julian surprised everyone by personally leading a successful campaign, recapturing important cities and smashing an army of 30,000 with only 11,000 soldiers at a cost of just 247 casualties. Within four years the entire frontier was settled.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_(emperor)#Caesar_in_Gaul",
+      "image_url": null,
+      "location_id": "gaul",
+      "transcript_lines": [[92, 100]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "gaul"}
+      ]
+    },
+    {
+      "id": "persian-ultimatum",
+      "name": "Shapur II's Ultimatum to Constantius",
+      "year": 358,
+      "end_year": null,
+      "category": "political",
+      "summary": "The Persian King Shapur II sent Constantius a florid ultimatum demanding Mesopotamia and Armenia, warning that he would take the field with all his armies after winter if his ambassador returned empty-handed. He followed up by overrunning several Roman strongholds.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "mesopotamia",
+      "transcript_lines": [[106, 114]],
+      "related": [
+        {"type": "person", "id": "shapur-ii"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "place", "id": "mesopotamia"},
+        {"type": "place", "id": "armenia"}
+      ]
+    },
+    {
+      "id": "petulantes-mutiny",
+      "name": "Mutiny of the Petulantes",
+      "year": 360,
+      "end_year": null,
+      "category": "political",
+      "summary": "While Julian was stopping in Paris en route to send troops east to Constantius, the Petulantes Legion mutinied and declared Julian emperor. Julian claimed his men had forced the title upon him, but it signaled he would no longer take orders from Constantius.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petulantes",
+      "image_url": null,
+      "location_id": "paris",
+      "transcript_lines": [[122, 129]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "place", "id": "paris"}
+      ]
+    },
+    {
+      "id": "death-of-constantius-ii",
+      "name": "Death of Constantius II",
+      "year": 361,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "While marching against Julian, Constantius II reached Cilicia in a confident mood but fell mortally ill after seeing a headless corpse he took as a bad omen. On his deathbed he was baptized and, not knowing of Julian's apostasy, magnanimously named Julian his successor. He was only 44 years old.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantius_II",
+      "image_url": null,
+      "location_id": "cilicia",
+      "transcript_lines": [[134, 138]],
+      "related": [
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "cilicia"}
+      ]
+    },
+    {
+      "id": "julian-becomes-emperor",
+      "name": "Julian Becomes Emperor",
+      "year": 361,
+      "end_year": null,
+      "category": "political",
+      "summary": "After Constantius II died, Julian rushed to Constantinople, ordered the city into deep mourning, and personally supervised the funeral of his father's murderer. Only after the burial did he accept the mantle of emperor, and he never entered a Christian church again.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[139, 144]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "constantius-ii"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "church-of-the-holy-apostles"}
+      ]
+    },
+    {
+      "id": "julians-administrative-reforms",
+      "name": "Julian's Administrative Reforms",
+      "year": 361,
+      "end_year": 363,
+      "category": "political",
+      "summary": "Julian immediately set about decentralizing power and restoring old republican virtues: he fired thousands of palace staff, tried to increase the power of the Senate, streamlined the corrupt taxation system, and held military tribunals for the worst offenders including Paul the Chain.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[145, 156]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "paul-the-chain"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "julians-pagan-reforms",
+      "name": "Julian's Pagan Religious Reforms",
+      "year": 361,
+      "end_year": 363,
+      "category": "religious",
+      "summary": "Julian's main goal was to restore paganism and eliminate Christianity without outright persecution. He opened pagan temples, declared amnesty for exiled orthodox Christians (hoping they would fight each other), and crisscrossed the empire making so many pagan sacrifices that his subjects nicknamed him 'The Butcher.'",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[156, 181]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "event", "id": "julians-antioch-conflict"}
+      ]
+    },
+    {
+      "id": "julians-antioch-conflict",
+      "name": "Julian's Conflict with Antioch",
+      "year": 362,
+      "end_year": 363,
+      "category": "religious",
+      "summary": "In Antioch, relations between Julian and the largely Christian population quickly soured. Julian escalated anti-Christian measures — executing those who damaged temples, pardoning pagans who murdered Christians, banning Christians from teaching Greek classics, attempting to rebuild the Jewish temple at Jerusalem, and confiscating the cathedral's gold after the Temple of Apollo burned.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "antioch",
+      "transcript_lines": [[186, 206]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "antioch"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "temple-of-apollo-antioch"},
+        {"type": "event", "id": "julian-temple-rebuilding-attempt"}
+      ]
+    },
+    {
+      "id": "julian-temple-rebuilding-attempt",
+      "name": "Julian's Attempt to Rebuild the Jewish Temple",
+      "year": 363,
+      "end_year": null,
+      "category": "religious",
+      "summary": "To refute Christ's prophecy that the Jewish temple at Jerusalem would not be rebuilt until the end times, Julian started a rebuilding program. An earthquake destroyed the attempt.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_and_Jerusalem",
+      "image_url": null,
+      "location_id": "jerusalem",
+      "transcript_lines": [[195, 198]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "event", "id": "julians-antioch-conflict"}
+      ]
+    },
+    {
+      "id": "julians-persian-campaign",
+      "name": "Julian's Persian Campaign",
+      "year": 363,
+      "end_year": 363,
+      "category": "battle",
+      "summary": "Julian left Antioch in March 363 with a large army, intending to threaten Ctesiphon and impose harsh peace terms. Shapur avoided direct engagement, relying on harassment. Julian won a victory outside Ctesiphon but found the city impregnable, half his army had not materialized, and Shapur's main force was approaching — forcing a disastrous retreat.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julian%27s_Persian_expedition",
+      "image_url": null,
+      "location_id": "ctesiphon",
+      "transcript_lines": [[206, 237]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "shapur-ii"},
+        {"type": "person", "id": "alexander-the-great"},
+        {"type": "place", "id": "ctesiphon"},
+        {"type": "place", "id": "tigris-river"},
+        {"type": "event", "id": "battle-of-ctesiphon"},
+        {"type": "event", "id": "death-of-julian"}
+      ]
+    },
+    {
+      "id": "battle-of-ctesiphon",
+      "name": "Battle of Ctesiphon",
+      "year": 363,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Despite facing a huge Persian army complete with dreaded war elephants, Julian ordered a charge and gained an overwhelming victory. An eyewitness reported 2,500 Persians killed at a cost of only 70 Romans. However, the city remained impregnable, and Shapur's main army was approaching.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Ctesiphon_(363)",
+      "image_url": null,
+      "location_id": "ctesiphon",
+      "transcript_lines": [[211, 219]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "shapur-ii"},
+        {"type": "place", "id": "ctesiphon"},
+        {"type": "event", "id": "julians-persian-campaign"}
+      ]
+    },
+    {
+      "id": "death-of-julian",
+      "name": "Death of Julian",
+      "year": 363,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "During the retreat from Ctesiphon, Julian's army came under heavy attack while crossing a stream. Without stopping to strap on his armor, Julian leapt into battle and was struck in the side with a spear. The point was removed from deep inside his liver, and he died at midnight — according to legend with the words, 'Thou hast conquered, Galilean.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_(emperor)#Death",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[228, 237]],
+      "related": [
+        {"type": "person", "id": "julian-the-apostate"},
+        {"type": "person", "id": "jovian"},
+        {"type": "event", "id": "julians-persian-campaign"}
+      ]
+    },
+    {
+      "id": "barbarian-invasions-post-julian",
+      "name": "Barbarian Invasions and Sack of Rome",
+      "year": 376,
+      "end_year": 476,
+      "category": "battle",
+      "summary": "After Julian's death the weaknesses he had identified in the army only worsened. Barbarians poured over the borders with increasing frequency, the city of Rome was sacked, and within less than a century the Western emperor barely controlled Italy while the Eastern emperor was a figurehead.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[251, 256]],
+      "related": [
+        {"type": "person", "id": "attila-the-hun"},
+        {"type": "place", "id": "rome"}
+      ]
+    }
+  ]
+}

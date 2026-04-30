@@ -1,0 +1,988 @@
+{
+  "episode": 11,
+  "title": "Irene",
+  "people": [
+    {
+      "id": "irene-of-athens",
+      "name": "Irene of Athens",
+      "alt_names": ["Irene the Athenian", "Eirene"],
+      "role": "Byzantine Empress / Emperor",
+      "birth_year": 750,
+      "death_year": 803,
+      "reign_start": 780,
+      "reign_end": 802,
+      "summary": "A stunningly beautiful orphan from Athens chosen as wife for Leo IV, Irene proved to be one of the most grasping and ambitious women ever to be made empress. A fierce iconodule, she served as regent for her son Constantine VI and ultimately had him blinded so brutally that he died, becoming the first woman to rule the Byzantine Empire not as regent or empress but as emperor in her own right. Her reign was economically and militarily disastrous, and she was eventually deposed and exiled to Lesbos, where she died less than a year later; she is nonetheless venerated as a saint by the Orthodox Church with a feast day of August 9th.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Irene_of_Athens",
+      "portrait_url": null,
+      "transcript_lines": [[147, 337]],
+      "related": [
+        {"type": "person", "id": "constantine-vi"},
+        {"type": "person", "id": "leo-iv"},
+        {"type": "person", "id": "constantine-v"},
+        {"type": "person", "id": "charlemagne"},
+        {"type": "person", "id": "theodora-regent"},
+        {"type": "place", "id": "athens"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "lesbos"},
+        {"type": "event", "id": "second-council-of-nicaea"},
+        {"type": "event", "id": "blinding-of-constantine-vi"},
+        {"type": "event", "id": "deposition-of-irene"},
+        {"type": "event", "id": "coronation-of-charlemagne"}
+      ]
+    },
+    {
+      "id": "heraclius",
+      "name": "Heraclius",
+      "alt_names": [],
+      "role": "Byzantine Emperor",
+      "birth_year": 575,
+      "death_year": 641,
+      "reign_start": 610,
+      "reign_end": 641,
+      "summary": "Brownworth briefly notes that last episode covered Heraclius, whose reign saw both euphoric triumphs and devastating tragedy. His death threw the empire into confusion, and his unpopular widow Martina's attempt to seize control was rebuffed by the people.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraclius",
+      "portrait_url": null,
+      "transcript_lines": [[3, 5]],
+      "related": [
+        {"type": "person", "id": "martina"},
+        {"type": "place", "id": "rhodes"}
+      ]
+    },
+    {
+      "id": "martina",
+      "name": "Martina",
+      "alt_names": [],
+      "role": "Byzantine Empress",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": 641,
+      "reign_end": 641,
+      "summary": "The unpopular widow of Heraclius who tried to take control of the empire after his death. The people backed a rival claimant who had her tongue cut out and her nose slit before exiling her to the island of Rhodes.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Martina_(empress)",
+      "portrait_url": null,
+      "transcript_lines": [[5, 8]],
+      "related": [
+        {"type": "person", "id": "heraclius"},
+        {"type": "place", "id": "rhodes"}
+      ]
+    },
+    {
+      "id": "justinian-ii",
+      "name": "Justinian II",
+      "alt_names": ["Justinian II Rhinotmetos"],
+      "role": "Byzantine Emperor",
+      "birth_year": 669,
+      "death_year": 711,
+      "reign_start": 685,
+      "reign_end": 711,
+      "summary": "Mentioned as a notable example of the dynastic chaos that followed Heraclius — Justinian II was the only one of the ten emperors in that turbulent period to be overthrown twice.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_II",
+      "portrait_url": null,
+      "transcript_lines": [[10, 11]],
+      "related": []
+    },
+    {
+      "id": "caliph-omar",
+      "name": "Caliph Omar",
+      "alt_names": ["Umar ibn al-Khattab", "Omar I"],
+      "role": "Caliph of the Rashidun Caliphate",
+      "birth_year": 584,
+      "death_year": 644,
+      "reign_start": 634,
+      "reign_end": 644,
+      "summary": "The second Rashidun Caliph who retook Alexandria from the Byzantines and razed its walls. He is attributed with the famous (if likely apocryphal) quote about the Library of Alexandria — that books either agreeing or disagreeing with the Quran should be destroyed — and allegedly ordered the library's books burned in public furnaces, where they took six months to consume.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umar",
+      "portrait_url": null,
+      "transcript_lines": [[19, 37]],
+      "related": [
+        {"type": "place", "id": "alexandria"},
+        {"type": "place", "id": "fustat"},
+        {"type": "event", "id": "fall-of-alexandria"}
+      ]
+    },
+    {
+      "id": "constans-ii",
+      "name": "Constans II",
+      "alt_names": ["Constans II Pogonatus"],
+      "role": "Byzantine Emperor",
+      "birth_year": 630,
+      "death_year": 668,
+      "reign_start": 641,
+      "reign_end": 668,
+      "summary": "Feeling so threatened by pressure on the southeastern border that he took the unorthodox step of moving the imperial capital to Sicily in order to better protect Italy. He was later assassinated in his bath by a slave wielding a soap dish, after which the capital was returned to the Bosphorus.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constans_II",
+      "portrait_url": null,
+      "transcript_lines": [[58, 61]],
+      "related": [
+        {"type": "place", "id": "sicily"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "leo-iii-isaurian",
+      "name": "Leo III",
+      "alt_names": ["Leo III the Isaurian", "Leo the Syrian"],
+      "role": "Byzantine Emperor",
+      "birth_year": 685,
+      "death_year": 741,
+      "reign_start": 717,
+      "reign_end": 741,
+      "summary": "A Syrian shepherd who, according to legend, caught the emperor's eye by offering sheep to feed his army on campaign, and rose through the imperial ranks to be proclaimed emperor just months before the great Arab siege of Constantinople. He outsmarted the Arab besiegers at every turn and induced the Bulgarians to deliver the killing blow to the besieging forces. Having saved the empire, he then unleashed the iconoclast controversy, ordering the destruction of holy images and causing a religious firestorm that split east from west and would drain the empire for a hundred years.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_III_the_Isaurian",
+      "portrait_url": null,
+      "transcript_lines": [[75, 132]],
+      "related": [
+        {"type": "person", "id": "constantine-v"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "damascus"},
+        {"type": "event", "id": "arab-siege-of-constantinople-717"},
+        {"type": "event", "id": "iconoclasm-edict"},
+        {"type": "event", "id": "chalke-icon-destroyed"}
+      ]
+    },
+    {
+      "id": "constantine-v",
+      "name": "Constantine V",
+      "alt_names": ["Constantine V Copronymus", "Kopronymos"],
+      "role": "Byzantine Emperor",
+      "birth_year": 718,
+      "death_year": 775,
+      "reign_start": 741,
+      "reign_end": 775,
+      "summary": "Son of Leo III and even more extreme an iconoclast than his father — the words 'saint' or 'holy' sent him into fits of rage, and he spent much of his 34-year reign attacking monasteries with maniacal dedication, sometimes setting monks' beards on fire. By the end of his life the empire had officially been iconoclast for 50 years, and he had purged the army, government, and clergy of iconodules. He is mockingly remembered by his opponents with the nickname Copronymus, meaning 'name of dung.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_V",
+      "portrait_url": null,
+      "transcript_lines": [[136, 148]],
+      "related": [
+        {"type": "person", "id": "leo-iii-isaurian"},
+        {"type": "person", "id": "leo-iv"},
+        {"type": "person", "id": "irene-of-athens"}
+      ]
+    },
+    {
+      "id": "leo-iv",
+      "name": "Leo IV",
+      "alt_names": ["Leo IV the Khazar"],
+      "role": "Byzantine Emperor",
+      "birth_year": 750,
+      "death_year": 780,
+      "reign_start": 775,
+      "reign_end": 780,
+      "summary": "Eldest son of Constantine V who appeared to share his father's iconoclast mindset but was weakened, likely by the tuberculosis that killed him, and weakly acquiesced to his iconodule wife Irene — allowing exiled monks to return and appointing an iconodule patriarch. He died in the fifth year of his reign leaving his ten-year-old son Constantine as heir.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_IV_the_Khazar",
+      "portrait_url": null,
+      "transcript_lines": [[144, 158]],
+      "related": [
+        {"type": "person", "id": "constantine-v"},
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "person", "id": "constantine-vi"}
+      ]
+    },
+    {
+      "id": "constantine-vi",
+      "name": "Constantine VI",
+      "alt_names": [],
+      "role": "Byzantine Emperor",
+      "birth_year": 771,
+      "death_year": 797,
+      "reign_start": 780,
+      "reign_end": 797,
+      "summary": "Son of Leo IV and Irene, he was only ten years old when his father died, allowing Irene to seize the regency. He proved himself hopelessly incompetent as a ruler — his one military campaign ended in him fleeing in panic, and he alienated all potential allies by divorcing his wife to marry his mistress. His mother's agents undermined his military reputation further, and Irene ultimately had him ambushed, captured, and blinded so brutally that he died, in the very room in which he had been born.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_VI",
+      "portrait_url": null,
+      "transcript_lines": [[157, 235]],
+      "related": [
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "person", "id": "leo-iv"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "sicily"},
+        {"type": "event", "id": "blinding-of-constantine-vi"}
+      ]
+    },
+    {
+      "id": "charlemagne",
+      "name": "Charlemagne",
+      "alt_names": ["Charles the Great", "Carolus Magnus"],
+      "role": "King of the Franks / Holy Roman Emperor",
+      "birth_year": 742,
+      "death_year": 814,
+      "reign_start": 768,
+      "reign_end": 814,
+      "summary": "Son of Pepin, Charlemagne took the Frankish-papal alliance to its fullest extent. He traveled to Rome to testify on behalf of Pope Leo III, and in a stunning move the pope placed the imperial crown on his head on Christmas Day 800, declaring him Holy Roman Emperor. Charlemagne also recognized a unique opportunity in Irene's situation and proposed marriage to her, which would have reunited east and west under one ruler, but the citizens of Constantinople deposed Irene before it could happen.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne",
+      "portrait_url": null,
+      "transcript_lines": [[267, 316]],
+      "related": [
+        {"type": "person", "id": "pepin-iii"},
+        {"type": "person", "id": "pope-leo-iii"},
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "coronation-of-charlemagne"}
+      ]
+    },
+    {
+      "id": "pepin-iii",
+      "name": "Pepin the Short",
+      "alt_names": ["Pepin III", "Pippin the Short"],
+      "role": "King of the Franks",
+      "birth_year": 714,
+      "death_year": 768,
+      "reign_start": 751,
+      "reign_end": 768,
+      "summary": "The Frankish king who was given the title of patrician by the pope and anointed king of the Franks in exchange for military intervention against the Lombards. Pepin swept into Italy, brought the Lombards to their knees, and turned a large swath of territory over to the pope — thus creating the Papal States.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pepin_the_Short",
+      "portrait_url": null,
+      "transcript_lines": [[260, 267]],
+      "related": [
+        {"type": "person", "id": "charlemagne"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "italy"},
+        {"type": "event", "id": "creation-of-papal-states"}
+      ]
+    },
+    {
+      "id": "pope-leo-iii",
+      "name": "Pope Leo III",
+      "alt_names": [],
+      "role": "Pope",
+      "birth_year": 750,
+      "death_year": 816,
+      "reign_start": 795,
+      "reign_end": 816,
+      "summary": "Hated by a group of Roman noblemen who ambushed him and left him beaten unconscious in the street, then accused him of simony, perjury, drunkenness, and adultery. With no qualified authority to try him short of the empress in Constantinople — who had killed her own son and was legally disbarred by Salic law — he reached an impasse resolved by Charlemagne's testimony. He then crowned Charlemagne Holy Roman Emperor at Christmas Mass 800, a breathtaking act that effectively split the Roman Empire and allowed the papacy to claim superiority over the emperor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Leo_III",
+      "portrait_url": null,
+      "transcript_lines": [[268, 292]],
+      "related": [
+        {"type": "person", "id": "charlemagne"},
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "coronation-of-charlemagne"}
+      ]
+    },
+    {
+      "id": "napoleon",
+      "name": "Napoleon Bonaparte",
+      "alt_names": ["Napoleon I"],
+      "role": "French Emperor",
+      "birth_year": 1769,
+      "death_year": 1821,
+      "reign_start": 1804,
+      "reign_end": 1815,
+      "summary": "Mentioned as an example of the lesson learned from Charlemagne's coronation by the pope — that whoever controls the crown controls the emperor. Napoleon, a thousand years later, showed he had learned this lesson by crowning himself at his own coronation.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Napoleon",
+      "portrait_url": null,
+      "transcript_lines": [[292, 294]],
+      "related": [
+        {"type": "event", "id": "coronation-of-charlemagne"}
+      ]
+    },
+    {
+      "id": "caliph-othman",
+      "name": "Caliph Uthman",
+      "alt_names": ["Uthman ibn Affan", "Othman"],
+      "role": "Caliph of the Rashidun Caliphate",
+      "birth_year": 579,
+      "death_year": 656,
+      "reign_start": 644,
+      "reign_end": 656,
+      "summary": "The third Rashidun Caliph whose assassination gave the Byzantine Empire five years of breathing room from Arab pressure. His successor, however, made clear that nothing had changed and vowed to annihilate the Roman Empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Uthman",
+      "portrait_url": null,
+      "transcript_lines": [[54, 57]],
+      "related": []
+    },
+    {
+      "id": "michael-iii",
+      "name": "Michael III",
+      "alt_names": ["Michael III the Drunkard"],
+      "role": "Byzantine Emperor",
+      "birth_year": 840,
+      "death_year": 867,
+      "reign_start": 842,
+      "reign_end": 867,
+      "summary": "Briefly mentioned as the emperor during whose reign the iconoclast controversy finally ended in the 9th century, and as the next subject to be discussed in the podcast series. His mother Theodora served as regent and proclaimed the restoration of icons.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_III",
+      "portrait_url": null,
+      "transcript_lines": [[92, 94], [329, 332]],
+      "related": [
+        {"type": "person", "id": "theodora-regent"},
+        {"type": "event", "id": "restoration-of-icons-843"}
+      ]
+    },
+    {
+      "id": "theodora-regent",
+      "name": "Theodora",
+      "alt_names": ["Theodora the Blessed"],
+      "role": "Byzantine Empress / Regent",
+      "birth_year": 815,
+      "death_year": 867,
+      "reign_start": 842,
+      "reign_end": 856,
+      "summary": "Mother of Michael III who served as regent, just as Irene had done before her, and proclaimed the final restoration of icons — bringing the iconoclast controversy to its end. Her parallel to Irene is explicitly noted by Brownworth as an example of history being written by the winners.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theodora_(empress,_regent_of_Byzantine_Empire)",
+      "portrait_url": null,
+      "transcript_lines": [[329, 332]],
+      "related": [
+        {"type": "person", "id": "michael-iii"},
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "event", "id": "restoration-of-icons-843"}
+      ]
+    },
+    {
+      "id": "basil-i",
+      "name": "Basil I",
+      "alt_names": ["Basil I the Macedonian"],
+      "role": "Byzantine Emperor",
+      "birth_year": 811,
+      "death_year": 886,
+      "reign_start": 867,
+      "reign_end": 886,
+      "summary": "Teased at the end of the episode as the subject of the next podcast episode — Brownworth describes him as having a glittering career, overseeing a renaissance in art, restoring the glory of the empire, and founding the most splendid dynasty in Byzantine history.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_I",
+      "portrait_url": null,
+      "transcript_lines": [[337, 340]],
+      "related": []
+    },
+    {
+      "id": "lombard-king-751",
+      "name": "Aistulf",
+      "alt_names": ["Aistulf of the Lombards"],
+      "role": "King of the Lombards",
+      "birth_year": null,
+      "death_year": 756,
+      "reign_start": 749,
+      "reign_end": 756,
+      "summary": "The Lombard king who captured Ravenna in 751, the last imperial stronghold in Italy, forcing the pope to seek Frankish rather than Byzantine protection.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aistulf",
+      "portrait_url": null,
+      "transcript_lines": [[253, 257]],
+      "related": [
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "italy"},
+        {"type": "event", "id": "fall-of-ravenna-751"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "The Byzantine imperial capital on the Bosphorus, besieged by Arab forces twice — first in a five-year siege beginning in 672, repelled by Greek fire, and again in 717-718 by 80,000 men and 1,800 ships, repelled by Leo III. It was also the seat of the iconoclast controversy and the venue for Irene's deposition.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[64, 74], [100, 100], [294, 316]],
+      "related": [
+        {"type": "person", "id": "leo-iii-isaurian"},
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "person", "id": "constans-ii"},
+        {"type": "event", "id": "arab-siege-of-constantinople-672"},
+        {"type": "event", "id": "arab-siege-of-constantinople-717"},
+        {"type": "event", "id": "deposition-of-irene"}
+      ]
+    },
+    {
+      "id": "alexandria",
+      "name": "Alexandria",
+      "modern_name": "Alexandria",
+      "modern_country": "Egypt",
+      "lat": 31.2001,
+      "lng": 29.9187,
+      "first_year": -331,
+      "summary": "A resting place of Alexander the Great and home to the great Library — one of the wonders of the ancient world. It was sacked by the Arabs in 638 and retaken by Caliph Omar eight years later. The walls were razed, the capital moved to Fustat, and the famous library — already past its prime from repeated fires and vandalism — was allegedly destroyed by the order of the Caliph.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexandria",
+      "image_url": null,
+      "transcript_lines": [[17, 42]],
+      "related": [
+        {"type": "person", "id": "caliph-omar"},
+        {"type": "place", "id": "fustat"},
+        {"type": "event", "id": "fall-of-alexandria"}
+      ]
+    },
+    {
+      "id": "fustat",
+      "name": "Fustat",
+      "modern_name": "Cairo",
+      "modern_country": "Egypt",
+      "lat": 30.0074,
+      "lng": 31.2272,
+      "first_year": 641,
+      "summary": "A village that Caliph Omar designated as the new Egyptian capital after the conquest of Alexandria, later renamed Cairo. The walls of Alexandria were razed and the capital transferred here.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fustat",
+      "image_url": null,
+      "transcript_lines": [[22, 23]],
+      "related": [
+        {"type": "person", "id": "caliph-omar"},
+        {"type": "place", "id": "alexandria"},
+        {"type": "event", "id": "fall-of-alexandria"}
+      ]
+    },
+    {
+      "id": "rhodes",
+      "name": "Rhodes",
+      "modern_name": "Rhodes",
+      "modern_country": "Greece",
+      "lat": 36.4341,
+      "lng": 28.2176,
+      "first_year": null,
+      "summary": "The island famous as the proud possessor of the Colossus, one of the seven wonders of the ancient world, which had fallen during an earthquake 900 years before the Arab conquest. After taking the island, the Arab commander broke up the statue and sold it for scrap, requiring 900 camels to haul away the pieces. Rhodes was also the place of exile for Martina, widow of Heraclius.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhodes",
+      "image_url": null,
+      "transcript_lines": [[5, 8], [49, 53]],
+      "related": [
+        {"type": "person", "id": "martina"},
+        {"type": "event", "id": "fall-of-rhodes"}
+      ]
+    },
+    {
+      "id": "carthage",
+      "name": "Exarchate of Carthage",
+      "modern_name": "Tunis (area)",
+      "modern_country": "Tunisia",
+      "lat": 36.8528,
+      "lng": 10.3233,
+      "first_year": null,
+      "summary": "The exarchate suffered a crushing defeat at the hands of the Saracens early in the Arab conquests, leaving Africa practically defenseless. It was later annihilated completely as the Muslim advance redirected southwest after the failed siege of Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Exarchate_of_Africa",
+      "image_url": null,
+      "transcript_lines": [[43, 44], [71, 72]],
+      "related": []
+    },
+    {
+      "id": "armenia",
+      "name": "Armenia",
+      "modern_name": "Armenia",
+      "modern_country": "Armenia",
+      "lat": 40.0691,
+      "lng": 45.0382,
+      "first_year": null,
+      "summary": "One of the regions targeted by the Saracens after their initial victories, along with Cappadocia, as they continued to push into Byzantine territory.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armenia",
+      "image_url": null,
+      "transcript_lines": [[45, 46]],
+      "related": [
+        {"type": "place", "id": "cappadocia"},
+        {"type": "place", "id": "caesarea-cappadocia"}
+      ]
+    },
+    {
+      "id": "cappadocia",
+      "name": "Cappadocia",
+      "modern_name": "Cappadocia region",
+      "modern_country": "Turkey",
+      "lat": 38.6431,
+      "lng": 34.8289,
+      "first_year": null,
+      "summary": "A region the Saracens pushed into after their earlier Arab conquests, capturing the major city of Caesarea and pushing back a disorganized Byzantine army.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cappadocia",
+      "image_url": null,
+      "transcript_lines": [[45, 47]],
+      "related": [
+        {"type": "place", "id": "armenia"},
+        {"type": "place", "id": "caesarea-cappadocia"}
+      ]
+    },
+    {
+      "id": "caesarea-cappadocia",
+      "name": "Caesarea",
+      "modern_name": "Kayseri",
+      "modern_country": "Turkey",
+      "lat": 38.7312,
+      "lng": 35.4787,
+      "first_year": null,
+      "summary": "A major city in Cappadocia captured by the Saracens as they pushed into Byzantine territory after their initial conquests.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kayseri",
+      "image_url": null,
+      "transcript_lines": [[45, 47]],
+      "related": [
+        {"type": "place", "id": "cappadocia"}
+      ]
+    },
+    {
+      "id": "cyprus",
+      "name": "Cyprus",
+      "modern_name": "Cyprus",
+      "modern_country": "Cyprus",
+      "lat": 35.1264,
+      "lng": 33.4299,
+      "first_year": null,
+      "summary": "An important Byzantine naval base that fell to the Saracens along with several other islands as the Muslim navy swept unopposed through the eastern Mediterranean.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cyprus",
+      "image_url": null,
+      "transcript_lines": [[47, 48]],
+      "related": []
+    },
+    {
+      "id": "damascus",
+      "name": "Damascus",
+      "modern_name": "Damascus",
+      "modern_country": "Syria",
+      "lat": 33.5138,
+      "lng": 36.2765,
+      "first_year": null,
+      "summary": "The home port of the Arab fleet — mentioned as the destination to which fewer than half of the Arab invaders managed to drag themselves back after the failed siege of Constantinople in 717-718.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Damascus",
+      "image_url": null,
+      "transcript_lines": [[86, 88]],
+      "related": [
+        {"type": "event", "id": "arab-siege-of-constantinople-717"}
+      ]
+    },
+    {
+      "id": "sicily",
+      "name": "Sicily",
+      "modern_name": "Sicily",
+      "modern_country": "Italy",
+      "lat": 37.5999,
+      "lng": 14.0154,
+      "first_year": null,
+      "summary": "Constans II moved the imperial capital here to better protect Italy, an unorthodox decision that was reversed after his assassination. Sicily also features as the proposed place of exile for Irene in the conspiracy hatched by senior army officers, and later as the site of a governor who declared independence and placed himself under Saracen protection after Irene's purge of the army.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sicily",
+      "image_url": null,
+      "transcript_lines": [[59, 61], [169, 170], [185, 186]],
+      "related": [
+        {"type": "person", "id": "constans-ii"},
+        {"type": "person", "id": "irene-of-athens"}
+      ]
+    },
+    {
+      "id": "anatolia",
+      "name": "Anatolia",
+      "modern_name": "Anatolia",
+      "modern_country": "Turkey",
+      "lat": 39.0,
+      "lng": 35.0,
+      "first_year": null,
+      "summary": "Repeatedly raided by Arab forces as they continued to chip away at Byzantine territory after the failed siege of Constantinople. Irene's army sent to face an Arab invasion of Anatolia simply defected to the Muslims.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anatolia",
+      "image_url": null,
+      "transcript_lines": [[72, 73], [172, 174]],
+      "related": []
+    },
+    {
+      "id": "chalke-gate",
+      "name": "Chalke Gate",
+      "modern_name": "Chalke Gate (ruins)",
+      "modern_country": "Turkey",
+      "lat": 41.0056,
+      "lng": 28.9769,
+      "first_year": null,
+      "summary": "The main gate to the imperial palace, built by Justinian after the Nika Riots, featuring an impressive central marble dome with mosaics celebrating Justinian's victories, portraits of the emperor and empress, and a magnificent golden icon of Christ above the doors — perhaps the most prominent icon in Constantinople. Leo III ordered this icon destroyed in 726, triggering riots across the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chalke_gate",
+      "image_url": null,
+      "transcript_lines": [[119, 129]],
+      "related": [
+        {"type": "person", "id": "leo-iii-isaurian"},
+        {"type": "event", "id": "chalke-icon-destroyed"}
+      ]
+    },
+    {
+      "id": "venice",
+      "name": "Venice",
+      "modern_name": "Venice",
+      "modern_country": "Italy",
+      "lat": 45.4408,
+      "lng": 12.3155,
+      "first_year": null,
+      "summary": "The horrified citizens of the Venetian lagoon rebelled against Leo III's iconoclast edict and appointed a local leader as Doge, giving birth to the Venetian Republic — described by Brownworth as both an ally and inveterate enemy of the Byzantine Empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Venice",
+      "image_url": null,
+      "transcript_lines": [[133, 135]],
+      "related": [
+        {"type": "person", "id": "leo-iii-isaurian"},
+        {"type": "event", "id": "birth-of-venetian-republic"}
+      ]
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "modern_name": "Athens",
+      "modern_country": "Greece",
+      "lat": 37.9838,
+      "lng": 23.7275,
+      "first_year": null,
+      "summary": "The home city of the orphan who would become Empress Irene. Growing up in the western provinces, Irene was strongly iconodule, in contrast to the iconoclast court she married into.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athens",
+      "image_url": null,
+      "transcript_lines": [[147, 149]],
+      "related": [
+        {"type": "person", "id": "irene-of-athens"}
+      ]
+    },
+    {
+      "id": "hippodrome",
+      "name": "Hippodrome of Constantinople",
+      "modern_name": "Sultanahmet Square",
+      "modern_country": "Turkey",
+      "lat": 41.0054,
+      "lng": 28.9745,
+      "first_year": 203,
+      "summary": "The great racetrack and public gathering place in Constantinople where Irene was declared deposed after her capture. Constantine VI had attended the races there before being ambushed by his mother's soldiers.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hippodrome_of_Constantinople",
+      "image_url": null,
+      "transcript_lines": [[228, 229], [314, 316]],
+      "related": [
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "person", "id": "constantine-vi"},
+        {"type": "event", "id": "deposition-of-irene"},
+        {"type": "event", "id": "blinding-of-constantine-vi"}
+      ]
+    },
+    {
+      "id": "lesbos",
+      "name": "Lesbos",
+      "modern_name": "Lesbos",
+      "modern_country": "Greece",
+      "lat": 39.1667,
+      "lng": 26.3333,
+      "first_year": null,
+      "summary": "The island to which Irene was exiled after being deposed by the citizens of Constantinople. She died there less than a year later.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lesbos",
+      "image_url": null,
+      "transcript_lines": [[315, 317]],
+      "related": [
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "event", "id": "deposition-of-irene"}
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "modern_name": "Rome",
+      "modern_country": "Italy",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "first_year": null,
+      "summary": "The city where Pope Leo III was ambushed and beaten, and where Charlemagne came to testify on the pope's behalf in 800. It was here, at Christmas Mass, that Pope Leo III crowned Charlemagne Holy Roman Emperor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
+      "image_url": null,
+      "transcript_lines": [[257, 286]],
+      "related": [
+        {"type": "person", "id": "pope-leo-iii"},
+        {"type": "person", "id": "charlemagne"},
+        {"type": "event", "id": "coronation-of-charlemagne"}
+      ]
+    },
+    {
+      "id": "ravenna",
+      "name": "Ravenna",
+      "modern_name": "Ravenna",
+      "modern_country": "Italy",
+      "lat": 44.4184,
+      "lng": 12.2035,
+      "first_year": null,
+      "summary": "The last imperial stronghold in Italy, taken by the Lombard king in 751. Its fall prompted the pope to seek the protection of the Franks rather than the iconoclast emperor in Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ravenna",
+      "image_url": null,
+      "transcript_lines": [[254, 257]],
+      "related": [
+        {"type": "person", "id": "lombard-king-751"},
+        {"type": "place", "id": "italy"},
+        {"type": "event", "id": "fall-of-ravenna-751"}
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "modern_name": "Italy",
+      "modern_country": "Italy",
+      "lat": 41.8719,
+      "lng": 12.5674,
+      "first_year": null,
+      "summary": "A region that received no help from Constantinople as the Lombards slowly overwhelmed the peninsula. The fall of Ravenna in 751 and subsequent events there triggered the decisive shift of papal loyalty from Byzantium to the Franks.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Italy",
+      "image_url": null,
+      "transcript_lines": [[253, 267]],
+      "related": [
+        {"type": "place", "id": "ravenna"},
+        {"type": "person", "id": "lombard-king-751"},
+        {"type": "person", "id": "pepin-iii"}
+      ]
+    },
+    {
+      "id": "papal-states",
+      "name": "Papal States",
+      "modern_name": "Vatican City (remnant)",
+      "modern_country": "Vatican City",
+      "lat": 41.9022,
+      "lng": 12.4539,
+      "first_year": 754,
+      "summary": "The territory brought into existence when Pepin the Short turned over to the pope the lands he had conquered from the Lombards. Brownworth notes that in a vastly shrunken form these still exist today as Vatican City.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Papal_States",
+      "image_url": null,
+      "transcript_lines": [[264, 267]],
+      "related": [
+        {"type": "person", "id": "pepin-iii"},
+        {"type": "event", "id": "creation-of-papal-states"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "fall-of-alexandria",
+      "name": "Arab Conquest of Alexandria",
+      "year": 638,
+      "end_year": 646,
+      "category": "battle",
+      "summary": "Alexandria was sacked by the Arabs in 638 and retaken eight years later by Caliph Omar after a failed Byzantine counteroffensive. Omar razed the walls, moved the capital to Fustat (later Cairo), and allegedly ordered the destruction of the famous Library of Alexandria — though Brownworth is skeptical of the story, noting it dates 450 years after the fact and may be Christian propaganda.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Egypt",
+      "image_url": null,
+      "location_id": "alexandria",
+      "transcript_lines": [[17, 42]],
+      "related": [
+        {"type": "person", "id": "caliph-omar"},
+        {"type": "place", "id": "alexandria"},
+        {"type": "place", "id": "fustat"}
+      ]
+    },
+    {
+      "id": "fall-of-rhodes",
+      "name": "Arab Capture of Rhodes",
+      "year": 654,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Rhodes fell to Arab forces four years after Cyprus. The victorious Arab commander broke up the famous Colossus — which had already lain fallen since an earthquake 900 years earlier — and sold it for scrap, requiring 900 camels to haul away the pieces.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes",
+      "image_url": null,
+      "location_id": "rhodes",
+      "transcript_lines": [[49, 53]],
+      "related": [
+        {"type": "place", "id": "rhodes"}
+      ]
+    },
+    {
+      "id": "arab-siege-of-constantinople-672",
+      "name": "First Arab Siege of Constantinople",
+      "year": 672,
+      "end_year": 678,
+      "category": "battle",
+      "summary": "By 672, Arab forces were at the gates of Constantinople and a five-year siege began. It was ultimately unsuccessful largely due to the recently invented Greek fire — a flammable material that could burn even in water and could be sprayed at enemy ships — whose exact composition remains a state secret to this day.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arab%E2%80%93Byzantine_wars",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[64, 70]],
+      "related": [
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "invention-of-greek-fire"}
+      ]
+    },
+    {
+      "id": "invention-of-greek-fire",
+      "name": "Invention of Greek Fire",
+      "year": 672,
+      "end_year": null,
+      "category": "cultural",
+      "summary": "A secret Byzantine weapon made of a flammable material that would burn even in water, it could be sprayed or pumped at enemy ships with devastating results. Brownworth notes it was considered such a state secret that even today the exact composition is unknown. It was a decisive factor in repelling the Arab siege of Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Greek_fire",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[65, 69]],
+      "related": [
+        {"type": "event", "id": "arab-siege-of-constantinople-672"},
+        {"type": "event", "id": "arab-siege-of-constantinople-717"}
+      ]
+    },
+    {
+      "id": "arab-siege-of-constantinople-717",
+      "name": "Second Arab Siege of Constantinople",
+      "year": 717,
+      "end_year": 718,
+      "category": "battle",
+      "summary": "Forty years after the first failed siege, the Arabs returned with 80,000 men and 1,800 ships. Leo III outsmarted the besiegers at every turn and induced the Bulgarians — traditional enemies of the empire — to deliver the killing blow. Fewer than half the Arab invaders made it back to Damascus, and of 1,800 ships only five survived Greek fire and winter storms.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Arab_siege_of_Constantinople",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[73, 87]],
+      "related": [
+        {"type": "person", "id": "leo-iii-isaurian"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "damascus"},
+        {"type": "event", "id": "invention-of-greek-fire"}
+      ]
+    },
+    {
+      "id": "iconoclasm-edict",
+      "name": "Iconoclasm Edict of Leo III",
+      "year": 730,
+      "end_year": null,
+      "category": "religious",
+      "summary": "After beginning with sermons against icons and then ordering the destruction of the prominent golden icon of Christ at the Chalke Gate, Leo III issued a formal edict declaring that all holy images were to be destroyed. This caused an open breach between the eastern and western churches and triggered widespread riots across the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_Iconoclasm",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[117, 135]],
+      "related": [
+        {"type": "person", "id": "leo-iii-isaurian"},
+        {"type": "person", "id": "constantine-v"},
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "event", "id": "chalke-icon-destroyed"},
+        {"type": "event", "id": "birth-of-venetian-republic"}
+      ]
+    },
+    {
+      "id": "chalke-icon-destroyed",
+      "name": "Destruction of the Chalke Icon",
+      "year": 726,
+      "end_year": null,
+      "category": "religious",
+      "summary": "In the spring of 726, Leo III ordered the destruction of the magnificent golden icon of Christ above the doors of the Chalke Gate — perhaps the most prominent icon in the city. A group of outraged women killed the officer in charge of the demolition, and riots broke out across the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chalke_gate",
+      "image_url": null,
+      "location_id": "chalke-gate",
+      "transcript_lines": [[118, 129]],
+      "related": [
+        {"type": "person", "id": "leo-iii-isaurian"},
+        {"type": "place", "id": "chalke-gate"},
+        {"type": "event", "id": "iconoclasm-edict"}
+      ]
+    },
+    {
+      "id": "birth-of-venetian-republic",
+      "name": "Birth of the Venetian Republic",
+      "year": 726,
+      "end_year": null,
+      "category": "political",
+      "summary": "In response to Leo III's iconoclast edict, the horrified citizens of the Venetian lagoon rebelled and appointed a local leader as Doge — giving birth to the Venetian Republic, which Brownworth describes as both an ally and inveterate enemy of the Byzantine Empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Republic_of_Venice",
+      "image_url": null,
+      "location_id": "venice",
+      "transcript_lines": [[133, 135]],
+      "related": [
+        {"type": "person", "id": "leo-iii-isaurian"},
+        {"type": "place", "id": "venice"},
+        {"type": "event", "id": "iconoclasm-edict"}
+      ]
+    },
+    {
+      "id": "second-council-of-nicaea",
+      "name": "Second Council of Nicaea",
+      "year": 787,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Called by Irene as the eighth and final ecumenical council of the church, it officially condemned iconoclasm. For Irene it was a triumphal moment, though it was somewhat spoiled by the growing problem of her son Constantine VI reaching adulthood and threatening her grip on power.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Council_of_Nicaea",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[174, 178]],
+      "related": [
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "event", "id": "restoration-of-icons-843"}
+      ]
+    },
+    {
+      "id": "blinding-of-constantine-vi",
+      "name": "Blinding and Death of Constantine VI",
+      "year": 797,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "After ambushing Constantine VI as he returned from the races at the Hippodrome, Irene had him brought back to the imperial palace and blinded in the very room in which he had been born 27 years earlier. The blinding was so brutal that he died. Brownworth calls it perhaps the cruelest murder that even Byzantine history has to offer, one that left a permanent stain on Irene's reputation.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_VI",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[227, 235]],
+      "related": [
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "person", "id": "constantine-vi"},
+        {"type": "place", "id": "hippodrome"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "fall-of-ravenna-751",
+      "name": "Fall of Ravenna to the Lombards",
+      "year": 751,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The Lombard king captured Ravenna in 751, taking the last imperial stronghold in Italy. This forced the pope — who had no desire for help from the iconoclast emperor in Constantinople — to cross the Alps and seek the protection of the Frankish king Pepin instead.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lombards",
+      "image_url": null,
+      "location_id": "ravenna",
+      "transcript_lines": [[253, 260]],
+      "related": [
+        {"type": "person", "id": "lombard-king-751"},
+        {"type": "person", "id": "pepin-iii"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "italy"}
+      ]
+    },
+    {
+      "id": "creation-of-papal-states",
+      "name": "Creation of the Papal States",
+      "year": 754,
+      "end_year": null,
+      "category": "political",
+      "summary": "After Pepin the Short swept into Italy and brought the Lombards to their knees, he turned over a large swath of conquered territory to the pope, bringing the Papal States into existence. Brownworth notes that in vastly shrunken form they still exist today as Vatican City.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Donation_of_Pepin",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[263, 267]],
+      "related": [
+        {"type": "person", "id": "pepin-iii"},
+        {"type": "place", "id": "papal-states"},
+        {"type": "place", "id": "italy"}
+      ]
+    },
+    {
+      "id": "coronation-of-charlemagne",
+      "name": "Coronation of Charlemagne as Holy Roman Emperor",
+      "year": 800,
+      "end_year": null,
+      "category": "political",
+      "summary": "On Christmas Day 800, after testifying on behalf of Pope Leo III, Charlemagne was crowned Holy Roman Emperor by the pope in a stunningly bold move at Christmas Mass in Rome. This breathtaking act split the Roman Empire, created a rival emperor in the west, and allowed the papacy to claim superiority over emperors — since the imperial crown was the pope's to give and to take away. The news was received in Constantinople with horror and outrage.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coronation_of_Charlemagne",
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[280, 302]],
+      "related": [
+        {"type": "person", "id": "charlemagne"},
+        {"type": "person", "id": "pope-leo-iii"},
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "deposition-of-irene",
+      "name": "Deposition of Empress Irene",
+      "year": 802,
+      "end_year": null,
+      "category": "political",
+      "summary": "The citizens of Constantinople, outraged that Irene appeared to be seriously considering Charlemagne's marriage proposal — which would have made a 'blasphemous, boorish Frank' their emperor — took her prisoner in her own palace and declared her deposed at the Hippodrome. She was exiled to Lesbos, where she died less than a year later.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Irene_of_Athens",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[312, 317]],
+      "related": [
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "person", "id": "charlemagne"},
+        {"type": "place", "id": "hippodrome"},
+        {"type": "place", "id": "lesbos"}
+      ]
+    },
+    {
+      "id": "restoration-of-icons-843",
+      "name": "Restoration of Icons under Theodora",
+      "year": 843,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Iconoclasm smoldered on for another forty years after Irene before finally expiring during the reign of Michael III, when his mother Theodora — like Irene a regent — proclaimed the restoration of icons. Brownworth notes this as a case of history being written by the winners, since Constantine V the fierce iconoclast is remembered as 'Copronymus' while Irene the iconodule is venerated as a saint.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Triumph_of_Orthodoxy",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[329, 336]],
+      "related": [
+        {"type": "person", "id": "theodora-regent"},
+        {"type": "person", "id": "michael-iii"},
+        {"type": "person", "id": "irene-of-athens"},
+        {"type": "person", "id": "constantine-v"},
+        {"type": "event", "id": "second-council-of-nicaea"}
+      ]
+    }
+  ]
+}

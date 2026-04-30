@@ -1,0 +1,34 @@
+# Audio files — too large for GitHub/Vercel, hosted externally in production.
+# Local dev uses the symlink web/public/audio -> ../../audio (also gitignored).
+audio/
+
+# Node
+node_modules/
+
+# Next.js build output
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Env files (Vercel injects production env at build time)
+.env
+.env.local
+.env.*.local
+
+# Vercel CLI artifacts
+.vercel/
+
+# Mise local cache
+.mise.local.toml
+
+# Claude Code per-developer settings (launch.json IS committed; only the
+# .local.json files are user-specific)
+.claude/settings.local.json
+

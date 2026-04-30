@@ -1,0 +1,1110 @@
+{
+  "episode": 4,
+  "title": "Constantine - Part 2",
+  "people": [
+    {
+      "id": "constantine-the-great",
+      "name": "Constantine the Great",
+      "alt_names": ["Constantine I", "Flavius Valerius Constantinus", "Equal of the Apostles"],
+      "role": "Roman Emperor",
+      "birth_year": 272,
+      "death_year": 337,
+      "reign_start": 306,
+      "reign_end": 337,
+      "summary": "Having conquered the Roman Empire, Constantine faced the harder task of unifying it under one church. He presided over the Council of Nicaea, founded Constantinople as the new Rome, and died after a 31-year reign — the longest since Augustus — having been baptized at the very last moment by an Arian bishop.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[3, 258]],
+      "related": [
+        {"type": "person", "id": "arius"},
+        {"type": "person", "id": "fausta"},
+        {"type": "person", "id": "crispus"},
+        {"type": "person", "id": "athanasius-of-alexandria"},
+        {"type": "person", "id": "helena"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "eusebius-of-nicomedia"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "nicaea"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "sirmium"},
+        {"type": "event", "id": "council-of-nicaea"},
+        {"type": "event", "id": "dedication-of-constantinople"},
+        {"type": "event", "id": "execution-of-crispus"},
+        {"type": "event", "id": "death-of-constantine"},
+        {"type": "event", "id": "baptism-of-constantine"}
+      ]
+    },
+    {
+      "id": "arius",
+      "name": "Arius",
+      "alt_names": [],
+      "role": "Christian presbyter and theologian",
+      "birth_year": 256,
+      "death_year": 336,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A young presbyter of Alexandria who around 320 threatened to permanently split the Christian world with his doctrine that God the Father had created Christ, making Christ a perfect man but not God. Condemned at the Council of Nicaea, he was later reinstated by Constantine but died in gruesome circumstances before fully returning to power.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arius",
+      "portrait_url": null,
+      "transcript_lines": [[21, 29], [181, 196]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "eusebius-of-nicomedia"},
+        {"type": "person", "id": "athanasius-of-alexandria"},
+        {"type": "place", "id": "alexandria"},
+        {"type": "place", "id": "nicomedia"},
+        {"type": "event", "id": "council-of-nicaea"},
+        {"type": "event", "id": "arian-controversy"}
+      ]
+    },
+    {
+      "id": "licinius",
+      "name": "Licinius",
+      "alt_names": ["Valerius Licinianus Licinius"],
+      "role": "Roman Emperor (eastern co-emperor)",
+      "birth_year": 263,
+      "death_year": 325,
+      "reign_start": 308,
+      "reign_end": 324,
+      "summary": "The eastern emperor who was defeated and killed by Constantine by 323. He had earlier given warm welcome to Arius in Nicomedia, and a synod called by the local bishop there endorsed Arius's teachings.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Licinius",
+      "portrait_url": null,
+      "transcript_lines": [[26, 27], [38, 40]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "arius"},
+        {"type": "person", "id": "eusebius-of-nicomedia"},
+        {"type": "place", "id": "nicomedia"}
+      ]
+    },
+    {
+      "id": "eusebius-of-nicomedia",
+      "name": "Eusebius of Nicomedia",
+      "alt_names": [],
+      "role": "Bishop of Nicomedia",
+      "birth_year": null,
+      "death_year": 341,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The local bishop of Nicomedia who called a synod that overwhelmingly endorsed Arius after his excommunication in Alexandria. He was friendly with Constantine's family and circle, and later baptized Constantine on his deathbed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eusebius_of_Nicomedia",
+      "portrait_url": null,
+      "transcript_lines": [[27, 27], [210, 210]],
+      "related": [
+        {"type": "person", "id": "arius"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "nicomedia"},
+        {"type": "event", "id": "baptism-of-constantine"}
+      ]
+    },
+    {
+      "id": "fausta",
+      "name": "Fausta",
+      "alt_names": ["Flavia Maxima Fausta"],
+      "role": "Roman Empress, wife of Constantine",
+      "birth_year": 289,
+      "death_year": 326,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Constantine's wife who traveled with him on the ill-fated trip to Rome in early 326. She was killed by Constantine in her bath, amid swirling rumors of an affair or a plot against the emperor's life that were never entirely answered.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fausta",
+      "portrait_url": null,
+      "transcript_lines": [[78, 90]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "crispus"},
+        {"type": "place", "id": "sirmium"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "execution-of-crispus"}
+      ]
+    },
+    {
+      "id": "crispus",
+      "name": "Crispus",
+      "alt_names": ["Flavius Julius Crispus"],
+      "role": "Caesar, eldest son of Constantine",
+      "birth_year": 300,
+      "death_year": 326,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Constantine's eldest son, described as a brilliant general popular with both the army and the people — it was said that for Constantine's hundreds, Crispus had his thousands. He was arrested at Sirmium and executed on orders from his father for reasons never made entirely clear.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crispus",
+      "portrait_url": null,
+      "transcript_lines": [[80, 88]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "fausta"},
+        {"type": "place", "id": "sirmium"},
+        {"type": "event", "id": "execution-of-crispus"}
+      ]
+    },
+    {
+      "id": "helena",
+      "name": "Helena",
+      "alt_names": ["Saint Helena", "Helena Augusta"],
+      "role": "Mother of Constantine, Christian saint",
+      "birth_year": 246,
+      "death_year": 330,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Constantine's mother, who at age 72 set out to the Holy Land, founding churches along the way and discovering the True Cross. She built the Church of the Nativity at Bethlehem, one on the Mount of Olives, and the Church of the Holy Sepulchre at Jerusalem. She died in the Holy Land, remembered as the first recorded Christian pilgrim.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helena_(empress)",
+      "portrait_url": null,
+      "transcript_lines": [[119, 119], [167, 173]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "bethlehem"},
+        {"type": "place", "id": "mount-of-olives"},
+        {"type": "place", "id": "holy-land"},
+        {"type": "event", "id": "discovery-of-true-cross"},
+        {"type": "event", "id": "foundation-of-church-of-holy-sepulchre"}
+      ]
+    },
+    {
+      "id": "athanasius-of-alexandria",
+      "name": "Athanasius of Alexandria",
+      "alt_names": ["Saint Athanasius", "Athanasius the Great"],
+      "role": "Bishop of Alexandria",
+      "birth_year": 296,
+      "death_year": 373,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A firebrand bishop elected by the Egyptians who flatly refused to reinstate Arius when Constantine pressured him to do so. He fled to Constantinople when it became clear only pro-Arian bishops would attend a new council, was deposed and banished to Trier in his absence, and his exile ultimately outlasted Constantine himself.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athanasius_of_Alexandria",
+      "portrait_url": null,
+      "transcript_lines": [[184, 197]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "arius"},
+        {"type": "person", "id": "anthony-the-great"},
+        {"type": "place", "id": "alexandria"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "trier"},
+        {"type": "event", "id": "arian-controversy"}
+      ]
+    },
+    {
+      "id": "anthony-the-great",
+      "name": "Anthony the Great",
+      "alt_names": ["Saint Anthony", "Anthony of Egypt"],
+      "role": "Christian monk and saint",
+      "birth_year": 251,
+      "death_year": 356,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The famous Egyptian ascetic who led the people of Alexandria in rioting against the appointment of Arius, forcing Constantine to back off his decision and recall Arius for further inquiry.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anthony_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[189, 190]],
+      "related": [
+        {"type": "person", "id": "arius"},
+        {"type": "person", "id": "athanasius-of-alexandria"},
+        {"type": "place", "id": "alexandria"},
+        {"type": "event", "id": "arian-controversy"}
+      ]
+    },
+    {
+      "id": "justinian-i",
+      "name": "Justinian I",
+      "alt_names": ["Justinian the Great", "Flavius Petrus Sabbatius Iustinianus"],
+      "role": "Byzantine Emperor",
+      "birth_year": 482,
+      "death_year": 565,
+      "reign_start": 527,
+      "reign_end": 565,
+      "summary": "Mentioned in passing as the emperor who completely demolished and rebuilt the Church of the Holy Apostles, which had been Constantine's mausoleum. The rebuilt church eventually also disappeared, leaving no trace of Constantine's magnificent tomb.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
+      "portrait_url": null,
+      "transcript_lines": [[227, 229]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "rebuilding-of-church-of-holy-apostles"}
+      ]
+    },
+    {
+      "id": "augustus",
+      "name": "Augustus",
+      "alt_names": ["Gaius Octavius", "Octavian", "Caesar Augustus"],
+      "role": "First Roman Emperor",
+      "birth_year": -63,
+      "death_year": 14,
+      "reign_start": -27,
+      "reign_end": 14,
+      "summary": "Mentioned as the benchmark for a long reign: Constantine's 31-year rule was the longest since Augustus, underscoring the exceptional duration of his time in power.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Augustus",
+      "portrait_url": null,
+      "transcript_lines": [[211, 211]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "diocletian",
+      "name": "Diocletian",
+      "alt_names": ["Gaius Aurelius Valerius Diocletianus"],
+      "role": "Roman Emperor",
+      "birth_year": 244,
+      "death_year": 311,
+      "reign_start": 284,
+      "reign_end": 305,
+      "summary": "Referenced as the architect of the governing system that Constantine's death ultimately ended. Constantine left no succession plan, and his death signaled the final collapse of Diocletian's carefully constructed imperial framework.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian",
+      "portrait_url": null,
+      "transcript_lines": [[218, 218]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "death-of-constantine"}
+      ]
+    },
+    {
+      "id": "julian-the-apostate",
+      "name": "Julian",
+      "alt_names": ["Julian the Apostate", "Flavius Claudius Julianus"],
+      "role": "Roman Emperor",
+      "birth_year": 331,
+      "death_year": 363,
+      "reign_start": 361,
+      "reign_end": 363,
+      "summary": "Mentioned briefly at the end of the episode as the subject of the next lecture — described as experiencing an unlikely rise and tragic fall, and as the last of the pagan emperors.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_(emperor)",
+      "portrait_url": null,
+      "transcript_lines": [[258, 258]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "gibbon-edward",
+      "name": "Edward Gibbon",
+      "alt_names": [],
+      "role": "Historian",
+      "birth_year": 1737,
+      "death_year": 1794,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Quoted by Brownworth for his vivid description of Constantinople's remarkable growth within a century of its founding, enumerating its schools, circuses, theaters, baths, churches, palaces, and houses.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_Gibbon",
+      "portrait_url": null,
+      "transcript_lines": [[158, 163]],
+      "related": [
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "aeneas",
+      "name": "Aeneas",
+      "alt_names": [],
+      "role": "Trojan hero (mythological)",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Mentioned in connection with the statue of Athena that Aeneas allegedly brought back from Troy, which Constantine placed within the base of his porphyry column in Constantinople, mixing pagan relics with Christian ones.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aeneas",
+      "portrait_url": null,
+      "transcript_lines": [[136, 136]],
+      "related": [
+        {"type": "place", "id": "troy"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "noah",
+      "name": "Noah",
+      "alt_names": [],
+      "role": "Biblical patriarch",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Mentioned as the putative owner of the hatchet with which he built the ark — one of the curious pagan-and-Christian relics Constantine placed within the base of his porphyry column at Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Noah",
+      "portrait_url": null,
+      "transcript_lines": [[135, 135]],
+      "related": [
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "christ-jesus",
+      "name": "Jesus Christ",
+      "alt_names": ["Christ", "Jesus of Nazareth"],
+      "role": "Central figure of Christianity",
+      "birth_year": -4,
+      "death_year": 30,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The theological status of Christ — whether he was God or a perfect man created by God — was the central dispute that tore apart the early Church. Brownworth notes that early Christians who had living memory of Christ could settle disputes, but as those generations died off, heresies multiplied.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jesus",
+      "portrait_url": null,
+      "transcript_lines": [[14, 16], [24, 24], [55, 56]],
+      "related": [
+        {"type": "person", "id": "arius"},
+        {"type": "event", "id": "council-of-nicaea"},
+        {"type": "event", "id": "arian-controversy"}
+      ]
+    },
+    {
+      "id": "athena",
+      "name": "Athena",
+      "alt_names": ["Pallas Athena"],
+      "role": "Greek goddess (mythological)",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A figure of Athena said to have been brought back from Troy by Aeneas was placed by Constantine within the base of his porphyry column, alongside other pagan and Christian relics — evidence of Constantine hedging his bets between religions.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Athena",
+      "portrait_url": null,
+      "transcript_lines": [[136, 136]],
+      "related": [
+        {"type": "person", "id": "aeneas"},
+        {"type": "place", "id": "troy"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "Constantine's new capital, dedicated on May 11, 330, and officially named Nova Roma though the citizens called it Constantinople. Built on the ancient site of Byzantium, it was designed to be more than six times the size of its predecessor, serving as the new center of the Roman world and protected by walls so thick that only modern artillery eventually breached them.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[95, 165], [247, 256]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "gibbon-edward"},
+        {"type": "event", "id": "dedication-of-constantinople"}
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "modern_name": "Rome",
+      "modern_country": "Italy",
+      "lat": 41.8967,
+      "lng": 12.4822,
+      "first_year": null,
+      "summary": "The Eternal City that Constantine had not entered since his victory at the Milvian Bridge thirteen years earlier. His visit in January 326 ended disastrously, with mutual contempt between emperor and city; after consecrating the new Basilica of St. Peter's he left and never returned, accelerating his decision to build a new capital in the East.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
+      "image_url": null,
+      "transcript_lines": [[71, 94]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "fausta"},
+        {"type": "person", "id": "crispus"},
+        {"type": "event", "id": "constantine-visits-rome-326"}
+      ]
+    },
+    {
+      "id": "nicaea",
+      "name": "Nicaea",
+      "modern_name": "İznik",
+      "modern_country": "Turkey",
+      "lat": 40.4297,
+      "lng": 29.7194,
+      "first_year": null,
+      "summary": "The site of the first great ecumenical council of the Christian church, held in 325, where the theological question of Christ's nature was debated and the homoousios formula was adopted. The council also set the date of Easter.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nicaea",
+      "image_url": null,
+      "transcript_lines": [[53, 53]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "arius"},
+        {"type": "event", "id": "council-of-nicaea"}
+      ]
+    },
+    {
+      "id": "nicomedia",
+      "name": "Nicomedia",
+      "modern_name": "İzmit",
+      "modern_country": "Turkey",
+      "lat": 40.7656,
+      "lng": 29.9408,
+      "first_year": null,
+      "summary": "The eastern city where Arius fled after his excommunication in Alexandria and received a warm welcome from Emperor Licinius. A synod called by the local bishop Eusebius overwhelmingly endorsed Arius there.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nicomedia",
+      "image_url": null,
+      "transcript_lines": [[26, 27]],
+      "related": [
+        {"type": "person", "id": "arius"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "eusebius-of-nicomedia"}
+      ]
+    },
+    {
+      "id": "alexandria",
+      "name": "Alexandria",
+      "modern_name": "Alexandria",
+      "modern_country": "Egypt",
+      "lat": 31.2001,
+      "lng": 29.9187,
+      "first_year": null,
+      "summary": "The city where Arius was a presbyter and where his heresy first erupted, leading to rioting in the streets. Later the people of Alexandria, led by St. Anthony, rioted again when Arius was appointed bishop there after Athanasius was deposed.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexandria",
+      "image_url": null,
+      "transcript_lines": [[21, 22], [28, 29], [184, 190]],
+      "related": [
+        {"type": "person", "id": "arius"},
+        {"type": "person", "id": "athanasius-of-alexandria"},
+        {"type": "person", "id": "anthony-the-great"},
+        {"type": "event", "id": "arian-controversy"}
+      ]
+    },
+    {
+      "id": "sirmium",
+      "name": "Sirmium",
+      "modern_name": "Sremska Mitrovica",
+      "modern_country": "Serbia",
+      "lat": 44.9667,
+      "lng": 19.6167,
+      "first_year": null,
+      "summary": "The city where the imperial party stopped in February 326 on the way to Rome, and where Constantine suddenly launched into a frenzy of killing — arresting and executing his son Crispus and a half-brother, then murdering his wife Fausta.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sirmium",
+      "image_url": null,
+      "transcript_lines": [[84, 88]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "crispus"},
+        {"type": "person", "id": "fausta"},
+        {"type": "event", "id": "execution-of-crispus"}
+      ]
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "modern_name": "Jerusalem",
+      "modern_country": "Israel",
+      "lat": 31.7683,
+      "lng": 35.2137,
+      "first_year": null,
+      "summary": "The holy city where Constantine's mother Helena found the True Cross and built the Church of the Holy Sepulchre, the most important of her ecclesiastical foundations in the Holy Land.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerusalem",
+      "image_url": null,
+      "transcript_lines": [[119, 119], [171, 172]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "event", "id": "discovery-of-true-cross"},
+        {"type": "event", "id": "foundation-of-church-of-holy-sepulchre"}
+      ]
+    },
+    {
+      "id": "bethlehem",
+      "name": "Bethlehem",
+      "modern_name": "Bethlehem",
+      "modern_country": "Palestinian Territories",
+      "lat": 31.7054,
+      "lng": 35.2024,
+      "first_year": null,
+      "summary": "The birthplace of Jesus where Helena built the Church of the Nativity during her pilgrimage to the Holy Land.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bethlehem",
+      "image_url": null,
+      "transcript_lines": [[170, 170]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "event", "id": "helena-pilgrimage"}
+      ]
+    },
+    {
+      "id": "mount-of-olives",
+      "name": "Mount of Olives",
+      "modern_name": "Mount of Olives",
+      "modern_country": "Israel",
+      "lat": 31.7784,
+      "lng": 35.2454,
+      "first_year": null,
+      "summary": "One of the sites in the Holy Land where Helena founded a church during her pilgrimage, part of her broader effort to mark the sacred landscape of Christianity.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_of_Olives",
+      "image_url": null,
+      "transcript_lines": [[171, 171]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "event", "id": "helena-pilgrimage"}
+      ]
+    },
+    {
+      "id": "holy-land",
+      "name": "Holy Land",
+      "modern_name": "Israel / Palestinian Territories",
+      "modern_country": "Israel",
+      "lat": 31.5,
+      "lng": 35.0,
+      "first_year": null,
+      "summary": "The region where Helena journeyed at age 72, founding churches, discovering the True Cross, and dying there as the first recorded Christian pilgrim, establishing a tradition of Christian pilgrimage.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Holy_Land",
+      "image_url": null,
+      "transcript_lines": [[168, 173]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "event", "id": "helena-pilgrimage"}
+      ]
+    },
+    {
+      "id": "trier",
+      "name": "Trier",
+      "modern_name": "Trier",
+      "modern_country": "Germany",
+      "lat": 49.7596,
+      "lng": 6.6439,
+      "first_year": null,
+      "summary": "The western city to which Athanasius was banished after being deposed in absentia when he refused to reinstate Arius and fled the pro-Arian council summoned by Constantine.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trier",
+      "image_url": null,
+      "transcript_lines": [[187, 188]],
+      "related": [
+        {"type": "person", "id": "athanasius-of-alexandria"},
+        {"type": "event", "id": "arian-controversy"}
+      ]
+    },
+    {
+      "id": "byzantium",
+      "name": "Byzantium",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": -657,
+      "summary": "The ancient city, already a thousand years old when Constantine first saw it, that he chose as the site for his new capital. Though later legends grew about its divine origin, its strategic and economic advantages were obvious to any observer.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantium",
+      "image_url": null,
+      "transcript_lines": [[97, 99]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "event", "id": "dedication-of-constantinople"}
+      ]
+    },
+    {
+      "id": "hippodrome-of-constantinople",
+      "name": "Hippodrome of Constantinople",
+      "modern_name": "Sultanahmet Meydanı (At Meydanı)",
+      "modern_country": "Turkey",
+      "lat": 41.0054,
+      "lng": 28.9745,
+      "first_year": 330,
+      "summary": "The great chariot-racing stadium of Constantinople, connected directly to the imperial palaces by an imperial box. It contained an obelisk at each end of the track and the ancient Serpent Column made by the Greeks in 479 BC to commemorate their victory over the Persians.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hippodrome_of_Constantinople",
+      "image_url": null,
+      "transcript_lines": [[127, 130]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "forum-of-constantine",
+      "name": "Forum of Constantine",
+      "modern_name": "Çemberlitaş, Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0065,
+      "lng": 28.9717,
+      "first_year": 330,
+      "summary": "A broad marble-paved forum in Constantinople crowned with a hundred-foot column of porphyry from Egypt. The column's base contained a strange mix of pagan and Christian relics, and its top bore a colossal statue of Constantine. Today only the burned ruin of the column itself remains.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Forum_of_Constantine",
+      "image_url": null,
+      "transcript_lines": [[130, 141]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "column-of-constantine"}
+      ]
+    },
+    {
+      "id": "column-of-constantine",
+      "name": "Column of Constantine",
+      "modern_name": "Çemberlitaş (Burnt Column)",
+      "modern_country": "Turkey",
+      "lat": 41.0065,
+      "lng": 28.9717,
+      "first_year": 330,
+      "summary": "A hundred-foot column of porphyry brought from Egypt, placed at the center of the Forum of Constantine. Its base contained relics including Noah's hatchet, the baskets from the miracle of the loaves, and a figure of Athena, while a colossal statue of Constantine stood atop it. Today only a burned ruin of the column remains.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Column_of_Constantine",
+      "image_url": null,
+      "transcript_lines": [[131, 140]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "forum-of-constantine"}
+      ]
+    },
+    {
+      "id": "church-of-holy-apostles",
+      "name": "Church of the Holy Apostles",
+      "modern_name": "Demolished (Fatih Mosque now on site)",
+      "modern_country": "Turkey",
+      "lat": 41.0195,
+      "lng": 28.9497,
+      "first_year": 330,
+      "summary": "Constantine's mausoleum-church in Constantinople, where he placed twelve apostolic sarcophagi and his own golden coffin at the center — symbolically presenting himself as the thirteenth apostle and symbol of the Savior. The original building was demolished and rebuilt by Justinian, and nothing remains of Constantine's tomb.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles",
+      "image_url": null,
+      "transcript_lines": [[215, 229]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "event", "id": "death-of-constantine"},
+        {"type": "event", "id": "rebuilding-of-church-of-holy-apostles"}
+      ]
+    },
+    {
+      "id": "church-of-hagia-irene",
+      "name": "Church of Hagia Irene",
+      "modern_name": "Hagia Irene",
+      "modern_country": "Turkey",
+      "lat": 41.0114,
+      "lng": 28.9826,
+      "first_year": 330,
+      "summary": "The first great Christian church built by Constantine in the new capital, dedicated to the peace of God. Constantine took mass at its high altar during the 40-day celebration of Constantinople's dedication in 330.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Irene",
+      "image_url": null,
+      "transcript_lines": [[122, 124], [153, 154]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "dedication-of-constantinople"}
+      ]
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "modern_name": "Ayasofya",
+      "modern_country": "Turkey",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "first_year": 360,
+      "summary": "The Church of the Holy Wisdom, described as perhaps the most impressive church ever built, which joined and overshadowed Hagia Irene just a few years after the city's founding.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "transcript_lines": [[124, 125]],
+      "related": [
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "church-of-hagia-irene"}
+      ]
+    },
+    {
+      "id": "basilica-of-saint-peter",
+      "name": "Basilica of Saint Peter's",
+      "modern_name": "Old St. Peter's Basilica (demolished; replaced by St. Peter's Basilica)",
+      "modern_country": "Italy",
+      "lat": 41.9022,
+      "lng": 12.4534,
+      "first_year": 326,
+      "summary": "The brand new basilica in Rome that Constantine consecrated during his disastrous 326 visit, the last act before he left the city, never to return.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Old_St._Peter%27s_Basilica",
+      "image_url": null,
+      "transcript_lines": [[94, 94]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "constantine-visits-rome-326"}
+      ]
+    },
+    {
+      "id": "church-of-nativity",
+      "name": "Church of the Nativity",
+      "modern_name": "Church of the Nativity",
+      "modern_country": "Palestinian Territories",
+      "lat": 31.7044,
+      "lng": 35.2077,
+      "first_year": 333,
+      "summary": "Built by Helena at Bethlehem to mark the birthplace of Jesus, one of the chain of churches she founded during her pilgrimage to the Holy Land.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Nativity",
+      "image_url": null,
+      "transcript_lines": [[170, 171]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "place", "id": "bethlehem"},
+        {"type": "event", "id": "helena-pilgrimage"}
+      ]
+    },
+    {
+      "id": "church-of-holy-sepulchre",
+      "name": "Church of the Holy Sepulchre",
+      "modern_name": "Church of the Holy Sepulchre",
+      "modern_country": "Israel",
+      "lat": 31.7784,
+      "lng": 35.2296,
+      "first_year": 335,
+      "summary": "The most important of Helena's ecclesiastical foundations, built in Jerusalem over the site of Christ's burial and resurrection. Brownworth describes it as the most significant of the churches Helena founded in the Holy Land.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Sepulchre",
+      "image_url": null,
+      "transcript_lines": [[171, 172]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "event", "id": "foundation-of-church-of-holy-sepulchre"},
+        {"type": "event", "id": "helena-pilgrimage"}
+      ]
+    },
+    {
+      "id": "jerash",
+      "name": "Jerash",
+      "modern_name": "Jerash",
+      "modern_country": "Jordan",
+      "lat": 32.2800,
+      "lng": 35.8997,
+      "first_year": null,
+      "summary": "A city in northern Jordan whose ancient Roman forum Brownworth points to as a surviving example of what Constantine's Constantinople forum must have looked like, suggesting Constantinople's forum was modeled on it.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jerash",
+      "image_url": null,
+      "transcript_lines": [[140, 142]],
+      "related": [
+        {"type": "place", "id": "forum-of-constantine"}
+      ]
+    },
+    {
+      "id": "istanbul-cisterns",
+      "name": "Cisterns of Istanbul",
+      "modern_name": "Basilica Cistern (and others), Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0084,
+      "lng": 28.9774,
+      "first_year": 330,
+      "summary": "The great underground cisterns of Constantinople (modern Istanbul), where Medusa heads can still be seen on the bottom of columns — flipped upside down, Brownworth suggests, to demonstrate the impotence of the old pagan religion.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Basilica_Cistern",
+      "image_url": null,
+      "transcript_lines": [[147, 148]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "troy",
+      "name": "Troy",
+      "modern_name": "Hisarlik",
+      "modern_country": "Turkey",
+      "lat": 39.9576,
+      "lng": 26.2388,
+      "first_year": null,
+      "summary": "Mentioned as the city from which Aeneas allegedly brought the statue of Athena that Constantine later placed in the base of his porphyry column in Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Troy",
+      "image_url": null,
+      "transcript_lines": [[136, 136]],
+      "related": [
+        {"type": "person", "id": "aeneas"},
+        {"type": "person", "id": "athena"}
+      ]
+    },
+    {
+      "id": "milion",
+      "name": "Milion",
+      "modern_name": "Milion Stone (ruins), Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0096,
+      "lng": 28.9756,
+      "first_year": 330,
+      "summary": "The first milestone of Constantinople and focal point of the entire city and Roman world, made of four triumphal arches forming a square under a cupola bearing the True Cross. All distances in the empire were measured from this point, making it the symbolic center of the world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milion",
+      "image_url": null,
+      "transcript_lines": [[116, 121]],
+      "related": [
+        {"type": "place", "id": "constantinople"},
+        {"type": "person", "id": "constantine-the-great"}
+      ]
+    },
+    {
+      "id": "north-africa",
+      "name": "North Africa",
+      "modern_name": "North Africa",
+      "modern_country": null,
+      "lat": 25.0,
+      "lng": 17.0,
+      "first_year": null,
+      "summary": "Mentioned as the route Islamic armies were forced to take because the walls of Constantinople blocked their path, ultimately leading them through North Africa and Spain before being stopped at the Battle of Tours.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/North_Africa",
+      "image_url": null,
+      "transcript_lines": [[249, 250]],
+      "related": [
+        {"type": "event", "id": "battle-of-tours"}
+      ]
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "modern_name": "Spain",
+      "modern_country": "Spain",
+      "lat": 40.0,
+      "lng": -4.0,
+      "first_year": null,
+      "summary": "Part of the long route Islamic armies were forced to take around the Constantinople walls and through North Africa before reaching Europe, where they were eventually stopped at the Battle of Tours.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spain",
+      "image_url": null,
+      "transcript_lines": [[250, 250]],
+      "related": [
+        {"type": "event", "id": "battle-of-tours"}
+      ]
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt",
+      "modern_name": "Egypt",
+      "modern_country": "Egypt",
+      "lat": 26.0,
+      "lng": 30.0,
+      "first_year": null,
+      "summary": "Mentioned as the source of the porphyry stone from which Constantine's great column in his forum was made, the stone being brought all the way from Egypt to Constantinople.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Egypt",
+      "image_url": null,
+      "transcript_lines": [[131, 132]],
+      "related": [
+        {"type": "place", "id": "forum-of-constantine"},
+        {"type": "place", "id": "column-of-constantine"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "arian-controversy",
+      "name": "Arian Controversy",
+      "year": 318,
+      "end_year": 381,
+      "category": "religious",
+      "summary": "The great theological dispute ignited around 320 by the Alexandrian presbyter Arius, who taught that Christ was a perfect man but not God. It threatened to permanently split the Christian world, led to the Council of Nicaea, and continued to wrack the Church through and beyond Constantine's reign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arianism",
+      "image_url": null,
+      "location_id": "alexandria",
+      "transcript_lines": [[21, 50]],
+      "related": [
+        {"type": "person", "id": "arius"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "athanasius-of-alexandria"},
+        {"type": "person", "id": "licinius"},
+        {"type": "person", "id": "eusebius-of-nicomedia"},
+        {"type": "event", "id": "council-of-nicaea"}
+      ]
+    },
+    {
+      "id": "council-of-nicaea",
+      "name": "First Council of Nicaea",
+      "year": 325,
+      "end_year": null,
+      "category": "religious",
+      "summary": "The first great ecumenical council of the Church, called by Constantine in 325 to resolve the Arian controversy. Through both persuasion and intimidation, Constantine secured agreement on the homoousios formula — that Christ is of one substance with the Father. Arius was officially condemned and his writings burned, and the date of Easter was also set.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
+      "image_url": null,
+      "location_id": "nicaea",
+      "transcript_lines": [[53, 69]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "arius"},
+        {"type": "place", "id": "nicaea"},
+        {"type": "event", "id": "arian-controversy"}
+      ]
+    },
+    {
+      "id": "constantine-visits-rome-326",
+      "name": "Constantine's Visit to Rome (326)",
+      "year": 326,
+      "end_year": null,
+      "category": "political",
+      "summary": "Constantine's disastrous January 326 trip to Rome to celebrate his twentieth year in power, which turned into a mutual display of contempt between emperor and city. After the violence at Sirmium and a chilly reception in Rome, he consecrated the Basilica of St. Peter's and left, never to return.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[71, 94]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "fausta"},
+        {"type": "person", "id": "crispus"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "sirmium"},
+        {"type": "place", "id": "basilica-of-saint-peter"},
+        {"type": "event", "id": "execution-of-crispus"}
+      ]
+    },
+    {
+      "id": "execution-of-crispus",
+      "name": "Execution of Crispus and Murder of Fausta",
+      "year": 326,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "In February 326 at Sirmium, Constantine arrested and executed his eldest son Crispus and a half-brother for reasons never made entirely clear, then also had his wife Fausta killed in her bath. Rumors of an affair or a plot against Constantine's life circulated but were never resolved.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crispus",
+      "image_url": null,
+      "location_id": "sirmium",
+      "transcript_lines": [[84, 90]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "crispus"},
+        {"type": "person", "id": "fausta"},
+        {"type": "place", "id": "sirmium"},
+        {"type": "event", "id": "constantine-visits-rome-326"}
+      ]
+    },
+    {
+      "id": "dedication-of-constantinople",
+      "name": "Dedication of Constantinople",
+      "year": 330,
+      "end_year": null,
+      "category": "political",
+      "summary": "On Monday, May 11, 330, Constantinople was formally dedicated to God the Father under its official name Nova Roma. The 40-day celebration included both pagan and Christian elements, culminating in Constantine taking mass at the high altar of St. Irene while the pagan population prayed for his prosperity in their temples.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[149, 155]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "church-of-hagia-irene"},
+        {"type": "place", "id": "byzantium"}
+      ]
+    },
+    {
+      "id": "helena-pilgrimage",
+      "name": "Helena's Pilgrimage to the Holy Land",
+      "year": 326,
+      "end_year": 330,
+      "category": "religious",
+      "summary": "At age 72, Constantine's mother Helena traveled to the Holy Land, founding churches along the way — including the Church of the Nativity at Bethlehem, one on the Mount of Olives, and the Church of the Holy Sepulchre at Jerusalem — and discovering the True Cross. She died in the Holy Land, becoming the first recorded Christian pilgrim.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helena_(empress)",
+      "image_url": null,
+      "location_id": "holy-land",
+      "transcript_lines": [[167, 173]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "bethlehem"},
+        {"type": "place", "id": "mount-of-olives"},
+        {"type": "place", "id": "holy-land"},
+        {"type": "event", "id": "discovery-of-true-cross"},
+        {"type": "event", "id": "foundation-of-church-of-holy-sepulchre"}
+      ]
+    },
+    {
+      "id": "discovery-of-true-cross",
+      "name": "Discovery of the True Cross",
+      "year": 328,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Helena's discovery of the True Cross in Jerusalem during her pilgrimage. A piece of it was brought back and placed atop the Milion (the first milestone) of Constantinople, and another piece was placed inside the orb held by Constantine's colossal statue.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/True_Cross",
+      "image_url": null,
+      "location_id": "jerusalem",
+      "transcript_lines": [[118, 120], [138, 138]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "milion"},
+        {"type": "event", "id": "helena-pilgrimage"}
+      ]
+    },
+    {
+      "id": "foundation-of-church-of-holy-sepulchre",
+      "name": "Foundation of the Church of the Holy Sepulchre",
+      "year": 335,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Helena's most important ecclesiastical foundation, built in Jerusalem over the site of Christ's burial and resurrection. Brownworth describes it as the most significant of her Holy Land churches.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Sepulchre",
+      "image_url": null,
+      "location_id": "jerusalem",
+      "transcript_lines": [[171, 172]],
+      "related": [
+        {"type": "person", "id": "helena"},
+        {"type": "place", "id": "jerusalem"},
+        {"type": "place", "id": "church-of-holy-sepulchre"},
+        {"type": "event", "id": "helena-pilgrimage"}
+      ]
+    },
+    {
+      "id": "baptism-of-constantine",
+      "name": "Baptism of Constantine",
+      "year": 337,
+      "end_year": null,
+      "category": "religious",
+      "summary": "Constantine waited until the very last moment of his life to be baptized, believing it would wash away all his sins. He was baptized by an Arian bishop — Eusebius of Nicomedia — an irony Brownworth underscores given Constantine's career-long struggle with the Arian controversy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baptism_of_Constantine",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[207, 211]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "eusebius-of-nicomedia"},
+        {"type": "event", "id": "death-of-constantine"}
+      ]
+    },
+    {
+      "id": "death-of-constantine",
+      "name": "Death of Constantine",
+      "year": 337,
+      "end_year": null,
+      "category": "dynastic",
+      "summary": "Constantine died on May 22, 337, after a 31-year reign — the longest since Augustus. His body was placed in a golden coffin draped with a purple shroud in the Church of the Holy Apostles, where he had arranged twelve apostolic sarcophagi around his own, presenting himself as symbol of the Savior. His death signaled the final end of Diocletian's system.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[211, 229]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "diocletian"},
+        {"type": "person", "id": "augustus"},
+        {"type": "place", "id": "church-of-holy-apostles"},
+        {"type": "event", "id": "baptism-of-constantine"},
+        {"type": "event", "id": "rebuilding-of-church-of-holy-apostles"}
+      ]
+    },
+    {
+      "id": "rebuilding-of-church-of-holy-apostles",
+      "name": "Justinian's Rebuilding of the Church of the Holy Apostles",
+      "year": 536,
+      "end_year": 550,
+      "category": "cultural",
+      "summary": "Within 25 years of Constantine's death the golden dome of the Church of the Holy Apostles was in danger of collapse; his body was moved to a nearby church. After standing another 200 years, the church was completely demolished and rebuilt by Justinian, and Constantine's magnificent tomb and the apostolic sarcophagi disappeared entirely.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles",
+      "image_url": null,
+      "location_id": "church-of-holy-apostles",
+      "transcript_lines": [[222, 229]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "church-of-holy-apostles"},
+        {"type": "event", "id": "death-of-constantine"}
+      ]
+    },
+    {
+      "id": "battle-of-tours",
+      "name": "Battle of Tours",
+      "year": 732,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The battle at which Islamic expansion into Europe was finally halted, mentioned by Brownworth as the ultimate consequence of Constantinople's walls: by blocking the direct route, the walls forced Islamic armies through North Africa and Spain, buying time for Europe to emerge from its dark ages before the final confrontation.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[251, 252]],
+      "related": [
+        {"type": "place", "id": "north-africa"},
+        {"type": "place", "id": "spain"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "serpent-column-placement",
+      "name": "Placement of the Serpent Column in the Hippodrome",
+      "year": 330,
+      "end_year": null,
+      "category": "cultural",
+      "summary": "Constantine placed the ancient Serpent Column — made by the Greeks in 479 BC to commemorate their victory over the Persians — at one end of the Hippodrome of Constantinople, repurposing this symbol of Greek triumph as a monument in his new capital.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Serpent_Column",
+      "image_url": null,
+      "location_id": "hippodrome-of-constantinople",
+      "transcript_lines": [[128, 130]],
+      "related": [
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "place", "id": "hippodrome-of-constantinople"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    }
+  ]
+}

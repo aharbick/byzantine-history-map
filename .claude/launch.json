@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "byzantine-web",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd web && mise exec -- npm run dev"],
+      "port": 3000
+    }
+  ]
+}

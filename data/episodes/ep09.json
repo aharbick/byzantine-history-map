@@ -1,0 +1,1066 @@
+{
+  "episode": 9,
+  "title": "Justinian - Part 3",
+  "people": [
+    {
+      "id": "justinian-i",
+      "name": "Justinian I",
+      "alt_names": ["Flavius Petrus Sabbatius Iustinianus", "Justinian the Great"],
+      "role": "Byzantine Emperor",
+      "birth_year": 482,
+      "death_year": 565,
+      "reign_start": 527,
+      "reign_end": 565,
+      "summary": "The dominant figure of the episode, Justinian is portrayed as enormously ambitious — reconquering Africa, Italy, and a slice of Spain — but also fatally cautious toward capable subordinates, especially Belisarius. In his final years he shifted from military ambition to theological dispute and monumental building, most famously the Hagia Sophia, and Brownworth frames him as the last great ruler of the old Roman world whose conquests could not outlast him.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
+      "portrait_url": null,
+      "transcript_lines": [[5, 23], [52, 56], [88, 113], [154, 175], [183, 245], [309, 392]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "theodora"},
+        {"type": "person", "id": "narses"},
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "germanus"},
+        {"type": "person", "id": "liberius"},
+        {"type": "person", "id": "justin-ii"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "reconquest-of-italy"},
+        {"type": "event", "id": "fall-of-naples-543"},
+        {"type": "event", "id": "battle-of-busta-gallorum"},
+        {"type": "event", "id": "reconquest-of-spain"},
+        {"type": "event", "id": "construction-of-hagia-sophia"},
+        {"type": "event", "id": "kutrigur-hun-raid-559"}
+      ]
+    },
+    {
+      "id": "belisarius",
+      "name": "Belisarius",
+      "alt_names": [],
+      "role": "Byzantine general",
+      "birth_year": 500,
+      "death_year": 565,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The great general who conducted Justinian's second Italian campaign with only 4,000 men and no supreme authority, achieving a stubborn stalemate against Totila despite impossible odds. Brownworth portrays him as loyal to a fault, repeatedly undermined by jealousy at court, yet never embittered; he ended his career defeating a Hunnic raid in his mid-fifties with improvised volunteers, and died five years later at age sixty.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belisarius",
+      "portrait_url": null,
+      "transcript_lines": [[5, 8], [25, 26], [77, 99], [102, 182], [335, 354]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "theodora"},
+        {"type": "person", "id": "antonina"},
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "john-the-general"},
+        {"type": "person", "id": "bessus"},
+        {"type": "person", "id": "isaac"},
+        {"type": "person", "id": "narses"},
+        {"type": "place", "id": "italy"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "reconquest-of-italy"},
+        {"type": "event", "id": "amphibious-attack-on-rome"},
+        {"type": "event", "id": "kutrigur-hun-raid-559"}
+      ]
+    },
+    {
+      "id": "theodora",
+      "name": "Theodora",
+      "alt_names": [],
+      "role": "Byzantine Empress, wife of Justinian I",
+      "birth_year": 500,
+      "death_year": 548,
+      "reign_start": 527,
+      "reign_end": 548,
+      "summary": "Theodora's jealousy of Belisarius led her to disgrace him and fragment the Italian command among five generals, directly enabling Totila's resurgence. Brownworth notes that while she was initially a faithful partner to Justinian, her later intrigues — including working against Belisarius through her friendship with Antonina — sabotaged the Italian campaign and his religious policy; her death from likely cancer in 548 paradoxically freed Justinian to restore Belisarius to favor.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theodora_(wife_of_Justinian_I)",
+      "portrait_url": null,
+      "transcript_lines": [[11, 17], [156, 172]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "antonina"},
+        {"type": "event", "id": "death-of-theodora"},
+        {"type": "place", "id": "ravenna"}
+      ]
+    },
+    {
+      "id": "totila",
+      "name": "Totila",
+      "alt_names": ["Baduila"],
+      "role": "King of the Ostrogoths",
+      "birth_year": null,
+      "death_year": 552,
+      "reign_start": 541,
+      "reign_end": 552,
+      "summary": "Totila is presented as the antithesis of the corrupt Byzantine commanders — shrewd, compassionate, and in his mid-twenties when he rose to lead the Goths. He appealed to the poor and middle classes with promises of liberation, redistributed land, defeated a 12,000-strong imperial army, captured Rome, yet governed with remarkable mercy; he was killed at the decisive battle against Narses and his death ended the Gothic kingdom in Italy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Totila",
+      "portrait_url": null,
+      "transcript_lines": [[27, 76], [98, 99], [110, 113], [129, 146], [199, 213]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "narses"},
+        {"type": "person", "id": "bessus"},
+        {"type": "place", "id": "italy"},
+        {"type": "place", "id": "naples"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "fall-of-naples-543"},
+        {"type": "event", "id": "fall-of-rome-to-totila"},
+        {"type": "event", "id": "battle-of-busta-gallorum"}
+      ]
+    },
+    {
+      "id": "narses",
+      "name": "Narses",
+      "alt_names": [],
+      "role": "Byzantine court eunuch and general",
+      "birth_year": 478,
+      "death_year": 573,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Described as the most powerful member of Justinian's court and well into his seventies when appointed, Narses was given what Belisarius never had: full powers and an army of 35,000 plus back pay for the troops. Despite his only prior military experience being the suppression of the Nika Riots and the losing of Milan, he proved a superb organizer and decisively defeated and killed Totila, ending Gothic resistance.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Narses",
+      "portrait_url": null,
+      "transcript_lines": [[188, 215]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "place", "id": "ravenna"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "italy"},
+        {"type": "event", "id": "battle-of-busta-gallorum"},
+        {"type": "event", "id": "nika-riots"}
+      ]
+    },
+    {
+      "id": "antonina",
+      "name": "Antonina",
+      "alt_names": [],
+      "role": "Wife of Belisarius",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Antonina was sent by Belisarius to Constantinople to secure help from Justinian, trading on her close friendship with Theodora. Brownworth notes she had been intriguing alongside Theodora against Belisarius rather than truly helping the war effort, and arrived in the city to find Theodora already dead.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antonina_(wife_of_Belisarius)",
+      "portrait_url": null,
+      "transcript_lines": [[122, 125], [134, 135], [155, 172]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "theodora"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "isaac"},
+        {"type": "event", "id": "death-of-theodora"}
+      ]
+    },
+    {
+      "id": "john-the-general",
+      "name": "John",
+      "alt_names": [],
+      "role": "Byzantine general",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Described as an arrogant general who had previously been a thorn in Belisarius' side, John was sent to Italy with a sizable reinforcement force. Rather than cooperating with Belisarius to relieve Rome, he marched off independently to reconquer southern Italy, directly contributing to the fall of Rome to Totila.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_(nephew_of_Vitalian)",
+      "portrait_url": null,
+      "transcript_lines": [[107, 116]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "event", "id": "fall-of-rome-to-totila"}
+      ]
+    },
+    {
+      "id": "bessus",
+      "name": "Bessus",
+      "alt_names": [],
+      "role": "Commander of the Roman garrison",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "The commander of the garrison defending Rome against Totila, Bessus is portrayed as more interested in profiteering — selling food at exorbitant rates to starving citizens — than defending the city. He watched Belisarius' amphibious relief attempt from the walls without helping, then fled when the garrison betrayed the city.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bessas",
+      "portrait_url": null,
+      "transcript_lines": [[112, 114], [119, 128], [141, 142]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "totila"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "amphibious-attack-on-rome"},
+        {"type": "event", "id": "fall-of-rome-to-totila"}
+      ]
+    },
+    {
+      "id": "isaac",
+      "name": "Isaac",
+      "alt_names": [],
+      "role": "Byzantine subordinate commander",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Assigned by Belisarius to guard the camp, the reserves, and Antonina during the amphibious attack on Rome, Isaac was under strict orders not to move regardless of what happened. He disobeyed out of boredom, attacked the port city of Ostia, and got himself captured — causing Belisarius to abort the attack on Rome and rush back, costing the empire its last real chance to save the city.",
+      "wikipedia_url": null,
+      "portrait_url": null,
+      "transcript_lines": [[122, 139]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "antonina"},
+        {"type": "place", "id": "ostia"},
+        {"type": "event", "id": "amphibious-attack-on-rome"}
+      ]
+    },
+    {
+      "id": "germanus",
+      "name": "Germanus",
+      "alt_names": [],
+      "role": "Byzantine general, cousin of Justinian I",
+      "birth_year": null,
+      "death_year": 550,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Justinian's cousin and potential successor, chosen to replace Belisarius as commander in Italy — described as a good choice. He died of disease before ever setting foot in Italy, leaving the army leaderless and forcing Justinian to make the unexpected appointment of Narses.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Germanus_(Byzantine_general)",
+      "portrait_url": null,
+      "transcript_lines": [[183, 186]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "narses"},
+        {"type": "place", "id": "italy"}
+      ]
+    },
+    {
+      "id": "liberius",
+      "name": "Liberius",
+      "alt_names": ["Petrus Marcellinus Felix Liberius"],
+      "role": "Byzantine general",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "At least 85 years old when chosen by Justinian to lead the expedition to Spain with only a few hundred men, Liberius is described as having proved his worth as both a military commander and a shrewd diplomat. By playing the Romanized populace against the Arian nobility, he conquered about an eighth of Spain.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liberius_(praetorian_prefect)",
+      "portrait_url": null,
+      "transcript_lines": [[231, 237]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "place", "id": "spain"},
+        {"type": "event", "id": "reconquest-of-spain"}
+      ]
+    },
+    {
+      "id": "procopius",
+      "name": "Procopius",
+      "alt_names": [],
+      "role": "Byzantine historian",
+      "birth_year": 500,
+      "death_year": 565,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Cited by Brownworth as the source for the detail that only 500 citizens remained in Rome when Totila took possession of it, describing the city as an almost deserted capital.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Procopius",
+      "portrait_url": null,
+      "transcript_lines": [[143, 144]],
+      "related": [
+        {"type": "person", "id": "totila"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "fall-of-rome-to-totila"}
+      ]
+    },
+    {
+      "id": "john-julius-norwich",
+      "name": "John Julius Norwich",
+      "alt_names": [],
+      "role": "Historian",
+      "birth_year": 1929,
+      "death_year": 2018,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Quoted twice by Brownworth: first for his summation of Totila's appeal — that he \"promised an end to oppression\" — and again at the episode's close for his verdict that Justinian \"stamped the empire with the force of his own character\" more than any other monarch, and that \"centuries were to pass before it emerged from his shadow.\"",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/John_Julius_Norwich",
+      "portrait_url": null,
+      "transcript_lines": [[33, 34], [383, 385]],
+      "related": [
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "justinian-i"}
+      ]
+    },
+    {
+      "id": "anthemius-of-tralles",
+      "name": "Anthemius",
+      "alt_names": ["Anthemius of Tralles"],
+      "role": "Architect and mathematician",
+      "birth_year": null,
+      "death_year": 558,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "A Greek mathematician and engineer who so impressed Justinian with his work on two previous buildings that the emperor made him head of all building projects in Constantinople. Together with Isidore, he was given only two instructions: make it the most spectacular building in the world, and build it quickly.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anthemius_of_Tralles",
+      "portrait_url": null,
+      "transcript_lines": [[266, 273]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "isidore-of-miletus"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    },
+    {
+      "id": "isidore-of-miletus",
+      "name": "Isidore",
+      "alt_names": ["Isidore of Miletus"],
+      "role": "Architect",
+      "birth_year": null,
+      "death_year": null,
+      "reign_start": null,
+      "reign_end": null,
+      "summary": "Educated in Egypt and considered the finest architectural teacher of his day, Isidore was paired with Anthemius by Justinian to design and build the Hagia Sophia. Together they produced what Brownworth calls an unorthodox symphony of half domes and cupolas supporting the largest domed ceiling in the world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isidore_of_Miletus",
+      "portrait_url": null,
+      "transcript_lines": [[270, 273]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "anthemius-of-tralles"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    },
+    {
+      "id": "constantine-the-great",
+      "name": "Constantine",
+      "alt_names": ["Constantine the Great", "Constantine I"],
+      "role": "Roman Emperor",
+      "birth_year": 272,
+      "death_year": 337,
+      "reign_start": 306,
+      "reign_end": 337,
+      "summary": "Mentioned as the builder of the original Hagia Sophia — described as a small structure that lasted only 44 years before being destroyed in a riot. Also invoked via Justinian's boast \"Solomon, I have surpassed thee,\" which echoes Constantine's own founding legend.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+      "portrait_url": null,
+      "transcript_lines": [[257, 259]],
+      "related": [
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    },
+    {
+      "id": "theodosius-ii",
+      "name": "Theodosius II",
+      "alt_names": [],
+      "role": "Byzantine Emperor",
+      "birth_year": 401,
+      "death_year": 450,
+      "reign_start": 408,
+      "reign_end": 450,
+      "summary": "Built the second Hagia Sophia eleven years after the first was destroyed in a riot, described by Brownworth as a \"rather uninspired replica\" that nonetheless became the main church of the capital because of its location next to the great palace.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theodosius_II",
+      "portrait_url": null,
+      "transcript_lines": [[259, 261]],
+      "related": [
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    },
+    {
+      "id": "augustus",
+      "name": "Augustus",
+      "alt_names": ["Caesar Augustus", "Octavian"],
+      "role": "Roman Emperor",
+      "birth_year": -63,
+      "death_year": 14,
+      "reign_start": -27,
+      "reign_end": 14,
+      "summary": "Referenced for his famous boast of finding Rome a city of mud and brick and leaving it a city of marble, which Brownworth uses as the explicit parallel to Justinian's claim to have done the same for Constantinople. Also cited at the end as one of only two emperors who added more territory than Justinian.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Augustus",
+      "portrait_url": null,
+      "transcript_lines": [[243, 245], [360, 361]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "trajan"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "trajan",
+      "name": "Trajan",
+      "alt_names": ["Marcus Ulpius Traianus"],
+      "role": "Roman Emperor",
+      "birth_year": 53,
+      "death_year": 117,
+      "reign_start": 98,
+      "reign_end": 117,
+      "summary": "Mentioned alongside Augustus as one of only two emperors who added more territory to the empire than Justinian, serving as the ultimate benchmark for imperial conquest.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trajan",
+      "portrait_url": null,
+      "transcript_lines": [[360, 361]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "augustus"}
+      ]
+    },
+    {
+      "id": "solomon",
+      "name": "Solomon",
+      "alt_names": [],
+      "role": "Biblical king of Israel",
+      "birth_year": -1000,
+      "death_year": -931,
+      "reign_start": -970,
+      "reign_end": -931,
+      "summary": "Invoked through Justinian's famous exclamation upon entering the completed Hagia Sophia for the first time: \"Solomon, I have surpassed thee.\" The comparison to Solomon's Temple underpins the religious and imperial grandeur Justinian intended the church to embody.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Solomon",
+      "portrait_url": null,
+      "transcript_lines": [[304, 305]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "place", "id": "hagia-sophia"}
+      ]
+    },
+    {
+      "id": "justin-ii",
+      "name": "Justin II",
+      "alt_names": [],
+      "role": "Byzantine Emperor, nephew of Justinian I",
+      "birth_year": 520,
+      "death_year": 578,
+      "reign_start": 565,
+      "reign_end": 578,
+      "summary": "Justinian's nephew who became emperor the morning after Justinian's death, described as the first emperor to be crowned in the Hagia Sophia and acclaimed by the people. His accession marks the end of the age Brownworth frames as the last of the old Roman world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justin_II",
+      "portrait_url": null,
+      "transcript_lines": [[357, 359]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "death-of-justinian"}
+      ]
+    },
+    {
+      "id": "heraclius",
+      "name": "Heraclius",
+      "alt_names": [],
+      "role": "Byzantine Emperor",
+      "birth_year": 575,
+      "death_year": 641,
+      "reign_start": 610,
+      "reign_end": 641,
+      "summary": "Mentioned only in the closing teaser as the subject of the next episode — described as a man many thought would be the last emperor, who fought for every inch of his empire but finally ended the Persian threat.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heraclius",
+      "portrait_url": null,
+      "transcript_lines": [[386, 388]],
+      "related": []
+    }
+  ],
+  "places": [
+    {
+      "id": "italy",
+      "name": "Italy",
+      "modern_name": "Italy",
+      "modern_country": "Italy",
+      "lat": 42.5,
+      "lng": 12.5,
+      "first_year": null,
+      "summary": "The central theater of war throughout the episode. Brownworth tracks Italy's agonizing back-and-forth — nearly recaptured by Totila under the incompetent five-general command, contested during Belisarius' second campaign, and finally restored to Byzantine control by Narses — only to foreshadow that weakened resources made holding it impossible.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Italy",
+      "image_url": null,
+      "transcript_lines": [[5, 8], [22, 47], [77, 101]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "narses"},
+        {"type": "event", "id": "reconquest-of-italy"}
+      ]
+    },
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "modern_name": "Istanbul",
+      "modern_country": "Turkey",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "first_year": 330,
+      "summary": "The imperial capital that Justinian remade on a grand scale, most visibly through the Hagia Sophia. It is the city to which Antonina sailed seeking help, where Theodora died, and to which Belisarius was recalled; the Kutrigur Huns came within thirty miles of it in 559 before being turned back.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
+      "image_url": null,
+      "transcript_lines": [[145, 146], [159, 163], [244, 246], [309, 311], [324, 327]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "theodora"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"},
+        {"type": "event", "id": "kutrigur-hun-raid-559"}
+      ]
+    },
+    {
+      "id": "hagia-sophia",
+      "name": "Hagia Sophia",
+      "modern_name": "Hagia Sophia",
+      "modern_country": "Turkey",
+      "lat": 41.0086,
+      "lng": 28.9802,
+      "first_year": 537,
+      "summary": "The showpiece of Justinian's reign and the beating heart of the empire, described by Brownworth as the most spectacular church ever built — 160 feet high with a dome 107 feet across, its four-acre interior covered in gold mosaic. Built in just five years, ten months, and four days by architects Anthemius and Isidore using 10,000 workers; it held the distinction of world's largest church for 700 years, and was the site of Justin II's coronation.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "transcript_lines": [[246, 307], [357, 358]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "anthemius-of-tralles"},
+        {"type": "person", "id": "isidore-of-miletus"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "theodosius-ii"},
+        {"type": "person", "id": "justin-ii"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "construction-of-hagia-sophia"},
+        {"type": "event", "id": "nika-riots"}
+      ]
+    },
+    {
+      "id": "naples",
+      "name": "Naples",
+      "modern_name": "Naples",
+      "modern_country": "Italy",
+      "lat": 40.8518,
+      "lng": 14.2681,
+      "first_year": null,
+      "summary": "One of the last four Italian cities holding out against Totila, Naples was slowly starved into surrender while none of the five Byzantine generals lifted a finger to help. When it fell in May 543, Totila's merciful treatment of the garrison and citizens — providing ships, horses, and carefully rationed food — broadcast his image as champion of the people.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naples",
+      "image_url": null,
+      "transcript_lines": [[48, 70]],
+      "related": [
+        {"type": "person", "id": "totila"},
+        {"type": "event", "id": "fall-of-naples-543"}
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "modern_name": "Rome",
+      "modern_country": "Italy",
+      "lat": 41.9028,
+      "lng": 12.4964,
+      "first_year": null,
+      "summary": "Rome changed hands multiple times in the episode — defended unsuccessfully by the corrupt Bessus, then lost when the garrison betrayed the city and Totila took possession of an almost deserted ruin of 500 people; Belisarius then swept in and repaired it; Totila recaptured it again; and finally Narses restored it to Byzantine control for the fifth time in the war.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
+      "image_url": null,
+      "transcript_lines": [[48, 48], [110, 148], [199, 218]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "bessus"},
+        {"type": "person", "id": "narses"},
+        {"type": "place", "id": "tiber-river"},
+        {"type": "event", "id": "amphibious-attack-on-rome"},
+        {"type": "event", "id": "fall-of-rome-to-totila"},
+        {"type": "event", "id": "battle-of-busta-gallorum"}
+      ]
+    },
+    {
+      "id": "ravenna",
+      "name": "Ravenna",
+      "modern_name": "Ravenna",
+      "modern_country": "Italy",
+      "lat": 44.4184,
+      "lng": 12.2035,
+      "first_year": null,
+      "summary": "One of the four Italian cities still defying Totila in 542, and the site where Narses paused to distribute back pay and gather more troops before marching on Rome. Brownworth also notes there are famous mosaics of Justinian and Theodora in Ravenna where the modern visitor can come face to face with the couple.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ravenna",
+      "image_url": null,
+      "transcript_lines": [[48, 48], [206, 208], [251, 252]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "theodora"},
+        {"type": "person", "id": "narses"},
+        {"type": "event", "id": "battle-of-busta-gallorum"}
+      ]
+    },
+    {
+      "id": "florence",
+      "name": "Florence",
+      "modern_name": "Florence",
+      "modern_country": "Italy",
+      "lat": 43.7696,
+      "lng": 11.2558,
+      "first_year": null,
+      "summary": "Listed as one of the four major Italian cities — alongside Rome, Ravenna, and Naples — still defying Totila by late summer 542. No further detail is given.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Florence",
+      "image_url": null,
+      "transcript_lines": [[48, 49]],
+      "related": [
+        {"type": "person", "id": "totila"}
+      ]
+    },
+    {
+      "id": "sicily",
+      "name": "Sicily",
+      "modern_name": "Sicily",
+      "modern_country": "Italy",
+      "lat": 37.5999,
+      "lng": 14.0154,
+      "first_year": null,
+      "summary": "The island where Justinian's incompetent overall commander sailed and then refused to leave, even as Naples was being starved into submission — used by Brownworth to illustrate the paralysis of Byzantine command in Italy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sicily",
+      "image_url": null,
+      "transcript_lines": [[53, 54]],
+      "related": [
+        {"type": "person", "id": "justinian-i"}
+      ]
+    },
+    {
+      "id": "ostia",
+      "name": "Ostia",
+      "modern_name": "Ostia Antica",
+      "modern_country": "Italy",
+      "lat": 41.7553,
+      "lng": 12.2897,
+      "first_year": null,
+      "summary": "The port city attacked by Isaac out of boredom in violation of Belisarius' strict orders. Isaac's capture there caused Belisarius to abort the amphibious attack on Rome and rush back to camp, squandering the last real chance to save the city.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostia_Antica",
+      "image_url": null,
+      "transcript_lines": [[137, 139]],
+      "related": [
+        {"type": "person", "id": "isaac"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "event", "id": "amphibious-attack-on-rome"}
+      ]
+    },
+    {
+      "id": "tiber-river",
+      "name": "Tiber",
+      "modern_name": "Tiber River",
+      "modern_country": "Italy",
+      "lat": 41.8902,
+      "lng": 12.4765,
+      "first_year": null,
+      "summary": "The river along which Belisarius launched his bold amphibious relief of Rome — half his men marching on the southern bank and half sailing upstream — before he was turned back by the false news of Isaac's capture.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiber",
+      "image_url": null,
+      "transcript_lines": [[120, 132]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "totila"},
+        {"type": "event", "id": "amphibious-attack-on-rome"}
+      ]
+    },
+    {
+      "id": "africa",
+      "name": "Africa (Byzantine)",
+      "modern_name": "North Africa",
+      "modern_country": null,
+      "lat": 33.0,
+      "lng": 10.0,
+      "first_year": null,
+      "summary": "Mentioned as the theater of an earlier reconquest (discussed in a previous episode), and again as the source of new trouble in this episode: while the plague weakened the empire, the less-affected Moors invaded, diverting resources from Italy. Brownworth also notes Justinian's capture of the Vandal treasury here helped finance the overall reconquest.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Praetorian_prefecture_of_Africa",
+      "image_url": null,
+      "transcript_lines": [[5, 6], [80, 83], [362, 364]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "event", "id": "moors-invasion-of-africa"}
+      ]
+    },
+    {
+      "id": "mesopotamia",
+      "name": "Byzantine Mesopotamia",
+      "modern_name": "Southeastern Turkey / Northern Iraq / Syria",
+      "modern_country": null,
+      "lat": 35.5,
+      "lng": 40.0,
+      "first_year": null,
+      "summary": "The region invaded by the Persians in 544 after they recovered from the plague. The Persians were bought off for 28,000 gold pieces per year, demonstrating the financial and military strain on the empire during the Italian campaign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mesopotamia",
+      "image_url": null,
+      "transcript_lines": [[84, 87]],
+      "related": [
+        {"type": "event", "id": "persian-invasion-of-mesopotamia-544"}
+      ]
+    },
+    {
+      "id": "persia",
+      "name": "Persia",
+      "modern_name": "Iran",
+      "modern_country": "Iran",
+      "lat": 32.0,
+      "lng": 53.0,
+      "first_year": null,
+      "summary": "The Persians recovered from the plague in 544 and launched an invasion of Byzantine Mesopotamia, extracting 28,000 gold pieces per year to stand down. Brownworth presents the Persian front as one of several simultaneous crises draining the empire during the Italian campaign.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sasanian_Empire",
+      "image_url": null,
+      "transcript_lines": [[84, 87], [386, 388]],
+      "related": [
+        {"type": "place", "id": "mesopotamia"},
+        {"type": "event", "id": "persian-invasion-of-mesopotamia-544"}
+      ]
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "modern_name": "Spain",
+      "modern_country": "Spain",
+      "lat": 40.0,
+      "lng": -4.0,
+      "first_year": null,
+      "summary": "Two emissaries from an orthodox faction in Spain appealed to Justinian for help against their Arian king. With only a few hundred men and the octogenarian general Liberius, Justinian seized the opportunity and conquered about an eighth of Spain — Brownworth marveling that almost any other ruler would have dismissed the idea as foolhardy.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spania",
+      "image_url": null,
+      "transcript_lines": [[222, 237]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "liberius"},
+        {"type": "event", "id": "reconquest-of-spain"}
+      ]
+    },
+    {
+      "id": "ephesus",
+      "name": "Ephesus",
+      "modern_name": "Selçuk",
+      "modern_country": "Turkey",
+      "lat": 37.9393,
+      "lng": 27.3417,
+      "first_year": null,
+      "summary": "The source of the green marble used in the Hagia Sophia, cited by Brownworth as one example of how the building drew materials from across the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ephesus",
+      "image_url": null,
+      "transcript_lines": [[281, 282]],
+      "related": [
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    },
+    {
+      "id": "sparta",
+      "name": "Sparta",
+      "modern_name": "Sparta",
+      "modern_country": "Greece",
+      "lat": 37.075,
+      "lng": 22.4299,
+      "first_year": null,
+      "summary": "One of several sources of precious stone used in the construction of the Hagia Sophia, mentioned alongside Egypt, Libya, and North Africa to illustrate the empire-wide scope of the building project.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sparta",
+      "image_url": null,
+      "transcript_lines": [[282, 283]],
+      "related": [
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    },
+    {
+      "id": "temple-of-the-sun-rome",
+      "name": "Temple of the Sun",
+      "modern_name": "Temple of Sol Invictus (Rome)",
+      "modern_country": "Italy",
+      "lat": 41.8992,
+      "lng": 12.4867,
+      "first_year": null,
+      "summary": "The source of eight columns incorporated into the Hagia Sophia, used by Brownworth to illustrate the scale of Justinian's ambition in drawing building materials from the most venerable monuments of the old Roman world.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Temple_of_the_Sun_(Rome)",
+      "image_url": null,
+      "transcript_lines": [[281, 282]],
+      "related": [
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "reconquest-of-italy",
+      "name": "Byzantine Reconquest of Italy (Gothic War)",
+      "year": 535,
+      "end_year": 554,
+      "category": "battle",
+      "summary": "The overarching military campaign that spans the entire episode. Brownworth traces the war's trajectory from near-victory under Belisarius, through collapse under the incompetent five-general command and Totila's resurgence, to final success under Narses — framing it as a victory that came at too high a cost in men and treasure to be sustainable.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gothic_War_(535%E2%80%93554)",
+      "image_url": null,
+      "location_id": "italy",
+      "transcript_lines": [[5, 8], [77, 182], [196, 221]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "narses"},
+        {"type": "place", "id": "italy"}
+      ]
+    },
+    {
+      "id": "theodora-disgraces-belisarius",
+      "name": "Theodora Disgraces Belisarius and Splits Command",
+      "year": 540,
+      "end_year": null,
+      "category": "political",
+      "summary": "Fearing that Belisarius — who had been offered the Ostrogothic throne — might be tempted by power, Theodora persuaded Justinian to disgrace him and replace him with five co-equal generals. Brownworth treats this as the single decision that undid the near-complete conquest of Italy and opened the door for Totila.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[11, 23]],
+      "related": [
+        {"type": "person", "id": "theodora"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "event", "id": "reconquest-of-italy"}
+      ]
+    },
+    {
+      "id": "fall-of-naples-543",
+      "name": "Fall of Naples to Totila",
+      "year": 543,
+      "end_year": null,
+      "category": "battle",
+      "summary": "After a prolonged siege in which no Byzantine general helped the city, Naples surrendered to Totila in May 543. Totila's merciful treatment — letting the garrison leave with ships and horses, and carefully nursing the starving citizens back to health — was a deliberate propaganda victory that cemented his image as liberator.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Totila#Siege_of_Naples",
+      "image_url": null,
+      "location_id": "naples",
+      "transcript_lines": [[48, 74]],
+      "related": [
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "place", "id": "naples"}
+      ]
+    },
+    {
+      "id": "plague-of-justinian",
+      "name": "Plague of Justinian",
+      "year": 541,
+      "end_year": 549,
+      "category": "natural",
+      "summary": "Mentioned as a devastating backdrop that decimated the Byzantine and Persian empires while barely affecting the more nomadic Moors, enabling the Moorish invasion of Africa. Brownworth returns to it at the episode's close, estimating it killed one-fourth of the population and made Justinian's reconquests ultimately impossible to hold.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Justinian",
+      "image_url": null,
+      "location_id": null,
+      "transcript_lines": [[80, 81], [376, 380]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "event", "id": "moors-invasion-of-africa"},
+        {"type": "event", "id": "persian-invasion-of-mesopotamia-544"}
+      ]
+    },
+    {
+      "id": "moors-invasion-of-africa",
+      "name": "Moorish Invasion of North Africa",
+      "year": 543,
+      "end_year": null,
+      "category": "battle",
+      "summary": "While the plague decimated Byzantine forces, the less-affected Moors took advantage of a mutiny by unpaid frontier troops to invade North Africa, diverting valuable funds and manpower from the Italian campaign at a critical moment.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "africa",
+      "transcript_lines": [[80, 83]],
+      "related": [
+        {"type": "event", "id": "plague-of-justinian"},
+        {"type": "place", "id": "africa"}
+      ]
+    },
+    {
+      "id": "persian-invasion-of-mesopotamia-544",
+      "name": "Persian Invasion of Byzantine Mesopotamia",
+      "year": 544,
+      "end_year": 545,
+      "category": "battle",
+      "summary": "After recovering from the plague in 544, the Persians launched an invasion of Byzantine Mesopotamia. Following inconclusive battles, they were bought off at 28,000 gold pieces per year — a humiliating arrangement that added to the empire's severe financial strain and furthered the dangerous precedent of paying protection money.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "mesopotamia",
+      "transcript_lines": [[84, 87]],
+      "related": [
+        {"type": "place", "id": "mesopotamia"},
+        {"type": "place", "id": "persia"},
+        {"type": "event", "id": "plague-of-justinian"}
+      ]
+    },
+    {
+      "id": "amphibious-attack-on-rome",
+      "name": "Belisarius' Amphibious Attack on Rome",
+      "year": 545,
+      "end_year": null,
+      "category": "battle",
+      "summary": "Belisarius' daring plan to relieve Rome from Totila's siege — marching half his force along the southern bank of the Tiber while the other half sailed upstream, smashing a Gothic chain across the river. The attack was aborted when a false message reported Isaac captured, causing Belisarius to rush back to camp and abandon the city to its fate.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "tiber-river",
+      "transcript_lines": [[117, 139]],
+      "related": [
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "bessus"},
+        {"type": "person", "id": "isaac"},
+        {"type": "place", "id": "rome"},
+        {"type": "place", "id": "tiber-river"},
+        {"type": "place", "id": "ostia"}
+      ]
+    },
+    {
+      "id": "fall-of-rome-to-totila",
+      "name": "Fall of Rome to Totila",
+      "year": 546,
+      "end_year": null,
+      "category": "battle",
+      "summary": "A group of the Roman garrison — possibly veterans of the Naples campaign — betrayed the city to Totila; Bessus fled and Totila took possession of an almost-deserted ruin of only 500 citizens according to Procopius. Totila knocked down sections of the walls and abandoned it, only for Belisarius to sweep in and repair them.",
+      "wikipedia_url": null,
+      "image_url": null,
+      "location_id": "rome",
+      "transcript_lines": [[139, 149]],
+      "related": [
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "bessus"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "procopius"},
+        {"type": "place", "id": "rome"},
+        {"type": "event", "id": "amphibious-attack-on-rome"}
+      ]
+    },
+    {
+      "id": "death-of-theodora",
+      "name": "Death of Theodora",
+      "year": 548,
+      "end_year": null,
+      "category": "political",
+      "summary": "Theodora died of what Brownworth describes as probably cancer, leaving Justinian inconsolable. Her death had the paradoxical positive effect of freeing Justinian from her jealous intrigues against Belisarius — he promptly recalled the general and restored him to full favor, installing him as closest advisor and erecting a gilded statue of him.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theodora_(wife_of_Justinian_I)",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[159, 175]],
+      "related": [
+        {"type": "person", "id": "theodora"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "person", "id": "antonina"}
+      ]
+    },
+    {
+      "id": "battle-of-busta-gallorum",
+      "name": "Battle of Busta Gallorum (Narses defeats Totila)",
+      "year": 552,
+      "end_year": null,
+      "category": "battle",
+      "summary": "The decisive encounter of the Gothic War. Totila attacked first with cavalry but was repulsed by Byzantine archers; the fleeing cavalry trampled their own troops. Totila himself was killed in the chaos along with 6,000 of his soldiers, ending effective Gothic resistance. The Goths elected another king who held out only a few more months before being killed in October.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Busta_Gallorum",
+      "image_url": null,
+      "location_id": "italy",
+      "transcript_lines": [[207, 216]],
+      "related": [
+        {"type": "person", "id": "narses"},
+        {"type": "person", "id": "totila"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "place", "id": "italy"},
+        {"type": "place", "id": "rome"}
+      ]
+    },
+    {
+      "id": "reconquest-of-spain",
+      "name": "Byzantine Conquest of Southern Spain",
+      "year": 552,
+      "end_year": null,
+      "category": "political",
+      "summary": "Two emissaries from orthodox Spain appealed to Justinian for help against their Arian king. With only a few hundred men under the octogenarian general Liberius, Justinian seized the opportunity; Liberius played the Romanized populace against the Arian nobility and conquered about an eighth of Spain — described as an excellent base for future conquest that never came.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spania",
+      "image_url": null,
+      "location_id": "spain",
+      "transcript_lines": [[222, 237]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "liberius"},
+        {"type": "place", "id": "spain"}
+      ]
+    },
+    {
+      "id": "construction-of-hagia-sophia",
+      "name": "Construction of the Hagia Sophia",
+      "year": 532,
+      "end_year": 537,
+      "category": "cultural",
+      "summary": "Justinian commissioned Anthemius and Isidore to build a church surpassing all others after the previous Hagia Sophia burned in the Nika Riots. Employing 10,000 workers split into two racing teams, they completed it in five years, ten months, and four days — the largest church in the world for 700 years, its gold-mosaic interior famously causing Justinian to exclaim 'Solomon, I have surpassed thee.'",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "location_id": "hagia-sophia",
+      "transcript_lines": [[246, 308]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "anthemius-of-tralles"},
+        {"type": "person", "id": "isidore-of-miletus"},
+        {"type": "person", "id": "constantine-the-great"},
+        {"type": "person", "id": "theodosius-ii"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "event", "id": "nika-riots"},
+        {"type": "event", "id": "dome-collapse-558"}
+      ]
+    },
+    {
+      "id": "dome-collapse-558",
+      "name": "Collapse of the Hagia Sophia Dome",
+      "year": 558,
+      "end_year": 563,
+      "category": "natural",
+      "summary": "In 558 the dome of the Hagia Sophia collapsed, and Justinian spent the next five years repairing it — Brownworth noting this was no ordinary repair project given the church's status as the beating heart of the empire.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+      "image_url": null,
+      "location_id": "hagia-sophia",
+      "transcript_lines": [[246, 249]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    },
+    {
+      "id": "kutrigur-hun-raid-559",
+      "name": "Kutrigur Hun Raid on Constantinople",
+      "year": 559,
+      "end_year": null,
+      "category": "battle",
+      "summary": "A group of Huns called the Kutrigurs (Khatrigers), concluding the empire was vulnerable, overran the frontier and came within 30 miles of Constantinople. Justinian recalled the retired Belisarius who, with only a few hundred improvised guards and volunteers, ambushed and crippled the Hunnic army; Justinian then personally assumed command and bribed them to leave, then paid a rival tribe to destroy the Kutrigurs.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kutrigurs",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[322, 346]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "belisarius"},
+        {"type": "place", "id": "constantinople"}
+      ]
+    },
+    {
+      "id": "nika-riots",
+      "name": "Nika Riots",
+      "year": 532,
+      "end_year": null,
+      "category": "political",
+      "summary": "Referenced twice in the episode: once as the event in which the original Hagia Sophia was burned, and once as the only prior military experience of Narses — who helped suppress the riots. The burning of the Hagia Sophia is what gave Justinian the opportunity to build the far grander replacement.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nika_riots",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[193, 194], [255, 256]],
+      "related": [
+        {"type": "person", "id": "narses"},
+        {"type": "person", "id": "justinian-i"},
+        {"type": "place", "id": "hagia-sophia"},
+        {"type": "event", "id": "construction-of-hagia-sophia"}
+      ]
+    },
+    {
+      "id": "death-of-justinian",
+      "name": "Death of Justinian I",
+      "year": 565,
+      "end_year": null,
+      "category": "political",
+      "summary": "Justinian died of a heart attack on November 14, 565, at the age of 83, eight months after Belisarius. Brownworth frames his death as the end of an age — after 38 years on the throne, never again would the empire be ruled by such a visionary, nor by a man whose first language was Latin.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
+      "image_url": null,
+      "location_id": "constantinople",
+      "transcript_lines": [[355, 374]],
+      "related": [
+        {"type": "person", "id": "justinian-i"},
+        {"type": "person", "id": "justin-ii"},
+        {"type": "place", "id": "constantinople"},
+        {"type": "place", "id": "hagia-sophia"}
+      ]
+    }
+  ]
+}
