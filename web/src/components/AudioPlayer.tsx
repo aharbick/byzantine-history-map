@@ -15,7 +15,13 @@ export default function AudioPlayer() {
       a.pause();
       return;
     }
-    a.src = audioUrl(playingEpisode);
+    // The <source> child carries the URL declaratively; calling load() makes
+    // the audio element re-read its children. Using <source type="audio/mpeg">
+    // (instead of setting a.src directly) gives iOS Safari an explicit format
+    // hint — it can refuse sources whose response Content-Type doesn't match
+    // a known audio MIME, but a typed <source> sometimes nudges it into
+    // playing octet-stream responses (e.g. GitHub Releases assets).
+    a.load();
     a.play().catch(() => {
       /* autoplay can fail before user gesture; ignore */
     });
@@ -23,6 +29,7 @@ export default function AudioPlayer() {
 
   if (playingEpisode == null) return null;
   const ep = episodesById[playingEpisode];
+  const src = audioUrl(playingEpisode);
 
   return (
     <div
@@ -43,7 +50,14 @@ export default function AudioPlayer() {
           ✕
         </button>
       </div>
-      <audio ref={audioRef} controls className="w-64 sm:w-72 h-8" />
+      <audio
+        ref={audioRef}
+        controls
+        preload="none"
+        className="w-64 sm:w-72 h-8"
+      >
+        <source src={src} type="audio/mpeg" />
+      </audio>
     </div>
   );
 }
