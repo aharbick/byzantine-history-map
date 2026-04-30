@@ -278,5 +278,12 @@ export const AUDIO_BASE_URL = process.env.AUDIO_BASE_URL || "/audio";
 export function audioUrl(episodeNum: number): string {
   const ep = episodesById[episodeNum];
   if (!ep) return "";
-  return `${AUDIO_BASE_URL}/${ep.audio_file}`;
+  let filename = ep.audio_file;
+  // GitHub Releases auto-renames asset filenames, replacing spaces with dots.
+  // For any other host (Cloudflare R2, S3, the local symlink) we keep the
+  // canonical filenames with spaces — they're URL-safe via standard encoding.
+  if (/(?:github\.com|githubusercontent\.com)/.test(AUDIO_BASE_URL)) {
+    filename = filename.replace(/ /g, ".");
+  }
+  return `${AUDIO_BASE_URL}/${filename}`;
 }
