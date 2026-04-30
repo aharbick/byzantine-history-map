@@ -32,3 +32,6 @@ build/
 # .local.json files are user-specific)
 .claude/settings.local.json
 
+# Claude Code worktrees (created by /worktree; never tracked content)
+.claude/worktrees/
+

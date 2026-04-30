@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useApp } from "@/lib/context";
 import { allEntities, timelineYear } from "@/lib/data";
 import type { AnyEntity } from "@/lib/types";
@@ -31,6 +31,38 @@ export default function Timeline({ minYear, maxYear }: Props) {
   const totalYears = maxYear - minYear;
   const trackWidthPx = totalYears * PIXELS_PER_YEAR;
 
+  // Mirror currentYear into a ref so event handlers can read the latest value
+  // without listing it as a dep (which would otherwise tear down + re-bind
+  // every listener on every year change — 60+ times/sec during a drag).
+  const currentYearRef = useRef(currentYear);
+  currentYearRef.current = currentYear;
+
+  // rAF-coalesced delta accumulator: many input events per frame collapse into
+  // a single React state update. We accumulate deltas (not absolute years) so
+  // multiple events between frames don't clobber each other — each event adds
+  // to the pending year rather than overwriting it.
+  const pendingYearRef = useRef<number | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const queueYearDelta = useCallback(
+    (deltaYears: number) => {
+      const base = pendingYearRef.current ?? currentYearRef.current;
+      pendingYearRef.current = clamp(base + deltaYears, minYear, maxYear);
+      if (rafRef.current != null) return;
+      rafRef.current = requestAnimationFrame(() => {
+        rafRef.current = null;
+        const y = pendingYearRef.current;
+        pendingYearRef.current = null;
+        if (y != null) setCurrentYear(y);
+      });
+    },
+    [minYear, maxYear, setCurrentYear],
+  );
+  useEffect(() => {
+    return () => {
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
+
   useEffect(() => {
     if (!trackRef.current) return;
     const ro = new ResizeObserver((entries) => {
@@ -55,15 +87,15 @@ export default function Timeline({ minYear, maxYear }: Props) {
       if (t?.closest("aside, audio, .byz-allow-scroll")) return;
       e.preventDefault();
       const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
-      setCurrentYear(
-        clamp(currentYear + delta * 0.25, minYear, maxYear),
-      );
+      queueYearDelta(delta * 0.25);
     }
     window.addEventListener("wheel", onWheel, { passive: false });
     return () => window.removeEventListener("wheel", onWheel);
-  }, [currentYear, minYear, maxYear, setCurrentYear]);
+  }, [queueYearDelta]);
 
   // Drag-to-scrub via Pointer Events — works for mouse, touch, and pen.
+  // On iOS Safari, pointer events are emulated from touch, so this single
+  // handler covers both mouse drags and finger drags on the strip.
   useEffect(() => {
     if (!dragging) return;
     function onMove(e: PointerEvent) {
@@ -75,9 +107,7 @@ export default function Timeline({ minYear, maxYear }: Props) {
       const dx = last - e.clientX;
       dragLastXRef.current = e.clientX;
       if (!dx) return;
-      setCurrentYear(
-        clamp(currentYear + dx / PIXELS_PER_YEAR, minYear, maxYear),
-      );
+      queueYearDelta(dx / PIXELS_PER_YEAR);
     }
     function onUp() {
       setDragging(false);
@@ -91,16 +121,21 @@ export default function Timeline({ minYear, maxYear }: Props) {
       window.removeEventListener("pointerup", onUp);
       window.removeEventListener("pointercancel", onUp);
     };
-  }, [dragging, currentYear, minYear, maxYear, setCurrentYear]);
+  }, [dragging, queueYearDelta]);
 
-  // Touch-swipe gesture anywhere on the page (besides interactive controls)
-  // so mobile users can scrub even without dragging the strip itself.
+  // Touch-swipe gesture anywhere on the page (besides interactive controls or
+  // the timeline strip itself — those are already covered by the pointer
+  // handler above; running both would double-fire on iOS).
   useEffect(() => {
     let lastX: number | null = null;
     let active = false;
     function isInteractive(target: EventTarget | null): boolean {
       if (!(target instanceof Element)) return false;
-      return !!target.closest("aside, button, .maplibregl-canvas-container");
+      // Strip is handled by pointer events; map canvas pans the map; aside &
+      // buttons are interactive UI.
+      return !!target.closest(
+        "aside, button, .maplibregl-canvas-container, [data-byz-strip]",
+      );
     }
     function onTouchStart(e: TouchEvent) {
       if (e.touches.length !== 1) return;
@@ -118,7 +153,7 @@ export default function Timeline({ minYear, maxYear }: Props) {
       const dx = lastX - x;
       lastX = x;
       if (!dx) return;
-      setCurrentYear(clamp(currentYear + dx / PIXELS_PER_YEAR, minYear, maxYear));
+      queueYearDelta(dx / PIXELS_PER_YEAR);
       e.preventDefault();
     }
     function onTouchEnd() {
@@ -135,7 +170,7 @@ export default function Timeline({ minYear, maxYear }: Props) {
       window.removeEventListener("touchend", onTouchEnd);
       window.removeEventListener("touchcancel", onTouchEnd);
     };
-  }, [currentYear, minYear, maxYear, setCurrentYear]);
+  }, [queueYearDelta]);
 
   const ticks = useMemo(() => {
     const list: { year: number; major: boolean }[] = [];
@@ -168,6 +203,7 @@ export default function Timeline({ minYear, maxYear }: Props) {
 
       <div
         ref={stripRef}
+        data-byz-strip
         className="relative h-24 bg-gradient-to-t from-byz-ink/95 via-byz-purpleDeep/80 to-transparent overflow-hidden cursor-grab active:cursor-grabbing touch-none"
         onPointerDown={(e) => {
           // capture so subsequent moves on this pointer route here even if the
