@@ -67,25 +67,48 @@ export default function AudioPlayer() {
   // point Mobile Safari has already revoked playback authorization. So all
   // user-initiated play paths funnel through this synchronous helper, and
   // the [playingEpisode] effect below only handles the "no episode" cleanup.
+  //
+  // Source resolution: the GitHub Releases URL serves audio with
+  // `Content-Type: application/octet-stream`, which Mobile Safari refuses to
+  // play when set via `audio.src`. Adding a `<source type="audio/mpeg">`
+  // child overrides the response type and lets iOS accept the bytes.
+  function setAudioSource(a: HTMLAudioElement, ep: number) {
+    while (a.firstChild) a.removeChild(a.firstChild);
+    const src = document.createElement("source");
+    src.src = audioUrl(ep);
+    src.type = "audio/mpeg";
+    a.appendChild(src);
+    a.load();
+  }
+
   function playNow(ep: number, seek?: AudioSeekHint) {
     const a = audioRef.current;
     if (!a) return;
 
     if (loadedEpisodeRef.current !== ep) {
       loadedEpisodeRef.current = ep;
-      a.src = audioUrl(ep);
-      a.load();
+      setAudioSource(a, ep);
     }
 
-    // Fire play() FIRST so it's the first audio op inside this gesture —
-    // iOS attaches the activation flag here. Seeking before play sometimes
-    // resets metadata loading on Mobile Safari and re-blocks autoplay.
-    const playPromise = a.play();
-    if (playPromise && typeof playPromise.catch === "function") {
-      playPromise.catch(() => {
-        /* still blocked — nothing else we can do from here */
-      });
-    }
+    // Try play() inline first — iOS attaches the user-gesture flag here. If
+    // metadata isn't ready yet (just-set source), play() may reject; in that
+    // case retry on `loadedmetadata`, which iOS treats as part of the
+    // gesture chain because the load() that triggered it was gesture-init.
+    const tryPlay = () => {
+      const p = a.play();
+      if (p && typeof p.catch === "function") {
+        p.catch(() => {
+          a.addEventListener(
+            "loadedmetadata",
+            () => {
+              a.play().catch(() => {});
+            },
+            { once: true },
+          );
+        });
+      }
+    };
+    tryPlay();
 
     if (seek) {
       const applySeek = () => {
@@ -107,13 +130,8 @@ export default function AudioPlayer() {
       }
     }
 
-    // Update React state for UI. The [playingEpisode] effect will see the
-    // change but won't try to play() — that's already in flight.
     playEpisode(ep);
     setCuedEpisode(null);
-    // Save the last-episode pointer immediately so a refresh on iOS resumes
-    // even if iOS blocked the play() call (the persistence interval below
-    // only fires while audio is actually playing).
     writeLastEpisode(ep);
   }
 
@@ -263,12 +281,12 @@ export default function AudioPlayer() {
     if (playingEpisode != null) return;
     const last = readLastEpisode();
     if (last && episodesById[last]) {
-      // Cue (don't auto-play): set src + load, then pause immediately.
+      // Cue (don't auto-play): use <source type="audio/mpeg"> so Mobile
+      // Safari accepts the GitHub Releases octet-stream response.
       const a = audioRef.current;
       if (!a) return;
       loadedEpisodeRef.current = last;
-      a.src = audioUrl(last);
-      a.load();
+      setAudioSource(a, last);
       // With preload="metadata", duration is fetched automatically — but
       // also seed the saved time once it arrives so the scrubber lands at
       // the user's last position.
