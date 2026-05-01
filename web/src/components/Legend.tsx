@@ -4,10 +4,15 @@ import clsx from "clsx";
 import { useApp } from "@/lib/context";
 import type { KindFilter } from "@/lib/context";
 
-const ROWS: { key: keyof KindFilter; color: string; label: string }[] = [
-  { key: "person", color: "#e7c873", label: "People" },
-  { key: "place", color: "#3a6b8c", label: "Places" },
-  { key: "event", color: "#b44646", label: "Events" },
+const ROWS: {
+  key: keyof KindFilter;
+  color: string;
+  ringColor: string;
+  label: string;
+}[] = [
+  { key: "person", color: "#e7c873", ringColor: "#876928", label: "People" },
+  { key: "place", color: "#3a6b8c", ringColor: "#213c4f", label: "Places" },
+  { key: "event", color: "#b44646", ringColor: "#5d2424", label: "Events" },
 ];
 
 export default function Legend() {
@@ -17,7 +22,7 @@ export default function Legend() {
 
   return (
     <div
-      className="absolute left-3 sm:left-4 z-30 flex flex-col items-start gap-1 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/90 px-3 py-2 text-sm font-display tracking-wider"
+      className="absolute left-3 sm:left-4 z-30 flex flex-col items-start gap-1 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-2 text-sm font-display tracking-wider"
       style={{ bottom: 110 }}
     >
         {ROWS.map((row) => {
@@ -35,10 +40,13 @@ export default function Legend() {
             >
               <span
                 className={clsx(
-                  "inline-block w-2.5 h-2.5 rounded-full ring-1 ring-byz-ink transition-opacity",
+                  "inline-block w-2.5 h-2.5 rounded-full transition-opacity",
                   !on && "opacity-30",
                 )}
-                style={{ background: row.color }}
+                style={{
+                  background: row.color,
+                  boxShadow: `0 0 0 1.5px ${row.ringColor}`,
+                }}
               />
               <span>{row.label}</span>
             </button>

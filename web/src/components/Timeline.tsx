@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useApp } from "@/lib/context";
 import { allEntities, timelineYear } from "@/lib/data";
 import type { AnyEntity } from "@/lib/types";
+import TimelineMiniMap from "./TimelineMiniMap";
 
 interface Props {
   minYear: number;
@@ -18,6 +19,15 @@ const KIND_COLOR: Record<AnyEntity["kind"], string> = {
   person: "#e7c873",
   place: "#3a6b8c",
   event: "#b44646",
+};
+
+// Darker shade of each kind, used as the dot's outline so the ring reads as
+// "the same color, deepened" rather than a generic black border. Same hue,
+// roughly half the lightness.
+const KIND_COLOR_DARK: Record<AnyEntity["kind"], string> = {
+  person: "#876928",
+  place: "#213c4f",
+  event: "#5d2424",
 };
 
 export default function Timeline({ minYear, maxYear }: Props) {
@@ -194,9 +204,14 @@ export default function Timeline({ minYear, maxYear }: Props) {
 
   return (
     <div className="absolute bottom-0 left-0 right-0 z-20 select-none">
-      {/* Year readout, absolutely centered above the cursor line. */}
-      <div className="relative h-9">
-        <div className="absolute left-1/2 -translate-x-1/2 top-0 rounded-full bg-byz-purpleDeep/90 border border-byz-gold/60 px-4 py-1 text-byz-goldLight font-display text-sm tracking-wider whitespace-nowrap">
+      {/* Mini-map: transparent histogram overlaying the map directly.
+          No background — geography reads through. */}
+      <TimelineMiniMap minYear={minYear} maxYear={maxYear} />
+
+      {/* Year readout straddles the seam between mini-map and main strip,
+          tying the two regions together visually. */}
+      <div className="relative h-0">
+        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 rounded-full bg-byz-purpleDeep/95 border border-byz-gold/60 px-4 py-1 text-byz-goldLight font-display text-sm tracking-wider whitespace-nowrap shadow-card">
           {formatYear(currentYear)}
         </div>
       </div>
@@ -204,7 +219,10 @@ export default function Timeline({ minYear, maxYear }: Props) {
       <div
         ref={stripRef}
         data-byz-strip
-        className="relative h-24 bg-gradient-to-t from-byz-ink/95 via-byz-purpleDeep/80 to-transparent overflow-hidden cursor-grab active:cursor-grabbing touch-none"
+        // Flat surface (no gradient), but at moderate alpha so the map still
+        // reads through faintly — keeps the strip distinct from the fully
+        // transparent mini-map above without feeling like a heavy slab.
+        className="relative h-24 bg-byz-purpleDeep/70 overflow-hidden cursor-grab active:cursor-grabbing touch-none"
         onPointerDown={(e) => {
           // capture so subsequent moves on this pointer route here even if the
           // pointer leaves the element
@@ -242,7 +260,7 @@ export default function Timeline({ minYear, maxYear }: Props) {
                     className={`absolute left-0 ${t.major ? "h-4 w-px bg-byz-goldLight" : "h-2 w-px bg-byz-gold/50"}`}
                   />
                   {t.major && (
-                    <div className="absolute -translate-x-1/2 top-5 whitespace-nowrap rounded-sm bg-byz-ink/85 px-1.5 py-0.5 text-[11px] font-bold text-byz-goldLight font-display tracking-wider leading-none">
+                    <div className="absolute -translate-x-1/2 top-5 whitespace-nowrap rounded-full bg-byz-purpleDeep/85 border border-byz-gold/30 px-2 py-0.5 text-[11px] text-byz-goldLight font-display tracking-wider leading-none">
                       {formatYear(t.year)}
                     </div>
                   )}
@@ -261,7 +279,9 @@ export default function Timeline({ minYear, maxYear }: Props) {
                     setCurrentYear(year);
                     selectEntity(e);
                   }}
-                  className="absolute -translate-x-1/2 hover:scale-150 transition-transform"
+                  // Tap target is the full 12x12 button; visual dot inside
+                  // stays small. Doubles touch area without crowding the row.
+                  className="absolute -translate-x-1/2 w-3 h-3 flex items-center justify-center hover:scale-150 transition-transform"
                   style={{
                     left: x,
                     // Three rows stacked below the year-label pills (label
@@ -272,8 +292,13 @@ export default function Timeline({ minYear, maxYear }: Props) {
                   title={`${e.name} (${formatYear(year)})`}
                 >
                   <div
-                    className="w-2 h-2 rounded-full ring-1 ring-byz-ink"
-                    style={{ background: KIND_COLOR[e.kind] }}
+                    className="w-2.5 h-2.5 rounded-full"
+                    style={{
+                      background: KIND_COLOR[e.kind],
+                      // box-shadow trick replaces the old black ring with a
+                      // 1.5px outline in the kind's own darker shade.
+                      boxShadow: `0 0 0 1.5px ${KIND_COLOR_DARK[e.kind]}`,
+                    }}
                   />
                 </button>
               );
