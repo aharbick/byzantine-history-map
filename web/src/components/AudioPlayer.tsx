@@ -1,19 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useApp } from "@/lib/context";
+import { useApp, type AudioSeekHint } from "@/lib/context";
 import { audioUrl, episodesById } from "@/lib/data";
 import { entities } from "@/lib/data";
 
 /** Persistent audio player. Always mounted, always visible. Custom UI so it
  * fits the byzantine theme rather than the chunky native <audio controls>. */
 export default function AudioPlayer() {
-  const {
-    playingEpisode,
-    playEpisode,
-    pendingSeek,
-    consumePendingSeek,
-  } = useApp();
+  const { playingEpisode, playEpisode, audioController } = useApp();
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const rootRef = useRef<HTMLDivElement | null>(null);
   // Tracks which episode's audio is currently loaded into the <audio>
@@ -60,84 +55,122 @@ export default function AudioPlayer() {
     ? episode.title.replace(/^Episode \d+ - /, "")
     : "Pick an episode";
 
-  // ---------- src + autoplay ----------
+  // Pre-roll for chip-driven seeks (line-ratio approximation tends to
+  // overshoot the actual mention by 15-20s; subtracting a few seconds also
+  // gives the listener context leading into the moment).
+  const PROGRESS_SEEK_PREROLL_S = 20;
+
+  // ---------- imperative audio API ----------
+  // Every iOS-allowed play() must run inside the same task as a real user
+  // gesture (click/touch). Going through React state -> useEffect breaks the
+  // gesture chain — the effect runs in a microtask after render, by which
+  // point Mobile Safari has already revoked playback authorization. So all
+  // user-initiated play paths funnel through this synchronous helper, and
+  // the [playingEpisode] effect below only handles the "no episode" cleanup.
+  function playNow(ep: number, seek?: AudioSeekHint) {
+    const a = audioRef.current;
+    if (!a) return;
+
+    if (loadedEpisodeRef.current !== ep) {
+      loadedEpisodeRef.current = ep;
+      a.src = audioUrl(ep);
+      a.load();
+    }
+
+    // Fire play() FIRST so it's the first audio op inside this gesture —
+    // iOS attaches the activation flag here. Seeking before play sometimes
+    // resets metadata loading on Mobile Safari and re-blocks autoplay.
+    const playPromise = a.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {
+        /* still blocked — nothing else we can do from here */
+      });
+    }
+
+    if (seek) {
+      const applySeek = () => {
+        const target =
+          seek.kind === "seconds"
+            ? seek.value
+            : Math.max(
+                0,
+                seek.value * (a.duration || 0) - PROGRESS_SEEK_PREROLL_S,
+              );
+        if (Number.isFinite(target) && (a.duration || 0) > 0) {
+          a.currentTime = target;
+        }
+      };
+      if ((a.duration || 0) > 0 && a.readyState >= 1) {
+        applySeek();
+      } else {
+        a.addEventListener("loadedmetadata", applySeek, { once: true });
+      }
+    }
+
+    // Update React state for UI. The [playingEpisode] effect will see the
+    // change but won't try to play() — that's already in flight.
+    playEpisode(ep);
+    setCuedEpisode(null);
+    // Save the last-episode pointer immediately so a refresh on iOS resumes
+    // even if iOS blocked the play() call (the persistence interval below
+    // only fires while audio is actually playing).
+    writeLastEpisode(ep);
+  }
+
+  // Register the imperative controller for chip / external callers. Must
+  // happen BEFORE any consumer uses it, so layout-effect (synchronous after
+  // render) is safer than useEffect — though in practice AudioPlayer mounts
+  // before EntityCard has had a chance to render an EpisodeChip.
+  useEffect(() => {
+    audioController.current = {
+      play: playNow,
+      toggle: () => {
+        const a = audioRef.current;
+        if (!a) return;
+        if (a.paused) {
+          a.play().catch(() => {});
+        } else {
+          a.pause();
+        }
+      },
+    };
+    return () => {
+      audioController.current = null;
+    };
+    // playNow closes over playEpisode/audioRef which are stable refs/setters,
+    // so a single registration is fine.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // ---------- src cleanup when episode goes to null ----------
+  // The src/load/play side of episode changes happens in playNow (above) so
+  // it lands inside a user gesture. This effect only handles the "no episode"
+  // case — pause and reset.
   useEffect(() => {
     const a = audioRef.current;
     if (!a) return;
     if (playingEpisode == null) {
       a.pause();
       setIsPlaying(false);
-      return;
     }
-    if (loadedEpisodeRef.current === playingEpisode) {
-      // Same episode is already loaded (typical when promoting a cued
-      // episode). Don't reload — togglePlay() already issued play() inside
-      // the user gesture; reloading here would interrupt that and the
-      // post-load play() would be autoplay-blocked.
-      return;
-    }
-    loadedEpisodeRef.current = playingEpisode;
-    a.src = audioUrl(playingEpisode);
-    a.load();
-    a.play()
-      .then(() => setIsPlaying(true))
-      .catch(() => {
-        /* autoplay blocked; user will press play */
-      });
   }, [playingEpisode]);
 
-  // Pre-roll for chip-driven seeks (line-ratio approximation tends to
-  // overshoot the actual mention by 15-20s; subtracting a few seconds also
-  // gives the listener context leading into the moment).
-  const PROGRESS_SEEK_PREROLL_S = 20;
-
-  // ---------- restore last-saved position (no pending seek) ----------
-  // pendingSeek is handled by the dedicated effect below; this only kicks
-  // in when nobody requested a specific seek (e.g. cued from localStorage).
+  // ---------- restore last-saved position ----------
+  // Fires from `loadedmetadata` for the currently-playing episode if there
+  // was no explicit seek (chip / nav / picker callers handle their own
+  // seeks inline via playNow).
   function applySeekOrRestore() {
     const a = audioRef.current;
     if (!a || playingEpisode == null) return;
-    if (pendingSeek != null) return; // pendingSeek effect will handle it
     const saved = readSaved(playingEpisode);
     if (saved && Number.isFinite(saved) && saved > 1) {
       a.currentTime = saved;
     }
   }
 
-  // ---------- pendingSeek-driven jump (e.g. clicking a Mention chip) ----------
-  // Distinct from the metadata-load path: this handles the case where the
-  // SAME episode is already loaded, so loadedmetadata won't fire again. We
-  // apply the seek as soon as it arrives (or once metadata is ready) and
-  // also kick off play() so the chip behaves as "jump and play".
-  useEffect(() => {
-    if (!pendingSeek) return;
-    const a = audioRef.current;
-    if (!a) return;
-
-    const apply = () => {
-      const seek = consumePendingSeek();
-      if (!seek) return;
-      const target =
-        seek.kind === "seconds"
-          ? seek.value
-          : Math.max(
-              0,
-              seek.value * (a.duration || 0) - PROGRESS_SEEK_PREROLL_S,
-            );
-      if (Number.isFinite(target) && (a.duration || 0) > 0) {
-        a.currentTime = target;
-      }
-      a.play().catch(() => {});
-    };
-
-    if ((a.duration || 0) > 0 && a.readyState >= 1) {
-      apply();
-    } else {
-      a.addEventListener("loadedmetadata", apply, { once: true });
-      return () => a.removeEventListener("loadedmetadata", apply);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pendingSeek]);
+  // (The previous pendingSeek-driven effect is gone — chip / picker / nav
+  // clicks now go through `playNow` directly, which performs the seek inside
+  // the user gesture instead of after a state -> effect round trip.)
 
   // ---------- audio element event wiring ----------
   useEffect(() => {
@@ -145,7 +178,16 @@ export default function AudioPlayer() {
     if (!a) return;
 
     const onPlay = () => setIsPlaying(true);
-    const onPause = () => setIsPlaying(false);
+    const onPause = () => {
+      setIsPlaying(false);
+      // Persist position on pause too — the 5s interval below only writes
+      // while playing, so without this the last position before a pause is
+      // lost if the user closes the tab.
+      if (playingEpisode != null && a.currentTime > 1) {
+        writeSaved(playingEpisode, a.currentTime);
+        writeLastEpisode(playingEpisode);
+      }
+    };
     const onTime = () => setCurrentTime(a.currentTime);
     const onMeta = () => {
       setDuration(a.duration || 0);
@@ -153,10 +195,12 @@ export default function AudioPlayer() {
     };
     const onEnded = () => {
       // Continuous play: advance to the next episode in numeric order.
+      // The `ended` event is gesture-equivalent on iOS, so playNow's play()
+      // call here is allowed.
       if (playingEpisode == null) return;
       const next = episodes.find((e) => e.episode === playingEpisode + 1);
       if (next) {
-        playEpisode(next.episode);
+        playNow(next.episode);
       } else {
         setIsPlaying(false);
       }
@@ -184,7 +228,7 @@ export default function AudioPlayer() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playingEpisode, episodes]);
 
-  // ---------- localStorage persistence (every ~5s) ----------
+  // ---------- localStorage persistence (every ~5s + on pagehide) ----------
   useEffect(() => {
     if (playingEpisode == null) return;
     const id = window.setInterval(() => {
@@ -194,7 +238,20 @@ export default function AudioPlayer() {
         writeLastEpisode(playingEpisode);
       }
     }, 5000);
-    return () => window.clearInterval(id);
+    // pagehide is the reliable way to flush state on iOS Safari — beforeunload
+    // and unload don't always fire when the user backgrounds the tab.
+    const onPageHide = () => {
+      const a = audioRef.current;
+      if (a && a.currentTime > 1) {
+        writeSaved(playingEpisode, a.currentTime);
+        writeLastEpisode(playingEpisode);
+      }
+    };
+    window.addEventListener("pagehide", onPageHide);
+    return () => {
+      window.clearInterval(id);
+      window.removeEventListener("pagehide", onPageHide);
+    };
   }, [playingEpisode]);
 
   // On first mount with no playing episode, default-select the most recently
@@ -245,18 +302,9 @@ export default function AudioPlayer() {
     const a = audioRef.current;
     if (!a) return;
     if (playingEpisode == null && cuedEpisode != null) {
-      // Promote cued → playing. The audio element is already loaded with
-      // this episode's src (set by the init effect). Calling play() RIGHT
-      // HERE inside the user-click handler keeps us inside the gesture
-      // window; iOS Safari only allows playback then. We update React
-      // state after, and the [playingEpisode] effect will see
-      // loadedEpisodeRef === playingEpisode and skip the destructive reload.
-      const ep = cuedEpisode;
-      a.play().catch(() => {
-        /* still blocked — nothing we can do */
-      });
-      playEpisode(ep);
-      setCuedEpisode(null);
+      // Promote cued -> playing via the imperative API (which fires play()
+      // synchronously, satisfying iOS Safari's gesture rule).
+      playNow(cuedEpisode);
       return;
     }
     if (a.paused) {
@@ -280,8 +328,7 @@ export default function AudioPlayer() {
     }
     const prev = episodes.find((e) => e.episode === ep - 1);
     if (prev) {
-      playEpisode(prev.episode);
-      setCuedEpisode(null);
+      playNow(prev.episode);
     }
   }
 
@@ -290,8 +337,7 @@ export default function AudioPlayer() {
     if (ep == null) return;
     const next = episodes.find((e) => e.episode === ep + 1);
     if (next) {
-      playEpisode(next.episode);
-      setCuedEpisode(null);
+      playNow(next.episode);
     }
   }
 
@@ -432,8 +478,9 @@ export default function AudioPlayer() {
             current={displayedEpisode}
             onPick={(ep) => {
               setShowPicker(false);
-              playEpisode(ep);
-              setCuedEpisode(null);
+              // Synchronous from inside the click handler so iOS counts
+              // play() as gesture-initiated.
+              playNow(ep);
             }}
           />
         )}

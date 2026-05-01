@@ -13,20 +13,22 @@ export default function EpisodeChip({
    * Resolved by AudioPlayer once `audio.duration` is known. */
   startProgress?: number;
 }) {
-  const { playingEpisode, playEpisode } = useApp();
+  const { playingEpisode, audioController } = useApp();
   const ep = episodesById[episode];
   if (!ep) return null;
   const playing = playingEpisode === episode;
 
   function onClick() {
-    // Always jump to this mention. Don't toggle off — that would orphan the
-    // player. If the same episode is already playing, the seek effect in
-    // AudioPlayer will pick up the new pendingSeek and re-position.
-    if (startProgress != null) {
-      playEpisode(episode, { kind: "progress", value: startProgress });
-    } else {
-      playEpisode(episode);
-    }
+    // Drive the audio element synchronously inside this click handler — iOS
+    // Safari ignores play() calls that are deferred to a useEffect, so we
+    // can't go through context state. AudioController.play() loads the
+    // src, applies the seek hint, and calls play() in one go.
+    audioController.current?.play(
+      episode,
+      startProgress != null
+        ? { kind: "progress", value: startProgress }
+        : undefined,
+    );
   }
 
   return (
