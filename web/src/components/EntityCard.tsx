@@ -60,7 +60,10 @@ export default function EntityCard({ entity }: Props) {
         // byz-scroll = thin gold scrollbar on a transparent track, so the
         // scrollbar doesn't expose a square track corner against the card's
         // rounded edge.
-        "fixed z-50 overflow-y-auto byz-scroll card-frame shadow-card border-l-4",
+        // !border-l-8 — chunky kind-colored bar that visually echoes the
+        // ring around the matching map marker. The "!" is required because
+        // card-frame uses a `border:` shorthand that would otherwise win.
+        "fixed z-50 overflow-y-auto byz-scroll card-frame shadow-card !border-l-8",
         // Mobile (< sm): cover the whole screen so the card is the only
         // surface the user interacts with — no rounded corners at the
         // viewport edges.
@@ -72,9 +75,11 @@ export default function EntityCard({ entity }: Props) {
         // screen bottom (i.e., onto the mini-map) it stops growing and
         // overflow-y-auto kicks in. Cap = 100vh − top(128) − bottom(200) = 100vh − 328px.
         "sm:inset-auto sm:right-4 sm:top-32 sm:rounded-xl sm:w-[570px] sm:max-w-[45vw] sm:max-h-[calc(100vh-328px)]",
-        entity.kind === "person" && "card-person !border-l-byz-goldLight",
-        entity.kind === "place" && "card-place !border-l-byz-mosaic",
-        entity.kind === "event" && "card-event !border-l-red-500",
+        // Match the marker hex for each kind exactly so the card's left
+        // bar reads as the same color family as the dot you clicked on.
+        entity.kind === "person" && "card-person !border-l-[#e7c873]",
+        entity.kind === "place" && "card-place !border-l-[#3a6b8c]",
+        entity.kind === "event" && "card-event !border-l-[#b44646]",
       )}
     >
       {/* Hero image — MTG-style card art. We use a backdrop of the same image
