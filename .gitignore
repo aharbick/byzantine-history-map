@@ -38,3 +38,4 @@ build/
 # Claude Code scheduled-tasks lockfile (per-machine)
 .claude/scheduled_tasks.lock
 
+data/__pycache__/

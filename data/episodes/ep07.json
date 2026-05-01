@@ -5,7 +5,11 @@
     {
       "id": "justinian-i",
       "name": "Justinian I",
-      "alt_names": ["Flavius Petrus Sabbatius Justinianus", "Flavius Petrus Sabatius", "the Emperor Who Never Sleeps"],
+      "alt_names": [
+        "Flavius Petrus Sabbatius Justinianus",
+        "Flavius Petrus Sabatius",
+        "the Emperor Who Never Sleeps"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 483,
       "death_year": 565,
@@ -14,21 +18,173 @@
       "summary": "Born Flavius Petrus Sabatius in modern-day Karasengrad around 483, he was adopted and educated by his uncle Justin I and took the name Justinian. He rose to effective control of government well before being formally crowned, and his tireless ambition — earning him the nickname 'the emperor who never sleeps' — drove a spectacular explosion of conquest, law, and culture that Brownworth calls the Byzantine Renaissance. Brownworth considers him his favorite Byzantine emperor, noting that Justinian dreamed larger than other men and sought to change the world rather than merely live in it.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
       "portrait_url": null,
-      "transcript_lines": [[29, 68], [111, 268]],
+      "transcript_lines": [
+        [
+          2,
+          2
+        ],
+        [
+          29,
+          32
+        ],
+        [
+          35,
+          35
+        ],
+        [
+          53,
+          53
+        ],
+        [
+          58,
+          59
+        ],
+        [
+          64,
+          66
+        ],
+        [
+          69,
+          69
+        ],
+        [
+          82,
+          84
+        ],
+        [
+          90,
+          90
+        ],
+        [
+          94,
+          94
+        ],
+        [
+          105,
+          105
+        ],
+        [
+          109,
+          116
+        ],
+        [
+          123,
+          123
+        ],
+        [
+          128,
+          130
+        ],
+        [
+          141,
+          141
+        ],
+        [
+          147,
+          147
+        ],
+        [
+          171,
+          171
+        ],
+        [
+          175,
+          175
+        ],
+        [
+          183,
+          183
+        ],
+        [
+          192,
+          192
+        ],
+        [
+          200,
+          200
+        ],
+        [
+          206,
+          206
+        ],
+        [
+          216,
+          216
+        ],
+        [
+          242,
+          242
+        ],
+        [
+          245,
+          246
+        ],
+        [
+          253,
+          253
+        ],
+        [
+          257,
+          257
+        ],
+        [
+          264,
+          264
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justin-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "john-of-cappadocia"},
-        {"type": "person", "id": "tribonian"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "hypatius"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hippodrome"},
-        {"type": "event", "id": "justinians-coronation"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "event", "id": "codex-justinianus-published"},
-        {"type": "event", "id": "digest-and-institutes-published"},
-        {"type": "event", "id": "justinian-marries-theodora"}
+        {
+          "type": "person",
+          "id": "justin-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "john-of-cappadocia"
+        },
+        {
+          "type": "person",
+          "id": "tribonian"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "hypatius"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        },
+        {
+          "type": "event",
+          "id": "justinians-coronation"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "event",
+          "id": "codex-justinianus-published"
+        },
+        {
+          "type": "event",
+          "id": "digest-and-institutes-published"
+        },
+        {
+          "type": "event",
+          "id": "justinian-marries-theodora"
+        }
       ]
     },
     {
@@ -43,14 +199,69 @@
       "summary": "A rags-to-riches emperor who came to Constantinople with nothing and rose through the army to command the palace guard under Anastasius I. He secured his election as emperor through a combination of military positioning and liberal bribing of soldiers. Nearly 70 at accession, he lacked practical governing knowledge but was wise enough to surround himself with talented advisors — most crucially his nephew Justinian, whom he educated and ultimately adopted.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Justin_I",
       "portrait_url": null,
-      "transcript_lines": [[38, 68], [111, 117]],
+      "transcript_lines": [
+        [
+          38,
+          39
+        ],
+        [
+          56,
+          56
+        ],
+        [
+          60,
+          60
+        ],
+        [
+          63,
+          63
+        ],
+        [
+          102,
+          102
+        ],
+        [
+          111,
+          116
+        ],
+        [
+          122,
+          122
+        ],
+        [
+          252,
+          252
+        ],
+        [
+          266,
+          266
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "anastasius-i"},
-        {"type": "person", "id": "euphemia"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "justin-i-elected-emperor"},
-        {"type": "event", "id": "justinians-coronation"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "anastasius-i"
+        },
+        {
+          "type": "person",
+          "id": "euphemia"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "justin-i-elected-emperor"
+        },
+        {
+          "type": "event",
+          "id": "justinians-coronation"
+        }
       ]
     },
     {
@@ -65,10 +276,29 @@
       "summary": "The emperor whose remarkable reign immediately preceded the period Brownworth covers in this episode. Despite being deeply unpopular and even having to flee his own capital in disguise at one point, Zeno managed to survive and left the throne far stronger than he found it — a stunning achievement that set the stage for Justinian's later glory.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zeno_(emperor)",
       "portrait_url": null,
-      "transcript_lines": [[4, 11], [21, 22]],
+      "transcript_lines": [
+        [
+          4,
+          4
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          54,
+          54
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -83,12 +313,49 @@
       "summary": "The emperor under whom Justin I served as commander of the palace guard. After Anastasius died, the succession dispute gave Justin his opening to seize the throne. Brownworth notes that Anastasius, like Justin, tended toward frugality and left the imperial treasury full — a fiscal conservatism that contrasted sharply with Justinian's lavish spending.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Anastasius_I_(emperor)",
       "portrait_url": null,
-      "transcript_lines": [[43, 47], [122, 123], [252, 252]],
+      "transcript_lines": [
+        [
+          43,
+          43
+        ],
+        [
+          46,
+          46
+        ],
+        [
+          122,
+          122
+        ],
+        [
+          202,
+          202
+        ],
+        [
+          210,
+          210
+        ],
+        [
+          252,
+          252
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justin-i"},
-        {"type": "person", "id": "probus"},
-        {"type": "person", "id": "hypatius"},
-        {"type": "event", "id": "justin-i-elected-emperor"}
+        {
+          "type": "person",
+          "id": "justin-i"
+        },
+        {
+          "type": "person",
+          "id": "probus"
+        },
+        {
+          "type": "person",
+          "id": "hypatius"
+        },
+        {
+          "type": "event",
+          "id": "justin-i-elected-emperor"
+        }
       ]
     },
     {
@@ -103,12 +370,29 @@
       "summary": "Wife of Justin I, born a slave and formerly a concubine before Justin bought and married her. Despite her own humble origins, she fiercely guarded the dignity of her imperial station and was bitterly opposed to Justinian's plan to marry the actress Theodora. Her opposition blocked the marriage until her death in 523, after which Justinian quickly arranged repeal of the law forbidding patricians to marry below their station.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Euphemia_(empress)",
       "portrait_url": null,
-      "transcript_lines": [[98, 105]],
+      "transcript_lines": [
+        [
+          98,
+          98
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justin-i"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "event", "id": "justinian-marries-theodora"}
+        {
+          "type": "person",
+          "id": "justin-i"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "event",
+          "id": "justinian-marries-theodora"
+        }
       ]
     },
     {
@@ -123,15 +407,61 @@
       "summary": "A young actress whom Justinian met through his blue-faction informer Macedonia, Theodora was beautiful, beguiling, and an ardent supporter of the Blues. She and Justinian accepted each other as intellectual equals from the start, and her prodigious energy matched his own. Her most celebrated moment in this episode is the speech she delivered during the Nika Revolt, shaming Justinian's terrified advisors into staying and fighting rather than fleeing — declaring that 'the imperial purple makes the best shroud.'",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Theodora",
       "portrait_url": null,
-      "transcript_lines": [[85, 107], [219, 245]],
+      "transcript_lines": [
+        [
+          85,
+          85
+        ],
+        [
+          88,
+          88
+        ],
+        [
+          106,
+          106
+        ],
+        [
+          109,
+          109
+        ],
+        [
+          219,
+          219
+        ],
+        [
+          243,
+          243
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "macedonia"},
-        {"type": "person", "id": "euphemia"},
-        {"type": "person", "id": "hypatius"},
-        {"type": "event", "id": "justinian-marries-theodora"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "event", "id": "execution-of-hypatius"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "macedonia"
+        },
+        {
+          "type": "person",
+          "id": "euphemia"
+        },
+        {
+          "type": "person",
+          "id": "hypatius"
+        },
+        {
+          "type": "event",
+          "id": "justinian-marries-theodora"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "event",
+          "id": "execution-of-hypatius"
+        }
       ]
     },
     {
@@ -146,16 +476,29 @@
       "summary": "A star ballet dancer who served as one of Justinian's informers within the Blue faction, providing him with intelligence about potential threats in the city. She introduced Justinian to Theodora, making her an inadvertent but pivotal matchmaker in Byzantine history.",
       "wikipedia_url": null,
       "portrait_url": null,
-      "transcript_lines": [[84, 86]],
+      "transcript_lines": [
+        [
+          84,
+          84
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        }
       ]
     },
     {
       "id": "john-of-cappadocia",
       "name": "John of Cappadocia",
-      "alt_names": ["John the Cappadocian"],
+      "alt_names": [
+        "John the Cappadocian"
+      ],
       "role": "Praetorian Prefect, tax administrator",
       "birth_year": null,
       "death_year": 548,
@@ -164,10 +507,25 @@
       "summary": "A man of little education and no charm whom Justinian chose precisely because he could not be bribed. He streamlined the tax system to force the rich and powerful to pay as much as the poor, centralized authority, and led a personal crusade against corruption — but his brutal methods and debauched lifestyle as a drunkard and glutton made him the most despised man in the empire. He was dismissed during the Nika Revolt at the mob's demand, then reinstated afterward with curbed powers.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_the_Cappadocian",
       "portrait_url": null,
-      "transcript_lines": [[128, 139], [199, 200], [247, 249]],
+      "transcript_lines": [
+        [
+          129,
+          129
+        ],
+        [
+          199,
+          199
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "event", "id": "nika-revolt"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        }
       ]
     },
     {
@@ -182,12 +540,53 @@
       "summary": "An extraordinary lawyer whose wit, charm, and encyclopedic knowledge of Roman law made him Justinian's perfect instrument for legal reform. In a mere 14 months he published the new Codex, and over the following five years he produced the Digest and the Institutes, condensing 2,000 treatises and over 3 million verses into 50 books. Despite these achievements Brownworth describes him as completely and utterly corrupt — an unabashed pagan who would repeal or propose laws depending on who had bribed him — making him the second most hated man in the empire.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tribonian",
       "portrait_url": null,
-      "transcript_lines": [[142, 167], [199, 200], [247, 249]],
+      "transcript_lines": [
+        [
+          142,
+          142
+        ],
+        [
+          150,
+          150
+        ],
+        [
+          154,
+          154
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          199,
+          199
+        ],
+        [
+          247,
+          247
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "event", "id": "codex-justinianus-published"},
-        {"type": "event", "id": "digest-and-institutes-published"},
-        {"type": "event", "id": "nika-revolt"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "event",
+          "id": "codex-justinianus-published"
+        },
+        {
+          "type": "event",
+          "id": "digest-and-institutes-published"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        }
       ]
     },
     {
@@ -202,11 +601,29 @@
       "summary": "A nephew of the late Emperor Anastasius whom the Nika Revolt mob chose as their preferred replacement for Justinian. Probus had no desire to be emperor and fled the city the moment he heard of their plans. The enraged mob burned his house in frustration and turned to find another candidate.",
       "wikipedia_url": null,
       "portrait_url": null,
-      "transcript_lines": [[202, 205]],
+      "transcript_lines": [
+        [
+          202,
+          202
+        ],
+        [
+          211,
+          211
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "anastasius-i"},
-        {"type": "person", "id": "hypatius"},
-        {"type": "event", "id": "nika-revolt"}
+        {
+          "type": "person",
+          "id": "anastasius-i"
+        },
+        {
+          "type": "person",
+          "id": "hypatius"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        }
       ]
     },
     {
@@ -221,15 +638,45 @@
       "summary": "A nephew of Anastasius I who was the mob's second choice for emperor during the Nika Revolt. He hid under his bed when they came for him but was dragged out regardless, carried to the Hippodrome on the crowd's shoulders, and crowned with a golden necklace placed in the imperial box. After Belisarius's troops crushed the revolt, a sympathetic Justinian was inclined to pardon the terrified old man, but Theodora insisted he be executed as a focal point for rebellion.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hypatius",
       "portrait_url": null,
-      "transcript_lines": [[210, 215], [241, 245]],
+      "transcript_lines": [
+        [
+          210,
+          211
+        ],
+        [
+          241,
+          241
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "anastasius-i"},
-        {"type": "person", "id": "probus"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "event", "id": "execution-of-hypatius"},
-        {"type": "place", "id": "hippodrome"}
+        {
+          "type": "person",
+          "id": "anastasius-i"
+        },
+        {
+          "type": "person",
+          "id": "probus"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "event",
+          "id": "execution-of-hypatius"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        }
       ]
     },
     {
@@ -244,12 +691,29 @@
       "summary": "One of three generals who happened to be in Constantinople during the Nika Revolt. He commanded a large contingent of Scandinavian mercenaries and played a key role in the military suppression of the revolt alongside Belisarius and Narcissus.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mundo_(general)",
       "portrait_url": null,
-      "transcript_lines": [[232, 240]],
+      "transcript_lines": [
+        [
+          232,
+          232
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "narcissus"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "place", "id": "hippodrome"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "narcissus"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        }
       ]
     },
     {
@@ -264,12 +728,33 @@
       "summary": "An elderly Armenian eunuch who commanded the imperial bodyguard and was described by Brownworth as deceptively frail-looking. During the Nika Revolt he took charge of blocking the exits of the Hippodrome, ensuring the mob trapped inside had no escape during the military suppression.",
       "wikipedia_url": null,
       "portrait_url": null,
-      "transcript_lines": [[233, 239]],
+      "transcript_lines": [
+        [
+          233,
+          233
+        ],
+        [
+          239,
+          239
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "mundus"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "place", "id": "hippodrome"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "mundus"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        }
       ]
     },
     {
@@ -284,13 +769,37 @@
       "summary": "Only in his twenties during the Nika Revolt, Belisarius is described by Brownworth as already perhaps the most brilliant tactician in Roman history. He devised the plan to suppress the revolt and led the assault on the Hippodrome alongside Mundus and Narcissus. Brownworth teases his fuller story for the next episode, calling him the empire's most brilliant and tragic general who would fulfill Justinian's dream of epic reconquests.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belisarius",
       "portrait_url": null,
-      "transcript_lines": [[235, 237], [265, 267]],
+      "transcript_lines": [
+        [
+          235,
+          235
+        ],
+        [
+          266,
+          266
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "mundus"},
-        {"type": "person", "id": "narcissus"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "place", "id": "hippodrome"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "mundus"
+        },
+        {
+          "type": "person",
+          "id": "narcissus"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        }
       ]
     }
   ],
@@ -306,14 +815,41 @@
       "summary": "The Byzantine capital and the central stage for all events in this episode. It is the city Justin I arrived in with nothing and eventually ruled; where Justinian grew up and exercised power; and where the Nika Revolt erupted, burning much of the city — an event Justinian then turned into an opportunity to rebuild on a grander scale.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
       "image_url": null,
-      "transcript_lines": [[40, 41], [192, 198], [258, 261]],
+      "transcript_lines": [
+        [
+          40,
+          40
+        ],
+        [
+          92,
+          92
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "justin-i"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "place", "id": "hippodrome"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "church-of-saint-irene"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "justin-i"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "church-of-saint-irene"
+        }
       ]
     },
     {
@@ -327,13 +863,41 @@
       "summary": "The great chariot-racing arena of Constantinople, seating tens of thousands, which served as the civic heart of the city and the forum for popular politics. The chariot-racing factions — Blues and Greens — competed here and shaped political life. The Nika Revolt began after a race here, and the Hippodrome became the site of the mob's mass gathering, the crowning of the rebel Hypatius, and ultimately the massacre of over 30,000 people when Belisarius's forces stormed it.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hippodrome_of_Constantinople",
       "image_url": null,
-      "transcript_lines": [[71, 71], [173, 215], [237, 240]],
+      "transcript_lines": [
+        [
+          71,
+          71
+        ],
+        [
+          173,
+          215
+        ],
+        [
+          237,
+          240
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "hypatius"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "hypatius"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -347,10 +911,21 @@
       "summary": "The region in modern-day Yugoslavia (Serbia) where Justinian was born in 483, described by Brownworth as Karasengrad. It was a province of grinding poverty that his uncle Justin had also fled in search of a better life in Constantinople.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Justiniana_Prima",
       "image_url": null,
-      "transcript_lines": [[54, 54]],
+      "transcript_lines": [
+        [
+          54,
+          54
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "justin-i"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "justin-i"
+        }
       ]
     },
     {
@@ -364,12 +939,33 @@
       "summary": "One of the two greatest churches of Constantinople, burned completely to the ground during the Nika Revolt. Brownworth teases the story of its rebuilding by Justinian as one of the highlights of Part 2, calling it 'the world's largest and most beautiful religious building.'",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
       "image_url": null,
-      "transcript_lines": [[197, 197], [264, 266]],
+      "transcript_lines": [
+        [
+          197,
+          197
+        ],
+        [
+          264,
+          266
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "event", "id": "burning-of-hagia-sophia-and-st-irene"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "church-of-saint-irene"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "event",
+          "id": "burning-of-hagia-sophia-and-st-irene"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "church-of-saint-irene"
+        }
       ]
     },
     {
@@ -383,12 +979,29 @@
       "summary": "One of the two greatest churches of Constantinople, burned completely to the ground alongside Hagia Sophia during the Nika Revolt. Its destruction, along with most of the buildings along the main roads, left much of the capital in smoldering ruins.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Irene",
       "image_url": null,
-      "transcript_lines": [[197, 197]],
+      "transcript_lines": [
+        [
+          197,
+          197
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "event", "id": "burning-of-hagia-sophia-and-st-irene"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hagia-sophia"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "event",
+          "id": "burning-of-hagia-sophia-and-st-irene"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        }
       ]
     },
     {
@@ -397,14 +1010,22 @@
       "modern_name": "Iran",
       "modern_country": "Iran",
       "lat": 32.4279,
-      "lng": 53.6880,
+      "lng": 53.688,
       "first_year": null,
       "summary": "Rome's ancient eastern enemy, described by Brownworth as always threatening to reignite chronic and inevitable war with the Byzantine Empire. The Persian threat was one of several pressures making the empire's survival look doubtful in the generation before Justinian.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sasanian_Empire",
       "image_url": null,
-      "transcript_lines": [[14, 15]],
+      "transcript_lines": [
+        [
+          14,
+          15
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        }
       ]
     }
   ],
@@ -419,13 +1040,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Justin_I",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[46, 64]],
+      "transcript_lines": [
+        [
+          49,
+          49
+        ],
+        [
+          63,
+          63
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justin-i"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "anastasius-i"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hippodrome"}
+        {
+          "type": "person",
+          "id": "justin-i"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "anastasius-i"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        }
       ]
     },
     {
@@ -438,13 +1083,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Theodora",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[105, 107]],
+      "transcript_lines": [
+        [
+          105,
+          107
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "euphemia"},
-        {"type": "person", "id": "justin-i"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "euphemia"
+        },
+        {
+          "type": "person",
+          "id": "justin-i"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -457,11 +1122,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[111, 120]],
+      "transcript_lines": [
+        [
+          111,
+          120
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "justin-i"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "justin-i"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -474,11 +1153,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Codex_Justinianus",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[144, 153]],
+      "transcript_lines": [
+        [
+          144,
+          153
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "tribonian"},
-        {"type": "event", "id": "digest-and-institutes-published"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "tribonian"
+        },
+        {
+          "type": "event",
+          "id": "digest-and-institutes-published"
+        }
       ]
     },
     {
@@ -491,11 +1184,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Digest_(Roman_law)",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[154, 158]],
+      "transcript_lines": [
+        [
+          154,
+          158
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "tribonian"},
-        {"type": "event", "id": "codex-justinianus-published"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "tribonian"
+        },
+        {
+          "type": "event",
+          "id": "codex-justinianus-published"
+        }
       ]
     },
     {
@@ -508,21 +1215,65 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nika_riots",
       "image_url": null,
       "location_id": "hippodrome",
-      "transcript_lines": [[169, 256]],
+      "transcript_lines": [
+        [
+          169,
+          256
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "mundus"},
-        {"type": "person", "id": "narcissus"},
-        {"type": "person", "id": "john-of-cappadocia"},
-        {"type": "person", "id": "tribonian"},
-        {"type": "person", "id": "probus"},
-        {"type": "person", "id": "hypatius"},
-        {"type": "place", "id": "hippodrome"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "burning-of-hagia-sophia-and-st-irene"},
-        {"type": "event", "id": "execution-of-hypatius"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "mundus"
+        },
+        {
+          "type": "person",
+          "id": "narcissus"
+        },
+        {
+          "type": "person",
+          "id": "john-of-cappadocia"
+        },
+        {
+          "type": "person",
+          "id": "tribonian"
+        },
+        {
+          "type": "person",
+          "id": "probus"
+        },
+        {
+          "type": "person",
+          "id": "hypatius"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "burning-of-hagia-sophia-and-st-irene"
+        },
+        {
+          "type": "event",
+          "id": "execution-of-hypatius"
+        }
       ]
     },
     {
@@ -535,12 +1286,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nika_riots",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[195, 198]],
+      "transcript_lines": [
+        [
+          195,
+          198
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "church-of-saint-irene"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "person", "id": "justinian-i"}
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "church-of-saint-irene"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        }
       ]
     },
     {
@@ -553,12 +1321,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hypatius",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[241, 245]],
+      "transcript_lines": [
+        [
+          241,
+          245
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "hypatius"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "event", "id": "nika-revolt"}
+        {
+          "type": "person",
+          "id": "hypatius"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        }
       ]
     },
     {
@@ -571,11 +1356,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nika_riots",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[168, 176]],
+      "transcript_lines": [
+        [
+          168,
+          176
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "event", "id": "nika-revolt"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "event",
+          "id": "nika-revolt"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     }
   ]

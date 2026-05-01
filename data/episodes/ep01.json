@@ -5,7 +5,10 @@
     {
       "id": "constantine-the-great",
       "name": "Constantine the Great",
-      "alt_names": ["Constantine I", "Flavius Valerius Constantinus"],
+      "alt_names": [
+        "Constantine I",
+        "Flavius Valerius Constantinus"
+      ],
       "role": "Roman Emperor, founder of Constantinople",
       "birth_year": 272,
       "death_year": 337,
@@ -14,18 +17,38 @@
       "summary": "Brownworth identifies Constantine as the conventional starting point of the Byzantine Empire, crediting him with refounding the city of Byzantium as Constantinople to serve as a new Christian imperial capital. He notes that Constantine himself was undeniably Roman, standing in an unbroken line of emperors from Augustus, which makes labeling him the founder of a 'Byzantine' empire complicated.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
       "portrait_url": null,
-      "transcript_lines": [[32, 40]],
+      "transcript_lines": [
+        [
+          37,
+          37
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "byzantium"},
-        {"type": "event", "id": "founding-of-constantinople"},
-        {"type": "person", "id": "augustus-caesar"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "byzantium"
+        },
+        {
+          "type": "event",
+          "id": "founding-of-constantinople"
+        },
+        {
+          "type": "person",
+          "id": "augustus-caesar"
+        }
       ]
     },
     {
       "id": "constantine-palaiologos",
       "name": "Constantine Palaiologos",
-      "alt_names": ["Constantine XI Palaiologos", "Constantine Palaeologus"],
+      "alt_names": [
+        "Constantine XI Palaiologos",
+        "Constantine Palaeologus"
+      ],
       "role": "Last Roman Emperor",
       "birth_year": 1405,
       "death_year": 1453,
@@ -34,17 +57,33 @@
       "summary": "Brownworth marks Constantine Palaiologos as the end point of Byzantine history, describing him dying in the streets of Constantinople fighting the Turks in 1453. He notes that Palaiologos was the 137th emperor in an unbroken line stretching all the way back to Augustus Caesar.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_XI_Palaiologos",
       "portrait_url": null,
-      "transcript_lines": [[35, 36], [128, 130]],
+      "transcript_lines": [
+        [
+          35,
+          35
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fall-of-constantinople"},
-        {"type": "person", "id": "augustus-caesar"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople"
+        },
+        {
+          "type": "person",
+          "id": "augustus-caesar"
+        }
       ]
     },
     {
       "id": "diocletian",
       "name": "Diocletian",
-      "alt_names": ["Gaius Aurelius Valerius Diocletianus"],
+      "alt_names": [
+        "Gaius Aurelius Valerius Diocletianus"
+      ],
       "role": "Roman Emperor",
       "birth_year": 244,
       "death_year": 311,
@@ -53,16 +92,39 @@
       "summary": "Brownworth names Diocletian as his chosen starting point for Byzantine history, describing him as the brilliant, ambitious emperor who split the empire into eastern and western halves in 285 AD and then, remarkably, walked away from power. He is placed in the 'troubled third century' and will be the subject of the next episode.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian",
       "portrait_url": null,
-      "transcript_lines": [[44, 46], [134, 142]],
+      "transcript_lines": [
+        [
+          44,
+          44
+        ],
+        [
+          135,
+          135
+        ],
+        [
+          140,
+          140
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "division-of-the-empire"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "event",
+          "id": "division-of-the-empire"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
       "id": "augustus-caesar",
       "name": "Augustus Caesar",
-      "alt_names": ["Augustus", "Octavian", "Gaius Octavius Thurinus"],
+      "alt_names": [
+        "Augustus",
+        "Octavian",
+        "Gaius Octavius Thurinus"
+      ],
       "role": "First Roman Emperor",
       "birth_year": -63,
       "death_year": 14,
@@ -71,11 +133,41 @@
       "summary": "Brownworth cites Augustus as the first Roman Emperor and the anchor of the unbroken imperial line, to which both Constantine the Great and the last emperor Constantine Palaiologos belong. He also uses Augustus' reign as an example of how dramatically Roman society could change within a single generation, with Romans accepting emperorship after centuries of abhorring tyrants.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Augustus",
       "portrait_url": null,
-      "transcript_lines": [[37, 39], [116, 124]],
+      "transcript_lines": [
+        [
+          38,
+          38
+        ],
+        [
+          117,
+          117
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          123,
+          123
+        ],
+        [
+          129,
+          129
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-the-great"},
-        {"type": "person", "id": "constantine-palaiologos"},
-        {"type": "place", "id": "rome"}
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        },
+        {
+          "type": "person",
+          "id": "constantine-palaiologos"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        }
       ]
     },
     {
@@ -90,16 +182,30 @@
       "summary": "Brownworth describes Gibbon as the first modern historian, whose 1776 masterwork 'The Decline and Fall of the Roman Empire' shaped — and largely poisoned — how the Byzantine Empire was perceived for centuries. Gibbon's personal disillusionment with Christianity, stemming from a youthful conversion to Catholicism that his family forced him to renounce, led him to view Byzantium as 'a degenerate mongrel of Greece and Rome' and nothing more than a thousand years of decline and decay.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_Gibbon",
       "portrait_url": null,
-      "transcript_lines": [[58, 72]],
+      "transcript_lines": [
+        [
+          59,
+          59
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "publication-of-decline-and-fall"},
-        {"type": "place", "id": "byzantium"}
+        {
+          "type": "event",
+          "id": "publication-of-decline-and-fall"
+        },
+        {
+          "type": "place",
+          "id": "byzantium"
+        }
       ]
     },
     {
       "id": "john-kantakouzenos",
       "name": "John Kantakouzenos",
-      "alt_names": ["John Cansecumus", "John VI Kantakouzenos"],
+      "alt_names": [
+        "John Cansecumus",
+        "John VI Kantakouzenos"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1292,
       "death_year": 1383,
@@ -108,15 +214,26 @@
       "summary": "Brownworth uses John Kantakouzenos as a vivid illustration of how far the Byzantine Empire had drifted from classical Roman identity by its final centuries: visiting Europe calling himself a Roman Emperor while dressed in turban-like headgear, slippers, attended by eunuchs, and performing 'effeminate Eastern ceremonies.' This image, Brownworth argues, made later observers judge the empire as something wholly un-Roman.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_VI_Kantakouzenos",
       "portrait_url": null,
-      "transcript_lines": [[102, 108]],
+      "transcript_lines": [
+        [
+          102,
+          102
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
       "id": "robert-f-kennedy",
       "name": "Robert F. Kennedy",
-      "alt_names": ["Bobby Kennedy", "RFK"],
+      "alt_names": [
+        "Bobby Kennedy",
+        "RFK"
+      ],
       "role": "US Senator, Attorney General",
       "birth_year": 1925,
       "death_year": 1968,
@@ -125,13 +242,20 @@
       "summary": "Brownworth quotes Kennedy's observation that 'few will have the greatness to bend history itself,' using it to argue that great individuals — not masses or movements — are the true engines of history, and thus the right lens through which to tell Byzantine history.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_F._Kennedy",
       "portrait_url": null,
-      "transcript_lines": [[17, 18]],
+      "transcript_lines": [
+        [
+          17,
+          17
+        ]
+      ],
       "related": []
     },
     {
       "id": "alexander-the-great",
       "name": "Alexander the Great",
-      "alt_names": ["Alexander III of Macedon"],
+      "alt_names": [
+        "Alexander III of Macedon"
+      ],
       "role": "King of Macedon, conqueror",
       "birth_year": -356,
       "death_year": -323,
@@ -140,9 +264,17 @@
       "summary": "Brownworth mentions Alexander the Great as an example of a towering individual whose story is essential for understanding history, arguing it matters far more than knowing what a Macedonian peasant thought of him.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "portrait_url": null,
-      "transcript_lines": [[19, 21]],
+      "transcript_lines": [
+        [
+          20,
+          20
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "macedonia"}
+        {
+          "type": "place",
+          "id": "macedonia"
+        }
       ]
     },
     {
@@ -157,15 +289,25 @@
       "summary": "Brownworth invokes Luther as an example proving that great historical movements — in this case the Reformation — are incomprehensible without understanding the key individuals who drove them.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Martin_Luther",
       "portrait_url": null,
-      "transcript_lines": [[21, 22]],
+      "transcript_lines": [
+        [
+          21,
+          21
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "protestant-reformation"}
+        {
+          "type": "event",
+          "id": "protestant-reformation"
+        }
       ]
     },
     {
       "id": "ulrich-zwingli",
       "name": "Ulrich Zwingli",
-      "alt_names": ["Huldrych Zwingli"],
+      "alt_names": [
+        "Huldrych Zwingli"
+      ],
       "role": "Theologian, Swiss Reformer",
       "birth_year": 1484,
       "death_year": 1531,
@@ -174,17 +316,33 @@
       "summary": "Mentioned alongside Luther and Calvin as key individuals of the Reformation whose stories are essential to understanding that historical movement.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Huldrych_Zwingli",
       "portrait_url": null,
-      "transcript_lines": [[21, 22]],
+      "transcript_lines": [
+        [
+          21,
+          22
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "protestant-reformation"},
-        {"type": "person", "id": "martin-luther"},
-        {"type": "person", "id": "john-calvin"}
+        {
+          "type": "event",
+          "id": "protestant-reformation"
+        },
+        {
+          "type": "person",
+          "id": "martin-luther"
+        },
+        {
+          "type": "person",
+          "id": "john-calvin"
+        }
       ]
     },
     {
       "id": "john-calvin",
       "name": "John Calvin",
-      "alt_names": ["Jean Calvin"],
+      "alt_names": [
+        "Jean Calvin"
+      ],
       "role": "Theologian, French Reformer",
       "birth_year": 1509,
       "death_year": 1564,
@@ -193,11 +351,25 @@
       "summary": "Mentioned alongside Luther and Zwingli as key individuals of the Reformation whose stories are essential to understanding that historical movement.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_Calvin",
       "portrait_url": null,
-      "transcript_lines": [[21, 22]],
+      "transcript_lines": [
+        [
+          21,
+          22
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "protestant-reformation"},
-        {"type": "person", "id": "martin-luther"},
-        {"type": "person", "id": "ulrich-zwingli"}
+        {
+          "type": "event",
+          "id": "protestant-reformation"
+        },
+        {
+          "type": "person",
+          "id": "martin-luther"
+        },
+        {
+          "type": "person",
+          "id": "ulrich-zwingli"
+        }
       ]
     },
     {
@@ -212,9 +384,17 @@
       "summary": "Named by Brownworth as one of the key individuals without whom the American Revolution cannot be understood, used to illustrate his argument that individuals drive history more than masses or movements.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_Washington",
       "portrait_url": null,
-      "transcript_lines": [[22, 23]],
+      "transcript_lines": [
+        [
+          22,
+          23
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "american-revolution"}
+        {
+          "type": "event",
+          "id": "american-revolution"
+        }
       ]
     },
     {
@@ -229,9 +409,17 @@
       "summary": "Named by Brownworth alongside Washington and Franklin as a key individual essential to understanding the American Revolution.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_Hamilton",
       "portrait_url": null,
-      "transcript_lines": [[22, 23]],
+      "transcript_lines": [
+        [
+          22,
+          23
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "american-revolution"}
+        {
+          "type": "event",
+          "id": "american-revolution"
+        }
       ]
     },
     {
@@ -246,15 +434,25 @@
       "summary": "Named by Brownworth alongside Washington and Hamilton as a key individual essential to understanding the American Revolution.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Benjamin_Franklin",
       "portrait_url": null,
-      "transcript_lines": [[22, 23]],
+      "transcript_lines": [
+        [
+          22,
+          23
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "american-revolution"}
+        {
+          "type": "event",
+          "id": "american-revolution"
+        }
       ]
     },
     {
       "id": "king-george-iii",
       "name": "King George III",
-      "alt_names": ["George III"],
+      "alt_names": [
+        "George III"
+      ],
       "role": "King of Great Britain",
       "birth_year": 1738,
       "death_year": 1820,
@@ -263,15 +461,25 @@
       "summary": "Named by Brownworth as one of the key individuals — alongside Washington, Hamilton, Franklin, and Pitt — without whom the American Revolution cannot be properly understood.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/George_III",
       "portrait_url": null,
-      "transcript_lines": [[22, 23]],
+      "transcript_lines": [
+        [
+          23,
+          23
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "american-revolution"}
+        {
+          "type": "event",
+          "id": "american-revolution"
+        }
       ]
     },
     {
       "id": "william-pitt-the-younger",
       "name": "William Pitt",
-      "alt_names": ["William Pitt the Younger"],
+      "alt_names": [
+        "William Pitt the Younger"
+      ],
       "role": "British Prime Minister",
       "birth_year": 1759,
       "death_year": 1806,
@@ -280,9 +488,17 @@
       "summary": "Named by Brownworth alongside Washington, Hamilton, Franklin, and King George as a key individual essential to understanding the American Revolution.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/William_Pitt_the_Younger",
       "portrait_url": null,
-      "transcript_lines": [[22, 23]],
+      "transcript_lines": [
+        [
+          23,
+          23
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "american-revolution"}
+        {
+          "type": "event",
+          "id": "american-revolution"
+        }
       ]
     },
     {
@@ -297,10 +513,21 @@
       "summary": "Brownworth mentions Jefferson only in passing to anchor Edward Gibbon's publication date: the first volume of 'The Decline and Fall of the Roman Empire' appeared in 1776, the same year Jefferson penned the Declaration of Independence.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_Jefferson",
       "portrait_url": null,
-      "transcript_lines": [[60, 61]],
+      "transcript_lines": [
+        [
+          60,
+          60
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "edward-gibbon"},
-        {"type": "event", "id": "publication-of-decline-and-fall"}
+        {
+          "type": "person",
+          "id": "edward-gibbon"
+        },
+        {
+          "type": "event",
+          "id": "publication-of-decline-and-fall"
+        }
       ]
     },
     {
@@ -315,13 +542,20 @@
       "summary": "Brownworth uses Shakespeare as an analogy for how language and society change over time: even after only 400 years, Shakespeare's English is nearly incomprehensible to modern high schoolers, making it all the more understandable that the Byzantine Empire would look unrecognizable after a thousand years.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/William_Shakespeare",
       "portrait_url": null,
-      "transcript_lines": [[97, 100]],
+      "transcript_lines": [
+        [
+          97,
+          100
+        ]
+      ],
       "related": []
     },
     {
       "id": "brutus",
       "name": "Brutus",
-      "alt_names": ["Marcus Junius Brutus"],
+      "alt_names": [
+        "Marcus Junius Brutus"
+      ],
       "role": "Roman senator and assassin of Julius Caesar",
       "birth_year": -85,
       "death_year": -42,
@@ -330,10 +564,21 @@
       "summary": "Brownworth invokes Brutus and the early Roman founding fathers as representatives of a Rome that fiercely abhorred tyrants, contrasting that with the Rome of Augustus' time that willingly sought an emperor — illustrating how dramatically a civilization can change within a generation.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Marcus_Junius_Brutus_the_Younger",
       "portrait_url": null,
-      "transcript_lines": [[119, 124]],
+      "transcript_lines": [
+        [
+          119,
+          119
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "augustus-caesar"},
-        {"type": "place", "id": "rome"}
+        {
+          "type": "person",
+          "id": "augustus-caesar"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        }
       ]
     }
   ],
@@ -349,14 +594,57 @@
       "summary": "Constantinople is the central place of Byzantine history as Brownworth frames it: founded by Constantine the Great on the site of old Byzantium, it served as the Christian imperial capital meant to rival or surpass Rome. The city's founding in 324–330 is one of the three candidate start-dates Brownworth considers for Byzantine history, and it is the city where the last emperor Constantine Palaiologos died fighting the Turks in 1453.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
       "image_url": null,
-      "transcript_lines": [[33, 36], [45, 46], [136, 137]],
+      "transcript_lines": [
+        [
+          32,
+          32
+        ],
+        [
+          36,
+          36
+        ],
+        [
+          45,
+          45
+        ],
+        [
+          56,
+          56
+        ],
+        [
+          109,
+          109
+        ],
+        [
+          137,
+          137
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-the-great"},
-        {"type": "person", "id": "constantine-palaiologos"},
-        {"type": "event", "id": "founding-of-constantinople"},
-        {"type": "event", "id": "fall-of-constantinople"},
-        {"type": "place", "id": "byzantium"},
-        {"type": "place", "id": "rome"}
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        },
+        {
+          "type": "person",
+          "id": "constantine-palaiologos"
+        },
+        {
+          "type": "event",
+          "id": "founding-of-constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople"
+        },
+        {
+          "type": "place",
+          "id": "byzantium"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        }
       ]
     },
     {
@@ -370,11 +658,37 @@
       "summary": "Byzantium is the ancient Greek city on the Bosphorus that Constantine refounded as Constantinople. Brownworth notes that later historians reached back to this original name — rather than the unwieldy 'Constantinopolitan Empire' — to coin the term 'Byzantine Empire.'",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantium",
       "image_url": null,
-      "transcript_lines": [[32, 33], [55, 57]],
+      "transcript_lines": [
+        [
+          32,
+          32
+        ],
+        [
+          56,
+          56
+        ],
+        [
+          67,
+          67
+        ],
+        [
+          138,
+          138
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-the-great"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "founding-of-constantinople"}
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "founding-of-constantinople"
+        }
       ]
     },
     {
@@ -388,11 +702,45 @@
       "summary": "Rome is the original imperial capital and the yardstick against which Byzantine identity is measured throughout this episode. Brownworth notes that the empire later called Byzantine never controlled Rome for most of its history, which is precisely why historians felt the need to give it a different name; he also discusses how Rome itself changed enormously between the age of Brutus and the age of Augustus.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
       "image_url": null,
-      "transcript_lines": [[33, 34], [53, 56], [119, 124]],
+      "transcript_lines": [
+        [
+          35,
+          35
+        ],
+        [
+          54,
+          54
+        ],
+        [
+          68,
+          69
+        ],
+        [
+          104,
+          105
+        ],
+        [
+          120,
+          121
+        ],
+        [
+          138,
+          138
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "augustus-caesar"},
-        {"type": "person", "id": "brutus"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "augustus-caesar"
+        },
+        {
+          "type": "person",
+          "id": "brutus"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -406,11 +754,25 @@
       "summary": "Brownworth mentions the Bosphorus as the geographic location on which Constantine began building his new capital in 324, making it the physical setting for the birth of the Byzantine world.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bosphorus",
       "image_url": null,
-      "transcript_lines": [[136, 137]],
+      "transcript_lines": [
+        [
+          136,
+          136
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-the-great"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "founding-of-constantinople"}
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "founding-of-constantinople"
+        }
       ]
     },
     {
@@ -424,9 +786,17 @@
       "summary": "Mentioned by Brownworth only as the homeland of a hypothetical peasant who might have had an opinion about Alexander the Great, used to illustrate the contrast between a common person's perspective and the significance of great individuals.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Macedonia_(ancient_kingdom)",
       "image_url": null,
-      "transcript_lines": [[19, 21]],
+      "transcript_lines": [
+        [
+          19,
+          19
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "alexander-the-great"}
+        {
+          "type": "person",
+          "id": "alexander-the-great"
+        }
       ]
     }
   ],
@@ -441,12 +811,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople#Foundation",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[32, 36], [136, 138]],
+      "transcript_lines": [
+        [
+          32,
+          36
+        ],
+        [
+          136,
+          138
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-the-great"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "byzantium"},
-        {"type": "place", "id": "bosphorus"}
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "byzantium"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        }
       ]
     },
     {
@@ -459,10 +850,21 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[35, 36]],
+      "transcript_lines": [
+        [
+          35,
+          36
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-palaiologos"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "constantine-palaiologos"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -475,11 +877,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Division_of_the_Roman_Empire",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[44, 47], [135, 136]],
+      "transcript_lines": [
+        [
+          44,
+          47
+        ],
+        [
+          135,
+          136
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "diocletian"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "rome"}
+        {
+          "type": "person",
+          "id": "diocletian"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        }
       ]
     },
     {
@@ -492,10 +912,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
       "image_url": null,
       "location_id": "rome",
-      "transcript_lines": [[46, 48], [85, 87]],
+      "transcript_lines": [
+        [
+          46,
+          48
+        ],
+        [
+          85,
+          87
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "rome"},
-        {"type": "person", "id": "edward-gibbon"}
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "person",
+          "id": "edward-gibbon"
+        }
       ]
     },
     {
@@ -508,10 +943,21 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/The_History_of_the_Decline_and_Fall_of_the_Roman_Empire",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[58, 72]],
+      "transcript_lines": [
+        [
+          58,
+          72
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "edward-gibbon"},
-        {"type": "person", "id": "thomas-jefferson"}
+        {
+          "type": "person",
+          "id": "edward-gibbon"
+        },
+        {
+          "type": "person",
+          "id": "thomas-jefferson"
+        }
       ]
     },
     {
@@ -524,11 +970,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Reformation",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[21, 22]],
+      "transcript_lines": [
+        [
+          21,
+          22
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "martin-luther"},
-        {"type": "person", "id": "ulrich-zwingli"},
-        {"type": "person", "id": "john-calvin"}
+        {
+          "type": "person",
+          "id": "martin-luther"
+        },
+        {
+          "type": "person",
+          "id": "ulrich-zwingli"
+        },
+        {
+          "type": "person",
+          "id": "john-calvin"
+        }
       ]
     },
     {
@@ -541,13 +1001,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/American_Revolution",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[22, 23]],
+      "transcript_lines": [
+        [
+          22,
+          22
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "george-washington"},
-        {"type": "person", "id": "alexander-hamilton"},
-        {"type": "person", "id": "benjamin-franklin"},
-        {"type": "person", "id": "king-george-iii"},
-        {"type": "person", "id": "william-pitt-the-younger"}
+        {
+          "type": "person",
+          "id": "george-washington"
+        },
+        {
+          "type": "person",
+          "id": "alexander-hamilton"
+        },
+        {
+          "type": "person",
+          "id": "benjamin-franklin"
+        },
+        {
+          "type": "person",
+          "id": "king-george-iii"
+        },
+        {
+          "type": "person",
+          "id": "william-pitt-the-younger"
+        }
       ]
     },
     {
@@ -560,7 +1040,12 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Crusades",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[88, 90]],
+      "transcript_lines": [
+        [
+          88,
+          88
+        ]
+      ],
       "related": []
     }
   ]

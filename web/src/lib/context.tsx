@@ -56,11 +56,14 @@ interface AppState {
    * year. Toggled from the lock button in the timeline strip. */
   autoScrubLocked: boolean;
   setAutoScrubLocked: (b: boolean) => void;
-  /** Entity currently being mentioned in the playing episode (derived from
-   * transcript line ranges). `null` outside playback or in a transcript
-   * gap. WorldMap reads this to render the marker emphasized. */
-  audioFocusEntityId: string | null;
-  setAudioFocusEntityId: (id: string | null) => void;
+  /** Entities currently being highlighted from playback. Each entry stays
+   * for ~10s after its mention before the AudioPlayer prunes it; new
+   * mentions are appended (not replacing), so dense sequences leave several
+   * markers lit at once. WorldMap renders the union as emphasized markers.
+   * Order = insertion (oldest → newest); the *last* entry is what drives
+   * the timeline year and cluster expansion. */
+  audioFocusEntityIds: string[];
+  setAudioFocusEntityIds: (ids: string[]) => void;
   filters: KindFilter;
   setFilters: (f: KindFilter) => void;
 }
@@ -86,7 +89,7 @@ export function AppProvider({
   const [pendingSeek, setPendingSeek] = useState<AudioSeekHint | null>(null);
   const audioController = useRef<AudioController | null>(null);
   const [autoScrubLocked, setAutoScrubLocked] = useState(false);
-  const [audioFocusEntityId, setAudioFocusEntityId] = useState<string | null>(null);
+  const [audioFocusEntityIds, setAudioFocusEntityIds] = useState<string[]>([]);
   const [filters, setFilters] = useState<KindFilter>({
     person: true,
     place: true,
@@ -116,8 +119,8 @@ export function AppProvider({
       audioController,
       autoScrubLocked,
       setAutoScrubLocked,
-      audioFocusEntityId,
-      setAudioFocusEntityId,
+      audioFocusEntityIds,
+      setAudioFocusEntityIds,
       filters,
       setFilters,
     }),
@@ -127,7 +130,7 @@ export function AppProvider({
       playingEpisode,
       pendingSeek,
       autoScrubLocked,
-      audioFocusEntityId,
+      audioFocusEntityIds,
       filters,
     ],
   );

@@ -3,9 +3,13 @@
  *
  * Built from `entity.transcript_lines_by_episode`, which already records
  * the [start, end] line ranges for each entity in each episode. We flatten
- * those into a single sorted list per episode, keep only entities with a
- * known timeline year, and provide `findAnchorAt(line)` for the audio-
- * driven scrub.
+ * those into a single sorted list per episode and provide `findAnchorAt(line)`
+ * for the audio-driven scrub.
+ *
+ * Entities without a `timelineYear` (e.g. places like Egypt with no
+ * `first_year`, or people with no reign/birth date) are still kept — we
+ * just won't shift the timeline year when they activate. Skipping them
+ * entirely meant a ton of legitimate mentions never highlighted at all.
  *
  * Cached on first call per episode — the data is static, so we never
  * rebuild.
@@ -18,7 +22,9 @@ export interface EpisodeAnchor {
   startLine: number;
   endLine: number;
   entityId: string;
-  year: number;
+  /** null when the entity has no resolvable timeline year. The marker
+   * still highlights — the timeline year just doesn't shift. */
+  year: number | null;
   kind: AnyEntity["kind"];
 }
 
@@ -34,7 +40,6 @@ export function getEpisodeAnchors(ep: number): EpisodeAnchor[] {
     const ranges = e.transcript_lines_by_episode?.[epKey];
     if (!ranges || ranges.length === 0) continue;
     const year = timelineYear(e);
-    if (year == null) continue;
     for (const [start, end] of ranges) {
       out.push({
         startLine: start,

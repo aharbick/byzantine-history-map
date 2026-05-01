@@ -5,7 +5,9 @@
     {
       "id": "basil-i",
       "name": "Basil I",
-      "alt_names": ["Basil the Macedonian"],
+      "alt_names": [
+        "Basil the Macedonian"
+      ],
       "role": "Byzantine Emperor, founder of the Macedonian dynasty",
       "birth_year": 811,
       "death_year": 886,
@@ -14,45 +16,301 @@
       "summary": "An Armenian peasant of extraordinary physical strength and ruthless ambition, Basil rose from groom to co-emperor by ingratiating himself with Michael III and then murdering his rivals Bardas and Michael. As sole emperor he proved a transformative ruler, reconquering the Dalmatian coast and Italian cities, rebuilding the navy, reforming the law code, and adorning Constantinople with monumental buildings — leaving the empire, in Brownworth's telling, the strongest power in Europe and founding a stable dynasty that would preside over Byzantium's Golden Age.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_I",
       "portrait_url": null,
-      "transcript_lines": [[18, 19], [128, 553]],
+      "transcript_lines": [
+        [
+          3,
+          3
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          129,
+          130
+        ],
+        [
+          160,
+          160
+        ],
+        [
+          165,
+          167
+        ],
+        [
+          181,
+          181
+        ],
+        [
+          190,
+          190
+        ],
+        [
+          204,
+          204
+        ],
+        [
+          212,
+          212
+        ],
+        [
+          216,
+          220
+        ],
+        [
+          223,
+          223
+        ],
+        [
+          233,
+          233
+        ],
+        [
+          239,
+          239
+        ],
+        [
+          252,
+          252
+        ],
+        [
+          263,
+          263
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          286,
+          286
+        ],
+        [
+          295,
+          295
+        ],
+        [
+          312,
+          312
+        ],
+        [
+          328,
+          328
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          343,
+          343
+        ],
+        [
+          353,
+          353
+        ],
+        [
+          360,
+          360
+        ],
+        [
+          367,
+          367
+        ],
+        [
+          373,
+          373
+        ],
+        [
+          379,
+          379
+        ],
+        [
+          395,
+          395
+        ],
+        [
+          405,
+          405
+        ],
+        [
+          416,
+          416
+        ],
+        [
+          429,
+          429
+        ],
+        [
+          447,
+          447
+        ],
+        [
+          461,
+          462
+        ],
+        [
+          483,
+          483
+        ],
+        [
+          489,
+          489
+        ],
+        [
+          494,
+          494
+        ],
+        [
+          504,
+          504
+        ],
+        [
+          522,
+          522
+        ],
+        [
+          530,
+          530
+        ],
+        [
+          533,
+          533
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-iii"},
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "eudosia"},
-        {"type": "person", "id": "constantine-son-of-basil"},
-        {"type": "person", "id": "leo-vi"},
-        {"type": "person", "id": "nikephoros-phokas-the-elder"},
-        {"type": "person", "id": "basil-ii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "macedonia"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "church-of-holy-apostles"},
-        {"type": "place", "id": "nea-ekklesia"},
-        {"type": "place", "id": "crete"},
-        {"type": "place", "id": "sicily"},
-        {"type": "place", "id": "dalmatia"},
-        {"type": "place", "id": "otranto"},
-        {"type": "place", "id": "bari"},
-        {"type": "place", "id": "tefrike"},
-        {"type": "event", "id": "murder-of-bardas"},
-        {"type": "event", "id": "murder-of-michael-iii"},
-        {"type": "event", "id": "basil-crowned-co-emperor"},
-        {"type": "event", "id": "deposition-of-photius-first"},
-        {"type": "event", "id": "paulician-campaign"},
-        {"type": "event", "id": "reconquest-of-dalmatia"},
-        {"type": "event", "id": "fall-of-syracuse"},
-        {"type": "event", "id": "capture-of-otranto-and-bari"},
-        {"type": "event", "id": "prochiron-law-code"},
-        {"type": "event", "id": "restoration-of-photius"},
-        {"type": "event", "id": "death-of-basil-i"},
-        {"type": "event", "id": "death-of-constantine-son-of-basil"}
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "eudosia"
+        },
+        {
+          "type": "person",
+          "id": "constantine-son-of-basil"
+        },
+        {
+          "type": "person",
+          "id": "leo-vi"
+        },
+        {
+          "type": "person",
+          "id": "nikephoros-phokas-the-elder"
+        },
+        {
+          "type": "person",
+          "id": "basil-ii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "macedonia"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "church-of-holy-apostles"
+        },
+        {
+          "type": "place",
+          "id": "nea-ekklesia"
+        },
+        {
+          "type": "place",
+          "id": "crete"
+        },
+        {
+          "type": "place",
+          "id": "sicily"
+        },
+        {
+          "type": "place",
+          "id": "dalmatia"
+        },
+        {
+          "type": "place",
+          "id": "otranto"
+        },
+        {
+          "type": "place",
+          "id": "bari"
+        },
+        {
+          "type": "place",
+          "id": "tefrike"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-bardas"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-michael-iii"
+        },
+        {
+          "type": "event",
+          "id": "basil-crowned-co-emperor"
+        },
+        {
+          "type": "event",
+          "id": "deposition-of-photius-first"
+        },
+        {
+          "type": "event",
+          "id": "paulician-campaign"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-of-dalmatia"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-syracuse"
+        },
+        {
+          "type": "event",
+          "id": "capture-of-otranto-and-bari"
+        },
+        {
+          "type": "event",
+          "id": "prochiron-law-code"
+        },
+        {
+          "type": "event",
+          "id": "restoration-of-photius"
+        },
+        {
+          "type": "event",
+          "id": "death-of-basil-i"
+        },
+        {
+          "type": "event",
+          "id": "death-of-constantine-son-of-basil"
+        }
       ]
     },
     {
       "id": "michael-iii",
       "name": "Michael III",
-      "alt_names": ["Michael the Drunkard"],
+      "alt_names": [
+        "Michael the Drunkard"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 840,
       "death_year": 867,
@@ -61,24 +319,129 @@
       "summary": "Brownworth pushes back against Michael's reputation as a buffoon, noting that \"there was greatness in his time,\" but concedes he was a weak ruler who lavished attention on horses and drinking and handed government to favorites. His capriciousness and willingness to let Basil murder his uncle Bardas ultimately sealed his own fate, as Basil turned on him next.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_III",
       "portrait_url": null,
-      "transcript_lines": [[27, 37], [120, 135], [144, 252]],
+      "transcript_lines": [
+        [
+          27,
+          27
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          149,
+          149
+        ],
+        [
+          154,
+          154
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          198,
+          198
+        ],
+        [
+          205,
+          205
+        ],
+        [
+          211,
+          211
+        ],
+        [
+          217,
+          217
+        ],
+        [
+          221,
+          221
+        ],
+        [
+          225,
+          225
+        ],
+        [
+          246,
+          246
+        ],
+        [
+          273,
+          273
+        ],
+        [
+          435,
+          435
+        ],
+        [
+          465,
+          465
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "empress-theodora-regent"},
-        {"type": "person", "id": "eudosia"},
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "ostrogorski"},
-        {"type": "event", "id": "murder-of-bardas"},
-        {"type": "event", "id": "murder-of-michael-iii"},
-        {"type": "event", "id": "basil-crowned-co-emperor"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "empress-theodora-regent"
+        },
+        {
+          "type": "person",
+          "id": "eudosia"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "ostrogorski"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-bardas"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-michael-iii"
+        },
+        {
+          "type": "event",
+          "id": "basil-crowned-co-emperor"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
       "id": "bardas",
       "name": "Bardas",
-      "alt_names": ["Caesar Bardas"],
+      "alt_names": [
+        "Caesar Bardas"
+      ],
       "role": "Caesar, uncle of Michael III, de facto ruler of the Byzantine Empire",
       "birth_year": null,
       "death_year": 866,
@@ -87,24 +450,71 @@
       "summary": "The real power behind Michael III's throne, Bardas was a man of both charisma and vision who led expeditions into Asia Minor and Armenia, defeated and killed Caliph Omar, and championed Photius as patriarch. His fatal mistake was underestimating Basil, whom he dismissed as a mere drinking companion, and he was cut down by Basil's sword during a campaign in Asia Minor.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bardas",
       "portrait_url": null,
-      "transcript_lines": [[42, 57], [114, 114], [127, 210]],
+      "transcript_lines": [
+        [
+          42,
+          42
+        ],
+        [
+          54,
+          54
+        ],
+        [
+          70,
+          70
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-iii"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "caliph-omar"},
-        {"type": "place", "id": "asia-minor"},
-        {"type": "place", "id": "armenia"},
-        {"type": "place", "id": "crete"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "event", "id": "murder-of-bardas"},
-        {"type": "event", "id": "expedition-against-crete"}
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "caliph-omar"
+        },
+        {
+          "type": "place",
+          "id": "asia-minor"
+        },
+        {
+          "type": "place",
+          "id": "armenia"
+        },
+        {
+          "type": "place",
+          "id": "crete"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-bardas"
+        },
+        {
+          "type": "event",
+          "id": "expedition-against-crete"
+        }
       ]
     },
     {
       "id": "photius",
       "name": "Photius",
-      "alt_names": ["Phodius", "Patriarch Photius", "Photios I"],
+      "alt_names": [
+        "Phodius",
+        "Patriarch Photius",
+        "Photios I"
+      ],
       "role": "Patriarch of Constantinople, scholar",
       "birth_year": 810,
       "death_year": 893,
@@ -113,28 +523,158 @@
       "summary": "Described by Brownworth as one of the most famous scholars of the Middle Ages, Photius rose rapidly through court ranks — from captain of the guard to chief imperial secretary — before Bardas elevated him to patriarch within a week of joining the priesthood. He championed Byzantine ecclesiastical independence against Pope Nicholas I, commissioned Cyril and Methodius to evangelize the Slavs, and served as the key spiritual force behind Basil's cultural renaissance, though his political machinations around the succession of Leo nearly proved his undoing.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Photios_I_of_Constantinople",
       "portrait_url": null,
-      "transcript_lines": [[18, 19], [56, 116], [207, 208], [256, 305], [360, 396], [473, 484]],
+      "transcript_lines": [
+        [
+          19,
+          19
+        ],
+        [
+          57,
+          58
+        ],
+        [
+          70,
+          70
+        ],
+        [
+          75,
+          75
+        ],
+        [
+          88,
+          88
+        ],
+        [
+          115,
+          115
+        ],
+        [
+          207,
+          207
+        ],
+        [
+          257,
+          257
+        ],
+        [
+          261,
+          261
+        ],
+        [
+          275,
+          275
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          288,
+          288
+        ],
+        [
+          297,
+          297
+        ],
+        [
+          302,
+          302
+        ],
+        [
+          361,
+          361
+        ],
+        [
+          366,
+          366
+        ],
+        [
+          374,
+          374
+        ],
+        [
+          394,
+          394
+        ],
+        [
+          474,
+          474
+        ],
+        [
+          478,
+          478
+        ],
+        [
+          491,
+          491
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "michael-iii"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "constantine-cyril"},
-        {"type": "person", "id": "methodius"},
-        {"type": "person", "id": "pope-nicholas-i"},
-        {"type": "person", "id": "leo-vi"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "baghdad"},
-        {"type": "event", "id": "deposition-of-photius-first"},
-        {"type": "event", "id": "restoration-of-photius"},
-        {"type": "event", "id": "photian-schism"},
-        {"type": "event", "id": "prochiron-law-code"},
-        {"type": "event", "id": "mission-to-slavs"}
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "constantine-cyril"
+        },
+        {
+          "type": "person",
+          "id": "methodius"
+        },
+        {
+          "type": "person",
+          "id": "pope-nicholas-i"
+        },
+        {
+          "type": "person",
+          "id": "leo-vi"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "baghdad"
+        },
+        {
+          "type": "event",
+          "id": "deposition-of-photius-first"
+        },
+        {
+          "type": "event",
+          "id": "restoration-of-photius"
+        },
+        {
+          "type": "event",
+          "id": "photian-schism"
+        },
+        {
+          "type": "event",
+          "id": "prochiron-law-code"
+        },
+        {
+          "type": "event",
+          "id": "mission-to-slavs"
+        }
       ]
     },
     {
       "id": "empress-theodora-regent",
       "name": "Empress Theodora",
-      "alt_names": ["Theodora the Regent", "Saint Theodora"],
+      "alt_names": [
+        "Theodora the Regent",
+        "Saint Theodora"
+      ],
       "role": "Byzantine Empress, regent for Michael III",
       "birth_year": 815,
       "death_year": 867,
@@ -143,17 +683,33 @@
       "summary": "Theodora ended the iconoclastic controversy by restoring the veneration of icons and was sainted for her efforts. She ruled as regent for her son Michael III until he, furious at being excluded from public life and forbidden from seeing his mistress Eudosia, overthrew her and forced her into a monastery.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Theodora_(wife_of_Theophilos)",
       "portrait_url": null,
-      "transcript_lines": [[23, 31]],
+      "transcript_lines": [
+        [
+          24,
+          24
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-iii"},
-        {"type": "person", "id": "eudosia"},
-        {"type": "event", "id": "end-of-iconoclasm"}
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "person",
+          "id": "eudosia"
+        },
+        {
+          "type": "event",
+          "id": "end-of-iconoclasm"
+        }
       ]
     },
     {
       "id": "irene",
       "name": "Empress Irene",
-      "alt_names": ["Irene of Athens"],
+      "alt_names": [
+        "Irene of Athens"
+      ],
       "role": "Byzantine Empress",
       "birth_year": 750,
       "death_year": 803,
@@ -162,16 +718,30 @@
       "summary": "Brownworth references Irene as the subject of the previous episode, characterizing her reign as disastrous — marked by the virtual collapse of Byzantine prestige in the West, the creation of a rival empire, and the coronation of Charlemagne as Emperor of the Romans, a direct insult to the Eastern Empire.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Irene_of_Athens",
       "portrait_url": null,
-      "transcript_lines": [[5, 16]],
+      "transcript_lines": [
+        [
+          5,
+          5
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "charlemagne"},
-        {"type": "event", "id": "coronation-of-charlemagne"}
+        {
+          "type": "person",
+          "id": "charlemagne"
+        },
+        {
+          "type": "event",
+          "id": "coronation-of-charlemagne"
+        }
       ]
     },
     {
       "id": "charlemagne",
       "name": "Charlemagne",
-      "alt_names": ["Charles the Great", "Charles I"],
+      "alt_names": [
+        "Charles the Great",
+        "Charles I"
+      ],
       "role": "Frankish King, first Holy Roman Emperor",
       "birth_year": 747,
       "death_year": 814,
@@ -180,16 +750,30 @@
       "summary": "Mentioned as the rival emperor crowned during Irene's reign, Charlemagne was given the title Emperor of the Romans as a direct insult to the Eastern Empire, creating a rival western empire and contributing to the collapse of Byzantine prestige in the West.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne",
       "portrait_url": null,
-      "transcript_lines": [[8, 10]],
+      "transcript_lines": [
+        [
+          8,
+          8
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "irene"},
-        {"type": "event", "id": "coronation-of-charlemagne"}
+        {
+          "type": "person",
+          "id": "irene"
+        },
+        {
+          "type": "event",
+          "id": "coronation-of-charlemagne"
+        }
       ]
     },
     {
       "id": "ostrogorski",
       "name": "Ostrogorski",
-      "alt_names": ["Georg Ostrogorsky", "Georgije Ostrogorski"],
+      "alt_names": [
+        "Georg Ostrogorsky",
+        "Georgije Ostrogorski"
+      ],
       "role": "Byzantine historian",
       "birth_year": 1902,
       "death_year": 1976,
@@ -198,15 +782,30 @@
       "summary": "Cited by Brownworth to characterize Michael III's reign: \"He was not great, but there was greatness in his time.\" Ostrogorski is invoked to push back against the caricature of Michael as a mere buffoon.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Georg_Ostrogorsky",
       "portrait_url": null,
-      "transcript_lines": [[38, 41]],
+      "transcript_lines": [
+        [
+          38,
+          38
+        ],
+        [
+          41,
+          41
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-iii"}
+        {
+          "type": "person",
+          "id": "michael-iii"
+        }
       ]
     },
     {
       "id": "caliph-omar",
       "name": "Caliph Omar",
-      "alt_names": ["Omar", "Umar"],
+      "alt_names": [
+        "Omar",
+        "Umar"
+      ],
       "role": "Abbasid Caliph",
       "birth_year": null,
       "death_year": null,
@@ -215,17 +814,34 @@
       "summary": "The Saracen leader defeated and killed by Bardas during his expeditions into Asia Minor and Armenia, marking the first blow struck against Islam's advance in almost a hundred years.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Omar_ibn_Abdallah_al-Aqta",
       "portrait_url": null,
-      "transcript_lines": [[47, 50]],
+      "transcript_lines": [
+        [
+          48,
+          48
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bardas"},
-        {"type": "place", "id": "asia-minor"},
-        {"type": "place", "id": "armenia"}
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "place",
+          "id": "asia-minor"
+        },
+        {
+          "type": "place",
+          "id": "armenia"
+        }
       ]
     },
     {
       "id": "boris-i-of-bulgaria",
       "name": "Boris I of Bulgaria",
-      "alt_names": ["Boris I", "Boris-Michael of Bulgaria"],
+      "alt_names": [
+        "Boris I",
+        "Boris-Michael of Bulgaria"
+      ],
       "role": "Khan/Prince of Bulgaria",
       "birth_year": null,
       "death_year": 907,
@@ -234,22 +850,58 @@
       "summary": "Boris I sent ambassadors to Constantinople asking for Christian teachers, an opportunity that Photius exploited by dispatching Cyril and Methodius. He later played Rome against Constantinople over Bulgaria's ecclesiastical allegiance, but Basil outmaneuvered him by referring the question to the three eastern bishoprics, who predictably assigned Bulgaria to Constantinople.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Boris_I_of_Bulgaria",
       "portrait_url": null,
-      "transcript_lines": [[81, 83], [306, 327]],
+      "transcript_lines": [
+        [
+          81,
+          81
+        ],
+        [
+          306,
+          306
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "constantine-cyril"},
-        {"type": "person", "id": "methodius"},
-        {"type": "place", "id": "bulgaria"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "conversion-of-bulgaria"},
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"}
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "constantine-cyril"
+        },
+        {
+          "type": "person",
+          "id": "methodius"
+        },
+        {
+          "type": "place",
+          "id": "bulgaria"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "conversion-of-bulgaria"
+        },
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        }
       ]
     },
     {
       "id": "constantine-cyril",
       "name": "Constantine (Cyril)",
-      "alt_names": ["Saint Cyril", "Cyril"],
+      "alt_names": [
+        "Saint Cyril",
+        "Cyril"
+      ],
       "role": "Byzantine monk, missionary, creator of the Cyrillic alphabet",
       "birth_year": 827,
       "death_year": 869,
@@ -258,19 +910,41 @@
       "summary": "Commissioned by Photius along with his brother Methodius to bring Christianity to the Bulgarians, Moravians, and Rus, Constantine took the Slavic name Cyril and, recognizing that the Slavs lacked a written language, devised the Cyrillic alphabet based on Greek characters. Though the mission to the Moravians failed, his alphabetic creation became the basis of writing systems for most of Eastern Europe.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_and_Methodius",
       "portrait_url": null,
-      "transcript_lines": [[89, 104]],
+      "transcript_lines": [
+        [
+          95,
+          95
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "methodius"},
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "boris-i-of-bulgaria"},
-        {"type": "event", "id": "mission-to-slavs"},
-        {"type": "event", "id": "creation-of-cyrillic-alphabet"}
+        {
+          "type": "person",
+          "id": "methodius"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "boris-i-of-bulgaria"
+        },
+        {
+          "type": "event",
+          "id": "mission-to-slavs"
+        },
+        {
+          "type": "event",
+          "id": "creation-of-cyrillic-alphabet"
+        }
       ]
     },
     {
       "id": "methodius",
       "name": "Methodius",
-      "alt_names": ["Saint Methodius"],
+      "alt_names": [
+        "Saint Methodius"
+      ],
       "role": "Byzantine monk, missionary",
       "birth_year": 815,
       "death_year": 885,
@@ -279,17 +953,33 @@
       "summary": "Brother of Constantine (Cyril), commissioned by Photius alongside him to evangelize the Bulgarians, Moravians, and Rus. Though unsuccessful with the Moravians, he and his brother did their work well overall, pulling Bulgaria firmly into the Byzantine Orthodox sphere.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cyril_and_Methodius",
       "portrait_url": null,
-      "transcript_lines": [[89, 104]],
+      "transcript_lines": [
+        [
+          90,
+          90
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-cyril"},
-        {"type": "person", "id": "photius"},
-        {"type": "event", "id": "mission-to-slavs"}
+        {
+          "type": "person",
+          "id": "constantine-cyril"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "event",
+          "id": "mission-to-slavs"
+        }
       ]
     },
     {
       "id": "pope-nicholas-i",
       "name": "Pope Nicholas I",
-      "alt_names": ["Nicholas the Great"],
+      "alt_names": [
+        "Nicholas the Great"
+      ],
       "role": "Pope",
       "birth_year": 800,
       "death_year": 867,
@@ -298,19 +988,41 @@
       "summary": "The pope whose claim to universal spiritual authority Photius was determined to challenge. Nicholas protested when Michael III deposed the previous patriarch and installed Photius without papal consultation; Photius responded by telling him to mind his own business. Later, when Basil deposed Photius to gain papal support, the pope had already been succeeded by a pontiff furious over Bulgaria.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Nicholas_I",
       "portrait_url": null,
-      "transcript_lines": [[78, 79], [279, 285]],
+      "transcript_lines": [
+        [
+          79,
+          79
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "photian-schism"},
-        {"type": "event", "id": "deposition-of-photius-first"},
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"}
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "photian-schism"
+        },
+        {
+          "type": "event",
+          "id": "deposition-of-photius-first"
+        },
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        }
       ]
     },
     {
       "id": "eudosia",
       "name": "Eudosia",
-      "alt_names": ["Eudokia Ingerina"],
+      "alt_names": [
+        "Eudokia Ingerina"
+      ],
       "role": "Mistress of Michael III, later wife of Basil I and Empress",
       "birth_year": null,
       "death_year": 882,
@@ -319,17 +1031,46 @@
       "summary": "Originally the mistress of Michael III, who had been forced to give her up in his youth. Michael later forced Basil to divorce his first wife and marry Eudosia so he could keep her close to court, with it being common rumor that her first child with Basil, Leo, was actually Michael's son. After Michael's murder, Basil crowned her empress.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Eudokia_Ingerina",
       "portrait_url": null,
-      "transcript_lines": [[30, 31], [155, 166], [241, 243]],
+      "transcript_lines": [
+        [
+          30,
+          30
+        ],
+        [
+          156,
+          156
+        ],
+        [
+          161,
+          161
+        ],
+        [
+          165,
+          165
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-iii"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "leo-vi"}
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "leo-vi"
+        }
       ]
     },
     {
       "id": "leo-vi",
       "name": "Leo VI",
-      "alt_names": ["Leo the Wise", "Leo the Philosopher"],
+      "alt_names": [
+        "Leo the Wise",
+        "Leo the Philosopher"
+      ],
       "role": "Byzantine Emperor, son of Basil I",
       "birth_year": 866,
       "death_year": 912,
@@ -338,21 +1079,73 @@
       "summary": "Widely rumored to be the biological son of Michael III rather than Basil I, Leo was despised by Basil, who imprisoned and threatened to blind him after he refused to give up his mistress Zoe. Photius feared Leo's succession because it would cost him power. Brownworth strongly implies Leo was complicit in Basil's mysterious hunting death, since the rescue party was led by the father of Leo's own mistress.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_VI_the_Wise",
       "portrait_url": null,
-      "transcript_lines": [[163, 166], [464, 468], [478, 531]],
+      "transcript_lines": [
+        [
+          165,
+          165
+        ],
+        [
+          464,
+          464
+        ],
+        [
+          478,
+          478
+        ],
+        [
+          487,
+          487
+        ],
+        [
+          496,
+          496
+        ],
+        [
+          501,
+          501
+        ],
+        [
+          529,
+          530
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "michael-iii"},
-        {"type": "person", "id": "eudosia"},
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "zoe-mistress-of-leo"},
-        {"type": "event", "id": "death-of-basil-i"},
-        {"type": "event", "id": "imprisonment-of-leo"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "person",
+          "id": "eudosia"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "zoe-mistress-of-leo"
+        },
+        {
+          "type": "event",
+          "id": "death-of-basil-i"
+        },
+        {
+          "type": "event",
+          "id": "imprisonment-of-leo"
+        }
       ]
     },
     {
       "id": "constantine-son-of-basil",
       "name": "Constantine",
-      "alt_names": ["Constantine the Young"],
+      "alt_names": [
+        "Constantine the Young"
+      ],
       "role": "Co-emperor, eldest son of Basil I",
       "birth_year": 859,
       "death_year": 879,
@@ -361,17 +1154,53 @@
       "summary": "The only son of Basil's first wife and the one person Basil ever truly loved. His unexpected early death threw Basil into a lasting depression that bordered on insanity, and Photius exploited the emperor's grief — holding a séance and even canonizing Constantine — to block the succession of the hated Leo.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_(son_of_Basil_I)",
       "portrait_url": null,
-      "transcript_lines": [[457, 477]],
+      "transcript_lines": [
+        [
+          90,
+          90
+        ],
+        [
+          95,
+          95
+        ],
+        [
+          409,
+          409
+        ],
+        [
+          413,
+          413
+        ],
+        [
+          458,
+          458
+        ],
+        [
+          466,
+          466
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "photius"},
-        {"type": "event", "id": "death-of-constantine-son-of-basil"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "event",
+          "id": "death-of-constantine-son-of-basil"
+        }
       ]
     },
     {
       "id": "zoe-mistress-of-leo",
       "name": "Zoe",
-      "alt_names": ["Zoe Zaoutzaina"],
+      "alt_names": [
+        "Zoe Zaoutzaina"
+      ],
       "role": "Mistress of Leo VI",
       "birth_year": null,
       "death_year": null,
@@ -380,18 +1209,38 @@
       "summary": "Leo VI's mistress whom he refused to give up, causing Basil to beat him severely. Her father led the hunting rescue party, which Brownworth suggests implicates Leo in the suspicious circumstances of Basil's death.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zoe_Zaoutzaina",
       "portrait_url": null,
-      "transcript_lines": [[488, 530]],
+      "transcript_lines": [
+        [
+          488,
+          488
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "leo-vi"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "death-of-basil-i"},
-        {"type": "event", "id": "imprisonment-of-leo"}
+        {
+          "type": "person",
+          "id": "leo-vi"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "death-of-basil-i"
+        },
+        {
+          "type": "event",
+          "id": "imprisonment-of-leo"
+        }
       ]
     },
     {
       "id": "nikephoros-phokas-the-elder",
       "name": "Nikephoros Phokas the Elder",
-      "alt_names": ["Nysiphorus Focus", "Nikephoros I Phokas"],
+      "alt_names": [
+        "Nysiphorus Focus",
+        "Nikephoros I Phokas"
+      ],
       "role": "Byzantine general",
       "birth_year": null,
       "death_year": 896,
@@ -400,18 +1249,37 @@
       "summary": "Basil's brilliant general who, using Otranto and Bari as a bridgehead, would go on to conquer virtually all of southern Italy before the end of the century, cementing Byzantine dominance in the Italian south.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nikephoros_I_Phokas_(general)",
       "portrait_url": null,
-      "transcript_lines": [[349, 351]],
+      "transcript_lines": [
+        [
+          350,
+          350
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "otranto"},
-        {"type": "place", "id": "bari"},
-        {"type": "event", "id": "capture-of-otranto-and-bari"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "otranto"
+        },
+        {
+          "type": "place",
+          "id": "bari"
+        },
+        {
+          "type": "event",
+          "id": "capture-of-otranto-and-bari"
+        }
       ]
     },
     {
       "id": "basil-ii",
       "name": "Basil II",
-      "alt_names": ["Basil the Bulgar-Slayer"],
+      "alt_names": [
+        "Basil the Bulgar-Slayer"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 958,
       "death_year": 1025,
@@ -420,15 +1288,25 @@
       "summary": "Mentioned at the episode's close as Basil I's great-great-grandson who, a century later, would bring the empire to its height of prestige and glory — the subject of the next episode.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_II",
       "portrait_url": null,
-      "transcript_lines": [[551, 553]],
+      "transcript_lines": [
+        [
+          552,
+          552
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        }
       ]
     },
     {
       "id": "justinian-i",
       "name": "Justinian I",
-      "alt_names": ["Justinian the Great"],
+      "alt_names": [
+        "Justinian the Great"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 482,
       "death_year": 565,
@@ -437,17 +1315,73 @@
       "summary": "Invoked repeatedly as the benchmark against whom Basil I measured himself. Basil saw himself as a new Justinian, determined to reconquer western territories, revise the law code, and undertake massive building projects — including repairing Justinian's great church the Hagia Sophia and rebuilding the Church of the Holy Apostles that Justinian had restored.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
       "portrait_url": null,
-      "transcript_lines": [[117, 117], [290, 295], [377, 379], [395, 396], [402, 414], [433, 433]],
+      "transcript_lines": [
+        [
+          117,
+          117
+        ],
+        [
+          290,
+          290
+        ],
+        [
+          378,
+          378
+        ],
+        [
+          382,
+          382
+        ],
+        [
+          390,
+          390
+        ],
+        [
+          395,
+          395
+        ],
+        [
+          402,
+          402
+        ],
+        [
+          410,
+          410
+        ],
+        [
+          414,
+          414
+        ],
+        [
+          433,
+          433
+        ],
+        [
+          543,
+          543
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "church-of-holy-apostles"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "church-of-holy-apostles"
+        }
       ]
     },
     {
       "id": "constantine-the-great",
       "name": "Constantine the Great",
-      "alt_names": ["Constantine I"],
+      "alt_names": [
+        "Constantine I"
+      ],
       "role": "Roman Emperor, founder of Constantinople",
       "birth_year": 272,
       "death_year": 337,
@@ -456,10 +1390,21 @@
       "summary": "Referenced as the founder of the Church of the Holy Apostles, the traditional burial place of the emperors, which Justinian later rebuilt and Basil I restored again.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
       "portrait_url": null,
-      "transcript_lines": [[408, 413]],
+      "transcript_lines": [
+        [
+          408,
+          413
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "church-of-holy-apostles"},
-        {"type": "person", "id": "basil-i"}
+        {
+          "type": "place",
+          "id": "church-of-holy-apostles"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        }
       ]
     }
   ],
@@ -475,15 +1420,73 @@
       "summary": "The capital of the Byzantine Empire and the central stage for this episode's court intrigues, murders, and building programs. Basil had ambitious plans to turn it into a vast treasure house through massive construction, including repairs to the Hagia Sophia, a rebuilt Church of the Holy Apostles, new public baths, a treasury, and his crowning achievement the Nea Ekklesia.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
       "image_url": null,
-      "transcript_lines": [[85, 87], [211, 212], [418, 428], [451, 453]],
+      "transcript_lines": [
+        [
+          81,
+          81
+        ],
+        [
+          85,
+          85
+        ],
+        [
+          109,
+          109
+        ],
+        [
+          211,
+          211
+        ],
+        [
+          307,
+          307
+        ],
+        [
+          311,
+          311
+        ],
+        [
+          317,
+          317
+        ],
+        [
+          323,
+          323
+        ],
+        [
+          427,
+          427
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "michael-iii"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "church-of-holy-apostles"},
-        {"type": "place", "id": "nea-ekklesia"},
-        {"type": "place", "id": "golden-horn"},
-        {"type": "event", "id": "rus-siege-of-constantinople"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "church-of-holy-apostles"
+        },
+        {
+          "type": "place",
+          "id": "nea-ekklesia"
+        },
+        {
+          "type": "place",
+          "id": "golden-horn"
+        },
+        {
+          "type": "event",
+          "id": "rus-siege-of-constantinople"
+        }
       ]
     },
     {
@@ -497,12 +1500,41 @@
       "summary": "Justinian's great church, where Basil swore falsely to Bardas that he bore him no ill will, signing in blood from a reliquary. Later Basil repaired the damaged western arch — which had been struck by an earthquake and was threatening to collapse — and added new mosaics.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
       "image_url": null,
-      "transcript_lines": [[183, 188], [401, 406]],
+      "transcript_lines": [
+        [
+          183,
+          183
+        ],
+        [
+          187,
+          187
+        ],
+        [
+          402,
+          402
+        ],
+        [
+          433,
+          433
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "event", "id": "murder-of-bardas"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-bardas"
+        }
       ]
     },
     {
@@ -516,11 +1548,29 @@
       "summary": "The traditional burial place of the Byzantine emperors, founded by Constantine and then rebuilt by Justinian. Basil I completely rebuilt it again, covering it in mosaic, marble, and gold.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles",
       "image_url": null,
-      "transcript_lines": [[407, 417]],
+      "transcript_lines": [
+        [
+          407,
+          407
+        ],
+        [
+          411,
+          411
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "constantine-the-great"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        }
       ]
     },
     {
@@ -534,10 +1584,21 @@
       "summary": "Basil's supreme architectural triumph and his answer to Justinian's Hagia Sophia. Built within the palace grounds and dedicated to the Virgin Mary, Saint Nicholas, Saint Michael, and Elijah, it featured cascading gold-covered domes visible far out to sea and an interior encrusted with gold, silver, and precious stones. No trace of it remains today.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nea_Ekklesia",
       "image_url": null,
-      "transcript_lines": [[431, 445]],
+      "transcript_lines": [
+        [
+          431,
+          445
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -551,10 +1612,21 @@
       "summary": "The waterway Basil crossed immediately after murdering Michael III to reach the great palace and secure a smooth transfer of power.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Horn",
       "image_url": null,
-      "transcript_lines": [[239, 240]],
+      "transcript_lines": [
+        [
+          239,
+          239
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "murder-of-michael-iii"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-michael-iii"
+        }
       ]
     },
     {
@@ -568,12 +1640,37 @@
       "summary": "The theatre of multiple military campaigns in this episode: Bardas led two expeditions here against the Saracens, Basil and the army were crossing through Asia Minor when Bardas was murdered, and Basil later swept through it personally to defeat the Paulicians and capture Tefrike.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Anatolia",
       "image_url": null,
-      "transcript_lines": [[47, 47], [195, 195], [331, 334]],
+      "transcript_lines": [
+        [
+          47,
+          47
+        ],
+        [
+          195,
+          195
+        ],
+        [
+          332,
+          332
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "murder-of-bardas"},
-        {"type": "event", "id": "paulician-campaign"}
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-bardas"
+        },
+        {
+          "type": "event",
+          "id": "paulician-campaign"
+        }
       ]
     },
     {
@@ -587,11 +1684,29 @@
       "summary": "The homeland from which Basil's family had been relocated to the Byzantine province of Macedonia, and one of the territories where Bardas led campaigns against the Saracens.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Armenia",
       "image_url": null,
-      "transcript_lines": [[47, 47], [130, 131]],
+      "transcript_lines": [
+        [
+          47,
+          47
+        ],
+        [
+          130,
+          130
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "caliph-omar"}
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "caliph-omar"
+        }
       ]
     },
     {
@@ -605,9 +1720,17 @@
       "summary": "The Byzantine province to which Basil's family had been relocated, probably from Armenia. This is the reason his successors were called the Macedonian dynasty, even though Basil himself was of Armenian origin.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Macedonia_(region)",
       "image_url": null,
-      "transcript_lines": [[131, 133]],
+      "transcript_lines": [
+        [
+          131,
+          131
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        }
       ]
     },
     {
@@ -621,13 +1744,45 @@
       "summary": "Basil spent part of his childhood as a Bulgarian prisoner of war before escaping in his mid-twenties. Later, as emperor, he outmaneuvered both Boris I and the pope over Bulgaria's ecclesiastical allegiance, ensuring it fell into the Byzantine Orthodox sphere — where it remains to this day.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bulgaria",
       "image_url": null,
-      "transcript_lines": [[134, 135], [102, 103], [306, 326]],
+      "transcript_lines": [
+        [
+          102,
+          102
+        ],
+        [
+          306,
+          306
+        ],
+        [
+          310,
+          310
+        ],
+        [
+          323,
+          324
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "boris-i-of-bulgaria"},
-        {"type": "person", "id": "constantine-cyril"},
-        {"type": "event", "id": "conversion-of-bulgaria"},
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "boris-i-of-bulgaria"
+        },
+        {
+          "type": "person",
+          "id": "constantine-cyril"
+        },
+        {
+          "type": "event",
+          "id": "conversion-of-bulgaria"
+        },
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        }
       ]
     },
     {
@@ -641,11 +1796,33 @@
       "summary": "Crete had been taken over by the Saracens and become a foremost nest of piracy. Bardas was planning an expedition against it when he was murdered by Basil, and the expedition subsequently came to nothing even after Basil became sole emperor.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Emirate_of_Crete",
       "image_url": null,
-      "transcript_lines": [[175, 177], [210, 210], [340, 341]],
+      "transcript_lines": [
+        [
+          175,
+          175
+        ],
+        [
+          210,
+          210
+        ],
+        [
+          340,
+          340
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "expedition-against-crete"}
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "expedition-against-crete"
+        }
       ]
     },
     {
@@ -659,11 +1836,29 @@
       "summary": "One of the western territories Bardas failed to hold against Saracen invasion. Basil also failed to defend it, and its last imperial stronghold of Syracuse fell in 878.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sicily",
       "image_url": null,
-      "transcript_lines": [[52, 53], [341, 342]],
+      "transcript_lines": [
+        [
+          52,
+          52
+        ],
+        [
+          341,
+          341
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "fall-of-syracuse"}
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-syracuse"
+        }
       ]
     },
     {
@@ -677,11 +1872,25 @@
       "summary": "The last imperial stronghold in Sicily, it fell to the Saracens in 878, marking the end of Byzantine rule on the island.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Syracuse,_Sicily",
       "image_url": null,
-      "transcript_lines": [[342, 342]],
+      "transcript_lines": [
+        [
+          342,
+          342
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "sicily"},
-        {"type": "event", "id": "fall-of-syracuse"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "sicily"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-syracuse"
+        }
       ]
     },
     {
@@ -695,10 +1904,21 @@
       "summary": "Basil met spectacular success by invading the Dalmatian coast, expelling the Saracens and returning it to imperial control.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dalmatia",
       "image_url": null,
-      "transcript_lines": [[344, 346]],
+      "transcript_lines": [
+        [
+          344,
+          346
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "reconquest-of-dalmatia"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-of-dalmatia"
+        }
       ]
     },
     {
@@ -712,11 +1932,25 @@
       "summary": "An Italian coastal city reconquered by Basil I, which along with Bari provided an excellent bridgehead from which Nikephoros Phokas would later conquer virtually all of southern Italy.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Otranto",
       "image_url": null,
-      "transcript_lines": [[347, 351]],
+      "transcript_lines": [
+        [
+          348,
+          348
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "nikephoros-phokas-the-elder"},
-        {"type": "event", "id": "capture-of-otranto-and-bari"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "nikephoros-phokas-the-elder"
+        },
+        {
+          "type": "event",
+          "id": "capture-of-otranto-and-bari"
+        }
       ]
     },
     {
@@ -730,11 +1964,25 @@
       "summary": "An Italian coastal city reconquered by Basil I alongside Otranto, providing the bridgehead for the subsequent Byzantine reconquest of virtually all of southern Italy.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bari",
       "image_url": null,
-      "transcript_lines": [[347, 351]],
+      "transcript_lines": [
+        [
+          348,
+          348
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "nikephoros-phokas-the-elder"},
-        {"type": "event", "id": "capture-of-otranto-and-bari"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "nikephoros-phokas-the-elder"
+        },
+        {
+          "type": "event",
+          "id": "capture-of-otranto-and-bari"
+        }
       ]
     },
     {
@@ -748,10 +1996,21 @@
       "summary": "The main stronghold of the Paulician heretics, captured by Basil during his personal campaign through Asia Minor. With its fall, the Paulician threat to the empire was effectively neutralized.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tephrike",
       "image_url": null,
-      "transcript_lines": [[333, 335]],
+      "transcript_lines": [
+        [
+          333,
+          335
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "paulician-campaign"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "paulician-campaign"
+        }
       ]
     },
     {
@@ -765,10 +2024,21 @@
       "summary": "An important fortress captured by Basil's brother during the decade of slow but steady advances against the Saracens.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Samosata",
       "image_url": null,
-      "transcript_lines": [[338, 339]],
+      "transcript_lines": [
+        [
+          338,
+          339
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "saracen-campaigns-of-basil"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "saracen-campaigns-of-basil"
+        }
       ]
     },
     {
@@ -782,10 +2052,21 @@
       "summary": "An important fortress captured alongside Samosata by Basil's brother during the sustained campaign against the Saracens.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zibatra",
       "image_url": null,
-      "transcript_lines": [[338, 339]],
+      "transcript_lines": [
+        [
+          339,
+          339
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "saracen-campaigns-of-basil"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "saracen-campaigns-of-basil"
+        }
       ]
     },
     {
@@ -799,9 +2080,17 @@
       "summary": "Destination of an embassy in which Photius participated on his way up through the court ranks, before Bardas elevated him to patriarch.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad",
       "image_url": null,
-      "transcript_lines": [[68, 68]],
+      "transcript_lines": [
+        [
+          68,
+          68
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "photius"}
+        {
+          "type": "person",
+          "id": "photius"
+        }
       ]
     },
     {
@@ -815,13 +2104,45 @@
       "summary": "The seat of the papacy and the western rival to Constantinople's ecclesiastical authority. Photius challenged Rome's claim to universal spiritual authority, and Basil later played the pope against himself over Bulgaria before recalling Photius.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
       "image_url": null,
-      "transcript_lines": [[111, 113], [313, 327]],
+      "transcript_lines": [
+        [
+          306,
+          306
+        ],
+        [
+          311,
+          311
+        ],
+        [
+          314,
+          314
+        ],
+        [
+          317,
+          317
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "pope-nicholas-i"},
-        {"type": "event", "id": "photian-schism"},
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"}
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "pope-nicholas-i"
+        },
+        {
+          "type": "event",
+          "id": "photian-schism"
+        },
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        }
       ]
     },
     {
@@ -835,9 +2156,17 @@
       "summary": "One of the three supposedly neutral eastern bishoprics Basil referred the Bulgarian ecclesiastical question to; as an eastern see, it predictably ruled in favor of Constantinople.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexandria",
       "image_url": null,
-      "transcript_lines": [[318, 323]],
+      "transcript_lines": [
+        [
+          320,
+          320
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"}
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        }
       ]
     },
     {
@@ -851,9 +2180,17 @@
       "summary": "One of the three supposedly neutral eastern bishoprics Basil referred the Bulgarian ecclesiastical question to; as an eastern see, it predictably ruled in favor of Constantinople.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Antioch",
       "image_url": null,
-      "transcript_lines": [[318, 323]],
+      "transcript_lines": [
+        [
+          320,
+          320
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"}
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        }
       ]
     },
     {
@@ -867,9 +2204,17 @@
       "summary": "One of the three supposedly neutral eastern bishoprics Basil referred the Bulgarian ecclesiastical question to; as an eastern see, it predictably ruled in favor of Constantinople.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jerusalem",
       "image_url": null,
-      "transcript_lines": [[318, 323]],
+      "transcript_lines": [
+        [
+          320,
+          320
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"}
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        }
       ]
     }
   ],
@@ -884,10 +2229,21 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Coronation_of_Charlemagne",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[7, 10]],
+      "transcript_lines": [
+        [
+          7,
+          10
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "charlemagne"},
-        {"type": "person", "id": "irene"}
+        {
+          "type": "person",
+          "id": "charlemagne"
+        },
+        {
+          "type": "person",
+          "id": "irene"
+        }
       ]
     },
     {
@@ -900,10 +2256,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Triumph_of_Orthodoxy",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[20, 26]],
+      "transcript_lines": [
+        [
+          351,
+          351
+        ],
+        [
+          425,
+          425
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "empress-theodora-regent"},
-        {"type": "person", "id": "michael-iii"}
+        {
+          "type": "person",
+          "id": "empress-theodora-regent"
+        },
+        {
+          "type": "person",
+          "id": "michael-iii"
+        }
       ]
     },
     {
@@ -916,11 +2287,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rus%27%E2%80%93Byzantine_War_(860)",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[84, 88]],
+      "transcript_lines": [
+        [
+          84,
+          88
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "photius"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "mission-to-slavs"}
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "mission-to-slavs"
+        }
       ]
     },
     {
@@ -933,14 +2318,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Christianization_of_Bulgaria",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[88, 117]],
+      "transcript_lines": [
+        [
+          88,
+          117
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "constantine-cyril"},
-        {"type": "person", "id": "methodius"},
-        {"type": "person", "id": "boris-i-of-bulgaria"},
-        {"type": "event", "id": "creation-of-cyrillic-alphabet"},
-        {"type": "event", "id": "conversion-of-bulgaria"}
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "constantine-cyril"
+        },
+        {
+          "type": "person",
+          "id": "methodius"
+        },
+        {
+          "type": "person",
+          "id": "boris-i-of-bulgaria"
+        },
+        {
+          "type": "event",
+          "id": "creation-of-cyrillic-alphabet"
+        },
+        {
+          "type": "event",
+          "id": "conversion-of-bulgaria"
+        }
       ]
     },
     {
@@ -953,11 +2361,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Cyrillic_script",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[95, 101]],
+      "transcript_lines": [
+        [
+          7,
+          7
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-cyril"},
-        {"type": "person", "id": "methodius"},
-        {"type": "event", "id": "mission-to-slavs"}
+        {
+          "type": "person",
+          "id": "constantine-cyril"
+        },
+        {
+          "type": "person",
+          "id": "methodius"
+        },
+        {
+          "type": "event",
+          "id": "mission-to-slavs"
+        }
       ]
     },
     {
@@ -970,14 +2392,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Christianization_of_Bulgaria",
       "image_url": null,
       "location_id": "bulgaria",
-      "transcript_lines": [[101, 104], [309, 326]],
+      "transcript_lines": [
+        [
+          538,
+          538
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "boris-i-of-bulgaria"},
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "constantine-cyril"},
-        {"type": "event", "id": "mission-to-slavs"},
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"}
+        {
+          "type": "person",
+          "id": "boris-i-of-bulgaria"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "constantine-cyril"
+        },
+        {
+          "type": "event",
+          "id": "mission-to-slavs"
+        },
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        }
       ]
     },
     {
@@ -990,12 +2435,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Photian_schism",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[270, 285], [295, 302]],
+      "transcript_lines": [
+        [
+          270,
+          285
+        ],
+        [
+          295,
+          302
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "pope-nicholas-i"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "event", "id": "deposition-of-photius-first"}
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "pope-nicholas-i"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "event",
+          "id": "deposition-of-photius-first"
+        }
       ]
     },
     {
@@ -1008,13 +2474,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bardas#Death",
       "image_url": null,
       "location_id": "asia-minor",
-      "transcript_lines": [[195, 209]],
+      "transcript_lines": [
+        [
+          195,
+          209
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "michael-iii"},
-        {"type": "person", "id": "photius"},
-        {"type": "event", "id": "basil-crowned-co-emperor"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "event",
+          "id": "basil-crowned-co-emperor"
+        }
       ]
     },
     {
@@ -1027,12 +2513,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_I#Rise_to_power",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[211, 214]],
+      "transcript_lines": [
+        [
+          211,
+          214
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "michael-iii"},
-        {"type": "event", "id": "murder-of-bardas"},
-        {"type": "event", "id": "murder-of-michael-iii"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-bardas"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-michael-iii"
+        }
       ]
     },
     {
@@ -1045,12 +2548,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_III#Assassination",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[225, 251]],
+      "transcript_lines": [
+        [
+          225,
+          251
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "michael-iii"},
-        {"type": "place", "id": "golden-horn"},
-        {"type": "event", "id": "basil-crowned-co-emperor"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "michael-iii"
+        },
+        {
+          "type": "place",
+          "id": "golden-horn"
+        },
+        {
+          "type": "event",
+          "id": "basil-crowned-co-emperor"
+        }
       ]
     },
     {
@@ -1063,14 +2583,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Photios_I_of_Constantinople#First_patriarchate",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[257, 305]],
+      "transcript_lines": [
+        [
+          257,
+          305
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "pope-nicholas-i"},
-        {"type": "event", "id": "photian-schism"},
-        {"type": "event", "id": "bulgarian-ecclesiastical-question"},
-        {"type": "event", "id": "restoration-of-photius"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "pope-nicholas-i"
+        },
+        {
+          "type": "event",
+          "id": "photian-schism"
+        },
+        {
+          "type": "event",
+          "id": "bulgarian-ecclesiastical-question"
+        },
+        {
+          "type": "event",
+          "id": "restoration-of-photius"
+        }
       ]
     },
     {
@@ -1083,16 +2626,45 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Constantinople_(869%E2%80%93870)",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[303, 327]],
+      "transcript_lines": [
+        [
+          303,
+          327
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "boris-i-of-bulgaria"},
-        {"type": "person", "id": "pope-nicholas-i"},
-        {"type": "place", "id": "alexandria"},
-        {"type": "place", "id": "antioch"},
-        {"type": "place", "id": "jerusalem"},
-        {"type": "event", "id": "conversion-of-bulgaria"},
-        {"type": "event", "id": "deposition-of-photius-first"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "boris-i-of-bulgaria"
+        },
+        {
+          "type": "person",
+          "id": "pope-nicholas-i"
+        },
+        {
+          "type": "place",
+          "id": "alexandria"
+        },
+        {
+          "type": "place",
+          "id": "antioch"
+        },
+        {
+          "type": "place",
+          "id": "jerusalem"
+        },
+        {
+          "type": "event",
+          "id": "conversion-of-bulgaria"
+        },
+        {
+          "type": "event",
+          "id": "deposition-of-photius-first"
+        }
       ]
     },
     {
@@ -1105,11 +2677,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Paulicians#Military_history",
       "image_url": null,
       "location_id": "tefrike",
-      "transcript_lines": [[328, 335]],
+      "transcript_lines": [
+        [
+          328,
+          335
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "tefrike"},
-        {"type": "place", "id": "asia-minor"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "tefrike"
+        },
+        {
+          "type": "place",
+          "id": "asia-minor"
+        }
       ]
     },
     {
@@ -1122,11 +2708,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_I#Military_campaigns",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[336, 339]],
+      "transcript_lines": [
+        [
+          336,
+          339
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "samosata"},
-        {"type": "place", "id": "zepetra"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "samosata"
+        },
+        {
+          "type": "place",
+          "id": "zepetra"
+        }
       ]
     },
     {
@@ -1139,12 +2739,41 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Emirate_of_Crete",
       "image_url": null,
       "location_id": "crete",
-      "transcript_lines": [[174, 177], [210, 210], [340, 341]],
+      "transcript_lines": [
+        [
+          175,
+          175
+        ],
+        [
+          194,
+          194
+        ],
+        [
+          210,
+          210
+        ],
+        [
+          340,
+          340
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bardas"},
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "crete"},
-        {"type": "event", "id": "murder-of-bardas"}
+        {
+          "type": "person",
+          "id": "bardas"
+        },
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "crete"
+        },
+        {
+          "type": "event",
+          "id": "murder-of-bardas"
+        }
       ]
     },
     {
@@ -1157,11 +2786,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Capture_of_Syracuse_(878)",
       "image_url": null,
       "location_id": "syracuse",
-      "transcript_lines": [[341, 342]],
+      "transcript_lines": [
+        [
+          341,
+          342
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "sicily"},
-        {"type": "place", "id": "syracuse"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "sicily"
+        },
+        {
+          "type": "place",
+          "id": "syracuse"
+        }
       ]
     },
     {
@@ -1174,10 +2817,21 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_Empire#Macedonian_dynasty_(867%E2%80%931056)",
       "image_url": null,
       "location_id": "dalmatia",
-      "transcript_lines": [[343, 346]],
+      "transcript_lines": [
+        [
+          343,
+          346
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "place", "id": "dalmatia"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "place",
+          "id": "dalmatia"
+        }
       ]
     },
     {
@@ -1190,12 +2844,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bari#Byzantine_period",
       "image_url": null,
       "location_id": "bari",
-      "transcript_lines": [[347, 351]],
+      "transcript_lines": [
+        [
+          352,
+          352
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "nikephoros-phokas-the-elder"},
-        {"type": "place", "id": "otranto"},
-        {"type": "place", "id": "bari"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "nikephoros-phokas-the-elder"
+        },
+        {
+          "type": "place",
+          "id": "otranto"
+        },
+        {
+          "type": "place",
+          "id": "bari"
+        }
       ]
     },
     {
@@ -1208,12 +2879,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Photios_I_of_Constantinople#Second_patriarchate",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[361, 377]],
+      "transcript_lines": [
+        [
+          361,
+          377
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "photius"},
-        {"type": "event", "id": "deposition-of-photius-first"},
-        {"type": "event", "id": "prochiron-law-code"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "event",
+          "id": "deposition-of-photius-first"
+        },
+        {
+          "type": "event",
+          "id": "prochiron-law-code"
+        }
       ]
     },
     {
@@ -1226,11 +2914,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Prochiron",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[378, 393]],
+      "transcript_lines": [
+        [
+          378,
+          393
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "photius"},
-        {"type": "person", "id": "justinian-i"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        }
       ]
     },
     {
@@ -1243,13 +2945,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_(son_of_Basil_I)",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[457, 463]],
+      "transcript_lines": [
+        [
+          457,
+          463
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "constantine-son-of-basil"},
-        {"type": "person", "id": "leo-vi"},
-        {"type": "person", "id": "photius"},
-        {"type": "event", "id": "imprisonment-of-leo"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "constantine-son-of-basil"
+        },
+        {
+          "type": "person",
+          "id": "leo-vi"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "event",
+          "id": "imprisonment-of-leo"
+        }
       ]
     },
     {
@@ -1262,13 +2984,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_VI_the_Wise#Early_life",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[478, 497]],
+      "transcript_lines": [
+        [
+          478,
+          497
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "leo-vi"},
-        {"type": "person", "id": "photius"},
-        {"type": "event", "id": "death-of-constantine-son-of-basil"},
-        {"type": "event", "id": "death-of-basil-i"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "leo-vi"
+        },
+        {
+          "type": "person",
+          "id": "photius"
+        },
+        {
+          "type": "event",
+          "id": "death-of-constantine-son-of-basil"
+        },
+        {
+          "type": "event",
+          "id": "death-of-basil-i"
+        }
       ]
     },
     {
@@ -1281,12 +3023,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_I#Death",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[507, 535]],
+      "transcript_lines": [
+        [
+          507,
+          535
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "basil-i"},
-        {"type": "person", "id": "leo-vi"},
-        {"type": "person", "id": "zoe-mistress-of-leo"},
-        {"type": "event", "id": "imprisonment-of-leo"}
+        {
+          "type": "person",
+          "id": "basil-i"
+        },
+        {
+          "type": "person",
+          "id": "leo-vi"
+        },
+        {
+          "type": "person",
+          "id": "zoe-mistress-of-leo"
+        },
+        {
+          "type": "event",
+          "id": "imprisonment-of-leo"
+        }
       ]
     }
   ]

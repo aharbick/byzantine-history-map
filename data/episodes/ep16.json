@@ -5,7 +5,11 @@
     {
       "id": "constantine-xi",
       "name": "Constantine XI",
-      "alt_names": ["Constantine Dragases", "Constantine Palaiologos", "Dugasis"],
+      "alt_names": [
+        "Constantine Dragases",
+        "Constantine Palaiologos",
+        "Dugasis"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1405,
       "death_year": 1453,
@@ -14,28 +18,163 @@
       "summary": "The last Byzantine emperor, Constantine XI is portrayed by Brownworth as the most capable of his father's sons — charismatic, courageous, deeply patriotic, and seasoned by twenty years of fighting the Turks. He refused to flee or become a vassal, gave a stirring final speech to his defenders, and disappeared into the fighting when the walls were breached, dying as a warrior-emperor rather than a subject.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_XI_Palaiologos",
       "portrait_url": null,
-      "transcript_lines": [[137, 166], [230, 239], [277, 306], [427, 443], [461, 517], [563, 571]],
+      "transcript_lines": [
+        [
+          3,
+          3
+        ],
+        [
+          137,
+          137
+        ],
+        [
+          141,
+          142
+        ],
+        [
+          174,
+          174
+        ],
+        [
+          181,
+          181
+        ],
+        [
+          186,
+          186
+        ],
+        [
+          192,
+          192
+        ],
+        [
+          200,
+          200
+        ],
+        [
+          230,
+          230
+        ],
+        [
+          239,
+          240
+        ],
+        [
+          243,
+          243
+        ],
+        [
+          277,
+          277
+        ],
+        [
+          295,
+          295
+        ],
+        [
+          303,
+          303
+        ],
+        [
+          312,
+          312
+        ],
+        [
+          324,
+          324
+        ],
+        [
+          405,
+          405
+        ],
+        [
+          426,
+          426
+        ],
+        [
+          435,
+          435
+        ],
+        [
+          438,
+          438
+        ],
+        [
+          563,
+          563
+        ],
+        [
+          584,
+          584
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "person", "id": "john-viii"},
-        {"type": "person", "id": "giovanni-giustiniani"},
-        {"type": "person", "id": "orban"},
-        {"type": "person", "id": "constantine-the-great"},
-        {"type": "person", "id": "helena-of-serbia"},
-        {"type": "person", "id": "manuel-ii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "peloponnese"},
-        {"type": "place", "id": "hexamilion"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "final-ecumenical-service"},
-        {"type": "event", "id": "constantine-final-speech"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "person",
+          "id": "john-viii"
+        },
+        {
+          "type": "person",
+          "id": "giovanni-giustiniani"
+        },
+        {
+          "type": "person",
+          "id": "orban"
+        },
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        },
+        {
+          "type": "person",
+          "id": "helena-of-serbia"
+        },
+        {
+          "type": "person",
+          "id": "manuel-ii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "peloponnese"
+        },
+        {
+          "type": "place",
+          "id": "hexamilion"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "final-ecumenical-service"
+        },
+        {
+          "type": "event",
+          "id": "constantine-final-speech"
+        }
       ]
     },
     {
       "id": "mehmed-ii",
       "name": "Mehmed II",
-      "alt_names": ["Mehmet II", "Muhammad II", "the Conqueror"],
+      "alt_names": [
+        "Mehmet II",
+        "Muhammad II",
+        "the Conqueror"
+      ],
       "role": "Ottoman Sultan",
       "birth_year": 1432,
       "death_year": 1481,
@@ -44,24 +183,61 @@
       "summary": "Brownworth presents Mehmed II as a mass of contradictions: a poet and scholar fluent in several languages who was also an unstable tyrant capable of incredible cruelty. Coldly strategic, he built the Throat Cutter fortress, commissioned the great cannon, transported 70 ships overland to bypass the harbor chain, and relentlessly pursued the fall of Constantinople, which he saw as his birthright as heir of the Romans.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Mehmed_II",
       "portrait_url": null,
-      "transcript_lines": [[190, 213], [219, 270], [274, 276], [309, 312], [341, 351], [386, 415], [444, 446], [481, 496], [510, 512], [541, 557]],
+      "transcript_lines": [
+        [
+          190,
+          190
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "orban"},
-        {"type": "person", "id": "ottoman-admiral"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "throat-cutter-fortress"},
-        {"type": "place", "id": "bosphorus"},
-        {"type": "event", "id": "construction-of-throat-cutter"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "ships-overland-portage"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "orban"
+        },
+        {
+          "type": "person",
+          "id": "ottoman-admiral"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "throat-cutter-fortress"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        },
+        {
+          "type": "event",
+          "id": "construction-of-throat-cutter"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "ships-overland-portage"
+        }
       ]
     },
     {
       "id": "michael-viii",
       "name": "Michael VIII",
-      "alt_names": ["Michael VIII Palaiologos"],
+      "alt_names": [
+        "Michael VIII Palaiologos"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1223,
       "death_year": 1282,
@@ -70,12 +246,33 @@
       "summary": "Brownworth describes Michael VIII as the emperor who recaptured Constantinople from the Latin Empire in 1261, entering through an unlocked gate with a handful of men and being crowned in the Hagia Sophia. Though he vowed to restore the empire, Brownworth says it was already too late to salvage its fortunes.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_VIII_Palaiologos",
       "portrait_url": null,
-      "transcript_lines": [[16, 26]],
+      "transcript_lines": [
+        [
+          16,
+          16
+        ],
+        [
+          22,
+          22
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "nicaea"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "event", "id": "recapture-of-constantinople-1261"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "nicaea"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "event",
+          "id": "recapture-of-constantinople-1261"
+        }
       ]
     },
     {
@@ -90,11 +287,25 @@
       "summary": "The unnamed Caesar sent ahead by Michael VIII to test the strength of Constantinople before the emperor's arrival. He found the garrison absent, entered through an unlocked gate with a handful of men, threw the few guards from the walls, and opened the gates for Michael's triumphal entry.",
       "wikipedia_url": null,
       "portrait_url": null,
-      "transcript_lines": [[17, 22]],
+      "transcript_lines": [
+        [
+          17,
+          22
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-viii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "recapture-of-constantinople-1261"}
+        {
+          "type": "person",
+          "id": "michael-viii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "recapture-of-constantinople-1261"
+        }
       ]
     },
     {
@@ -109,17 +320,33 @@
       "summary": "The last Latin emperor, described by Brownworth as pathetic — he fled the city on a Venetian ship when Michael VIII's Caesar entered the gates, an ignominious end to the bumbling Latin Empire.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Baldwin_II_of_Constantinople",
       "portrait_url": null,
-      "transcript_lines": [[22, 23]],
+      "transcript_lines": [
+        [
+          22,
+          22
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-viii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "recapture-of-constantinople-1261"}
+        {
+          "type": "person",
+          "id": "michael-viii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "recapture-of-constantinople-1261"
+        }
       ]
     },
     {
       "id": "john-vi",
       "name": "John VI",
-      "alt_names": ["John VI Kantakouzenos"],
+      "alt_names": [
+        "John VI Kantakouzenos"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1292,
       "death_year": 1383,
@@ -128,17 +355,34 @@
       "summary": "Brownworth uses the coronation of John VI in 1347 as a snapshot of imperial decline — the crown jewels used in the ceremony were obviously made of glass since the real ones were in pawn to Venice, and the banquet was served on humble pewter and clay.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_VI_Kantakouzenos",
       "portrait_url": null,
-      "transcript_lines": [[43, 47]],
+      "transcript_lines": [
+        [
+          43,
+          43
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "coronation-of-john-vi-1347"},
-        {"type": "event", "id": "black-death-constantinople"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "coronation-of-john-vi-1347"
+        },
+        {
+          "type": "event",
+          "id": "black-death-constantinople"
+        }
       ]
     },
     {
       "id": "othman",
       "name": "Othman",
-      "alt_names": ["Osman I", "Osman Gazi"],
+      "alt_names": [
+        "Osman I",
+        "Osman Gazi"
+      ],
       "role": "Founder of the Ottoman dynasty",
       "birth_year": 1258,
       "death_year": 1326,
@@ -147,18 +391,42 @@
       "summary": "Brownworth describes Othman as an extraordinary warrior who united several Turkic tribes under jihad, conquered Ephesus, and captured Bursa just across from Constantinople, making it his capital with undisguised ambitions on the city itself. He died before taking Constantinople, leaving that goal to his sons, and the Turks named themselves 'Ottoman' in his honor.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Osman_I",
       "portrait_url": null,
-      "transcript_lines": [[57, 68]],
+      "transcript_lines": [
+        [
+          58,
+          59
+        ],
+        [
+          63,
+          63
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "ephesus"},
-        {"type": "place", "id": "bursa"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "ottoman-founding"}
+        {
+          "type": "place",
+          "id": "ephesus"
+        },
+        {
+          "type": "place",
+          "id": "bursa"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-founding"
+        }
       ]
     },
     {
       "id": "tamerlane",
       "name": "Tamerlane",
-      "alt_names": ["Timur", "Timur the Lame"],
+      "alt_names": [
+        "Timur",
+        "Timur the Lame"
+      ],
       "role": "Mongol-Turkic conqueror",
       "birth_year": 1336,
       "death_year": 1405,
@@ -167,16 +435,29 @@
       "summary": "Brownworth credits Tamerlane, the fearsome Mongol invader, with rescuing Manuel II by shattering the Ottoman army on July 28, 1402, reportedly keeping the defeated sultan in an iron cage for the rest of his life. This respite, however, was too brief — Turkish power recovered within a decade.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Timur",
       "portrait_url": null,
-      "transcript_lines": [[106, 110]],
+      "transcript_lines": [
+        [
+          106,
+          106
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "manuel-ii"},
-        {"type": "event", "id": "battle-of-ankara-1402"}
+        {
+          "type": "person",
+          "id": "manuel-ii"
+        },
+        {
+          "type": "event",
+          "id": "battle-of-ankara-1402"
+        }
       ]
     },
     {
       "id": "manuel-ii",
       "name": "Manuel II",
-      "alt_names": ["Manuel II Palaiologos"],
+      "alt_names": [
+        "Manuel II Palaiologos"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1350,
       "death_year": 1425,
@@ -185,19 +466,45 @@
       "summary": "Brownworth praises Manuel II as the reason the empire limped along another fifty years — refusing to be a vassal, he twice withstood a furious sultan at the walls. He was saved once by Tamerlane's shattering defeat of the Ottomans in 1402, and a second time he used Byzantine-style diplomacy, encouraging one of the sultan's sons to start a civil war that diverted the Ottoman threat.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Manuel_II_Palaiologos",
       "portrait_url": null,
-      "transcript_lines": [[104, 115]],
+      "transcript_lines": [
+        [
+          104,
+          104
+        ],
+        [
+          112,
+          112
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "tamerlane"},
-        {"type": "person", "id": "john-viii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "battle-of-ankara-1402"},
-        {"type": "event", "id": "ottoman-siege-1422"}
+        {
+          "type": "person",
+          "id": "tamerlane"
+        },
+        {
+          "type": "person",
+          "id": "john-viii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "battle-of-ankara-1402"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-siege-1422"
+        }
       ]
     },
     {
       "id": "john-viii",
       "name": "John VIII",
-      "alt_names": ["John VIII Palaiologos"],
+      "alt_names": [
+        "John VIII Palaiologos"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1392,
       "death_year": 1448,
@@ -206,20 +513,54 @@
       "summary": "Brownworth portrays John VIII as a well-intentioned but ultimately failed ruler who undid Manuel's careful diplomatic work. He traveled to Rome hoping the Turkish menace was self-evident and a crusade imminent, was horrified to find Europe still asleep to the danger, and ultimately promised to convert the empire to Catholicism. After signing the hated decree of union, he returned to riots in his capital, saw the crusading army annihilated, and died a broken man.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_VIII_Palaiologos",
       "portrait_url": null,
-      "transcript_lines": [[114, 137]],
+      "transcript_lines": [
+        [
+          114,
+          116
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          132,
+          132
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "manuel-ii"},
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "rome"},
-        {"type": "event", "id": "council-of-florence"},
-        {"type": "event", "id": "battle-of-varna"}
+        {
+          "type": "person",
+          "id": "manuel-ii"
+        },
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "event",
+          "id": "council-of-florence"
+        },
+        {
+          "type": "event",
+          "id": "battle-of-varna"
+        }
       ]
     },
     {
       "id": "constantine-the-great",
       "name": "Constantine the Great",
-      "alt_names": ["Constantine I", "Flavius Valerius Aurelius Constantinus"],
+      "alt_names": [
+        "Constantine I",
+        "Flavius Valerius Aurelius Constantinus"
+      ],
       "role": "Roman Emperor",
       "birth_year": 272,
       "death_year": 337,
@@ -228,16 +569,29 @@
       "summary": "Brownworth invokes Constantine the Great as the famous namesake of Constantine XI, noting that just as the first Constantine's mother was named Helena, so was the last emperor's mother. The parallel is used to frame Constantine XI as a worthy successor to the founder of the Christian Roman Empire.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
       "portrait_url": null,
-      "transcript_lines": [[139, 142]],
+      "transcript_lines": [
+        [
+          139,
+          139
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "helena-of-serbia"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "helena-of-serbia"
+        }
       ]
     },
     {
       "id": "helena-of-serbia",
       "name": "Helena of Serbia",
-      "alt_names": ["Helena Dragaš"],
+      "alt_names": [
+        "Helena Dragaš"
+      ],
       "role": "Byzantine Empress (mother of Constantine XI)",
       "birth_year": 1372,
       "death_year": 1450,
@@ -246,16 +600,29 @@
       "summary": "Brownworth mentions Constantine XI's mother Helena as a Serbian noblewoman, noting that Constantine preferred to go by his mother's Serbian name of Dragases. The parallel to Constantine the Great's mother Helena is explicitly drawn to underscore his worthiness.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Helena_Drag%C3%A1%C5%A1",
       "portrait_url": null,
-      "transcript_lines": [[139, 143]],
+      "transcript_lines": [
+        [
+          139,
+          143
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "constantine-the-great"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        }
       ]
     },
     {
       "id": "orban",
       "name": "Orban",
-      "alt_names": ["Urban"],
+      "alt_names": [
+        "Urban"
+      ],
       "role": "Hungarian cannon-maker",
       "birth_year": null,
       "death_year": 1453,
@@ -264,19 +631,53 @@
       "summary": "A young Hungarian specialist in large cannon construction, Orban first offered his services to Constantine XI, who was too impoverished to pay him adequately. After months of spotty payment, Orban left and offered his skills to Mehmed II, who showered him with gifts. Orban then built the enormous 27-foot bronze cannon — twice the size of anything before it — that proved decisive in the siege.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orban_(engineer)",
       "portrait_url": null,
-      "transcript_lines": [[241, 268]],
+      "transcript_lines": [
+        [
+          241,
+          241
+        ],
+        [
+          247,
+          247
+        ],
+        [
+          251,
+          251
+        ],
+        [
+          264,
+          264
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "construction-of-great-cannon"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "construction-of-great-cannon"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
       "id": "giovanni-giustiniani",
       "name": "Giovanni Giustiniani",
-      "alt_names": ["Giustiniani Longo"],
+      "alt_names": [
+        "Giustiniani Longo"
+      ],
       "role": "Genoese mercenary commander",
       "birth_year": null,
       "death_year": 1453,
@@ -285,13 +686,41 @@
       "summary": "Brownworth calls Giustiniani the only bright spot for Constantine, who arrived from Genoa with a private army of 700 men and proved brilliant in directing the defense — devising the ingenious rubble-repair technique and appearing everywhere at once with the emperor to shore up the line. His departure after being wounded by a crossbow bolt was catastrophic: the Genoese assumed he was dead, abandoned the walls, and the city fell.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Giovanni_Giustiniani",
       "portrait_url": null,
-      "transcript_lines": [[300, 302], [325, 327], [335, 337], [484, 513]],
+      "transcript_lines": [
+        [
+          300,
+          302
+        ],
+        [
+          325,
+          337
+        ],
+        [
+          484,
+          513
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "genoa"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "wounding-of-giustiniani"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "genoa"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "wounding-of-giustiniani"
+        }
       ]
     },
     {
@@ -306,17 +735,34 @@
       "summary": "The unnamed Ottoman admiral who failed to prevent the four Christian relief ships from entering Constantinople's harbor. Already wounded in the eye from the battle, he was brought before Mehmed in his fury and only narrowly escaped execution through his subordinates' pleas; he was instead beaten, stripped of his titles and property, and banished.",
       "wikipedia_url": null,
       "portrait_url": null,
-      "transcript_lines": [[381, 392]],
+      "transcript_lines": [
+        [
+          381,
+          392
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "relief-ships-enter-harbor"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "relief-ships-enter-harbor"
+        }
       ]
     },
     {
       "id": "attila-the-hun",
       "name": "Attila the Hun",
-      "alt_names": ["Attila", "Scourge of God"],
+      "alt_names": [
+        "Attila",
+        "Scourge of God"
+      ],
       "role": "Hunnic ruler",
       "birth_year": 406,
       "death_year": 453,
@@ -325,16 +771,29 @@
       "summary": "Brownworth invokes Attila the Hun as the supreme test of Constantinople's land walls — even he, the Scourge of God himself, had turned away when he saw them. This historical benchmark is used to underscore just how formidable the Theodosian Walls were before the Turkish cannon reduced them.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Attila",
       "portrait_url": null,
-      "transcript_lines": [[314, 315]],
+      "transcript_lines": [
+        [
+          314,
+          314
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "theodosian-walls"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "theodosian-walls"
+        }
       ]
     },
     {
       "id": "darius-i",
       "name": "Darius I",
-      "alt_names": ["Darius the Great"],
+      "alt_names": [
+        "Darius the Great"
+      ],
       "role": "Persian King",
       "birth_year": -550,
       "death_year": -486,
@@ -343,16 +802,29 @@
       "summary": "Brownworth notes that two thousand years before Mehmed II, the Persian king Darius had also recognized the strategic importance of the narrowest point of the Bosphorus, choosing that spot to cross with his massive army on his way to confront the Spartan king Leonidas and attempt to absorb Greece into the Persian Empire.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Darius_I",
       "portrait_url": null,
-      "transcript_lines": [[216, 218]],
+      "transcript_lines": [
+        [
+          216,
+          216
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "leonidas"},
-        {"type": "place", "id": "bosphorus"}
+        {
+          "type": "person",
+          "id": "leonidas"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        }
       ]
     },
     {
       "id": "leonidas",
       "name": "Leonidas",
-      "alt_names": ["Leonidas I"],
+      "alt_names": [
+        "Leonidas I"
+      ],
       "role": "Spartan King",
       "birth_year": -540,
       "death_year": -480,
@@ -361,16 +833,29 @@
       "summary": "Briefly mentioned by Brownworth as the doomed Spartan king Leonidas whom Darius was marching to meet when he chose the narrowest point of the Bosphorus to cross into Europe with his massive army.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Leonidas_I",
       "portrait_url": null,
-      "transcript_lines": [[217, 218]],
+      "transcript_lines": [
+        [
+          217,
+          217
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "darius-i"},
-        {"type": "place", "id": "bosphorus"}
+        {
+          "type": "person",
+          "id": "darius-i"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        }
       ]
     },
     {
       "id": "bartholomew-dias",
       "name": "Bartholomew Dias",
-      "alt_names": ["Bartolomeu Dias"],
+      "alt_names": [
+        "Bartolomeu Dias"
+      ],
       "role": "Portuguese explorer",
       "birth_year": 1450,
       "death_year": 1500,
@@ -379,16 +864,30 @@
       "summary": "Brownworth mentions Dias as evidence that the fall of Constantinople accelerated European exploration: only 35 years after the city's fall, Dias rounded the Cape of Good Hope, opening a sea route to India as Ottoman control shut down the overland routes to the Orient.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bartolomeu_Dias",
       "portrait_url": null,
-      "transcript_lines": [[579, 580]],
+      "transcript_lines": [
+        [
+          579,
+          579
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "rounding-of-cape-of-good-hope"}
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "rounding-of-cape-of-good-hope"
+        }
       ]
     },
     {
       "id": "christopher-columbus",
       "name": "Christopher Columbus",
-      "alt_names": ["Cristoforo Colombo", "Cristóbal Colón"],
+      "alt_names": [
+        "Cristoforo Colombo",
+        "Cristóbal Colón"
+      ],
       "role": "Italian explorer",
       "birth_year": 1451,
       "death_year": 1506,
@@ -397,16 +896,29 @@
       "summary": "Mentioned by Brownworth as evidence of the world-historical consequences of Constantinople's fall — just four years after Dias rounded the Cape, a little-known Italian named Columbus discovered America, inaugurating the Age of Exploration that arose partly from Ottoman closure of eastern trade routes.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Christopher_Columbus",
       "portrait_url": null,
-      "transcript_lines": [[580, 582]],
+      "transcript_lines": [
+        [
+          581,
+          581
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "discovery-of-america"}
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "discovery-of-america"
+        }
       ]
     },
     {
       "id": "alexander-the-great",
       "name": "Alexander the Great",
-      "alt_names": ["Alexander III of Macedon"],
+      "alt_names": [
+        "Alexander III of Macedon"
+      ],
       "role": "Macedonian King and conqueror",
       "birth_year": -356,
       "death_year": -323,
@@ -415,9 +927,17 @@
       "summary": "Brownworth invokes Alexander the Great only in passing, noting that the Turkish capture of Constantinople reversed the tide of Alexander's eastward conquests — now the countries of Europe would tremble before Ottoman power moving westward.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
       "portrait_url": null,
-      "transcript_lines": [[552, 553]],
+      "transcript_lines": [
+        [
+          552,
+          552
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     }
   ],
@@ -433,17 +953,89 @@
       "summary": "The central setting of the entire episode — Brownworth describes a city that had fallen from splendor to poverty and ruin by the 15th century, its population shrunk, its buildings crumbling, its harbor trade collapsed. It endures a 53-day siege in 1453 before falling to the Ottomans, marking the end of the Byzantine Empire and, as Brownworth frames it, the Middle Ages themselves.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
       "image_url": null,
-      "transcript_lines": [[1, 15], [40, 50], [84, 86], [230, 240], [277, 320], [447, 460], [519, 575]],
+      "transcript_lines": [
+        [
+          64,
+          65
+        ],
+        [
+          224,
+          224
+        ],
+        [
+          230,
+          230
+        ],
+        [
+          238,
+          238
+        ],
+        [
+          251,
+          251
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          276,
+          276
+        ],
+        [
+          345,
+          345
+        ],
+        [
+          447,
+          447
+        ],
+        [
+          544,
+          544
+        ],
+        [
+          572,
+          572
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "person", "id": "michael-viii"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "recapture-of-constantinople-1261"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "theodosian-walls"},
-        {"type": "place", "id": "golden-gate"},
-        {"type": "place", "id": "galata"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "person",
+          "id": "michael-viii"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "recapture-of-constantinople-1261"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "theodosian-walls"
+        },
+        {
+          "type": "place",
+          "id": "golden-gate"
+        },
+        {
+          "type": "place",
+          "id": "galata"
+        }
       ]
     },
     {
@@ -457,14 +1049,57 @@
       "summary": "Brownworth describes the Hagia Sophia as the spiritual heart of Byzantium, where Michael VIII was crowned after the recapture and where the final ecumenical service dissolving East-West differences was held the night before the fall. When Turkish troops burst in, most of the congregation was butchered or enslaved; Mehmed then converted it into a mosque, the chief symbol of Ottoman Constantinople.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
       "image_url": null,
-      "transcript_lines": [[25, 25], [284, 291], [453, 459], [532, 549]],
+      "transcript_lines": [
+        [
+          25,
+          25
+        ],
+        [
+          285,
+          285
+        ],
+        [
+          291,
+          291
+        ],
+        [
+          454,
+          454
+        ],
+        [
+          532,
+          532
+        ],
+        [
+          559,
+          559
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-viii"},
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "event", "id": "final-ecumenical-service"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "recapture-of-constantinople-1261"}
+        {
+          "type": "person",
+          "id": "michael-viii"
+        },
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "event",
+          "id": "final-ecumenical-service"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "recapture-of-constantinople-1261"
+        }
       ]
     },
     {
@@ -478,10 +1113,25 @@
       "summary": "The base from which Michael VIII watched the declining Latin Empire and from which he launched his reconquest of Constantinople in 1261. Brownworth also notes that Nicaea fell to the Ottomans after Othman's death, part of the rapid Ottoman consolidation of Asia Minor.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nicaea",
       "image_url": null,
-      "transcript_lines": [[16, 17], [69, 70]],
+      "transcript_lines": [
+        [
+          16,
+          16
+        ],
+        [
+          69,
+          69
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-viii"},
-        {"type": "event", "id": "recapture-of-constantinople-1261"}
+        {
+          "type": "person",
+          "id": "michael-viii"
+        },
+        {
+          "type": "event",
+          "id": "recapture-of-constantinople-1261"
+        }
       ]
     },
     {
@@ -495,9 +1145,17 @@
       "summary": "One of two imperial offshoots Brownworth mentions as remaining stubbornly independent after the Latin capture of Constantinople, sapping the already weakened strength of the empire instead of reuniting with it.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Empire_of_Trebizond",
       "image_url": null,
-      "transcript_lines": [[32, 33]],
+      "transcript_lines": [
+        [
+          32,
+          32
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "epirus"}
+        {
+          "type": "place",
+          "id": "epirus"
+        }
       ]
     },
     {
@@ -511,9 +1169,17 @@
       "summary": "Along with Trebizond, Epirus is cited by Brownworth as an imperial offshoot that remained stubbornly independent after the Fourth Crusade's disruption, fragmenting Byzantine power at the moment it needed unity most.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Despotate_of_Epirus",
       "image_url": null,
-      "transcript_lines": [[32, 33]],
+      "transcript_lines": [
+        [
+          32,
+          32
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "trebizond"}
+        {
+          "type": "place",
+          "id": "trebizond"
+        }
       ]
     },
     {
@@ -522,16 +1188,30 @@
       "modern_name": "Bursa",
       "modern_country": "Turkey",
       "lat": 40.1885,
-      "lng": 29.0610,
+      "lng": 29.061,
       "first_year": null,
       "summary": "The ancient city captured by Othman at the western end of the Silk Road, just across from Constantinople, which he made his official capital as a deliberate declaration of intent toward Constantinople. Brownworth notes Othman made no secret of his ambition to take the imperial city.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bursa",
       "image_url": null,
-      "transcript_lines": [[63, 66]],
+      "transcript_lines": [
+        [
+          63,
+          63
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "othman"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "ottoman-founding"}
+        {
+          "type": "person",
+          "id": "othman"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-founding"
+        }
       ]
     },
     {
@@ -545,10 +1225,21 @@
       "summary": "The ancient city that Othman conquered as part of his early expansion, demonstrating the inability of the weakened Byzantine empire to stem the Turkish advance even after marching out to meet the Ottoman force.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ephesus",
       "image_url": null,
-      "transcript_lines": [[59, 62]],
+      "transcript_lines": [
+        [
+          60,
+          60
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "othman"},
-        {"type": "event", "id": "ottoman-founding"}
+        {
+          "type": "person",
+          "id": "othman"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-founding"
+        }
       ]
     },
     {
@@ -562,10 +1253,21 @@
       "summary": "The second city of the Byzantine Empire, captured by the Ottomans by 1360 and made their new European capital. Brownworth emphasizes the symbolic and strategic catastrophe: the Byzantines were now completely surrounded in an Ottoman sea, and the emperor was forced to pay tribute to avoid a siege.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Edirne",
       "image_url": null,
-      "transcript_lines": [[80, 83]],
+      "transcript_lines": [
+        [
+          80,
+          80
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "ottoman-capture-of-adrianople"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-capture-of-adrianople"
+        }
       ]
     },
     {
@@ -579,10 +1281,21 @@
       "summary": "The European town that a Byzantine claimant to the throne foolishly offered to the Ottoman Sultan in exchange for military support in a dynastic dispute. Brownworth describes this as suicidally short-term thinking that gave the Turks their crucial European foothold.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gallipoli",
       "image_url": null,
-      "transcript_lines": [[75, 79]],
+      "transcript_lines": [
+        [
+          76,
+          76
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "ottoman-entry-into-europe"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-entry-into-europe"
+        }
       ]
     },
     {
@@ -596,11 +1309,29 @@
       "summary": "The last Byzantine stronghold outside the walls of the capital, given to Constantine XI as a young man to govern. He successfully restored it to full Byzantine control and even pushed into northern Greece before the Sultan sent troops to teach him a lesson, destroying the Hexamilion and barely letting him escape with his life.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Despotate_of_the_Morea",
       "image_url": null,
-      "transcript_lines": [[167, 186]],
+      "transcript_lines": [
+        [
+          167,
+          167
+        ],
+        [
+          177,
+          177
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "hexamilion"},
-        {"type": "event", "id": "ottoman-assault-on-hexamilion"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "hexamilion"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-assault-on-hexamilion"
+        }
       ]
     },
     {
@@ -614,11 +1345,25 @@
       "summary": "The formidable six-mile-long wall north of the Isthmus of Corinth that Constantine XI repaired and defended as his greatest hope for protecting the Peloponnese. The Turks brought large cannons and demolished it in just five days, barely letting Constantine escape with his life — a lesson about cannon power he did not forget.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hexamilion_wall",
       "image_url": null,
-      "transcript_lines": [[175, 186]],
+      "transcript_lines": [
+        [
+          175,
+          186
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "peloponnese"},
-        {"type": "event", "id": "ottoman-assault-on-hexamilion"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "peloponnese"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-assault-on-hexamilion"
+        }
       ]
     },
     {
@@ -627,17 +1372,38 @@
       "modern_name": "Rumeli Hisarı",
       "modern_country": "Turkey",
       "lat": 41.0846,
-      "lng": 29.0540,
+      "lng": 29.054,
       "first_year": 1452,
       "summary": "The fortress built by Mehmed II on the European side of the Bosphorus in just four and a half months — a feat Brownworth credits to magnificent Turkish organization and efficiency. Named the 'Throat Cutter,' it allowed Mehmed to control all Bosphorus traffic and cut off Constantinople's food supply, and is where Orban's cannon was initially mounted.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rumelihisar%C4%B1",
       "image_url": null,
-      "transcript_lines": [[219, 229], [254, 261]],
+      "transcript_lines": [
+        [
+          219,
+          229
+        ],
+        [
+          254,
+          261
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "person", "id": "orban"},
-        {"type": "place", "id": "bosphorus"},
-        {"type": "event", "id": "construction-of-throat-cutter"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "person",
+          "id": "orban"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        },
+        {
+          "type": "event",
+          "id": "construction-of-throat-cutter"
+        }
       ]
     },
     {
@@ -651,13 +1417,37 @@
       "summary": "The strategic waterway separating Europe from Asia, which Brownworth notes is only 700 yards wide at its narrowest point — recognized as a key crossing point since the time of Darius the Great. Mehmed's construction of the Throat Cutter fortress on the European side to match his grandfather's fortress on the Asian side gave him full control of the strait.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bosphorus",
       "image_url": null,
-      "transcript_lines": [[214, 228]],
+      "transcript_lines": [
+        [
+          214,
+          214
+        ],
+        [
+          256,
+          256
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "person", "id": "darius-i"},
-        {"type": "place", "id": "throat-cutter-fortress"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "construction-of-throat-cutter"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "person",
+          "id": "darius-i"
+        },
+        {
+          "type": "place",
+          "id": "throat-cutter-fortress"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "construction-of-throat-cutter"
+        }
       ]
     },
     {
@@ -671,11 +1461,41 @@
       "summary": "The Genoese colony on the northern side of the Golden Horn where the great harbor chain protecting Constantinople's Imperial Harbor was anchored. Brownworth portrays the Genoese of Galata as treacherous neutrals who not only failed to warn Constantine when Mehmed transported ships overland, but actively warned the Turks of the Byzantine surprise naval attack.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Galata",
       "image_url": null,
-      "transcript_lines": [[322, 324], [397, 413]],
+      "transcript_lines": [
+        [
+          322,
+          322
+        ],
+        [
+          398,
+          399
+        ],
+        [
+          403,
+          403
+        ],
+        [
+          406,
+          406
+        ],
+        [
+          411,
+          411
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "ships-overland-portage"},
-        {"type": "event", "id": "byzantine-naval-counterattack"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "ships-overland-portage"
+        },
+        {
+          "type": "event",
+          "id": "byzantine-naval-counterattack"
+        }
       ]
     },
     {
@@ -689,12 +1509,29 @@
       "summary": "Brownworth describes these walls as the most formidable in the ancient or medieval worlds — over a thousand years old at the time of the siege — consisting of a 60-foot moat, an outer wall 30 feet high with 96 towers, and an inner wall 40 feet higher with 96 more towers. Even Attila the Hun turned away from them, but Orban's great cannon reduced them to rubble.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Walls_of_Constantinople",
       "image_url": null,
-      "transcript_lines": [[312, 329]],
+      "transcript_lines": [
+        [
+          312,
+          329
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "attila-the-hun"},
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "person",
+          "id": "attila-the-hun"
+        },
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -708,12 +1545,37 @@
       "summary": "The ceremonial entrance through which Michael VIII triumphantly entered Constantinople in 1261. In Byzantine legend around Constantine XI, Brownworth notes that the last emperor was said to have been turned to marble and sunk beneath the Golden Gate, and that Mehmed — always superstitious — had it walled up to prevent his mythical return.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Gate,_Constantinople",
       "image_url": null,
-      "transcript_lines": [[23, 23], [565, 569]],
+      "transcript_lines": [
+        [
+          23,
+          23
+        ],
+        [
+          565,
+          565
+        ],
+        [
+          569,
+          569
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-viii"},
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "event", "id": "recapture-of-constantinople-1261"}
+        {
+          "type": "person",
+          "id": "michael-viii"
+        },
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "event",
+          "id": "recapture-of-constantinople-1261"
+        }
       ]
     },
     {
@@ -727,11 +1589,25 @@
       "summary": "The inland sea where Mehmed stormed the Princes' Islands during the siege, killing the garrison and selling the inhabitants into slavery as an act of intimidation toward Constantinople's defenders.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sea_of_Marmara",
       "image_url": null,
-      "transcript_lines": [[349, 350]],
+      "transcript_lines": [
+        [
+          349,
+          349
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "place", "id": "princes-islands"},
-        {"type": "event", "id": "storming-of-princes-islands"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "place",
+          "id": "princes-islands"
+        },
+        {
+          "type": "event",
+          "id": "storming-of-princes-islands"
+        }
       ]
     },
     {
@@ -745,11 +1621,25 @@
       "summary": "A chain of islands in the Sea of Marmara that Mehmed stormed during the siege, killing the garrison and selling the inhabitants into slavery as a demonstration to Constantinople of the price of defiance.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Princes%27_Islands",
       "image_url": null,
-      "transcript_lines": [[349, 350]],
+      "transcript_lines": [
+        [
+          349,
+          350
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "place", "id": "sea-of-marmara"},
-        {"type": "event", "id": "storming-of-princes-islands"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "place",
+          "id": "sea-of-marmara"
+        },
+        {
+          "type": "event",
+          "id": "storming-of-princes-islands"
+        }
       ]
     },
     {
@@ -763,12 +1653,29 @@
       "summary": "The weakest point in Constantinople's land walls, where the defenses were crossed by the river valley. Constantine XI and Giustiniani correctly anticipated this as Mehmed's likely point of main assault and personally stationed themselves there; it became the decisive breach through which the city ultimately fell.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lycus_River_(Constantinople)",
       "image_url": null,
-      "transcript_lines": [[324, 327]],
+      "transcript_lines": [
+        [
+          325,
+          325
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "giovanni-giustiniani"},
-        {"type": "place", "id": "theodosian-walls"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "giovanni-giustiniani"
+        },
+        {
+          "type": "place",
+          "id": "theodosian-walls"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -782,11 +1689,33 @@
       "summary": "Brownworth portrays Genoa as having sent three warships to help Constantinople's defense and as the home city of Giustiniani. However, Genoese colonists in Galata played a deeply ambiguous role — neither warning Constantine of the ships-overland maneuver nor of the Byzantine surprise attack.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Republic_of_Genoa",
       "image_url": null,
-      "transcript_lines": [[296, 297], [300, 301], [397, 412]],
+      "transcript_lines": [
+        [
+          296,
+          296
+        ],
+        [
+          301,
+          301
+        ],
+        [
+          400,
+          400
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "giovanni-giustiniani"},
-        {"type": "place", "id": "galata"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "person",
+          "id": "giovanni-giustiniani"
+        },
+        {
+          "type": "place",
+          "id": "galata"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -800,10 +1729,29 @@
       "summary": "The destination of John VIII's desperate embassy seeking a crusade against the Turks. Brownworth notes John found Europe still asleep to the danger and ultimately promised to convert the empire to Catholicism — signing the decree of union there — in a failed bid for military aid.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
       "image_url": null,
-      "transcript_lines": [[117, 127]],
+      "transcript_lines": [
+        [
+          89,
+          89
+        ],
+        [
+          116,
+          116
+        ],
+        [
+          464,
+          464
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "john-viii"},
-        {"type": "event", "id": "council-of-florence"}
+        {
+          "type": "person",
+          "id": "john-viii"
+        },
+        {
+          "type": "event",
+          "id": "council-of-florence"
+        }
       ]
     },
     {
@@ -817,10 +1765,29 @@
       "summary": "Brownworth mentions Venice in multiple unflattering contexts: the real Byzantine crown jewels were in pawn to Venice by 1347; Venice promised 15 galleys and 800 men but delayed departure until April 20 and the fleet never arrived; and several Venetian merchants snuck out of the besieged city taking 700 needed men with them, though the Venetian merchants who stayed helped defend the harbor.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Republic_of_Venice",
       "image_url": null,
-      "transcript_lines": [[46, 47], [296, 299], [522, 523]],
+      "transcript_lines": [
+        [
+          46,
+          46
+        ],
+        [
+          296,
+          296
+        ],
+        [
+          423,
+          423
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -834,10 +1801,21 @@
       "summary": "Brownworth ends the episode noting that when Athens achieved its independence, it erected a statue of Constantine XI still standing with his sword arm defiantly raised — a final recognition of the last emperor as a symbol of resistance.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Athens",
       "image_url": null,
-      "transcript_lines": [[571, 572]],
+      "transcript_lines": [
+        [
+          570,
+          570
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "event", "id": "statue-of-constantine-xi"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "event",
+          "id": "statue-of-constantine-xi"
+        }
       ]
     },
     {
@@ -851,10 +1829,21 @@
       "summary": "Mentioned by Brownworth as one of the cities that fell to the Ottomans in rapid succession after Othman's death, leaving virtually nothing of the Byzantine empire in Asia.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nicomedia",
       "image_url": null,
-      "transcript_lines": [[69, 70]],
+      "transcript_lines": [
+        [
+          69,
+          69
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "ottoman-conquest-of-asia-minor"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-conquest-of-asia-minor"
+        }
       ]
     }
   ],
@@ -869,13 +1858,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Recapture_of_Constantinople_(1261)",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[14, 26]],
+      "transcript_lines": [
+        [
+          14,
+          26
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "michael-viii"},
-        {"type": "person", "id": "baldwin-ii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "golden-gate"}
+        {
+          "type": "person",
+          "id": "michael-viii"
+        },
+        {
+          "type": "person",
+          "id": "baldwin-ii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "golden-gate"
+        }
       ]
     },
     {
@@ -888,11 +1897,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Death",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[48, 49]],
+      "transcript_lines": [
+        [
+          48,
+          49
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "john-vi"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "coronation-of-john-vi-1347"}
+        {
+          "type": "person",
+          "id": "john-vi"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "coronation-of-john-vi-1347"
+        }
       ]
     },
     {
@@ -905,12 +1928,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_VI_Kantakouzenos",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[43, 47]],
+      "transcript_lines": [
+        [
+          43,
+          47
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "john-vi"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "venice"},
-        {"type": "event", "id": "black-death-constantinople"}
+        {
+          "type": "person",
+          "id": "john-vi"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "venice"
+        },
+        {
+          "type": "event",
+          "id": "black-death-constantinople"
+        }
       ]
     },
     {
@@ -923,13 +1963,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ottoman_Empire",
       "image_url": null,
       "location_id": "bursa",
-      "transcript_lines": [[57, 71]],
+      "transcript_lines": [
+        [
+          57,
+          71
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "othman"},
-        {"type": "place", "id": "bursa"},
-        {"type": "place", "id": "ephesus"},
-        {"type": "place", "id": "nicaea"},
-        {"type": "place", "id": "nicomedia"}
+        {
+          "type": "person",
+          "id": "othman"
+        },
+        {
+          "type": "place",
+          "id": "bursa"
+        },
+        {
+          "type": "place",
+          "id": "ephesus"
+        },
+        {
+          "type": "place",
+          "id": "nicaea"
+        },
+        {
+          "type": "place",
+          "id": "nicomedia"
+        }
       ]
     },
     {
@@ -942,11 +2002,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ottoman_wars_in_Europe",
       "image_url": null,
       "location_id": "gallipoli",
-      "transcript_lines": [[74, 83]],
+      "transcript_lines": [
+        [
+          74,
+          83
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "gallipoli"},
-        {"type": "place", "id": "adrianople"},
-        {"type": "event", "id": "ottoman-capture-of-adrianople"}
+        {
+          "type": "place",
+          "id": "gallipoli"
+        },
+        {
+          "type": "place",
+          "id": "adrianople"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-capture-of-adrianople"
+        }
       ]
     },
     {
@@ -959,11 +2033,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Edirne",
       "image_url": null,
       "location_id": "adrianople",
-      "transcript_lines": [[80, 85]],
+      "transcript_lines": [
+        [
+          80,
+          85
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "adrianople"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "ottoman-entry-into-europe"}
+        {
+          "type": "place",
+          "id": "adrianople"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-entry-into-europe"
+        }
       ]
     },
     {
@@ -976,9 +2064,17 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Maritsa",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[95, 97]],
+      "transcript_lines": [
+        [
+          95,
+          97
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "battle-of-kosovo"}
+        {
+          "type": "event",
+          "id": "battle-of-kosovo"
+        }
       ]
     },
     {
@@ -991,9 +2087,17 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kosovo",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[98, 101]],
+      "transcript_lines": [
+        [
+          99,
+          99
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "battle-of-marica-river"}
+        {
+          "type": "event",
+          "id": "battle-of-marica-river"
+        }
       ]
     },
     {
@@ -1006,11 +2110,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Ankara",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[106, 110]],
+      "transcript_lines": [
+        [
+          106,
+          110
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "tamerlane"},
-        {"type": "person", "id": "manuel-ii"},
-        {"type": "event", "id": "ottoman-siege-1422"}
+        {
+          "type": "person",
+          "id": "tamerlane"
+        },
+        {
+          "type": "person",
+          "id": "manuel-ii"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-siege-1422"
+        }
       ]
     },
     {
@@ -1023,11 +2141,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Constantinople_(1422)",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[111, 114]],
+      "transcript_lines": [
+        [
+          111,
+          114
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "manuel-ii"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "battle-of-ankara-1402"}
+        {
+          "type": "person",
+          "id": "manuel-ii"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "battle-of-ankara-1402"
+        }
       ]
     },
     {
@@ -1040,12 +2172,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Florence",
       "image_url": null,
       "location_id": "rome",
-      "transcript_lines": [[120, 128]],
+      "transcript_lines": [
+        [
+          120,
+          128
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "john-viii"},
-        {"type": "place", "id": "rome"},
-        {"type": "event", "id": "battle-of-varna"},
-        {"type": "event", "id": "decree-of-union-read-at-hagia-sophia"}
+        {
+          "type": "person",
+          "id": "john-viii"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "event",
+          "id": "battle-of-varna"
+        },
+        {
+          "type": "event",
+          "id": "decree-of-union-read-at-hagia-sophia"
+        }
       ]
     },
     {
@@ -1058,10 +2207,21 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Varna",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[129, 136]],
+      "transcript_lines": [
+        [
+          129,
+          136
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "john-viii"},
-        {"type": "event", "id": "council-of-florence"}
+        {
+          "type": "person",
+          "id": "john-viii"
+        },
+        {
+          "type": "event",
+          "id": "council-of-florence"
+        }
       ]
     },
     {
@@ -1074,12 +2234,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hexamilion_wall",
       "image_url": null,
       "location_id": "hexamilion",
-      "transcript_lines": [[173, 187]],
+      "transcript_lines": [
+        [
+          173,
+          187
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "hexamilion"},
-        {"type": "place", "id": "peloponnese"},
-        {"type": "event", "id": "construction-of-great-cannon"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "hexamilion"
+        },
+        {
+          "type": "place",
+          "id": "peloponnese"
+        },
+        {
+          "type": "event",
+          "id": "construction-of-great-cannon"
+        }
       ]
     },
     {
@@ -1092,13 +2269,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rumelihisar%C4%B1",
       "image_url": null,
       "location_id": "throat-cutter-fortress",
-      "transcript_lines": [[219, 239]],
+      "transcript_lines": [
+        [
+          219,
+          239
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "throat-cutter-fortress"},
-        {"type": "place", "id": "bosphorus"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "throat-cutter-fortress"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -1111,12 +2308,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Orban_(engineer)",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[263, 273]],
+      "transcript_lines": [
+        [
+          263,
+          273
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "orban"},
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "ottoman-assault-on-hexamilion"}
+        {
+          "type": "person",
+          "id": "orban"
+        },
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-assault-on-hexamilion"
+        }
       ]
     },
     {
@@ -1129,12 +2343,37 @@
       "wikipedia_url": null,
       "image_url": null,
       "location_id": "hagia-sophia",
-      "transcript_lines": [[283, 291]],
+      "transcript_lines": [
+        [
+          122,
+          122
+        ],
+        [
+          125,
+          125
+        ],
+        [
+          284,
+          284
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "event", "id": "council-of-florence"},
-        {"type": "event", "id": "final-ecumenical-service"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "event",
+          "id": "council-of-florence"
+        },
+        {
+          "type": "event",
+          "id": "final-ecumenical-service"
+        }
       ]
     },
     {
@@ -1147,21 +2386,77 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[276, 276], [292, 320], [351, 420], [444, 517], [518, 575]],
+      "transcript_lines": [
+        [
+          276,
+          276
+        ],
+        [
+          292,
+          320
+        ],
+        [
+          351,
+          420
+        ],
+        [
+          444,
+          575
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "person", "id": "giovanni-giustiniani"},
-        {"type": "person", "id": "orban"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "theodosian-walls"},
-        {"type": "place", "id": "little-lycus-river"},
-        {"type": "event", "id": "final-ecumenical-service"},
-        {"type": "event", "id": "constantine-final-speech"},
-        {"type": "event", "id": "wounding-of-giustiniani"},
-        {"type": "event", "id": "ships-overland-portage"},
-        {"type": "event", "id": "relief-ships-enter-harbor"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "person",
+          "id": "giovanni-giustiniani"
+        },
+        {
+          "type": "person",
+          "id": "orban"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "theodosian-walls"
+        },
+        {
+          "type": "place",
+          "id": "little-lycus-river"
+        },
+        {
+          "type": "event",
+          "id": "final-ecumenical-service"
+        },
+        {
+          "type": "event",
+          "id": "constantine-final-speech"
+        },
+        {
+          "type": "event",
+          "id": "wounding-of-giustiniani"
+        },
+        {
+          "type": "event",
+          "id": "ships-overland-portage"
+        },
+        {
+          "type": "event",
+          "id": "relief-ships-enter-harbor"
+        }
       ]
     },
     {
@@ -1174,13 +2469,33 @@
       "wikipedia_url": null,
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[359, 392]],
+      "transcript_lines": [
+        [
+          359,
+          392
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "person", "id": "ottoman-admiral"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "ships-overland-portage"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "person",
+          "id": "ottoman-admiral"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "ships-overland-portage"
+        }
       ]
     },
     {
@@ -1193,14 +2508,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople#Ottoman_fleet_transported_overland",
       "image_url": null,
       "location_id": "galata",
-      "transcript_lines": [[401, 415]],
+      "transcript_lines": [
+        [
+          401,
+          415
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "mehmed-ii"},
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "galata"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "byzantine-naval-counterattack"}
+        {
+          "type": "person",
+          "id": "mehmed-ii"
+        },
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "galata"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "byzantine-naval-counterattack"
+        }
       ]
     },
     {
@@ -1213,13 +2551,33 @@
       "wikipedia_url": null,
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[410, 420]],
+      "transcript_lines": [
+        [
+          410,
+          420
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "galata"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "ships-overland-portage"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "galata"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "ships-overland-portage"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -1232,12 +2590,29 @@
       "wikipedia_url": null,
       "image_url": null,
       "location_id": "hagia-sophia",
-      "transcript_lines": [[451, 460]],
+      "transcript_lines": [
+        [
+          451,
+          460
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "decree-of-union-read-at-hagia-sophia"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "decree-of-union-read-at-hagia-sophia"
+        }
       ]
     },
     {
@@ -1250,11 +2625,25 @@
       "wikipedia_url": null,
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[461, 479]],
+      "transcript_lines": [
+        [
+          461,
+          479
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -1267,12 +2656,29 @@
       "wikipedia_url": null,
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[502, 513]],
+      "transcript_lines": [
+        [
+          301,
+          301
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "giovanni-giustiniani"},
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "person",
+          "id": "giovanni-giustiniani"
+        },
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -1285,12 +2691,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ottoman_wars_in_Europe",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[67, 71]],
+      "transcript_lines": [
+        [
+          67,
+          71
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "othman"},
-        {"type": "place", "id": "nicaea"},
-        {"type": "place", "id": "nicomedia"},
-        {"type": "event", "id": "ottoman-founding"}
+        {
+          "type": "person",
+          "id": "othman"
+        },
+        {
+          "type": "place",
+          "id": "nicaea"
+        },
+        {
+          "type": "place",
+          "id": "nicomedia"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-founding"
+        }
       ]
     },
     {
@@ -1303,9 +2726,17 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hundred_Years%27_War",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[91, 92]],
+      "transcript_lines": [
+        [
+          91,
+          91
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "fall-of-constantinople-1453"}
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        }
       ]
     },
     {
@@ -1318,11 +2749,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bartolomeu_Dias",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[579, 580]],
+      "transcript_lines": [
+        [
+          579,
+          580
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "bartholomew-dias"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "discovery-of-america"}
+        {
+          "type": "person",
+          "id": "bartholomew-dias"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "discovery-of-america"
+        }
       ]
     },
     {
@@ -1335,11 +2780,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[580, 582]],
+      "transcript_lines": [
+        [
+          580,
+          582
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "christopher-columbus"},
-        {"type": "event", "id": "fall-of-constantinople-1453"},
-        {"type": "event", "id": "rounding-of-cape-of-good-hope"}
+        {
+          "type": "person",
+          "id": "christopher-columbus"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-constantinople-1453"
+        },
+        {
+          "type": "event",
+          "id": "rounding-of-cape-of-good-hope"
+        }
       ]
     },
     {
@@ -1352,10 +2811,21 @@
       "wikipedia_url": null,
       "image_url": null,
       "location_id": "athens",
-      "transcript_lines": [[571, 572]],
+      "transcript_lines": [
+        [
+          571,
+          572
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "constantine-xi"},
-        {"type": "place", "id": "athens"}
+        {
+          "type": "person",
+          "id": "constantine-xi"
+        },
+        {
+          "type": "place",
+          "id": "athens"
+        }
       ]
     },
     {
@@ -1368,10 +2838,21 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[55, 57]],
+      "transcript_lines": [
+        [
+          55,
+          55
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "othman"},
-        {"type": "event", "id": "ottoman-founding"}
+        {
+          "type": "person",
+          "id": "othman"
+        },
+        {
+          "type": "event",
+          "id": "ottoman-founding"
+        }
       ]
     }
   ]

@@ -5,7 +5,9 @@
     {
       "id": "isaac-ii-angelos",
       "name": "Isaac II Angelos",
-      "alt_names": ["Isaac Angelus"],
+      "alt_names": [
+        "Isaac Angelus"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1156,
       "death_year": 1204,
@@ -14,25 +16,66 @@
       "summary": "A cousin of Andronicus who seized the throne in 1185 after killing the officer sent to arrest him and rallying the people at the Hagia Sophia. His reign began promisingly with a victory over the Sicilians, but descended into reckless spending, crushing taxes, sold offices, and military failure in Bulgaria. He was deposed, blinded, and imprisoned by his own brother Alexius, and eventually died in prison after being briefly restored as a broken co-emperor alongside his son Alexius IV.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Isaac_II_Angelos",
       "portrait_url": null,
-      "transcript_lines": [[112, 154], [179, 215], [289, 301], [413, 427], [469, 501]],
+      "transcript_lines": [
+        [
+          112,
+          112
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "person", "id": "alexius-murtzuphlus"},
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "overthrow-of-andronicus"},
-        {"type": "event", "id": "deposition-of-isaac-ii"},
-        {"type": "event", "id": "restoration-of-isaac-ii"},
-        {"type": "event", "id": "death-of-isaac-ii"}
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-murtzuphlus"
+        },
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "overthrow-of-andronicus"
+        },
+        {
+          "type": "event",
+          "id": "deposition-of-isaac-ii"
+        },
+        {
+          "type": "event",
+          "id": "restoration-of-isaac-ii"
+        },
+        {
+          "type": "event",
+          "id": "death-of-isaac-ii"
+        }
       ]
     },
     {
       "id": "andronicus-i-komnenos",
       "name": "Andronicus I Komnenos",
-      "alt_names": ["Andronicus the Terrible", "Andronicus"],
+      "alt_names": [
+        "Andronicus the Terrible",
+        "Andronicus"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1118,
       "death_year": 1185,
@@ -41,23 +84,109 @@
       "summary": "A cousin of Manuel I and grandson of Alexius I, Andronicus was dashing, eloquent, and physically imposing at 6'4\". He exploited popular resentment of western influence to seize the throne, then massacred Italians in Constantinople, eliminated rival claimants, strangled the young Alexius II, and married his 13-year-old widow. Though his anti-corruption campaign brought some relief, his reign of terror and paranoid violence brought the empire to crisis, and he was overthrown, tortured, and killed by the mob in 1185.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Andronicus_I_Komnenos",
       "portrait_url": null,
-      "transcript_lines": [[39, 82], [100, 151]],
+      "transcript_lines": [
+        [
+          39,
+          39
+        ],
+        [
+          53,
+          53
+        ],
+        [
+          58,
+          58
+        ],
+        [
+          75,
+          75
+        ],
+        [
+          93,
+          93
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          105,
+          105
+        ],
+        [
+          112,
+          112
+        ],
+        [
+          127,
+          127
+        ],
+        [
+          135,
+          135
+        ],
+        [
+          149,
+          149
+        ],
+        [
+          157,
+          157
+        ],
+        [
+          191,
+          191
+        ],
+        [
+          505,
+          505
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "manuel-i-komnenos"},
-        {"type": "person", "id": "alexius-i-komnenos"},
-        {"type": "person", "id": "alexius-ii-komnenos"},
-        {"type": "person", "id": "maria-of-antioch"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "william-ii-of-sicily"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "overthrow-of-andronicus"},
-        {"type": "event", "id": "massacre-of-latins-1182"}
+        {
+          "type": "person",
+          "id": "manuel-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-ii-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "maria-of-antioch"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "william-ii-of-sicily"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "overthrow-of-andronicus"
+        },
+        {
+          "type": "event",
+          "id": "massacre-of-latins-1182"
+        }
       ]
     },
     {
       "id": "alexius-i-komnenos",
       "name": "Alexius I Komnenos",
-      "alt_names": ["Alexius I"],
+      "alt_names": [
+        "Alexius I"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1056,
       "death_year": 1118,
@@ -66,19 +195,46 @@
       "summary": "After the shattering defeat at Manzikert, Alexius rebuilt Byzantine power while being pressured from both East and West. He granted Venice expansive trading rights in exchange for use of her navy to fend off a Norman invasion, and managed the armies of the First Crusade passing through his dominions. Andronicus I was his grandson.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_I_Komnenos",
       "portrait_url": null,
-      "transcript_lines": [[4, 13]],
+      "transcript_lines": [
+        [
+          4,
+          4
+        ],
+        [
+          41,
+          41
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "john-ii-komnenos"},
-        {"type": "person", "id": "manuel-i-komnenos"},
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "first-crusade"}
+        {
+          "type": "person",
+          "id": "john-ii-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "manuel-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "first-crusade"
+        }
       ]
     },
     {
       "id": "john-ii-komnenos",
       "name": "John II Komnenos",
-      "alt_names": ["John the Beautiful", "John II"],
+      "alt_names": [
+        "John the Beautiful",
+        "John II"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1087,
       "death_year": 1143,
@@ -87,17 +243,38 @@
       "summary": "Son of Alexius I, John the Beautiful built on his father's accomplishments in restoring imperial prestige. He attempted to break Venetian trading dominance by refusing to renew his father's concessions, but without an imperial navy and facing spiraling costs, the resulting conflict proved not worth fighting.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_II_Komnenos",
       "portrait_url": null,
-      "transcript_lines": [[8, 16]],
+      "transcript_lines": [
+        [
+          8,
+          8
+        ],
+        [
+          15,
+          15
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "alexius-i-komnenos"},
-        {"type": "person", "id": "manuel-i-komnenos"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "alexius-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "manuel-i-komnenos"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
       "id": "manuel-i-komnenos",
       "name": "Manuel I Komnenos",
-      "alt_names": ["Manuel I", "Manuel"],
+      "alt_names": [
+        "Manuel I",
+        "Manuel"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1118,
       "death_year": 1180,
@@ -106,15 +283,69 @@
       "summary": "Grandson of Alexius I, Manuel restored imperial prestige to a level not seen since Basil II, making Byzantium the unquestioned secular leader of the Christian world at his death. He approached Genoa and Pisa with trading offers, then arrested every Venetian in the empire and confiscated their property, earning dangerous Venetian animosity without building the imperial navy to compensate. His marriage to Maria of Antioch and interest in western customs proved deeply unpopular.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Manuel_I_Komnenos",
       "portrait_url": null,
-      "transcript_lines": [[8, 31], [39, 42]],
+      "transcript_lines": [
+        [
+          8,
+          10
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          23,
+          23
+        ],
+        [
+          26,
+          26
+        ],
+        [
+          30,
+          30
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          51,
+          51
+        ],
+        [
+          60,
+          60
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "john-ii-komnenos"},
-        {"type": "person", "id": "alexius-i-komnenos"},
-        {"type": "person", "id": "maria-of-antioch"},
-        {"type": "person", "id": "alexius-ii-komnenos"},
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "john-ii-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "maria-of-antioch"
+        },
+        {
+          "type": "person",
+          "id": "alexius-ii-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -129,18 +360,37 @@
       "summary": "A westerner from Antioch who married Emperor Manuel I and became the deeply unpopular regent for their 11-year-old son Alexius II after Manuel's death. Her government's restoration of Venetian trading privileges and use of Italian and Frankish merchants sparked riots and anti-western sentiment in Constantinople. Andronicus ultimately forced Alexius II to sign his own mother's death warrant.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Maria_of_Antioch",
       "portrait_url": null,
-      "transcript_lines": [[26, 36], [61, 63]],
+      "transcript_lines": [
+        [
+          26,
+          26
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "manuel-i-komnenos"},
-        {"type": "person", "id": "alexius-ii-komnenos"},
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "manuel-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-ii-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
       "id": "alexius-ii-komnenos",
       "name": "Alexius II Komnenos",
-      "alt_names": ["Alexius II"],
+      "alt_names": [
+        "Alexius II"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1169,
       "death_year": 1183,
@@ -149,20 +399,58 @@
       "summary": "The 11-year-old son of Manuel I for whom Maria of Antioch served as regent. Andronicus forced him to sign his own mother's death warrant, then had himself crowned co-emperor alongside the boy; two months later, Andronicus had Alexius strangled and his body thrown into the Bosphorus. A pretender impersonating him was later used by William of Sicily as a pretext for invasion.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_II_Komnenos",
       "portrait_url": null,
-      "transcript_lines": [[30, 31], [62, 66], [87, 88], [176, 178]],
+      "transcript_lines": [
+        [
+          30,
+          30
+        ],
+        [
+          62,
+          62
+        ],
+        [
+          87,
+          87
+        ],
+        [
+          176,
+          176
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "manuel-i-komnenos"},
-        {"type": "person", "id": "maria-of-antioch"},
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "william-ii-of-sicily"},
-        {"type": "place", "id": "bosphorus"},
-        {"type": "event", "id": "strangling-of-alexius-ii"}
+        {
+          "type": "person",
+          "id": "manuel-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "maria-of-antioch"
+        },
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "william-ii-of-sicily"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        },
+        {
+          "type": "event",
+          "id": "strangling-of-alexius-ii"
+        }
       ]
     },
     {
       "id": "enrico-dandolo",
       "name": "Enrico Dandolo",
-      "alt_names": ["Doge Dandolo", "the Doge"],
+      "alt_names": [
+        "Doge Dandolo",
+        "the Doge"
+      ],
       "role": "Doge of Venice",
       "birth_year": 1107,
       "death_year": 1205,
@@ -171,23 +459,81 @@
       "summary": "The remarkable Doge of Venice, in his middle 80s and completely blind but possessing boundless energy and immense shrewdness. He masterminded the diversion of the Fourth Crusade, first to Zara and then to Constantinople, cleverly exploiting the crusaders' debt to Venice and welcoming the fugitive Alexius Angelus as a tool to capture the great city. He personally turned the tide at the sea walls of Constantinople by leaping from his ship and planting the banner of St. Mark. He was buried in the Hagia Sophia, and in 1453 the Turks mistook his tomb for a saint's and threw his bones to the dogs.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Enrico_Dandolo",
       "portrait_url": null,
-      "transcript_lines": [[20, 21], [311, 370], [395, 401], [459, 476], [589, 595]],
+      "transcript_lines": [
+        [
+          20,
+          20
+        ],
+        [
+          311,
+          311
+        ],
+        [
+          352,
+          352
+        ],
+        [
+          355,
+          355
+        ],
+        [
+          460,
+          460
+        ],
+        [
+          513,
+          513
+        ],
+        [
+          589,
+          589
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "person", "id": "alexius-murtzuphlus"},
-        {"type": "place", "id": "venice"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "zara"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "event", "id": "fourth-crusade"},
-        {"type": "event", "id": "sack-of-zara"},
-        {"type": "event", "id": "sack-of-constantinople-1204"}
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-murtzuphlus"
+        },
+        {
+          "type": "place",
+          "id": "venice"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "zara"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-zara"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-constantinople-1204"
+        }
       ]
     },
     {
       "id": "william-ii-of-sicily",
       "name": "William II of Sicily",
-      "alt_names": ["William the Good"],
+      "alt_names": [
+        "William the Good"
+      ],
       "role": "King of Sicily",
       "birth_year": 1155,
       "death_year": 1189,
@@ -196,20 +542,47 @@
       "summary": "The King of Sicily, whose Greek court welcomed Byzantine refugees fleeing Andronicus's reign of terror. Using a young man claiming to be the murdered Alexius II as a pretext, he assembled an army 80,000 strong and invaded, sweeping across the Balkans and sacking Thessalonica in just nine days before being turned back by Isaac's revitalized forces.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/William_II_of_Sicily",
       "portrait_url": null,
-      "transcript_lines": [[83, 99]],
+      "transcript_lines": [
+        [
+          85,
+          85
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "alexius-ii-komnenos"},
-        {"type": "place", "id": "sicily"},
-        {"type": "place", "id": "thessalonica"},
-        {"type": "event", "id": "sicilian-invasion-1185"}
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-ii-komnenos"
+        },
+        {
+          "type": "place",
+          "id": "sicily"
+        },
+        {
+          "type": "place",
+          "id": "thessalonica"
+        },
+        {
+          "type": "event",
+          "id": "sicilian-invasion-1185"
+        }
       ]
     },
     {
       "id": "frederick-barbarossa",
       "name": "Frederick Barbarossa",
-      "alt_names": ["Frederick I", "Emperor Frederick Barbarossa", "Holy Roman Emperor Frederick"],
+      "alt_names": [
+        "Frederick I",
+        "Emperor Frederick Barbarossa",
+        "Holy Roman Emperor Frederick"
+      ],
       "role": "Holy Roman Emperor",
       "birth_year": 1122,
       "death_year": 1190,
@@ -218,21 +591,53 @@
       "summary": "The Holy Roman Emperor who led the Third Crusade by land through Byzantine territory with an immense army of 150,000. He had himself crowned King of the Romans and was no friend to Byzantium, having been opposed by Byzantine-backed Italian rebels. Isaac II mishandled his passage disastrously—cutting off food, attacking his forces, and imprisoning his ambassadors—until Frederick threatened to crusade against Byzantium itself. He drowned crossing the Chalycadnus River in Seleucia before reaching the Holy Land, and his army immediately disintegrated.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frederick_I,_Holy_Roman_Emperor",
       "portrait_url": null,
-      "transcript_lines": [[220, 278]],
+      "transcript_lines": [
+        [
+          220,
+          220
+        ],
+        [
+          229,
+          229
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "place", "id": "adrianople"},
-        {"type": "place", "id": "thrace"},
-        {"type": "place", "id": "seleucia"},
-        {"type": "place", "id": "chalycadnus-river"},
-        {"type": "event", "id": "third-crusade"},
-        {"type": "event", "id": "death-of-barbarossa"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "place",
+          "id": "adrianople"
+        },
+        {
+          "type": "place",
+          "id": "thrace"
+        },
+        {
+          "type": "place",
+          "id": "seleucia"
+        },
+        {
+          "type": "place",
+          "id": "chalycadnus-river"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        },
+        {
+          "type": "event",
+          "id": "death-of-barbarossa"
+        }
       ]
     },
     {
       "id": "philip-augustus",
       "name": "Philip Augustus",
-      "alt_names": ["Philip II of France"],
+      "alt_names": [
+        "Philip II of France"
+      ],
       "role": "King of France",
       "birth_year": 1165,
       "death_year": 1223,
@@ -241,17 +646,34 @@
       "summary": "King of France who declared himself ready to go on the Third Crusade alongside Frederick Barbarossa and Richard the Lion-Hearted. He chose to sail to the Holy Land rather than march overland through Byzantine territory, thereby bypassing imperial lands altogether.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_II_of_France",
       "portrait_url": null,
-      "transcript_lines": [[221, 228]],
+      "transcript_lines": [
+        [
+          221,
+          221
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "richard-i-of-england"},
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "person",
+          "id": "richard-i-of-england"
+        },
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
       "id": "richard-i-of-england",
       "name": "Richard I of England",
-      "alt_names": ["Richard the Lion-Hearted", "Richard the Lionheart"],
+      "alt_names": [
+        "Richard the Lion-Hearted",
+        "Richard the Lionheart"
+      ],
       "role": "King of England",
       "birth_year": 1157,
       "death_year": 1199,
@@ -260,18 +682,42 @@
       "summary": "King of England who participated in the Third Crusade, sailing to the Holy Land and bypassing Byzantine territory. Upon leaving the Holy Land at the crusade's end, he announced that Egypt was the weak point of the Muslim East and all future crusades should be focused there—advice that Dandolo later used to manipulate the leaders of the Fourth Crusade.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Richard_I_of_England",
       "portrait_url": null,
-      "transcript_lines": [[221, 228], [319, 322]],
+      "transcript_lines": [
+        [
+          221,
+          221
+        ],
+        [
+          319,
+          319
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "philip-augustus"},
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "person",
+          "id": "philip-augustus"
+        },
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
       "id": "alexius-iii-angelos",
       "name": "Alexius III Angelos",
-      "alt_names": ["Alexius III", "Alexius"],
+      "alt_names": [
+        "Alexius III",
+        "Alexius"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1153,
       "death_year": 1211,
@@ -280,20 +726,110 @@
       "summary": "The older brother of Isaac II who took the opportunity of Isaac's hunting expedition to depose him, blind him, and imprison him along with his son. His reign was characterized by emptying the treasury on gardens and lavish parties while the Turks overran the eastern frontiers and Bulgaria ravaged Macedonia and Thrace. When the Fourth Crusade arrived, he was too paralyzed to act and ultimately fled Constantinople grabbing his favorite daughter and the palace treasure, leaving the city to fend for itself.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_III_Angelos",
       "portrait_url": null,
-      "transcript_lines": [[295, 306], [373, 408]],
+      "transcript_lines": [
+        [
+          8,
+          8
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          65,
+          65
+        ],
+        [
+          295,
+          298
+        ],
+        [
+          301,
+          301
+        ],
+        [
+          364,
+          364
+        ],
+        [
+          373,
+          373
+        ],
+        [
+          389,
+          389
+        ],
+        [
+          403,
+          403
+        ],
+        [
+          435,
+          435
+        ],
+        [
+          438,
+          438
+        ],
+        [
+          464,
+          464
+        ],
+        [
+          469,
+          469
+        ],
+        [
+          479,
+          479
+        ],
+        [
+          484,
+          484
+        ],
+        [
+          487,
+          487
+        ],
+        [
+          499,
+          499
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "deposition-of-isaac-ii"},
-        {"type": "event", "id": "fourth-crusade"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "deposition-of-isaac-ii"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        }
       ]
     },
     {
       "id": "alexius-iv-angelos",
       "name": "Alexius IV Angelos",
-      "alt_names": ["Alexius Angelus", "Alexius IV"],
+      "alt_names": [
+        "Alexius Angelus",
+        "Alexius IV"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1182,
       "death_year": 1204,
@@ -302,24 +838,80 @@
       "summary": "Son of Isaac II who escaped from prison and headed west to find support to overthrow his uncle Alexius III. He found it through Enrico Dandolo and the Fourth Crusade, promising to end the Orthodox-Catholic schism, pay the crusader debts, and provide military support. Crowned co-emperor alongside his restored father, he could fulfill none of his extravagant promises, stripping church plate and raising crushing taxes, until Alexius Murtzuphlus seized him and strangled him with a bowstring.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_IV_Angelos",
       "portrait_url": null,
-      "transcript_lines": [[307, 311], [355, 369], [418, 500]],
+      "transcript_lines": [
+        [
+          307,
+          307
+        ],
+        [
+          355,
+          355
+        ],
+        [
+          362,
+          364
+        ],
+        [
+          418,
+          418
+        ],
+        [
+          428,
+          428
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "person", "id": "alexius-murtzuphlus"},
-        {"type": "place", "id": "venice"},
-        {"type": "place", "id": "zara"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fourth-crusade"},
-        {"type": "event", "id": "restoration-of-isaac-ii"},
-        {"type": "event", "id": "death-of-isaac-ii"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "person",
+          "id": "alexius-murtzuphlus"
+        },
+        {
+          "type": "place",
+          "id": "venice"
+        },
+        {
+          "type": "place",
+          "id": "zara"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        },
+        {
+          "type": "event",
+          "id": "restoration-of-isaac-ii"
+        },
+        {
+          "type": "event",
+          "id": "death-of-isaac-ii"
+        }
       ]
     },
     {
       "id": "alexius-murtzuphlus",
       "name": "Alexius Murtzuphlus",
-      "alt_names": ["Alexius V Doukas", "Alexius V", "Merzouflus", "Alexios Doukas"],
+      "alt_names": [
+        "Alexius V Doukas",
+        "Alexius V",
+        "Merzouflus",
+        "Alexios Doukas"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1140,
       "death_year": 1204,
@@ -328,21 +920,69 @@
       "summary": "Son-in-law of Alexius III and described by Brownworth as perhaps the only effective player on the Byzantine stage during the Fourth Crusade crisis. He was sent by Alexius IV to beg the crusaders for help, but instead seized the moment—bursting into the emperor's bedroom, feigning urgency, and leading him to conspirators who imprisoned him alongside his father. Murtzuphlus then had himself crowned Alexius V, repaired the walls, and stiffened resistance to the crusaders, but ultimately fled when the city was breached. He was later captured and flung from the top of the Theodosian column in the Hippodrome.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_V_Doukas",
       "portrait_url": null,
-      "transcript_lines": [[487, 526], [566, 568]],
+      "transcript_lines": [
+        [
+          487,
+          487
+        ],
+        [
+          490,
+          490
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          517,
+          517
+        ],
+        [
+          522,
+          522
+        ],
+        [
+          566,
+          566
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hippodrome"},
-        {"type": "event", "id": "sack-of-constantinople-1204"},
-        {"type": "event", "id": "death-of-isaac-ii"}
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-constantinople-1204"
+        },
+        {
+          "type": "event",
+          "id": "death-of-isaac-ii"
+        }
       ]
     },
     {
       "id": "basil-ii",
       "name": "Basil II",
-      "alt_names": ["Basil the Bulgar-Slayer"],
+      "alt_names": [
+        "Basil the Bulgar-Slayer"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 958,
       "death_year": 1025,
@@ -351,15 +991,25 @@
       "summary": "Referenced as a benchmark of Byzantine greatness; by Manuel's death the empire's prestige had been restored to a level not seen since Basil II's death.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_II",
       "portrait_url": null,
-      "transcript_lines": [[9, 10]],
+      "transcript_lines": [
+        [
+          9,
+          9
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "manuel-i-komnenos"}
+        {
+          "type": "person",
+          "id": "manuel-i-komnenos"
+        }
       ]
     },
     {
       "id": "saint-basil-of-caesarea",
       "name": "Saint Basil of Caesarea",
-      "alt_names": ["Basil the Great"],
+      "alt_names": [
+        "Basil the Great"
+      ],
       "role": "4th-century Byzantine theologian and Church Father",
       "birth_year": 330,
       "death_year": 379,
@@ -368,10 +1018,21 @@
       "summary": "A 4th-century Byzantine theologian cited by Brownworth to illustrate the Byzantine theological objection to holy war: Basil preached that killing, though sometimes justified, could never be praiseworthy, let alone grounds for the remission of sin. This teaching exemplified why Byzantines were scandalized by crusading ideology.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basil_of_Caesarea",
       "portrait_url": null,
-      "transcript_lines": [[247, 249]],
+      "transcript_lines": [
+        [
+          247,
+          247
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "caesarea"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "place",
+          "id": "caesarea"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
@@ -386,16 +1047,29 @@
       "summary": "The Pope who allegedly died of shock when he heard of the fall of Jerusalem, and whose successor immediately preached a new crusade. Brownworth references him as a measure of how devastating the news of Jerusalem's fall was in Europe.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Gregory_VIII",
       "portrait_url": null,
-      "transcript_lines": [[217, 219]],
+      "transcript_lines": [
+        [
+          217,
+          219
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "fall-of-jerusalem-1187"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "event",
+          "id": "fall-of-jerusalem-1187"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
       "id": "constantine-xi",
       "name": "Constantine XI Palaiologos",
-      "alt_names": ["Constantine XI"],
+      "alt_names": [
+        "Constantine XI"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 1405,
       "death_year": 1453,
@@ -404,9 +1078,17 @@
       "summary": "Mentioned in the episode's closing as the subject of the next episode—the last Byzantine emperor, whose refusal to surrender in the face of hopeless odds and magnificent defense of Constantinople earned him undying fame as both an unofficial saint and as the first Greek national martyr.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_XI_Palaiologos",
       "portrait_url": null,
-      "transcript_lines": [[596, 601]],
+      "transcript_lines": [
+        [
+          596,
+          596
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     }
   ],
@@ -422,16 +1104,117 @@
       "summary": "The capital of the Byzantine Empire and the central stage of this episode. Brownworth describes it as the 'Queen of Cities,' a treasure trove of sumptuous palaces, lavish basilicas, and the art and learning of the ancient Greco-Roman world. It was sacked by the Fourth Crusade in 1204 in one of history's great catastrophes, from which it never truly recovered.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
       "image_url": null,
-      "transcript_lines": [[25, 36], [47, 53], [123, 134], [375, 414], [528, 575]],
+      "transcript_lines": [
+        [
+          25,
+          25
+        ],
+        [
+          36,
+          36
+        ],
+        [
+          47,
+          47
+        ],
+        [
+          164,
+          164
+        ],
+        [
+          167,
+          167
+        ],
+        [
+          177,
+          177
+        ],
+        [
+          197,
+          197
+        ],
+        [
+          201,
+          201
+        ],
+        [
+          231,
+          231
+        ],
+        [
+          234,
+          234
+        ],
+        [
+          241,
+          241
+        ],
+        [
+          258,
+          258
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          365,
+          365
+        ],
+        [
+          373,
+          373
+        ],
+        [
+          468,
+          468
+        ],
+        [
+          565,
+          565
+        ],
+        [
+          569,
+          569
+        ],
+        [
+          599,
+          599
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "event", "id": "overthrow-of-andronicus"},
-        {"type": "event", "id": "sack-of-constantinople-1204"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "hippodrome"},
-        {"type": "place", "id": "bosphorus"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "event",
+          "id": "overthrow-of-andronicus"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-constantinople-1204"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        }
       ]
     },
     {
@@ -445,11 +1228,33 @@
       "summary": "The great church in Constantinople where Isaac Angelos fled after killing his pursuers and appealed to the congregation for help, leading to his overnight coronation by torchlight. It is also where Enrico Dandolo was buried, and in 1453 the conquering Turks mistook his tomb for a saint's and threw his bones to the dogs. A mob also gathered there to depose Alexius IV and Isaac II.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
       "image_url": null,
-      "transcript_lines": [[117, 124], [481, 482], [591, 595]],
+      "transcript_lines": [
+        [
+          117,
+          117
+        ],
+        [
+          481,
+          481
+        ],
+        [
+          591,
+          591
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "event", "id": "overthrow-of-andronicus"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "event",
+          "id": "overthrow-of-andronicus"
+        }
       ]
     },
     {
@@ -463,12 +1268,37 @@
       "summary": "The second city of the Byzantine Empire, whose fall to the Sicilian invasion under William II highlighted the catastrophic failures of Andronicus's regime. The incompetent governor had made no preparations: he ran out of arrows, catapult stones, and even water, and after just nine days German mercenaries were bribed to open the gates to the brutal Sicilian sack.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Thessaloniki",
       "image_url": null,
-      "transcript_lines": [[91, 99], [165, 166]],
+      "transcript_lines": [
+        [
+          91,
+          91
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          165,
+          165
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "william-ii-of-sicily"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "event", "id": "sicilian-invasion-1185"}
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "william-ii-of-sicily"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "event",
+          "id": "sicilian-invasion-1185"
+        }
       ]
     },
     {
@@ -482,12 +1312,57 @@
       "summary": "The Venetian Republic, whose expansive trading rights within the Byzantine Empire—granted by Alexius I and built upon despite attempts to curtail them—gave it a virtual stranglehold on Byzantine commerce. Manuel I's arrest and property confiscation of all Venetians earned dangerous animosity. Venice later became the driving force behind the diversion of the Fourth Crusade to Constantinople, with the Doge Enrico Dandolo using the crusaders' debt as leverage.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Republic_of_Venice",
       "image_url": null,
-      "transcript_lines": [[11, 24], [310, 340]],
+      "transcript_lines": [
+        [
+          12,
+          13
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          311,
+          311
+        ],
+        [
+          317,
+          317
+        ],
+        [
+          322,
+          322
+        ],
+        [
+          333,
+          333
+        ],
+        [
+          339,
+          339
+        ],
+        [
+          346,
+          346
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "person", "id": "alexius-i-komnenos"},
-        {"type": "person", "id": "manuel-i-komnenos"},
-        {"type": "event", "id": "fourth-crusade"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "person",
+          "id": "alexius-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "manuel-i-komnenos"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        }
       ]
     },
     {
@@ -501,11 +1376,25 @@
       "summary": "The most common destination for Byzantines fleeing Andronicus's reign of terror, whose Greek court welcomed them and whose king William the Good used them—and a false Alexius II—as justification for a massive invasion of the Byzantine Empire.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Sicily",
       "image_url": null,
-      "transcript_lines": [[83, 89]],
+      "transcript_lines": [
+        [
+          83,
+          83
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "william-ii-of-sicily"},
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "event", "id": "sicilian-invasion-1185"}
+        {
+          "type": "person",
+          "id": "william-ii-of-sicily"
+        },
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "event",
+          "id": "sicilian-invasion-1185"
+        }
       ]
     },
     {
@@ -519,11 +1408,29 @@
       "summary": "The strait on which Constantinople sits, into which Andronicus threw the strangled body of Alexius II. The Venetian fleet also sailed under the walls along the Bosphorus to astonish the citizens of Constantinople.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bosphorus",
       "image_url": null,
-      "transcript_lines": [[65, 65], [375, 376]],
+      "transcript_lines": [
+        [
+          33,
+          33
+        ],
+        [
+          65,
+          65
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "alexius-ii-komnenos"},
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "alexius-ii-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -537,11 +1444,33 @@
       "summary": "The region where, angered by Isaac II's crushing new taxes, two noblemen announced the revival of the Bulgarian Empire. Isaac's repeated military campaigns to crush the revolt were dismal failures, with commanders either rebelling or being ambushed, and Bulgaria ravaged Byzantine territory as far as Macedonian Thrace during Alexius III's reign.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Bulgarian_Empire",
       "image_url": null,
-      "transcript_lines": [[194, 212], [291, 292], [305, 306]],
+      "transcript_lines": [
+        [
+          194,
+          194
+        ],
+        [
+          291,
+          291
+        ],
+        [
+          305,
+          305
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "event", "id": "bulgarian-revolt"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "event",
+          "id": "bulgarian-revolt"
+        }
       ]
     },
     {
@@ -555,12 +1484,29 @@
       "summary": "A major Byzantine city in Thrace occupied by Frederick Barbarossa after Isaac II provoked him by cutting off food supplies to his crusading army and imprisoning his ambassadors. Its fall forced Isaac to capitulate and release the German prisoners.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Edirne",
       "image_url": null,
-      "transcript_lines": [[267, 268]],
+      "transcript_lines": [
+        [
+          267,
+          267
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "place", "id": "thrace"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "place",
+          "id": "thrace"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
@@ -574,12 +1520,33 @@
       "summary": "The region in which Frederick Barbarossa turned his army loose after Isaac II's provocations, occupying Adrianople. Bulgaria also ravaged as far as Macedonian Thrace during Alexius III's neglectful reign.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Thrace",
       "image_url": null,
-      "transcript_lines": [[267, 267], [305, 306]],
+      "transcript_lines": [
+        [
+          267,
+          267
+        ],
+        [
+          305,
+          305
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "place", "id": "adrianople"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "place",
+          "id": "adrianople"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
@@ -593,11 +1560,25 @@
       "summary": "The coastal plain in Asia Minor where Frederick Barbarossa drowned in the Chalycadnus River in the heat of summer, having crossed the mountains onto the plain and ridden ahead of his men to swim. His death there immediately caused his immense army to disintegrate.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Seleucia_on_the_Calycadnus",
       "image_url": null,
-      "transcript_lines": [[274, 278]],
+      "transcript_lines": [
+        [
+          274,
+          274
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "place", "id": "chalycadnus-river"},
-        {"type": "event", "id": "death-of-barbarossa"}
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "place",
+          "id": "chalycadnus-river"
+        },
+        {
+          "type": "event",
+          "id": "death-of-barbarossa"
+        }
       ]
     },
     {
@@ -611,11 +1592,25 @@
       "summary": "The river in Seleucia where Frederick Barbarossa rode out ahead of his men and drowned while attempting to swim across. His death here ended the German crusading force and set the stage for future disasters.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/G%C3%B6ksu_River",
       "image_url": null,
-      "transcript_lines": [[275, 278]],
+      "transcript_lines": [
+        [
+          275,
+          278
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "place", "id": "seleucia"},
-        {"type": "event", "id": "death-of-barbarossa"}
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "place",
+          "id": "seleucia"
+        },
+        {
+          "type": "event",
+          "id": "death-of-barbarossa"
+        }
       ]
     },
     {
@@ -629,12 +1624,29 @@
       "summary": "The city on the Dalmatian coast that Venice depended on for timber but which had come under the sway of the Christian King of Hungary. Dandolo offered to forgive part of the crusaders' debt if they would sack it; despite a papal letter forbidding the attack, the city was stormed and the loot shared—and it was here that Dandolo first encountered the fugitive Alexius Angelus.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zadar",
       "image_url": null,
-      "transcript_lines": [[347, 355]],
+      "transcript_lines": [
+        [
+          348,
+          348
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "event", "id": "sack-of-zara"},
-        {"type": "event", "id": "fourth-crusade"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-zara"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        }
       ]
     },
     {
@@ -648,11 +1660,25 @@
       "summary": "The coastal region on which Venice depended for timber, which had come under the sway of the King of Hungary. Venice's need to reclaim access to this coast was one factor that led Dandolo to propose the crusaders sack Zara.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Dalmatia",
       "image_url": null,
-      "transcript_lines": [[346, 349]],
+      "transcript_lines": [
+        [
+          346,
+          346
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "place", "id": "zara"},
-        {"type": "event", "id": "sack-of-zara"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "place",
+          "id": "zara"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-zara"
+        }
       ]
     },
     {
@@ -666,10 +1692,21 @@
       "summary": "The great public space of Constantinople where Alexius Murtzuphlus was captured and flung from the top of the Theodosian column after the Fourth Crusade sacked the city.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hippodrome_of_Constantinople",
       "image_url": null,
-      "transcript_lines": [[566, 568]],
+      "transcript_lines": [
+        [
+          566,
+          568
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "alexius-murtzuphlus"},
-        {"type": "event", "id": "sack-of-constantinople-1204"}
+        {
+          "type": "person",
+          "id": "alexius-murtzuphlus"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-constantinople-1204"
+        }
       ]
     },
     {
@@ -683,9 +1720,17 @@
       "summary": "The see of Saint Basil of Caesarea, the 4th-century Byzantine theologian cited by Brownworth to illustrate the Byzantine rejection of holy war ideology.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Caesarea_Mazaca",
       "image_url": null,
-      "transcript_lines": [[247, 249]],
+      "transcript_lines": [
+        [
+          247,
+          249
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "saint-basil-of-caesarea"}
+        {
+          "type": "person",
+          "id": "saint-basil-of-caesarea"
+        }
       ]
     },
     {
@@ -699,12 +1744,41 @@
       "summary": "The crusaders' ultimate destination, which they never reached. The Fourth Crusade was diverted first to Zara and then to Constantinople by Dandolo's maneuvering, leaving Jerusalem unreached and the crusade ending in the catastrophic sack of a Christian city.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Holy_Land",
       "image_url": null,
-      "transcript_lines": [[315, 316], [564, 564]],
+      "transcript_lines": [
+        [
+          227,
+          227
+        ],
+        [
+          315,
+          315
+        ],
+        [
+          319,
+          319
+        ],
+        [
+          564,
+          564
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "event", "id": "fourth-crusade"},
-        {"type": "event", "id": "fall-of-jerusalem-1187"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-jerusalem-1187"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
@@ -718,11 +1792,33 @@
       "summary": "Dandolo cleverly suggested Cairo (Egypt) as an initial target for the Fourth Crusade rather than Jerusalem, citing Richard the Lion-Hearted's advice that Egypt was the weak point of the Muslim East. This was a ruse, however, as Dandolo simultaneously had representatives in Cairo discussing trade agreements and had privately vowed never to take part in hostilities against Egypt.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Egypt",
       "image_url": null,
-      "transcript_lines": [[317, 329]],
+      "transcript_lines": [
+        [
+          320,
+          320
+        ],
+        [
+          325,
+          325
+        ],
+        [
+          328,
+          328
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "person", "id": "richard-i-of-england"},
-        {"type": "event", "id": "fourth-crusade"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "person",
+          "id": "richard-i-of-england"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        }
       ]
     },
     {
@@ -736,9 +1832,17 @@
       "summary": "The rain-swept region where Andronicus lived in comfortable exile before hearing of the popular resentment against Maria of Antioch's regency, which he saw as the perfect opportunity to seize the throne.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Sea",
       "image_url": null,
-      "transcript_lines": [[37, 38]],
+      "transcript_lines": [
+        [
+          37,
+          37
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "andronicus-i-komnenos"}
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        }
       ]
     },
     {
@@ -752,11 +1856,25 @@
       "summary": "The great Venetian basilica that was decorated with much of Venice's share of the plunder from the sack of Constantinople in 1204, as the Venetians carted off their portion of what one account estimated as two-thirds of all the wealth of the world.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/St_Mark%27s_Basilica",
       "image_url": null,
-      "transcript_lines": [[563, 563]],
+      "transcript_lines": [
+        [
+          563,
+          563
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "place", "id": "venice"},
-        {"type": "event", "id": "sack-of-constantinople-1204"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "place",
+          "id": "venice"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-constantinople-1204"
+        }
       ]
     },
     {
@@ -770,12 +1888,33 @@
       "summary": "The Sicilian army swept across the Balkans within two months and arrived before Thessalonica. The region was also plagued by the Bulgarian revolt and subsequent Byzantine military failures under Isaac II.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Balkans",
       "image_url": null,
-      "transcript_lines": [[90, 92], [212, 213]],
+      "transcript_lines": [
+        [
+          90,
+          90
+        ],
+        [
+          212,
+          212
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "william-ii-of-sicily"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "event", "id": "sicilian-invasion-1185"},
-        {"type": "event", "id": "bulgarian-revolt"}
+        {
+          "type": "person",
+          "id": "william-ii-of-sicily"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "event",
+          "id": "sicilian-invasion-1185"
+        },
+        {
+          "type": "event",
+          "id": "bulgarian-revolt"
+        }
       ]
     },
     {
@@ -789,12 +1928,29 @@
       "summary": "Isaac II, after capitulating to Frederick Barbarossa, agreed to transport the German army to Asia Minor as quickly as possible. The German army then swept all before it as it advanced across Asia Minor, sending a tremor of fear across the occupied kingdom of Jerusalem—before Barbarossa drowned. The Turks also overran the eastern frontiers (Asia Minor) during Alexius III's reign.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Anatolia",
       "image_url": null,
-      "transcript_lines": [[270, 272], [303, 304]],
+      "transcript_lines": [
+        [
+          270,
+          271
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     }
   ],
@@ -809,9 +1965,17 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/First_Crusade",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[6, 7]],
+      "transcript_lines": [
+        [
+          6,
+          6
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "alexius-i-komnenos"}
+        {
+          "type": "person",
+          "id": "alexius-i-komnenos"
+        }
       ]
     },
     {
@@ -824,10 +1988,21 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Massacre_of_the_Latins",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[57, 59]],
+      "transcript_lines": [
+        [
+          57,
+          59
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -840,11 +2015,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_II_Komnenos",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[62, 65]],
+      "transcript_lines": [
+        [
+          62,
+          65
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "alexius-ii-komnenos"},
-        {"type": "place", "id": "bosphorus"}
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-ii-komnenos"
+        },
+        {
+          "type": "place",
+          "id": "bosphorus"
+        }
       ]
     },
     {
@@ -857,13 +2046,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_invasion_of_the_Byzantine_Empire_(1185)",
       "image_url": null,
       "location_id": "thessalonica",
-      "transcript_lines": [[83, 178]],
+      "transcript_lines": [
+        [
+          83,
+          178
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "william-ii-of-sicily"},
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "place", "id": "thessalonica"},
-        {"type": "place", "id": "balkans"}
+        {
+          "type": "person",
+          "id": "william-ii-of-sicily"
+        },
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "place",
+          "id": "thessalonica"
+        },
+        {
+          "type": "place",
+          "id": "balkans"
+        }
       ]
     },
     {
@@ -876,12 +2085,41 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Andronikos_I_Komnenos#Downfall_and_death",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[112, 151]],
+      "transcript_lines": [
+        [
+          77,
+          77
+        ],
+        [
+          308,
+          308
+        ],
+        [
+          410,
+          410
+        ],
+        [
+          476,
+          476
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "andronicus-i-komnenos"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "place", "id": "hagia-sophia"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "andronicus-i-komnenos"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "place",
+          "id": "hagia-sophia"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -894,11 +2132,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Bulgarian_Empire",
       "image_url": null,
       "location_id": "bulgaria",
-      "transcript_lines": [[194, 211]],
+      "transcript_lines": [
+        [
+          194,
+          211
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "place", "id": "bulgaria"},
-        {"type": "place", "id": "balkans"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "place",
+          "id": "bulgaria"
+        },
+        {
+          "type": "place",
+          "id": "balkans"
+        }
       ]
     },
     {
@@ -911,14 +2163,57 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1187)",
       "image_url": null,
       "location_id": "holy-land",
-      "transcript_lines": [[215, 223]],
+      "transcript_lines": [
+        [
+          216,
+          216
+        ],
+        [
+          272,
+          272
+        ],
+        [
+          279,
+          279
+        ],
+        [
+          318,
+          318
+        ],
+        [
+          331,
+          331
+        ],
+        [
+          372,
+          372
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "pope-gregory-viii"},
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "person", "id": "philip-augustus"},
-        {"type": "person", "id": "richard-i-of-england"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "pope-gregory-viii"
+        },
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "person",
+          "id": "philip-augustus"
+        },
+        {
+          "type": "person",
+          "id": "richard-i-of-england"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
@@ -931,17 +2226,53 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Crusade",
       "image_url": null,
       "location_id": null,
-      "transcript_lines": [[220, 288]],
+      "transcript_lines": [
+        [
+          285,
+          285
+        ],
+        [
+          319,
+          319
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "person", "id": "philip-augustus"},
-        {"type": "person", "id": "richard-i-of-england"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "pope-gregory-viii"},
-        {"type": "event", "id": "fall-of-jerusalem-1187"},
-        {"type": "event", "id": "death-of-barbarossa"},
-        {"type": "place", "id": "adrianople"},
-        {"type": "place", "id": "thrace"}
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "person",
+          "id": "philip-augustus"
+        },
+        {
+          "type": "person",
+          "id": "richard-i-of-england"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "pope-gregory-viii"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-jerusalem-1187"
+        },
+        {
+          "type": "event",
+          "id": "death-of-barbarossa"
+        },
+        {
+          "type": "place",
+          "id": "adrianople"
+        },
+        {
+          "type": "place",
+          "id": "thrace"
+        }
       ]
     },
     {
@@ -954,12 +2285,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Frederick_I,_Holy_Roman_Emperor#Death",
       "image_url": null,
       "location_id": "chalycadnus-river",
-      "transcript_lines": [[273, 278]],
+      "transcript_lines": [
+        [
+          273,
+          278
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "frederick-barbarossa"},
-        {"type": "place", "id": "seleucia"},
-        {"type": "place", "id": "chalycadnus-river"},
-        {"type": "event", "id": "third-crusade"}
+        {
+          "type": "person",
+          "id": "frederick-barbarossa"
+        },
+        {
+          "type": "place",
+          "id": "seleucia"
+        },
+        {
+          "type": "place",
+          "id": "chalycadnus-river"
+        },
+        {
+          "type": "event",
+          "id": "third-crusade"
+        }
       ]
     },
     {
@@ -972,12 +2320,29 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Isaac_II_Angelos#First_reign",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[292, 300]],
+      "transcript_lines": [
+        [
+          292,
+          300
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -990,18 +2355,53 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fourth_Crusade",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[311, 570]],
+      "transcript_lines": [
+        [
+          311,
+          570
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "person", "id": "alexius-murtzuphlus"},
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "place", "id": "venice"},
-        {"type": "place", "id": "zara"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "sack-of-zara"},
-        {"type": "event", "id": "sack-of-constantinople-1204"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-murtzuphlus"
+        },
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "place",
+          "id": "venice"
+        },
+        {
+          "type": "place",
+          "id": "zara"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-zara"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-constantinople-1204"
+        }
       ]
     },
     {
@@ -1014,13 +2414,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Zara",
       "image_url": null,
       "location_id": "zara",
-      "transcript_lines": [[346, 355]],
+      "transcript_lines": [
+        [
+          346,
+          355
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "place", "id": "zara"},
-        {"type": "place", "id": "dalmatian-coast"},
-        {"type": "event", "id": "fourth-crusade"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "place",
+          "id": "zara"
+        },
+        {
+          "type": "place",
+          "id": "dalmatian-coast"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        }
       ]
     },
     {
@@ -1033,14 +2453,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Isaac_II_Angelos#Second_reign",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[409, 422]],
+      "transcript_lines": [
+        [
+          409,
+          422
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "alexius-iii-angelos"},
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fourth-crusade"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        }
       ]
     },
     {
@@ -1053,13 +2496,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_IV_Angelos#Overthrow_and_death",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[496, 504]],
+      "transcript_lines": [
+        [
+          153,
+          153
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "isaac-ii-angelos"},
-        {"type": "person", "id": "alexius-iv-angelos"},
-        {"type": "person", "id": "alexius-murtzuphlus"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "fourth-crusade"}
+        {
+          "type": "person",
+          "id": "isaac-ii-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-iv-angelos"
+        },
+        {
+          "type": "person",
+          "id": "alexius-murtzuphlus"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        }
       ]
     },
     {
@@ -1072,14 +2535,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople_(1204)",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[513, 570]],
+      "transcript_lines": [
+        [
+          513,
+          570
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "enrico-dandolo"},
-        {"type": "person", "id": "alexius-murtzuphlus"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "hippodrome"},
-        {"type": "place", "id": "san-marco-basilica"},
-        {"type": "event", "id": "fourth-crusade"}
+        {
+          "type": "person",
+          "id": "enrico-dandolo"
+        },
+        {
+          "type": "person",
+          "id": "alexius-murtzuphlus"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome"
+        },
+        {
+          "type": "place",
+          "id": "san-marco-basilica"
+        },
+        {
+          "type": "event",
+          "id": "fourth-crusade"
+        }
       ]
     }
   ]

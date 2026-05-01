@@ -17,7 +17,13 @@ import type { AnyEntity } from "@/lib/types";
 // for a historical map where Istanbul should read as "Constantinople" via our
 // own place markers. Coastlines, rivers, and shaded relief remain.
 const STYLE = "https://basemaps.cartocdn.com/gl/voyager-nolabels-gl-style/style.json";
-const INITIAL_CENTER: [number, number] = [28.949, 41.013]; // Constantinople
+// Lng = Constantinople; lat dropped south of Constantinople so the natural
+// item cluster (Mediterranean basin / Anatolia / Levant, mostly 30°–45°N)
+// reads centered on screen instead of bunching below the visual midline.
+// "On a screen like this... items tend to be in the bottom half" — moving the
+// geographic center south brings empty northern Europe out of view and lifts
+// the items toward the middle of the canvas.
+const INITIAL_CENTER: [number, number] = [28.949, 37.0];
 const INITIAL_ZOOM = 4;
 
 const KIND_COLOR: Record<AnyEntity["kind"], string> = {
@@ -42,7 +48,7 @@ export default function WorldMap() {
     selectEntity,
     setCurrentYear,
     filters,
-    audioFocusEntityId,
+    audioFocusEntityIds,
   } = useApp();
   // Mirror selectedEntity into a ref so the marker click handlers (created
   // once at marker construction) can read the *current* value without stale
@@ -209,20 +215,43 @@ export default function WorldMap() {
     }
   }, [selectedEntity, currentYear, mapReady, expandedGroup]);
 
-  // Apply audio-focus styling — the entity currently being mentioned in the
-  // playing episode gets `byz-marker-focus` so it renders larger / on top.
+  // Apply audio-focus styling — every entity currently in the focus set
+  // gets `byz-marker-focus` so its marker renders larger / on top. Multiple
+  // recent mentions can be lit at once; each ages out independently.
+  // If the latest focused entity sits inside a clustered group, expand that
+  // group so an individual marker exists to receive the class. (Older
+  // focuses already in clusters may be obscured by their cluster pin — a
+  // tradeoff against constantly re-expanding every group as audio progresses.)
   useEffect(() => {
+    const focusSet = new Set(audioFocusEntityIds);
+    const newest = audioFocusEntityIds[audioFocusEntityIds.length - 1];
+    if (newest) {
+      const entity = allEntities.find((e) => e.id === newest);
+      const member = entity ? memberOf(entity) : null;
+      if (member && expandedGroup !== member.groupKey) {
+        let activeInGroup = 0;
+        for (const o of allEntities) {
+          if (!filters[o.kind]) continue;
+          if (!isActiveAt(o, currentYear)) continue;
+          const om = memberOf(o);
+          if (om?.groupKey === member.groupKey) activeInGroup++;
+        }
+        if (activeInGroup >= CLUSTER_THRESHOLD) {
+          setExpandedGroup(member.groupKey);
+        }
+      }
+    }
+
     for (const [key, m] of markersRef.current) {
       const el = m.getElement();
-      // key is "<kind>:<id>"; match by id suffix
       const id = key.split(":")[1];
-      if (id === audioFocusEntityId) {
+      if (focusSet.has(id)) {
         el.classList.add("byz-marker-focus");
       } else {
         el.classList.remove("byz-marker-focus");
       }
     }
-  }, [audioFocusEntityId, currentYear, mapReady, expandedGroup]);
+  }, [audioFocusEntityIds, currentYear, mapReady, expandedGroup, filters]);
 
   // Selection effect: expand clustered groups when needed; pan ONLY if the
   // selected dot is genuinely offscreen; restore the prior map view on close.

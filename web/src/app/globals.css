@@ -215,28 +215,44 @@ body > div {
   z-index: 20;
 }
 .byz-marker-focus .byz-marker-disc {
-  transform: scale(1.7);
+  transform: scale(4);
+  /* No solid ring — rely on the disc's own padding-based color band so the
+   * effective ring thickness scales like a regular marker's. Only the outer
+   * glow + drop shadow remain (and pulse). */
   box-shadow:
-    0 0 0 4px var(--marker-color, #c9a227),
     0 0 32px 8px var(--marker-color, #c9a227),
     0 6px 20px rgba(0, 0, 0, 0.75);
   animation: byz-marker-focus-pulse 2.4s ease-in-out infinite;
 }
+/* Tight padding: at scale(4) a 1px band paints as ~4px on screen, matching the
+ * thickness of a normal marker's ring. */
+.byz-marker-focus .byz-marker-disc--image {
+  padding: 1px;
+}
+/* Show the actual image colors on the focus marker (no grayscale). The point
+ * of the focus state is to make the active subject pop. */
+.byz-marker-focus .byz-marker-disc img {
+  filter: grayscale(0%) contrast(1);
+}
 .byz-marker-focus .byz-marker-label {
   opacity: 1;
   font-weight: 700;
+  /* Push the label below the visually-scaled disc. The disc's layout box is
+   * 32px tall but the scale(4) transform extends it ~48px past its layout
+   * bottom — we add that plus a small gap so the label clears the artwork. */
+  top: calc(100% + 56px);
 }
 @keyframes byz-marker-focus-pulse {
+  /* No inner solid ring — the disc carries its own colored band via padding.
+   * Only the outer glow breathes. */
   0%,
   100% {
     box-shadow:
-      0 0 0 4px var(--marker-color, #c9a227),
       0 0 32px 8px var(--marker-color, #c9a227),
       0 6px 20px rgba(0, 0, 0, 0.75);
   }
   50% {
     box-shadow:
-      0 0 0 5px var(--marker-color, #c9a227),
       0 0 48px 14px var(--marker-color, #c9a227),
       0 6px 22px rgba(0, 0, 0, 0.75);
   }

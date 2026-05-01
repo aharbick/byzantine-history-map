@@ -13,11 +13,12 @@ export default function AudioPlayer() {
     playingEpisode,
     playEpisode,
     audioController,
+    currentYear,
     setCurrentYear,
     selectedEntity,
     autoScrubLocked,
-    audioFocusEntityId,
-    setAudioFocusEntityId,
+    audioFocusEntityIds,
+    setAudioFocusEntityIds,
   } = useApp();
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const rootRef = useRef<HTMLDivElement | null>(null);
@@ -269,8 +270,10 @@ export default function AudioPlayer() {
   autoScrubLockedRef.current = autoScrubLocked;
   const selectedEntityRef = useRef(selectedEntity);
   selectedEntityRef.current = selectedEntity;
-  const audioFocusEntityIdRef = useRef(audioFocusEntityId);
-  audioFocusEntityIdRef.current = audioFocusEntityId;
+  const audioFocusEntityIdsRef = useRef(audioFocusEntityIds);
+  audioFocusEntityIdsRef.current = audioFocusEntityIds;
+  const currentYearRef = useRef(currentYear);
+  currentYearRef.current = currentYear;
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -283,38 +286,97 @@ export default function AudioPlayer() {
     const anchors = getEpisodeAnchors(playingEpisode);
     if (anchors.length === 0) return;
 
+    // The line→time conversion `line = (currentTime/duration) * totalLines`
+    // assumes a uniform speech rate, which it isn't — anchors surface several
+    // seconds after the actual mention. Projecting the lookup `LEAD_SEC` into
+    // the future compensates. Aim near the typical observed offset so the
+    // highlight lands close to the mention, leaning slightly under so the
+    // common case is on-time-or-late rather than on-time-or-early; an early
+    // marker (you see it before hearing the name) reads as wrong, a late one
+    // reads as confirmation.
+    const LEAD_SEC = 13;
+    // Each highlighted entity stays lit this long after its mention; new
+    // mentions don't replace older ones, they pile on. Dense sequences thus
+    // produce a brief constellation of glowing markers rather than a single
+    // strobing one.
+    const FOCUS_STALE_AFTER_SEC = 10;
+    // entityId → audio.currentTime when its 10-second window expires. We
+    // run this off audio.currentTime (not wall clock) so seeking and pause
+    // behave naturally — pausing freezes the windows, scrubbing forward
+    // immediately ages older entries out.
+    const focusExpiry = new Map<string, number>();
+    // Compose the "last anchor" key from BOTH entity id and the anchor's
+    // start line: this way, crossing from one range of an entity into a
+    // *different* range of the same entity (e.g., Heraclius mentioned at
+    // line 60 and again at line 120 with a gap in between) re-triggers a
+    // pulse. Tracking just by entity id meant a person with one giant
+    // range only ever pulsed once.
+    let lastAnchorKey: string | null = null;
+
+    const syncFocusState = () => {
+      // Cheap structural compare so we don't churn React state when nothing
+      // changed (timeupdate fires ~4Hz).
+      const next = Array.from(focusExpiry.keys());
+      const prev = audioFocusEntityIdsRef.current;
+      if (next.length === prev.length && next.every((id, i) => id === prev[i])) {
+        return;
+      }
+      setAudioFocusEntityIds(next);
+    };
+
     const onTimeForScrub = () => {
       if (audio.paused) return;
       if (autoScrubLockedRef.current) return;
       if (selectedEntityRef.current) return;
       if (!audio.duration || audio.duration === 0) return;
 
-      const line = (audio.currentTime / audio.duration) * totalLines;
+      const t = audio.currentTime;
+
+      // Prune any windows that have aged out. Done first so a freshly added
+      // entity below isn't immediately culled by a stale entry sharing its
+      // id (rare, but possible when seeking).
+      for (const [id, expiry] of focusExpiry) {
+        if (t > expiry) focusExpiry.delete(id);
+      }
+
+      const projectedTime = Math.min(audio.duration, t + LEAD_SEC);
+      const line = (projectedTime / audio.duration) * totalLines;
       const anchor = findAnchorAt(line, anchors);
 
-      if (!anchor) {
-        if (audioFocusEntityIdRef.current !== null) {
-          setAudioFocusEntityId(null);
+      if (anchor) {
+        const key = `${anchor.entityId}@${anchor.startLine}`;
+        if (key !== lastAnchorKey) {
+          // Anchor genuinely transitioned — could be a different entity OR
+          // a new range of the same entity. Either way, refresh the
+          // entity's window (overwriting any earlier expiry for this id)
+          // and shift the timeline year if the anchor has one.
+          lastAnchorKey = key;
+          focusExpiry.set(anchor.entityId, t + FOCUS_STALE_AFTER_SEC);
+          if (anchor.year != null) {
+            setCurrentYear(anchor.year);
+          }
         }
-        return;
+      } else {
+        // Outside all ranges — clear so the next anchor counts as a fresh
+        // transition. Don't manually evict windows; they age out on their
+        // own schedule.
+        lastAnchorKey = null;
       }
-      if (audioFocusEntityIdRef.current !== anchor.entityId) {
-        setAudioFocusEntityId(anchor.entityId);
-        setCurrentYear(anchor.year);
-      }
+
+      syncFocusState();
     };
 
     audio.addEventListener("timeupdate", onTimeForScrub);
     return () => {
       audio.removeEventListener("timeupdate", onTimeForScrub);
     };
-  }, [playingEpisode, setCurrentYear, setAudioFocusEntityId]);
+  }, [playingEpisode, setCurrentYear, setAudioFocusEntityIds]);
 
-  // When playback stops, drop the focus marker so the WorldMap goes back
+  // When playback stops, drop the focus markers so the WorldMap goes back
   // to its normal rendering.
   useEffect(() => {
-    if (!isPlaying && audioFocusEntityId !== null) {
-      setAudioFocusEntityId(null);
+    if (!isPlaying && audioFocusEntityIds.length > 0) {
+      setAudioFocusEntityIds([]);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying]);
@@ -454,75 +516,85 @@ export default function AudioPlayer() {
   // between the two widgets, and (visually) above the player.
   const PLAYER_BOTTOM = 186;
 
+  // The <audio> element MUST live outside the minimized/expanded conditional.
+  // Putting one inside each branch causes React to unmount/remount the
+  // element when toggling, throwing away the <source> children (and thus the
+  // current playback position and event listeners). Keeping a single audio
+  // node in a stable sibling slot lets us flip between the two UI shells
+  // without losing audio state.
+  const audioEl = <audio ref={audioRef} preload="metadata" />;
+
   if (minimized) {
     return (
-      <button
-        ref={rootRef as unknown as React.RefObject<HTMLButtonElement>}
-        type="button"
-        onClick={() => setMinimized(false)}
-        title="Expand player"
-        // Same footprint as the Legend below — fixed width and matching pad
-        // so the two pills stack as a uniform pair. Click anywhere except
-        // the play button expands the player.
-        className="absolute z-30 left-2 flex flex-col items-start gap-0.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-1 shadow-card font-display tracking-wider hover:bg-byz-purpleDeep/85 transition-colors text-left w-[98px]"
-        style={{ bottom: PLAYER_BOTTOM }}
-      >
-        <audio ref={audioRef} preload="metadata" />
-        <div className="flex items-center justify-between gap-2 w-full">
-          <span
-            className={`text-sm ${hasEpisode ? "text-byz-goldLight" : "text-byz-parchmentDark"}`}
-          >
-            {epLabel}
-          </span>
-          <span
-            // The play/pause is a nested button. stopPropagation so it
-            // doesn't bubble up to the outer expand-on-click handler.
-            role="button"
-            aria-label={isPlaying ? "Pause" : "Play"}
-            tabIndex={0}
-            onClick={(e) => {
-              e.stopPropagation();
-              togglePlay();
-            }}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
+      <>
+        {audioEl}
+        <button
+          ref={rootRef as unknown as React.RefObject<HTMLButtonElement>}
+          type="button"
+          onClick={() => setMinimized(false)}
+          title="Expand player"
+          // Same footprint as the Legend below — fixed width and matching pad
+          // so the two pills stack as a uniform pair. Click anywhere except
+          // the play button expands the player.
+          className="absolute z-30 left-2 flex flex-col items-start gap-0.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-1 shadow-card font-display tracking-wider hover:bg-byz-purpleDeep/85 transition-colors text-left w-[98px]"
+          style={{ bottom: PLAYER_BOTTOM }}
+        >
+          <div className="flex items-center justify-between gap-2 w-full">
+            <span
+              className={`text-sm ${hasEpisode ? "text-byz-goldLight" : "text-byz-parchmentDark"}`}
+            >
+              {epLabel}
+            </span>
+            <span
+              // The play/pause is a nested button. stopPropagation so it
+              // doesn't bubble up to the outer expand-on-click handler.
+              role="button"
+              aria-label={isPlaying ? "Pause" : "Play"}
+              tabIndex={0}
+              onClick={(e) => {
                 e.stopPropagation();
                 togglePlay();
-              }
-            }}
-            className={`shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full border transition-colors ${
-              !hasEpisode
-                ? "bg-byz-ink/30 border-byz-gold/15 text-byz-parchmentDark/30 cursor-not-allowed"
-                : "bg-byz-ink/60 border-byz-gold/40 text-byz-goldLight hover:bg-byz-ink/80 hover:border-byz-gold/70"
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  togglePlay();
+                }
+              }}
+              className={`shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full border transition-colors ${
+                !hasEpisode
+                  ? "bg-byz-ink/30 border-byz-gold/15 text-byz-parchmentDark/30 cursor-not-allowed"
+                  : "bg-byz-ink/60 border-byz-gold/40 text-byz-goldLight hover:bg-byz-ink/80 hover:border-byz-gold/70"
+              }`}
+            >
+              <PlayPauseIcon playing={isPlaying} size={11} />
+            </span>
+          </div>
+          <span
+            className={`w-full text-center text-[10px] leading-none ${
+              hasEpisode ? "text-byz-parchmentDark tabular-nums" : "text-byz-goldLight/80"
             }`}
           >
-            <PlayPauseIcon playing={isPlaying} size={11} />
+            {minimizedSubLabel}
           </span>
-        </div>
-        <span
-          className={`w-full text-center text-[10px] leading-none ${
-            hasEpisode ? "text-byz-parchmentDark tabular-nums" : "text-byz-goldLight/80"
-          }`}
-        >
-          {minimizedSubLabel}
-        </span>
-      </button>
+        </button>
+      </>
     );
   }
 
   return (
-    <div
-      ref={rootRef}
-      // Same fill as the Legend so they read as a vertical pair. Width grows
-      // to accommodate the dropdown + transport row. left-3/sm:left-4 keeps
-      // the expanded player flush with the Legend below at every breakpoint.
-      className="absolute z-30 left-2 flex flex-col gap-1.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-2 shadow-card w-[calc(100vw-1rem)] sm:w-80"
-      style={{ bottom: PLAYER_BOTTOM }}
-    >
-      <audio ref={audioRef} preload="metadata" />
-
-      {/* Minimize — bare ✕ glyph, no border/bg/hover. */}
+    <>
+      {audioEl}
+      <div
+        ref={rootRef}
+        // Same fill as the Legend so they read as a vertical pair. Width grows
+        // to accommodate the dropdown + transport row. left-3/sm:left-4 keeps
+        // the expanded player flush with the Legend below at every breakpoint.
+        className="absolute z-30 left-2 flex flex-col gap-1.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-2 shadow-card w-[calc(100vw-1rem)] sm:w-80"
+        style={{ bottom: PLAYER_BOTTOM }}
+      >
+        {/* Minimize — bare ✕ glyph, no border/bg/hover. */}
       <button
         onClick={() => setMinimized(true)}
         aria-label="Minimize player"
@@ -638,7 +710,8 @@ export default function AudioPlayer() {
           {timeText}
         </span>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

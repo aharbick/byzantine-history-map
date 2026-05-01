@@ -38,6 +38,7 @@ export default function Timeline({ minYear, maxYear }: Props) {
     filters,
     autoScrubLocked,
     setAutoScrubLocked,
+    setAudioFocusEntityIds,
     playingEpisode,
   } = useApp();
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -224,74 +225,6 @@ export default function Timeline({ minYear, maxYear }: Props) {
         </div>
       </div>
 
-      {/* Auto-scrub lock — when an episode is active, surface a small toggle
-          so the user can stop the audio from yanking the timeline year while
-          they manually scrub. */}
-      {playingEpisode != null && (
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            setAutoScrubLocked(!autoScrubLocked);
-          }}
-          aria-pressed={autoScrubLocked}
-          aria-label={
-            autoScrubLocked
-              ? "Unlock timeline (let audio drive the year)"
-              : "Lock timeline (stop audio from driving the year)"
-          }
-          title={
-            autoScrubLocked
-              ? "Timeline locked — audio won't change the year. Tap to unlock."
-              : "Timeline follows audio. Tap to lock."
-          }
-          className={`absolute right-2 -top-7 z-30 inline-flex items-center justify-center w-7 h-7 rounded-full border shadow-card transition-colors ${
-            autoScrubLocked
-              ? "bg-byz-gold/90 border-byz-goldLight text-byz-ink"
-              : "bg-byz-purpleDeep/90 border-byz-gold/50 text-byz-goldLight hover:bg-byz-purpleDeep"
-          }`}
-        >
-          {autoScrubLocked ? (
-            // Closed padlock
-            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-              <path
-                d="M5 7V5a3 3 0 0 1 6 0v2"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-              />
-              <rect
-                x="3"
-                y="7"
-                width="10"
-                height="7"
-                rx="1.5"
-                fill="currentColor"
-              />
-            </svg>
-          ) : (
-            // Open padlock
-            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-              <path
-                d="M5 7V5a3 3 0 0 1 6 0"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-              />
-              <rect
-                x="3"
-                y="7"
-                width="10"
-                height="7"
-                rx="1.5"
-                fill="currentColor"
-              />
-            </svg>
-          )}
-        </button>
-      )}
-
       <div
         ref={stripRef}
         data-byz-strip
@@ -310,6 +243,69 @@ export default function Timeline({ minYear, maxYear }: Props) {
         {/* Center cursor line */}
         <div className="absolute top-0 bottom-0 left-1/2 w-px bg-byz-goldLight/80 z-10 pointer-events-none" />
         <div className="absolute top-2 left-1/2 -translate-x-1/2 w-3 h-3 rotate-45 bg-byz-goldLight z-10 pointer-events-none" />
+
+        {/* Auto-scrub lock toggle. Only meaningful while an episode is loaded —
+            hidden otherwise to avoid implying a feature that has no effect.
+            Locked = solid gold (clearly "engaged"); unlocked = hollow outline
+            against the strip's dark background. stopPropagation prevents the
+            click from also starting a strip drag. */}
+        {playingEpisode != null && (
+          <button
+            type="button"
+            onPointerDown={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              e.stopPropagation();
+              const nextLocked = !autoScrubLocked;
+              setAutoScrubLocked(nextLocked);
+              // Engaging the lock should also drop the current "focus" marker —
+              // otherwise the freeze leaves an entity glowing forever even
+              // though the timeline has stopped following the audio.
+              if (nextLocked) setAudioFocusEntityIds([]);
+            }}
+            className={`absolute left-2 top-2 z-30 flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-display tracking-wider transition-colors ${
+              autoScrubLocked
+                ? "bg-byz-goldLight text-[#1a1006] border border-byz-gold shadow-[0_0_0_1px_rgba(26,16,6,0.4)]"
+                : "bg-byz-purpleDeep/80 text-byz-goldLight border border-byz-goldLight/50 hover:border-byz-goldLight"
+            }`}
+            title={
+              autoScrubLocked
+                ? "Auto-scrub locked — timeline won't follow audio"
+                : "Auto-scrub on — timeline follows audio"
+            }
+            aria-pressed={autoScrubLocked}
+          >
+            {autoScrubLocked ? (
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="4" y="11" width="16" height="10" rx="2" fill="currentColor" />
+                <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+              </svg>
+            ) : (
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="4" y="11" width="16" height="10" rx="2" />
+                <path d="M8 11V7a4 4 0 0 1 8 0" />
+              </svg>
+            )}
+            <span>{autoScrubLocked ? "LOCKED" : "FOLLOW"}</span>
+          </button>
+        )}
 
         <div
           ref={trackRef}

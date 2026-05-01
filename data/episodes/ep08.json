@@ -5,7 +5,10 @@
     {
       "id": "justinian-i",
       "name": "Justinian I",
-      "alt_names": ["Justinian the Great", "Flavius Petrus Sabbatius Iustinianus"],
+      "alt_names": [
+        "Justinian the Great",
+        "Flavius Petrus Sabbatius Iustinianus"
+      ],
       "role": "Byzantine Emperor",
       "birth_year": 482,
       "death_year": 565,
@@ -14,18 +17,149 @@
       "summary": "Justinian is portrayed as a visionary emperor whose greatest dream was the reconquest of the Western Empire. Brownworth depicts him as dependent on Belisarius to fulfill this vision, but also susceptible to Theodora's jealousies and capable of panic — recalling Belisarius at critical moments — yet ultimately recovering from the plague and asserting his rule.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Justinian_I",
       "portrait_url": null,
-      "transcript_lines": [[1, 30], [65, 82], [191, 220], [247, 277]],
+      "transcript_lines": [
+        [
+          1,
+          4
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          17,
+          18
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          29,
+          29
+        ],
+        [
+          41,
+          41
+        ],
+        [
+          65,
+          65
+        ],
+        [
+          68,
+          68
+        ],
+        [
+          73,
+          73
+        ],
+        [
+          78,
+          79
+        ],
+        [
+          93,
+          94
+        ],
+        [
+          129,
+          129
+        ],
+        [
+          150,
+          150
+        ],
+        [
+          191,
+          191
+        ],
+        [
+          196,
+          196
+        ],
+        [
+          206,
+          206
+        ],
+        [
+          209,
+          209
+        ],
+        [
+          219,
+          219
+        ],
+        [
+          227,
+          227
+        ],
+        [
+          247,
+          247
+        ],
+        [
+          252,
+          252
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          266,
+          266
+        ],
+        [
+          276,
+          276
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "narses"},
-        {"type": "person", "id": "gelimer"},
-        {"type": "person", "id": "khosrow-i"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "reconquest-north-africa"},
-        {"type": "event", "id": "reconquest-italy"},
-        {"type": "event", "id": "plague-of-justinian"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "person",
+          "id": "khosrow-i"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        },
+        {
+          "type": "event",
+          "id": "plague-of-justinian"
+        }
       ]
     },
     {
@@ -40,25 +174,221 @@
       "summary": "Belisarius is the central figure of this episode — a Romanized Greek born in modern-day Bulgaria whom Gibbon called 'the Scipio of New Rome.' Brownworth presents him as a natural leader of extraordinary brilliance and loyalty who reconquered North Africa and most of Italy, yet was repeatedly thwarted by Theodora's jealousy and Justinian's distrust, spending much of his later career in disappointing frustration.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belisarius",
       "portrait_url": null,
-      "transcript_lines": [[8, 82], [100, 217], [258, 275]],
+      "transcript_lines": [
+        [
+          8,
+          10
+        ],
+        [
+          27,
+          27
+        ],
+        [
+          34,
+          36
+        ],
+        [
+          41,
+          41
+        ],
+        [
+          47,
+          51
+        ],
+        [
+          58,
+          60
+        ],
+        [
+          67,
+          67
+        ],
+        [
+          73,
+          73
+        ],
+        [
+          80,
+          80
+        ],
+        [
+          95,
+          95
+        ],
+        [
+          101,
+          101
+        ],
+        [
+          111,
+          111
+        ],
+        [
+          120,
+          120
+        ],
+        [
+          127,
+          127
+        ],
+        [
+          131,
+          131
+        ],
+        [
+          141,
+          141
+        ],
+        [
+          145,
+          145
+        ],
+        [
+          151,
+          151
+        ],
+        [
+          156,
+          156
+        ],
+        [
+          159,
+          160
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          170,
+          170
+        ],
+        [
+          174,
+          174
+        ],
+        [
+          177,
+          178
+        ],
+        [
+          184,
+          186
+        ],
+        [
+          192,
+          192
+        ],
+        [
+          197,
+          200
+        ],
+        [
+          204,
+          211
+        ],
+        [
+          217,
+          217
+        ],
+        [
+          221,
+          221
+        ],
+        [
+          234,
+          234
+        ],
+        [
+          255,
+          255
+        ],
+        [
+          259,
+          259
+        ],
+        [
+          264,
+          264
+        ],
+        [
+          270,
+          270
+        ],
+        [
+          273,
+          273
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "gelimer"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "person", "id": "narses"},
-        {"type": "person", "id": "john-the-general"},
-        {"type": "person", "id": "procopius"},
-        {"type": "person", "id": "khosrow-i"},
-        {"type": "place", "id": "carthage"},
-        {"type": "place", "id": "rome"},
-        {"type": "place", "id": "ravenna"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "reconquest-north-africa"},
-        {"type": "event", "id": "triumph-of-belisarius"},
-        {"type": "event", "id": "reconquest-italy"},
-        {"type": "event", "id": "siege-of-rome"},
-        {"type": "event", "id": "fall-of-milan"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "person",
+          "id": "john-the-general"
+        },
+        {
+          "type": "person",
+          "id": "procopius"
+        },
+        {
+          "type": "person",
+          "id": "khosrow-i"
+        },
+        {
+          "type": "place",
+          "id": "carthage"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "place",
+          "id": "ravenna"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        },
+        {
+          "type": "event",
+          "id": "triumph-of-belisarius"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        },
+        {
+          "type": "event",
+          "id": "siege-of-rome"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-milan"
+        }
       ]
     },
     {
@@ -73,13 +403,49 @@
       "summary": "Theodora is depicted as jealously guarding Justinian's reputation and deeply suspicious of Belisarius, fearing he was too brilliant and popular — the stuff of which emperors are made. When Justinian nearly died of plague, she maneuvered to retain power, and upon his recovery punished those who had dared discuss succession without her consent.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Theodora_(wife_of_Justinian_I)",
       "portrait_url": null,
-      "transcript_lines": [[147, 157], [220, 265]],
+      "transcript_lines": [
+        [
+          78,
+          78
+        ],
+        [
+          147,
+          147
+        ],
+        [
+          248,
+          248
+        ],
+        [
+          254,
+          254
+        ],
+        [
+          257,
+          257
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "narses"},
-        {"type": "event", "id": "plague-of-justinian"},
-        {"type": "event", "id": "belisarius-disgraced"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "event",
+          "id": "plague-of-justinian"
+        },
+        {
+          "type": "event",
+          "id": "belisarius-disgraced"
+        }
       ]
     },
     {
@@ -94,20 +460,73 @@
       "summary": "Gelimer seized the Vandal throne by killing his cousin, the previous king, dismissing Justinian's protest with a curt letter saying 'nothing is more desirable than that a monarch should mind his own business.' He twice froze in grief upon finding his brother dead on the battlefield, allowing Belisarius to rout his forces; he finally surrendered after hiding in the mountains and at the triumph prostrated himself before Justinian whispering 'Vanity of vanities, all is vanity.'",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gelimer",
       "portrait_url": null,
-      "transcript_lines": [[29, 79]],
+      "transcript_lines": [
+        [
+          29,
+          31
+        ],
+        [
+          43,
+          43
+        ],
+        [
+          46,
+          48
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          57,
+          57
+        ],
+        [
+          61,
+          62
+        ],
+        [
+          75,
+          75
+        ],
+        [
+          78,
+          78
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "place", "id": "carthage"},
-        {"type": "place", "id": "north-africa"},
-        {"type": "event", "id": "reconquest-north-africa"},
-        {"type": "event", "id": "triumph-of-belisarius"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "place",
+          "id": "carthage"
+        },
+        {
+          "type": "place",
+          "id": "north-africa"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        },
+        {
+          "type": "event",
+          "id": "triumph-of-belisarius"
+        }
       ]
     },
     {
       "id": "amalasuntha",
       "name": "Amalasuntha",
-      "alt_names": ["Amalasemtha"],
+      "alt_names": [
+        "Amalasemtha"
+      ],
       "role": "Ostrogothic Queen, regent of Italy",
       "birth_year": 495,
       "death_year": 535,
@@ -116,12 +535,37 @@
       "summary": "Amalasuntha was an extraordinarily educated woman who ruled the Ostrogothic kingdom as regent for her young son, but was resented by the nobility who wrested her son away to give him a military upbringing. After her son died at 16, she hatched a plot with Justinian to flee and retake Italy with Byzantine help, but her cousin Theodahad seized power, offered her co-rule, then had her strangled in her bath.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Amalasuntha",
       "portrait_url": null,
-      "transcript_lines": [[88, 99]],
+      "transcript_lines": [
+        [
+          89,
+          89
+        ],
+        [
+          92,
+          92
+        ],
+        [
+          96,
+          96
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodahad"},
-        {"type": "place", "id": "italy"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodahad"
+        },
+        {
+          "type": "place",
+          "id": "italy"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -136,17 +580,34 @@
       "summary": "Theodahad was Amalasuntha's cousin who seized power and offered her a joint rule, only to quickly regret it. He had her strangled in her bath, giving Justinian the pretext for a Byzantine invasion of Italy.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Theodahad",
       "portrait_url": null,
-      "transcript_lines": [[96, 99]],
+      "transcript_lines": [
+        [
+          96,
+          99
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "amalasuntha"},
-        {"type": "place", "id": "italy"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "amalasuntha"
+        },
+        {
+          "type": "place",
+          "id": "italy"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
       "id": "vittigis",
       "name": "Vittigis",
-      "alt_names": ["Vitigis", "Vidigis"],
+      "alt_names": [
+        "Vitigis",
+        "Vidigis"
+      ],
       "role": "Ostrogothic King of Italy",
       "birth_year": null,
       "death_year": 542,
@@ -155,22 +616,93 @@
       "summary": "Vittigis was the Gothic noble crowned king after his predecessor was executed for failing to defend Italy. He announced he would not defend Rome and withdrew to Ravenna, then besieged Rome for a year and nine days. He was eventually tricked by Belisarius into surrendering, having offered Belisarius the western imperial crown — an offer Belisarius used as a ruse to capture him.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vitiges",
       "portrait_url": null,
-      "transcript_lines": [[118, 143], [183, 215]],
+      "transcript_lines": [
+        [
+          118,
+          118
+        ],
+        [
+          126,
+          126
+        ],
+        [
+          137,
+          139
+        ],
+        [
+          183,
+          183
+        ],
+        [
+          188,
+          188
+        ],
+        [
+          194,
+          194
+        ],
+        [
+          197,
+          197
+        ],
+        [
+          200,
+          202
+        ],
+        [
+          207,
+          207
+        ],
+        [
+          213,
+          213
+        ],
+        [
+          221,
+          221
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "khosrow-i"},
-        {"type": "place", "id": "rome"},
-        {"type": "place", "id": "ravenna"},
-        {"type": "place", "id": "milan"},
-        {"type": "event", "id": "siege-of-rome"},
-        {"type": "event", "id": "fall-of-milan"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "khosrow-i"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "place",
+          "id": "ravenna"
+        },
+        {
+          "type": "place",
+          "id": "milan"
+        },
+        {
+          "type": "event",
+          "id": "siege-of-rome"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-milan"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
       "id": "narses",
       "name": "Narses",
-      "alt_names": ["Narcissus"],
+      "alt_names": [
+        "Narcissus"
+      ],
       "role": "Byzantine eunuch courtier and military commander",
       "birth_year": 478,
       "death_year": 573,
@@ -179,16 +711,65 @@
       "summary": "Narses is described as a eunuch in his 60s whose condition prevented him from wanting the throne himself, and the most powerful figure at court. Theodora and Justinian sent him to Italy with vague orders to obey Belisarius 'so far as seems consistent with the public good,' effectively to watch and limit the general. He undermined Belisarius's command, backed insubordinate officers, and his presence split the army.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Narses",
       "portrait_url": null,
-      "transcript_lines": [[152, 192]],
+      "transcript_lines": [
+        [
+          152,
+          152
+        ],
+        [
+          155,
+          155
+        ],
+        [
+          161,
+          163
+        ],
+        [
+          175,
+          177
+        ],
+        [
+          187,
+          187
+        ],
+        [
+          191,
+          191
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "john-the-general"},
-        {"type": "place", "id": "rimini"},
-        {"type": "place", "id": "milan"},
-        {"type": "event", "id": "relief-of-rimini"},
-        {"type": "event", "id": "fall-of-milan"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "john-the-general"
+        },
+        {
+          "type": "place",
+          "id": "rimini"
+        },
+        {
+          "type": "place",
+          "id": "milan"
+        },
+        {
+          "type": "event",
+          "id": "relief-of-rimini"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-milan"
+        }
       ]
     },
     {
@@ -203,13 +784,53 @@
       "summary": "John was the commander Belisarius sent with 2,000 horsemen on a raiding campaign behind Gothic lines. He captured Rimini, only 33 miles from Ravenna, but then flatly refused Belisarius's order to withdraw, insisting Narses countersign any command. After being rescued, he gave all credit to Narses rather than Belisarius, deepening the rift in the Byzantine command.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_(nephew_of_Vitalian)",
       "portrait_url": null,
-      "transcript_lines": [[131, 175]],
+      "transcript_lines": [
+        [
+          131,
+          132
+        ],
+        [
+          158,
+          162
+        ],
+        [
+          166,
+          166
+        ],
+        [
+          169,
+          169
+        ],
+        [
+          174,
+          174
+        ],
+        [
+          185,
+          185
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "narses"},
-        {"type": "place", "id": "rimini"},
-        {"type": "event", "id": "relief-of-rimini"},
-        {"type": "event", "id": "fall-of-milan"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "place",
+          "id": "rimini"
+        },
+        {
+          "type": "event",
+          "id": "relief-of-rimini"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-milan"
+        }
       ]
     },
     {
@@ -224,18 +845,39 @@
       "summary": "Procopius was Belisarius's personal secretary and is described by Brownworth as 'our primary historian for the period.' He appears in the narrative when, while stopped in Sicily, he happened to run into an old friend whose slave had returned from Carthage, providing Belisarius with crucial intelligence about Vandal unpreparedness.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Procopius",
       "portrait_url": null,
-      "transcript_lines": [[37, 41]],
+      "transcript_lines": [
+        [
+          37,
+          37
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "place", "id": "sicily"},
-        {"type": "place", "id": "carthage"},
-        {"type": "event", "id": "reconquest-north-africa"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "place",
+          "id": "sicily"
+        },
+        {
+          "type": "place",
+          "id": "carthage"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        }
       ]
     },
     {
       "id": "khosrow-i",
       "name": "Khosrow I",
-      "alt_names": ["Koseros", "Chosroes I", "Khosrow the Immortal Soul"],
+      "alt_names": [
+        "Koseros",
+        "Chosroes I",
+        "Khosrow the Immortal Soul"
+      ],
       "role": "Sasanian Persian King of Kings",
       "birth_year": 501,
       "death_year": 579,
@@ -244,15 +886,45 @@
       "summary": "Brownworth calls Khosrow 'undoubtedly the greatest of all the Persian kings, and a worthy match for Justinian.' He reformed Persia's government, created its first standing army, founded a medical academy, codified Zoroastrian scriptures, and even introduced chess from China. Despite accepting 5,000 pounds of gold for peace, he invaded again, sacked Antioch, and killed or enslaved its entire population.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Khosrow_I",
       "portrait_url": null,
-      "transcript_lines": [[224, 237]],
+      "transcript_lines": [
+        [
+          224,
+          226
+        ],
+        [
+          237,
+          237
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "place", "id": "antioch"},
-        {"type": "place", "id": "ctesiphon"},
-        {"type": "event", "id": "sack-of-antioch"},
-        {"type": "event", "id": "persian-war"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "place",
+          "id": "antioch"
+        },
+        {
+          "type": "place",
+          "id": "ctesiphon"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-antioch"
+        },
+        {
+          "type": "event",
+          "id": "persian-war"
+        }
       ]
     },
     {
@@ -267,10 +939,21 @@
       "summary": "Basiliscus is mentioned as the 'dismal' commander of the last Byzantine army that had invaded North Africa, 100,000 strong, who managed within days to turn what should have been an overwhelming victory into an unmitigated disaster. His failure set the bar against which Belisarius's much smaller but more skillful campaign is contrasted.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Basiliscus",
       "portrait_url": null,
-      "transcript_lines": [[31, 34]],
+      "transcript_lines": [
+        [
+          32,
+          32
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "north-africa"},
-        {"type": "event", "id": "reconquest-north-africa"}
+        {
+          "type": "place",
+          "id": "north-africa"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        }
       ]
     },
     {
@@ -285,16 +968,29 @@
       "summary": "Titus is briefly mentioned in the context of the triumph of Belisarius: among the spoils paraded was the solid silver menorah that Titus had seized from Jerusalem in 71 AD.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Titus",
       "portrait_url": null,
-      "transcript_lines": [[77, 78]],
+      "transcript_lines": [
+        [
+          77,
+          77
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "jerusalem"},
-        {"type": "event", "id": "triumph-of-belisarius"}
+        {
+          "type": "place",
+          "id": "jerusalem"
+        },
+        {
+          "type": "event",
+          "id": "triumph-of-belisarius"
+        }
       ]
     },
     {
       "id": "augustine-of-hippo",
       "name": "Augustine of Hippo",
-      "alt_names": ["Saint Augustine"],
+      "alt_names": [
+        "Saint Augustine"
+      ],
       "role": "Christian theologian and bishop of Hippo",
       "birth_year": 354,
       "death_year": 430,
@@ -303,15 +999,25 @@
       "summary": "Augustine is mentioned only by association with the city of Hippo, which Brownworth calls 'the city of Augustine' when describing Belisarius's entry into the city after defeating the Vandal army.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "portrait_url": null,
-      "transcript_lines": [[60, 62]],
+      "transcript_lines": [
+        [
+          60,
+          62
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "hippo"}
+        {
+          "type": "place",
+          "id": "hippo"
+        }
       ]
     },
     {
       "id": "hannibal",
       "name": "Hannibal",
-      "alt_names": ["Hannibal Barca"],
+      "alt_names": [
+        "Hannibal Barca"
+      ],
       "role": "Carthaginian general",
       "birth_year": -247,
       "death_year": -183,
@@ -320,16 +1026,29 @@
       "summary": "Hannibal is invoked by Brownworth as the last commander to have shown comparable inventiveness and daring in Italy, saying Belisarius 'had shown an inventiveness and daring not seen in Italy since Hannibal crossed the Alps.' This comparison underscores the magnitude of Belisarius's Italian campaign.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hannibal",
       "portrait_url": null,
-      "transcript_lines": [[145, 147]],
+      "transcript_lines": [
+        [
+          146,
+          146
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "place", "id": "italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "place",
+          "id": "italy"
+        }
       ]
     },
     {
       "id": "constantine-the-great",
       "name": "Constantine the Great",
-      "alt_names": ["Constantine I"],
+      "alt_names": [
+        "Constantine I"
+      ],
       "role": "Roman Emperor",
       "birth_year": 272,
       "death_year": 337,
@@ -338,10 +1057,21 @@
       "summary": "Constantine is mentioned briefly as the benchmark for monumental building campaigns — Justinian's post-Nika building program was 'the likes of which the empire had not seen since the days of Constantine.'",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_the_Great",
       "portrait_url": null,
-      "transcript_lines": [[4, 6]],
+      "transcript_lines": [
+        [
+          4,
+          6
+        ]
+      ],
       "related": [
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "justinian-building-campaign"}
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "justinian-building-campaign"
+        }
       ]
     },
     {
@@ -356,15 +1086,25 @@
       "summary": "Gibbon is cited by Brownworth for his characterization of Belisarius as 'the Scipio of New Rome,' lending classical weight to the general's status as the greatest military commander of his era.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_Gibbon",
       "portrait_url": null,
-      "transcript_lines": [[9, 10]],
+      "transcript_lines": [
+        [
+          9,
+          10
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        }
       ]
     },
     {
       "id": "scipio-africanus",
       "name": "Scipio Africanus",
-      "alt_names": ["Publius Cornelius Scipio Africanus"],
+      "alt_names": [
+        "Publius Cornelius Scipio Africanus"
+      ],
       "role": "Roman general of the Republic",
       "birth_year": -236,
       "death_year": -183,
@@ -373,10 +1113,21 @@
       "summary": "Scipio Africanus is referenced via Gibbon's epithet for Belisarius — 'the Scipio of New Rome' — implying Belisarius was to Byzantine Constantinople what Scipio was to the Roman Republic: its supreme general.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Scipio_Africanus",
       "portrait_url": null,
-      "transcript_lines": [[9, 10]],
+      "transcript_lines": [
+        [
+          9,
+          10
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "edward-gibbon"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "edward-gibbon"
+        }
       ]
     },
     {
@@ -391,11 +1142,25 @@
       "summary": "The Archbishop of Milan begged Belisarius to free the city, presenting an opportunity that Belisarius could not pass up. He sent a thousand men who were greeted as liberators, though the resulting garrison was too thinly stretched to hold the city.",
       "wikipedia_url": null,
       "portrait_url": null,
-      "transcript_lines": [[179, 182]],
+      "transcript_lines": [
+        [
+          179,
+          179
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "place", "id": "milan"},
-        {"type": "event", "id": "fall-of-milan"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "place",
+          "id": "milan"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-milan"
+        }
       ]
     }
   ],
@@ -411,13 +1176,57 @@
       "summary": "Constantinople is referred to as the 'Queen of Cities' and capital of the Byzantine Empire. It is the seat of Justinian's court, site of the Nika Riots that preceded this episode, and the destination for returning conquerors and their spoils. The plague raged here for four months at 10,000 dead per day.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
       "image_url": null,
-      "transcript_lines": [[3, 3], [16, 17], [70, 81], [217, 219], [242, 246]],
+      "transcript_lines": [
+        [
+          16,
+          16
+        ],
+        [
+          81,
+          81
+        ],
+        [
+          214,
+          214
+        ],
+        [
+          217,
+          217
+        ],
+        [
+          242,
+          242
+        ],
+        [
+          253,
+          253
+        ],
+        [
+          256,
+          256
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "event", "id": "triumph-of-belisarius"},
-        {"type": "event", "id": "plague-of-justinian"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "event",
+          "id": "triumph-of-belisarius"
+        },
+        {
+          "type": "event",
+          "id": "plague-of-justinian"
+        }
       ]
     },
     {
@@ -431,11 +1240,29 @@
       "summary": "North Africa was the territory of the Vandal Kingdom, which Justinian targeted first as a test for Belisarius before the main Italian campaign. Belisarius reconquered it in little more than a year with only 15,000 men, extinguishing the Vandal kingdom.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Africa_(Roman_province)",
       "image_url": null,
-      "transcript_lines": [[26, 66]],
+      "transcript_lines": [
+        [
+          26,
+          26
+        ],
+        [
+          64,
+          64
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "gelimer"},
-        {"type": "event", "id": "reconquest-north-africa"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        }
       ]
     },
     {
@@ -449,11 +1276,37 @@
       "summary": "Carthage was the capital of the Vandal Kingdom and the main objective of Belisarius's North African campaign. He entered it in triumph two days after routing Gelimer at the tenth milestone, instructing his soldiers to treat it as a restoration rather than a conquest. Later it was the site of a mutiny he had to return from Italy to suppress.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Carthage",
       "image_url": null,
-      "transcript_lines": [[39, 51], [104, 105]],
+      "transcript_lines": [
+        [
+          39,
+          39
+        ],
+        [
+          43,
+          43
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          104,
+          104
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "gelimer"},
-        {"type": "event", "id": "reconquest-north-africa"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        }
       ]
     },
     {
@@ -467,11 +1320,29 @@
       "summary": "Sardinia is mentioned as the destination of a large Vandal army that Justinian had encouraged to revolt, unknowingly stripping Carthage's defenses just as Belisarius was sailing to invade. The revolt drew away enough forces that Belisarius could land and march to Carthage unopposed.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sardinia",
       "image_url": null,
-      "transcript_lines": [[39, 54]],
+      "transcript_lines": [
+        [
+          40,
+          40
+        ],
+        [
+          53,
+          53
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "gelimer"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "event", "id": "reconquest-north-africa"}
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        }
       ]
     },
     {
@@ -485,11 +1356,29 @@
       "summary": "Sicily served as a resupply and intelligence-gathering stop for Belisarius on his way to North Africa, where Procopius obtained crucial information about the Vandals' unpreparedness. It was also the first territory conquered in the Italian campaign, taken with barely an effort.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sicily",
       "image_url": null,
-      "transcript_lines": [[37, 38], [101, 103]],
+      "transcript_lines": [
+        [
+          36,
+          36
+        ],
+        [
+          101,
+          101
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "procopius"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "procopius"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -503,12 +1392,29 @@
       "summary": "Hippo is described by Brownworth as 'the city of Augustine,' where Belisarius entered unopposed after the second great battle against Gelimer, taking possession of the Vandal king's vast treasury and many high-ranking prisoners.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hippo_Regius",
       "image_url": null,
-      "transcript_lines": [[60, 62]],
+      "transcript_lines": [
+        [
+          60,
+          62
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "gelimer"},
-        {"type": "person", "id": "augustine-of-hippo"},
-        {"type": "event", "id": "reconquest-north-africa"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "person",
+          "id": "augustine-of-hippo"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        }
       ]
     },
     {
@@ -522,13 +1428,73 @@
       "summary": "Italy was Justinian's primary reconquest objective, held by the Ostrogoths as nominal Byzantine viceroys. Brownworth describes the Italian campaign as long, complex, and ultimately frustrating for Belisarius, with the war dragging on for years due to palace jealousies, divided command, and insufficient reinforcements.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ostrogothic_Kingdom",
       "image_url": null,
-      "transcript_lines": [[80, 100], [107, 217], [265, 277]],
+      "transcript_lines": [
+        [
+          28,
+          28
+        ],
+        [
+          80,
+          83
+        ],
+        [
+          93,
+          93
+        ],
+        [
+          103,
+          103
+        ],
+        [
+          106,
+          108
+        ],
+        [
+          143,
+          145
+        ],
+        [
+          180,
+          180
+        ],
+        [
+          193,
+          195
+        ],
+        [
+          200,
+          201
+        ],
+        [
+          217,
+          217
+        ],
+        [
+          265,
+          267
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "person", "id": "amalasuntha"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "person",
+          "id": "amalasuntha"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -542,12 +1508,57 @@
       "summary": "Rome was the great symbolic prize of the Italian campaign — embarrassingly un-Roman as long as it was outside imperial control. Belisarius entered it in December after getting the pope's endorsement, then held it for a year and nine days against Vittigis's Gothic siege, improvising flour mills on the city's rivers after the aqueducts were cut.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rome",
       "image_url": null,
-      "transcript_lines": [[25, 26], [82, 83], [119, 143]],
+      "transcript_lines": [
+        [
+          10,
+          10
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          82,
+          82
+        ],
+        [
+          119,
+          121
+        ],
+        [
+          125,
+          125
+        ],
+        [
+          143,
+          143
+        ],
+        [
+          157,
+          157
+        ],
+        [
+          203,
+          203
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "event", "id": "siege-of-rome"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "event",
+          "id": "siege-of-rome"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -561,11 +1572,37 @@
       "summary": "Ravenna was the capital of the Ostrogothic kingdom and Vittigis's stronghold. Brownworth notes it was 'virtually impregnable,' which is why Vittigis offered Belisarius the western imperial crown in exchange for sparing the city. Belisarius instead used the offer as a ruse to capture it and ship Vittigis to Constantinople.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ravenna",
       "image_url": null,
-      "transcript_lines": [[119, 120], [134, 135], [208, 215]],
+      "transcript_lines": [
+        [
+          119,
+          119
+        ],
+        [
+          134,
+          134
+        ],
+        [
+          140,
+          140
+        ],
+        [
+          209,
+          209
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "vittigis"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -579,10 +1616,25 @@
       "summary": "Naples is described as one of the 'crown jewels of the Gothic kingdom,' heavily fortified and stoutly defended. Belisarius took it by sending soldiers through an old water channel discovered inside the aqueduct, enlarging the opening with files while noisily attacking another section of the wall to cover the sound.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Naples",
       "image_url": null,
-      "transcript_lines": [[108, 115]],
+      "transcript_lines": [
+        [
+          108,
+          108
+        ],
+        [
+          116,
+          116
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -596,12 +1648,41 @@
       "summary": "Rimini was the town captured by John's 2,000 cavalry, 200 miles behind Gothic lines and only 33 miles from the Gothic capital Ravenna. When John refused to withdraw and Vittigis sent a relief force, the fall of Rimini threatened to become a decisive reversal; Narses insisted it be rescued and Belisarius did so with a brilliant amphibious deception.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rimini",
       "image_url": null,
-      "transcript_lines": [[133, 135], [158, 175]],
+      "transcript_lines": [
+        [
+          133,
+          133
+        ],
+        [
+          139,
+          139
+        ],
+        [
+          158,
+          158
+        ],
+        [
+          165,
+          165
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "john-the-general"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "narses"},
-        {"type": "event", "id": "relief-of-rimini"}
+        {
+          "type": "person",
+          "id": "john-the-general"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "event",
+          "id": "relief-of-rimini"
+        }
       ]
     },
     {
@@ -615,13 +1696,33 @@
       "summary": "Milan is described as 'the largest and richest' city in Italy at the time. After the Archbishop begged for liberation, Belisarius sent a thousand men who were welcomed as liberators. But the garrison dwindled as each liberated city needed its own troops, and when Vittigis sent 30,000 men, the underpowered relief force refused to advance, leading to the city's fall and the massacre of its male population.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Milan",
       "image_url": null,
-      "transcript_lines": [[179, 191]],
+      "transcript_lines": [
+        [
+          183,
+          183
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "person", "id": "narses"},
-        {"type": "person", "id": "archbishop-of-milan"},
-        {"type": "event", "id": "fall-of-milan"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "person",
+          "id": "archbishop-of-milan"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-milan"
+        }
       ]
     },
     {
@@ -635,11 +1736,25 @@
       "summary": "Palermo was the only Gothic resistance in Sicily. Belisarius overcame it by sailing his ships up to the city walls, hoisting his men to the tops of the masts, and firing down on the defenders from above.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Palermo",
       "image_url": null,
-      "transcript_lines": [[101, 103]],
+      "transcript_lines": [
+        [
+          102,
+          102
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "place", "id": "sicily"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "place",
+          "id": "sicily"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -653,11 +1768,29 @@
       "summary": "Antioch was sacked by the Persian king Khosrow, who demolished its buildings and killed or enslaved its entire population after the citizens failed to pay his demanded gold. This catastrophe was the news that greeted Belisarius upon his triumphant return from Italy.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Antioch",
       "image_url": null,
-      "transcript_lines": [[225, 233]],
+      "transcript_lines": [
+        [
+          225,
+          225
+        ],
+        [
+          232,
+          232
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "khosrow-i"},
-        {"type": "event", "id": "sack-of-antioch"},
-        {"type": "event", "id": "persian-war"}
+        {
+          "type": "person",
+          "id": "khosrow-i"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-antioch"
+        },
+        {
+          "type": "event",
+          "id": "persian-war"
+        }
       ]
     },
     {
@@ -671,11 +1804,25 @@
       "summary": "Ctesiphon is referred to obliquely as the 'Persian capital of Sestafan' in the transcript — the city Belisarius was preparing to assault when the plague broke out and halted his campaign.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ctesiphon",
       "image_url": null,
-      "transcript_lines": [[238, 240]],
+      "transcript_lines": [
+        [
+          238,
+          240
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "khosrow-i"},
-        {"type": "event", "id": "persian-war"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "khosrow-i"
+        },
+        {
+          "type": "event",
+          "id": "persian-war"
+        }
       ]
     },
     {
@@ -689,10 +1836,21 @@
       "summary": "Jerusalem is mentioned only in connection with the solid silver menorah that Titus had seized from its temple in 71 AD, which appeared among the spoils in the triumph of Belisarius.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Jerusalem",
       "image_url": null,
-      "transcript_lines": [[77, 78]],
+      "transcript_lines": [
+        [
+          77,
+          77
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "titus"},
-        {"type": "event", "id": "triumph-of-belisarius"}
+        {
+          "type": "person",
+          "id": "titus"
+        },
+        {
+          "type": "event",
+          "id": "triumph-of-belisarius"
+        }
       ]
     },
     {
@@ -706,14 +1864,37 @@
       "summary": "The Hippodrome is the venue for the triumph of Belisarius, where the general rode in through ecstatic crowds, followed by Gelimer and his family, the most beautiful prisoners, and the vast spoils of the North African campaign. Gelimer prostrated himself before Justinian and Theodora here at the climax.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hippodrome_of_Constantinople",
       "image_url": null,
-      "transcript_lines": [[70, 79]],
+      "transcript_lines": [
+        [
+          70,
+          79
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "gelimer"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "triumph-of-belisarius"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "triumph-of-belisarius"
+        }
       ]
     },
     {
@@ -727,12 +1908,29 @@
       "summary": "The Milvian Bridge is the site where, as the Goths retreated from Rome, Belisarius poured troops out of the city gates and left several hundred Gothic dead at the bridge's foot, turning Vittigis's retreat into a humiliation.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Milvian_Bridge",
       "image_url": null,
-      "transcript_lines": [[141, 143]],
+      "transcript_lines": [
+        [
+          142,
+          142
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "place", "id": "rome"},
-        {"type": "event", "id": "siege-of-rome"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "event",
+          "id": "siege-of-rome"
+        }
       ]
     },
     {
@@ -746,9 +1944,17 @@
       "summary": "Egypt is mentioned as the origin point of the bubonic plague that swept through both the Persian and Byzantine empires in the 6th century, ultimately killing two-fifths of Constantinople's population.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Egypt",
       "image_url": null,
-      "transcript_lines": [[239, 240]],
+      "transcript_lines": [
+        [
+          239,
+          239
+        ]
+      ],
       "related": [
-        {"type": "event", "id": "plague-of-justinian"}
+        {
+          "type": "event",
+          "id": "plague-of-justinian"
+        }
       ]
     },
     {
@@ -762,9 +1968,17 @@
       "summary": "Bulgaria is mentioned as the birthplace of Belisarius, described as 'a Romanized Greek born in modern-day Bulgaria,' contextualizing his origins on the Balkan frontier of the empire.",
       "wikipedia_url": "https://en.wikipedia.org/wiki/Bulgaria",
       "image_url": null,
-      "transcript_lines": [[12, 13]],
+      "transcript_lines": [
+        [
+          12,
+          13
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        }
       ]
     }
   ],
@@ -779,11 +1993,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Nika_riots",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[2, 6]],
+      "transcript_lines": [
+        [
+          2,
+          6
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -796,11 +2024,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[3, 6]],
+      "transcript_lines": [
+        [
+          9,
+          9
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          209,
+          209
+        ],
+        [
+          276,
+          276
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "constantine-the-great"},
-        {"type": "place", "id": "constantinople"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "constantine-the-great"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        }
       ]
     },
     {
@@ -813,19 +2067,57 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Vandalic_War",
       "image_url": null,
       "location_id": "north-africa",
-      "transcript_lines": [[26, 66]],
+      "transcript_lines": [
+        [
+          26,
+          66
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "gelimer"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "procopius"},
-        {"type": "person", "id": "basiliscus"},
-        {"type": "place", "id": "carthage"},
-        {"type": "place", "id": "north-africa"},
-        {"type": "place", "id": "sardinia"},
-        {"type": "place", "id": "sicily"},
-        {"type": "place", "id": "hippo"},
-        {"type": "event", "id": "triumph-of-belisarius"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "procopius"
+        },
+        {
+          "type": "person",
+          "id": "basiliscus"
+        },
+        {
+          "type": "place",
+          "id": "carthage"
+        },
+        {
+          "type": "place",
+          "id": "north-africa"
+        },
+        {
+          "type": "place",
+          "id": "sardinia"
+        },
+        {
+          "type": "place",
+          "id": "sicily"
+        },
+        {
+          "type": "place",
+          "id": "hippo"
+        },
+        {
+          "type": "event",
+          "id": "triumph-of-belisarius"
+        }
       ]
     },
     {
@@ -838,16 +2130,57 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Triumph_of_Belisarius",
       "image_url": null,
       "location_id": "hippodrome-constantinople",
-      "transcript_lines": [[69, 79]],
+      "transcript_lines": [
+        [
+          49,
+          49
+        ],
+        [
+          69,
+          69
+        ],
+        [
+          74,
+          74
+        ],
+        [
+          218,
+          218
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "gelimer"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "titus"},
-        {"type": "place", "id": "hippodrome-constantinople"},
-        {"type": "place", "id": "jerusalem"},
-        {"type": "event", "id": "reconquest-north-africa"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "gelimer"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "titus"
+        },
+        {
+          "type": "place",
+          "id": "hippodrome-constantinople"
+        },
+        {
+          "type": "place",
+          "id": "jerusalem"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        }
       ]
     },
     {
@@ -860,24 +2193,77 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gothic_War_(535%E2%80%93554)",
       "image_url": null,
       "location_id": "italy",
-      "transcript_lines": [[80, 217]],
+      "transcript_lines": [
+        [
+          80,
+          217
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "person", "id": "amalasuntha"},
-        {"type": "person", "id": "theodahad"},
-        {"type": "person", "id": "narses"},
-        {"type": "person", "id": "john-the-general"},
-        {"type": "place", "id": "sicily"},
-        {"type": "place", "id": "naples"},
-        {"type": "place", "id": "rome"},
-        {"type": "place", "id": "ravenna"},
-        {"type": "place", "id": "rimini"},
-        {"type": "place", "id": "milan"},
-        {"type": "event", "id": "siege-of-rome"},
-        {"type": "event", "id": "relief-of-rimini"},
-        {"type": "event", "id": "fall-of-milan"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "person",
+          "id": "amalasuntha"
+        },
+        {
+          "type": "person",
+          "id": "theodahad"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "person",
+          "id": "john-the-general"
+        },
+        {
+          "type": "place",
+          "id": "sicily"
+        },
+        {
+          "type": "place",
+          "id": "naples"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "place",
+          "id": "ravenna"
+        },
+        {
+          "type": "place",
+          "id": "rimini"
+        },
+        {
+          "type": "place",
+          "id": "milan"
+        },
+        {
+          "type": "event",
+          "id": "siege-of-rome"
+        },
+        {
+          "type": "event",
+          "id": "relief-of-rimini"
+        },
+        {
+          "type": "event",
+          "id": "fall-of-milan"
+        }
       ]
     },
     {
@@ -890,14 +2276,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Rome_(537%E2%80%9338)",
       "image_url": null,
       "location_id": "rome",
-      "transcript_lines": [[124, 143]],
+      "transcript_lines": [
+        [
+          124,
+          143
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "place", "id": "rome"},
-        {"type": "place", "id": "milvian-bridge"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "place",
+          "id": "milvian-bridge"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -910,13 +2319,37 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Rimini_(538)",
       "image_url": null,
       "location_id": "rimini",
-      "transcript_lines": [[158, 175]],
+      "transcript_lines": [
+        [
+          184,
+          184
+        ],
+        [
+          188,
+          188
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "narses"},
-        {"type": "person", "id": "john-the-general"},
-        {"type": "place", "id": "rimini"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "person",
+          "id": "john-the-general"
+        },
+        {
+          "type": "place",
+          "id": "rimini"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -929,15 +2362,41 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Milan_(539)",
       "image_url": null,
       "location_id": "milan",
-      "transcript_lines": [[183, 191]],
+      "transcript_lines": [
+        [
+          26,
+          26
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "vittigis"},
-        {"type": "person", "id": "narses"},
-        {"type": "person", "id": "john-the-general"},
-        {"type": "person", "id": "archbishop-of-milan"},
-        {"type": "place", "id": "milan"},
-        {"type": "event", "id": "reconquest-italy"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "vittigis"
+        },
+        {
+          "type": "person",
+          "id": "narses"
+        },
+        {
+          "type": "person",
+          "id": "john-the-general"
+        },
+        {
+          "type": "person",
+          "id": "archbishop-of-milan"
+        },
+        {
+          "type": "place",
+          "id": "milan"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-italy"
+        }
       ]
     },
     {
@@ -950,13 +2409,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Antioch_(540)",
       "image_url": null,
       "location_id": "antioch",
-      "transcript_lines": [[224, 235]],
+      "transcript_lines": [
+        [
+          26,
+          26
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "khosrow-i"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "place", "id": "antioch"},
-        {"type": "event", "id": "persian-war"}
+        {
+          "type": "person",
+          "id": "khosrow-i"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "place",
+          "id": "antioch"
+        },
+        {
+          "type": "event",
+          "id": "persian-war"
+        }
       ]
     },
     {
@@ -969,15 +2448,41 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lazic_War",
       "image_url": null,
       "location_id": "antioch",
-      "transcript_lines": [[234, 240]],
+      "transcript_lines": [
+        [
+          234,
+          240
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "khosrow-i"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "place", "id": "antioch"},
-        {"type": "place", "id": "ctesiphon"},
-        {"type": "event", "id": "sack-of-antioch"},
-        {"type": "event", "id": "plague-of-justinian"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "khosrow-i"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "place",
+          "id": "antioch"
+        },
+        {
+          "type": "place",
+          "id": "ctesiphon"
+        },
+        {
+          "type": "event",
+          "id": "sack-of-antioch"
+        },
+        {
+          "type": "event",
+          "id": "plague-of-justinian"
+        }
       ]
     },
     {
@@ -990,14 +2495,49 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Justinian",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[239, 257]],
+      "transcript_lines": [
+        [
+          136,
+          136
+        ],
+        [
+          239,
+          239
+        ],
+        [
+          246,
+          246
+        ],
+        [
+          267,
+          267
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "belisarius"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "place", "id": "egypt"},
-        {"type": "event", "id": "belisarius-disgraced"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "place",
+          "id": "egypt"
+        },
+        {
+          "type": "event",
+          "id": "belisarius-disgraced"
+        }
       ]
     },
     {
@@ -1010,13 +2550,33 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Belisarius",
       "image_url": null,
       "location_id": "constantinople",
-      "transcript_lines": [[255, 264]],
+      "transcript_lines": [
+        [
+          263,
+          263
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "belisarius"},
-        {"type": "person", "id": "theodora"},
-        {"type": "person", "id": "justinian-i"},
-        {"type": "place", "id": "constantinople"},
-        {"type": "event", "id": "plague-of-justinian"}
+        {
+          "type": "person",
+          "id": "belisarius"
+        },
+        {
+          "type": "person",
+          "id": "theodora"
+        },
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "place",
+          "id": "constantinople"
+        },
+        {
+          "type": "event",
+          "id": "plague-of-justinian"
+        }
       ]
     },
     {
@@ -1029,11 +2589,25 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(455)",
       "image_url": null,
       "location_id": "rome",
-      "transcript_lines": [[21, 22]],
+      "transcript_lines": [
+        [
+          21,
+          21
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "place", "id": "rome"},
-        {"type": "event", "id": "reconquest-north-africa"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        },
+        {
+          "type": "event",
+          "id": "reconquest-north-africa"
+        }
       ]
     },
     {
@@ -1046,10 +2620,21 @@
       "wikipedia_url": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
       "image_url": null,
       "location_id": "rome",
-      "transcript_lines": [[21, 23]],
+      "transcript_lines": [
+        [
+          21,
+          23
+        ]
+      ],
       "related": [
-        {"type": "person", "id": "justinian-i"},
-        {"type": "place", "id": "rome"}
+        {
+          "type": "person",
+          "id": "justinian-i"
+        },
+        {
+          "type": "place",
+          "id": "rome"
+        }
       ]
     }
   ]
