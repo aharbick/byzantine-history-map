@@ -4,103 +4,120 @@
       "episode": 1,
       "title": "Introduction",
       "audio_file": "01 - Episode 1 - Introduction.mp3",
-      "transcript_file": "01 - Episode 1 - Introduction.txt"
+      "transcript_file": "01 - Episode 1 - Introduction.txt",
+      "total_transcript_lines": 142
     },
     {
       "episode": 2,
       "title": "Diocletian",
       "audio_file": "02 - Episode 2 - Diocletian.mp3",
-      "transcript_file": "02 - Episode 2 - Diocletian.txt"
+      "transcript_file": "02 - Episode 2 - Diocletian.txt",
+      "total_transcript_lines": 306
     },
     {
       "episode": 3,
       "title": "Constantine - Part 1",
       "audio_file": "03 - Episode 3 - Constantine - Part 1.mp3",
-      "transcript_file": "03 - Episode 3 - Constantine - Part 1.txt"
+      "transcript_file": "03 - Episode 3 - Constantine - Part 1.txt",
+      "total_transcript_lines": 237
     },
     {
       "episode": 4,
       "title": "Constantine - Part 2",
       "audio_file": "04 - Episode 4 - Constantine - Part 2.mp3",
-      "transcript_file": "04 - Episode 4 - Constantine - Part 2.txt"
+      "transcript_file": "04 - Episode 4 - Constantine - Part 2.txt",
+      "total_transcript_lines": 262
     },
     {
       "episode": 5,
       "title": "Julian",
       "audio_file": "05 - Episode 5 - Julian.mp3",
-      "transcript_file": "05 - Episode 5 - Julian.txt"
+      "transcript_file": "05 - Episode 5 - Julian.txt",
+      "total_transcript_lines": 265
     },
     {
       "episode": 6,
       "title": "Zeno",
       "audio_file": "06 - Episode 6 - Zeno.mp3",
-      "transcript_file": "06 - Episode 6 - Zeno.txt"
+      "transcript_file": "06 - Episode 6 - Zeno.txt",
+      "total_transcript_lines": 317
     },
     {
       "episode": 7,
       "title": "Justinian - Part 1",
       "audio_file": "07 - Episode 7 - Justinian - Part 1.mp3",
-      "transcript_file": "07 - Episode 7 - Justinian - Part 1.txt"
+      "transcript_file": "07 - Episode 7 - Justinian - Part 1.txt",
+      "total_transcript_lines": 267
     },
     {
       "episode": 8,
       "title": "Justinian - Part 2",
       "audio_file": "08 - Episode 8 - Justinian - Part 2.mp3",
-      "transcript_file": "08 - Episode 8 - Justinian - Part 2.txt"
+      "transcript_file": "08 - Episode 8 - Justinian - Part 2.txt",
+      "total_transcript_lines": 279
     },
     {
       "episode": 9,
       "title": "Justinian - Part 3",
       "audio_file": "09 - Episode 9 - Justinian - Part 3.mp3",
-      "transcript_file": "09 - Episode 9 - Justinian - Part 3.txt"
+      "transcript_file": "09 - Episode 9 - Justinian - Part 3.txt",
+      "total_transcript_lines": 392
     },
     {
       "episode": 10,
       "title": "Heraclius",
       "audio_file": "10 - Episode 10 - Heraclius.mp3",
-      "transcript_file": "10 - Episode 10 - Heraclius.txt"
+      "transcript_file": "10 - Episode 10 - Heraclius.txt",
+      "total_transcript_lines": 412
     },
     {
       "episode": 11,
       "title": "Irene",
       "audio_file": "11 - Episode 11 - Irene.mp3",
-      "transcript_file": "11 - Episode 11 - Irene.txt"
+      "transcript_file": "11 - Episode 11 - Irene.txt",
+      "total_transcript_lines": 343
     },
     {
       "episode": 12,
       "title": "Basil I",
       "audio_file": "12 - Episode 12 - Basil I.mp3",
-      "transcript_file": "12 - Episode 12 - Basil I.txt"
+      "transcript_file": "12 - Episode 12 - Basil I.txt",
+      "total_transcript_lines": 561
     },
     {
       "episode": 13,
       "title": "Basil II",
       "audio_file": "13 - Episode 13 - Basil II.mp3",
-      "transcript_file": "13 - Episode 13 - Basil II.txt"
+      "transcript_file": "13 - Episode 13 - Basil II.txt",
+      "total_transcript_lines": 510
     },
     {
       "episode": 14,
       "title": "Alexius",
       "audio_file": "14 - Episode 14 - Alexius.mp3",
-      "transcript_file": "14 - Episode 14 - Alexius.txt"
+      "transcript_file": "14 - Episode 14 - Alexius.txt",
+      "total_transcript_lines": 497
     },
     {
       "episode": 15,
       "title": "Isaac",
       "audio_file": "15 - Episode 15 - Isaac.mp3",
-      "transcript_file": "15 - Episode 15 - Isaac.txt"
+      "transcript_file": "15 - Episode 15 - Isaac.txt",
+      "total_transcript_lines": 604
     },
     {
       "episode": 16,
       "title": "Constantine XI",
       "audio_file": "16 - Episode 16 - Constantine XI.mp3",
-      "transcript_file": "16 - Episode 16 - Constantine XI.txt"
+      "transcript_file": "16 - Episode 16 - Constantine XI.txt",
+      "total_transcript_lines": 587
     },
     {
       "episode": 17,
       "title": "Conclusion",
       "audio_file": "17 - Episode 17 - Conclusion.mp3",
-      "transcript_file": "17 - Episode 17 - Conclusion.txt"
+      "transcript_file": "17 - Episode 17 - Conclusion.txt",
+      "total_transcript_lines": 173
     }
   ],
   "people": [

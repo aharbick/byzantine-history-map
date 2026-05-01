@@ -22,8 +22,12 @@ export default function Legend() {
 
   return (
     <div
-      className="absolute left-3 sm:left-4 z-30 flex flex-col items-start gap-1 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-2 text-sm font-display tracking-wider"
-      style={{ bottom: 110 }}
+      // Tight padding + gap so the Legend reads as a sibling of the
+      // (compact) minimized player above. Same fixed width so they stack
+      // as a uniform pair, and the gap to the timeline above matches the
+      // gap between the two widgets.
+      className="absolute left-2 z-30 flex flex-col items-start gap-0.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-1 text-sm font-display tracking-wider w-[98px]"
+      style={{ bottom: 104 }}
     >
         {ROWS.map((row) => {
           const on = filters[row.key];

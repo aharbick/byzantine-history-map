@@ -189,11 +189,18 @@ def main():
     for path in sorted(glob.glob(str(ROOT / "episodes" / "ep*.json"))):
         data = json.load(open(path))
         ep = data["episode"]
+        # Count transcript lines so the frontend can compute "seek to roughly
+        # where this entity is mentioned" as (first_mention_line / total_lines)
+        # × audio.duration. Constant-pace narration approximation; accurate to
+        # ~30s for Brownworth's measured delivery.
+        tpath = ROOT.parent / "transcripts" / _transcript_filename(ep)
+        total_lines = sum(1 for _ in open(tpath, encoding="utf-8")) if tpath.exists() else 0
         episodes_meta.append({
             "episode": ep,
             "title": data["title"],
             "audio_file": _audio_filename(ep),
             "transcript_file": _transcript_filename(ep),
+            "total_transcript_lines": total_lines,
         })
         for person in data.get("people", []):
             cid = canonical(person["id"])

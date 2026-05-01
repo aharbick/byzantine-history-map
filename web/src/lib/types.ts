@@ -51,6 +51,7 @@ export interface EpisodeMeta {
   title: string;
   audio_file: string;
   transcript_file: string;
+  total_transcript_lines: number;
 }
 
 export interface EntitiesData {

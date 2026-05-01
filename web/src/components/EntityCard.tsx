@@ -7,6 +7,7 @@ import { useApp } from "@/lib/context";
 import { getEntity } from "@/lib/data";
 import type { AnyEntity, Person, Place, HistoricalEvent } from "@/lib/types";
 import EpisodeChip from "./EpisodeChip";
+import { episodesById } from "@/lib/data";
 
 interface Props {
   entity: AnyEntity;
@@ -113,9 +114,26 @@ export default function EntityCard({ entity }: Props) {
             Mentioned in
           </div>
           <div className="flex flex-wrap gap-1">
-            {entity.episodes.map((ep) => (
-              <EpisodeChip key={ep} episode={ep} />
-            ))}
+            {entity.episodes.map((ep) => {
+              // Estimate where in the episode this entity is first mentioned,
+              // by line ratio. The audio player resolves this against the
+              // episode's actual duration once metadata loads.
+              const lines = entity.transcript_lines_by_episode?.[String(ep)];
+              const firstLine = lines?.[0]?.[0];
+              const totalLines =
+                episodesById[ep]?.total_transcript_lines ?? 0;
+              const startProgress =
+                firstLine != null && totalLines > 0
+                  ? Math.max(0, Math.min(1, firstLine / totalLines))
+                  : undefined;
+              return (
+                <EpisodeChip
+                  key={ep}
+                  episode={ep}
+                  startProgress={startProgress}
+                />
+              );
+            })}
           </div>
         </div>
 
