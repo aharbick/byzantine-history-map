@@ -259,11 +259,39 @@ export default function Timeline({ minYear, maxYear }: Props) {
                   <div
                     className={`absolute left-0 ${t.major ? "h-4 w-px bg-byz-goldLight" : "h-2 w-px bg-byz-gold/50"}`}
                   />
-                  {t.major && (
-                    <div className="absolute -translate-x-1/2 top-5 whitespace-nowrap rounded-full bg-byz-purpleDeep/85 border border-byz-gold/30 px-2 py-0.5 text-[11px] text-byz-goldLight font-display tracking-wider leading-none">
-                      {formatYear(t.year)}
-                    </div>
-                  )}
+                  {t.major &&
+                    (() => {
+                      // Proximity drives a "suck-up + scale-up" animation: as
+                      // a major-year pill approaches the cursor, it grows and
+                      // climbs toward the current-year readout, then tucks
+                      // behind it (the readout's z-30 hides it at the peak).
+                      // Past the cursor, the same curve plays in reverse.
+                      const PROXIMITY_RANGE_YEARS = 35;
+                      const dy = Math.abs(t.year - currentYear);
+                      const p = Math.max(
+                        0,
+                        1 - dy / PROXIMITY_RANGE_YEARS,
+                      );
+                      // p² (ease-in) so the pill stays put until very close
+                      // to the cursor, then snaps up and fades behind the
+                      // current-year readout. Keeps the motion concentrated.
+                      const eased = p * p;
+                      const scale = 1 + eased * 0.35;
+                      const translateY = -eased * 32; // px upward toward pill
+                      const opacity = 1 - eased * 0.85;
+                      return (
+                        <div
+                          className="absolute top-5 whitespace-nowrap rounded-full bg-byz-purpleDeep/85 border border-byz-gold/30 px-2 py-0.5 text-[11px] text-byz-goldLight font-display tracking-wider leading-none"
+                          style={{
+                            transform: `translate(-50%, ${translateY}px) scale(${scale})`,
+                            transformOrigin: "center bottom",
+                            opacity,
+                          }}
+                        >
+                          {formatYear(t.year)}
+                        </div>
+                      );
+                    })()}
                 </div>
               );
             })}
