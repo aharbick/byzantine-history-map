@@ -27,8 +27,10 @@ export default function AudioPlayer() {
   const [duration, setDuration] = useState(0);
   const [showPicker, setShowPicker] = useState(false);
   // Compact mode: shows just episode label + play button + time. Click
-  // anywhere except the play button restores the full UI.
-  const [minimized, setMinimized] = useState(false);
+  // anywhere except the play button restores the full UI. Default to
+  // collapsed — the player is a peripheral surface, not the user's
+  // primary task; expanding is one click away when they want to choose.
+  const [minimized, setMinimized] = useState(true);
 
   // Close the picker on outside click / Escape — same behavior as a native
   // <select>. Click on the player itself (including inside the listbox) is
