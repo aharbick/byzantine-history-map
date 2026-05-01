@@ -207,6 +207,41 @@ body > div {
   font-weight: 700;
 }
 
+/* Audio-focus marker — the entity currently being discussed in the
+ * playing episode. Larger than selected, with a pulsing glow that draws
+ * the eye, and lifted above selection so the focus marker can never be
+ * occluded. */
+.byz-marker-focus {
+  z-index: 20;
+}
+.byz-marker-focus .byz-marker-disc {
+  transform: scale(1.7);
+  box-shadow:
+    0 0 0 4px var(--marker-color, #c9a227),
+    0 0 32px 8px var(--marker-color, #c9a227),
+    0 6px 20px rgba(0, 0, 0, 0.75);
+  animation: byz-marker-focus-pulse 2.4s ease-in-out infinite;
+}
+.byz-marker-focus .byz-marker-label {
+  opacity: 1;
+  font-weight: 700;
+}
+@keyframes byz-marker-focus-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 4px var(--marker-color, #c9a227),
+      0 0 32px 8px var(--marker-color, #c9a227),
+      0 6px 20px rgba(0, 0, 0, 0.75);
+  }
+  50% {
+    box-shadow:
+      0 0 0 5px var(--marker-color, #c9a227),
+      0 0 48px 14px var(--marker-color, #c9a227),
+      0 6px 22px rgba(0, 0, 0, 0.75);
+  }
+}
+
 /* ---- Cluster markers (Google-Maps-style "+N" with click-to-expand) ---- */
 /* Same caveat as .byz-marker: don't set `position` — MapLibre needs absolute. */
 .byz-cluster {

@@ -31,7 +31,15 @@ const KIND_COLOR_DARK: Record<AnyEntity["kind"], string> = {
 };
 
 export default function Timeline({ minYear, maxYear }: Props) {
-  const { currentYear, setCurrentYear, selectEntity, filters } = useApp();
+  const {
+    currentYear,
+    setCurrentYear,
+    selectEntity,
+    filters,
+    autoScrubLocked,
+    setAutoScrubLocked,
+    playingEpisode,
+  } = useApp();
   const trackRef = useRef<HTMLDivElement | null>(null);
   const stripRef = useRef<HTMLDivElement | null>(null);
   const [dragging, setDragging] = useState(false);
@@ -215,6 +223,74 @@ export default function Timeline({ minYear, maxYear }: Props) {
           {formatYear(currentYear)}
         </div>
       </div>
+
+      {/* Auto-scrub lock — when an episode is active, surface a small toggle
+          so the user can stop the audio from yanking the timeline year while
+          they manually scrub. */}
+      {playingEpisode != null && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            setAutoScrubLocked(!autoScrubLocked);
+          }}
+          aria-pressed={autoScrubLocked}
+          aria-label={
+            autoScrubLocked
+              ? "Unlock timeline (let audio drive the year)"
+              : "Lock timeline (stop audio from driving the year)"
+          }
+          title={
+            autoScrubLocked
+              ? "Timeline locked — audio won't change the year. Tap to unlock."
+              : "Timeline follows audio. Tap to lock."
+          }
+          className={`absolute right-2 -top-7 z-30 inline-flex items-center justify-center w-7 h-7 rounded-full border shadow-card transition-colors ${
+            autoScrubLocked
+              ? "bg-byz-gold/90 border-byz-goldLight text-byz-ink"
+              : "bg-byz-purpleDeep/90 border-byz-gold/50 text-byz-goldLight hover:bg-byz-purpleDeep"
+          }`}
+        >
+          {autoScrubLocked ? (
+            // Closed padlock
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path
+                d="M5 7V5a3 3 0 0 1 6 0v2"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+              />
+              <rect
+                x="3"
+                y="7"
+                width="10"
+                height="7"
+                rx="1.5"
+                fill="currentColor"
+              />
+            </svg>
+          ) : (
+            // Open padlock
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path
+                d="M5 7V5a3 3 0 0 1 6 0"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+              />
+              <rect
+                x="3"
+                y="7"
+                width="10"
+                height="7"
+                rx="1.5"
+                fill="currentColor"
+              />
+            </svg>
+          )}
+        </button>
+      )}
 
       <div
         ref={stripRef}

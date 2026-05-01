@@ -52,6 +52,15 @@ interface AppState {
    * (chip, picker option, prev/next button, play button) call
    * `.current?.play(ep, seek)` from inside their click handler. */
   audioController: MutableRefObject<AudioController | null>;
+  /** Auto-scrub lock — when true, audio playback won't drive the timeline
+   * year. Toggled from the lock button in the timeline strip. */
+  autoScrubLocked: boolean;
+  setAutoScrubLocked: (b: boolean) => void;
+  /** Entity currently being mentioned in the playing episode (derived from
+   * transcript line ranges). `null` outside playback or in a transcript
+   * gap. WorldMap reads this to render the marker emphasized. */
+  audioFocusEntityId: string | null;
+  setAudioFocusEntityId: (id: string | null) => void;
   filters: KindFilter;
   setFilters: (f: KindFilter) => void;
 }
@@ -76,6 +85,8 @@ export function AppProvider({
   const [playingEpisode, _setPlayingEpisode] = useState<number | null>(null);
   const [pendingSeek, setPendingSeek] = useState<AudioSeekHint | null>(null);
   const audioController = useRef<AudioController | null>(null);
+  const [autoScrubLocked, setAutoScrubLocked] = useState(false);
+  const [audioFocusEntityId, setAudioFocusEntityId] = useState<string | null>(null);
   const [filters, setFilters] = useState<KindFilter>({
     person: true,
     place: true,
@@ -103,10 +114,22 @@ export function AppProvider({
       pendingSeek,
       consumePendingSeek,
       audioController,
+      autoScrubLocked,
+      setAutoScrubLocked,
+      audioFocusEntityId,
+      setAudioFocusEntityId,
       filters,
       setFilters,
     }),
-    [currentYear, selectedEntity, playingEpisode, pendingSeek, filters],
+    [
+      currentYear,
+      selectedEntity,
+      playingEpisode,
+      pendingSeek,
+      autoScrubLocked,
+      audioFocusEntityId,
+      filters,
+    ],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

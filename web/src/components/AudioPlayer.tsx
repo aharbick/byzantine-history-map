@@ -4,11 +4,21 @@ import { useEffect, useRef, useState } from "react";
 import { useApp, type AudioSeekHint } from "@/lib/context";
 import { audioUrl, episodesById } from "@/lib/data";
 import { entities } from "@/lib/data";
+import { findAnchorAt, getEpisodeAnchors } from "@/lib/episode_anchors";
 
 /** Persistent audio player. Always mounted, always visible. Custom UI so it
  * fits the byzantine theme rather than the chunky native <audio controls>. */
 export default function AudioPlayer() {
-  const { playingEpisode, playEpisode, audioController } = useApp();
+  const {
+    playingEpisode,
+    playEpisode,
+    audioController,
+    setCurrentYear,
+    selectedEntity,
+    autoScrubLocked,
+    audioFocusEntityId,
+    setAudioFocusEntityId,
+  } = useApp();
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const rootRef = useRef<HTMLDivElement | null>(null);
   // Tracks which episode's audio is currently loaded into the <audio>
@@ -245,6 +255,69 @@ export default function AudioPlayer() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playingEpisode, episodes]);
+
+  // ---------- audio-driven timeline auto-scrub ----------
+  // Drives the timeline year + the WorldMap's "focus" marker from the
+  // audio's currentTime. Disabled when:
+  //   - the user has a card open (they're reading something specific)
+  //   - the lock is on (explicit override)
+  //   - the audio isn't actually playing
+  // Refs sidestep stale-closure problems on the timeupdate listener while
+  // still letting us read the latest gating values without re-binding the
+  // listener every render (timeupdate fires ~4Hz on iOS).
+  const autoScrubLockedRef = useRef(autoScrubLocked);
+  autoScrubLockedRef.current = autoScrubLocked;
+  const selectedEntityRef = useRef(selectedEntity);
+  selectedEntityRef.current = selectedEntity;
+  const audioFocusEntityIdRef = useRef(audioFocusEntityId);
+  audioFocusEntityIdRef.current = audioFocusEntityId;
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (playingEpisode == null) return;
+
+    const epMeta = episodesById[playingEpisode];
+    const totalLines = epMeta?.total_transcript_lines ?? 0;
+    if (!totalLines) return;
+    const anchors = getEpisodeAnchors(playingEpisode);
+    if (anchors.length === 0) return;
+
+    const onTimeForScrub = () => {
+      if (audio.paused) return;
+      if (autoScrubLockedRef.current) return;
+      if (selectedEntityRef.current) return;
+      if (!audio.duration || audio.duration === 0) return;
+
+      const line = (audio.currentTime / audio.duration) * totalLines;
+      const anchor = findAnchorAt(line, anchors);
+
+      if (!anchor) {
+        if (audioFocusEntityIdRef.current !== null) {
+          setAudioFocusEntityId(null);
+        }
+        return;
+      }
+      if (audioFocusEntityIdRef.current !== anchor.entityId) {
+        setAudioFocusEntityId(anchor.entityId);
+        setCurrentYear(anchor.year);
+      }
+    };
+
+    audio.addEventListener("timeupdate", onTimeForScrub);
+    return () => {
+      audio.removeEventListener("timeupdate", onTimeForScrub);
+    };
+  }, [playingEpisode, setCurrentYear, setAudioFocusEntityId]);
+
+  // When playback stops, drop the focus marker so the WorldMap goes back
+  // to its normal rendering.
+  useEffect(() => {
+    if (!isPlaying && audioFocusEntityId !== null) {
+      setAudioFocusEntityId(null);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPlaying]);
 
   // ---------- localStorage persistence (every ~5s + on pagehide) ----------
   useEffect(() => {

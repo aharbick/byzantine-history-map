@@ -36,7 +36,14 @@ export default function WorldMap() {
   // Saved map view to restore when a card closes (so the user gets back the
   // map they were looking at before opening the card).
   const prePanRef = useRef<{ center: maplibregl.LngLat; zoom: number } | null>(null);
-  const { currentYear, selectedEntity, selectEntity, setCurrentYear, filters } = useApp();
+  const {
+    currentYear,
+    selectedEntity,
+    selectEntity,
+    setCurrentYear,
+    filters,
+    audioFocusEntityId,
+  } = useApp();
   // Mirror selectedEntity into a ref so the marker click handlers (created
   // once at marker construction) can read the *current* value without stale
   // closures — needed for click-to-toggle behavior.
@@ -201,6 +208,21 @@ export default function WorldMap() {
       }
     }
   }, [selectedEntity, currentYear, mapReady, expandedGroup]);
+
+  // Apply audio-focus styling — the entity currently being mentioned in the
+  // playing episode gets `byz-marker-focus` so it renders larger / on top.
+  useEffect(() => {
+    for (const [key, m] of markersRef.current) {
+      const el = m.getElement();
+      // key is "<kind>:<id>"; match by id suffix
+      const id = key.split(":")[1];
+      if (id === audioFocusEntityId) {
+        el.classList.add("byz-marker-focus");
+      } else {
+        el.classList.remove("byz-marker-focus");
+      }
+    }
+  }, [audioFocusEntityId, currentYear, mapReady, expandedGroup]);
 
   // Selection effect: expand clustered groups when needed; pan ONLY if the
   // selected dot is genuinely offscreen; restore the prior map view on close.
