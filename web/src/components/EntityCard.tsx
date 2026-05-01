@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import clsx from "clsx";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useApp } from "@/lib/context";
 import { getEntity } from "@/lib/data";
 import type { AnyEntity, Person, Place, HistoricalEvent } from "@/lib/types";
@@ -22,21 +22,56 @@ const KIND_LABEL: Record<AnyEntity["kind"], string> = {
 export default function EntityCard({ entity }: Props) {
   const { selectEntity } = useApp();
   const heroUrl = entityHeroUrl(entity);
+  const cardRef = useRef<HTMLElement | null>(null);
+
+  // Desktop only — clicking outside the card closes it. Skip on mobile,
+  // where the card is a full-screen overlay (everywhere is "inside"). Marker
+  // and cluster clicks are excluded so tapping a different entity switches
+  // selection instead of closing the card.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (window.matchMedia("(max-width: 639px)").matches) return;
+
+    function onDown(e: MouseEvent) {
+      const card = cardRef.current;
+      if (!card) return;
+      const target = e.target as Element | null;
+      if (!target || card.contains(target)) return;
+      if (target.closest(".byz-marker, .byz-cluster")) return;
+      selectEntity(null);
+    }
+
+    document.addEventListener("mousedown", onDown);
+    return () => document.removeEventListener("mousedown", onDown);
+  }, [selectEntity]);
 
   return (
     <motion.aside
       key={entity.id}
+      ref={cardRef}
       initial={{ x: 40, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: 40, opacity: 0 }}
       transition={{ type: "spring", stiffness: 200, damping: 25 }}
       className={clsx(
-        "absolute z-20 overflow-y-auto rounded-xl card-frame shadow-card border-l-4",
-        // Mobile (< sm): full-width sheet starting below the title; bottom
-        // reserved for the legend (~90px) + timeline (~130px) + breathing room.
-        "inset-x-2 top-[110px] bottom-[230px]",
-        // Desktop: side panel on the right, height-fits-content with cap.
-        "sm:inset-auto sm:right-4 sm:top-24 sm:bottom-auto sm:w-[380px] sm:max-w-[40vw] sm:max-h-[calc(100vh-12rem)]",
+        // Highest z-index in the app — sits above the audio player, legend,
+        // and timeline. Mobile uses a full-bleed fixed overlay; desktop
+        // restores the side-panel rounded card.
+        // byz-scroll = thin gold scrollbar on a transparent track, so the
+        // scrollbar doesn't expose a square track corner against the card's
+        // rounded edge.
+        "fixed z-50 overflow-y-auto byz-scroll card-frame shadow-card border-l-4",
+        // Mobile (< sm): cover the whole screen so the card is the only
+        // surface the user interacts with — no rounded corners at the
+        // viewport edges.
+        "inset-0 rounded-none",
+        // Desktop: ~1.5× wider than before (570px), top-pushed below the
+        // map navigation buttons. Use max-height (not a fixed height or a
+        // bottom anchor) so the card hugs short content and only grows up
+        // to the cap — once it would otherwise extend past 200 px above the
+        // screen bottom (i.e., onto the mini-map) it stops growing and
+        // overflow-y-auto kicks in. Cap = 100vh − top(128) − bottom(200) = 100vh − 328px.
+        "sm:inset-auto sm:right-4 sm:top-32 sm:rounded-xl sm:w-[570px] sm:max-w-[45vw] sm:max-h-[calc(100vh-328px)]",
         entity.kind === "person" && "card-person !border-l-byz-goldLight",
         entity.kind === "place" && "card-place !border-l-byz-mosaic",
         entity.kind === "event" && "card-event !border-l-red-500",
@@ -100,7 +135,10 @@ export default function EntityCard({ entity }: Props) {
       </div>
 
       <div className="px-4 py-3 space-y-4 font-body text-byz-parchment leading-relaxed">
-        <p className="text-sm">{entity.summary}</p>
+        {/* Prefer the LLM-synthesized neutral summary when present (entities
+            with 2+ episode mentions); fall back to the longest per-episode
+            summary otherwise. */}
+        <p className="text-sm">{entity.summary_synthesized || entity.summary}</p>
 
         {entity.alt_names && entity.alt_names.length > 0 && (
           <div className="text-xs text-byz-parchmentDark italic">

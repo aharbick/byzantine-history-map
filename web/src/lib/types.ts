@@ -9,7 +9,13 @@ export interface BaseEntity {
   id: string;
   name: string;
   alt_names: string[];
+  /** Longest per-episode summary (legacy fallback). */
   summary: string;
+  /** Claude-synthesized 2-3 sentence neutral summary that integrates all
+   * per-episode mentions. Present when the entity appears in 2+ episodes
+   * and `data/synthesize_summaries.py` has been run. Cards prefer this
+   * when set; `summary` is the fallback for single-episode entities. */
+  summary_synthesized?: string | null;
   summaries_by_episode: Record<string, string>;
   transcript_lines_by_episode: Record<string, [number, number][]>;
   episodes: number[];

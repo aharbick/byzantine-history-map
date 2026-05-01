@@ -303,6 +303,11 @@ export default function AudioPlayer() {
   const progress = duration > 0 ? currentTime / duration : 0;
   const hasEpisode = displayedEpisode != null;
   const timeText = hasEpisode ? `${fmt(currentTime)} / ${fmt(duration)}` : "—";
+  // Minimized-only labels. "Ep ??" + a "Select Episode" hint on the second
+  // line preserves the widget silhouette while telling the user the chip is
+  // a control, not a failure state.
+  const epLabel = hasEpisode ? `Ep ${displayedEpisode}` : "Ep ??";
+  const minimizedSubLabel = hasEpisode ? timeText : "Select Episode";
 
   // Stack from the bottom: timeline strip (h-24 → 96 px tall) → 8 px gap →
   // Legend (bottom: 104, ~74 px tall) → 8 px gap → player. Player.bottom =
@@ -328,7 +333,7 @@ export default function AudioPlayer() {
           <span
             className={`text-sm ${hasEpisode ? "text-byz-goldLight" : "text-byz-parchmentDark"}`}
           >
-            {hasEpisode ? `Ep ${displayedEpisode}` : "—"}
+            {epLabel}
           </span>
           <span
             // The play/pause is a nested button. stopPropagation so it
@@ -356,8 +361,12 @@ export default function AudioPlayer() {
             <PlayPauseIcon playing={isPlaying} size={11} />
           </span>
         </div>
-        <span className="w-full text-center text-[10px] text-byz-parchmentDark tabular-nums leading-none">
-          {timeText}
+        <span
+          className={`w-full text-center text-[10px] leading-none ${
+            hasEpisode ? "text-byz-parchmentDark tabular-nums" : "text-byz-goldLight/80"
+          }`}
+        >
+          {minimizedSubLabel}
         </span>
       </button>
     );

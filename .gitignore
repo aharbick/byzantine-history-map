@@ -35,3 +35,6 @@ build/
 # Claude Code worktrees (created by /worktree; never tracked content)
 .claude/worktrees/
 
+# Claude Code scheduled-tasks lockfile (per-machine)
+.claude/scheduled_tasks.lock
+

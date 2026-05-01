@@ -204,9 +204,16 @@ export default function WorldMap() {
 
   // Selection effect: expand clustered groups when needed; pan ONLY if the
   // selected dot is genuinely offscreen; restore the prior map view on close.
+  // Skipped entirely on mobile — the card covers the whole viewport there,
+  // so panning the map underneath is wasted motion the user can't see.
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
+
+    // sm breakpoint = 640px; below that the card is a full-screen overlay.
+    const isMobile =
+      typeof window !== "undefined" &&
+      window.matchMedia("(max-width: 639px)").matches;
 
     if (!selectedEntity) {
       setExpandedGroup(null);
@@ -235,13 +242,14 @@ export default function WorldMap() {
       setExpandedGroup(activeInGroup >= CLUSTER_THRESHOLD ? member.groupKey : null);
     }
 
+    if (isMobile) return; // card covers the map; nothing to pan around
+
     const c = entityCoords(selectedEntity);
     if (!c) return;
 
     // Pan only if the dot is actually OFFSCREEN. Don't pan just because the
-    // card overlaps it — on mobile the card is full-width so the dot would
-    // always be covered, but panning doesn't help (you can't see anything
-    // behind the card anyway).
+    // card overlaps it — on desktop the card is a side panel; this only
+    // moves the map when the dot would otherwise be hidden behind it.
     const point = map.project([c.lng, c.lat]);
     const container = map.getContainer().getBoundingClientRect();
     const margin = 60;

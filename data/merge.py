@@ -140,6 +140,16 @@ def _load_portraits() -> dict:
     return json.load(open(p))
 
 
+def _load_synthesized() -> dict:
+    """Load LLM-synthesized unified summaries produced by synthesize_summaries.py.
+    Maps entity id -> {text, hash, model}. Re-injected on every build so a
+    re-run of merge.py preserves the synthesis."""
+    p = ROOT / "synthesized_summaries.json"
+    if not p.exists():
+        return {}
+    return json.load(open(p))
+
+
 def _is_pre_or_post_byzantine_person(p: dict) -> bool:
     """True if this person is clearly outside the Byzantine era window — modern
     scholars (Gibbon, Norwich, Bury, Ostrogorski), Founding Fathers,
@@ -185,6 +195,7 @@ def main():
 
     episodes_meta = []
     portraits = _load_portraits()
+    synthesized = _load_synthesized()
 
     for path in sorted(glob.glob(str(ROOT / "episodes" / "ep*.json"))):
         data = json.load(open(path))
@@ -261,6 +272,17 @@ def main():
                 if info.get("image"):
                     e["image_full_url"] = info["image"]
 
+    # Inject synthesized summaries from cache. The frontend prefers
+    # `summary_synthesized` over `summary` on the card, so this is what
+    # most users will see when an entity has 2+ episode mentions.
+    synth_hits = 0
+    for entities_list in (people, places, events):
+        for ent in entities_list:
+            info = synthesized.get(ent["id"])
+            if info and info.get("text"):
+                ent["summary_synthesized"] = info["text"]
+                synth_hits += 1
+
     out = {
         "episodes": sorted(episodes_meta, key=lambda e: e["episode"]),
         "people": people,
@@ -272,6 +294,7 @@ def main():
             "events": len(events),
             "portraits": portrait_hits,
             "images": image_hits,
+            "synthesized_summaries": synth_hits,
         },
     }
 
