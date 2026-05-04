@@ -651,8 +651,8 @@
         },
         "2": {
           "summary": "Born of humble origins as Gaius Valerius Diocles, son of a freedman and scribe, he rose through the army to command the imperial bodyguard and seized power in 284 after accusing and executing Aper. He reformed the army, tax system, and imperial succession, most strikingly by voluntarily retiring in 305 — a decision Brownworth calls his most surprising and enduring contribution.",
-          "score": 43,
-          "mention_count": 35,
+          "score": 42,
+          "mention_count": 34,
           "first_mention_seconds": 5.8
         },
         "3": {
@@ -947,12 +947,6 @@
             "matched": "Diocletian"
           },
           {
-            "segment_idx": 238,
-            "start": 902.0,
-            "end": 906.68,
-            "matched": "Diocletian"
-          },
-          {
             "segment_idx": 248,
             "start": 942.0,
             "end": 948.02,
@@ -1062,7 +1056,7 @@
       },
       "is_twelve_ruler": true,
       "ruler_episode": 2,
-      "max_score": 43
+      "max_score": 42
     },
     {
       "id": "helena",
@@ -3128,9 +3122,9 @@
         },
         "4": {
           "summary": "Constantine's eldest son, described as a brilliant general popular with both the army and the people — it was said that for Constantine's hundreds, Crispus had his thousands. He was arrested at Sirmium and executed on orders from his father for reasons never made entirely clear.",
-          "score": 13,
-          "mention_count": 3,
-          "first_mention_seconds": 311.96
+          "score": 0,
+          "mention_count": 0,
+          "first_mention_seconds": null
         }
       },
       "episodes": [
@@ -3171,26 +3165,6 @@
             "end": 992.24,
             "matched": "Crispus"
           }
-        ],
-        "4": [
-          {
-            "segment_idx": 79,
-            "start": 311.96,
-            "end": 315.46,
-            "matched": "Crispus"
-          },
-          {
-            "segment_idx": 82,
-            "start": 321.56,
-            "end": 326.76,
-            "matched": "Crispus"
-          },
-          {
-            "segment_idx": 85,
-            "start": 332.64,
-            "end": 336.84,
-            "matched": "Crispus"
-          }
         ]
       },
       "excerpts_by_episode": {
@@ -3201,30 +3175,10 @@
             "end": 992.24,
             "text": "The eldest of them, Crispus, was energetic, brilliant, and even more well-liked than his"
           }
-        ],
-        "4": [
-          {
-            "segment_idx": 79,
-            "start": 311.96,
-            "end": 315.46,
-            "text": "Part of the problem was Constantine's eldest son, Crispus."
-          },
-          {
-            "segment_idx": 82,
-            "start": 321.56,
-            "end": 326.76,
-            "text": "For Constantine had his hundreds, so the saying went, Crispus had his thousands."
-          },
-          {
-            "segment_idx": 85,
-            "start": 332.64,
-            "end": 336.84,
-            "text": "Arresting Crispus and his half-brother for reasons never made entirely clear, he had"
-          }
         ]
       },
       "is_twelve_ruler": false,
-      "max_score": 13
+      "max_score": 8
     },
     {
       "id": "julius-constantius",
@@ -4504,9 +4458,9 @@
       "summaries_by_episode": {
         "6": {
           "summary": "A barbarian Germanic general who had spent 30 years as the power behind the Western throne before being rashly killed by Emperor Valentinian III with his own hands. His murder destabilized the West and triggered a chain of events leading to further chaos.",
-          "score": 10,
-          "mention_count": 2,
-          "first_mention_seconds": 94.44
+          "score": 0,
+          "mention_count": 0,
+          "first_mention_seconds": null
         }
       },
       "episodes": [
@@ -4528,40 +4482,8 @@
       "reign_start": null,
       "reign_end": null,
       "wikipedia_extract": "Aetius, Aëtius, or Aetios (Ἀέτιος) may refer to:",
-      "mentions_by_episode": {
-        "6": [
-          {
-            "segment_idx": 24,
-            "start": 94.44,
-            "end": 98.76,
-            "matched": "Aetius"
-          },
-          {
-            "segment_idx": 27,
-            "start": 106.92,
-            "end": 111.6,
-            "matched": "Aetius"
-          }
-        ]
-      },
-      "excerpts_by_episode": {
-        "6": [
-          {
-            "segment_idx": 24,
-            "start": 94.44,
-            "end": 98.76,
-            "text": "the West by a general named Aetius, who had spent the last 30 years as the power behind"
-          },
-          {
-            "segment_idx": 27,
-            "start": 106.92,
-            "end": 111.6,
-            "text": "right and rashly killed Aetius with his own hands, and several months later paid the"
-          }
-        ]
-      },
       "is_twelve_ruler": false,
-      "max_score": 10
+      "max_score": 0
     },
     {
       "id": "elderly-senator-western-emperor",
@@ -5475,9 +5397,9 @@
       "summaries_by_episode": {
         "6": {
           "summary": "The barbarian leader of three tribes who demanded one-third of Italy, killed Orestes when refused, and deposed Romulus Augustulus, ending the Western Empire. He chose to give lip service to Zeno's eastern authority rather than installing a new puppet emperor in Ravenna, sending Zeno the imperial insignia and asking only for the title of patrician. He was ultimately tricked into a joint rule by Theodoric and murdered at a banquet.",
-          "score": 22,
-          "mention_count": 9,
-          "first_mention_seconds": 685.74
+          "score": 0,
+          "mention_count": 0,
+          "first_mention_seconds": null
         }
       },
       "episodes": [
@@ -5521,88 +5443,8 @@
       "wikipedia_extract": "Odoacer, also spelled Odovacer or Odovacar, was a barbarian soldier and statesman from the Middle Danube who was an officer of the Roman army and deposed the Western Roman child emperor Romulus Augustulus to become the ruler of Italy (476–493). Odoacer's overthrow of Romulus Augustulus is traditionally understood as marking the end of the Western Roman Empire.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Coin_of_Odoacer_at_the_British_Museum_%28obverse%29.png/330px-Coin_of_Odoacer_at_the_British_Museum_%28obverse%29.png",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Coin_of_Odoacer_at_the_British_Museum_%28obverse%29.png",
-      "mentions_by_episode": {
-        "6": [
-          {
-            "segment_idx": 182,
-            "start": 685.74,
-            "end": 690.02,
-            "matched": "Odoacer"
-          },
-          {
-            "segment_idx": 183,
-            "start": 690.02,
-            "end": 694.42,
-            "matched": "Odoacer"
-          },
-          {
-            "segment_idx": 198,
-            "start": 743.94,
-            "end": 748.44,
-            "matched": "Odoacer"
-          },
-          {
-            "segment_idx": 206,
-            "start": 774.64,
-            "end": 779.4,
-            "matched": "Odoacer"
-          },
-          {
-            "segment_idx": 208,
-            "start": 784.88,
-            "end": 790.36,
-            "matched": "Odoacer"
-          },
-          {
-            "segment_idx": 254,
-            "start": 962.56,
-            "end": 966.04,
-            "matched": "Odoacer"
-          },
-          {
-            "segment_idx": 258,
-            "start": 975.36,
-            "end": 979.92,
-            "matched": "Odoacer"
-          },
-          {
-            "segment_idx": 260,
-            "start": 984.08,
-            "end": 988.28,
-            "matched": "Odoacer"
-          },
-          {
-            "segment_idx": 264,
-            "start": 995.96,
-            "end": 1001.0,
-            "matched": "Odoacer"
-          }
-        ]
-      },
-      "excerpts_by_episode": {
-        "6": [
-          {
-            "segment_idx": 208,
-            "start": 784.88,
-            "end": 790.36,
-            "text": "Odoacer, content to let matters thus stand, gave himself the title King of the Romans,"
-          },
-          {
-            "segment_idx": 258,
-            "start": 975.36,
-            "end": 979.92,
-            "text": "Finally, having blockaded Odoacer inside his capital, he announced that he was tired of"
-          },
-          {
-            "segment_idx": 264,
-            "start": 995.96,
-            "end": 1001.0,
-            "text": "According to one source, it was Theodoric himself who, as Odoacer was taking his seat,"
-          }
-        ]
-      },
       "is_twelve_ruler": false,
-      "max_score": 22
+      "max_score": 0
     },
     {
       "id": "justin-i",
@@ -17138,7 +16980,7 @@
         "15": {
           "summary": "A cousin of Andronicus who seized the throne in 1185 after killing the officer sent to arrest him and rallying the people at the Hagia Sophia. His reign began promisingly with a victory over the Sicilians, but descended into reckless spending, crushing taxes, sold offices, and military failure in Bulgaria. He was deposed, blinded, and imprisoned by his own brother Alexius, and eventually died in prison after being briefly restored as a broken co-emperor alongside his son Alexius IV.",
           "score": 26,
-          "mention_count": 33,
+          "mention_count": 32,
           "first_mention_seconds": 5.76
         }
       },
@@ -17237,12 +17079,6 @@
             "segment_idx": 135,
             "start": 580.4,
             "end": 583.5,
-            "matched": "Isaac"
-          },
-          {
-            "segment_idx": 152,
-            "start": 640.8,
-            "end": 645.0,
             "matched": "Isaac"
           },
           {
@@ -17406,10 +17242,10 @@
             "text": "A fortune teller had told Andronicus that his cousin, Isaac Angelus, would be his successor,"
           },
           {
-            "segment_idx": 152,
-            "start": 640.8,
-            "end": 645.0,
-            "text": "with the tyrant dead and the tall 29-year-old Isaac II on the throne,"
+            "segment_idx": 184,
+            "start": 756.9,
+            "end": 760.9,
+            "text": "More parties followed, but the brief honeymoon of Isaac's reign was over."
           },
           {
             "segment_idx": 288,
@@ -25985,9 +25821,9 @@
         },
         "14": {
           "summary": "The imperial capital, described as glittering in unrivaled splendor and renowned as far away as Scandinavia where people called it simply 'the city.' Its imposing walls had never been taken by force — a fact Alexios exploited by bribing defenders to open the gates. The city was the stage for coronations, the arrival of crusading armies kept outside the walls, and the throne-room diplomacy through which Alexios managed the crusader leaders.",
-          "score": 22,
-          "mention_count": 15,
-          "first_mention_seconds": 206.6
+          "score": 0,
+          "mention_count": 0,
+          "first_mention_seconds": null
         },
         "15": {
           "summary": "The capital of the Byzantine Empire and the central stage of this episode. Brownworth describes it as the 'Queen of Cities,' a treasure trove of sumptuous palaces, lavish basilicas, and the art and learning of the ancient Greco-Roman world. It was sacked by the Fourth Crusade in 1204 in one of history's great catastrophes, from which it never truly recovered.",
@@ -26789,98 +26625,6 @@
             "matched": "Constantinople"
           }
         ],
-        "14": [
-          {
-            "segment_idx": 49,
-            "start": 206.6,
-            "end": 213.6,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 107,
-            "start": 432.32,
-            "end": 434.76,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 208,
-            "start": 827.78,
-            "end": 832.26,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 229,
-            "start": 911.34,
-            "end": 915.5,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 268,
-            "start": 1063.22,
-            "end": 1068.66,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 290,
-            "start": 1151.02,
-            "end": 1154.46,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 292,
-            "start": 1159.12,
-            "end": 1164.02,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 307,
-            "start": 1210.38,
-            "end": 1215.18,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 317,
-            "start": 1245.1,
-            "end": 1249.7,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 325,
-            "start": 1276.78,
-            "end": 1281.46,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 399,
-            "start": 1548.76,
-            "end": 1554.32,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 425,
-            "start": 1655.64,
-            "end": 1657.88,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 430,
-            "start": 1673.6,
-            "end": 1677.48,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 445,
-            "start": 1730.32,
-            "end": 1733.1,
-            "matched": "Constantinople"
-          },
-          {
-            "segment_idx": 491,
-            "start": 1902.66,
-            "end": 1907.54,
-            "matched": "Constantinople"
-          }
-        ],
         "15": [
           {
             "segment_idx": 24,
@@ -27331,26 +27075,6 @@
             "start": 1342.52,
             "end": 1348.62,
             "text": "in check by demonstrating his strength in yearly raids, and then left for Constantinople."
-          }
-        ],
-        "14": [
-          {
-            "segment_idx": 49,
-            "start": 206.6,
-            "end": 213.6,
-            "text": "the rioting citizens of Constantinople, abdicated in favor of a 78-year-old general named Nysophoros."
-          },
-          {
-            "segment_idx": 268,
-            "start": 1063.22,
-            "end": 1068.66,
-            "text": "The object was not the defense of Constantinople, but the capture of Jerusalem."
-          },
-          {
-            "segment_idx": 399,
-            "start": 1548.76,
-            "end": 1554.32,
-            "text": "All was now surely lost, and they advised the emperor to return home to Constantinople."
           }
         ],
         "15": [
@@ -30237,9 +29961,9 @@
         },
         "9": {
           "summary": "The central theater of war throughout the episode. Brownworth tracks Italy's agonizing back-and-forth — nearly recaptured by Totila under the incompetent five-general command, contested during Belisarius' second campaign, and finally restored to Byzantine control by Narses — only to foreshadow that weakened resources made holding it impossible.",
-          "score": 23,
-          "mention_count": 14,
-          "first_mention_seconds": 15.44
+          "score": 0,
+          "mention_count": 0,
+          "first_mention_seconds": null
         },
         "10": {
           "summary": "One of Justinian's reconquests, Italy fell victim to its own intrigues and was gradually lost to the Lombards over many years. Even during Heraclius' reign it was 'just managing to hold out against the Lombards,' and the war was described as long and bitter.",
@@ -30565,92 +30289,6 @@
             "matched": "Italy"
           }
         ],
-        "9": [
-          {
-            "segment_idx": 5,
-            "start": 15.44,
-            "end": 21.16,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 22,
-            "start": 78.86,
-            "end": 83.56,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 46,
-            "start": 180.86,
-            "end": 183.38,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 73,
-            "start": 277.86,
-            "end": 282.18,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 75,
-            "start": 284.5,
-            "end": 289.74,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 94,
-            "start": 364.22,
-            "end": 370.34,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 99,
-            "start": 385.94,
-            "end": 389.82,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 103,
-            "start": 399.62,
-            "end": 404.04,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 109,
-            "start": 424.38,
-            "end": 428.74,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 115,
-            "start": 449.1,
-            "end": 452.06,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 145,
-            "start": 559.18,
-            "end": 562.9,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 183,
-            "start": 702.92,
-            "end": 707.52,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 215,
-            "start": 827.08,
-            "end": 831.12,
-            "matched": "Italy"
-          },
-          {
-            "segment_idx": 363,
-            "start": 1420.06,
-            "end": 1421.74,
-            "matched": "Italy"
-          }
-        ],
         "10": [
           {
             "segment_idx": 11,
@@ -30797,26 +30435,6 @@
             "start": 1095.84,
             "end": 1102.24,
             "text": "keep half of his treasury and all of Italy north of the Po. Belisarius was horrified. Vittigis was"
-          }
-        ],
-        "9": [
-          {
-            "segment_idx": 5,
-            "start": 15.44,
-            "end": 21.16,
-            "text": "Belisarius' first Italian campaign, which seemingly restored Italy to the Empire."
-          },
-          {
-            "segment_idx": 75,
-            "start": 284.5,
-            "end": 289.74,
-            "text": "His enemies were in chaos, and no man or army in Italy was able to stop him."
-          },
-          {
-            "segment_idx": 94,
-            "start": 364.22,
-            "end": 370.34,
-            "text": "cautiously sent Belisarius to Italy with only 4,000 men and without supreme authority."
           }
         ],
         "10": [
@@ -32405,9 +32023,9 @@
         },
         "9": {
           "summary": "One of the last four Italian cities holding out against Totila, Naples was slowly starved into surrender while none of the five Byzantine generals lifted a finger to help. When it fell in May 543, Totila's merciful treatment of the garrison and citizens — providing ships, horses, and carefully rationed food — broadcast his image as champion of the people.",
-          "score": 14,
-          "mention_count": 5,
-          "first_mention_seconds": 183.38
+          "score": 0,
+          "mention_count": 0,
+          "first_mention_seconds": null
         }
       },
       "episodes": [
@@ -32454,38 +32072,6 @@
             "end": 647.28,
             "matched": "Naples"
           }
-        ],
-        "9": [
-          {
-            "segment_idx": 47,
-            "start": 183.38,
-            "end": 188.98,
-            "matched": "Naples"
-          },
-          {
-            "segment_idx": 48,
-            "start": 188.98,
-            "end": 191.42,
-            "matched": "Naples"
-          },
-          {
-            "segment_idx": 54,
-            "start": 211.42,
-            "end": 216.88,
-            "matched": "Naples"
-          },
-          {
-            "segment_idx": 67,
-            "start": 256.94,
-            "end": 261.3,
-            "matched": "Naples"
-          },
-          {
-            "segment_idx": 139,
-            "start": 534.26,
-            "end": 538.78,
-            "matched": "Naples"
-          }
         ]
       },
       "excerpts_by_episode": {
@@ -32502,29 +32088,9 @@
             "end": 647.28,
             "text": "He seemed paralyzed by fear and had not even sent a single soldier to aid Naples. The frustrated"
           }
-        ],
-        "9": [
-          {
-            "segment_idx": 47,
-            "start": 183.38,
-            "end": 188.98,
-            "text": "Only four major cities still defied him, Rome, Ravenna, Florence, and Naples, and it was"
-          },
-          {
-            "segment_idx": 54,
-            "start": 211.42,
-            "end": 216.88,
-            "text": "By May of 543, the starving citizens of Naples, despairing of any relief, surrendered, opening"
-          },
-          {
-            "segment_idx": 139,
-            "start": 534.26,
-            "end": 538.78,
-            "text": "A few days later, a group of the Roman garrison, perhaps veterans of the Naples campaign,"
-          }
         ]
       },
-      "max_score": 14
+      "max_score": 10
     },
     {
       "id": "nea-ekklesia",
@@ -33867,9 +33433,9 @@
         },
         "11": {
           "summary": "The last imperial stronghold in Italy, taken by the Lombard king in 751. Its fall prompted the pope to seek the protection of the Franks rather than the iconoclast emperor in Constantinople.",
-          "score": 7,
-          "mention_count": 1,
-          "first_mention_seconds": 1073.62
+          "score": 0,
+          "mention_count": 0,
+          "first_mention_seconds": null
         }
       },
       "episodes": [
@@ -34048,14 +33614,6 @@
             "end": 963.56,
             "matched": "Ravenna"
           }
-        ],
-        "11": [
-          {
-            "segment_idx": 253,
-            "start": 1073.62,
-            "end": 1079.2,
-            "matched": "Ravenna"
-          }
         ]
       },
       "excerpts_by_episode": {
@@ -34133,14 +33691,6 @@
             "start": 958.56,
             "end": 963.56,
             "text": "of Justinian and Theodora in Ravenna, where you can come face to face with the couple."
-          }
-        ],
-        "11": [
-          {
-            "segment_idx": 253,
-            "start": 1073.62,
-            "end": 1079.2,
-            "text": "Most of northern Italy had fallen, when in 751 Ravenna the last imperial stronghold was"
           }
         ]
       },
@@ -34440,9 +33990,9 @@
         },
         "14": {
           "summary": "The subject of a brutal three-day sack by Robert Giscard in which he set fire to the city and gutted most of its ancient buildings — carried out while Robert was returning to Italy to suppress the Alexios-backed Norman revolt and drive out the German Emperor.",
-          "score": 8,
-          "mention_count": 2,
-          "first_mention_seconds": 733.16
+          "score": 0,
+          "mention_count": 0,
+          "first_mention_seconds": null
         },
         "16": {
           "summary": "The destination of John VIII's desperate embassy seeking a crusade against the Turks. Brownworth notes John found Europe still asleep to the danger and ultimately promised to convert the empire to Catholicism — signing the decree of union there — in a failed bid for military aid.",
@@ -34988,20 +34538,6 @@
             "matched": "Rome"
           }
         ],
-        "14": [
-          {
-            "segment_idx": 184,
-            "start": 733.16,
-            "end": 738.26,
-            "matched": "Rome"
-          },
-          {
-            "segment_idx": 366,
-            "start": 1422.8,
-            "end": 1426.82,
-            "matched": "Rome"
-          }
-        ],
         "16": [
           {
             "segment_idx": 88,
@@ -35204,20 +34740,6 @@
             "start": 777.96,
             "end": 780.12,
             "text": "four in the east and one in Rome,"
-          }
-        ],
-        "14": [
-          {
-            "segment_idx": 184,
-            "start": 733.16,
-            "end": 738.26,
-            "text": "sack of Rome, during the course of which he managed to set fire to the city and gut most"
-          },
-          {
-            "segment_idx": 366,
-            "start": 1422.8,
-            "end": 1426.82,
-            "text": "The Sultan of Rome, assuming that the SNU army could be dealt with as easily as Peter's"
           }
         ],
         "16": [
@@ -38713,21 +38235,23 @@
       "id": "tetrarchy-established",
       "kind": "event",
       "name": "Establishment of the Tetrarchy",
-      "alt_names": [],
+      "alt_names": [
+        "Tetrarchy"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tetrarchy",
       "summary": "Established by Diocletian, the Tetrarchy was a system of four co-rulers comprising two senior Augusti and two junior Caesars, created when Diocletian and Maximian adopted their sons-in-law Galerius and Constantius Chlorus and elevated them to the rank of Caesar. The arrangement was intended to bring stability and orderly succession to the Roman Empire. Instead, it collapsed into civil war involving multiple competing factions, the turmoil of which shaped the early life of Constantine.",
       "summaries_by_episode": {
         "2": {
           "summary": "Diocletian and Maximian adopted their respective sons-in-law Galerius and Constantius Chlorus, raising them to the rank of Caesar to create a four-man ruling system. Brownworth notes the system is called the tetrarchy (four rulers), though he says the name is somewhat imprecise since it comprised two senior Augusti and two junior Caesars.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 8,
+          "mention_count": 1,
+          "first_mention_seconds": 914.3
         },
         "3": {
           "summary": "Diocletian's system of four co-rulers — two senior Augusti and two junior Caesars — intended to usher in an age of peace and prosperity. Instead, Brownworth says, it degenerated into full-blown civil war with up to four sides at once. Constantine was born into this confusing world.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 12,
+          "mention_count": 2,
+          "first_mention_seconds": 62.02
         }
       },
       "episodes": [
@@ -38767,7 +38291,55 @@
       "wikipedia_extract": "The Tetrarchy was the system instituted by Roman emperor Diocletian to govern the ancient Roman Empire by dividing it between two emperors, the augusti, and their junior colleagues and designated successors, the caesares. It was kept in place between AD 293 and 324.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Venice_%E2%80%93_The_Tetrarchs_03.jpg/330px-Venice_%E2%80%93_The_Tetrarchs_03.jpg",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Venice_%E2%80%93_The_Tetrarchs_03.jpg",
-      "max_score": 0
+      "mentions_by_episode": {
+        "2": [
+          {
+            "segment_idx": 241,
+            "start": 914.3,
+            "end": 919.6,
+            "matched": "tetrarchy"
+          }
+        ],
+        "3": [
+          {
+            "segment_idx": 13,
+            "start": 62.02,
+            "end": 68.3,
+            "matched": "Tetrarchy"
+          },
+          {
+            "segment_idx": 82,
+            "start": 356.28,
+            "end": 360.66,
+            "matched": "tetrarchy"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "2": [
+          {
+            "segment_idx": 241,
+            "start": 914.3,
+            "end": 919.6,
+            "text": "This system is sometimes called the tetrarchy, or four rulers, though that name is a bit"
+          }
+        ],
+        "3": [
+          {
+            "segment_idx": 13,
+            "start": 62.02,
+            "end": 68.3,
+            "text": "He was born into the confusing world of Diocletian's Tetrarchy, a single empire with four legitimate"
+          },
+          {
+            "segment_idx": 82,
+            "start": 356.28,
+            "end": 360.66,
+            "text": "His solution, not surprisingly, was a new official tetrarchy."
+          }
+        ]
+      },
+      "max_score": 12
     },
     {
       "id": "great-persecution-of-christians",
@@ -38875,15 +38447,17 @@
       "id": "diocletian-retirement",
       "kind": "event",
       "name": "Abdication of Diocletian and Maximian",
-      "alt_names": [],
+      "alt_names": [
+        "Diocletian and Maximian"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Diocletian#Abdication_and_retirement",
       "summary": "On May 1st, 305, both Diocletian and a very reluctant Maximian simultaneously abdicated, elevating their Caesars to Augusti and establishing a new cycle of succession. Brownworth calls this Diocletian's most surprising decision and his most enduring legacy — the voluntary retirement of an emperor was virtually unprecedented.",
       "summaries_by_episode": {
         "2": {
           "summary": "On May 1st, 305, both Diocletian and a very reluctant Maximian simultaneously abdicated, elevating their Caesars to Augusti and establishing a new cycle of succession. Brownworth calls this Diocletian's most surprising decision and his most enduring legacy — the voluntary retirement of an emperor was virtually unprecedented.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 7,
+          "mention_count": 1,
+          "first_mention_seconds": 902.0
         }
       },
       "episodes": [
@@ -38918,13 +38492,35 @@
       "wikipedia_extract": "Diocletian, nicknamed Jovius, was Roman emperor from 284 until his abdication in 305. He was born Diocles to a family of low status in the Roman province of Dalmatia. As with other Illyrian soldiers of the period, Diocles rose through the ranks of the military early in his career, serving under Aurelian and Probus, and eventually becoming a cavalry commander for the army of Emperor Carus. After the deaths of Carus and his son Numerian on a campaign in Persia, Diocles was proclaimed emperor by the troops, taking the name \"Diocletianus\". The title was also claimed by Carus's surviving son, Carinus, but Diocletian defeated him in the Battle of the Margus.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Istanbul_-_Museo_archeol._-_Diocleziano_%28284-305_d.C.%29_-_Foto_G._Dall%27Orto_28-5-2006_%28cropped%29.jpg/330px-Istanbul_-_Museo_archeol._-_Diocleziano_%28284-305_d.C.%29_-_Foto_G._Dall%27Orto_28-5-2006_%28cropped%29.jpg",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Istanbul_-_Museo_archeol._-_Diocleziano_%28284-305_d.C.%29_-_Foto_G._Dall%27Orto_28-5-2006_%28cropped%29.jpg",
-      "max_score": 0
+      "mentions_by_episode": {
+        "2": [
+          {
+            "segment_idx": 238,
+            "start": 902.0,
+            "end": 906.68,
+            "matched": "Diocletian and Maximian"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "2": [
+          {
+            "segment_idx": 238,
+            "start": 902.0,
+            "end": 906.68,
+            "text": "To cement this new permanent split of the empire, Diocletian and Maximian adopted their"
+          }
+        ]
+      },
+      "max_score": 7
     },
     {
       "id": "abdication-of-diocletian-and-maximian",
       "kind": "event",
       "name": "Abdication of Diocletian and Maximian",
-      "alt_names": [],
+      "alt_names": [
+        "Diocletian and Maximian"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Tetrarchy#Abdication_of_Diocletian_and_Maximian",
       "summary": "Both senior Augusti abdicated, appointing Galerius and Constantius as the new senior emperors and Maximinus Daia and Severus as the new Caesars. The fatal flaw, Brownworth notes, was that the plan ignored the ambitious sons of Constantius and Maximian who were passed over.",
       "summaries_by_episode": {
@@ -39782,7 +39378,9 @@
       "id": "constantine-triumphal-arch",
       "kind": "event",
       "name": "Dedication of Constantine's Triumphal Arch",
-      "alt_names": [],
+      "alt_names": [
+        "Constantine's Triumphal Arch"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Arch_of_Constantine",
       "summary": "Constantine's triumphal arch, still standing just outside the Colosseum, made no mention of Christ after his victory at the Milvian Bridge, saying only that he was 'instinct with divinity.' Brownworth uses this as evidence of Constantine's careful political navigation between paganism and Christianity in the immediate aftermath of his conversion.",
       "summaries_by_episode": {
@@ -40034,7 +39632,9 @@
       "id": "execution-of-crispus",
       "kind": "event",
       "name": "Execution of Crispus and Murder of Fausta",
-      "alt_names": [],
+      "alt_names": [
+        "Crispus and Murder of Fausta"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Crispus",
       "summary": "In February 326 at Sirmium, Constantine arrested and executed his eldest son Crispus and a half-brother for reasons never made entirely clear, then also had his wife Fausta killed in her bath. Rumors of an affair or a plot against Constantine's life circulated but were never resolved.",
       "summaries_by_episode": {
@@ -40136,15 +39736,17 @@
       "id": "discovery-of-true-cross",
       "kind": "event",
       "name": "Discovery of the True Cross",
-      "alt_names": [],
+      "alt_names": [
+        "True Cross"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/True_Cross",
       "summary": "Helena's discovery of the True Cross in Jerusalem during her pilgrimage. A piece of it was brought back and placed atop the Milion (the first milestone) of Constantinople, and another piece was placed inside the orb held by Constantine's colossal statue.",
       "summaries_by_episode": {
         "4": {
           "summary": "Helena's discovery of the True Cross in Jerusalem during her pilgrimage. A piece of it was brought back and placed atop the Milion (the first milestone) of Constantinople, and another piece was placed inside the orb held by Constantine's colossal statue.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 13,
+          "mention_count": 3,
+          "first_mention_seconds": 468.58
         }
       },
       "episodes": [
@@ -40175,7 +39777,51 @@
       "wikipedia_extract": "In Christian tradition, the True Cross is the original wooden cross on which Jesus of Nazareth was crucified.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Giotto_Crucifixion.jpg/330px-Giotto_Crucifixion.jpg",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Giotto_Crucifixion.jpg",
-      "max_score": 0
+      "mentions_by_episode": {
+        "4": [
+          {
+            "segment_idx": 117,
+            "start": 468.58,
+            "end": 473.7,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 137,
+            "start": 551.44,
+            "end": 556.3,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 168,
+            "start": 696.4,
+            "end": 698.32,
+            "matched": "True Cross"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "4": [
+          {
+            "segment_idx": 117,
+            "start": 468.58,
+            "end": 473.7,
+            "text": "was placed the most venerable Christian relic, the True Cross, recently brought back from"
+          },
+          {
+            "segment_idx": 137,
+            "start": 551.44,
+            "end": 556.3,
+            "text": "and an orb, in which had been placed another piece of the True Cross."
+          },
+          {
+            "segment_idx": 168,
+            "start": 696.4,
+            "end": 698.32,
+            "text": "and finding the True Cross."
+          }
+        ]
+      },
+      "max_score": 13
     },
     {
       "id": "dedication-of-constantinople",
@@ -40851,7 +40497,9 @@
       "id": "assassination-of-aetius",
       "kind": "event",
       "name": "Assassination of Aetius by Valentinian III",
-      "alt_names": [],
+      "alt_names": [
+        "Aetius by Valentinian III"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aetius",
       "summary": "The Western emperor Valentinian III killed the general Aetius with his own hands, wanting to rule in his own right. The act destabilized the West and cost Valentinian his life, as disgruntled officers of Aetius assassinated him several months later.",
       "summaries_by_episode": {
@@ -40970,7 +40618,9 @@
       "id": "coronation-of-leo-i",
       "kind": "event",
       "name": "Coronation of Leo I with Patriarchal Ceremony",
-      "alt_names": [],
+      "alt_names": [
+        "Leo I with Patriarchal Ceremony"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_I_(emperor)",
       "summary": "For the first time in imperial history, Leo I's coronation included a second ceremony in the Church of the Holy Wisdom in which the patriarch placed the crown on the emperor's head during a high mass. This tradition of the patriarch crowning the emperor continued until the very end of the Byzantine Empire.",
       "summaries_by_episode": {
@@ -41011,7 +40661,9 @@
       "id": "vandal-campaign-defeat",
       "kind": "event",
       "name": "Defeat of the Byzantine Expedition Against the Vandals",
-      "alt_names": [],
+      "alt_names": [
+        "Byzantine Expedition Against the Vandals"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Cape_Bon_(468)",
       "summary": "Leo I sent over a thousand ships and a hundred thousand men to destroy the Vandal Kingdom, but placed the incompetent Basiliscus in command at Aspar's persuasion. Within five days Basiliscus had most of his men captured or killed and most of his fleet burnt. He fled back to Constantinople and saved himself only by taking refuge in a church.",
       "summaries_by_episode": {
@@ -41056,7 +40708,9 @@
       "id": "assassination-of-aspar",
       "kind": "event",
       "name": "Assassination of Aspar and His Sons",
-      "alt_names": [],
+      "alt_names": [
+        "Aspar and His Sons"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Aspar",
       "summary": "After Aspar attempted to assassinate Zeno and tried to infiltrate his troops, Leo I summoned Aspar and his sons to the palace on the pretext of a morning walk and had them all killed, finally freeing himself from two decades of Germanic domination.",
       "summaries_by_episode": {
@@ -41256,7 +40910,9 @@
       "id": "deposition-last-western-emperor",
       "kind": "event",
       "name": "Deposition of the Last Western Emperor",
-      "alt_names": [],
+      "alt_names": [
+        "Last Western Emperor"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
       "summary": "Brownworth mentions 476 as the year the last western emperor was 'sent into a comfortable retirement,' describing it as the formal end-point of the western empire and the point from which Justinian's reconquest ambitions could be dated.",
       "summaries_by_episode": {
@@ -41293,7 +40949,9 @@
       "id": "fall-of-western-roman-empire",
       "kind": "event",
       "name": "Fall of the Western Roman Empire",
-      "alt_names": [],
+      "alt_names": [
+        "Western Roman Empire"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
       "summary": "Brownworth notes that the Western Empire fell in 476, an event most people were taught marks 'the fall of Rome.' He argues this has led to a false perception that the Middle East jumped straight from a classical past to a Muslim present, ignoring the millennium of Byzantine history that continued in the East.",
       "summaries_by_episode": {
@@ -41326,7 +40984,9 @@
       "id": "fall-of-western-empire",
       "kind": "event",
       "name": "Fall of the Western Roman Empire",
-      "alt_names": [],
+      "alt_names": [
+        "Western Roman Empire"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
       "summary": "In September 476 Odoacer entered Ravenna, deposed the young Romulus Augustulus, and sent him into comfortable exile in Campania — marking the end of the Roman Empire in the West. Odoacer chose to give lip service to Zeno's authority rather than install a new puppet emperor, sending the western imperial insignia to Constantinople. Brownworth notes that contemporaries likely did not realize the magnitude of the watershed moment.",
       "summaries_by_episode": {
@@ -41387,7 +41047,9 @@
       "id": "fall-of-western-roman-empire-476",
       "kind": "event",
       "name": "Fall of the Western Roman Empire",
-      "alt_names": [],
+      "alt_names": [
+        "Western Roman Empire"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
       "summary": "Brownworth laments that Western history marks 476 and Romulus Augustulus as the end of Rome, completely ignoring the Byzantine continuation. He argues this is a fundamental distortion: the Roman Empire did not fall in 476, and the last Roman Emperor was not a sad little boy but the heroic Constantine XI in 1453.",
       "summaries_by_episode": {
@@ -41465,7 +41127,9 @@
       "id": "zeno-restoration",
       "kind": "event",
       "name": "Restoration of Zeno as Emperor",
-      "alt_names": [],
+      "alt_names": [
+        "Zeno as Emperor"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Zeno_(emperor)",
       "summary": "Zeno marched back from Isauria with Illus and found that the only army Basiliscus sent to stop them defected after brief negotiation. He entered Constantinople unopposed and Basiliscus fled to a church, surrendering only when Zeno promised not to shed his blood. Zeno kept his word, exiling Basiliscus to Cappadocia and letting the winter kill him.",
       "summaries_by_episode": {
@@ -41696,7 +41360,9 @@
       "id": "murder-of-odoacer",
       "kind": "event",
       "name": "Murder of Odoacer by Theodoric",
-      "alt_names": [],
+      "alt_names": [
+        "Odoacer by Theodoric"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Odoacer",
       "summary": "Having blockaded Odoacer in Ravenna and proposed a joint rule, Theodoric invited Odoacer to a great banquet and personally struck him with his sword as he was taking his seat, cutting him nearly in half from collarbone to thigh. Theodoric reportedly laughed: 'The wretch cannot have had a bone in his body.'",
       "summaries_by_episode": {
@@ -41790,7 +41456,9 @@
       "id": "justinian-marries-theodora",
       "kind": "event",
       "name": "Marriage of Justinian and Theodora",
-      "alt_names": [],
+      "alt_names": [
+        "Justinian and Theodora"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Theodora",
       "summary": "After years of being blocked by the empress Euphemia, Justinian married Theodora in a magnificent ceremony in 523, the same year Euphemia died. He had to pressure Justin I to repeal the law forbidding patricians from marrying below their station. Brownworth describes the ceremony as hinting of great things to come.",
       "summaries_by_episode": {
@@ -41878,7 +41546,9 @@
       "id": "codex-justinianus-published",
       "kind": "event",
       "name": "Publication of the Codex Justinianus",
-      "alt_names": [],
+      "alt_names": [
+        "Codex Justinianus"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Codex_Justinianus",
       "summary": "In just 14 months, Tribonian produced the new Codex — a complete recodification of Roman law that removed centuries of repetitions and contradictions, became the supreme authority for every court in the empire, and was made compatible with Christianity. Brownworth calls it the basis of most European legal systems today.",
       "summaries_by_episode": {
@@ -42393,15 +42063,17 @@
       "id": "digest-and-institutes-published",
       "kind": "event",
       "name": "Publication of the Digest and the Institutes",
-      "alt_names": [],
+      "alt_names": [
+        "Digest and the Institutes"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Digest_(Roman_law)",
       "summary": "In the five years following the Codex, Tribonian published two further landmark works — the Digest and the Institutes — which for the first time incorporated the principal writings of the ancient Roman jurists into the legal system. Together he condensed 2,000 treatises and over 3 million verses into a mere 50 books, a stunning achievement that came at the cost of tolerating his notorious corruption.",
       "summaries_by_episode": {
         "7": {
           "summary": "In the five years following the Codex, Tribonian published two further landmark works — the Digest and the Institutes — which for the first time incorporated the principal writings of the ancient Roman jurists into the legal system. Together he condensed 2,000 treatises and over 3 million verses into a mere 50 books, a stunning achievement that came at the cost of tolerating his notorious corruption.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 8,
+          "mention_count": 1,
+          "first_mention_seconds": 637.42
         }
       },
       "episodes": [
@@ -42428,7 +42100,27 @@
       "wikipedia_extract": "The Digest, also known as the Pandects, was a compendium or digest of juristic writings on Roman law compiled by order of the Byzantine emperor Justinian I in 530–533 AD. It comprises 50 books.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Florence%2C_Biblioteca_Medicea_Laurenziana_Ms_Littera_Florentina_%28Codex_Florentinus%29_fol._112v-113r_Pandects_excerpt.jpg/330px-Florence%2C_Biblioteca_Medicea_Laurenziana_Ms_Littera_Florentina_%28Codex_Florentinus%29_fol._112v-113r_Pandects_excerpt.jpg",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Florence%2C_Biblioteca_Medicea_Laurenziana_Ms_Littera_Florentina_%28Codex_Florentinus%29_fol._112v-113r_Pandects_excerpt.jpg/3840px-Florence%2C_Biblioteca_Medicea_Laurenziana_Ms_Littera_Florentina_%28Codex_Florentinus%29_fol._112v-113r_Pandects_excerpt.jpg",
-      "max_score": 0
+      "mentions_by_episode": {
+        "7": [
+          {
+            "segment_idx": 154,
+            "start": 637.42,
+            "end": 642.4,
+            "matched": "Digest and The Institutes"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "7": [
+          {
+            "segment_idx": 154,
+            "start": 637.42,
+            "end": 642.4,
+            "text": "In the next five years, he published two works, The Digest and The Institutes, which for the"
+          }
+        ]
+      },
+      "max_score": 8
     },
     {
       "id": "reconquest-italy",
@@ -42519,7 +42211,9 @@
       "id": "reconquest-of-italy",
       "kind": "event",
       "name": "Byzantine Reconquest of Italy (Gothic War)",
-      "alt_names": [],
+      "alt_names": [
+        "Italy (Gothic War)"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Gothic_War_(535%E2%80%93554)",
       "summary": "The overarching military campaign that spans the entire episode. Brownworth traces the war's trajectory from near-victory under Belisarius, through collapse under the incompetent five-general command and Totila's resurgence, to final success under Narses — framing it as a victory that came at too high a cost in men and treasure to be sustainable.",
       "summaries_by_episode": {
@@ -42863,7 +42557,9 @@
       "id": "fall-of-naples-543",
       "kind": "event",
       "name": "Fall of Naples to Totila",
-      "alt_names": [],
+      "alt_names": [
+        "Naples to Totila"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Totila#Siege_of_Naples",
       "summary": "After a prolonged siege in which no Byzantine general helped the city, Naples surrendered to Totila in May 543. Totila's merciful treatment — letting the garrison leave with ships and horses, and carefully nursing the starving citizens back to health — was a deliberate propaganda victory that cemented his image as liberator.",
       "summaries_by_episode": {
@@ -42949,7 +42645,9 @@
       "id": "battle-of-busta-gallorum",
       "kind": "event",
       "name": "Battle of Busta Gallorum (Narses defeats Totila)",
-      "alt_names": [],
+      "alt_names": [
+        "Busta Gallorum (Narses defeats Totila)"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Busta_Gallorum",
       "summary": "The decisive encounter of the Gothic War. Totila attacked first with cavalry but was repulsed by Byzantine archers; the fleeing cavalry trampled their own troops. Totila himself was killed in the chaos along with 6,000 of his soldiers, ending effective Gothic resistance. The Goths elected another king who held out only a few more months before being killed in October.",
       "summaries_by_episode": {
@@ -43715,15 +43413,17 @@
       "id": "true-cross-restored",
       "kind": "event",
       "name": "True Cross Returned to Jerusalem",
-      "alt_names": [],
+      "alt_names": [
+        "True Cross"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/True_Cross#Recovery_by_Heraclius",
       "summary": "As part of the Persian peace settlement, the True Cross and instruments of the Passion were surrendered along with all conquered territory and prisoners. Heraclius waited for the True Cross to be brought from Persia before entering Constantinople, following it through the Golden Gate in a procession featuring the first elephants ever seen in the city, then raising it above the high altar at the Hagia Sophia. He subsequently installed it in Jerusalem.",
       "summaries_by_episode": {
         "10": {
           "summary": "As part of the Persian peace settlement, the True Cross and instruments of the Passion were surrendered along with all conquered territory and prisoners. Heraclius waited for the True Cross to be brought from Persia before entering Constantinople, following it through the Golden Gate in a procession featuring the first elephants ever seen in the city, then raising it above the high altar at the Hagia Sophia. He subsequently installed it in Jerusalem.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 19,
+          "mention_count": 9,
+          "first_mention_seconds": 379.36
         }
       },
       "episodes": [
@@ -43754,7 +43454,87 @@
       "wikipedia_extract": "In Christian tradition, the True Cross is the original wooden cross on which Jesus of Nazareth was crucified.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Giotto_Crucifixion.jpg/330px-Giotto_Crucifixion.jpg",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Giotto_Crucifixion.jpg",
-      "max_score": 0
+      "mentions_by_episode": {
+        "10": [
+          {
+            "segment_idx": 102,
+            "start": 379.36,
+            "end": 384.12,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 167,
+            "start": 629.58,
+            "end": 633.38,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 171,
+            "start": 644.38,
+            "end": 649.9,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 293,
+            "start": 1117.44,
+            "end": 1122.2,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 301,
+            "start": 1146.5,
+            "end": 1150.72,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 306,
+            "start": 1167.66,
+            "end": 1172.74,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 327,
+            "start": 1251.6,
+            "end": 1256.32,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 353,
+            "start": 1348.44,
+            "end": 1354.58,
+            "matched": "True Cross"
+          },
+          {
+            "segment_idx": 379,
+            "start": 1449.32,
+            "end": 1452.2,
+            "matched": "True Cross"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "10": [
+          {
+            "segment_idx": 171,
+            "start": 644.38,
+            "end": 649.9,
+            "text": "Jerusalem had been avenged, but the True Cross had not been recovered."
+          },
+          {
+            "segment_idx": 306,
+            "start": 1167.66,
+            "end": 1172.74,
+            "text": "The True Cross was enshrined, and the Lord's enemies lay scattered before it."
+          },
+          {
+            "segment_idx": 353,
+            "start": 1348.44,
+            "end": 1354.58,
+            "text": "to slip into Jerusalem to remove the True Cross, and started on the long road to Constantinople."
+          }
+        ]
+      },
+      "max_score": 19
     },
     {
       "id": "rise-of-islam",
@@ -44235,7 +44015,9 @@
       "id": "battle-of-tours",
       "kind": "event",
       "name": "Battle of Tours",
-      "alt_names": [],
+      "alt_names": [
+        "Tours"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
       "summary": "The battle at which Islamic expansion into Europe was finally halted, mentioned by Brownworth as the ultimate consequence of Constantinople's walls: by blocking the direct route, the walls forced Islamic armies through North Africa and Spain, buying time for Europe to emerge from its dark ages before the final confrontation.",
       "summaries_by_episode": {
@@ -44296,7 +44078,9 @@
       "id": "fall-of-ravenna-751",
       "kind": "event",
       "name": "Fall of Ravenna to the Lombards",
-      "alt_names": [],
+      "alt_names": [
+        "Ravenna to the Lombards"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Lombards",
       "summary": "The Lombard king captured Ravenna in 751, taking the last imperial stronghold in Italy. This forced the pope — who had no desire for help from the iconoclast emperor in Constantinople — to cross the Alps and seek the protection of the Frankish king Pepin instead.",
       "summaries_by_episode": {
@@ -44464,7 +44248,9 @@
       "id": "deposition-of-irene",
       "kind": "event",
       "name": "Deposition of Empress Irene",
-      "alt_names": [],
+      "alt_names": [
+        "Empress Irene"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Irene_of_Athens",
       "summary": "The citizens of Constantinople, outraged that Irene appeared to be seriously considering Charlemagne's marriage proposal — which would have made a 'blasphemous, boorish Frank' their emperor — took her prisoner in her own palace and declared her deposed at the Hippodrome. She was exiled to Lesbos, where she died less than a year later.",
       "summaries_by_episode": {
@@ -44546,7 +44332,9 @@
       "id": "restoration-of-icons-843",
       "kind": "event",
       "name": "Restoration of Icons under Theodora",
-      "alt_names": [],
+      "alt_names": [
+        "Icons under Theodora"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Triumph_of_Orthodoxy",
       "summary": "Iconoclasm smoldered on for another forty years after Irene before finally expiring during the reign of Michael III, when his mother Theodora — like Irene a regent — proclaimed the restoration of icons. Brownworth notes this as a case of history being written by the winners, since Constantine V the fierce iconoclast is remembered as 'Copronymus' while Irene the iconodule is venerated as a saint.",
       "summaries_by_episode": {
@@ -45242,7 +45030,9 @@
       "id": "restoration-of-photius",
       "kind": "event",
       "name": "Restoration of Photius as Patriarch",
-      "alt_names": [],
+      "alt_names": [
+        "Photius as Patriarch"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Photios_I_of_Constantinople#Second_patriarchate",
       "summary": "Realizing that Photius had been sacrificed in vain — the pope furious over Bulgaria negating any expected benefit — Basil recalled him to the capital, entrusted the education of his children to him, and when the patriarchal office became vacant, had him elected again. Photius's influence was immediately felt in increased missionary ties to the Balkan Slavic tribes.",
       "summaries_by_episode": {
@@ -45283,7 +45073,9 @@
       "id": "death-of-constantine-son-of-basil",
       "kind": "event",
       "name": "Death of Constantine, Son of Basil I",
-      "alt_names": [],
+      "alt_names": [
+        "Constantine, Son of Basil I"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Constantine_(son_of_Basil_I)",
       "summary": "The unexpected death of Basil's beloved eldest son Constantine — the only person Basil ever truly loved — threw the emperor into a lasting depression that eventually verged on insanity, and opened the succession question that Photius would exploit to try to block Leo.",
       "summaries_by_episode": {
@@ -45747,15 +45539,17 @@
       "id": "varangian-guard-founded",
       "kind": "event",
       "name": "Founding of the Varangian Guard",
-      "alt_names": [],
+      "alt_names": [
+        "Varangian Guard"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Varangian_Guard",
       "summary": "Impressed by the Scandinavian Varangians in the defeat of Phokas, Basil II organized them into his personal bodyguard — the famous Varangian Guard. Brownworth notes they faithfully served the empire for 300 years, becoming legendary for their fierce battle axes and their loyalty to the throne (if not always its occupant), and that the most famous member was Harald Hardrada.",
       "summaries_by_episode": {
         "13": {
           "summary": "Impressed by the Scandinavian Varangians in the defeat of Phokas, Basil II organized them into his personal bodyguard — the famous Varangian Guard. Brownworth notes they faithfully served the empire for 300 years, becoming legendary for their fierce battle axes and their loyalty to the throne (if not always its occupant), and that the most famous member was Harald Hardrada.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 5,
+          "mention_count": 1,
+          "first_mention_seconds": 1100.7
         }
       },
       "episodes": [
@@ -45778,7 +45572,27 @@
       "wikipedia_extract": "The Varangian Guard was an elite unit of the Byzantine army from the 10th to the 14th century who served as personal bodyguards to the Byzantine emperors. The Varangian Guard was known for being primarily composed of recruits from Northern Europe, including mainly Norsemen from Scandinavia but also Anglo-Saxons from England. The recruitment of distant fighters from outside Byzantium to serve as the emperor's personal guard was pursued as a deliberate policy, as they lacked local political loyalties and could be counted upon to suppress revolts by disloyal Byzantine factions.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/The_body_of_Leo_V_is_dragged_to_the_Hippodrome_through_the_Skyla_Gate.jpg/330px-The_body_of_Leo_V_is_dragged_to_the_Hippodrome_through_the_Skyla_Gate.jpg",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/The_body_of_Leo_V_is_dragged_to_the_Hippodrome_through_the_Skyla_Gate.jpg",
-      "max_score": 0
+      "mentions_by_episode": {
+        "13": [
+          {
+            "segment_idx": 298,
+            "start": 1100.7,
+            "end": 1104.62,
+            "matched": "Varangian Guard"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "13": [
+          {
+            "segment_idx": 298,
+            "start": 1100.7,
+            "end": 1104.62,
+            "text": "and he organized them into what would become the famous Varangian Guard."
+          }
+        ]
+      },
+      "max_score": 5
     },
     {
       "id": "fatimid-siege-of-antioch",
@@ -45952,7 +45766,9 @@
       "id": "battle-of-kleidion",
       "kind": "event",
       "name": "Battle of Kleidion (Symbolongus) and Mass Blinding",
-      "alt_names": [],
+      "alt_names": [
+        "Kleidion (Symbolongus) and Mass Blinding"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kleidion",
       "summary": "The decisive engagement of the Bulgarian war, fought in a narrow ravine. Like Thermopylae, Basil found a path around Samuel's blocking force and attacked from both sides, routing the Bulgarians and capturing over 14,000 prisoners. In his most notorious act, Basil ordered all 14,000 blinded, leaving one eye to every hundredth man so they could lead their companions back to Samuel — who collapsed in shock and died two days later when he saw the pathetic procession.",
       "summaries_by_episode": {
@@ -46209,15 +46025,17 @@
       "id": "battle-of-stamford-bridge",
       "kind": "event",
       "name": "Battle of Stamford Bridge",
-      "alt_names": [],
+      "alt_names": [
+        "Stamford Bridge"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge",
       "summary": "Referenced as the battle in England where Harald Hardrada — the most famous Varangian Guard member — was killed at the hands of Harold the last Saxon king, illustrating the far-reaching footprint of Byzantine imperial institutions in European history.",
       "summaries_by_episode": {
         "13": {
           "summary": "Referenced as the battle in England where Harald Hardrada — the most famous Varangian Guard member — was killed at the hands of Harold the last Saxon king, illustrating the far-reaching footprint of Byzantine imperial institutions in European history.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 5,
+          "mention_count": 1,
+          "first_mention_seconds": 1129.78
         }
       },
       "episodes": [
@@ -46244,7 +46062,27 @@
       "wikipedia_extract": "The Battle of Stamford Bridge took place at the village of Stamford Bridge, East Riding of Yorkshire, in England, on 25 September 1066, between an English army under King Harold Godwinson and an invading Norwegian force led by King Harald Hardrada and the English king's brother Tostig Godwinson. After a bloody battle, both Hardrada and Tostig, along with most of the Norwegians, were killed. Although Harold Godwinson repelled the Norwegian invaders, his army was defeated by the Normans at Hastings less than three weeks later.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Battle_of_Stamford_Bridge%2C_full.png/330px-Battle_of_Stamford_Bridge%2C_full.png",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Battle_of_Stamford_Bridge%2C_full.png",
-      "max_score": 0
+      "mentions_by_episode": {
+        "13": [
+          {
+            "segment_idx": 305,
+            "start": 1129.78,
+            "end": 1133.32,
+            "matched": "Stamford Bridge"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "13": [
+          {
+            "segment_idx": 305,
+            "start": 1129.78,
+            "end": 1133.32,
+            "text": "of Stamford Bridge in 1066."
+          }
+        ]
+      },
+      "max_score": 5
     },
     {
       "id": "norman-conquest-of-england",
@@ -46551,7 +46389,9 @@
       "id": "sack-of-rome-1084",
       "kind": "event",
       "name": "Sack of Rome by Robert Guiscard",
-      "alt_names": [],
+      "alt_names": [
+        "Rome by Robert Guiscard"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(1084)",
       "summary": "While returning to Greece after suppressing the Alexios-backed revolt in Italy and driving the German Emperor out, Robert Guiscard carried out a brutal three-day sack of Rome in which he set fire to the city and gutted most of its ancient buildings. Brownworth presents this as evidence of the destructive power Alexios had to contend with.",
       "summaries_by_episode": {
@@ -47106,15 +46946,17 @@
       "id": "crusader-states-established",
       "kind": "event",
       "name": "Establishment of the Crusader States",
-      "alt_names": [],
+      "alt_names": [
+        "Crusader States"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Crusader_states",
       "summary": "Several crusader nobles split off and, despite oaths to Alexios, carved out kingdoms from Byzantine territory. Bohemond took Antioch, and after the 'most unchristian bloodbath' capture of Jerusalem just before the turn of the century, a crusader state was established in Palestine. Alexios could live with a crusader Palestine as a useful buffer state, but crusader control of Antioch — the most important city in Asia Minor — was another matter entirely.",
       "summaries_by_episode": {
         "14": {
           "summary": "Several crusader nobles split off and, despite oaths to Alexios, carved out kingdoms from Byzantine territory. Bohemond took Antioch, and after the 'most unchristian bloodbath' capture of Jerusalem just before the turn of the century, a crusader state was established in Palestine. Alexios could live with a crusader Palestine as a useful buffer state, but crusader control of Antioch — the most important city in Asia Minor — was another matter entirely.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 6,
+          "mention_count": 1,
+          "first_mention_seconds": 1581.6
         }
       },
       "episodes": [
@@ -47153,7 +46995,27 @@
       "wikipedia_extract": "The Crusader states, or Outremer, were four Catholic polities established in the Levant region and southeastern Anatolia from 1098 to 1291. Following the principles of feudalism, the foundation for these polities was laid by the First Crusade, which was proclaimed by the Latin Church in 1095 to reclaim the Holy Land after it was lost to the 7th-century Muslim conquest. From north to south, they were: the County of Edessa (1098–1150), the Principality of Antioch (1098–1268), the County of Tripoli (1102–1289), and the Kingdom of Jerusalem (1099–1291).",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CouncilofClermont.jpg/330px-CouncilofClermont.jpg",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/CouncilofClermont.jpg",
-      "max_score": 0
+      "mentions_by_episode": {
+        "14": [
+          {
+            "segment_idx": 407,
+            "start": 1581.6,
+            "end": 1585.84,
+            "matched": "crusader states"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "14": [
+          {
+            "segment_idx": 407,
+            "start": 1581.6,
+            "end": 1585.84,
+            "text": "before, became the heart of one of the first crusader states."
+          }
+        ]
+      },
+      "max_score": 6
     },
     {
       "id": "capture-of-jerusalem-1099",
@@ -47393,7 +47255,9 @@
       "id": "overthrow-of-andronicus",
       "kind": "event",
       "name": "Overthrow of Andronicus I",
-      "alt_names": [],
+      "alt_names": [
+        "Andronicus I"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Andronikos_I_Komnenos#Downfall_and_death",
       "summary": "After a fortune teller warned Andronicus that his cousin Isaac Angelos would succeed him, the emperor ordered Isaac's arrest and execution. Isaac killed one of the pursuing officers, fled to the Hagia Sophia, and rallied the surviving nobility and populace. Crowned by torchlight, Isaac's supporters then stormed the palace; Andronicus fled by boat but was captured, mutilated, and delivered to the mob, who tortured and killed him.",
       "summaries_by_episode": {
@@ -47850,15 +47714,17 @@
       "id": "restoration-of-isaac-ii",
       "kind": "event",
       "name": "Restoration of Isaac II",
-      "alt_names": [],
+      "alt_names": [
+        "Isaac II"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Isaac_II_Angelos#Second_reign",
       "summary": "When the Fourth Crusade fleet arrived at Constantinople and Alexius III fled, the city's ministers decided to restore the legitimate emperor to try to convince the crusaders to leave. The blind, aging Isaac was found in the dungeons and hastily re-crowned, though eight years of imprisonment had broken him mentally and physically. Alexius IV was reluctantly crowned alongside him as co-emperor.",
       "summaries_by_episode": {
         "15": {
           "summary": "When the Fourth Crusade fleet arrived at Constantinople and Alexius III fled, the city's ministers decided to restore the legitimate emperor to try to convince the crusaders to leave. The blind, aging Isaac was found in the dungeons and hastily re-crowned, though eight years of imprisonment had broken him mentally and physically. Alexius IV was reluctantly crowned alongside him as co-emperor.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 5,
+          "mention_count": 1,
+          "first_mention_seconds": 640.8
         }
       },
       "episodes": [
@@ -47897,13 +47763,35 @@
       "wikipedia_extract": "Isaac II Angelos or Angelus was Byzantine Emperor from 1185 to 1195, and co-Emperor with his son Alexios IV Angelos from 1203 to 1204. In an 1185 revolt against the Emperor Andronikos Komnenos, Isaac seized power and rose to the Byzantine throne, establishing the Angelos family as the new imperial dynasty.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/144_-_Isaac_II_Angelos_%28Mutinensis_-_color%29.png/330px-144_-_Isaac_II_Angelos_%28Mutinensis_-_color%29.png",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/144_-_Isaac_II_Angelos_%28Mutinensis_-_color%29.png",
-      "max_score": 0
+      "mentions_by_episode": {
+        "15": [
+          {
+            "segment_idx": 152,
+            "start": 640.8,
+            "end": 645.0,
+            "matched": "Isaac II"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "15": [
+          {
+            "segment_idx": 152,
+            "start": 640.8,
+            "end": 645.0,
+            "text": "with the tyrant dead and the tall 29-year-old Isaac II on the throne,"
+          }
+        ]
+      },
+      "max_score": 5
     },
     {
       "id": "death-of-isaac-ii",
       "kind": "event",
       "name": "Death of Isaac II and Alexius IV",
-      "alt_names": [],
+      "alt_names": [
+        "Isaac II and Alexius IV"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Alexios_IV_Angelos#Overthrow_and_death",
       "summary": "After Alexius Murtzuphlus seized Alexius IV and threw him into prison where his father was already waiting, both Angelli emperors met their end in the dark: Alexius IV was strangled with a bowstring, and the old, broken Isaac succumbed to poison. Brownworth observes that despite their faults, they were spared having to witness the full tragedy of what was to come.",
       "summaries_by_episode": {
@@ -48005,7 +47893,9 @@
       "id": "fourth-crusade-sack-of-constantinople",
       "kind": "event",
       "name": "Sack of Constantinople by the Fourth Crusade",
-      "alt_names": [],
+      "alt_names": [
+        "Constantinople by the Fourth Crusade"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople_(1204)",
       "summary": "Mentioned only in the closing teaser as the culminating disaster of the next episode — the fall of Constantinople itself to the soldiers of the Fourth Crusade, confirming old Byzantine suspicions and representing the collapse of the system Alexios had maintained.",
       "summaries_by_episode": {
@@ -48332,7 +48222,9 @@
       "id": "coronation-of-john-vi-1347",
       "kind": "event",
       "name": "Coronation of John VI (1347)",
-      "alt_names": [],
+      "alt_names": [
+        "John VI (1347)"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/John_VI_Kantakouzenos",
       "summary": "Used by Brownworth as a vivid symbol of Byzantine decline: the crown jewels were obviously made of glass (the real ones pawned to Venice), and the banquet was served on humble plates of pewter and clay. The Black Death struck the city that same year.",
       "summaries_by_episode": {
@@ -48459,15 +48351,17 @@
       "id": "battle-of-marica-river",
       "kind": "event",
       "name": "Battle of the Marica River",
-      "alt_names": [],
+      "alt_names": [
+        "Marica River"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Maritsa",
       "summary": "Brownworth mentions the battle of the Marica River as the moment when a crusader army attempting to check Ottoman expansion was completely crushed, causing most of Bulgaria to fall under Ottoman sway.",
       "summaries_by_episode": {
         "16": {
           "summary": "Brownworth mentions the battle of the Marica River as the moment when a crusader army attempting to check Ottoman expansion was completely crushed, causing most of Bulgaria to fall under Ottoman sway.",
-          "score": 0,
-          "mention_count": 0,
-          "first_mention_seconds": null
+          "score": 5,
+          "mention_count": 1,
+          "first_mention_seconds": 358.34
         }
       },
       "episodes": [
@@ -48486,13 +48380,35 @@
       "wikipedia_extract": "The Battle of Maritsa, also known as the Battle of Chernomen, was fought on 26 September 1371 near the Maritsa River, close to the village of Chernomen. The conflict pitted the Ottoman forces under Lala Şahin Pasha and Hacı İlbey against a coalition of Serbian lords, led by King Vukašin Mrnjavčević and his brother Despot Jovan Uglješa who sought to halt the Ottomans' westward advance. The battle ended in a decisive Ottoman victory in which both Serbian commanders were killed, marking the decline of Serbian power in Macedonia and paving the way for Ottoman expansion into the central Balkans.",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/BattleofMaritsa1371.png/330px-BattleofMaritsa1371.png",
       "image_full_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/BattleofMaritsa1371.png",
-      "max_score": 0
+      "mentions_by_episode": {
+        "16": [
+          {
+            "segment_idx": 95,
+            "start": 358.34,
+            "end": 363.02,
+            "matched": "Marica River"
+          }
+        ]
+      },
+      "excerpts_by_episode": {
+        "16": [
+          {
+            "segment_idx": 95,
+            "start": 358.34,
+            "end": 363.02,
+            "text": "of the Marica River, the crusader army was crushed, and most of Bulgaria fell under its"
+          }
+        ]
+      },
+      "max_score": 5
     },
     {
       "id": "battle-of-kosovo",
       "kind": "event",
       "name": "Battle of Kosovo",
-      "alt_names": [],
+      "alt_names": [
+        "Kosovo"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kosovo",
       "summary": "Described by Brownworth as the battle fought on the 'fields of blackbirds' where Serbian power was broken after their brave continued resistance to the Ottoman advance, forcing the emperor of the Romans to become a Turkish vassal and even to take part in the siege of the last Byzantine stronghold in Asia Minor.",
       "summaries_by_episode": {
@@ -48618,7 +48534,9 @@
       "id": "battle-of-ankara-1402",
       "kind": "event",
       "name": "Battle of Ankara",
-      "alt_names": [],
+      "alt_names": [
+        "Ankara"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Ankara",
       "summary": "On July 28, 1402, Tamerlane shattered the Ottoman army and reportedly kept the sultan in an iron cage for the rest of his life, rescuing Manuel II's Constantinople from imminent fall. Brownworth notes the Byzantines were too weak to exploit this respite, and Ottoman power recovered within a decade.",
       "summaries_by_episode": {
@@ -48700,7 +48618,9 @@
       "id": "council-of-florence",
       "kind": "event",
       "name": "Council of Florence and Union of Churches",
-      "alt_names": [],
+      "alt_names": [
+        "Florence and Union of Churches"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Florence",
       "summary": "After 14 years of negotiations, John VIII gathered intimidated Eastern bishops and signed a decree of union officially joining the Eastern and Western churches. He returned to riots in Constantinople — all who had signed publicly retracted their signatures — and Brownworth frames this failed gambit as the act that fatally undermined John's credibility with his own people.",
       "summaries_by_episode": {
@@ -48741,7 +48661,9 @@
       "id": "battle-of-varna",
       "kind": "event",
       "name": "Battle of Varna",
-      "alt_names": [],
+      "alt_names": [
+        "Varna"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Varna",
       "summary": "The crusading army that John VIII had pinned everything on — outnumbered 3-to-1 by a far superior Turkish force — was completely annihilated in a few hours. John VIII, who had sacrificed his religious credibility for this outcome, was forced to present himself to the Sultan and congratulate him on his victory, and died a broken man.",
       "summaries_by_episode": {
@@ -48819,7 +48741,9 @@
       "id": "construction-of-throat-cutter",
       "kind": "event",
       "name": "Construction of Rumeli Hisarı (Throat Cutter)",
-      "alt_names": [],
+      "alt_names": [
+        "Rumeli Hisarı (Throat Cutter)"
+      ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Rumelihisar%C4%B1",
       "summary": "Mehmed II destroyed Byzantine buildings and monasteries on the European side of the Bosphorus to build the Throat Cutter fortress — completed in an astonishing four and a half months — giving him control of Bosphorus traffic and the ability to cut off Constantinople's food supply. When Constantine sent three rounds of ambassadors to protest, the third delegation was seized and executed.",
       "summaries_by_episode": {

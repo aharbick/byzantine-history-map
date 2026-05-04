@@ -57,7 +57,8 @@ export function getEpisodeAnchors(ep: number): EpisodeAnchor[] {
 
 /** The "current" anchor at time T is whichever entity range surrounds T with
  * the latest start — i.e. the most-recently-introduced entity that's still
- * in scope. Returns null in a gap with no active range. */
+ * in scope. Returns null in a gap with no active range. Used for the
+ * timeline year nudge — a single year per moment is the right model. */
 export function findAnchorAt(
   seconds: number,
   anchors: EpisodeAnchor[],
@@ -70,4 +71,20 @@ export function findAnchorAt(
     }
   }
   return best;
+}
+
+/** Every anchor whose [start, end] window contains time T. A Whisper segment
+ * often mentions multiple entities ("the True Cross in Jerusalem") and each
+ * should light up its marker; this returns the full set so the audio focus
+ * effect can pulse all of them. Returns an empty array in a gap. */
+export function findAnchorsAt(
+  seconds: number,
+  anchors: EpisodeAnchor[],
+): EpisodeAnchor[] {
+  const out: EpisodeAnchor[] = [];
+  for (const a of anchors) {
+    if (a.startSeconds > seconds) break;
+    if (a.endSeconds >= seconds) out.push(a);
+  }
+  return out;
 }

@@ -307,6 +307,134 @@ def _absorb_episode_data(ent: dict, raw: dict, ep: int) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Stage 1.5: derive alt_names so the segment scan picks up bare-noun mentions
+# ("True Cross" referring to "True Cross Returned to Jerusalem", etc.)
+# ---------------------------------------------------------------------------
+
+
+# Leading "X of" prefixes that strip down to the noun phrase on the right —
+# e.g. "Battle of Manzikert" → "Manzikert", "Discovery of the True Cross" →
+# "True Cross". Verb-of-the-protagonist patterns ("Death of Julian") aren't
+# useful as aliases since the name on the right is already a different
+# entity, but the resulting candidate is filtered out below if it collides.
+EVENT_LEAD_PREFIXES = [
+    "Battle of",
+    "Siege of",
+    "Sack of",
+    "Fall of",
+    "Death of",
+    "Discovery of",
+    "Assassination of",
+    "Coronation of",
+    "Founding of",
+    "Marriage of",
+    "Murder of",
+    "Execution of",
+    "Defeat of",
+    "Overthrow of",
+    "Deposition of",
+    "Establishment of",
+    "Restoration of",
+    "Construction of",
+    "Dedication of",
+    "Abdication of",
+    "Council of",
+    "Publication of",
+    "Persian Conquest of",
+    "Byzantine Reconquest of",
+    "Crusader Siege of",
+]
+
+# Trailing patterns of the form "X Returned to Y" / "X Captured by Y" — the
+# noun on the LEFT is the artifact (e.g., "True Cross"). Compiled lazily.
+EVENT_TRAIL_PATTERNS = [
+    re.compile(r"^(.+?)\s+(?:Returned|Restored|Captured|Sent|Brought)\s+(?:to|from|by)\s+.+$"),
+]
+
+# Leading articles to strip from extracted candidates ("the True Cross" → "True Cross").
+# Case-insensitive — many event names are "Discovery of the True Cross" with
+# lowercase "the" after "of".
+LEADING_ARTICLES = ("The ", "A ", "An ")
+
+
+def _strip_leading_article(s: str) -> str:
+    """Lower-case-aware leading-article strip."""
+    for art in LEADING_ARTICLES:
+        if s[: len(art)].lower() == art.lower():
+            return s[len(art):]
+    return s
+
+
+def _candidate_alt_names(name: str, kind: str) -> list[str]:
+    """Generate plausible alt-name strings from an entity's canonical name.
+
+    The candidates are filtered globally (via `_apply_derived_alt_names`)
+    against every other entity's name + alt_names so we never introduce a
+    cross-entity collision.
+    """
+    out: list[str] = []
+    if kind != "event":
+        return out
+
+    for prefix in EVENT_LEAD_PREFIXES:
+        if name.startswith(prefix + " "):
+            tail = _strip_leading_article(name[len(prefix) + 1:].strip())
+            if tail and tail.lower() != name.lower():
+                out.append(tail)
+            break  # only one prefix can match a given name
+
+    for pat in EVENT_TRAIL_PATTERNS:
+        m = pat.match(name)
+        if m:
+            head = _strip_leading_article(m.group(1).strip())
+            if head and head.lower() != name.lower():
+                out.append(head)
+
+    return out
+
+
+def stage_derive_alt_names(entities: dict[str, dict]) -> int:
+    """Walk every entity, propose alt_names from name patterns, accept only
+    those that don't collide with any other entity's name or existing alt.
+    Returns the count of new alt_names added.
+
+    Why this matters: the segment scan uses each entity's name + alt_names
+    as the regex sources. The LLM's per-episode JSONs sometimes record
+    "True Cross Returned to Jerusalem" as the canonical name without
+    listing "True Cross" as an alias — Brownworth's bare mentions never
+    matched the event. This stage closes that gap mechanically so we don't
+    have to hand-edit every episode JSON.
+    """
+    # Block list = every other entity's CANONICAL name and ORIGINAL (LLM-set)
+    # alt_name. Computed up-front so it doesn't grow as we add derivations:
+    # multiple events can legitimately share a derived alt ("True Cross" on
+    # both the discovery and the restoration), and the per-episode
+    # contested-tokens guard in stage 3 sorts out any in-episode collisions.
+    name_to_owner: dict[str, str] = {}
+    for ent in entities.values():
+        for n in [ent["name"]] + list(ent.get("alt_names") or []):
+            name_to_owner.setdefault(n.lower().strip(), ent["id"])
+
+    added = 0
+    for ent in entities.values():
+        candidates = _candidate_alt_names(ent["name"], ent["kind"])
+        if not candidates:
+            continue
+        existing = {n.lower() for n in [ent["name"]] + list(ent.get("alt_names") or [])}
+        for cand in candidates:
+            key = cand.lower().strip()
+            if not key or key in existing:
+                continue
+            owner = name_to_owner.get(key)
+            if owner is not None and owner != ent["id"]:
+                continue  # belongs to another entity's canonical name set
+            ent.setdefault("alt_names", []).append(cand)
+            existing.add(key)
+            added += 1
+    return added
+
+
+# ---------------------------------------------------------------------------
 # Stage 2: validate Wikipedia + enrich
 # ---------------------------------------------------------------------------
 
@@ -1049,6 +1177,8 @@ def main():
     print("[1/5] Loading per-episode extractions...")
     episodes_meta, entities = load_episodes()
     print(f"      Loaded {len(episodes_meta)} episodes, {len(entities)} unique entities.")
+    derived = stage_derive_alt_names(entities)
+    print(f"      Derived {derived} alt_name(s) from canonical name patterns.")
 
     print("[2/5] Validating Wikipedia URLs and enriching...")
     stage_validate_wikipedia(entities, refresh=args.refresh_wiki)

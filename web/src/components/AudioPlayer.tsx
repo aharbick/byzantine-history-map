@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useApp, type AudioSeekHint } from "@/lib/context";
 import { audioUrl, episodesById } from "@/lib/data";
 import { entities } from "@/lib/data";
-import { findAnchorAt, getEpisodeAnchors } from "@/lib/episode_anchors";
+import { findAnchorAt, findAnchorsAt, getEpisodeAnchors } from "@/lib/episode_anchors";
 
 /** Persistent audio player. Always mounted, always visible. Custom UI so it
  * fits the byzantine theme rather than the chunky native <audio controls>. */
@@ -292,11 +292,12 @@ export default function AudioPlayer() {
     // audio.currentTime (not wall clock) so seeking + pause behave: pausing
     // freezes the windows, scrubbing forward ages older entries out.
     const focusExpiry = new Map<string, number>();
-    // Compose the "last anchor" key from BOTH entity id and the anchor's
-    // segment index — crossing from one segment-mention to a different
-    // segment-mention of the same entity should re-pulse, otherwise long
-    // narrative arcs would only highlight once.
-    let lastAnchorKey: string | null = null;
+    // Per-entity-segment "have we already pulsed this one" guard: a single
+    // segment that mentions multiple entities should refresh all their
+    // windows once on entry, then stay quiet until the segment changes.
+    // Tracks (entityId, segmentIdx) pairs so different segment-mentions of
+    // the same entity each re-pulse.
+    const seenAnchorKeys = new Set<string>();
 
     const syncFocusState = () => {
       // Cheap structural compare so we don't churn React state when nothing
@@ -322,26 +323,35 @@ export default function AudioPlayer() {
         if (t > expiry) focusExpiry.delete(id);
       }
 
-      // Anchors are now segment-level seconds (Whisper output) rather than
-      // line-ratio approximations, so we look up directly against
-      // currentTime — no LEAD_SEC offset needed.
-      const anchor = findAnchorAt(t, anchors);
+      // Every entity whose segment-mention covers `t`. A single Whisper
+      // segment regularly references several entities ("the True Cross in
+      // Jerusalem") and each should light up its own marker.
+      const active = findAnchorsAt(t, anchors);
 
-      if (anchor) {
-        const key = `${anchor.entityId}@${anchor.segmentIdx}`;
-        if (key !== lastAnchorKey) {
-          // Anchor genuinely transitioned — different entity OR a new
-          // segment-mention of the same entity. Refresh the entity's
-          // window (overwriting any earlier expiry) and shift the timeline
-          // year if the anchor has one.
-          lastAnchorKey = key;
-          focusExpiry.set(anchor.entityId, t + FOCUS_STALE_AFTER_SEC);
-          if (anchor.year != null) {
-            setCurrentYear(anchor.year);
-          }
+      // Refresh the focus window for every newly-entered (entity, segment)
+      // pair. Once we've seen a pair, don't re-fire until the audio leaves
+      // it (handled by the prune loop below).
+      const liveKeys = new Set<string>();
+      for (const a of active) {
+        const key = `${a.entityId}@${a.segmentIdx}`;
+        liveKeys.add(key);
+        if (!seenAnchorKeys.has(key)) {
+          seenAnchorKeys.add(key);
+          focusExpiry.set(a.entityId, t + FOCUS_STALE_AFTER_SEC);
         }
-      } else {
-        lastAnchorKey = null;
+      }
+      // Drop seen-keys whose segments are no longer active so re-entering
+      // the same segment later (after a seek backwards) re-pulses.
+      for (const key of seenAnchorKeys) {
+        if (!liveKeys.has(key)) seenAnchorKeys.delete(key);
+      }
+
+      // Use the latest-start anchor's year for the timeline cursor — one
+      // year per moment is still the right model even when several markers
+      // light up.
+      const primary = findAnchorAt(t, anchors);
+      if (primary && primary.year != null) {
+        setCurrentYear(primary.year);
       }
 
       syncFocusState();
