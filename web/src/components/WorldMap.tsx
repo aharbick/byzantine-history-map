@@ -122,6 +122,18 @@ export default function WorldMap() {
     // — there's nothing on the map to apply the focus class to.
     const focusForce = new Set(audioFocusEntityIds);
 
+    // Pre-compute which coord groups have 2+ focused entities currently
+    // lit. Those groups need a wider per-marker offset so the enlarged
+    // discs ("True Cross" + "Jerusalem" both at Jerusalem coord) don't
+    // overlap into a single mush.
+    const focusGroupCounts = new Map<string, number>();
+    for (const id of audioFocusEntityIds) {
+      const ent = allEntities.find((x) => x.id === id);
+      const m = ent ? memberOf(ent) : null;
+      if (!m) continue;
+      focusGroupCounts.set(m.groupKey, (focusGroupCounts.get(m.groupKey) ?? 0) + 1);
+    }
+
     // Group entities by coord. Track active vs. forced separately so the
     // clustering decision uses only the active count: forced entities push
     // a few markers into the rendered set without triggering cluster mode
@@ -199,7 +211,12 @@ export default function WorldMap() {
       coords: { lat: number; lng: number },
     ) {
       const member = memberOf(e)!;
-      const offset = isExpanded ? member.spiderOffset : member.fanOffset;
+      // When the marker is part of a multi-focus burst (2+ audio-focused
+      // entities at this coord), use the wider spider offset so the
+      // enlarged focus discs don't pile on top of each other.
+      const focusedHere = (focusGroupCounts.get(member.groupKey) ?? 0) >= 2;
+      const useSpider = isExpanded || (focusForce.has(e.id) && focusedHere);
+      const offset = useSpider ? member.spiderOffset : member.fanOffset;
       const key = `${e.kind}:${e.id}`;
       wantedMarkerKeys.add(key);
       const existing = markersRef.current.get(key);

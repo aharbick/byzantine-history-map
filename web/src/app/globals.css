@@ -208,23 +208,24 @@ body > div {
 }
 
 /* Audio-focus marker — the entity currently being discussed in the
- * playing episode. Larger than selected, with a pulsing glow that draws
- * the eye, and lifted above selection so the focus marker can never be
- * occluded. */
+ * playing episode. Larger than selected and lifted above selection so the
+ * focus marker can never be occluded. The size growth alone is enough to
+ * draw the eye; no colored halo so adjacent focus markers don't bleed
+ * into each other's visual space. */
 .byz-marker-focus {
   z-index: 20;
 }
 .byz-marker-focus .byz-marker-disc {
-  transform: scale(4);
-  /* No solid ring — rely on the disc's own padding-based color band so the
-   * effective ring thickness scales like a regular marker's. Only the outer
-   * glow + drop shadow remain (and pulse). */
-  box-shadow:
-    0 0 32px 8px var(--marker-color, #c9a227),
-    0 6px 20px rgba(0, 0, 0, 0.75);
-  animation: byz-marker-focus-pulse 2.4s ease-in-out infinite;
+  /* Scale a touch smaller than before to lessen overlap with neighbouring
+   * focused markers (the True Cross + Jerusalem case where both light up
+   * on the same segment). Still 3x the resting size so the focused state
+   * is unmistakable. */
+  transform: scale(3);
+  /* Plain drop shadow only — no colored aura, no pulse — so the discs read
+   * cleanly even when several are lit at once. */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.65);
 }
-/* Tight padding: at scale(4) a 1px band paints as ~4px on screen, matching the
+/* Tight padding: at scale(3) a 1px band paints as ~3px on screen, matching the
  * thickness of a normal marker's ring. */
 .byz-marker-focus .byz-marker-disc--image {
   padding: 1px;
@@ -238,24 +239,9 @@ body > div {
   opacity: 1;
   font-weight: 700;
   /* Push the label below the visually-scaled disc. The disc's layout box is
-   * 32px tall but the scale(4) transform extends it ~48px past its layout
-   * bottom — we add that plus a small gap so the label clears the artwork. */
-  top: calc(100% + 56px);
-}
-@keyframes byz-marker-focus-pulse {
-  /* No inner solid ring — the disc carries its own colored band via padding.
-   * Only the outer glow breathes. */
-  0%,
-  100% {
-    box-shadow:
-      0 0 32px 8px var(--marker-color, #c9a227),
-      0 6px 20px rgba(0, 0, 0, 0.75);
-  }
-  50% {
-    box-shadow:
-      0 0 48px 14px var(--marker-color, #c9a227),
-      0 6px 22px rgba(0, 0, 0, 0.75);
-  }
+   * 32px tall and scale(3) extends it ~32px past its layout bottom; add a
+   * small gap so the label clears the artwork. */
+  top: calc(100% + 38px);
 }
 
 /* ---- Cluster markers (Google-Maps-style "+N" with click-to-expand) ---- */
