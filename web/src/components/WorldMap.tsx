@@ -114,13 +114,21 @@ export default function WorldMap() {
     const map = mapRef.current;
     if (!map) return;
 
+    // Audio-focused entities are forced into the rendered set even when
+    // they fall outside `isActiveAt(currentYear)`. Otherwise, when an
+    // anchor for a place (Jerusalem at first_year=312) and an event (True
+    // Cross at year=630) overlap in the same Whisper segment, the
+    // auto-scrub picks one year and the other entity's marker disappears
+    // — there's nothing on the map to apply the focus class to.
+    const focusForce = new Set(audioFocusEntityIds);
+
     // Group active entities by their coord group
     type Bucket = { coords: { lat: number; lng: number }; entities: AnyEntity[] };
     const activeByGroup = new Map<string, Bucket>();
 
     for (const e of allEntities) {
       if (!filters[e.kind]) continue;
-      if (!isActiveAt(e, currentYear)) continue;
+      if (!isActiveAt(e, currentYear) && !focusForce.has(e.id)) continue;
       const m = memberOf(e);
       if (!m) continue;
       const bucket = activeByGroup.get(m.groupKey);
@@ -200,7 +208,7 @@ export default function WorldMap() {
         clustersRef.current.delete(key);
       }
     }
-  }, [currentYear, selectEntity, filters, mapReady, expandedGroup]);
+  }, [currentYear, selectEntity, filters, mapReady, expandedGroup, audioFocusEntityIds]);
 
   // Apply selected styling to the matching marker
   useEffect(() => {
