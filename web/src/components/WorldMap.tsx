@@ -122,37 +122,52 @@ export default function WorldMap() {
     // — there's nothing on the map to apply the focus class to.
     const focusForce = new Set(audioFocusEntityIds);
 
-    // Group active entities by their coord group
-    type Bucket = { coords: { lat: number; lng: number }; entities: AnyEntity[] };
+    // Group entities by coord. Track active vs. forced separately so the
+    // clustering decision uses only the active count: forced entities push
+    // a few markers into the rendered set without triggering cluster mode
+    // for the whole group.
+    type Bucket = {
+      coords: { lat: number; lng: number };
+      active: AnyEntity[];
+      forced: AnyEntity[];
+    };
     const activeByGroup = new Map<string, Bucket>();
 
     for (const e of allEntities) {
       if (!filters[e.kind]) continue;
-      if (!isActiveAt(e, currentYear) && !focusForce.has(e.id)) continue;
+      const isActive = isActiveAt(e, currentYear);
+      const isForced = focusForce.has(e.id);
+      if (!isActive && !isForced) continue;
       const m = memberOf(e);
       if (!m) continue;
-      const bucket = activeByGroup.get(m.groupKey);
-      if (bucket) bucket.entities.push(e);
-      else activeByGroup.set(m.groupKey, { coords: m.coords, entities: [e] });
+      let bucket = activeByGroup.get(m.groupKey);
+      if (!bucket) {
+        bucket = { coords: m.coords, active: [], forced: [] };
+        activeByGroup.set(m.groupKey, bucket);
+      }
+      // An entity active in the current year takes the active slot; forced-
+      // only entities go to the forced slot. (Both flags set means active —
+      // forced is a strict superset.)
+      if (isActive) bucket.active.push(e);
+      else bucket.forced.push(e);
     }
 
     const wantedMarkerKeys = new Set<string>();
     const wantedClusterKeys = new Set<string>();
 
     for (const [groupKey, bucket] of activeByGroup) {
-      // Cluster based on the *active* count (not all-time), so we don't show
-      // "+1" or "+2" clusters at otherwise-busy locations.
-      const clustered = bucket.entities.length >= CLUSTER_THRESHOLD;
+      // Clustering is gated by the ACTIVE count only. Forced entities are
+      // always rendered as individual markers so their focus class can land
+      // on a real DOM element, even if the cluster pin also covers the spot.
+      const clustered = bucket.active.length >= CLUSTER_THRESHOLD;
       const isExpanded = expandedGroup === groupKey;
 
       if (clustered && !isExpanded) {
-        // Render a single cluster marker for the whole group, tinted by the
-        // most-represented kind among its members.
         wantedClusterKeys.add(groupKey);
-        const dominantKind = pickDominantKind(bucket.entities);
+        const dominantKind = pickDominantKind(bucket.active);
         if (!clustersRef.current.has(groupKey)) {
           const el = buildClusterElement(
-            bucket.entities.length,
+            bucket.active.length,
             dominantKind,
             () => setExpandedGroup(groupKey),
           );
@@ -162,36 +177,44 @@ export default function WorldMap() {
             .addTo(map);
           clustersRef.current.set(groupKey, m);
         } else {
-          // Update count + dominant-kind color if either changed.
           const existing = clustersRef.current.get(groupKey)!;
-          updateCluster(existing.getElement(), bucket.entities.length, dominantKind);
+          updateCluster(existing.getElement(), bucket.active.length, dominantKind);
+        }
+        // Still render any forced-only entities as individual markers on
+        // top of the cluster, so the focus pulse has something to land on.
+        for (const e of bucket.forced) {
+          renderIndividual(e, isExpanded, bucket.coords);
         }
         continue;
       }
 
-      // Render individual markers — use STABLE offsets (precomputed). Use
-      // wider "spider" radius if this group is expanded; normal fan otherwise.
-      for (const e of bucket.entities) {
-        const member = memberOf(e)!;
-        const offset = isExpanded ? member.spiderOffset : member.fanOffset;
-        const key = `${e.kind}:${e.id}`;
-        wantedMarkerKeys.add(key);
+      // Not clustered — render every entity (active + forced) individually.
+      for (const e of bucket.active) renderIndividual(e, isExpanded, bucket.coords);
+      for (const e of bucket.forced) renderIndividual(e, isExpanded, bucket.coords);
+    }
 
-        const existing = markersRef.current.get(key);
-        if (existing) {
-          existing.setOffset(offset);
-        } else {
-          const el = buildMarkerElement(e, () => {
-            // Click-to-toggle: clicking the same dot a second time closes it.
-            if (selectedRef.current?.id === e.id) selectEntity(null);
-            else selectEntity(e);
-          });
-          el.dataset.entityKey = key;
-          const m = new maplibregl.Marker({ element: el, anchor: "center", offset })
-            .setLngLat([bucket.coords.lng, bucket.coords.lat])
-            .addTo(map);
-          markersRef.current.set(key, m);
-        }
+    function renderIndividual(
+      e: AnyEntity,
+      isExpanded: boolean,
+      coords: { lat: number; lng: number },
+    ) {
+      const member = memberOf(e)!;
+      const offset = isExpanded ? member.spiderOffset : member.fanOffset;
+      const key = `${e.kind}:${e.id}`;
+      wantedMarkerKeys.add(key);
+      const existing = markersRef.current.get(key);
+      if (existing) {
+        existing.setOffset(offset);
+      } else {
+        const el = buildMarkerElement(e, () => {
+          if (selectedRef.current?.id === e.id) selectEntity(null);
+          else selectEntity(e);
+        });
+        el.dataset.entityKey = key;
+        const m = new maplibregl.Marker({ element: el, anchor: "center", offset })
+          .setLngLat([coords.lng, coords.lat])
+          .addTo(map!);
+        markersRef.current.set(key, m);
       }
     }
 
