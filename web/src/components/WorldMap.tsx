@@ -347,11 +347,8 @@ function buildMarkerElement(e: AnyEntity, onClick: () => void): HTMLElement {
 
   const disc = document.createElement("span");
 
-  // Pick the best image we have for this entity.
-  const imageUrl =
-    e.kind === "person"
-      ? (e as { portrait_url?: string | null }).portrait_url
-      : (e as { image_url?: string | null }).image_url;
+  // Unified image_url across all kinds.
+  const imageUrl = e.image_url ?? null;
 
   if (imageUrl) {
     disc.className = "byz-marker-disc byz-marker-disc--image";

@@ -6,9 +6,9 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "data": "cd .. && python3 data/merge.py",
+    "data": "cd .. && python3 data/build.py",
     "predev": "npm run data",
-    "prebuild": "npm run data || echo 'data merge skipped — using committed src/data/entities.json'",
+    "prebuild": "npm run data || echo 'data build skipped — using committed src/data/entities.json'",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

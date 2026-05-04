@@ -2,27 +2,29 @@
 
 An interactive map + timeline website built from the transcripts of Lars
 Brownworth's [*12 Byzantine Rulers*](https://12byzantinerulers.com/) podcast.
-All 17 episodes (Diocletian → Constantine XI) are extracted into
-**216 people, 155 places, 285 events**, each cross-linked and shown on a map
-of the Byzantine world.
+All 17 episodes (Diocletian → Constantine XI) are extracted into the
+**12 named rulers** plus the supporting cast of people, places, and events
+that fill the Byzantine world, each cross-linked, scored for episode
+importance, and synced to Whisper-segmented audio for moment-precise
+playback.
 
 ## What's here
 
 ```
-audio/                  raw mp3s (370 MB total — gitignored, hosted externally in production)
-transcripts/            text transcripts of each episode
+audio/                       raw mp3s (370 MB total — gitignored, hosted externally in production)
+transcripts/                 text transcripts of each episode
+transcripts_segments/        Whisper segment JSONs (timestamps for audio sync)
 data/
-├── episodes/           per-episode JSON extractions (the sources of truth)
-├── merge.py            merges + dedupes into entities.json
-├── fetch_portraits.py  Wikipedia thumbnail fetcher (cached in portraits.json)
-├── validate_coords.py  audits place coords against Wikipedia
-├── entities.json       canonical merged dataset
-├── portraits.json      Wikipedia portrait/image cache
-├── wikipedia_coords.json  Wikipedia coord cache (audit reference)
-└── SCHEMA.md           shape of the per-episode JSONs
-web/                    Next.js 16 app (the website itself)
-mise.toml               pinned Node 22
-.claude/launch.json     Claude Code preview config
+├── episodes/                per-episode LLM extractions (the seed inputs)
+├── cache/                   persistent caches (committed)
+│   ├── wikipedia.json       Wikipedia REST summary results
+│   └── synthesized_summaries.json   Claude cross-episode summaries
+├── build.py                 single-shot pipeline → entities.json
+├── entities.json            canonical unified dataset
+└── SCHEMA.md                schema reference
+web/                         Next.js 16 app (the website itself)
+mise.toml                    pinned Node 22
+.claude/launch.json          Claude Code preview config
 ```
 
 ## Running locally
@@ -37,7 +39,7 @@ npm install
 npm run dev   # http://localhost:3000
 ```
 
-`npm run dev` runs `data/merge.py` first (via the `predev` hook) so the app
+`npm run dev` runs `data/build.py` first (via the `predev` hook) so the app
 always loads the latest extraction from `data/episodes/`.
 
 The audio player streams from `web/public/audio/`, which is a symlink to
@@ -49,22 +51,23 @@ cd web/public && ln -s ../../audio audio
 
 ## Data pipeline
 
-To change/add data, edit `data/episodes/epNN.json` and re-merge:
+`data/build.py` is the single entry point. It reads the per-episode
+extractions, validates each entity against Wikipedia, scans the Whisper
+segment JSONs for moment-precise mentions, scores per-episode importance,
+and (optionally) calls Claude to synthesize unified cross-episode summaries.
 
 ```bash
-python3 data/merge.py
+python3 data/build.py                  # cached run (no API calls)
+python3 data/build.py --synthesize     # re-run Claude synthesis (needs ANTHROPIC_API_KEY)
+python3 data/build.py --refresh-wiki   # ignore Wikipedia cache, refetch all
 ```
 
-This rewrites both `data/entities.json` (canonical) and
-`web/src/data/entities.json` (consumed by the Next.js app). Both files are
-**committed** so production builds work even if Python is unavailable.
+The pipeline rewrites both `data/entities.json` (canonical) and
+`web/src/data/entities.json` (consumed by the Next.js app). Both files plus
+the caches in `data/cache/` are **committed** so production builds work
+without Python or any external API calls.
 
-To refresh Wikipedia portraits/coords:
-
-```bash
-python3 data/fetch_portraits.py     # ~5 min, polite rate limit, cached
-python3 data/validate_coords.py     # audits place lat/lng vs Wikipedia
-```
+See [data/SCHEMA.md](data/SCHEMA.md) for the full output shape.
 
 ## Architecture notes
 
@@ -107,10 +110,11 @@ Vercel → byzantinehistorymap.com → audio hosting).
 
 ## Known gaps / future work
 
-- **Episode timestamp deep-linking** — chips play from t=0. Re-transcribing
-  with whisper word-level timestamps would let cards jump to the exact
-  moment a person/place/event is mentioned.
 - **Border overlays** — the Byzantine empire's shifting territory by century
   isn't visualized. Hand-drawn GeoJSON keyframes could fix this.
 - **Card-game mode** — the data model already separates entities cleanly;
   adding stats (charisma / military / piety per ruler) is a small extension.
+- **Score-driven UX** — every entity now carries a per-episode importance
+  score (0-100) and a global `max_score`. The map could optionally hide
+  low-importance people/places below a threshold while always keeping events
+  visible. The hooks are in the data; the UI is the call.

@@ -81,27 +81,20 @@ function relatedAnyActive(e: AnyEntity, year: number): boolean {
   for (const r of e.related ?? []) {
     if (r.type === "person") {
       const p = peopleById[r.id];
-      if (p && isActiveAt({ ...p, kind: "person" }, year)) return true;
+      if (p && isActiveAt(p, year)) return true;
     } else if (r.type === "event") {
       const ev = eventsById[r.id];
-      if (ev && isActiveAt({ ...ev, kind: "event" }, year)) return true;
+      if (ev && isActiveAt(ev, year)) return true;
     }
   }
   return false;
 }
 
-export function tagged<T extends Person | Place | HistoricalEvent>(
-  arr: T[],
-  kind: AnyEntity["kind"],
-): AnyEntity[] {
-  return arr.map((e) => ({ ...e, kind }) as AnyEntity);
-}
-
 /** All entities tagged with their kind, sorted by timeline year (nulls last). */
 export const allEntities: AnyEntity[] = [
-  ...tagged(entities.people, "person"),
-  ...tagged(entities.places, "place"),
-  ...tagged(entities.events, "event"),
+  ...entities.people,
+  ...entities.places,
+  ...entities.events,
 ].sort((a, b) => {
   const ay = timelineYear(a);
   const by = timelineYear(b);
@@ -147,10 +140,7 @@ export function defaultStartYear(): number {
 
 /** Look up an entity by id across kinds. */
 export function getEntity(id: string): AnyEntity | undefined {
-  if (peopleById[id]) return { ...peopleById[id], kind: "person" };
-  if (placesById[id]) return { ...placesById[id], kind: "place" };
-  if (eventsById[id]) return { ...eventsById[id], kind: "event" };
-  return undefined;
+  return peopleById[id] ?? placesById[id] ?? eventsById[id];
 }
 
 /**

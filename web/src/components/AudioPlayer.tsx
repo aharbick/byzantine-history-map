@@ -280,37 +280,22 @@ export default function AudioPlayer() {
     if (!audio) return;
     if (playingEpisode == null) return;
 
-    const epMeta = episodesById[playingEpisode];
-    const totalLines = epMeta?.total_transcript_lines ?? 0;
-    if (!totalLines) return;
     const anchors = getEpisodeAnchors(playingEpisode);
     if (anchors.length === 0) return;
 
-    // The line→time conversion `line = (currentTime/duration) * totalLines`
-    // assumes a uniform speech rate, which it isn't — anchors surface several
-    // seconds after the actual mention. Projecting the lookup `LEAD_SEC` into
-    // the future compensates. Aim near the typical observed offset so the
-    // highlight lands close to the mention, leaning slightly under so the
-    // common case is on-time-or-late rather than on-time-or-early; an early
-    // marker (you see it before hearing the name) reads as wrong, a late one
-    // reads as confirmation.
-    const LEAD_SEC = 13;
     // Each highlighted entity stays lit this long after its mention; new
     // mentions don't replace older ones, they pile on. Dense sequences thus
     // produce a brief constellation of glowing markers rather than a single
     // strobing one.
     const FOCUS_STALE_AFTER_SEC = 10;
-    // entityId → audio.currentTime when its 10-second window expires. We
-    // run this off audio.currentTime (not wall clock) so seeking and pause
-    // behave naturally — pausing freezes the windows, scrubbing forward
-    // immediately ages older entries out.
+    // entityId → audio.currentTime when its window expires. Driven off
+    // audio.currentTime (not wall clock) so seeking + pause behave: pausing
+    // freezes the windows, scrubbing forward ages older entries out.
     const focusExpiry = new Map<string, number>();
     // Compose the "last anchor" key from BOTH entity id and the anchor's
-    // start line: this way, crossing from one range of an entity into a
-    // *different* range of the same entity (e.g., Heraclius mentioned at
-    // line 60 and again at line 120 with a gap in between) re-triggers a
-    // pulse. Tracking just by entity id meant a person with one giant
-    // range only ever pulsed once.
+    // segment index — crossing from one segment-mention to a different
+    // segment-mention of the same entity should re-pulse, otherwise long
+    // narrative arcs would only highlight once.
     let lastAnchorKey: string | null = null;
 
     const syncFocusState = () => {
@@ -328,28 +313,27 @@ export default function AudioPlayer() {
       if (audio.paused) return;
       if (autoScrubLockedRef.current) return;
       if (selectedEntityRef.current) return;
-      if (!audio.duration || audio.duration === 0) return;
 
       const t = audio.currentTime;
 
-      // Prune any windows that have aged out. Done first so a freshly added
-      // entity below isn't immediately culled by a stale entry sharing its
-      // id (rare, but possible when seeking).
+      // Prune windows that have aged out. Done first so a freshly added
+      // entity below isn't immediately culled by a stale entry.
       for (const [id, expiry] of focusExpiry) {
         if (t > expiry) focusExpiry.delete(id);
       }
 
-      const projectedTime = Math.min(audio.duration, t + LEAD_SEC);
-      const line = (projectedTime / audio.duration) * totalLines;
-      const anchor = findAnchorAt(line, anchors);
+      // Anchors are now segment-level seconds (Whisper output) rather than
+      // line-ratio approximations, so we look up directly against
+      // currentTime — no LEAD_SEC offset needed.
+      const anchor = findAnchorAt(t, anchors);
 
       if (anchor) {
-        const key = `${anchor.entityId}@${anchor.startLine}`;
+        const key = `${anchor.entityId}@${anchor.segmentIdx}`;
         if (key !== lastAnchorKey) {
-          // Anchor genuinely transitioned — could be a different entity OR
-          // a new range of the same entity. Either way, refresh the
-          // entity's window (overwriting any earlier expiry for this id)
-          // and shift the timeline year if the anchor has one.
+          // Anchor genuinely transitioned — different entity OR a new
+          // segment-mention of the same entity. Refresh the entity's
+          // window (overwriting any earlier expiry) and shift the timeline
+          // year if the anchor has one.
           lastAnchorKey = key;
           focusExpiry.set(anchor.entityId, t + FOCUS_STALE_AFTER_SEC);
           if (anchor.year != null) {
@@ -357,9 +341,6 @@ export default function AudioPlayer() {
           }
         }
       } else {
-        // Outside all ranges — clear so the next anchor counts as a fresh
-        // transition. Don't manually evict windows; they age out on their
-        // own schedule.
         lastAnchorKey = null;
       }
 

@@ -5,13 +5,13 @@ import { episodesById } from "@/lib/data";
 
 export default function EpisodeChip({
   episode,
-  startProgress,
+  startSeconds,
 }: {
   episode: number;
-  /** 0..1 fraction of the episode duration to seek to when starting from
-   * this chip — the spot in the audio where this entity is first discussed.
-   * Resolved by AudioPlayer once `audio.duration` is known. */
-  startProgress?: number;
+  /** Absolute seconds to seek to when starting from this chip — the spot in
+   * the audio where this entity is first mentioned (per Whisper segments).
+   * Resolved by AudioPlayer once metadata loads. */
+  startSeconds?: number | null;
 }) {
   const { playingEpisode, audioController } = useApp();
   const ep = episodesById[episode];
@@ -25,8 +25,8 @@ export default function EpisodeChip({
     // src, applies the seek hint, and calls play() in one go.
     audioController.current?.play(
       episode,
-      startProgress != null
-        ? { kind: "progress", value: startProgress }
+      startSeconds != null
+        ? { kind: "seconds", value: startSeconds }
         : undefined,
     );
   }
