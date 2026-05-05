@@ -846,6 +846,18 @@ def stage_discover_whisper_aliases(
         for n in [ent["name"]] + list(ent.get("alt_names") or []):
             name_to_owner.setdefault(n.lower().strip(), ent["id"])
 
+    # Token-level ownership across every entity's name + alts. A candidate
+    # whose lowercase form is a token used by 2+ entities is too generic to
+    # add as an alt — "Emperor", "Empire", "Western", "Persian", etc. would
+    # otherwise match unrelated narration. Tokens unique to a single entity
+    # ("Codex", "Nica", "Totilla") still pass.
+    token_owners: dict[str, set[str]] = defaultdict(set)
+    for ent in entities.values():
+        for n in [ent["name"]] + list(ent.get("alt_names") or []):
+            for tok in re.findall(r"[A-Za-z]+", n):
+                if len(tok) >= MIN_TOKEN_LEN:
+                    token_owners[tok.lower()].add(ent["id"])
+
     discovered = 0
     for ent in entities.values():
         lines_by_ep = ent.get("transcript_lines_by_episode") or {}
@@ -902,6 +914,17 @@ def stage_discover_whisper_aliases(
             best_score = 0.0
             for cand in cands:
                 if cand.lower() in existing_lower:
+                    continue
+                # Generic role/article words ("Emperor", "the", "King") would
+                # match indiscriminately if added as bare alts.
+                if cand.lower() in DROP_FIRST_TOKEN:
+                    continue
+                # Token-level uniqueness: reject candidates that any other
+                # entity has in their name/alts. "Empire" is in dozens of
+                # canonical names; adding it as a bare alt would over-match.
+                # "Codex" is unique to Codex Justinianus, so it passes.
+                token_claimants = token_owners.get(cand.lower(), set())
+                if token_claimants - {ent["id"]}:
                     continue
                 # Don't grab a name another entity already owns.
                 owner = name_to_owner.get(cand.lower())
