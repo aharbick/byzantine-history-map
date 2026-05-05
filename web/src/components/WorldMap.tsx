@@ -17,20 +17,72 @@ import type { AnyEntity } from "@/lib/types";
 // for a historical map where Istanbul should read as "Constantinople" via our
 // own place markers. Coastlines, rivers, and shaded relief remain.
 const STYLE = "https://basemaps.cartocdn.com/gl/voyager-nolabels-gl-style/style.json";
-// Lng = Constantinople; lat dropped south of Constantinople so the natural
-// item cluster (Mediterranean basin / Anatolia / Levant, mostly 30°–45°N)
-// reads centered on screen instead of bunching below the visual midline.
-// "On a screen like this... items tend to be in the bottom half" — moving the
-// geographic center south brings empty northern Europe out of view and lifts
-// the items toward the middle of the canvas.
-const INITIAL_CENTER: [number, number] = [28.949, 37.0];
-const INITIAL_ZOOM = 4;
+// Lng anchored on Constantinople — the empire's capital and the visual
+// center for east-west balance. Lat is data-driven (see initialView): we
+// pick zoom so every marker's latitude is on-screen, even if that means
+// some markers fall off the map's east/west edges. Vertical truncation
+// hides the UK / Roman Britain entirely; horizontal truncation just clips
+// the easternmost edge of Persia, which is acceptable.
+const INITIAL_LNG = 28.949;
+// Pixel padding kept above/below the northernmost/southernmost marker so
+// the marker glyphs themselves (≈40–50px tall) don't get clipped at the
+// top/bottom edges. This is in addition to whatever space the timeline
+// strip already takes from the map container.
+const INITIAL_PADDING_PX = 36;
 
 const KIND_COLOR: Record<AnyEntity["kind"], string> = {
   person: "#e7c873",
   place: "#3a6b8c",
   event: "#b44646",
 };
+
+// Cached lat extent of every entity that has resolvable coordinates.
+// Static across the session (entity data doesn't change at runtime), so we
+// compute it lazily on first use.
+let MARKER_LAT_RANGE: { south: number; north: number } | null = null;
+function getMarkerLatRange(): { south: number; north: number } {
+  if (MARKER_LAT_RANGE) return MARKER_LAT_RANGE;
+  let south = Infinity;
+  let north = -Infinity;
+  for (const e of allEntities) {
+    const c = entityCoords(e);
+    if (!c) continue;
+    if (c.lat < south) south = c.lat;
+    if (c.lat > north) north = c.lat;
+  }
+  MARKER_LAT_RANGE = { south, north };
+  return MARKER_LAT_RANGE;
+}
+
+// Solve for the zoom level that makes [latS, latN] span exactly heightPx
+// pixels in MapLibre's Mercator projection. Each zoom step doubles tile
+// pixel size, so we solve algebraically rather than letting fitBounds work
+// it out — fitBounds also constrains horizontally, but the user explicitly
+// wants vertical fit even if markers fall off the east/west edges.
+function zoomForLatRange(latS: number, latN: number, heightPx: number): number {
+  const TILE = 512;
+  const yNorm = (lat: number) => {
+    const r = (lat * Math.PI) / 180;
+    return 0.5 - Math.asinh(Math.tan(r)) / (2 * Math.PI);
+  };
+  const dy = Math.abs(yNorm(latS) - yNorm(latN));
+  if (dy <= 0 || heightPx <= 0) return 4;
+  return Math.log2(heightPx / (dy * TILE));
+}
+
+// Compute the initial map view (center + zoom) so every marker's latitude
+// is visible inside the container. Lng stays anchored on Constantinople;
+// lat-center is the midpoint of the marker lat extent so the fit is
+// symmetric north and south.
+function initialView(container: HTMLElement): {
+  center: [number, number];
+  zoom: number;
+} {
+  const { south, north } = getMarkerLatRange();
+  const usable = Math.max(container.clientHeight - 2 * INITIAL_PADDING_PX, 1);
+  const zoom = zoomForLatRange(south, north, usable);
+  return { center: [INITIAL_LNG, (south + north) / 2], zoom };
+}
 
 export default function WorldMap() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -59,11 +111,12 @@ export default function WorldMap() {
   // Init map once per mount
   useEffect(() => {
     if (!containerRef.current) return;
+    const initial = initialView(containerRef.current);
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: STYLE,
-      center: INITIAL_CENTER,
-      zoom: INITIAL_ZOOM,
+      center: initial.center,
+      zoom: initial.zoom,
       attributionControl: { compact: true },
     });
     map.addControl(
@@ -80,9 +133,10 @@ export default function WorldMap() {
       new ResetControl(() => {
         setCurrentYear(defaultStartYear());
         selectEntity(null);
+        const v = initialView(containerRef.current!);
         map.easeTo({
-          center: INITIAL_CENTER,
-          zoom: INITIAL_ZOOM,
+          center: v.center,
+          zoom: v.zoom,
           bearing: 0,
           pitch: 0,
           duration: 700,

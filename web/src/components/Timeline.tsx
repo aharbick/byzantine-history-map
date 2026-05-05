@@ -4,7 +4,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useApp } from "@/lib/context";
 import { allEntities, entities, peopleById, timelineYear } from "@/lib/data";
 import type { AnyEntity, Person } from "@/lib/types";
-import TimelineMiniMap from "./TimelineMiniMap";
 
 interface Props {
   minYear: number;
@@ -208,6 +207,15 @@ export default function Timeline({ minYear, maxYear }: Props) {
       if (y == null) continue;
       list.push({ e, year: y });
     }
+    // Render order = paint order. Events are by far the most numerous, so
+    // paint them first (bottom layer), then places, then people on top — the
+    // rarer kinds stay visible against the dense red field.
+    const rank: Record<AnyEntity["kind"], number> = {
+      event: 0,
+      place: 1,
+      person: 2,
+    };
+    list.sort((a, b) => rank[a.e.kind] - rank[b.e.kind]);
     return list;
   }, [filters]);
 
@@ -231,10 +239,6 @@ export default function Timeline({ minYear, maxYear }: Props) {
 
   return (
     <div className="absolute bottom-0 left-0 right-0 z-20 select-none">
-      {/* Mini-map: transparent histogram overlaying the map directly.
-          No background — geography reads through. */}
-      <TimelineMiniMap minYear={minYear} maxYear={maxYear} />
-
       {/* Twelve-rulers ribbon — its own band between the density mini-map
           and the main strip. Each band spans [reign_start, reign_end] in
           the timeline's coordinate system, scrolls in lockstep with the
@@ -272,10 +276,12 @@ export default function Timeline({ minYear, maxYear }: Props) {
       <div
         ref={stripRef}
         data-byz-strip
-        // Flat surface (no gradient), but at moderate alpha so the map still
-        // reads through faintly — keeps the strip distinct from the fully
-        // transparent mini-map above without feeling like a heavy slab.
-        className="relative h-24 bg-byz-purpleDeep/70 overflow-hidden cursor-grab active:cursor-grabbing touch-none"
+        // Solid (opaque enough to read as the strip surface). No map
+        // underneath now — the strips area is its own region — so the
+        // strip can be a real slab. h-[70px] is the new compact height
+        // since the dots collapsed to a single row.
+        className="relative bg-byz-purpleDeep/85 overflow-hidden cursor-grab active:cursor-grabbing touch-none"
+        style={{ height: 70 }}
         onPointerDown={(e) => {
           // capture so subsequent moves on this pointer route here even if the
           // pointer leaves the element
@@ -412,7 +418,12 @@ export default function Timeline({ minYear, maxYear }: Props) {
               );
             })}
 
-            {/* Entity dots */}
+            {/* Entity dots — single row at the bottom of the strip. Mixed
+                kinds at the same year overlap by design: small dots stack
+                visually as a "burst" of activity. The legend filters
+                still let the user isolate one kind at a time. Z-index
+                puts events at the bottom (most numerous) and people on top
+                (rarest), so the rarer kinds aren't drowned out. */}
             {dots.map(({ e, year }) => {
               const x = (year - minYear) * PIXELS_PER_YEAR;
               return (
@@ -423,25 +434,20 @@ export default function Timeline({ minYear, maxYear }: Props) {
                     setCurrentYear(year);
                     selectEntity(e);
                   }}
-                  // Tap target is the full 12x12 button; visual dot inside
-                  // stays small. Doubles touch area without crowding the row.
                   className="absolute -translate-x-1/2 w-3 h-3 flex items-center justify-center hover:scale-150 transition-transform"
                   style={{
                     left: x,
-                    // Three rows stacked below the year-label pills (label
-                    // bottom is ~35px from top of the 96px-tall strip).
-                    bottom:
-                      e.kind === "person" ? 38 : e.kind === "place" ? 22 : 6,
+                    bottom: 6,
+                    zIndex:
+                      e.kind === "person" ? 3 : e.kind === "place" ? 2 : 1,
                   }}
                   title={`${e.name} (${formatYear(year)})`}
                 >
                   <div
-                    className="w-2.5 h-2.5 rounded-full"
+                    className="w-2 h-2 rounded-full"
                     style={{
                       background: KIND_COLOR[e.kind],
-                      // box-shadow trick replaces the old black ring with a
-                      // 1.5px outline in the kind's own darker shade.
-                      boxShadow: `0 0 0 1.5px ${KIND_COLOR_DARK[e.kind]}`,
+                      boxShadow: `0 0 0 1px ${KIND_COLOR_DARK[e.kind]}`,
                     }}
                   />
                 </button>
@@ -681,11 +687,12 @@ function ActiveRulerChip({
       // the reign bar within the ribbon.
       className="absolute left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-1 byz-active-ruler-snap"
       style={{
-        // Top is negative: the chip starts above the ribbon and spills
-        // down into it. The big portrait sits above the ribbon entirely,
-        // and the name aligns roughly where the in-ribbon name normally
-        // would.
-        top: -(portraitSize - ribbonHeight / 2 + 8),
+        // Lift the chip so the portrait floats over the density mini-map
+        // bars, with the name landing just inside the ribbon's top edge.
+        // Portrait bottom sits ~ribbon top; name follows underneath.
+        // (Lifting the whole chip out of the ribbon was too dramatic; this
+        // keeps the chip visually anchored to the ribbon row.)
+        top: -portraitSize,
       }}
     >
       {ruler.image_url ? (
