@@ -31,6 +31,21 @@ export interface AudioController {
   play(ep: number, seek?: AudioSeekHint): void;
   /** Pause/resume the current track without changing episode. */
   toggle(): void;
+  /** Open or collapse the expanded player UI. Used by the welcome tour
+   * to stage the expanded view for the relevant tour step. */
+  setExpanded(expanded: boolean): void;
+  /** Load an episode into the player without starting playback (so the
+   * tour can demonstrate the expanded view + the Sync timeline toggle
+   * without auto-playing audio). */
+  cueEpisode(ep: number | null): void;
+}
+
+/** Imperative handle the Search component registers with context. The
+ * welcome tour uses it to open the panel and seed a sample query so
+ * the user can see the search workflow without leaving the tour. */
+export interface SearchController {
+  setOpen(open: boolean): void;
+  setQuery(query: string): void;
 }
 
 interface AppState {
@@ -52,6 +67,10 @@ interface AppState {
    * (chip, picker option, prev/next button, play button) call
    * `.current?.play(ep, seek)` from inside their click handler. */
   audioController: MutableRefObject<AudioController | null>;
+  /** Imperative search handle. Search registers itself on mount; the
+   * welcome tour uses it to programmatically open the panel and seed a
+   * query during the search step. */
+  searchController: MutableRefObject<SearchController | null>;
   /** Auto-scrub lock — when true, audio playback won't drive the timeline
    * year. Toggled from the lock button in the timeline strip. */
   autoScrubLocked: boolean;
@@ -88,6 +107,7 @@ export function AppProvider({
   const [playingEpisode, _setPlayingEpisode] = useState<number | null>(null);
   const [pendingSeek, setPendingSeek] = useState<AudioSeekHint | null>(null);
   const audioController = useRef<AudioController | null>(null);
+  const searchController = useRef<SearchController | null>(null);
   const [autoScrubLocked, setAutoScrubLocked] = useState(false);
   const [audioFocusEntityIds, setAudioFocusEntityIds] = useState<string[]>([]);
   const [filters, setFilters] = useState<KindFilter>({
@@ -117,6 +137,7 @@ export function AppProvider({
       pendingSeek,
       consumePendingSeek,
       audioController,
+      searchController,
       autoScrubLocked,
       setAutoScrubLocked,
       audioFocusEntityIds,

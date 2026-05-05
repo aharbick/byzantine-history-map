@@ -499,6 +499,7 @@ function RulerRibbon({
       className="relative w-full border-y border-byz-gold/40 bg-byz-purpleDeep/55 overflow-visible cursor-grab active:cursor-grabbing touch-none"
       style={{ height: RIBBON_H }}
       data-byz-strip
+      data-byz-tour="ribbon"
       onPointerDown={onDragStart}
     >
       {/* Horizontal clip for the moving track only. Vertical overflow stays

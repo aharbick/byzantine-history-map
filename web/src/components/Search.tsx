@@ -76,7 +76,7 @@ function secondaryLine(e: AnyEntity): string {
 }
 
 export default function Search() {
-  const { setCurrentYear, selectEntity } = useApp();
+  const { setCurrentYear, selectEntity, searchController } = useApp();
   const [open, setOpen] = useState(false);
   const [q, setQ] = useState("");
   const [hi, setHi] = useState(0);
@@ -84,6 +84,18 @@ export default function Search() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const results = useMemo(() => searchEntities(q), [q]);
+
+  // Imperative handle for the welcome tour to drive open/query state.
+  useEffect(() => {
+    searchController.current = {
+      setOpen: (v: boolean) => setOpen(v),
+      setQuery: (s: string) => setQ(s),
+    };
+    return () => {
+      searchController.current = null;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // The highlighted-row index lives outside the result set, so a query
   // change can leave it pointing past the new (shorter) list. Reset on
@@ -102,10 +114,14 @@ export default function Search() {
   useEffect(() => {
     if (!open) return;
     function onDown(e: MouseEvent) {
-      if (!containerRef.current?.contains(e.target as Node)) {
-        setOpen(false);
-        setQ("");
-      }
+      if (containerRef.current?.contains(e.target as Node)) return;
+      // Don't auto-close while the welcome tour is up — the tour's
+      // tooltip lives outside the search container, and clicking
+      // "Next" would otherwise dismiss the panel the tour is showing.
+      const target = e.target as Element | null;
+      if (target?.closest?.("[data-byz-tour-overlay]")) return;
+      setOpen(false);
+      setQ("");
     }
     function onKey(e: KeyboardEvent) {
       if (e.key === "Escape") {
@@ -146,6 +162,7 @@ export default function Search() {
   return (
     <div
       ref={containerRef}
+      data-byz-tour="search"
       className="absolute left-2 top-2 z-30 flex flex-col items-start gap-2"
     >
       {open ? (

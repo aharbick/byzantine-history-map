@@ -12,6 +12,7 @@ import AudioPlayer from "./AudioPlayer";
 import Legend from "./Legend";
 import Search from "./Search";
 import UrlState from "./UrlState";
+import WelcomeTour from "./WelcomeTour";
 
 // Map needs window/document; load client-side only
 const WorldMap = dynamic(() => import("./WorldMap"), { ssr: false });
@@ -74,6 +75,8 @@ function Inner({ minYear, maxYear }: { minYear: number; maxYear: number }) {
       >
         <Timeline minYear={minYear} maxYear={maxYear} />
       </div>
+
+      <WelcomeTour />
     </main>
   );
 }

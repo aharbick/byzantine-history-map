@@ -28,6 +28,7 @@ export default function Legend() {
       // gap between the two widgets.
       className="absolute left-2 z-30 flex flex-col items-start gap-0.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-1 text-sm font-display tracking-wider w-[98px]"
       style={{ bottom: 8 }}
+      data-byz-tour="legend"
     >
         {ROWS.map((row) => {
           const on = filters[row.key];

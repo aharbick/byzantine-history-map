@@ -63,6 +63,7 @@ export default function TimelineMiniMap({ minYear, maxYear }: Props) {
       // shows through. Picks a non-entity hue (people=gold, places=blue,
       // events=red) so the histogram never reads as another category.
       className="relative h-24 w-full select-none touch-none cursor-grab active:cursor-grabbing"
+      data-byz-tour="density-strip"
       onPointerDown={(e) => {
         (e.target as Element).setPointerCapture?.(e.pointerId);
         setCurrentYear(clientXToYear(e.clientX));

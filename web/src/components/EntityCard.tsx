@@ -38,6 +38,10 @@ export default function EntityCard({ entity }: Props) {
       const target = e.target as Element | null;
       if (!target || card.contains(target)) return;
       if (target.closest(".byz-marker, .byz-cluster")) return;
+      // Welcome tour stages an open card during its "Entity card" step —
+      // its tooltip lives outside the card, but clicking "Next" should
+      // not deselect the entity.
+      if (target.closest("[data-byz-tour-overlay]")) return;
       selectEntity(null);
     }
 

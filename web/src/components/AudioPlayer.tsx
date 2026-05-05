@@ -163,6 +163,8 @@ export default function AudioPlayer() {
           a.pause();
         }
       },
+      setExpanded: (expanded: boolean) => setMinimized(!expanded),
+      cueEpisode: (ep: number | null) => setCuedEpisode(ep),
     };
     return () => {
       audioController.current = null;
@@ -576,6 +578,7 @@ export default function AudioPlayer() {
           type="button"
           onClick={() => setMinimized(false)}
           title="Expand player"
+          data-byz-tour="player"
           // Same footprint as the Legend below — fixed width and matching pad
           // so the two pills stack as a uniform pair. Click anywhere except
           // the play button expands the player.
@@ -636,6 +639,7 @@ export default function AudioPlayer() {
         // the expanded player flush with the Legend below at every breakpoint.
         className="absolute z-30 left-2 flex flex-col gap-1.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-2 shadow-card w-[calc(100vw-1rem)] sm:w-80"
         style={{ bottom: PLAYER_BOTTOM }}
+        data-byz-tour="player"
       >
         {/* Minimize — bare ✕ glyph, no border/bg/hover. */}
       <button
@@ -751,7 +755,7 @@ export default function AudioPlayer() {
             </svg>
           </IconButton>
         </div>
-        {playingEpisode != null && (
+        {displayedEpisode != null && (
           <FollowAudioToggle
             on={!autoScrubLocked}
             onChange={(nextOn) => {
