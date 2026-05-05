@@ -34,6 +34,7 @@ ROOT = Path(__file__).parent
 REPO = ROOT.parent
 EPISODES_DIR = ROOT / "episodes"
 SEGMENTS_DIR = REPO / "transcripts_segments"
+TRANSCRIPTS_DIR = REPO / "transcripts"
 CACHE_DIR = ROOT / "cache"
 CACHE_DIR.mkdir(exist_ok=True)
 WIKI_CACHE_PATH = CACHE_DIR / "wikipedia.json"
@@ -250,6 +251,16 @@ def _new_entity(cid: str, kind: str, raw: dict) -> dict:
 
 
 def _absorb_episode_data(ent: dict, raw: dict, ep: int) -> None:
+    # Capture the LLM's transcript-line evidence so Stage 3.5 can derive
+    # an audio anchor when Whisper's regex scan finds zero hits (the entity
+    # was referenced only by pronoun / paraphrase / spelling Whisper missed).
+    # Stripped from the final output in `finalize`.
+    raw_lines = raw.get("transcript_lines")
+    if raw_lines:
+        ent.setdefault("transcript_lines_by_episode", {})[str(ep)] = [
+            list(r) for r in raw_lines
+        ]
+
     # Merge alt_names (dedupe order-preserving)
     seen = {n.lower() for n in ent["alt_names"]}
     seen.add(ent["name"].lower())
@@ -867,6 +878,202 @@ def stage_find_mentions(
 
 
 # ---------------------------------------------------------------------------
+# Stage 3.5: derive audio anchors for entities the regex scan missed
+# ---------------------------------------------------------------------------
+#
+# The per-episode LLM extractions record `transcript_lines: [[start, end], ...]`
+# pointing at the lines that justified tagging an entity to that episode. When
+# Stage 3's name-regex finds zero hits (entity referenced via pronoun, fuzzy
+# spelling, or paraphrase), we still know roughly *where* in the transcript
+# the discussion is — so we can map a line number to a Whisper segment via
+# token-overlap and produce a synthetic mention there. The chip seek lands on
+# the right neighborhood, the audio-focus pulse fires at the right moment.
+#
+# Marked `inferred=True` on the per-episode block so downstream consumers can
+# distinguish from regex-anchored mentions if they choose to.
+
+# Stopwords stripped before token-overlap scoring — they're shared across
+# every segment and contribute pure noise. Kept short on purpose: rare-but-
+# functional words like "Maximian", "Diocletian", "Persia" are exactly what
+# we WANT to weight, so we stop only at obvious closed-class tokens.
+_ALIGNMENT_STOPWORDS = {
+    "the", "a", "an", "of", "and", "to", "in", "at", "on", "for", "with",
+    "was", "were", "is", "are", "by", "this", "that", "these", "those",
+    "his", "her", "him", "she", "he", "they", "them", "their", "its",
+    "but", "or", "as", "be", "not", "had", "have", "has", "been", "would",
+    "could", "should", "will", "did", "do", "does", "from", "into", "than",
+    "then", "when", "where", "while", "who", "whom", "which", "what",
+    "after", "before", "over", "under", "about", "any", "all", "no",
+    "if", "so", "it", "we", "us", "you", "your", "i", "my", "me",
+}
+
+
+def _tokens_for_alignment(text: str) -> list[str]:
+    """Lowercase content tokens, stopwords removed. Used to score Whisper
+    segments against a transcript line by overlap count."""
+    raw = re.findall(r"[A-Za-z']+", text.lower())
+    return [t for t in raw if len(t) > 2 and t not in _ALIGNMENT_STOPWORDS]
+
+
+def _find_segment_for_line(
+    transcript_lines: list[str],
+    segments: list[dict],
+    line_num: int,
+) -> tuple[int, dict] | None:
+    """Locate the Whisper segment that most likely covers `line_num` of the
+    plain-text transcript. Pure heuristic: token-overlap with positional
+    proximity as a tiebreaker.
+
+    `line_num` is 1-indexed (matching the LLM extraction's convention).
+    Returns (segment_idx, segment_dict) or None if alignment fails.
+    """
+    if not segments or line_num < 1 or line_num > len(transcript_lines):
+        return None
+
+    # Build a context window: target line + a few neighbors to compensate for
+    # short single-clause lines like "stunning decision." that wouldn't carry
+    # enough distinctive tokens on their own.
+    lo = max(0, line_num - 2)
+    hi = min(len(transcript_lines), line_num + 2)
+    window_text = " ".join(transcript_lines[lo:hi])
+    target_tokens = _tokens_for_alignment(window_text)
+    if len(target_tokens) < 3:
+        return None
+    target_set = set(target_tokens)
+
+    # Expected segment position by linear interpolation (line N of L lines
+    # ≈ segment N·S/L). Used as a tiebreaker: among segments with equal
+    # token overlap, prefer the one closest to the expected position. Saves
+    # us from picking a distant segment that happens to share common tokens.
+    expected_idx = (line_num / max(len(transcript_lines), 1)) * len(segments)
+
+    best_idx = -1
+    best_score = -1.0
+    for idx, seg in enumerate(segments):
+        seg_tokens = set(_tokens_for_alignment(seg.get("text") or ""))
+        if not seg_tokens:
+            continue
+        overlap = len(target_set & seg_tokens)
+        if overlap == 0:
+            continue
+        # Tiebreaker: subtract 1% of positional distance per index. Two
+        # segments with overlap=3 and abs(idx - expected) differing by 50
+        # shift by 0.5 — only matters when token scores are tied.
+        score = overlap - 0.01 * abs(idx - expected_idx)
+        if score > best_score:
+            best_score = score
+            best_idx = idx
+
+    if best_idx < 0:
+        return None
+    # Require at least 2 distinctive token matches, otherwise we've probably
+    # latched onto a noise segment with one shared filler word.
+    seg = segments[best_idx]
+    raw_overlap = len(target_set & set(_tokens_for_alignment(seg.get("text") or "")))
+    if raw_overlap < 2:
+        return None
+    return best_idx, seg
+
+
+def stage_fill_inferred_anchors(
+    entities: dict[str, dict],
+    episodes_meta: list[dict],
+) -> int:
+    """For every (entity, episode) where `transcript_lines` is recorded but
+    the segment scan found zero mentions, synthesize a single mention
+    pointing at the Whisper segment most likely covering the first line.
+
+    Returns the count of blocks anchored. Cheap by design — only touches
+    blocks that truly need it; episodes with no work to do don't load
+    transcripts or segments.
+    """
+    # Index episodes by number for quick lookups.
+    ep_by_num = {ep["episode"]: ep for ep in episodes_meta}
+    # Lazy per-episode caches: only loaded when a candidate exists.
+    seg_cache: dict[int, list[dict] | None] = {}
+    line_cache: dict[int, list[str] | None] = {}
+
+    def load_segments(ep_num: int) -> list[dict] | None:
+        if ep_num in seg_cache:
+            return seg_cache[ep_num]
+        meta = ep_by_num.get(ep_num)
+        path = SEGMENTS_DIR / meta["segments_file"] if meta else None
+        if not path or not path.exists():
+            seg_cache[ep_num] = None
+            return None
+        try:
+            data = json.load(open(path, encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            seg_cache[ep_num] = None
+            return None
+        seg_cache[ep_num] = data.get("segments") or None
+        return seg_cache[ep_num]
+
+    def load_lines(ep_num: int) -> list[str] | None:
+        if ep_num in line_cache:
+            return line_cache[ep_num]
+        meta = ep_by_num.get(ep_num)
+        path = TRANSCRIPTS_DIR / meta["transcript_file"] if meta else None
+        if not path or not path.exists():
+            line_cache[ep_num] = None
+            return None
+        try:
+            text = path.read_text(encoding="utf-8")
+        except OSError:
+            line_cache[ep_num] = None
+            return None
+        line_cache[ep_num] = text.splitlines()
+        return line_cache[ep_num]
+
+    anchored = 0
+    failed = 0
+    for ent in entities.values():
+        lines_by_ep = ent.get("transcript_lines_by_episode") or {}
+        if not lines_by_ep:
+            continue
+        for ep_key, ranges in lines_by_ep.items():
+            block = ent["summaries_by_episode"].setdefault(ep_key, {"summary": ""})
+            if (block.get("mention_count") or 0) > 0:
+                continue  # regex already gave us a real anchor
+            if not ranges:
+                continue
+            ep_num = int(ep_key)
+            segments = load_segments(ep_num)
+            transcript_lines = load_lines(ep_num)
+            if not segments or not transcript_lines:
+                continue
+            # Use the first range's start line as the anchor reference.
+            first_line = int(ranges[0][0]) if ranges and ranges[0] else None
+            if first_line is None:
+                continue
+            found = _find_segment_for_line(transcript_lines, segments, first_line)
+            if not found:
+                failed += 1
+                continue
+            seg_idx, seg = found
+            mention = {
+                "segment_idx": seg_idx,
+                "start": round(float(seg["start"]), 2),
+                "end": round(float(seg["end"]), 2),
+                "matched": "[inferred]",
+            }
+            ent.setdefault("mentions_by_episode", {}).setdefault(ep_key, []).append(mention)
+            block["mention_count"] = sum(
+                (int(r[1]) - int(r[0]) + 1) for r in ranges if len(r) >= 2
+            ) or 1
+            block["first_mention_seconds"] = mention["start"]
+            # Conservative score: enough to surface the chip but well below
+            # any real regex-matched score (which max out near 100).
+            block["score"] = max(int(block.get("score") or 0), 5)
+            block["inferred"] = True
+            anchored += 1
+
+    if failed:
+        print(f"      ({failed} block(s) had transcript_lines but no segment alignment)")
+    return anchored
+
+
+# ---------------------------------------------------------------------------
 # Stage 4: synthesize unified summaries with Claude (optional)
 # ---------------------------------------------------------------------------
 
@@ -1127,6 +1334,11 @@ def finalize(entities: dict[str, dict], episodes_meta: list[dict]) -> dict:
         scores = [blk.get("score", 0) for blk in ent["summaries_by_episode"].values() if isinstance(blk, dict)]
         ent["max_score"] = max(scores) if scores else 0
 
+    # Strip the LLM-line-evidence field — it was a build-time helper for
+    # Stage 3.5 and isn't part of the public schema.
+    for ent in entities.values():
+        ent.pop("transcript_lines_by_episode", None)
+
     # Sort lists
     people = sorted(
         (e for e in entities.values() if e["kind"] == "person"),
@@ -1186,6 +1398,9 @@ def main():
     if not args.no_mentions:
         print("[3/5] Scanning Whisper segment transcripts for mentions...")
         stage_find_mentions(entities, episodes_meta)
+        anchored = stage_fill_inferred_anchors(entities, episodes_meta)
+        if anchored:
+            print(f"      Inferred audio anchors for {anchored} block(s) via transcript_lines.")
     else:
         print("[3/5] (skipped — --no-mentions)")
 

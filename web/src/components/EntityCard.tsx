@@ -159,24 +159,43 @@ export default function EntityCard({ entity }: Props) {
         )}
 
         {/* Episode links — chips seek to the entity's first segment-level
-            mention in the episode (absolute seconds, not a line approximation). */}
-        <div>
-          <div className="text-[10px] uppercase tracking-widest text-byz-goldLight/80 mb-1">
-            Mentioned in
-          </div>
-          <div className="flex flex-wrap gap-1">
-            {entity.episodes.map((ep) => {
-              const block = entity.summaries_by_episode?.[String(ep)];
-              return (
-                <EpisodeChip
-                  key={ep}
-                  episode={ep}
-                  startSeconds={block?.first_mention_seconds ?? null}
-                />
-              );
-            })}
-          </div>
-        </div>
+            mention in the episode (absolute seconds, not a line approximation).
+            entity.episodes can include episodes the data pipeline associated
+            with the entity (e.g. via Wikipedia or related-entity links) but
+            where Whisper found zero transcript mentions. Those blocks have
+            score 0 / mention_count 0 / first_mention null, and produce
+            chips that either do nothing or restart the episode at 0 — both
+            user-confusing. Filter to chips with at least one real mention. */}
+        {(() => {
+          const playable = entity.episodes
+            .map((ep) => ({
+              ep,
+              block: entity.summaries_by_episode?.[String(ep)],
+            }))
+            .filter(
+              ({ block }) =>
+                block &&
+                (block.mention_count ?? 0) > 0 &&
+                block.first_mention_seconds != null,
+            );
+          if (playable.length === 0) return null;
+          return (
+            <div>
+              <div className="text-[10px] uppercase tracking-widest text-byz-goldLight/80 mb-1">
+                Mentioned in
+              </div>
+              <div className="flex flex-wrap gap-1">
+                {playable.map(({ ep, block }) => (
+                  <EpisodeChip
+                    key={ep}
+                    episode={ep}
+                    startSeconds={block!.first_mention_seconds}
+                  />
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Per-episode commentary — pairs the LLM's summary with verbatim
             transcript excerpts pulled straight from the segment-level Whisper
