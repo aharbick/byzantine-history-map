@@ -102,7 +102,7 @@ function Header() {
           href="https://12byzantinerulers.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className={`text-[10px] uppercase tracking-[0.2em] sm:whitespace-nowrap text-byz-parchmentDark hover:text-byz-goldLight underline-offset-2 hover:underline mt-1.5 ${
+          className={`text-[10px] uppercase tracking-[0.2em] sm:whitespace-nowrap text-byz-parchmentDark hover:text-byz-goldLight underline underline-offset-2 mt-1.5 ${
             expanded ? "block" : "hidden sm:block"
           }`}
         >

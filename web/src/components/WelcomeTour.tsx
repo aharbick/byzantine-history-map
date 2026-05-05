@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { useApp } from "@/lib/context";
 import { getEntity } from "@/lib/data";
 
@@ -24,7 +24,7 @@ interface Step {
    * no spotlight (intro / outro screens). */
   selector: string | null;
   title: string;
-  body: string;
+  body: ReactNode;
   /** Side-effects to apply on entering this step (auto-open expanded
    * views the step is teaching about). */
   stage?: StagePayload;
@@ -41,11 +41,26 @@ const STEPS: Step[] = [
   {
     selector: null,
     title: "Welcome",
-    body: 'This is an interactive companion to Lars Brownworth\'s "12 Byzantine Rulers" podcast. It covers the people, places, and events from late Rome to the fall of Constantinople. This quick tour will cover the key controls — try out the features as you go; the highlighted control stays clickable on each step.',
+    body: (
+      <>
+        This is an interactive companion to{" "}
+        <a
+          href="https://12byzantinerulers.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-byz-goldLight underline underline-offset-2 hover:text-byz-gold"
+        >
+          Lars Brownworth&rsquo;s &ldquo;12 Byzantine Rulers&rdquo; podcast
+        </a>{" "}
+        which covers the little known Byzantine Empire through the study of
+        twelve of its greatest rulers. This quick tour will cover the key
+        features which you should try out during the tour.
+      </>
+    ),
   },
   {
     selector: '[data-byz-tour="ribbon"]',
-    title: "The twelve rulers",
+    title: "The twelve rulers ribbon",
     body: "The ribbon scrolls left and right and follows the timeline. It shows the 12 key rulers in Brownworth's podcast. Try dragging it.",
     // The default HIGHLIGHT_PAD pushes the cutout's top into the
     // density mini-map (revealing bars at the top of the hole) and
@@ -63,17 +78,17 @@ const STEPS: Step[] = [
   {
     selector: ".maplibregl-marker",
     title: "People, places, events",
-    body: "Markers on the map represent a person (yellow marker), place (blue marker), or event (red marker). Click on any marker to read a summary, skip to relevant sections in the podcast, link to related people, places, or events, and learn more on Wikipedia.",
+    body: "Markers on the map represent a person (yellow marker), place (blue marker), or event (red marker). Click on any marker to open a details card. We will learn more about that later in the tour.",
   },
   {
     selector: '[data-byz-tour="legend"]',
-    title: "Filter by kind",
+    title: "Show or hide by type",
     body: "Show or hide people, places, or events on the map as well as the timeline below.",
   },
   {
     selector: '[data-byz-tour="density-strip"]',
     title: "Fast forward through time",
-    body: "Drag the bar chart to move quickly through the timeline. Taller bars mean more was happening.",
+    body: "Drag the bar chart to move quickly through the timeline watching the rulers and markers on the map change. The higher bars represent periods in time when there are more markers on the map.",
     // The strip's tallest bars reach close to the top edge — clip only
     // a small sliver off the top (where the strip is mostly empty over
     // the map) so the bars themselves stay fully inside the cutout.
@@ -87,12 +102,12 @@ const STEPS: Step[] = [
   {
     selector: '[data-byz-tour="player"]',
     title: "Listen along",
-    body: "This is the minimized view of the player showing the current episode and times. Click the play/pause button to play/pause. Click elsewhere to expand the player for more features.",
+    body: "This is the minimized view of the player showing the current episode and times. Click the play/pause button to play/pause. Click on the widget to expand the player for more features.",
   },
   {
     selector: '[data-byz-tour="player"]',
     title: "Pick an episode and sync the timeline",
-    body: 'Select "Sync timeline" to have the timeline follow the episode\'s ruler and map markers light up as the host mentions them.',
+    body: 'Use the drop down or next and previous buttons to change the episode that is playing. Drag the slider to move to a specific time in the episode. Select "Sync timeline" to have the timeline follow the episode\'s ruler and map markers light up as the host mentions them.',
     stage: { expandPlayer: true, cueEpisode: 7 },
   },
   {
@@ -103,14 +118,14 @@ const STEPS: Step[] = [
   },
   {
     selector: ".card-frame",
-    title: "Entity cards",
+    title: "Person, place, or event detail cards",
     body: "Each card collects the synthesized summary, the episodes that mention this entity, the relevant Wikipedia info, and links to related people, places, and events. Use the \"Mentioned in\" chips to skip straight to the moment Brownworth introduces them.",
     stage: { selectEntityId: "constantine-the-great" },
   },
   {
     selector: null,
-    title: "Have fun",
-    body: "Everything is reachable from the timeline, search, or a selected card's related-entity links. Enjoy learning about the 12 Byzantine Rulers by Lars Brownworth.",
+    title: "Start learning",
+    body: "Everything is reachable from the timeline, search, or details on the person, place, or event card. Enjoy learning about the 12 Byzantine Rulers by Lars Brownworth.",
   },
 ];
 
