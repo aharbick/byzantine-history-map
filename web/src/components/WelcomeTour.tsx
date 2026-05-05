@@ -174,6 +174,10 @@ export default function WelcomeTour() {
   // (the map-marker step targets a marker; missing markers => no rect).
   useEffect(() => {
     if (typeof window === "undefined") return;
+    // Headless screenshot escape hatch — used by tools/og-image.sh to
+    // capture the bare app for the social-card image without the tour
+    // overlay covering everything.
+    if (new URLSearchParams(window.location.search).has("notour")) return;
     let seen: string | null = null;
     try {
       seen = window.localStorage.getItem(STORAGE_KEY);
