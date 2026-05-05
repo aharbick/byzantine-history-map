@@ -318,6 +318,14 @@ export default function AudioPlayer() {
     const anchors = getEpisodeAnchors(playingEpisode);
     if (anchors.length === 0) return;
 
+    // The episode's protagonist is already prominently displayed in the
+    // ruler ribbon (large pinned portrait beside the year readout), so
+    // pulsing their map marker every time their name comes up — which is
+    // every few seconds in a podcast about them — reads as flicker rather
+    // than information. Skip the protagonist's id when populating the
+    // focus set; supporting cast still lights up normally.
+    const rulerId = episodesById[playingEpisode]?.ruler_id ?? null;
+
     // Each highlighted entity stays lit this long after its mention; new
     // mentions don't replace older ones, they pile on. Dense sequences thus
     // produce a brief constellation of glowing markers rather than a single
@@ -372,6 +380,7 @@ export default function AudioPlayer() {
       // of how many follow-ups come within that window.
       const liveKeys = new Set<string>();
       for (const a of active) {
+        if (a.entityId === rulerId) continue;
         const key = `${a.entityId}@${a.segmentIdx}`;
         liveKeys.add(key);
         if (!seenAnchorKeys.has(key)) {
