@@ -501,11 +501,11 @@ export default function AudioPlayer() {
   const epLabel = hasEpisode ? `Ep ${displayedEpisode}` : "Ep ??";
   const minimizedSubLabel = hasEpisode ? timeText : "Select Episode";
 
-  // Stack from the bottom: timeline strip (h-24 → 96 px tall) → 8 px gap →
-  // Legend (bottom: 104, ~74 px tall) → 8 px gap → player. Player.bottom =
-  // legend.top + 8 = (104 + 74) + 8 = 186. Same 8 px gap above the strip,
-  // between the two widgets, and (visually) above the player.
-  const PLAYER_BOTTOM = 186;
+  // Stack from the bottom: timeline strip (h-24 → 96 px tall) → twelve-rulers
+  // ribbon (56 px slim single row) + 2 px border-y → 8 px gap → Legend
+  // (~74 px tall) → 8 px gap → player. Legend.bottom = 96 + 58 + 8 = 162.
+  // Player.bottom = legend.top + 8 = (162 + 74) + 8 = 244.
+  const PLAYER_BOTTOM = 244;
 
   // The <audio> element MUST live outside the minimized/expanded conditional.
   // Putting one inside each branch causes React to unmount/remount the

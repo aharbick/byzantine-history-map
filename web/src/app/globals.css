@@ -292,3 +292,20 @@ body > div {
 .byz-cluster-count {
   pointer-events: none;
 }
+
+/* Snap-in animation for the active ruler chip when it detaches from the
+ * ribbon and lands above the year-readout pill. Quick scale + drop in,
+ * matching the "snapped" feel the user described — not a slow lift. */
+.byz-active-ruler-snap {
+  animation: byz-active-ruler-snap 180ms cubic-bezier(0.2, 0.6, 0.3, 1.2);
+}
+@keyframes byz-active-ruler-snap {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px) scale(0.86);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}

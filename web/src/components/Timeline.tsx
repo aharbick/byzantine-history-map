@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useApp } from "@/lib/context";
-import { allEntities, timelineYear } from "@/lib/data";
-import type { AnyEntity } from "@/lib/types";
+import { allEntities, entities, peopleById, timelineYear } from "@/lib/data";
+import type { AnyEntity, Person } from "@/lib/types";
 import TimelineMiniMap from "./TimelineMiniMap";
 
 interface Props {
@@ -211,14 +211,58 @@ export default function Timeline({ minYear, maxYear }: Props) {
     return list;
   }, [filters]);
 
+  // Twelve-rulers ribbon — each ruler is a horizontal band spanning their
+  // reign. Always rendered (regardless of kind filters); the protagonist of
+  // an episode is the spine of the podcast, so the ribbon is intentionally
+  // distinct from the People filter that hides supporting-cast dots.
+  const rulers = useMemo(() => {
+    const list: {
+      ruler: Person;
+      start: number;
+      end: number;
+    }[] = [];
+    for (const id of entities.twelve_rulers) {
+      const r = peopleById[id];
+      if (!r || r.reign_start == null || r.reign_end == null) continue;
+      list.push({ ruler: r, start: r.reign_start, end: r.reign_end });
+    }
+    return list;
+  }, []);
+
   return (
     <div className="absolute bottom-0 left-0 right-0 z-20 select-none">
       {/* Mini-map: transparent histogram overlaying the map directly.
           No background — geography reads through. */}
       <TimelineMiniMap minYear={minYear} maxYear={maxYear} />
 
-      {/* Year readout straddles the seam between mini-map and main strip,
-          tying the two regions together visually. */}
+      {/* Twelve-rulers ribbon — its own band between the density mini-map
+          and the main strip. Each band spans [reign_start, reign_end] in
+          the timeline's coordinate system, scrolls in lockstep with the
+          strip, and the ruler whose era contains currentYear pops out as a
+          large pinned chip on the seam beside the year readout (handled
+          inside RulerRibbon). */}
+      <RulerRibbon
+        rulers={rulers}
+        minYear={minYear}
+        translateX={translateX}
+        trackWidthPx={trackWidthPx}
+        currentYear={currentYear}
+        onPick={(r) => {
+          setCurrentYear((r.start + r.end) / 2);
+          selectEntity(r.ruler);
+        }}
+        onDragStart={(e) => {
+          // Same scrub-drag the main strip + density mini-map have. Click
+          // on the background of the ribbon (NOT on a chip — chips
+          // stopPropagation) starts a drag.
+          (e.target as Element).setPointerCapture?.(e.pointerId);
+          dragLastXRef.current = e.clientX;
+          setDragging(true);
+        }}
+      />
+
+      {/* Year readout straddles the seam between the ruler ribbon and the
+          main strip, tying the two regions together visually. */}
       <div className="relative h-0">
         <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 rounded-full bg-byz-purpleDeep/95 border border-byz-gold/60 px-4 py-1 text-byz-goldLight font-display text-sm tracking-wider whitespace-nowrap shadow-card">
           {formatYear(currentYear)}
@@ -414,8 +458,264 @@ function clamp(n: number, lo: number, hi: number) {
   return Math.max(lo, Math.min(hi, n));
 }
 
+/** Trim verbose rulers down to a chip-friendly label.
+ * "Constantine the Great" -> "Constantine I", "Irene of Athens" -> "Irene",
+ * "Constantine XI Palaiologos" -> "Constantine XI", "Alexios Komnenos" ->
+ * "Alexios", "Isaac II Angelos" -> "Isaac II". Falls back to the full name
+ * if no rule fires. */
+function shortRulerName(name: string): string {
+  return name
+    .replace(/^Constantine the Great$/, "Constantine I")
+    .replace(/ the Apostate$/, "")
+    .replace(/ of Athens$/, "")
+    .replace(/ Palaiologos$/, "")
+    .replace(/ Komnenos$/, "")
+    .replace(/ Angelos$/, "");
+}
+
 function formatYear(y: number): string {
   const r = Math.round(y);
   if (r < 0) return `${-r} BC`;
   return `${r} AD`;
+}
+
+/* ------------------------------------------------------------------------- *
+ * RulerRibbon — its own row above the main strip, between the density
+ * mini-map and the year readout.
+ *
+ * Layout: 56px tall, gold-themed slab. Inside, a horizontally-translated
+ * track carries a chip per ruler at their reign position. Reigns under
+ * ~12 years are too narrow for a portrait + name, so they collapse to a
+ * minimum-width gold pip that just registers a presence on the timeline.
+ *
+ * The ruler whose era contains currentYear is also drawn as a LARGE pinned
+ * portrait sitting on the seam between the ribbon and the strip — the
+ * "you are here" anchor that the year readout floats next to.
+ * ------------------------------------------------------------------------- */
+
+interface RulerEntry {
+  ruler: Person;
+  start: number;
+  end: number;
+}
+
+function RulerRibbon({
+  rulers,
+  minYear,
+  translateX,
+  trackWidthPx,
+  currentYear,
+  onPick,
+  onDragStart,
+}: {
+  rulers: RulerEntry[];
+  minYear: number;
+  translateX: number;
+  trackWidthPx: number;
+  currentYear: number;
+  onPick: (r: RulerEntry) => void;
+  onDragStart: (e: React.PointerEvent<HTMLDivElement>) => void;
+}) {
+  // Single-row ribbon. Each ruler's chip lives at its reign position; the
+  // reign duration is shown as a colored bar UNDER the portrait+name. When
+  // the cursor enters a reign, THAT ruler's chip detaches from the line
+  // and snaps over the year readout pill as a big portrait + name. When
+  // the cursor leaves, it snaps back to its ribbon spot. The reign bar
+  // stays put — only the chip travels.
+  const RIBBON_H = 56;
+  const PORTRAIT_SIZE = 32;
+  const PORTRAIT_TOP = 6;
+  const BAR_TOP = PORTRAIT_TOP + PORTRAIT_SIZE + 2;
+  const BAR_H = 4;
+  // Big-portrait dimensions for the snapped-on-cursor active state.
+  const ACTIVE_PORTRAIT_SIZE = 96;
+
+  const activeIdx = rulers.findIndex(
+    (r) => currentYear >= r.start - 1 && currentYear <= r.end + 1,
+  );
+  const activeEntry = activeIdx >= 0 ? rulers[activeIdx] : null;
+
+  return (
+    <div
+      // overflow-visible so the active chip can float above the ribbon's
+      // top edge. (Setting overflow-x: hidden alongside overflow-y:
+      // visible would collapse both axes to "auto" per the CSS spec and
+      // clip the floating chip.) Horizontal clipping is delegated to the
+      // inner wrapper so the moving track doesn't bleed sideways past the
+      // ribbon's bounds.
+      className="relative w-full border-y border-byz-gold/40 bg-byz-purpleDeep/55 overflow-visible cursor-grab active:cursor-grabbing touch-none"
+      style={{ height: RIBBON_H }}
+      data-byz-strip
+      onPointerDown={onDragStart}
+    >
+      {/* Horizontal clip for the moving track only. Vertical overflow stays
+          visible at the outer ribbon level so the snapped active chip
+          renders above the ribbon. */}
+      <div className="absolute inset-0 overflow-x-hidden overflow-y-visible">
+      {/* Inner moving track: reign bars + ribbon chips, scrolls with the
+          timeline. */}
+      <div
+        className="absolute top-0 bottom-0 left-0 will-change-transform"
+        style={{ width: trackWidthPx, transform: `translateX(${translateX}px)` }}
+      >
+        {rulers.map((entry, idx) => {
+          const { ruler, start, end } = entry;
+          const reignX = (start - minYear) * PIXELS_PER_YEAR;
+          const reignW = Math.max((end - start) * PIXELS_PER_YEAR, 4);
+          const isActive = idx === activeIdx;
+          const ordinal = entitiesOrdinal(ruler.id);
+          return (
+            <div key={ruler.id}>
+              {/* Reign-duration bar. Stays put even when the chip detaches
+                  to fly to the cursor — the bar marks WHERE the era was
+                  on the timeline. */}
+              <div
+                aria-hidden="true"
+                className={`absolute rounded ${
+                  isActive ? "bg-byz-goldLight" : "bg-byz-gold/60"
+                }`}
+                style={{
+                  left: reignX,
+                  width: reignW,
+                  top: BAR_TOP,
+                  height: BAR_H,
+                }}
+              />
+              {/* In-ribbon chip. Hidden via opacity when this ruler is
+                  active (the big detached chip above takes its place). */}
+              <button
+                type="button"
+                onClick={(ev) => {
+                  ev.stopPropagation();
+                  onPick(entry);
+                }}
+                onPointerDown={(ev) => ev.stopPropagation()}
+                title={`${ordinal}. ${ruler.name} (${start}–${end})`}
+                aria-hidden={isActive}
+                className="absolute flex items-center gap-1.5 whitespace-nowrap pr-1 transition-opacity duration-150"
+                style={{
+                  left: reignX - PORTRAIT_SIZE / 2,
+                  top: PORTRAIT_TOP,
+                  height: PORTRAIT_SIZE,
+                  opacity: isActive ? 0 : 1,
+                  pointerEvents: isActive ? "none" : "auto",
+                  zIndex: 10,
+                }}
+              >
+                {ruler.image_url ? (
+                  <img
+                    src={ruler.image_url}
+                    alt=""
+                    draggable={false}
+                    className="rounded-full object-cover shadow-[0_2px_6px_rgba(0,0,0,0.55)] border border-byz-gold/70 grayscale"
+                    style={{ width: PORTRAIT_SIZE, height: PORTRAIT_SIZE }}
+                  />
+                ) : (
+                  <span
+                    className="rounded-full grid place-items-center text-[12px] font-display font-bold text-byz-ink shadow-[0_2px_6px_rgba(0,0,0,0.55)] border border-byz-gold/70"
+                    style={{
+                      width: PORTRAIT_SIZE,
+                      height: PORTRAIT_SIZE,
+                      background:
+                        "radial-gradient(circle, #fce58a 0%, #c9a227 70%, #6b4f10 100%)",
+                    }}
+                  >
+                    {ordinal}
+                  </span>
+                )}
+                <span className="text-[13px] font-display tracking-wider drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)] text-byz-parchment">
+                  {shortRulerName(ruler.name)}
+                </span>
+              </button>
+            </div>
+          );
+        })}
+      </div>
+      </div>
+
+      {/* Detached active chip. Pinned at left: 50% of the ribbon (= the
+          cursor's vertical line), floats ABOVE the ribbon so it sits over
+          the year readout pill. Rendered OUTSIDE the inner overflow-x
+          clip so its portrait can extend above the ribbon's top edge.
+          Mount animation gives the snap a tiny scale-in pop. */}
+      {activeEntry && (
+        <ActiveRulerChip
+          key={activeEntry.ruler.id}
+          entry={activeEntry}
+          ordinal={entitiesOrdinal(activeEntry.ruler.id)}
+          onPick={onPick}
+          ribbonHeight={RIBBON_H}
+          portraitSize={ACTIVE_PORTRAIT_SIZE}
+        />
+      )}
+    </div>
+  );
+}
+
+function ActiveRulerChip({
+  entry,
+  ordinal,
+  onPick,
+  ribbonHeight,
+  portraitSize,
+}: {
+  entry: RulerEntry;
+  ordinal: number;
+  onPick: (r: RulerEntry) => void;
+  ribbonHeight: number;
+  portraitSize: number;
+}) {
+  const { ruler, start, end } = entry;
+  return (
+    <button
+      type="button"
+      onClick={(ev) => {
+        ev.stopPropagation();
+        onPick(entry);
+      }}
+      onPointerDown={(ev) => ev.stopPropagation()}
+      title={`${ordinal}. ${ruler.name} (${start}–${end})`}
+      // Centered horizontally on the ribbon (= the cursor's column, since
+      // the cursor is the middle of the panel). Lifted up so the portrait
+      // sits comfortably above the ribbon, with the name tucked just above
+      // the reign bar within the ribbon.
+      className="absolute left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-1 byz-active-ruler-snap"
+      style={{
+        // Top is negative: the chip starts above the ribbon and spills
+        // down into it. The big portrait sits above the ribbon entirely,
+        // and the name aligns roughly where the in-ribbon name normally
+        // would.
+        top: -(portraitSize - ribbonHeight / 2 + 8),
+      }}
+    >
+      {ruler.image_url ? (
+        <img
+          src={ruler.image_url}
+          alt=""
+          draggable={false}
+          className="rounded-full object-cover border-2 border-byz-goldLight shadow-[0_6px_22px_rgba(0,0,0,0.7)]"
+          style={{ width: portraitSize, height: portraitSize }}
+        />
+      ) : (
+        <span
+          className="rounded-full grid place-items-center text-2xl font-display font-bold text-byz-ink border-2 border-byz-goldLight shadow-[0_6px_22px_rgba(0,0,0,0.7)]"
+          style={{
+            width: portraitSize,
+            height: portraitSize,
+            background:
+              "radial-gradient(circle, #fce58a 0%, #c9a227 70%, #6b4f10 100%)",
+          }}
+        >
+          {ordinal}
+        </span>
+      )}
+      <span className="text-[15px] font-display font-bold tracking-wider text-byz-goldLight drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">
+        {shortRulerName(ruler.name)}
+      </span>
+    </button>
+  );
+}
+
+function entitiesOrdinal(id: string): number {
+  return entities.twelve_rulers.indexOf(id) + 1;
 }
