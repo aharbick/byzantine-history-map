@@ -10,6 +10,7 @@ import TimelineMiniMap from "./TimelineMiniMap";
 import EntityCard from "./EntityCard";
 import AudioPlayer from "./AudioPlayer";
 import Legend from "./Legend";
+import Search from "./Search";
 import UrlState from "./UrlState";
 
 // Map needs window/document; load client-side only
@@ -46,15 +47,18 @@ function Inner({ minYear, maxYear }: { minYear: number; maxYear: number }) {
         <WorldMap />
         <Legend />
         <AudioPlayer />
+        <Search />
         <AnimatePresence>
           {selectedEntity && <EntityCard entity={selectedEntity} />}
         </AnimatePresence>
         <Header />
-        {/* Density mini-map overlays the map's bottom strip — purely
-            visual, no click handling, so markers underneath stay
-            clickable. Users still scrub via the main strip + ribbon. */}
+        {/* Density mini-map overlays the map's bottom band. It captures
+            its own pointer events so drag-to-scrub works (otherwise the
+            map's own pan handler eats the gesture). Markers that fall
+            in this band can't be clicked through the bars; the bars are
+            translucent so the map still reads through them. */}
         <div
-          className="absolute left-0 right-0 bottom-0 pointer-events-none"
+          className="absolute left-0 right-0 bottom-0"
           style={{ height: DENSITY_HEIGHT_PX }}
         >
           <TimelineMiniMap minYear={minYear} maxYear={maxYear} />
