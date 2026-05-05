@@ -36,7 +36,7 @@ export const DENSITY_HEIGHT_PX = 96;
 function Inner({ minYear, maxYear }: { minYear: number; maxYear: number }) {
   const { selectedEntity } = useApp();
   return (
-    <main className="flex flex-col h-screen w-screen overflow-hidden bg-byz-ink">
+    <main className="flex flex-col h-[100dvh] w-screen overflow-hidden bg-byz-ink">
       <UrlState />
 
       {/* Map area: takes everything ABOVE the ruler ribbon + main strip.
