@@ -652,29 +652,43 @@ def _alts_for_match(
             continue
         filtered.append(n)
 
-    if is_protagonist:
-        # Add first-token of every alt_name (and the canonical name) so
-        # Latinized / vernacular short-forms ("Alexius" for "Alexius Comnenus",
-        # "Justinian" for "Justinian I") all match.
-        first_tokens: set[str] = set()
-        for n in [name] + list(ent.get("alt_names") or []):
-            parts = n.strip().split()
-            if not parts:
+    # First-token expansion. Multi-word canonical names ("Justin I",
+    # "Hippodrome of Constantinople", "Battle of the Milvian Bridge")
+    # only match in their full form by default — bare "Justin" or
+    # "the hippodrome" slip through, which is how Brownworth actually
+    # narrates. We add the lead token as a synthetic alt so those
+    # references land on the right entity.
+    #
+    # For the episode protagonist, every first-token is added (they
+    # claim contested tokens — "Constantine" in a Constantine episode
+    # is unambiguous). For non-protagonists, only first-tokens that
+    # AREN'T contested are added, so "Constantine" alone in an episode
+    # featuring two Constantines doesn't get attributed to the wrong
+    # one.
+    first_tokens: set[str] = set()
+    for n in [name] + list(ent.get("alt_names") or []):
+        parts = n.strip().split()
+        if not parts:
+            continue
+        t = parts[0].rstrip(",.;:")
+        if not t:
+            continue
+        if t.lower() in DROP_FIRST_TOKEN:
+            if len(parts) > 1:
+                t = parts[1].rstrip(",.;:")
+            else:
                 continue
-            t = parts[0].rstrip(",.;:")
-            if not t:
-                continue
-            if t.lower() in DROP_FIRST_TOKEN:
-                if len(parts) > 1:
-                    t = parts[1].rstrip(",.;:")
-                else:
-                    continue
-            if not t or t.lower() in DROP_FIRST_TOKEN:
-                continue
-            first_tokens.add(t)
-        for t in first_tokens:
-            if t.lower() not in {x.lower() for x in filtered}:
-                filtered.append(t)
+        if not t or t.lower() in DROP_FIRST_TOKEN:
+            continue
+        first_tokens.add(t)
+    existing_lower = {x.lower() for x in filtered}
+    for t in first_tokens:
+        if t.lower() in existing_lower:
+            continue
+        if not is_protagonist and t.lower() in contested_tokens:
+            continue
+        filtered.append(t)
+        existing_lower.add(t.lower())
 
     # Dedupe (case-insensitive) preserving order, then longest-first so multi-
     # word phrases win over bare tokens during regex matching.

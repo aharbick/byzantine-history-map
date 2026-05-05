@@ -25,7 +25,10 @@ export const episodesById: Record<number, (typeof entities)["episodes"][number]>
 export function timelineYear(e: AnyEntity): number | null {
   switch (e.kind) {
     case "person":
-      return e.reign_start ?? e.birth_year ?? null;
+      // death_year is a last resort — for figures like Tribonian whose
+      // birth and reign aren't recorded, anchoring at death is better
+      // than dropping them off the timeline entirely.
+      return e.reign_start ?? e.birth_year ?? e.death_year ?? null;
     case "place":
       return e.first_year ?? null;
     case "event":
@@ -146,12 +149,26 @@ export function getEntity(id: string): AnyEntity | undefined {
 /**
  * For event/person without a place, find the most relevant linked place id
  * so we can pin them on the map.
+ *
+ * Order of fallback:
+ *   1. The entity itself, if it's a place.
+ *   2. The event's own location_id.
+ *   3. A directly-related place reference.
+ *   4. A related event's location_id (handles people like Tribonian
+ *      who have no direct place link but are tied to events with
+ *      known locations — Codex, Nika revolt, etc.).
  */
 export function entityPlaceId(e: AnyEntity): string | null {
   if (e.kind === "place") return e.id;
   if (e.kind === "event" && e.location_id) return e.location_id;
   const placeRef = e.related.find((r) => r.type === "place");
-  return placeRef?.id ?? null;
+  if (placeRef) return placeRef.id;
+  for (const r of e.related ?? []) {
+    if (r.type !== "event") continue;
+    const ev = eventsById[r.id];
+    if (ev?.location_id) return ev.location_id;
+  }
+  return null;
 }
 
 export function entityCoords(e: AnyEntity): { lat: number; lng: number } | null {
