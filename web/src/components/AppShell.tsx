@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import { AppProvider, useApp } from "@/lib/context";
 import { timelineBounds, defaultStartYear } from "@/lib/data";
 import Timeline from "./Timeline";
+import TimelineMiniMap from "./TimelineMiniMap";
 import EntityCard from "./EntityCard";
 import AudioPlayer from "./AudioPlayer";
 import Legend from "./Legend";
@@ -25,19 +26,50 @@ export default function AppShell() {
   );
 }
 
+// Height of the strips area BELOW the map (ruler ribbon 58 + main strip 70).
+// The density mini-map stays inside the map area as a translucent overlay,
+// per design preference — the geography reads through the bars.
+export const STRIPS_AREA_HEIGHT_PX = 58 + 70;
+export const DENSITY_HEIGHT_PX = 96;
+
 function Inner({ minYear, maxYear }: { minYear: number; maxYear: number }) {
   const { selectedEntity } = useApp();
   return (
-    <main className="relative h-screen w-screen overflow-hidden bg-byz-ink">
+    <main className="flex flex-col h-screen w-screen overflow-hidden bg-byz-ink">
       <UrlState />
-      <WorldMap />
-      <Legend />
-      <AudioPlayer />
-      <AnimatePresence>
-        {selectedEntity && <EntityCard entity={selectedEntity} />}
-      </AnimatePresence>
-      <Timeline minYear={minYear} maxYear={maxYear} />
-      <Header />
+
+      {/* Map area: takes everything ABOVE the ruler ribbon + main strip.
+          The density mini-map sits at the BOTTOM of this area as a
+          translucent overlay, so the geography keeps reading through the
+          density bars without the ribbon/strip eating clickable map. */}
+      <div className="relative flex-1 overflow-hidden">
+        <WorldMap />
+        <Legend />
+        <AudioPlayer />
+        <AnimatePresence>
+          {selectedEntity && <EntityCard entity={selectedEntity} />}
+        </AnimatePresence>
+        <Header />
+        {/* Density mini-map overlays the map's bottom strip — purely
+            visual, no click handling, so markers underneath stay
+            clickable. Users still scrub via the main strip + ribbon. */}
+        <div
+          className="absolute left-0 right-0 bottom-0 pointer-events-none"
+          style={{ height: DENSITY_HEIGHT_PX }}
+        >
+          <TimelineMiniMap minYear={minYear} maxYear={maxYear} />
+        </div>
+      </div>
+
+      {/* Strips area: ruler ribbon + main scrub strip. Solid region (no
+          map underneath) so every marker on the map above stays
+          clickable. */}
+      <div
+        className="relative shrink-0"
+        style={{ height: STRIPS_AREA_HEIGHT_PX }}
+      >
+        <Timeline minYear={minYear} maxYear={maxYear} />
+      </div>
     </main>
   );
 }

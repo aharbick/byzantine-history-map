@@ -66,7 +66,7 @@ export default function EntityCard({ entity }: Props) {
       className={clsx(
         "fixed z-50 overflow-y-auto byz-scroll card-frame shadow-card !border-l-8",
         "inset-0 rounded-none",
-        "sm:inset-auto sm:right-4 sm:top-32 sm:rounded-xl sm:w-[570px] sm:max-w-[45vw] sm:max-h-[calc(100vh-328px)]",
+        "sm:inset-auto sm:right-4 sm:top-32 sm:rounded-xl sm:w-[570px] sm:max-w-[45vw] sm:max-h-[calc(100vh-394px)]",
         // Match the marker hex for each kind exactly so the card's left
         // bar reads as the same color family as the dot you clicked on.
         // 12-rulers get a brighter gold to mark them as the headline figures.

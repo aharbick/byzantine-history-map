@@ -501,11 +501,12 @@ export default function AudioPlayer() {
   const epLabel = hasEpisode ? `Ep ${displayedEpisode}` : "Ep ??";
   const minimizedSubLabel = hasEpisode ? timeText : "Select Episode";
 
-  // Stack from the bottom: timeline strip (h-24 → 96 px tall) → twelve-rulers
-  // ribbon (56 px slim single row) + 2 px border-y → 8 px gap → Legend
-  // (~74 px tall) → 8 px gap → player. Legend.bottom = 96 + 58 + 8 = 162.
-  // Player.bottom = legend.top + 8 = (162 + 74) + 8 = 244.
-  const PLAYER_BOTTOM = 244;
+  // The strips area is now its own region below the map (see
+  // STRIPS_AREA_HEIGHT_PX in AppShell). Legend + Player live INSIDE the
+  // map area, so their `bottom` is measured from the map's bottom edge —
+  // no longer from the screen bottom.
+  // Legend.bottom = 8, height ~74. Player.bottom = 8 + 74 + 8 = 90.
+  const PLAYER_BOTTOM = 90;
 
   // The <audio> element MUST live outside the minimized/expanded conditional.
   // Putting one inside each branch causes React to unmount/remount the
