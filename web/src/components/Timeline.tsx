@@ -471,9 +471,21 @@ function RulerRibbon({
   // Big-portrait dimensions for the snapped-on-cursor active state.
   const ACTIVE_PORTRAIT_SIZE = 96;
 
-  const activeIdx = rulers.findIndex(
-    (r) => currentYear >= r.start - 1 && currentYear <= r.end + 1,
+  // Prefer rulers whose actual reign contains currentYear; only fall back
+  // to the +/-1 buffer for edge cases where no ruler exactly contains the
+  // year. The buffer alone produced a tie at boundary years (e.g. 306 AD
+  // is Diocletian.end+1 AND Constantine.start, and findIndex picked the
+  // earlier one — Diocletian — even though Constantine's reign actually
+  // starts at 306).
+  const exactIdx = rulers.findIndex(
+    (r) => currentYear >= r.start && currentYear <= r.end,
   );
+  const activeIdx =
+    exactIdx >= 0
+      ? exactIdx
+      : rulers.findIndex(
+          (r) => currentYear >= r.start - 1 && currentYear <= r.end + 1,
+        );
   const activeEntry = activeIdx >= 0 ? rulers[activeIdx] : null;
 
   return (

@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useApp, type AudioSeekHint } from "@/lib/context";
-import { audioUrl, episodesById } from "@/lib/data";
+import { audioUrl, episodesById, peopleById } from "@/lib/data";
 import { entities } from "@/lib/data";
-import { findAnchorAt, findAnchorsAt, getEpisodeAnchors } from "@/lib/episode_anchors";
+import { findAnchorsAt, getEpisodeAnchors } from "@/lib/episode_anchors";
 
 /** Persistent audio player. Always mounted, always visible. Custom UI so it
  * fits the byzantine theme rather than the chunky native <audio controls>. */
@@ -258,11 +258,45 @@ export default function AudioPlayer() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playingEpisode, episodes]);
 
-  // ---------- audio-driven timeline auto-scrub ----------
-  // Drives the timeline year + the WorldMap's "focus" marker from the
-  // audio's currentTime. Disabled when:
+  // ---------- one-time snap to the episode's ruler reign ----------
+  // When sync-timeline is on and an episode is loaded, jump the cursor
+  // ONCE to the midpoint of the ruler's reign — that places the
+  // protagonist visually in the middle of the timeline rather than at
+  // the very start of their bar. The cursor stays put after that — we
+  // don't follow per-mention narration (which would yank the cursor out
+  // of the protagonist's era whenever the host mentions an earlier or
+  // later figure). Markers still pulse from audioFocusEntityIds, and the
+  // force-render mechanism makes out-of-era references show up on the
+  // map for their decay window without disturbing the timeline.
+  //
+  // Re-snaps are gated by an episode-id key so manual scrubs after the
+  // initial snap aren't fought by this effect. Toggling sync off and on
+  // again re-snaps; toggling it off doesn't move the cursor.
+  const snappedEpisodeKeyRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (autoScrubLocked) {
+      snappedEpisodeKeyRef.current = null;
+      return;
+    }
+    if (playingEpisode == null) return;
+    const key = String(playingEpisode);
+    if (snappedEpisodeKeyRef.current === key) return;
+    const ep = episodesById[playingEpisode];
+    const ruler = ep?.ruler_id ? peopleById[ep.ruler_id] : null;
+    if (!ruler || ruler.reign_start == null) return;
+    const target =
+      ruler.reign_end != null
+        ? (ruler.reign_start + ruler.reign_end) / 2
+        : ruler.reign_start;
+    setCurrentYear(target);
+    snappedEpisodeKeyRef.current = key;
+  }, [playingEpisode, autoScrubLocked, setCurrentYear]);
+
+  // ---------- audio-driven marker focus ----------
+  // Drives the WorldMap's audio-focus markers from the audio's currentTime.
+  // Disabled when:
   //   - the user has a card open (they're reading something specific)
-  //   - the lock is on (explicit override)
+  //   - sync timeline is off (explicit override)
   //   - the audio isn't actually playing
   // Refs sidestep stale-closure problems on the timeupdate listener while
   // still letting us read the latest gating values without re-binding the
@@ -288,7 +322,7 @@ export default function AudioPlayer() {
     // mentions don't replace older ones, they pile on. Dense sequences thus
     // produce a brief constellation of glowing markers rather than a single
     // strobing one.
-    const FOCUS_STALE_AFTER_SEC = 10;
+    const FOCUS_STALE_AFTER_SEC = 6;
     // entityId → audio.currentTime when its window expires. Driven off
     // audio.currentTime (not wall clock) so seeking + pause behave: pausing
     // freezes the windows, scrubbing forward ages older entries out.
@@ -329,16 +363,22 @@ export default function AudioPlayer() {
       // Jerusalem") and each should light up its own marker.
       const active = findAnchorsAt(t, anchors);
 
-      // Refresh the focus window for every newly-entered (entity, segment)
-      // pair. Once we've seen a pair, don't re-fire until the audio leaves
-      // it (handled by the prune loop below).
+      // Open a focus window for every newly-entered (entity, segment) pair
+      // — but DON'T extend an existing window for the same entity.
+      // "Justinian did X, then Justinian did Y" would otherwise keep the
+      // marker lit for FOCUS_STALE_AFTER_SEC after every re-mention,
+      // stacking up to a noticeably-long total. Original expiry holds;
+      // the marker dismisses N seconds after the FIRST mention regardless
+      // of how many follow-ups come within that window.
       const liveKeys = new Set<string>();
       for (const a of active) {
         const key = `${a.entityId}@${a.segmentIdx}`;
         liveKeys.add(key);
         if (!seenAnchorKeys.has(key)) {
           seenAnchorKeys.add(key);
-          focusExpiry.set(a.entityId, t + FOCUS_STALE_AFTER_SEC);
+          if (!focusExpiry.has(a.entityId)) {
+            focusExpiry.set(a.entityId, t + FOCUS_STALE_AFTER_SEC);
+          }
         }
       }
       // Drop seen-keys whose segments are no longer active so re-entering
@@ -347,13 +387,14 @@ export default function AudioPlayer() {
         if (!liveKeys.has(key)) seenAnchorKeys.delete(key);
       }
 
-      // Use the latest-start anchor's year for the timeline cursor — one
-      // year per moment is still the right model even when several markers
-      // light up.
-      const primary = findAnchorAt(t, anchors);
-      if (primary && primary.year != null) {
-        setCurrentYear(primary.year);
-      }
+      // The timeline cursor stays anchored to the episode's ruler reign
+      // (see the snap effect below). Per-mention scrubbing was confusing —
+      // ep 4 (Constantine Pt 2) mentions Arius (~325) and Battle of Tours
+      // (732) in the same episode; chasing each mention pulled the cursor
+      // out of Constantine's era and dropped him out of the active-ruler
+      // chip mid-narration. Markers still pulse via audioFocusEntityIds,
+      // and out-of-era markers force-render thanks to that focus list, so
+      // the visual story is intact without yanking the cursor around.
 
       syncFocusState();
     };
