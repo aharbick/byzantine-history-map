@@ -146,6 +146,20 @@ export default function WorldMap() {
       "top-right",
     );
     map.scrollZoom.disable();
+
+    // MapLibre's `compact: true` uses the compact UI but the panel still
+    // renders OPEN on first load — credits cover the bottom-right corner
+    // until the user clicks them away. Strip the open-state class once
+    // the control has been added so the attribution starts as just the
+    // small [i] icon. The control attaches during `load`; remove the
+    // class then.
+    map.once("load", () => {
+      const attribEl = containerRef.current?.querySelector(
+        ".maplibregl-ctrl-attrib.maplibregl-compact",
+      );
+      if (attribEl) attribEl.classList.remove("maplibregl-compact-show");
+    });
+
     mapRef.current = map;
     setMapReady((n) => n + 1);
 

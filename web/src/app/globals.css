@@ -191,16 +191,26 @@ body > div {
   opacity: 1;
 }
 
-/* Selected marker — ring + scale + always-visible label */
+/* Selected marker — bigger disc + always-visible label. We grow the
+ * disc's WIDTH/HEIGHT (rather than transform: scale) so the kind-color
+ * padding ring stays its base thickness while the image inside swells.
+ * scale() would proportionally fatten the colored band along with
+ * everything else, which read as "way too much border" at scale 1.45.
+ * Dot markers fall back to scale() since they have no image to enlarge. */
 .byz-marker-selected {
   z-index: 10;
 }
 .byz-marker-selected .byz-marker-disc {
-  transform: scale(1.45);
   box-shadow:
-    0 0 0 3px var(--marker-color, #c9a227),
     0 0 24px 4px var(--marker-color, #c9a227),
     0 4px 14px rgba(0, 0, 0, 0.7);
+}
+.byz-marker-selected .byz-marker-disc--image {
+  width: 48px;
+  height: 48px;
+}
+.byz-marker-selected .byz-marker-disc--dot {
+  transform: scale(1.6);
 }
 .byz-marker-selected .byz-marker-label {
   opacity: 1;
