@@ -17,6 +17,7 @@ export default function AudioPlayer() {
     setCurrentYear,
     selectedEntity,
     autoScrubLocked,
+    setAutoScrubLocked,
     audioFocusEntityIds,
     setAudioFocusEntityIds,
   } = useApp();
@@ -651,7 +652,9 @@ export default function AudioPlayer() {
         />
       </div>
 
-      {/* Row 3: transport buttons on the left, time on the right. */}
+      {/* Row 3: transport buttons on the left, follow-audio toggle in the
+          middle (only meaningful while an episode is playing), time on the
+          right. */}
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-1">
           <IconButton
@@ -698,12 +701,69 @@ export default function AudioPlayer() {
             </svg>
           </IconButton>
         </div>
+        {playingEpisode != null && (
+          <FollowAudioToggle
+            on={!autoScrubLocked}
+            onChange={(nextOn) => {
+              setAutoScrubLocked(!nextOn);
+              if (!nextOn) setAudioFocusEntityIds([]);
+            }}
+          />
+        )}
         <span className="font-display text-[10px] tracking-wider text-byz-parchmentDark whitespace-nowrap tabular-nums">
           {timeText}
         </span>
       </div>
       </div>
     </>
+  );
+}
+
+function FollowAudioToggle({
+  on,
+  onChange,
+}: {
+  on: boolean;
+  onChange: (nextOn: boolean) => void;
+}) {
+  return (
+    <button
+      type="button"
+      role="checkbox"
+      aria-checked={on}
+      onClick={() => onChange(!on)}
+      title={
+        on
+          ? "Sync timeline on — timeline follows audio"
+          : "Sync timeline off — timeline won't follow audio"
+      }
+      className="flex items-center gap-1.5 px-1 py-0.5 text-[10px] font-display tracking-widest uppercase text-byz-goldLight/80 hover:text-byz-goldLight transition-colors"
+    >
+      <span>Sync timeline</span>
+      <span
+        aria-hidden="true"
+        className={`relative inline-flex items-center justify-center w-3.5 h-3.5 rounded-sm border transition-colors ${
+          on
+            ? "bg-byz-goldLight border-byz-gold"
+            : "bg-transparent border-byz-goldLight/60"
+        }`}
+      >
+        {on && (
+          <svg
+            width="10"
+            height="10"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="#1a1006"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M3 8.5l3 3 7-7" />
+          </svg>
+        )}
+      </span>
+    </button>
   );
 }
 
