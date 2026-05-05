@@ -16,6 +16,7 @@ Run:
 from __future__ import annotations
 
 import argparse
+import difflib
 import hashlib
 import json
 import math
@@ -150,6 +151,8 @@ ID_ALIASES: dict[str, str] = {
     "hippodrome-constantinople": "hippodrome-of-constantinople",
     "church-of-holy-apostles": "church-of-the-holy-apostles",
     "church-of-saint-irene": "church-of-hagia-irene",
+    # events — same historical event tagged with two names across episodes
+    "nika-riots": "nika-revolt",
 }
 
 
@@ -429,6 +432,10 @@ def stage_derive_alt_names(entities: dict[str, dict]) -> int:
     added = 0
     for ent in entities.values():
         candidates = _candidate_alt_names(ent["name"], ent["kind"])
+        # Layer in the manual EXTRA_ALT_NAMES overrides — Whisper
+        # transcription variants ("Nica" for "Nika") that the pattern
+        # rules can't generate.
+        candidates = candidates + list(EXTRA_ALT_NAMES.get(ent["id"], []))
         if not candidates:
             continue
         existing = {n.lower() for n in [ent["name"]] + list(ent.get("alt_names") or [])}
@@ -760,6 +767,244 @@ def _is_boilerplate(text: str, segment_idx: int) -> bool:
         # bumper, not a quote we want to display.
         return True
     return False
+
+
+def stage_discover_whisper_aliases(
+    entities: dict[str, dict],
+    episodes_meta: list[dict],
+) -> int:
+    """Find Whisper-misspelled aliases for known entities and add them
+    as alt_names so the regex scan can land them.
+
+    The LLM-extracted `transcript_lines` tells us *where* in the
+    plain-text transcript an entity is discussed. The published
+    transcript and Whisper's audio transcript come from the same
+    audio but spell names differently — Whisper transcribes phonetically
+    ("Narses" -> "Narcissus", "Nika Revolt" -> "Nica Revolt"). The
+    canonical spelling never matches in those Whisper segments, so the
+    regex scan misses every mention.
+
+    For each (entity, episode) pair where the LLM tagged the entity
+    via transcript_lines, we look at the corresponding Whisper segments
+    and ask: does the canonical spelling actually appear here? If not,
+    is there a Capitalized token that's phonetically similar to the
+    canonical name? If so, add it as an alt_name. Future regex scans
+    catch the variant; the result is durable across rebuilds because
+    the discovery runs every time.
+
+    Cost: a few seconds across the whole dataset. Runs before
+    stage_find_mentions so the new alts are picked up by the scan.
+    """
+    SIM_THRESHOLD = 0.7  # ratio() above this counts as "same name"
+    MIN_TOKEN_LEN = 5    # ≥5 chars: kills "with"/"this"/"that" being treated as
+                         # name-like reference tokens (which produced "Within"
+                         # and "Whether" as bogus aliases).
+    MIN_FREQ = 2         # candidate must appear at least this many times in
+                         # the segment window — Whisper-substituted names
+                         # repeat across a passage, sentence-initial common
+                         # words usually don't.
+    PROXIMITY_PAD = 5    # widen the segment window around the line range
+
+    # Lazy per-episode caches
+    seg_cache: dict[int, list[dict] | None] = {}
+    line_cache: dict[int, list[str] | None] = {}
+    ep_by_num = {ep["episode"]: ep for ep in episodes_meta}
+
+    def load_segments(ep_num: int) -> list[dict] | None:
+        if ep_num in seg_cache:
+            return seg_cache[ep_num]
+        meta = ep_by_num.get(ep_num)
+        path = SEGMENTS_DIR / meta["segments_file"] if meta else None
+        if not path or not path.exists():
+            seg_cache[ep_num] = None
+            return None
+        try:
+            data = json.load(open(path, encoding="utf-8"))
+            seg_cache[ep_num] = data.get("segments") or None
+        except (OSError, json.JSONDecodeError):
+            seg_cache[ep_num] = None
+        return seg_cache[ep_num]
+
+    def load_lines(ep_num: int) -> list[str] | None:
+        if ep_num in line_cache:
+            return line_cache[ep_num]
+        meta = ep_by_num.get(ep_num)
+        path = TRANSCRIPTS_DIR / meta["transcript_file"] if meta else None
+        if not path or not path.exists():
+            line_cache[ep_num] = None
+            return None
+        try:
+            line_cache[ep_num] = path.read_text(encoding="utf-8").splitlines()
+        except OSError:
+            line_cache[ep_num] = None
+        return line_cache[ep_num]
+
+    # Block list = every other entity's canonical name + existing alts.
+    # A discovered alias must NOT collide with another entity's name.
+    name_to_owner: dict[str, str] = {}
+    for ent in entities.values():
+        for n in [ent["name"]] + list(ent.get("alt_names") or []):
+            name_to_owner.setdefault(n.lower().strip(), ent["id"])
+
+    discovered = 0
+    for ent in entities.values():
+        lines_by_ep = ent.get("transcript_lines_by_episode") or {}
+        if not lines_by_ep:
+            continue
+
+        # Distinctive tokens from this entity's name(s) — used as the
+        # similarity reference. Skip generic words that happen to appear
+        # in many names (the contested-tokens guard at scan time picks
+        # up the slack for those).
+        ref_tokens: set[str] = set()
+        for n in [ent["name"]] + list(ent.get("alt_names") or []):
+            for tok in re.findall(r"[A-Za-z]+", n):
+                if len(tok) >= MIN_TOKEN_LEN:
+                    ref_tokens.add(tok.lower())
+        if not ref_tokens:
+            continue
+
+        existing_lower = {n.lower().strip() for n in [ent["name"]] + list(ent.get("alt_names") or [])}
+
+        for ep_key, ranges in lines_by_ep.items():
+            if not ranges:
+                continue
+            ep_num = int(ep_key)
+            segments = load_segments(ep_num)
+            transcript_lines = load_lines(ep_num)
+            if not segments or not transcript_lines:
+                continue
+
+            # Map line range -> approximate segment range (linear by
+            # transcript position). Widen by PROXIMITY_PAD on each side
+            # because the line/segment alignment is approximate.
+            first_line = int(ranges[0][0])
+            last_line = int(ranges[-1][1]) if len(ranges[-1]) >= 2 else first_line
+            line_count = max(len(transcript_lines), 1)
+            seg_start = max(0, int(first_line / line_count * len(segments)) - PROXIMITY_PAD)
+            seg_end = min(len(segments), int(last_line / line_count * len(segments)) + PROXIMITY_PAD)
+            window_text = " ".join(
+                segments[i].get("text", "") for i in range(seg_start, seg_end)
+            )
+            window_lower = window_text.lower()
+
+            # If any existing name/alt textually appears in the window,
+            # there's nothing to discover — the regex will catch it.
+            if any(alt in window_lower for alt in existing_lower if alt):
+                continue
+
+            # Pull Capitalized tokens from the window (probable proper
+            # nouns) and score each against the entity's reference
+            # tokens. The best candidate that beats the threshold and
+            # doesn't collide with another entity becomes an alt.
+            cands = set(re.findall(r"\b[A-Z][a-z]{" + str(MIN_TOKEN_LEN - 1) + r",}\b", window_text))
+            best_cand: str | None = None
+            best_score = 0.0
+            for cand in cands:
+                if cand.lower() in existing_lower:
+                    continue
+                # Don't grab a name another entity already owns.
+                owner = name_to_owner.get(cand.lower())
+                if owner is not None and owner != ent["id"]:
+                    continue
+                # Frequency gate: a Whisper substitution shows up multiple
+                # times when the host is discussing the entity; sentence-
+                # initial common words appear once and look like names.
+                cand_freq = len(re.findall(r"\b" + re.escape(cand) + r"\b", window_text))
+                if cand_freq < MIN_FREQ:
+                    continue
+                for ref in ref_tokens:
+                    score = difflib.SequenceMatcher(None, cand.lower(), ref).ratio()
+                    if score > best_score:
+                        best_score = score
+                        best_cand = cand
+
+            if best_cand and best_score >= SIM_THRESHOLD:
+                ent.setdefault("alt_names", []).append(best_cand)
+                existing_lower.add(best_cand.lower())
+                name_to_owner[best_cand.lower()] = ent["id"]
+                discovered += 1
+
+    return discovered
+
+
+def stage_discover_missing_episode_tags(
+    entities: dict[str, dict],
+    episodes_meta: list[dict],
+) -> int:
+    """Sometimes the LLM extraction misses an episode entirely for an
+    entity that IS spoken about — usually because Whisper transcribed
+    the name unusually (Narses -> Narcissus in ep 7). The entity
+    already exists with the right canonical/alt names; it's just that
+    `episodes` doesn't include the missing episode, so stage 3 never
+    scans it there.
+
+    For each (entity, episode) pair where the episode isn't already
+    tagged, do a substring + word-boundary check for the entity's
+    multi-word names and globally-unique single-word alts. If the name
+    appears, add the episode to entity.episodes so stage 3's scan picks
+    it up. Multi-word names + globally-unique singletons are safe to
+    match across episodes; bare common-word alts (e.g. "Battle") are
+    deliberately excluded — they're handled by the per-episode
+    contested-tokens guard at scan time.
+    """
+    # Globally-unique single-word names. If "Constantine" appears as a
+    # single-word in two entities' name/alt lists, it's contested across
+    # the whole dataset and unsafe to match alone.
+    single_owner: dict[str, str] = {}
+    for ent in entities.values():
+        for n in [ent["name"]] + list(ent.get("alt_names") or []):
+            n = n.strip()
+            if not n or " " in n:
+                continue
+            key = n.lower()
+            if key in single_owner and single_owner[key] != ent["id"]:
+                single_owner[key] = "__contested__"
+            else:
+                single_owner[key] = ent["id"]
+
+    # Concatenated lowercase segment text per episode.
+    ep_text: dict[int, str] = {}
+    for ep_meta in episodes_meta:
+        seg_path = SEGMENTS_DIR / ep_meta["segments_file"]
+        if not seg_path.exists():
+            continue
+        try:
+            data = json.load(open(seg_path, encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        segments = data.get("segments") or []
+        ep_text[ep_meta["episode"]] = " ".join(s.get("text", "") for s in segments)
+
+    discovered = 0
+    for ent in entities.values():
+        candidates: list[str] = []
+        for n in [ent["name"]] + list(ent.get("alt_names") or []):
+            n = n.strip()
+            if not n:
+                continue
+            if " " in n:
+                candidates.append(n)
+            elif single_owner.get(n.lower()) == ent["id"]:
+                candidates.append(n)
+        if not candidates:
+            continue
+
+        # Pre-compile patterns once per entity.
+        patterns = [
+            re.compile(r"(?<![A-Za-z])" + re.escape(c) + r"(?![A-Za-z])", re.IGNORECASE)
+            for c in candidates
+        ]
+
+        for ep_num, text in ep_text.items():
+            if ep_num in ent["episodes"]:
+                continue
+            if any(p.search(text) for p in patterns):
+                ent["episodes"].append(ep_num)
+                ent["episodes"].sort()
+                discovered += 1
+
+    return discovered
 
 
 def stage_find_mentions(
@@ -1243,6 +1488,19 @@ PLACE_COORD_OVERRIDES: dict[str, tuple[float, float]] = {
 }
 
 
+# Hand-curated alt-name overrides for Whisper-transcription variants the
+# regex misses. Whisper transcribes phonetically and sometimes diverges
+# from the historical / Wikipedia spelling: "Nika" -> "Nica", etc. Add
+# the variant here and the segment scan picks the entity up.
+EXTRA_ALT_NAMES: dict[str, list[str]] = {
+    "nika-revolt": ["Nica Revolt", "Nika Riots", "Nica Riots"],
+    # Whisper consistently transcribes "Narses" as "Narcissus" — the
+    # auto-discovery similarity ratio (~0.67) is too low to trust
+    # without a manual confirmation, but it's a reliable substitution.
+    "narses": ["Narcissus"],
+}
+
+
 def filter_out_of_era(entities: dict[str, dict]) -> set[str]:
     """Drop people clearly outside the Byzantine window (modern scholars,
     Founding Fathers, pre-imperial ancients), and events outside ~100-1500.
@@ -1410,6 +1668,12 @@ def main():
     stage_validate_wikipedia(entities, refresh=args.refresh_wiki)
 
     if not args.no_mentions:
+        aliases = stage_discover_whisper_aliases(entities, episodes_meta)
+        if aliases:
+            print(f"      Discovered {aliases} Whisper-variant alt_name(s) (e.g. Nika -> Nica).")
+        ep_tags = stage_discover_missing_episode_tags(entities, episodes_meta)
+        if ep_tags:
+            print(f"      Discovered {ep_tags} missing episode tag(s) (e.g. Narses in ep 7).")
         print("[3/5] Scanning Whisper segment transcripts for mentions...")
         stage_find_mentions(entities, episodes_meta)
         anchored = stage_fill_inferred_anchors(entities, episodes_meta)
