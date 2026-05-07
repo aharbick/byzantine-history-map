@@ -20,6 +20,10 @@ export default function AudioPlayer() {
     setAutoScrubLocked,
     audioFocusEntityIds,
     setAudioFocusEntityIds,
+    playerExpanded,
+    setPlayerExpanded,
+    cuedEpisode,
+    setCuedEpisode,
   } = useApp();
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const rootRef = useRef<HTMLDivElement | null>(null);
@@ -37,7 +41,10 @@ export default function AudioPlayer() {
   // anywhere except the play button restores the full UI. Default to
   // collapsed — the player is a peripheral surface, not the user's
   // primary task; expanding is one click away when they want to choose.
-  const [minimized, setMinimized] = useState(true);
+  // State lives in context so the standalone TranscriptButton can
+  // position itself at the player's right edge based on width.
+  const minimized = !playerExpanded;
+  const setMinimized = (v: boolean) => setPlayerExpanded(!v);
 
   // Close the picker on outside click / Escape — same behavior as a native
   // <select>. Click on the player itself (including inside the listbox) is
@@ -147,6 +154,12 @@ export default function AudioPlayer() {
     writeLastEpisode(ep);
   }
 
+  // Time subscribers — used by the karaoke transcript panel to follow
+  // audio.currentTime without churning React state on every ~4Hz tick.
+  // Set is keyed by the callback identity so consumers' cleanup just
+  // removes themselves directly.
+  const timeSubscribersRef = useRef<Set<(t: number) => void>>(new Set());
+
   // Register the imperative controller for chip / external callers. Must
   // happen BEFORE any consumer uses it, so layout-effect (synchronous after
   // render) is safer than useEffect — though in practice AudioPlayer mounts
@@ -165,6 +178,18 @@ export default function AudioPlayer() {
       },
       setExpanded: (expanded: boolean) => setMinimized(!expanded),
       cueEpisode: (ep: number | null) => setCuedEpisode(ep),
+      seek: (seconds: number) => {
+        const a = audioRef.current;
+        if (!a) return;
+        if (!Number.isFinite(seconds) || seconds < 0) return;
+        a.currentTime = seconds;
+      },
+      subscribeTime: (cb) => {
+        timeSubscribersRef.current.add(cb);
+        return () => {
+          timeSubscribersRef.current.delete(cb);
+        };
+      },
     };
     return () => {
       audioController.current = null;
@@ -220,7 +245,17 @@ export default function AudioPlayer() {
         writeLastEpisode(playingEpisode);
       }
     };
-    const onTime = () => setCurrentTime(a.currentTime);
+    const onTime = () => {
+      setCurrentTime(a.currentTime);
+      // Fan out to transcript subscribers (and any other subscribers) so
+      // the karaoke panel can follow currentTime without us routing it
+      // through React state — re-rendering the whole tree at 4Hz tanks
+      // marker performance.
+      const subs = timeSubscribersRef.current;
+      if (subs.size > 0) {
+        for (const cb of subs) cb(a.currentTime);
+      }
+    };
     const onMeta = () => {
       setDuration(a.duration || 0);
       applySeekOrRestore();
@@ -483,10 +518,10 @@ export default function AudioPlayer() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // "Cued" — a local mirror of the episode we have loaded but aren't playing.
-  // Only used when there's no playingEpisode in context (fresh load + saved
-  // last episode). Once user presses play, we promote it via playEpisode().
-  const [cuedEpisode, setCuedEpisode] = useState<number | null>(null);
+  // `cuedEpisode` lives in context (see lib/context.tsx) so consumers
+  // outside the player — namely the TranscriptButton sitting next to it —
+  // can know the moment an episode is "selected" (cued from localStorage
+  // or by the welcome tour) without waiting for the user to hit play.
   const displayedEpisode = playingEpisode ?? cuedEpisode;
   const displayedEp =
     displayedEpisode != null ? episodesById[displayedEpisode] : null;
@@ -635,9 +670,11 @@ export default function AudioPlayer() {
       <div
         ref={rootRef}
         // Same fill as the Legend so they read as a vertical pair. Width grows
-        // to accommodate the dropdown + transport row. left-3/sm:left-4 keeps
-        // the expanded player flush with the Legend below at every breakpoint.
-        className="absolute z-30 left-2 flex flex-col gap-1.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-2 shadow-card w-[calc(100vw-1rem)] sm:w-80"
+        // to accommodate the dropdown + transport row. On mobile the player
+        // leaves a ~3.5rem reserve on the right so the standalone
+        // TranscriptButton has room to sit beside it without overlapping.
+        // Desktop stays a fixed 320px (sm:w-80).
+        className="absolute z-30 left-2 flex flex-col gap-1.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-2 shadow-card w-[calc(100vw-4rem)] sm:w-80"
         style={{ bottom: PLAYER_BOTTOM }}
         data-byz-tour="player"
       >
@@ -708,7 +745,9 @@ export default function AudioPlayer() {
 
       {/* Row 3: transport buttons on the left, follow-audio toggle in the
           middle (only meaningful while an episode is playing), time on the
-          right. */}
+          right. Transcript toggle lives OUTSIDE the player as a sibling
+          button (see TranscriptButton) so the player's interior layout
+          stays untouched. */}
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-1">
           <IconButton
