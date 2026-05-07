@@ -26,7 +26,11 @@ export default function Legend() {
       // (compact) minimized player above. Same fixed width so they stack
       // as a uniform pair, and the gap to the timeline above matches the
       // gap between the two widgets.
-      className="absolute left-2 z-30 flex flex-col items-start gap-0.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 px-3 py-1 text-sm font-display tracking-wider w-[98px]"
+      // Asymmetric padding: pl-2 (instead of pl-3) shifts the dot+label
+      // block ~4px left so the content visually centers in the chip.
+      // The longer "Territory" label needs the full pr-3 on the right
+      // edge to avoid kissing the border.
+      className="absolute left-2 z-30 flex flex-col items-start gap-0.5 rounded-2xl border border-byz-gold/60 bg-byz-purpleDeep/70 pl-2 pr-3 py-1 text-sm font-display tracking-wider w-[98px]"
       style={{ bottom: 8 }}
       data-byz-tour="legend"
     >
@@ -57,12 +61,12 @@ export default function Legend() {
             </button>
           );
         })}
-        {/* Empire territory overlay — preview feature. Distinguished from
-            the kind filters above by its swatch (a translucent parchment
-            patch with a thin gold edge, mirroring the actual fill style)
-            so it reads as "a region you can show", not "another marker
-            kind". Lives in the same chip so the layer-toggle mental model
-            stays consistent. */}
+        {/* Territory overlay — same row geometry as the kind filters above
+            (no extra mt/pt/border) so the chip reads as a single,
+            consistently-spaced layer toggle list. The swatch is an
+            irregular polygon outline rather than a dot/checkbox so it
+            reads as "an area on the map" instead of "another marker
+            kind". */}
         <button
           onClick={() => setEmpireOverlayOn(!empireOverlayOn)}
           aria-pressed={empireOverlayOn}
@@ -72,24 +76,35 @@ export default function Legend() {
               : "Show Byzantine territory overlay (preview)"
           }
           className={clsx(
-            "flex items-center gap-1.5 rounded-full px-1 transition-colors mt-0.5 border-t border-byz-gold/20 pt-0.5 w-full",
+            "flex items-center gap-1.5 rounded-full px-1 transition-colors",
             empireOverlayOn
               ? "text-byz-parchment"
               : "text-byz-parchmentDark/50 line-through",
             "hover:bg-byz-gold/10",
           )}
         >
-          <span
+          <svg
+            width="11"
+            height="11"
+            viewBox="0 0 12 12"
             className={clsx(
-              "inline-block w-2.5 h-2.5 rounded-sm transition-opacity",
+              "shrink-0 transition-opacity",
               !empireOverlayOn && "opacity-30",
             )}
-            style={{
-              background: "rgba(231, 200, 115, 0.35)",
-              boxShadow: "inset 0 0 0 1.5px #c9a227",
-            }}
-          />
-          <span>Empire</span>
+            aria-hidden="true"
+          >
+            {/* Irregular polygon — evokes a country / region outline at
+                a glance, mirrors the fill+stroke treatment used on the
+                actual map layer. */}
+            <polygon
+              points="1.5,4 4,1.5 8,1 11,3.5 10.5,8 7,11 3,10 1,7"
+              fill="rgba(231, 200, 115, 0.35)"
+              stroke="#c9a227"
+              strokeWidth="1.2"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <span>Territory</span>
         </button>
     </div>
   );
