@@ -190,6 +190,7 @@ export default function Transcript() {
       {transcriptOpen && (
         <motion.aside
           key="transcript"
+          data-byz-tour="transcript-panel"
           initial={{ x: -40, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -40, opacity: 0 }}
