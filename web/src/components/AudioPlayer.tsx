@@ -593,8 +593,9 @@ export default function AudioPlayer() {
   // STRIPS_AREA_HEIGHT_PX in AppShell). Legend + Player live INSIDE the
   // map area, so their `bottom` is measured from the map's bottom edge —
   // no longer from the screen bottom.
-  // Legend.bottom = 8, height ~74. Player.bottom = 8 + 74 + 8 = 90.
-  const PLAYER_BOTTOM = 90;
+  // Legend.bottom = 8, height ~96 with the Territory toggle row added in
+  // the empire-overlay branch. Player.bottom = 8 + 96 + 8 = 112.
+  const PLAYER_BOTTOM = 112;
 
   // The <audio> element MUST live outside the minimized/expanded conditional.
   // Putting one inside each branch causes React to unmount/remount the

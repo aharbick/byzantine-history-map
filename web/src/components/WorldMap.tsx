@@ -101,6 +101,7 @@ export default function WorldMap() {
     setCurrentYear,
     filters,
     audioFocusEntityIds,
+    territoryOverlayOn,
   } = useApp();
   // Mirror selectedEntity into a ref so the marker click handlers (created
   // once at marker construction) can read the *current* value without stale
@@ -446,7 +447,165 @@ export default function WorldMap() {
     };
   }, [mapReady]);
 
+  // -------------------------------------------------------------------
+  // Territory overlay
+  //
+  // One stable GeoJSON source + fill/line layer per keyframe century.
+  // All keyframes are pre-fetched once on mount, populated into their
+  // sources, and then we just animate opacity per `currentYear` tick.
+  //
+  // Earlier we tried 2 sources whose `data` payload swapped at
+  // century boundaries — but that produced visible blips during slow
+  // scrubbing because MapLibre's GeoJSON source updates land on a
+  // different RAF tick than the matching `setPaintProperty` opacity
+  // change. With per-keyframe layers, no data ever swaps after mount;
+  // only opacity changes, which apply atomically.
+  //
+  // Why opacity blend instead of a true geometry tween: MapLibre can't
+  // morph polygons between non-matching feature schemas, and we
+  // intentionally embrace the fade — the underlying data is only
+  // century-resolution, so showing a single hard polygon during the
+  // years between keyframes would imply more precision than we have.
+  // -------------------------------------------------------------------
+  const territoryFeaturesRef = useRef<Map<number, GeoJSON.Feature>>(new Map());
+  // Counter that ticks once per keyframe-fetch completion. Threaded into
+  // the opacity effect's deps so it re-runs whenever new data lands —
+  // necessary on deep-link loads (?year=448), where the opacity effect
+  // would otherwise run exactly once on mount, set opacity for layers
+  // whose data was still in flight, and never get a second chance to
+  // paint until the user scrubbed.
+  const [territoryLoadedCount, setTerritoryLoadedCount] = useState(0);
+
+  // Stand up one source + fill + line layer per keyframe once the map
+  // style has loaded. Then kick off a one-shot fetch for each keyframe
+  // and write the data into its source. Sources stay mounted whether
+  // or not the overlay is toggled on — opacity drives visibility, so
+  // toggling is instant and doesn't churn the GL state.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    function ensureTerritoryLayers() {
+      if (!map) return;
+      const empty: GeoJSON.FeatureCollection = {
+        type: "FeatureCollection",
+        features: [],
+      };
+      for (const year of TERRITORY_KEYFRAMES) {
+        const sourceId = `territory-${year}`;
+        if (map.getSource(sourceId)) continue;
+        map.addSource(sourceId, { type: "geojson", data: empty });
+        map.addLayer({
+          id: `${sourceId}-fill`,
+          type: "fill",
+          source: sourceId,
+          paint: { "fill-color": "#e7c873", "fill-opacity": 0 },
+        });
+        map.addLayer({
+          id: `${sourceId}-line`,
+          type: "line",
+          source: sourceId,
+          paint: {
+            "line-color": "#c9a227",
+            "line-width": 1.5,
+            "line-opacity": 0,
+          },
+        });
+      }
+      // Pre-fetch every keyframe once. After this completes, `setData`
+      // is never called again — only `setPaintProperty` per tick. This
+      // is what eliminates the boundary-crossing blip.
+      for (const year of TERRITORY_KEYFRAMES) {
+        if (territoryFeaturesRef.current.has(year)) continue;
+        fetch(`/territory/${year}.json`)
+          .then((r) => (r.ok ? r.json() : null))
+          .then((feat: GeoJSON.Feature | null) => {
+            if (!feat) return;
+            territoryFeaturesRef.current.set(year, feat);
+            const src = map?.getSource(`territory-${year}`);
+            if (src && "setData" in src) {
+              (src as maplibregl.GeoJSONSource).setData({
+                type: "FeatureCollection",
+                features: [feat],
+              });
+            }
+            // Wake the opacity effect so it re-applies for any layer
+            // whose data just arrived (matters when a deep link lands
+            // on a year whose bracketing keyframes weren't loaded yet).
+            setTerritoryLoadedCount((n) => n + 1);
+          })
+          .catch(() => {
+            /* swallow — layer just stays empty for this keyframe */
+          });
+      }
+    }
+
+    if (map.isStyleLoaded()) ensureTerritoryLayers();
+    else map.once("load", ensureTerritoryLayers);
+  }, [mapReady]);
+
+  // Sync the overlay to currentYear + the user's toggle state. Per tick:
+  // pick the two bracketing keyframes, set their layers' opacities, and
+  // ZERO every other keyframe's opacity. Cheap — at most 13 layers and
+  // 4 setPaintProperty calls (the active two each have a fill + line).
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    // Sources may not be mounted yet on the first render after map load.
+    if (!map.getSource(`territory-${TERRITORY_KEYFRAMES[0]}`)) return;
+
+    const FILL_OPACITY = 0.28;
+    const LINE_OPACITY = 0.8;
+
+    const { prev, next, t } = pickTerritoryKeyframes(currentYear);
+    const prevWeight = territoryOverlayOn && prev != null ? 1 - t : 0;
+    const nextWeight = territoryOverlayOn && next != null ? t : 0;
+
+    for (const year of TERRITORY_KEYFRAMES) {
+      const w = year === prev ? prevWeight : year === next ? nextWeight : 0;
+      map.setPaintProperty(
+        `territory-${year}-fill`,
+        "fill-opacity",
+        w * FILL_OPACITY,
+      );
+      map.setPaintProperty(
+        `territory-${year}-line`,
+        "line-opacity",
+        w * LINE_OPACITY,
+      );
+    }
+  }, [currentYear, territoryOverlayOn, mapReady, territoryLoadedCount]);
+
   return <div ref={containerRef} className="absolute inset-0" />;
+}
+
+// Keyframes mirror data/build_territory_maps.py KEYFRAMES. 284 covers
+// Diocletian's accession (his reign was 284–305) — synthesized from 300
+// since the upstream data starts at 300 and the tetrarchic territory was
+// effectively static across Diocletian's reign.
+const TERRITORY_KEYFRAMES = [
+  284, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400,
+];
+
+/** Pick the two surrounding keyframes for `year` and a 0..1 interpolation
+ * weight `t`. `prev=null` => before the earliest keyframe (don't render).
+ * `next=null` => past the last keyframe (render `prev` at full strength). */
+function pickTerritoryKeyframes(year: number): {
+  prev: number | null;
+  next: number | null;
+  t: number;
+} {
+  if (year < TERRITORY_KEYFRAMES[0]) return { prev: null, next: null, t: 0 };
+  const last = TERRITORY_KEYFRAMES[TERRITORY_KEYFRAMES.length - 1];
+  if (year >= last) return { prev: last, next: null, t: 0 };
+  for (let i = 0; i < TERRITORY_KEYFRAMES.length - 1; i++) {
+    const lo = TERRITORY_KEYFRAMES[i];
+    const hi = TERRITORY_KEYFRAMES[i + 1];
+    if (year >= lo && year < hi) {
+      return { prev: lo, next: hi, t: (year - lo) / (hi - lo) };
+    }
+  }
+  return { prev: last, next: null, t: 0 };
 }
 
 /* ----- marker element builder ----- */

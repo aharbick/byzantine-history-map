@@ -1,0 +1,69 @@
+{
+  "keyframes": [
+    {
+      "year": 284,
+      "path": "/territory/284.json",
+      "size": 32797
+    },
+    {
+      "year": 300,
+      "path": "/territory/300.json",
+      "size": 32797
+    },
+    {
+      "year": 400,
+      "path": "/territory/400.json",
+      "size": 31026
+    },
+    {
+      "year": 500,
+      "path": "/territory/500.json",
+      "size": 27351
+    },
+    {
+      "year": 600,
+      "path": "/territory/600.json",
+      "size": 58325
+    },
+    {
+      "year": 700,
+      "path": "/territory/700.json",
+      "size": 34185
+    },
+    {
+      "year": 800,
+      "path": "/territory/800.json",
+      "size": 27097
+    },
+    {
+      "year": 900,
+      "path": "/territory/900.json",
+      "size": 24567
+    },
+    {
+      "year": 1000,
+      "path": "/territory/1000.json",
+      "size": 21525
+    },
+    {
+      "year": 1100,
+      "path": "/territory/1100.json",
+      "size": 20668
+    },
+    {
+      "year": 1200,
+      "path": "/territory/1200.json",
+      "size": 20898
+    },
+    {
+      "year": 1300,
+      "path": "/territory/1300.json",
+      "size": 20165
+    },
+    {
+      "year": 1400,
+      "path": "/territory/1400.json",
+      "size": 16307
+    }
+  ]
+}
