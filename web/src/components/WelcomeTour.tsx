@@ -17,6 +17,9 @@ type StagePayload = {
   searchQuery?: string;
   /** Select an entity (by id) so its card is open. */
   selectEntityId?: string;
+  /** Open the karaoke transcript panel while this step is active. Pairs
+   * with cueEpisode so the panel has segments to render. */
+  openTranscript?: boolean;
 };
 
 interface Step {
@@ -83,7 +86,7 @@ const STEPS: Step[] = [
   {
     selector: '[data-byz-tour="legend"]',
     title: "Show or hide by type",
-    body: "Show or hide people, places, or events on the map as well as the timeline below.",
+    body: "Show or hide people, places, events, or the empire's territory overlay on the map and timeline below.",
   },
   {
     selector: '[data-byz-tour="density-strip"]',
@@ -109,6 +112,18 @@ const STEPS: Step[] = [
     title: "Pick an episode and sync the timeline",
     body: 'Use the drop down or next and previous buttons to change the episode that is playing. Drag the slider to move to a specific time in the episode. Select "Sync timeline" to have the timeline follow the episode\'s ruler and map markers light up as the host mentions them.',
     stage: { expandPlayer: true, cueEpisode: 7 },
+  },
+  {
+    selector: '[data-byz-tour="transcript-button"]',
+    title: "Read along with the transcript",
+    body: "Once an episode is loaded, this transcript icon appears beside the player. Click it to open the running transcript.",
+    stage: { expandPlayer: true, cueEpisode: 7 },
+  },
+  {
+    selector: '[data-byz-tour="transcript-panel"]',
+    title: "Tap any line to jump",
+    body: "The active line highlights in sync with the audio as it plays. Tap any line to jump straight to that moment.",
+    stage: { expandPlayer: true, cueEpisode: 7, openTranscript: true },
   },
   {
     selector: '[data-byz-tour="search"]',
@@ -165,7 +180,12 @@ function cutoutClipPath(rect: DOMRect, pad: number, radius: number): string {
 }
 
 export default function WelcomeTour() {
-  const { audioController, searchController, selectEntity } = useApp();
+  const {
+    audioController,
+    searchController,
+    selectEntity,
+    setTranscriptOpen,
+  } = useApp();
   const [step, setStep] = useState<number | null>(null);
   const [rect, setRect] = useState<DOMRect | null>(null);
 
@@ -212,6 +232,9 @@ export default function WelcomeTour() {
       const ent = getEntity(stage.selectEntityId);
       if (ent) selectEntity(ent);
     }
+    if (stage.openTranscript) {
+      setTranscriptOpen(true);
+    }
 
     return () => {
       // Leaving the step: undo what this step staged. Other steps may
@@ -229,8 +252,11 @@ export default function WelcomeTour() {
       if (stage.selectEntityId) {
         selectEntity(null);
       }
+      if (stage.openTranscript) {
+        setTranscriptOpen(false);
+      }
     };
-  }, [step, audioController, searchController, selectEntity]);
+  }, [step, audioController, searchController, selectEntity, setTranscriptOpen]);
 
   // Recompute the spotlight rect whenever the step or viewport changes.
   // We requery the DOM each tick so dynamically-mounted targets (the
