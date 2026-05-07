@@ -110,7 +110,7 @@ const STEPS: Step[] = [
   {
     selector: '[data-byz-tour="player"]',
     title: "Pick an episode and sync the timeline",
-    body: 'Use the drop down or next and previous buttons to change the episode that is playing. Drag the slider to move to a specific time in the episode. Select "Sync timeline" to have the timeline follow the episode\'s ruler and map markers light up as the host mentions them.',
+    body: "Use the drop down or chevron buttons to change episode, drag the scrubber to seek, and click the small pill to cycle playback speed (1×, 1.25×, 1.5×, 2×, 0.75×). Toggle the chain icon to make the timeline follow the audio — the cursor trails the host's narration and map markers light up as entities are mentioned.",
     stage: { expandPlayer: true, cueEpisode: 7 },
   },
   {

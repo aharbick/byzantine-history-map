@@ -822,18 +822,23 @@ export default function AudioPlayer() {
             disabled={!hasEpisode}
           />
         </div>
-        {displayedEpisode != null && (
-          <FollowAudioToggle
-            on={!autoScrubLocked}
-            onChange={(nextOn) => {
-              setAutoScrubLocked(!nextOn);
-              if (!nextOn) setAudioFocusEntityIds([]);
-            }}
-          />
-        )}
-        <span className="font-display text-[10px] tracking-wider text-byz-parchmentDark whitespace-nowrap tabular-nums">
-          {timeText}
-        </span>
+        {/* Sync icon + time grouped on the right so the chain icon
+            reads as "this is the audio's relationship to the
+            timeline", visually paired with the elapsed/total readout. */}
+        <div className="flex items-center gap-2">
+          {displayedEpisode != null && (
+            <FollowAudioToggle
+              on={!autoScrubLocked}
+              onChange={(nextOn) => {
+                setAutoScrubLocked(!nextOn);
+                if (!nextOn) setAudioFocusEntityIds([]);
+              }}
+            />
+          )}
+          <span className="font-display text-[10px] tracking-wider text-byz-parchmentDark whitespace-nowrap tabular-nums">
+            {timeText}
+          </span>
+        </div>
       </div>
       </div>
     </>
@@ -843,7 +848,12 @@ export default function AudioPlayer() {
 /* Sync-timeline toggle. Compact icon-only pill matching the size of the
  * IconButton transport controls so the row stays single-line at the
  * 320px expanded-player width. State is shown by fill: gold-filled
- * means "on, timeline follows audio"; outline-only means "off". */
+ * means "on, timeline follows audio"; outline-only means "off".
+ *
+ * Wraps the button in a `group` so a custom hover tooltip can fade in
+ * on desktop — the chain icon needs a label for new users since it
+ * isn't otherwise self-explanatory. The native `title` attribute
+ * stays in place as a fallback / mobile long-press hint. */
 function FollowAudioToggle({
   on,
   onChange,
@@ -851,44 +861,52 @@ function FollowAudioToggle({
   on: boolean;
   onChange: (nextOn: boolean) => void;
 }) {
+  const label = on
+    ? "Timeline follows audio — click to unsync"
+    : "Click to sync timeline with audio";
   return (
-    <button
-      type="button"
-      role="switch"
-      aria-checked={on}
-      aria-label={
-        on
-          ? "Sync timeline on — timeline follows audio"
-          : "Sync timeline off — click to enable"
-      }
-      onClick={() => onChange(!on)}
-      title={
-        on
-          ? "Sync timeline ON — timeline follows audio. Click to turn off."
-          : "Sync timeline OFF — click to make the timeline follow the audio."
-      }
-      className={`shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full border transition-colors ${
-        on
-          ? "bg-byz-goldLight border-byz-gold text-byz-ink hover:bg-byz-gold"
-          : "bg-byz-ink/60 border-byz-gold/40 text-byz-goldLight/80 hover:text-byz-goldLight hover:border-byz-gold/70"
-      }`}
-    >
-      {/* Chain link icon — universally reads as "linked / synced". */}
-      <svg
-        width="12"
-        height="12"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
+    <span className="relative group">
+      <button
+        type="button"
+        role="switch"
+        aria-checked={on}
+        aria-label={label}
+        onClick={() => onChange(!on)}
+        title={label}
+        className={`shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full border transition-colors ${
+          on
+            ? "bg-byz-goldLight border-byz-gold text-byz-ink hover:bg-byz-gold"
+            : "bg-byz-ink/60 border-byz-gold/40 text-byz-goldLight/80 hover:text-byz-goldLight hover:border-byz-gold/70"
+        }`}
       >
-        <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5" />
-        <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5" />
-      </svg>
-    </button>
+        {/* Chain link icon — universally reads as "linked / synced". */}
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5" />
+          <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5" />
+        </svg>
+      </button>
+      {/* Themed hover tooltip — fades in only when the user can hover
+          (desktop). On touch devices, the native `title` long-press
+          hint takes over. Positioned above the icon with a small
+          arrow tail so it points back at the chain. pointer-events-none
+          so the tooltip never intercepts clicks on the button itself. */}
+      <span
+        role="tooltip"
+        className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 hidden md:block opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-150 whitespace-nowrap rounded-md border border-byz-gold/60 bg-byz-purpleDeep/95 px-2 py-1 text-[10px] font-display tracking-wider uppercase text-byz-goldLight shadow-card"
+      >
+        {label}
+      </span>
+    </span>
   );
 }
 
