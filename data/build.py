@@ -42,6 +42,11 @@ WIKI_CACHE_PATH = CACHE_DIR / "wikipedia.json"
 SYNTH_CACHE_PATH = CACHE_DIR / "synthesized_summaries.json"
 ENTITIES_OUT = ROOT / "entities.json"
 WEB_OUT = REPO / "web" / "src" / "data" / "entities.json"
+# Slim per-episode segment files for the in-app karaoke transcript. Original
+# Whisper JSONs are ~150KB each (full of token arrays + log probabilities);
+# the web UI only needs {start, end, text} per segment, so we re-emit a slim
+# copy here. Served as static assets from /segments/{ep}.json.
+WEB_SEGMENTS_DIR = REPO / "web" / "public" / "segments"
 
 # Single User-Agent for Wikipedia API politeness.
 USER_AGENT = (
@@ -1670,6 +1675,45 @@ def finalize(entities: dict[str, dict], episodes_meta: list[dict]) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# slim segment emit — feeds the in-app karaoke transcript panel
+# ---------------------------------------------------------------------------
+
+
+def write_slim_segments(episodes_meta: list[dict]) -> None:
+    """Emit a slim {s, e, t}[] JSON per episode under web/public/segments/.
+
+    The full Whisper segment JSONs are ~150KB each (token arrays, logprobs,
+    etc.). The web UI only needs start/end/text to render and seek the
+    transcript, so trimming to those three fields knocks each file down to
+    a few tens of KB. Lazy-loaded by episode in the audio player.
+    """
+    WEB_SEGMENTS_DIR.mkdir(parents=True, exist_ok=True)
+    n = 0
+    for meta in episodes_meta:
+        seg_path = SEGMENTS_DIR / meta["segments_file"]
+        if not seg_path.exists():
+            continue
+        with open(seg_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        segments = data.get("segments", [])
+        slim = [
+            {
+                "s": round(seg.get("start", 0.0), 2),
+                "e": round(seg.get("end", 0.0), 2),
+                "t": (seg.get("text") or "").strip(),
+            }
+            for seg in segments
+        ]
+        out_path = WEB_SEGMENTS_DIR / f"{meta['episode']}.json"
+        with open(out_path, "w", encoding="utf-8") as f:
+            # No indent — these files exist purely for client-side fetch,
+            # not for human reading. Keeps payload size minimal.
+            json.dump(slim, f, ensure_ascii=False, separators=(",", ":"))
+        n += 1
+    print(f"      wrote {n} slim segment file(s) to {WEB_SEGMENTS_DIR}")
+
+
+# ---------------------------------------------------------------------------
 # main
 # ---------------------------------------------------------------------------
 
@@ -1719,6 +1763,7 @@ def main():
         with open(path, "w", encoding="utf-8") as f:
             json.dump(out, f, indent=2, ensure_ascii=False)
         print(f"      wrote {path}")
+    write_slim_segments(episodes_meta)
     print(
         f"      stats: {out['stats']['people']} people, "
         f"{out['stats']['places']} places, "

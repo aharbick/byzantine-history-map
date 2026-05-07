@@ -38,6 +38,15 @@ export interface AudioController {
    * tour can demonstrate the expanded view + the Sync timeline toggle
    * without auto-playing audio). */
   cueEpisode(ep: number | null): void;
+  /** Seek the current track to absolute seconds. No-op if no episode is
+   * loaded. Used by the karaoke transcript panel to jump to a tapped
+   * segment without disturbing playback state otherwise. */
+  seek(seconds: number): void;
+  /** Subscribe to ~4Hz currentTime ticks. Returns an unsubscribe fn.
+   * The transcript panel uses this to find the active segment without
+   * routing audio.currentTime through React state (which would cause the
+   * whole tree to re-render on every tick). */
+  subscribeTime(cb: (t: number) => void): () => void;
 }
 
 /** Imperative handle the Search component registers with context. The
@@ -85,6 +94,24 @@ interface AppState {
   setAudioFocusEntityIds: (ids: string[]) => void;
   filters: KindFilter;
   setFilters: (f: KindFilter) => void;
+  /** Whether the karaoke transcript panel is open. Toggled from the
+   * standalone TranscriptButton sitting next to the player; the panel
+   * fetches its episode-segment JSON from /segments/{ep}.json on demand. */
+  transcriptOpen: boolean;
+  setTranscriptOpen: (b: boolean) => void;
+  /** Whether the audio player is showing its expanded UI vs. the
+   * compact minimized chip. Hoisted into context so the standalone
+   * TranscriptButton next to the player can position itself flush with
+   * the player's current right edge (98px minimized vs. 320px expanded). */
+  playerExpanded: boolean;
+  setPlayerExpanded: (b: boolean) => void;
+  /** Episode loaded into the audio player but not yet playing — set on
+   * mount from the last-played localStorage entry, and replaced when
+   * the welcome tour cues an episode. Hoisted alongside `playingEpisode`
+   * so the TranscriptButton can show as soon as an episode is *selected*
+   * (not just playing). */
+  cuedEpisode: number | null;
+  setCuedEpisode: (n: number | null) => void;
 }
 
 export interface KindFilter {
@@ -98,12 +125,20 @@ const Ctx = createContext<AppState | null>(null);
 export function AppProvider({
   children,
   initialYear,
+  initialSelectedEntity = null,
 }: {
   children: ReactNode;
   initialYear: number;
+  /** Pre-selected entity (e.g. when landing on /people/justinian-i so the
+   * card opens immediately and the SSR'd metadata matches what the user
+   * sees). UrlState's `?id=` restoration runs after mount and overrides
+   * this if a query param is present, so deep-link query params win. */
+  initialSelectedEntity?: AnyEntity | null;
 }) {
   const [currentYear, setCurrentYear] = useState(initialYear);
-  const [selectedEntity, selectEntity] = useState<AnyEntity | null>(null);
+  const [selectedEntity, selectEntity] = useState<AnyEntity | null>(
+    initialSelectedEntity,
+  );
   const [playingEpisode, _setPlayingEpisode] = useState<number | null>(null);
   const [pendingSeek, setPendingSeek] = useState<AudioSeekHint | null>(null);
   const audioController = useRef<AudioController | null>(null);
@@ -115,6 +150,9 @@ export function AppProvider({
     place: true,
     event: true,
   });
+  const [transcriptOpen, setTranscriptOpen] = useState(false);
+  const [playerExpanded, setPlayerExpanded] = useState(false);
+  const [cuedEpisode, setCuedEpisode] = useState<number | null>(null);
 
   const playEpisode = (n: number | null, seek?: AudioSeekHint) => {
     _setPlayingEpisode(n);
@@ -144,6 +182,12 @@ export function AppProvider({
       setAudioFocusEntityIds,
       filters,
       setFilters,
+      transcriptOpen,
+      setTranscriptOpen,
+      playerExpanded,
+      setPlayerExpanded,
+      cuedEpisode,
+      setCuedEpisode,
     }),
     [
       currentYear,
@@ -153,6 +197,9 @@ export function AppProvider({
       autoScrubLocked,
       audioFocusEntityIds,
       filters,
+      transcriptOpen,
+      playerExpanded,
+      cuedEpisode,
     ],
   );
 

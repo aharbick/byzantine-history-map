@@ -4,25 +4,47 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 import { AnimatePresence } from "framer-motion";
 import { AppProvider, useApp } from "@/lib/context";
-import { timelineBounds, defaultStartYear } from "@/lib/data";
+import {
+  defaultStartYear,
+  getEntity,
+  timelineBounds,
+  timelineYear,
+} from "@/lib/data";
 import Timeline from "./Timeline";
 import TimelineMiniMap from "./TimelineMiniMap";
 import EntityCard from "./EntityCard";
 import AudioPlayer from "./AudioPlayer";
 import Legend from "./Legend";
 import Search from "./Search";
+import Transcript from "./Transcript";
+import TranscriptButton from "./TranscriptButton";
 import UrlState from "./UrlState";
 import WelcomeTour from "./WelcomeTour";
 
 // Map needs window/document; load client-side only
 const WorldMap = dynamic(() => import("./WorldMap"), { ssr: false });
 
-export default function AppShell() {
+export default function AppShell({
+  initialEntityId,
+}: {
+  /** When rendered from a per-entity SSR route (/people/[slug] etc.), the
+   * page passes the slug here so the card opens and the cursor lands on
+   * the entity's year on first paint — matching whatever metadata Google
+   * or social previewed. The home route ("/") leaves this undefined. */
+  initialEntityId?: string;
+}) {
   const { min, max } = timelineBounds();
-  const initialYear = defaultStartYear();
+  const initialEntity = initialEntityId ? getEntity(initialEntityId) ?? null : null;
+  const initialYear =
+    initialEntity != null
+      ? timelineYear(initialEntity) ?? defaultStartYear()
+      : defaultStartYear();
 
   return (
-    <AppProvider initialYear={initialYear}>
+    <AppProvider
+      initialYear={initialYear}
+      initialSelectedEntity={initialEntity}
+    >
       <Inner minYear={min} maxYear={max} />
     </AppProvider>
   );
@@ -48,10 +70,12 @@ function Inner({ minYear, maxYear }: { minYear: number; maxYear: number }) {
         <WorldMap />
         <Legend />
         <AudioPlayer />
+        <TranscriptButton />
         <Search />
         <AnimatePresence>
           {selectedEntity && <EntityCard entity={selectedEntity} />}
         </AnimatePresence>
+        <Transcript />
         <Header />
         {/* Density mini-map overlays the map's bottom band. It captures
             its own pointer events so drag-to-scrub works (otherwise the
