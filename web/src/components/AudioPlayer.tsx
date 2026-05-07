@@ -37,6 +37,11 @@ export default function AudioPlayer() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [showPicker, setShowPicker] = useState(false);
+  // Playback rate. Lazy initializer reads localStorage so the user's
+  // preferred speed survives reload without a one-frame flash at 1x.
+  const [playbackRate, setPlaybackRate] = useState<number>(() =>
+    typeof window === "undefined" ? 1 : readSavedRate() ?? 1,
+  );
   // Compact mode: shows just episode label + play button + time. Click
   // anywhere except the play button restores the full UI. Default to
   // collapsed — the player is a peripheral surface, not the user's
@@ -159,6 +164,23 @@ export default function AudioPlayer() {
   // Set is keyed by the callback identity so consumers' cleanup just
   // removes themselves directly.
   const timeSubscribersRef = useRef<Set<(t: number) => void>>(new Set());
+
+  // Re-apply the playback rate whenever it changes, AND whenever a new
+  // episode loads — `audio.load()` may reset the rate back to 1x on
+  // some browsers, so re-applying after episode change keeps the
+  // user's selection sticky across track changes.
+  useEffect(() => {
+    const a = audioRef.current;
+    if (!a) return;
+    a.playbackRate = playbackRate;
+  }, [playbackRate, playingEpisode, cuedEpisode]);
+
+  function cyclePlaybackRate() {
+    const idx = PLAYBACK_RATES.indexOf(playbackRate);
+    const next = PLAYBACK_RATES[(idx + 1) % PLAYBACK_RATES.length];
+    setPlaybackRate(next);
+    writeSavedRate(next);
+  }
 
   // Register the imperative controller for chip / external callers. Must
   // happen BEFORE any consumer uses it, so layout-effect (synchronous after
@@ -794,25 +816,44 @@ export default function AudioPlayer() {
               />
             </svg>
           </IconButton>
-        </div>
-        {displayedEpisode != null && (
-          <FollowAudioToggle
-            on={!autoScrubLocked}
-            onChange={(nextOn) => {
-              setAutoScrubLocked(!nextOn);
-              if (!nextOn) setAudioFocusEntityIds([]);
-            }}
+          <SpeedButton
+            rate={playbackRate}
+            onCycle={cyclePlaybackRate}
+            disabled={!hasEpisode}
           />
-        )}
-        <span className="font-display text-[10px] tracking-wider text-byz-parchmentDark whitespace-nowrap tabular-nums">
-          {timeText}
-        </span>
+        </div>
+        {/* Sync icon + time grouped on the right so the chain icon
+            reads as "this is the audio's relationship to the
+            timeline", visually paired with the elapsed/total readout. */}
+        <div className="flex items-center gap-2">
+          {displayedEpisode != null && (
+            <FollowAudioToggle
+              on={!autoScrubLocked}
+              onChange={(nextOn) => {
+                setAutoScrubLocked(!nextOn);
+                if (!nextOn) setAudioFocusEntityIds([]);
+              }}
+            />
+          )}
+          <span className="font-display text-[10px] tracking-wider text-byz-parchmentDark whitespace-nowrap tabular-nums">
+            {timeText}
+          </span>
+        </div>
       </div>
       </div>
     </>
   );
 }
 
+/* Sync-timeline toggle. Compact icon-only pill matching the size of the
+ * IconButton transport controls so the row stays single-line at the
+ * 320px expanded-player width. State is shown by fill: gold-filled
+ * means "on, timeline follows audio"; outline-only means "off".
+ *
+ * Wraps the button in a `group` so a custom hover tooltip can fade in
+ * on desktop — the chain icon needs a label for new users since it
+ * isn't otherwise self-explanatory. The native `title` attribute
+ * stays in place as a fallback / mobile long-press hint. */
 function FollowAudioToggle({
   on,
   onChange,
@@ -820,43 +861,89 @@ function FollowAudioToggle({
   on: boolean;
   onChange: (nextOn: boolean) => void;
 }) {
+  const label = on
+    ? "Timeline follows audio — click to unsync"
+    : "Click to sync timeline with audio";
+  return (
+    <span className="relative group">
+      <button
+        type="button"
+        role="switch"
+        aria-checked={on}
+        aria-label={label}
+        onClick={() => onChange(!on)}
+        title={label}
+        className={`shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full border transition-colors ${
+          on
+            ? "bg-byz-goldLight border-byz-gold text-byz-ink hover:bg-byz-gold"
+            : "bg-byz-ink/60 border-byz-gold/40 text-byz-goldLight/80 hover:text-byz-goldLight hover:border-byz-gold/70"
+        }`}
+      >
+        {/* Chain link icon — universally reads as "linked / synced". */}
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5" />
+          <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5" />
+        </svg>
+      </button>
+      {/* Themed hover tooltip — fades in only when the user can hover
+          (desktop). On touch devices, the native `title` long-press
+          hint takes over. Positioned above the icon with a small
+          arrow tail so it points back at the chain. pointer-events-none
+          so the tooltip never intercepts clicks on the button itself. */}
+      <span
+        role="tooltip"
+        className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 hidden md:block opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-150 whitespace-nowrap rounded-md border border-byz-gold/60 bg-byz-purpleDeep/95 px-2 py-1 text-[10px] font-display tracking-wider uppercase text-byz-goldLight shadow-card"
+      >
+        {label}
+      </span>
+    </span>
+  );
+}
+
+/* Compact pill that cycles through PLAYBACK_RATES on click. Sized to
+ * match the IconButtons in the transport cluster so it feels like a
+ * fourth transport control rather than a separate widget. */
+function SpeedButton({
+  rate,
+  onCycle,
+  disabled,
+}: {
+  rate: number;
+  onCycle: () => void;
+  disabled?: boolean;
+}) {
   return (
     <button
       type="button"
-      role="checkbox"
-      aria-checked={on}
-      onClick={() => onChange(!on)}
+      onClick={onCycle}
+      disabled={disabled}
       title={
-        on
-          ? "Sync timeline on — timeline follows audio"
-          : "Sync timeline off — timeline won't follow audio"
+        disabled
+          ? "Playback speed"
+          : `Playback speed (${formatRate(rate)} — click to cycle)`
       }
-      className="flex items-center gap-1.5 px-1 py-0.5 text-[10px] font-display tracking-widest uppercase text-byz-goldLight/80 hover:text-byz-goldLight transition-colors"
+      aria-label={`Playback speed: ${formatRate(rate)}. Click to cycle.`}
+      // Fixed width sized to the widest label ("1.25×") so the
+      // surrounding row layout never reflows when the user cycles
+      // through rates. tabular-nums keeps even single-digit rates
+      // visually centered.
+      className={`shrink-0 inline-flex items-center justify-center w-[40px] h-6 rounded-full border text-[10px] font-display tracking-wider transition-colors tabular-nums ${
+        disabled
+          ? "bg-byz-ink/30 border-byz-gold/15 text-byz-parchmentDark/30 cursor-not-allowed"
+          : "bg-byz-ink/60 border-byz-gold/40 text-byz-goldLight hover:bg-byz-ink/80 hover:border-byz-gold/70 active:bg-byz-gold/30"
+      }`}
     >
-      <span>Sync timeline</span>
-      <span
-        aria-hidden="true"
-        className={`relative inline-flex items-center justify-center w-3.5 h-3.5 rounded-sm border transition-colors ${
-          on
-            ? "bg-byz-goldLight border-byz-gold"
-            : "bg-transparent border-byz-goldLight/60"
-        }`}
-      >
-        {on && (
-          <svg
-            width="10"
-            height="10"
-            viewBox="0 0 16 16"
-            fill="none"
-            stroke="#1a1006"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M3 8.5l3 3 7-7" />
-          </svg>
-        )}
-      </span>
+      {formatRate(rate)}
     </button>
   );
 }
@@ -1025,8 +1112,44 @@ function fmt(s: number): string {
   return `${m}:${sec.toString().padStart(2, "0")}`;
 }
 
+/* Playback rates the speed button cycles through. Order chosen so the
+ * first click goes faster (the common case — most listeners want to
+ * speed up, not slow down) and the slow option lives at the end of the
+ * cycle for occasional use. */
+const PLAYBACK_RATES: number[] = [1, 1.25, 1.5, 2, 0.75];
+
+function formatRate(r: number): string {
+  // Trim trailing zeros so 1.0 -> "1×", 1.5 -> "1.5×".
+  const s = String(r).replace(/\.?0+$/, "");
+  return `${s}×`;
+}
+
 const STORAGE_KEY = "byz-audio-progress";
 const LAST_EPISODE_KEY = "byz-audio-last-ep";
+const RATE_KEY = "byz-audio-rate";
+
+function readSavedRate(): number | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(RATE_KEY);
+    if (!raw) return null;
+    const v = Number(raw);
+    // Defensive: only accept a value we'd actually cycle through, in
+    // case some other code (or a future change) writes a stale rate.
+    return PLAYBACK_RATES.includes(v) ? v : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeSavedRate(r: number) {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(RATE_KEY, String(r));
+  } catch {
+    /* ignore quota */
+  }
+}
 
 function readSaved(ep: number): number | null {
   if (typeof window === "undefined") return null;
