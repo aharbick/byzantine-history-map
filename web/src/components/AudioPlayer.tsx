@@ -840,6 +840,10 @@ export default function AudioPlayer() {
   );
 }
 
+/* Sync-timeline toggle. Compact icon-only pill matching the size of the
+ * IconButton transport controls so the row stays single-line at the
+ * 320px expanded-player width. State is shown by fill: gold-filled
+ * means "on, timeline follows audio"; outline-only means "off". */
 function FollowAudioToggle({
   on,
   onChange,
@@ -850,40 +854,40 @@ function FollowAudioToggle({
   return (
     <button
       type="button"
-      role="checkbox"
+      role="switch"
       aria-checked={on}
+      aria-label={
+        on
+          ? "Sync timeline on — timeline follows audio"
+          : "Sync timeline off — click to enable"
+      }
       onClick={() => onChange(!on)}
       title={
         on
-          ? "Sync timeline on — timeline follows audio"
-          : "Sync timeline off — timeline won't follow audio"
+          ? "Sync timeline ON — timeline follows audio. Click to turn off."
+          : "Sync timeline OFF — click to make the timeline follow the audio."
       }
-      className="flex items-center gap-1.5 px-1 py-0.5 text-[10px] font-display tracking-widest uppercase text-byz-goldLight/80 hover:text-byz-goldLight transition-colors"
+      className={`shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full border transition-colors ${
+        on
+          ? "bg-byz-goldLight border-byz-gold text-byz-ink hover:bg-byz-gold"
+          : "bg-byz-ink/60 border-byz-gold/40 text-byz-goldLight/80 hover:text-byz-goldLight hover:border-byz-gold/70"
+      }`}
     >
-      <span>Sync timeline</span>
-      <span
+      {/* Chain link icon — universally reads as "linked / synced". */}
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         aria-hidden="true"
-        className={`relative inline-flex items-center justify-center w-3.5 h-3.5 rounded-sm border transition-colors ${
-          on
-            ? "bg-byz-goldLight border-byz-gold"
-            : "bg-transparent border-byz-goldLight/60"
-        }`}
       >
-        {on && (
-          <svg
-            width="10"
-            height="10"
-            viewBox="0 0 16 16"
-            fill="none"
-            stroke="#1a1006"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M3 8.5l3 3 7-7" />
-          </svg>
-        )}
-      </span>
+        <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5" />
+        <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5" />
+      </svg>
     </button>
   );
 }
@@ -911,7 +915,11 @@ function SpeedButton({
           : `Playback speed (${formatRate(rate)} — click to cycle)`
       }
       aria-label={`Playback speed: ${formatRate(rate)}. Click to cycle.`}
-      className={`shrink-0 inline-flex items-center justify-center min-w-[26px] h-6 px-1.5 rounded-full border text-[10px] font-display tracking-wider transition-colors tabular-nums ${
+      // Fixed width sized to the widest label ("1.25×") so the
+      // surrounding row layout never reflows when the user cycles
+      // through rates. tabular-nums keeps even single-digit rates
+      // visually centered.
+      className={`shrink-0 inline-flex items-center justify-center w-[40px] h-6 rounded-full border text-[10px] font-display tracking-wider transition-colors tabular-nums ${
         disabled
           ? "bg-byz-ink/30 border-byz-gold/15 text-byz-parchmentDark/30 cursor-not-allowed"
           : "bg-byz-ink/60 border-byz-gold/40 text-byz-goldLight hover:bg-byz-ink/80 hover:border-byz-gold/70 active:bg-byz-gold/30"
@@ -1090,7 +1098,7 @@ function fmt(s: number): string {
  * first click goes faster (the common case — most listeners want to
  * speed up, not slow down) and the slow option lives at the end of the
  * cycle for occasional use. */
-const PLAYBACK_RATES: number[] = [1, 1.25, 1.5, 0.75];
+const PLAYBACK_RATES: number[] = [1, 1.25, 1.5, 2, 0.75];
 
 function formatRate(r: number): string {
   // Trim trailing zeros so 1.0 -> "1×", 1.5 -> "1.5×".
