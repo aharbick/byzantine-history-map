@@ -25,6 +25,7 @@ export default function TranscriptButton() {
   return (
     <button
       type="button"
+      data-byz-tour="transcript-button"
       onClick={() => setTranscriptOpen(!transcriptOpen)}
       aria-pressed={transcriptOpen}
       aria-label={
