@@ -16,7 +16,7 @@ const ROWS: {
 ];
 
 export default function Legend() {
-  const { filters, setFilters } = useApp();
+  const { filters, setFilters, empireOverlayOn, setEmpireOverlayOn } = useApp();
   const toggle = (key: keyof KindFilter) =>
     setFilters({ ...filters, [key]: !filters[key] });
 
@@ -57,6 +57,40 @@ export default function Legend() {
             </button>
           );
         })}
+        {/* Empire territory overlay — preview feature. Distinguished from
+            the kind filters above by its swatch (a translucent parchment
+            patch with a thin gold edge, mirroring the actual fill style)
+            so it reads as "a region you can show", not "another marker
+            kind". Lives in the same chip so the layer-toggle mental model
+            stays consistent. */}
+        <button
+          onClick={() => setEmpireOverlayOn(!empireOverlayOn)}
+          aria-pressed={empireOverlayOn}
+          title={
+            empireOverlayOn
+              ? "Hide Byzantine territory overlay"
+              : "Show Byzantine territory overlay (preview)"
+          }
+          className={clsx(
+            "flex items-center gap-1.5 rounded-full px-1 transition-colors mt-0.5 border-t border-byz-gold/20 pt-0.5 w-full",
+            empireOverlayOn
+              ? "text-byz-parchment"
+              : "text-byz-parchmentDark/50 line-through",
+            "hover:bg-byz-gold/10",
+          )}
+        >
+          <span
+            className={clsx(
+              "inline-block w-2.5 h-2.5 rounded-sm transition-opacity",
+              !empireOverlayOn && "opacity-30",
+            )}
+            style={{
+              background: "rgba(231, 200, 115, 0.35)",
+              boxShadow: "inset 0 0 0 1.5px #c9a227",
+            }}
+          />
+          <span>Empire</span>
+        </button>
     </div>
   );
 }

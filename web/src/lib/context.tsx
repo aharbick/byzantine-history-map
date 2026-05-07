@@ -112,6 +112,11 @@ interface AppState {
    * (not just playing). */
   cuedEpisode: number | null;
   setCuedEpisode: (n: number | null) => void;
+  /** Whether to render the Byzantine territory fill layer on the map.
+   * Off by default while the feature is on a preview branch — this is
+   * a "show me what's possible" demo, not a production feature yet. */
+  empireOverlayOn: boolean;
+  setEmpireOverlayOn: (b: boolean) => void;
 }
 
 export interface KindFilter {
@@ -153,6 +158,7 @@ export function AppProvider({
   const [transcriptOpen, setTranscriptOpen] = useState(false);
   const [playerExpanded, setPlayerExpanded] = useState(false);
   const [cuedEpisode, setCuedEpisode] = useState<number | null>(null);
+  const [empireOverlayOn, setEmpireOverlayOn] = useState(false);
 
   const playEpisode = (n: number | null, seek?: AudioSeekHint) => {
     _setPlayingEpisode(n);
@@ -188,6 +194,8 @@ export function AppProvider({
       setPlayerExpanded,
       cuedEpisode,
       setCuedEpisode,
+      empireOverlayOn,
+      setEmpireOverlayOn,
     }),
     [
       currentYear,
@@ -200,6 +208,7 @@ export function AppProvider({
       transcriptOpen,
       playerExpanded,
       cuedEpisode,
+      empireOverlayOn,
     ],
   );
 

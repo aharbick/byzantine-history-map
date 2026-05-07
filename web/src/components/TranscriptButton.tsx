@@ -53,9 +53,9 @@ export default function TranscriptButton() {
           ? "right-2 sm:right-auto sm:left-[336px]"
           : "left-[114px]",
       )}
-      // Match PLAYER_BOTTOM (90) inside AudioPlayer so the button sits on
-      // the player's vertical centerline.
-      style={{ bottom: 90 + (40 - 36) / 2 }}
+      // Match PLAYER_BOTTOM (117 in this branch) inside AudioPlayer so the
+      // button sits on the player's vertical centerline.
+      style={{ bottom: 117 + (40 - 36) / 2 }}
     >
       <svg
         width="16"

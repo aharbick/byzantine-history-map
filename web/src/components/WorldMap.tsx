@@ -101,6 +101,7 @@ export default function WorldMap() {
     setCurrentYear,
     filters,
     audioFocusEntityIds,
+    empireOverlayOn,
   } = useApp();
   // Mirror selectedEntity into a ref so the marker click handlers (created
   // once at marker construction) can read the *current* value without stale
@@ -446,7 +447,205 @@ export default function WorldMap() {
     };
   }, [mapReady]);
 
+  // -------------------------------------------------------------------
+  // Empire territory overlay (preview)
+  //
+  // Two GeoJSON sources + matching fill/line layers (PREV and NEXT)
+  // crossfade between century keyframes as `currentYear` moves through
+  // them. Both source IDs are stable; we swap their `data` payload and
+  // animate `*-opacity` paint properties via setPaintProperty per tick.
+  //
+  // Why two layers instead of one with morphing geometry: MapLibre can't
+  // tween polygon vertices between non-matching feature schemas. Linear
+  // opacity blending between the two adjacent keyframes is good enough
+  // visually for a 100-year interval, and avoids the cost of a fancy
+  // turf.js tween every frame during scrubbing.
+  // -------------------------------------------------------------------
+  const empireKeyframeCacheRef = useRef<Map<number, GeoJSON.Feature | null>>(
+    new Map(),
+  );
+  const empireLoadedRef = useRef<{ prev: number | null; next: number | null }>({
+    prev: null,
+    next: null,
+  });
+
+  // Stand up the (initially empty) overlay sources + layers once the map
+  // style has loaded. Sources stay mounted whether or not the overlay is
+  // toggled on — opacity drives visibility, so toggling is instant and
+  // doesn't churn the GL state.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+
+    function ensureEmpireLayers() {
+      if (!map) return;
+      if (map.getSource("empire-prev")) return; // already mounted
+      const empty: GeoJSON.FeatureCollection = {
+        type: "FeatureCollection",
+        features: [],
+      };
+      for (const id of ["empire-prev", "empire-next"] as const) {
+        map.addSource(id, { type: "geojson", data: empty });
+        map.addLayer({
+          id: `${id}-fill`,
+          type: "fill",
+          source: id,
+          paint: {
+            "fill-color": "#e7c873",
+            "fill-opacity": 0,
+          },
+        });
+        map.addLayer({
+          id: `${id}-line`,
+          type: "line",
+          source: id,
+          paint: {
+            "line-color": "#c9a227",
+            "line-width": 1.5,
+            "line-opacity": 0,
+          },
+        });
+      }
+    }
+
+    if (map.isStyleLoaded()) ensureEmpireLayers();
+    else map.once("load", ensureEmpireLayers);
+  }, [mapReady]);
+
+  // Sync the overlay to currentYear + the user's toggle state. Runs on
+  // every year change (potentially 60+/sec while scrubbing) but stays
+  // cheap: keyframe data is fetched once per century and cached, then
+  // we just call setPaintProperty for opacity fades.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    if (!map.getSource || !map.getSource("empire-prev")) return; // layers not ready yet
+
+    const FILL_OPACITY = 0.16;
+    const LINE_OPACITY = 0.55;
+
+    function setOpacities(prevOpacity: number, nextOpacity: number) {
+      if (!map) return;
+      map.setPaintProperty(
+        "empire-prev-fill",
+        "fill-opacity",
+        prevOpacity * FILL_OPACITY,
+      );
+      map.setPaintProperty(
+        "empire-prev-line",
+        "line-opacity",
+        prevOpacity * LINE_OPACITY,
+      );
+      map.setPaintProperty(
+        "empire-next-fill",
+        "fill-opacity",
+        nextOpacity * FILL_OPACITY,
+      );
+      map.setPaintProperty(
+        "empire-next-line",
+        "line-opacity",
+        nextOpacity * LINE_OPACITY,
+      );
+    }
+
+    if (!empireOverlayOn) {
+      setOpacities(0, 0);
+      return;
+    }
+
+    const { prev, next, t } = pickEmpireKeyframes(currentYear);
+    if (prev == null) {
+      // Year before the earliest keyframe — fade out cleanly.
+      setOpacities(0, 0);
+      return;
+    }
+
+    // Loader: cache by year, return the empty featurecollection while a
+    // fetch is in flight so the layer stays mounted (opacity 0 in the
+    // meantime).
+    function load(year: number, sourceId: "empire-prev" | "empire-next") {
+      const cache = empireKeyframeCacheRef.current;
+      if (cache.has(year)) {
+        const feat = cache.get(year);
+        const data: GeoJSON.FeatureCollection = {
+          type: "FeatureCollection",
+          features: feat ? [feat] : [],
+        };
+        const src = map?.getSource(sourceId);
+        if (src && "setData" in src) {
+          (src as maplibregl.GeoJSONSource).setData(data);
+        }
+        return;
+      }
+      // Mark as in-flight with `null` so concurrent ticks don't re-fetch.
+      cache.set(year, null);
+      fetch(`/empire/${year}.json`)
+        .then((r) => (r.ok ? r.json() : null))
+        .then((feat: GeoJSON.Feature | null) => {
+          cache.set(year, feat);
+          if (!feat) return;
+          const data: GeoJSON.FeatureCollection = {
+            type: "FeatureCollection",
+            features: [feat],
+          };
+          const src = map?.getSource(sourceId);
+          if (src && "setData" in src) {
+            (src as maplibregl.GeoJSONSource).setData(data);
+          }
+        })
+        .catch(() => {
+          /* leave cache entry as null; next year change will retry */
+        });
+    }
+
+    if (empireLoadedRef.current.prev !== prev) {
+      empireLoadedRef.current.prev = prev;
+      load(prev, "empire-prev");
+    }
+    if (next != null && empireLoadedRef.current.next !== next) {
+      empireLoadedRef.current.next = next;
+      load(next, "empire-next");
+    }
+    if (next == null) {
+      // Past the last keyframe — show only the most recent at full strength.
+      empireLoadedRef.current.next = null;
+      const src = map.getSource("empire-next");
+      if (src && "setData" in src) {
+        (src as maplibregl.GeoJSONSource).setData({
+          type: "FeatureCollection",
+          features: [],
+        });
+      }
+    }
+
+    setOpacities(1 - t, t);
+  }, [currentYear, empireOverlayOn, mapReady]);
+
   return <div ref={containerRef} className="absolute inset-0" />;
+}
+
+// Century keyframes mirror data/build_empire.py KEYFRAMES.
+const EMPIRE_KEYFRAMES = [300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400];
+
+/** Pick the two surrounding keyframes for `year` and a 0..1 interpolation
+ * weight `t`. `prev=null` => before the earliest keyframe (don't render).
+ * `next=null` => past the last keyframe (render `prev` at full strength). */
+function pickEmpireKeyframes(year: number): {
+  prev: number | null;
+  next: number | null;
+  t: number;
+} {
+  if (year < EMPIRE_KEYFRAMES[0]) return { prev: null, next: null, t: 0 };
+  const last = EMPIRE_KEYFRAMES[EMPIRE_KEYFRAMES.length - 1];
+  if (year >= last) return { prev: last, next: null, t: 0 };
+  for (let i = 0; i < EMPIRE_KEYFRAMES.length - 1; i++) {
+    const lo = EMPIRE_KEYFRAMES[i];
+    const hi = EMPIRE_KEYFRAMES[i + 1];
+    if (year >= lo && year < hi) {
+      return { prev: lo, next: hi, t: (year - lo) / (hi - lo) };
+    }
+  }
+  return { prev: last, next: null, t: 0 };
 }
 
 /* ----- marker element builder ----- */
