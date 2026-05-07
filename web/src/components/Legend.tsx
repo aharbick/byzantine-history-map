@@ -16,7 +16,12 @@ const ROWS: {
 ];
 
 export default function Legend() {
-  const { filters, setFilters, empireOverlayOn, setEmpireOverlayOn } = useApp();
+  const {
+    filters,
+    setFilters,
+    territoryOverlayOn,
+    setTerritoryOverlayOn,
+  } = useApp();
   const toggle = (key: keyof KindFilter) =>
     setFilters({ ...filters, [key]: !filters[key] });
 
@@ -68,16 +73,16 @@ export default function Legend() {
             reads as "an area on the map" instead of "another marker
             kind". */}
         <button
-          onClick={() => setEmpireOverlayOn(!empireOverlayOn)}
-          aria-pressed={empireOverlayOn}
+          onClick={() => setTerritoryOverlayOn(!territoryOverlayOn)}
+          aria-pressed={territoryOverlayOn}
           title={
-            empireOverlayOn
+            territoryOverlayOn
               ? "Hide Byzantine territory overlay"
               : "Show Byzantine territory overlay (preview)"
           }
           className={clsx(
             "flex items-center gap-1.5 rounded-full px-1 transition-colors",
-            empireOverlayOn
+            territoryOverlayOn
               ? "text-byz-parchment"
               : "text-byz-parchmentDark/50 line-through",
             "hover:bg-byz-gold/10",
@@ -89,7 +94,7 @@ export default function Legend() {
             viewBox="0 0 12 12"
             className={clsx(
               "shrink-0 transition-opacity",
-              !empireOverlayOn && "opacity-30",
+              !territoryOverlayOn && "opacity-30",
             )}
             aria-hidden="true"
           >

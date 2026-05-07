@@ -113,10 +113,11 @@ interface AppState {
   cuedEpisode: number | null;
   setCuedEpisode: (n: number | null) => void;
   /** Whether to render the Byzantine territory fill layer on the map.
-   * Off by default while the feature is on a preview branch — this is
-   * a "show me what's possible" demo, not a production feature yet. */
-  empireOverlayOn: boolean;
-  setEmpireOverlayOn: (b: boolean) => void;
+   * Defaults on — the overlay grounds the entity markers in their
+   * historical extent. Users can switch it off via the Legend's
+   * Territory toggle. */
+  territoryOverlayOn: boolean;
+  setTerritoryOverlayOn: (b: boolean) => void;
 }
 
 export interface KindFilter {
@@ -158,7 +159,7 @@ export function AppProvider({
   const [transcriptOpen, setTranscriptOpen] = useState(false);
   const [playerExpanded, setPlayerExpanded] = useState(false);
   const [cuedEpisode, setCuedEpisode] = useState<number | null>(null);
-  const [empireOverlayOn, setEmpireOverlayOn] = useState(false);
+  const [territoryOverlayOn, setTerritoryOverlayOn] = useState(true);
 
   const playEpisode = (n: number | null, seek?: AudioSeekHint) => {
     _setPlayingEpisode(n);
@@ -194,8 +195,8 @@ export function AppProvider({
       setPlayerExpanded,
       cuedEpisode,
       setCuedEpisode,
-      empireOverlayOn,
-      setEmpireOverlayOn,
+      territoryOverlayOn,
+      setTerritoryOverlayOn,
     }),
     [
       currentYear,
@@ -208,7 +209,7 @@ export function AppProvider({
       transcriptOpen,
       playerExpanded,
       cuedEpisode,
-      empireOverlayOn,
+      territoryOverlayOn,
     ],
   );
 

@@ -1,5 +1,5 @@
 """Fetch + filter Byzantine territory GeoJSON keyframes for the in-app
-empire-territory overlay.
+"Territory" map overlay.
 
 Source: aourednik/historical-basemaps on GitHub. Free, CC-BY licensed,
 hand-curated political boundaries at century intervals. Each `world_<year>`
@@ -11,12 +11,17 @@ For 300 AD (Diocletian's tetrarchy) the source has no single eastern
 empire — the empire was split into four tetrarchic prefectures. We
 combine the Diocletianus (East: Egypt, Syria, Asia Minor) and Galerius
 (Balkans) territories so the early Byzantine narrative still has a
-visible "this is the empire" overlay.
+visible "this is the territory" overlay.
+
+For 284 AD (Diocletian's accession) we synthesize a keyframe by reusing
+the 300 AD polygon — Diocletian's reign was 284–305, and the tetrarchic
+territory was effectively static across those years. This avoids a
+visible-empty period at the very start of the timeline.
 
 Run:
-    python3 data/build_empire.py
+    python3 data/build_territory_maps.py
 
-Writes one slim GeoJSON Feature file per year to `web/public/empire/`.
+Writes one slim GeoJSON Feature file per year to `web/public/territory/`.
 The slim files contain just `{type, geometry, properties: {year, name}}`
 — no `ABBREVN`, no `SUBJECTO`, no `BORDERPRECISION` chatter. Re-run any
 time the upstream data set is refreshed; the keyframe years are static.
@@ -31,15 +36,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 REPO = ROOT.parent
-OUT_DIR = REPO / "web" / "public" / "empire"
+OUT_DIR = REPO / "web" / "public" / "territory"
 
 UA = "ByzantineRulersInteractive/2.0 (https://github.com/aharbick/byzantine-history-map)"
 SRC_BASE = "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson"
 
 # Keyframes spanning the Byzantine narrative (Diocletian -> Constantine XI).
-# Every century is enough resolution for a smooth crossfade — the
-# territory only changes substantially at ~100-year scales.
-KEYFRAMES = [300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400]
+# 284 is synthesized from 300 (see module docstring); every other year is
+# fetched from upstream. Century resolution is enough for a smooth
+# crossfade — the territory only changes substantially at ~100-year scales.
+KEYFRAMES = [284, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400]
+# Years that aren't fetched from upstream — instead we synthesize by
+# duplicating the closest fetched keyframe's polygon. Mapping: target year
+# -> source year to copy from.
+SYNTHETIC: dict[int, int] = {284: 300}
 
 
 def fetch_world(year: int) -> dict:
@@ -117,10 +127,28 @@ def build_year(year: int) -> dict | None:
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     written: list[tuple[int, int]] = []
+    # Cache of fetched-then-filtered features, so SYNTHETIC entries can
+    # copy from a year we've already built without re-running the
+    # fetch + filter pipeline.
+    built: dict[int, dict] = {}
     for y in KEYFRAMES:
-        feat = build_year(y)
-        if feat is None:
-            continue
+        if y in SYNTHETIC:
+            src_year = SYNTHETIC[y]
+            src_feat = built.get(src_year) or build_year(src_year)
+            if src_feat is None:
+                continue
+            built[src_year] = src_feat
+            feat = {
+                "type": "Feature",
+                "properties": {"year": y, "name": src_feat["properties"]["name"]},
+                "geometry": src_feat["geometry"],
+            }
+            print(f"[{y}] synthesized from {src_year}")
+        else:
+            feat = built.get(y) or build_year(y)
+            if feat is None:
+                continue
+            built[y] = feat
         out_path = OUT_DIR / f"{y}.json"
         # No indent — these are static assets fetched at runtime, never
         # human-read. Compact JSON saves bandwidth on the marginal MB.
@@ -130,7 +158,7 @@ def main():
     # Manifest so the client knows what years are available without a
     # separate fetch round-trip.
     manifest = {
-        "keyframes": [{"year": y, "path": f"/empire/{y}.json", "size": sz}
+        "keyframes": [{"year": y, "path": f"/territory/{y}.json", "size": sz}
                       for y, sz in written],
     }
     with open(OUT_DIR / "manifest.json", "w", encoding="utf-8") as f:
