@@ -468,6 +468,13 @@ export default function WorldMap() {
   // years between keyframes would imply more precision than we have.
   // -------------------------------------------------------------------
   const territoryFeaturesRef = useRef<Map<number, GeoJSON.Feature>>(new Map());
+  // Counter that ticks once per keyframe-fetch completion. Threaded into
+  // the opacity effect's deps so it re-runs whenever new data lands —
+  // necessary on deep-link loads (?year=448), where the opacity effect
+  // would otherwise run exactly once on mount, set opacity for layers
+  // whose data was still in flight, and never get a second chance to
+  // paint until the user scrubbed.
+  const [territoryLoadedCount, setTerritoryLoadedCount] = useState(0);
 
   // Stand up one source + fill + line layer per keyframe once the map
   // style has loaded. Then kick off a one-shot fetch for each keyframe
@@ -522,6 +529,10 @@ export default function WorldMap() {
                 features: [feat],
               });
             }
+            // Wake the opacity effect so it re-applies for any layer
+            // whose data just arrived (matters when a deep link lands
+            // on a year whose bracketing keyframes weren't loaded yet).
+            setTerritoryLoadedCount((n) => n + 1);
           })
           .catch(() => {
             /* swallow — layer just stays empty for this keyframe */
@@ -563,7 +574,7 @@ export default function WorldMap() {
         w * LINE_OPACITY,
       );
     }
-  }, [currentYear, territoryOverlayOn, mapReady]);
+  }, [currentYear, territoryOverlayOn, mapReady, territoryLoadedCount]);
 
   return <div ref={containerRef} className="absolute inset-0" />;
 }
